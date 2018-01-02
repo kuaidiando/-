@@ -1,0 +1,115 @@
+<extend name="Layout/main"/>
+
+<block name="main">
+    <!-- 分页效果 -->
+    <link href="__PUBLIC__/css/mypage.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="__PUBLIC__/muban/assets/js/jquery.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/muban/assets/js/bootstrap.js"></script>
+    <!-- 分页结束 -->
+    <div class="page-container">
+        <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
+            <a href="javascript:;" onclick="admin_add('添加类别','{:U('Admin/Shoptype/add')}','800','500')"
+               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加类别</a></span>
+            <span class="r">共有数据：<strong>{$info.count}</strong> 条</span> </div>
+        <div class="mt-20">
+        <!-- <table class="table table-border table-bordered table-bg">
+            <thead>
+            <tr class="text-c">
+                <th><input type="checkbox" name="" value=""></th>
+                <th>代码</th>
+                <th>名称</th>
+                <th>排序</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>asdf</td>
+            </tr>
+                <volist name="info.list" id="item">
+                    <tr class="text-c">
+                        <td><input type="checkbox" value="1" name=""></td>
+                        <td>123</td>
+                        <td>456</td>
+                        <td>456</td>
+                        <td class="td-manage">
+                            <a href="javascript:;"
+                               onclick="admin_add('编辑详情','{:U('Admin/Jixing/edit', array('id' => $item['id']))}'
+                               ,'800','500')">
+                                <i class="Hui-iconfont">&#xe6df;</i>
+                            </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a class="h-text-sc" id="{$item.id}"><i class="Hui-iconfont">&#xe6e2;</i></a>
+                        </td>
+                    </tr>
+                </volist>
+            </tbody>
+        </table> -->
+        <table class="table table-border table-bordered table-bg table-hover table-responsive">
+            <thead>
+                <tr class="text-c">
+                    <th width="80">编号</th>
+                    <th width="80">分类名称</th>
+                    <th width="80">状态</th>
+                    <th width="80">排序</th>
+                    <th width="120">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <foreach name="res" item="vo" >
+                        <tr class="text-c">
+                            <td>{$vo.id}</td>
+                            <td>{$vo.name}</td>
+                            <td class="td-status">
+                            	<if condition="$vo.zhuangt eq 1 ">
+                            		<span class="label label-success radius">有效</span>
+								    <else /> 
+                            		<span class="label label-danger radius">无效</span>
+								</if>
+                            </td>
+                            <td class="td-status">{$vo.paix}</td>
+                            <td class="td-manage">
+                            <a href="javascript:;"
+                               onclick="admin_add('编辑详情','{:U('Admin/Shoptype/edit', array('id' => $vo['id']))}'
+                               ,'800','500')">
+                                <i class="Hui-iconfont">&#xe6df;</i>
+                            </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a class="h-text-sc" id="{$vo.id}"><i class="Hui-iconfont">&#xe6e2;</i></a>
+                        </td>
+                        </tr>
+                </foreach>
+                
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <!-- 分页效果 -->
+    <div class="result page">
+        <div class="pages">
+            {$info.page}
+        </div>
+    </div>
+    <script type="text/javascript">
+        /*删除*/
+        $(document).on("click", '.h-text-sc', function () {
+            var op_obj = $(this).parents("tr");
+            var id = $(this).attr('id');
+            // alert(id);
+            layer.confirm('确认要删除吗？',function(){
+                $.ajax({
+                    type:'POST',
+                    dataType: 'json',
+                    url:'{:U("Admin/Shoptype/delete")}',
+                    data:{id:id},
+                    success: function (result) {
+                        if (result.status) {
+                            op_obj.remove();
+                            layer.msg(result.msg,{icon:1,time:1000});
+                        } else {
+                            layer.msg(result.msg,{icon:0,time:2000});
+                        }
+                    }
+                })
+            });
+        });
+    </script>
+</block>
