@@ -41,6 +41,10 @@ class ShopController extends Controller
             $result = $user->where($where)->select();
         }
         $this->assign('resshop',$result);
+        //城市级联
+        $user = M('chengshi');
+        $result = $user ->select();
+        $this->assign('res',$result);
         $this->display();
     }
     public function add(){
