@@ -32,22 +32,24 @@ class FoodtypeController extends Controller
         // // echo $this->mod->getLastSql();
         // $this->assign('info', array('list' => $res,'count' => $count, 'page' => $page->show()));
         $id = I('get.id');
-        // dump($jxdm);die;
+        // dump($id);die;
         $user = M('food_type');
-        $where['dep'] = $id;
+        $where['dep_type'] = $id;
         $data = $user->where($where)->select();
-        $this->assign('data',$data);
-        $this->assign('id',$id);
+         //城市级联
+        $user = M('chengshi');
+        $result = $user ->select();
+        $this->assign('res',$result);//城市信息
+        // dump($data);die;
+        $this->assign('data',$data);//查询菜品类别信息
+        $this->assign('id',$id);//门店代码
         $this->display();
     }
     public function add(){
     	if (IS_POST) {
             //获取机构编码
             $user = M("food_type"); // 实例化User对象
-            $data['dep'] = I('post.id');//对应门店代码
-            $data['name'] = I('post.name');
-            $data['zhuangt'] = I('post.zhuangt');
-            $data['paix'] = I('post.paix');
+            $data = I('post.');//数据
             $res = $user->add($data);
 			$res == true ? $this->success('添加成功') : $this->error('添加失败');
     		// $this->display();
@@ -63,9 +65,7 @@ class FoodtypeController extends Controller
     		$id = I('post.id');
     		$User = M("food_type"); // 实例化User对象
     		$where['id'] = $id;
-            $data['name'] = I('post.name');
-			$data['paix'] = I('post.paix');
-            $data['zhuangt'] = I('post.zhuangt');
+            $data = I('post.');
 			// dump($data);die;
 			$res = $User->where($where)->data($data)->save();
         	// echo $User->getLastSql();die;
@@ -73,10 +73,8 @@ class FoodtypeController extends Controller
 			$res == true ? $this->success('修改成功') : $this->error('修改失败');
     		// $this->display();
     	}else{
-    		$jxdm = I('get.id');
-    		// dump($jxdm);die;
     		$user = M('food_type');
-    		$where['id'] = $jxdm;
+    		$where['id'] = I('get.id');
     		$data = $user->where($where)->select();
     		// dump($data);die();
     		$this->assign('data',$data);

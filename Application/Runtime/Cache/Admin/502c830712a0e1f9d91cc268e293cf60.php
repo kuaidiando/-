@@ -63,7 +63,7 @@ $(document).ready(function(){
             <!-- 隐藏主页 -->
             <a _href="<?php echo U('Admin/Index/yinczhuye');?>" name="<?php echo U('Admin/Index/yinczhuye');?>" style="display: none;" data-title="" class="yincangzhuye" href="javascript:;">隐藏主页</a>
             <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
-            <li><a href="#">菜品列表</a></li>
+            <li><a href="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
         </ul>
         </dd>
     </dl>

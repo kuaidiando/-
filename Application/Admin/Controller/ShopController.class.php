@@ -50,19 +50,8 @@ class ShopController extends Controller
     public function add(){
     	if (IS_POST) {
             //获取机构编码
-            $user = M("ceshi_fu"); // 实例化User对象
-            $data['name'] = I('post.name');
-            $data['code'] = I('post.code');
-            $data['sub'] = I('post.sub');
-            $data['photo'] = I('post.photo');
-            $data['tel'] = I('post.tel');
-            $data['maney'] = I('post.maney');
-            $data['time'] = I('post.time');
-            $data['time_zhong'] = I('post.time_zhong');
-            $data['department'] = I('post.department');
-            $data['type'] = I('post.type');
-            $data['jutidz'] = I('post.jutidz');
-            $data['zhuangt'] = I('post.zhuangt');
+            $user = M("shop"); // 实例化User对象
+            $data = I('post.');//数据
 
              // 图片上传
              $upload = new \Think\Upload();// 实例化上传类
@@ -73,19 +62,23 @@ class ShopController extends Controller
 
             // 上传文件
             $info   =   $upload->upload();
-            $aa = '/img/'.$info['photo']['savepath'].$info['photo']['savename'];
-            $data['photo'] = $aa;
+            // 判断图片是否存在
+            if ($info['logo']['savename']) {
+                $logolujing = '/img/'.$info['logo']['savepath'].$info['logo']['savename'];
+                $data['logo'] = $logolujing;
+            }
+            
             // dump($data);die;
             $res = $user->add($data);
 			$res == true ? $this->success('添加成功') : $this->error('添加失败');
     		// $this->display();
     	}else{
-            // $user = M('ceshi');
-            // $reschengs = $user->select();//城市信息
-            // $user = M('shop_type');
-            // $rescaipinlb = $user->select();//菜品类别
-            // $this->assign("reschengs",$reschengs);
-            // $this->assign("rescaipinlb",$rescaipinlb);
+            $user = M('chengshi');
+            $reschengs = $user->select();//城市信息
+            $user = M('shop_type');
+            $rescaipinlb = $user->select();//门店类别
+            $this->assign("reschengs",$reschengs);
+            $this->assign("rescaipinlb",$rescaipinlb);
             $this->display();
     	}
     	
@@ -93,19 +86,23 @@ class ShopController extends Controller
     public function edit(){
     	if (IS_POST) {
     		$id = I('post.id');
-    		$User = M("ceshi_fu"); // 实例化User对象
+    		$User = M("shop"); // 实例化User对象
     		$where['id'] = $id;
-			$data['name'] = I('post.name');
-            $data['code'] = I('post.code');
-            $data['sub'] = I('post.sub');
-            $data['photo'] = I('post.photo');
-            $data['maney'] = I('post.maney');
-            $data['time'] = I('post.time');
-            $data['time_zhong'] = I('post.time_zhong');
-            $data['department'] = I('post.department');
-            $data['type'] = I('post.type');
-            $data['jutidz'] = I('post.jutidz');
-            $data['zhuangt'] = I('post.zhuangt');
+			$data = I('post.');//更改数据
+              // 图片上传
+             $upload = new \Think\Upload();// 实例化上传类
+            $upload->maxSize   =     3145728 ;// 设置附件上传大小
+            $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+            $upload->rootPath  =     './Public/img/'; // 设置附件上传根目录
+            $upload->savePath  =     ''; // 设置附件上传（子）目录
+
+            // 上传文件
+            $info   =   $upload->upload();
+            // 判断图片是否存在
+            if ($info['logo']['savename']) {
+                $logolujing = '/img/'.$info['logo']['savepath'].$info['logo']['savename'];
+                $data['logo'] = $logolujing;
+            }
 			// dump($data);die;
 			$res = $User->where($where)->data($data)->save();
         	// echo $User->getLastSql();die;
@@ -113,15 +110,16 @@ class ShopController extends Controller
 			$res == true ? $this->success('修改成功') : $this->error('修改失败');
     		// $this->display();
     	}else{
-            $user = M('ceshi');
+            $user = M('chengshi');
             $reschengs = $user->select();//城市信息
             $user = M('shop_type');
-            $rescaipinlb = $user->select();//菜品类别
+            $rescaipinlb = $user->select();//门店类别
             $this->assign("reschengs",$reschengs);
             $this->assign("rescaipinlb",$rescaipinlb);
+            // 查询门店信息
     		$jxdm = I('get.id');
     		// dump($jxdm);die;
-    		$user = M('ceshi_fu');
+    		$user = M('shop');
     		$where['id'] = $jxdm;
     		$data = $user->where($where)->select();
     		// dump($data);die();
@@ -132,7 +130,7 @@ class ShopController extends Controller
     public function delete(){
     	$condition = I('post.id');
     	$where['id'] = $condition;
-    	$res = M('ceshi_fu')->where($where)->delete();
+    	$res = M('shop')->where($where)->delete();
     	if ($res) {
             $this->ajaxReturn(array('status' => true, 'msg' => '删除成功!'));
         } else {

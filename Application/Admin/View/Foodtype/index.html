@@ -1,12 +1,15 @@
-<extend name="Layout/main"/>
-
-<block name="main">
-    <!-- 分页效果 -->
-    <link href="__PUBLIC__/css/mypage.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="__PUBLIC__/muban/assets/js/jquery.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/muban/assets/js/bootstrap.js"></script>
-    <!-- 分页结束 -->
-    <div class="page-container">
+<include file="Layout/main"/><header class="navbar-wrapper"></header>
+<div class="dislpayArrow hidden-xs">
+    <a class="pngfix" href="javascript:;" onclick="displaynavbar(this)"></a>
+</div>
+<section class="Hui-article-box">
+<div id="iframe_box" class="Hui-article">
+    <div class="show_iframe">
+        <div style="display:none" class="loading">
+        </div>
+        <!-- 主题内容 -->
+        <div>
+            <div class="page-container">
         <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
             <a href="javascript:;" onclick="admin_add('添加菜品类别','{:U('Admin/Foodtype/add',array('id'=>"$id"))}','800','500')"
                class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加菜品类别</a></span>
@@ -15,11 +18,10 @@
         <table class="table table-border table-bordered table-bg table-hover table-responsive">
             <thead>
                 <tr class="text-c">
-                    <th width="80">编号</th>
+                    <th width="30">编号</th>
                     <th width="80">名称</th>
-                    <th width="80">门店名称</th>
+                    <th width="80">排序</th>
                     <th width="60">发布状态</th>
-                    <th width="60">顺序</th>
                     <th width="120">操作</th>
                 </tr>
             </thead>
@@ -27,10 +29,7 @@
                 <foreach name="data" item="vo" >
                         <tr class="text-c">
                             <td>{$vo.id}</td>
-                            <td>{$vo.name}</td>
-                            <td>{$vo.dep|shopnamedo=###}</td><!-- 
-                            <td>{$vo.department|chengshizhuanh=###}</td>
-                            <td>{$vo.type|shoptype=###}</td> -->
+                            <td>{$vo.mingch}</td>
                             <td class="td-status">
                                 <if condition="$vo.zhuangt eq 1 ">
                                     <span class="label label-success radius">已发布</span>
@@ -39,28 +38,34 @@
                                 </if>
                             </td>
                             <td>{$vo.paix}</td>
-                             <td class="td-manage">
-                            <a href="javascript:;"
-                               onclick="admin_add('编辑详情','{:U('Admin/Foodtype/edit', array('id' => $vo['id']))}'
-                               ,'800','500')">
-                                <i class="Hui-iconfont">&#xe6df;</i>
-                            </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a class="h-text-sc" id="{$vo.id}"><i class="Hui-iconfont">&#xe6e2;</i></a>
-                        </td>
+                            <td class="td-manage" style="text-align: center;">
+                                
+                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
+                                   onclick="admin_add('编辑详情','{:U('Admin/Foodtype/edit', array('id' => $vo['id']))}'
+                                   ,'800','500')">
+                                    <i class="Hui-iconfont">&#xe6df;</i>
+                                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a class="h-text-sc" id="{$vo.id}"><i class="Hui-iconfont">&#xe6e2;</i></a>
+                            </td>
                         </tr>
                 </foreach>
-                
             </tbody>
         </table>
         </div>
     </div>
-    <!-- 分页效果 -->
-    <div class="result page">
-        <div class="pages">
-            {$info.page}
         </div>
     </div>
-    <script type="text/javascript">
+</div>
+</section>
+<script type="text/javascript">
+    $(document).on("change","#choose",function(){
+        // $('iframe').attr('src',"{:U('Admin/Index/welcome')}");
+        $(".yincangzhuye").click();
+        // console.log(aa);
+        // alert(aa);
+    });
+</script>
+<script type="text/javascript">
         /*删除*/
         $(document).on("click", '.h-text-sc', function () {
             var op_obj = $(this).parents("tr");
@@ -84,4 +89,4 @@
             });
         });
     </script>
-</block>
+<include file="Layout/footer"/>

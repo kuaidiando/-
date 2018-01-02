@@ -36,7 +36,7 @@
                         <tr class="text-c">
                             <td>{$vo.id}</td>
                             <td>{$vo.mingch}</td>
-                            <td><img style="width: 100%;"src="__PUBLIC__{$vo.photo}" alt="图片加载中。。。"></td>
+                            <td><img style="width: 50%;"src="__PUBLIC__{$vo.logo}" alt="图片加载中。。。"></td>
                             <td>{$vo.tel}</td>
                             <td>{$vo.maney}</td>
                             <td>{$vo.time_kai}--{$vo.time_zhong}</td>
@@ -60,7 +60,7 @@
                                     菜品类别&nbsp;&nbsp;
                                 </a><br>
                                 <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑详情','{:U('Admin/Jixing/edit', array('id' => $vo['id']))}'
+                                   onclick="admin_add('编辑详情','{:U('Admin/Shop/edit', array('id' => $vo['id']))}'
                                    ,'800','500')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
                                 </a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -85,4 +85,28 @@
         // alert(aa);
     });
 </script>
+<script type="text/javascript">
+        /*删除*/
+        $(document).on("click", '.h-text-sc', function () {
+            var op_obj = $(this).parents("tr");
+            var id = $(this).attr('id');
+            // alert(id);
+            layer.confirm('确认要删除吗？',function(){
+                $.ajax({
+                    type:'POST',
+                    dataType: 'json',
+                    url:'{:U("Admin/Shop/delete")}',
+                    data:{id:id},
+                    success: function (result) {
+                        if (result.status) {
+                            op_obj.remove();
+                            layer.msg(result.msg,{icon:1,time:1000});
+                        } else {
+                            layer.msg(result.msg,{icon:0,time:2000});
+                        }
+                    }
+                })
+            });
+        });
+    </script>
 <include file="Layout/footer"/>

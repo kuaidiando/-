@@ -63,7 +63,7 @@ $(document).ready(function(){
             <!-- 隐藏主页 -->
             <a _href="<?php echo U('Admin/Index/yinczhuye');?>" name="<?php echo U('Admin/Index/yinczhuye');?>" style="display: none;" data-title="" class="yincangzhuye" href="javascript:;">隐藏主页</a>
             <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
-            <li><a href="#">菜品列表</a></li>
+            <li><a href="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
         </ul>
         </dd>
     </dl>
@@ -73,6 +73,7 @@ $(document).ready(function(){
     $(document).on("click",".shopin",function(){
         //获取城市对应id
         var chengshiid = $("#choose").val();
+        // alert(chengshiid);
         // 页面跳转
         var url = $(this).attr("name")+"?id="+chengshiid;
         window.location.replace(url);
@@ -170,7 +171,7 @@ $(document).ready(function(){
                 <?php if(is_array($resshop)): foreach($resshop as $key=>$vo): ?><tr class="text-c">
                             <td><?php echo ($vo["id"]); ?></td>
                             <td><?php echo ($vo["mingch"]); ?></td>
-                            <td><img style="width: 100%;"src="/kuaidian/Public<?php echo ($vo["photo"]); ?>" alt="图片加载中。。。"></td>
+                            <td><img style="width: 50%;"src="/kuaidian/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
                             <td><?php echo ($vo["tel"]); ?></td>
                             <td><?php echo ($vo["maney"]); ?></td>
                             <td><?php echo ($vo["time_kai"]); ?>--<?php echo ($vo["time_zhong"]); ?></td>
@@ -192,7 +193,7 @@ $(document).ready(function(){
                                     菜品类别&nbsp;&nbsp;
                                 </a><br>
                                 <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Jixing/edit', array('id' => $vo['id']));?>'
+                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Shop/edit', array('id' => $vo['id']));?>'
                                    ,'800','500')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
                                 </a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -216,6 +217,30 @@ $(document).ready(function(){
         // alert(aa);
     });
 </script>
+<script type="text/javascript">
+        /*删除*/
+        $(document).on("click", '.h-text-sc', function () {
+            var op_obj = $(this).parents("tr");
+            var id = $(this).attr('id');
+            // alert(id);
+            layer.confirm('确认要删除吗？',function(){
+                $.ajax({
+                    type:'POST',
+                    dataType: 'json',
+                    url:'<?php echo U("Admin/Shop/delete");?>',
+                    data:{id:id},
+                    success: function (result) {
+                        if (result.status) {
+                            op_obj.remove();
+                            layer.msg(result.msg,{icon:1,time:1000});
+                        } else {
+                            layer.msg(result.msg,{icon:0,time:2000});
+                        }
+                    }
+                })
+            });
+        });
+    </script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>

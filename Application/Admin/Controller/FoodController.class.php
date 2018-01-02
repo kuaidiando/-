@@ -34,10 +34,14 @@ class FoodController extends Controller
         $id = I('get.id');
         // dump($id);die;
         $user = M('food');
-        $where['dep'] = $id;
+        $where['dep_shop'] = $id;
         $data = $user->where($where)->select();
-        $this->assign('data',$data);
-        $this->assign('id',$id);
+          //城市级联
+        $user = M('chengshi');
+        $result = $user ->select();
+        $this->assign('res',$result);//城市信息
+        $this->assign('data',$data);//查询菜品信息
+        $this->assign('id',$id);//门店id
         $this->display();
     }
     public function add(){

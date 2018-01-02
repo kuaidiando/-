@@ -35,13 +35,16 @@ class ShoptypeController extends Controller
         if ($id == 1) {
             $user = M('shop_type');
             $result = $user ->select();
-            $this->assign('res',$result);
         }else{
             $user = M('shop_type');
             $where['department'] = $id;
             $result = $user->where($where)->select();
-            $this->assign('res',$result);
         }
+            $this->assign('resshoptype',$result);
+             //城市级联
+        $user = M('chengshi');
+        $result = $user ->select();
+        $this->assign('res',$result);
         // dump($result);die;
         $this->display();
     }
@@ -49,19 +52,11 @@ class ShoptypeController extends Controller
     	if (IS_POST) {
             //获取机构编码
              $user = M("shop_type"); // 实例化User对象
-            $data['name'] = I('post.name');
-            $data['zhuangt'] = I('post.zhuangt');
-            $data['paix'] = I('post.paix');
+            $data = I('post.');
             $res = $user->add($data);
 			$res == true ? $this->success('添加成功') : $this->error('添加失败');
     		// $this->display();
     	}else{
-            // $user = M('ceshi');
-            // $reschengs = $user->select();//城市信息
-            // $user = M('shop_type');
-            // $rescaipinlb = $user->select();//菜品类别
-            // $this->assign("reschengs",$reschengs);
-            // $this->assign("rescaipinlb",$rescaipinlb);
             $this->display();
     	}
     	

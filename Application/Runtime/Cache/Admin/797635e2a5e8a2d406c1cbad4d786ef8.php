@@ -45,29 +45,26 @@ $(document).ready(function(){
 </head>
 <body>
 <article class="page-container">
-    <form class="form form-horizontal" id="form-article-add" action="<?php echo U('Jixing/add');?>" method="post" enctype="multipart/form-data">
+    <form class="form form-horizontal" id="form-article-add" action="<?php echo U('Admin/Shop/add');?>" method="post" enctype="multipart/form-data">
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="name">
+                <input type="text" class="input-text" value="" placeholder="" id="" name="mingch">
             </div>
         </div>
+
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>账号：</label>
+            <label class="form-label col-xs-4 col-sm-2">LOGO：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="code">
-            </div>
-        </div>
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>密码：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="sub">
+                <div class="uploader-thum-container">
+                    <input type="file" name="logo">
+                </div>
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">手机号：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="tel">
+                <input type="text" class="input-text" value="" placeholder=""  name="tel">
             </div>
         </div>
         <div class="row cl">
@@ -79,7 +76,7 @@ $(document).ready(function(){
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">营业时间：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="time" class="input-text" value="06:00" style="width: 20%" name="time">&nbsp;
+                <input type="time" class="input-text" value="06:00" style="width: 20%" name="time_kai">&nbsp;
                 &nbsp;&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="time" class="input-text" value="18:00" style="width: 20%" name="time_zhong">
             </div>
@@ -88,8 +85,8 @@ $(document).ready(function(){
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>所属城市：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <span class="select-box">
-                <select name="department" class="select">
-                    <?php if(is_array($reschengs)): foreach($reschengs as $key=>$vocs): ?><option value="<?php echo ($vocs["id"]); ?>" ><?php echo ($vocs["name"]); ?></option><?php endforeach; endif; ?>
+                <select name="depchengshi" class="select">
+                    <?php if(is_array($reschengs)): foreach($reschengs as $key=>$vocs): ?><option value="<?php echo ($vocs["id"]); ?>" ><?php echo ($vocs["mingch"]); ?></option><?php endforeach; endif; ?>
                 </select>
                 </span>
             </div>
@@ -102,11 +99,11 @@ $(document).ready(function(){
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>类别：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>门店类别：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <span class="select-box">
-                <select name="type" class="select">
-                    <?php if(is_array($rescaipinlb)): foreach($rescaipinlb as $key=>$volb): ?><option value="<?php echo ($volb["id"]); ?>" ><?php echo ($volb["name"]); ?></option><?php endforeach; endif; ?>
+                <select name="type_shop" class="select">
+                    <?php if(is_array($rescaipinlb)): foreach($rescaipinlb as $key=>$volb): ?><option value="<?php echo ($volb["id"]); ?>" ><?php echo ($volb["mingch"]); ?></option><?php endforeach; endif; ?>
                 </select>
                 </span>
             </div>
@@ -115,15 +112,7 @@ $(document).ready(function(){
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">详细地址：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="jutidz">
-            </div>
-        </div>
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">LOGO：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <div class="uploader-thum-container">
-                    <input type="file" name="photo">
-                </div>
+                <input type="text" class="input-text" value="" placeholder="" id="" name="jutidizhi">
             </div>
         </div>
         
