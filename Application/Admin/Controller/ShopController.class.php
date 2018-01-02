@@ -80,12 +80,12 @@ class ShopController extends Controller
 			$res == true ? $this->success('添加成功') : $this->error('添加失败');
     		// $this->display();
     	}else{
-            $user = M('ceshi');
-            $reschengs = $user->select();//城市信息
-            $user = M('shop_type');
-            $rescaipinlb = $user->select();//菜品类别
-            $this->assign("reschengs",$reschengs);
-            $this->assign("rescaipinlb",$rescaipinlb);
+            // $user = M('ceshi');
+            // $reschengs = $user->select();//城市信息
+            // $user = M('shop_type');
+            // $rescaipinlb = $user->select();//菜品类别
+            // $this->assign("reschengs",$reschengs);
+            // $this->assign("rescaipinlb",$rescaipinlb);
             $this->display();
     	}
     	

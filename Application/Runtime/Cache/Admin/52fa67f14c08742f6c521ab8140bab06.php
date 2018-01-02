@@ -146,7 +146,7 @@ $(document).ready(function(){
         <div>
             <div class="page-container">
         <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-            <a href="javascript:;" onclick="admin_add('添加门店','<?php echo U('Admin/Jixing/add');?>','800','500')"
+            <a href="javascript:;" onclick="admin_add('添加门店','<?php echo U('Admin/Shop/add');?>','800','500')"
                class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加门店</a></span>
             <span class="r">共有数据：<strong><?php echo ($info["count"]); ?></strong> 条</span> </div>
         <div class="mt-20">
