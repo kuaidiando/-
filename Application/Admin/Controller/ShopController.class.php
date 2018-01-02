@@ -35,13 +35,12 @@ class ShopController extends Controller
         if ($id == 1) {
             $user = M('shop');
             $result = $user ->select();
-            $this->assign('res',$result);
         }else{
             $user = M('shop');
             $where['depchengshi'] = $id;
             $result = $user->where($where)->select();
-            $this->assign('res',$result);
         }
+        $this->assign('resshop',$result);
         $this->display();
     }
     public function add(){

@@ -28,10 +28,6 @@ class IndexController extends Controller
     public function zhuye(){
         $user = M('chengshi');
         $result = $user ->select();
-        
-        $menuTree = menuToTree(C('MENU'));
-        // dump($menuTree);die;
-        $this->assign('menus', $menuTree);
         $this->assign('res',$result);
         $this->display();
     }

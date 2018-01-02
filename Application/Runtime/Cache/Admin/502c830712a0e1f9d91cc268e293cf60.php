@@ -8,12 +8,21 @@
           content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="/kuaidian/Public/admin/lib/html5.js"></script>
-    <script type="text/javascript" src="/kuaidian/Public/admin/lib/respond.min.js"></script>
-    <script type="text/javascript" src="/kuaidian/Public/admin/lib/PIE_IE678.js"></script>
-    <![endif]-->
+    <script type="text/javascript">
+$(document).ready(function(){
+ $("dd").hide();
+ $("dt a").click(function(){
+ $(this).parent().toggleClass("bg");
+ $(this).parent().prevAll("dt").removeClass("bg")
+ $(this).parent().nextAll("dt").removeClass("bg")
+ $(this).parent().next().slideToggle();
+ $(this).parent().prevAll("dd").slideUp("slow");
+ $(this).parent().next().nextAll("dd").slideUp("slow");
+ return false;
+});
+});
+</script>
+    <!-- <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script> -->
     <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui/css/H-ui.min.css"/>
     <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/H-ui.admin.css"/>
     <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
@@ -23,11 +32,6 @@
     <link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/>
     <!-- 分页效果 -->
     <link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
-    <!-- 分页结束 -->
-    <!--[if IE 6]>
-    <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js"></script>
-    <script>DD_belatedPNG.fix('*');</script>
-    <![endif]-->
     <title>快点</title>
     <div class="navbar navbar-fixed-top">
     <div class="container-fluid cl">
@@ -53,16 +57,16 @@
 <aside class="Hui-aside"><input runat="server" id="divScrollValue" type="hidden" value=""/>
 <div class="menu_dropdown bk_2" id="menu_nav">
     <dl>
-        <dt>门店管理</dt>
-        <dd>
-        <ul>
-        <!-- 隐藏主页 -->
-            <a _href="<?php echo U('Admin/Index/yinczhuye');?>" name="<?php echo U('Admin/Index/yinczhuye');?>" style="display: none;" data-title="" class="yincangzhuye" href="javascript:;">asdf</a>
+         <dt><a href="#">门店管理</a></dt>
+         <dd>
+         <ul>
+           <!-- 隐藏主页 -->
+            <a _href="<?php echo U('Admin/Index/yinczhuye');?>" name="<?php echo U('Admin/Index/yinczhuye');?>" style="display: none;" data-title="" class="yincangzhuye" href="javascript:;">隐藏主页</a>
             <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
             <li><a href="#">菜品列表</a></li>
-            <li><a href="#">郑州酒店</a></li>
-        </ul>
-    </dl>
+         </ul>
+         </dd>
+        </dl>
 </div>
 </aside>
 <script type="text/javascript">
