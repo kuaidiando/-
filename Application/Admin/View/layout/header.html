@@ -43,7 +43,7 @@ $(document).ready(function(){
             <!-- 城市级联 -->
             <select name="choose" id="choose" style="width: 50%;" class="select">
                 <foreach name="res" item="vo">
-                <option  value="{$vo.code}" <if condition="$vo['id'] eq $chengshiid"> selected="selected" </if>>{$vo.name}</option>
+                <option  value="{$vo.code}" <if condition="$vo['code'] eq $chengshiid"> selected="selected" </if>>{$vo.name}</option>
                 </foreach>
             </select>
         </div>
@@ -73,7 +73,7 @@ $(document).ready(function(){
             <!-- 隐藏主页 -->
             <!-- <a _href="{:U('Admin/Index/yinczhuye')}" name="{:U('Admin/Index/yinczhuye')}" style="display: none;"class="" href="javascript:;">隐藏主页</a> -->
             <li><a class="shopin" name="{:U('Admin/Shop/index')}">门店列表</a></li>
-            <li><a href="{:U('Admin/Shoptype/index')}">门店类别</a></li>
+            <li><a class="shopin" name="{:U('Admin/Shoptype/index')}">门店类别</a></li>
         </ul>
         </dd>
     </dl>

@@ -34,17 +34,18 @@ class ShoptypeController extends Controller
          $id = I('get.id');
         if ($id == 1) {
             $user = M('shop_type');
-            $result = $user ->select();
+            $resmendcai = $user ->select();
         }else{
             $user = M('shop_type');
             $where['department'] = $id;
-            $result = $user->where($where)->select();
+            $resmendcai = $user->where($where)->select();
         }
-            $this->assign('resshoptype',$result);
+            $this->assign('resshoptype',$resmendcai);
              //城市级联
-        $user = M('chengshi');
-        $result = $user ->select();
+        $user = M('city');
+        $result = $user ->select();//城市级联
         $this->assign('res',$result);
+        $this->assign('chengshiid',I('get.id'));//城市id
         // dump($result);die;
         $this->display();
     }
