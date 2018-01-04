@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
  $("dd").hide();

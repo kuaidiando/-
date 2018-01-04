@@ -86,7 +86,7 @@ $(document).ready(function(){
             <!-- 市 -->
             <div class="formControls col-xs-8 col-sm-9" style="width: 25%;">
                 <span class="select-box">
-                <select name="depcsjlsheng"  class="select" id="selshen">
+                <select name="depcsjlsheng"  class="select" id="selsheng">
                     <?php if(is_array($shopchengshi)): foreach($shopchengshi as $key=>$vocs): ?><option value="<?php echo ($vocs["code"]); ?>"><?php echo ($vocs["name"]); ?></option><?php endforeach; endif; ?>
                 </select>
                 </span>
@@ -135,19 +135,22 @@ $(document).ready(function(){
     </form>
 </article>
 <script type="text/javascript">
-    $(document).on('change','#selshen',function(){
+    $(document).on('change','#selsheng',function(){
         var jlshenid = $(this).val();//获取市对应code
         $.ajax({
-            type:"post",
-            url:"<?php echo U('Admin/Ajax/index');?>",
-            dataType:"json",
-            data:{jlshenid:jlshenid}
-            success:function(){
-                alert(123);
-            },error:function(){
-                alert(456);
-            }
-        });
+                    type:'POST',
+                    dataType: 'json',
+                    url:'<?php echo U("Admin/Ajax/index");?>',
+                    data:{id:id},
+                    success: function (result) {
+                        if (result.status) {
+                            op_obj.remove();
+                            layer.msg(result.msg,{icon:1,time:1000});
+                        } else {
+                            layer.msg(result.msg,{icon:0,time:2000});
+                        }
+                    }
+                })
     });
 </script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>

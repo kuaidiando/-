@@ -43,7 +43,7 @@
             <!-- 市 -->
             <div class="formControls col-xs-8 col-sm-9" style="width: 25%;">
                 <span class="select-box">
-                <select name="depcsjlsheng"  class="select" id="selshen">
+                <select name="depcsjlsheng"  class="select" id="selsheng">
                     <foreach name="shopchengshi" item="vocs" >
                         <option value="{$vocs.code}">{$vocs.name}</option>
                     </foreach>
@@ -96,19 +96,22 @@
     </form>
 </article>
 <script type="text/javascript">
-    $(document).on('change','#selshen',function(){
+    $(document).on('change','#selsheng',function(){
         var jlshenid = $(this).val();//获取市对应code
         $.ajax({
-            type:"post",
-            url:"{:U('Admin/Ajax/index')}",
-            dataType:"json",
-            data:{jlshenid:jlshenid}
-            success:function(){
-                alert(123);
-            },error:function(){
-                alert(456);
-            }
-        });
+                    type:'POST',
+                    dataType: 'json',
+                    url:'{:U("Admin/Ajax/index")}',
+                    data:{id:id},
+                    success: function (result) {
+                        if (result.status) {
+                            op_obj.remove();
+                            layer.msg(result.msg,{icon:1,time:1000});
+                        } else {
+                            layer.msg(result.msg,{icon:0,time:2000});
+                        }
+                    }
+                })
     });
 </script>
 <include file="Layout/footer"/>
