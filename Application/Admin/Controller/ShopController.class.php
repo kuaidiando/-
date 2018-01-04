@@ -74,7 +74,7 @@ class ShopController extends Controller
 			$res == true ? $this->success('添加成功') : $this->error('添加失败');
     		// $this->display();
     	}else{
-            $user = M('city');
+            $user = M('city');//城市-市
             $result = $user ->select();
             $this->assign('shopchengshi',$result);//城市信息
             $user = M('shop_type');
