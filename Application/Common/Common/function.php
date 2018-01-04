@@ -133,7 +133,7 @@ function foodtype($code){
     $result = $user->where($where)->field('mingch')->select();
     // echo $user->getLastsql();
     // dump($result);die;
-  return $result[0]['mingch'];
+    return $result[0]['mingch'];
 }
 /**
  * 统一资源定位
