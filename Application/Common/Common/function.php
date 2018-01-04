@@ -134,6 +134,7 @@ function foodtype($code){
     // echo $user->getLastsql();
     // dump($result);die;
 <<<<<<< HEAD
+<<<<<<< HEAD
   return $result[0]['name'];
 }
 /**
@@ -176,6 +177,9 @@ function sms_code($num=6)
 
     $s_num = pow(10, $num-1);
     return mt_rand($s_num+1, $s_num*10-1);
+=======
+  return $result[0]['mingch'];
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 =======
   return $result[0]['mingch'];
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd

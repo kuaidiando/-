@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [ 2018-01-03T13:23:35+08:00 ] 127.0.0.1 /-/index.php/home/reg
+=======
+[ 2018-01-03T09:11:40+08:00 ] ::1 /kuaidian/
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 =======
 [ 2018-01-03T09:11:40+08:00 ] ::1 /kuaidian/
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
@@ -7,6 +11,7 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
@@ -2334,10 +2339,15 @@ SQL: SELECT * FROM `user` WHERE `tel` = null LIMIT 1   [ RunTime:0.0000s ]
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\ee6187b531c8c3fdfd2fbe6fcd612b04.php 第 10 行.
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\ee6187b531c8c3fdfd2fbe6fcd612b04.php 第 12 行.
@@ -2355,10 +2365,15 @@ INFO: [ view_parse ] --END-- [ RunTime:0.062500s ]
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114007s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.114007s ]
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114007s ]
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_end ] --START--
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
 INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
@@ -2392,6 +2407,8 @@ SQL: SELECT * FROM `user` WHERE `tel` = null LIMIT 1   [ RunTime:0.0000s ]
 SQL: SELECT * FROM `user` WHERE `tel` = '13331385580' LIMIT 1   [ RunTime:0.0156s ]
 SQL: INSERT INTO `user` (`password`,`tel`,`add_time`,`status`) VALUES ('698d51a19d8a121ce581499d7b701668','13331385580','2018-01-03 18:07:15','0') [ RunTime:0.0000s ]
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
 
@@ -2402,11 +2419,15 @@ INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
@@ -2419,6 +2440,8 @@ INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
 [ 2018-01-03T18:07:16+08:00 ] 127.0.0.1 /-/index.php/home/login/index.html
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.178010s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.178010s ]
 INFO: [ view_filter ] --START--
@@ -2429,14 +2452,22 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
 
 [ 2018-01-03T13:24:16+08:00 ] ::1 /kuaidian/index.php
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 =======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
@@ -2445,6 +2476,7 @@ INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 11 行.
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 12 行.
@@ -2470,6 +2502,8 @@ INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 
 [ 2018-01-03T18:07:27+08:00 ] 127.0.0.1 /-/index.php/home/login/%7BU('Manage/Login/check')%7D
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
 INFO: [ view_filter ] --START--
@@ -2480,12 +2514,16 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-03T13:26:02+08:00 ] ::1 /kuaidian/index.php
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
 ERR: 非法操作:{U('Manage
@@ -2500,10 +2538,14 @@ INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
 =======
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 11 行.
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 12 行.
@@ -2519,16 +2561,22 @@ INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 [ 2018-01-03T18:09:41+08:00 ] 127.0.0.1 /-/index.php/home/login/index.html
 INFO: [ app_init ] --START--
@@ -2538,6 +2586,8 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 [ 2018-01-03T13:26:07+08:00 ] ::1 /kuaidian/index.php
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -2545,11 +2595,15 @@ INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 11 行.
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 12 行.
@@ -2565,18 +2619,27 @@ INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [ 2018-01-03T18:10:34+08:00 ] 127.0.0.1 /-/index.php/home/login/index.html
+=======
+[ 2018-01-03T13:26:08+08:00 ] ::1 /kuaidian/index.php
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 =======
 [ 2018-01-03T13:26:08+08:00 ] ::1 /kuaidian/index.php
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
@@ -2585,8 +2648,13 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 =======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
@@ -2595,6 +2663,7 @@ INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 11 行.
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 12 行.
@@ -2615,6 +2684,8 @@ INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
 
 [ 2018-01-03T18:11:48+08:00 ] 127.0.0.1 /-/index.php/home/login/index.html
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
 INFO: [ view_filter ] --START--
@@ -2625,6 +2696,7 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
 
 [ 2018-01-03T13:26:08+08:00 ] ::1 /kuaidian/index.php
+<<<<<<< HEAD
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -2671,6 +2743,12 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
 =======
+=======
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 INFO: [ view_parse ] --START--
@@ -2693,11 +2771,15 @@ INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 11 行.
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 12 行.
@@ -2736,6 +2818,8 @@ ERR: 非法操作:{U('Home
 
 [ 2018-01-03T18:16:23+08:00 ] 127.0.0.1 /-/index.php/home/login/index.html
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
 INFO: [ view_filter ] --START--
@@ -2746,14 +2830,22 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-03T13:29:32+08:00 ] ::1 /kuaidian/index.php
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 =======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
@@ -2762,6 +2854,7 @@ INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 11 行.
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 12 行.
@@ -2842,6 +2935,8 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
 INFO: [ view_filter ] --START--
@@ -2858,11 +2953,15 @@ INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 11 行.
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 12 行.
@@ -2878,16 +2977,22 @@ INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 [ 2018-01-03T18:16:34+08:00 ] 127.0.0.1 /-/index.php/Home/Login/check.html
 INFO: [ app_init ] --START--
@@ -2978,6 +3083,8 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 [ 2018-01-03T13:29:50+08:00 ] ::1 /kuaidian/index.php
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -2985,11 +3092,15 @@ INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 11 行.
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 12 行.
@@ -3018,6 +3129,8 @@ INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
 
 [ 2018-01-03T18:19:41+08:00 ] 127.0.0.1 /-/index.php/home/login/index.html
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
 INFO: [ view_filter ] --START--
@@ -3028,6 +3141,9 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-03T13:29:50+08:00 ] ::1 /kuaidian/index.php
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -3039,6 +3155,7 @@ INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 11 行.
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 12 行.
@@ -3054,10 +3171,15 @@ INFO: [ view_parse ] --END-- [ RunTime:0.062500s ]
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_end ] --START--
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
 INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
@@ -3140,6 +3262,8 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
@@ -3150,11 +3274,15 @@ INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.218750s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.218750s ]
@@ -3173,6 +3301,8 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
 INFO: [ view_filter ] --START--
@@ -3189,11 +3319,15 @@ INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 11 行.
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 12 行.
@@ -3217,6 +3351,8 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
 INFO: [ view_filter ] --START--
@@ -3230,6 +3366,9 @@ INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
@@ -3238,6 +3377,7 @@ INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 11 行.
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 12 行.
@@ -3258,6 +3398,8 @@ INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
 
 [ 2018-01-03T18:27:11+08:00 ] 127.0.0.1 /-/index.php/home/reg
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
 INFO: [ view_filter ] --START--
@@ -3268,11 +3410,15 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-03T13:36:48+08:00 ] ::1 /kuaidian/index.php
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
@@ -3283,10 +3429,15 @@ SQL: SELECT * FROM `user` WHERE `tel` = null LIMIT 1   [ RunTime:0.0000s ]
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\ee6187b531c8c3fdfd2fbe6fcd612b04.php 第 10 行.
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\ee6187b531c8c3fdfd2fbe6fcd612b04.php 第 12 行.
@@ -3309,6 +3460,8 @@ INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
 [ 2018-01-03T18:27:12+08:00 ] 127.0.0.1 /-/index.php/Home/Reg/showcode
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
 INFO: [ view_filter ] --START--
@@ -3319,11 +3472,15 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-03T13:43:44+08:00 ] ::1 /kuaidian/index.php
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
@@ -3379,17 +3536,23 @@ INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
 
 [ 2018-01-03T19:19:40+08:00 ] 127.0.0.1 /-/index.php/home/reg
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `shop`  [ RunTime:0.0010s ]
 
 [ 2018-01-03T13:43:54+08:00 ] ::1 /kuaidian/index.php
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
@@ -3397,15 +3560,21 @@ NOTIC: [8] Undefined variable: tel E:\wamp\wamp\www\-\Application\Home\Controlle
 SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0625s ]
 SQL: SELECT * FROM `user` WHERE `tel` = null LIMIT 1   [ RunTime:0.0000s ]
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `shop`  [ RunTime:0.0000s ]
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\ee6187b531c8c3fdfd2fbe6fcd612b04.php 第 10 行.
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\ee6187b531c8c3fdfd2fbe6fcd612b04.php 第 75 行.
@@ -3420,6 +3589,8 @@ INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
 
 [ 2018-01-03T19:19:41+08:00 ] 127.0.0.1 /-/index.php/Home/Reg/showcode
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
 INFO: [ view_filter ] --START--
@@ -3430,11 +3601,15 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-03T13:53:18+08:00 ] ::1 /kuaidian/index.php
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
@@ -3458,15 +3633,21 @@ NOTIC: [8] Undefined variable: tel E:\wamp\wamp\www\-\Application\Home\Controlle
 SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0469s ]
 SQL: SELECT * FROM `user` WHERE `tel` = null LIMIT 1   [ RunTime:0.0000s ]
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
 SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `shop`  [ RunTime:0.0000s ]
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\ee6187b531c8c3fdfd2fbe6fcd612b04.php 第 10 行.
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\ee6187b531c8c3fdfd2fbe6fcd612b04.php 第 75 行.
@@ -3503,6 +3684,8 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
 INFO: [ view_filter ] --START--
@@ -3521,11 +3704,15 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `shop`  [ RunTime:0.0000s ]
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 11 行.
 NOTIC: [8] Undefined variable: smarty E:\wamp\wamp\www\-\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 12 行.
@@ -3557,6 +3744,8 @@ NOTIC: [8] Undefined index: type E:\wamp\wamp\www\-\Application\Home\Controller\
 
 [ 2018-01-03T19:20:08+08:00 ] 127.0.0.1 /-/index.php/home/index/index.html
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
 INFO: [ view_filter ] --START--
@@ -3567,24 +3756,34 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-03T13:54:01+08:00 ] ::1 /kuaidian/index.php
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0020s ]
 SQL: SELECT * FROM `shop`  [ RunTime:0.0000s ]
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
@@ -3595,6 +3794,8 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
 INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
 =======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
 INFO: [ view_filter ] --START--
@@ -3603,5 +3804,8 @@ INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
 >>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 
