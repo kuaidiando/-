@@ -100,7 +100,7 @@
         var jlshenid = $(this).val();//获取市对应code
         $.ajax({
             type:"post",
-            url:"{:U('Admin/ChenshiAjax/index')}",
+            url:"{:U('Admin/Ajax/index')}",
             dataType:"json",
             data:{jlshenid:jlshenid}
             success:function(){

@@ -139,7 +139,7 @@ $(document).ready(function(){
         var jlshenid = $(this).val();//获取市对应code
         $.ajax({
             type:"post",
-            url:"<?php echo U('');?>",
+            url:"<?php echo U('Admin/Ajax/index');?>",
             dataType:"json",
             data:{jlshenid:jlshenid}
             success:function(){

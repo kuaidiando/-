@@ -119,7 +119,7 @@
   });
 </script> 
     <!--中间商品部分-->
-    
+    <?php if(is_array($data)): foreach($data as $key=>$): endforeach; endif; ?>
     <div class="zhongjian">
         <div class="shangpin">
             <div class="hezi">
