@@ -98,15 +98,25 @@ function getZhenDuanContent($id, $uid)
     return $word;
 }
 //yxy
-//后台城市转换
+//后台城市转换 --市
 function depchengshi($code)
 {
-  $user = M('chengshi');
-    $where['id'] = $code;
-    $result = $user->where($where)->field('mingch')->select();
+  $user = M('city');
+    $where['code'] = $code;
+    $result = $user->where($where)->field('name')->select();
     // echo $user->getLastsql();
     // dump($result);die;
-  return $result[0]['mingch'];
+  return $result[0]['name'];
+}
+//后台城市转换 --县
+function depjilianxian($code)
+{
+  $user = M('area');
+    $where['code'] = $code;
+    $result = $user->where($where)->field('name')->select();
+    // echo $user->getLastsql();
+    // dump($result);die;
+  return $result[0]['name'];
 }
 //后台店铺类别
 function shoptype($code){

@@ -40,16 +40,26 @@
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>所属城市：</label>
-            <div class="formControls col-xs-8 col-sm-9">
+            <!-- 市 -->
+            <div class="formControls col-xs-8 col-sm-9" style="width: 25%;">
                 <span class="select-box">
-                <select name="depchengshi" class="select">
+                <select name="depcsjlshi" class="select"  id="selsheng">
                 <!-- 单条信息城市 -->
                 <foreach name="data" item="vosscs">
-                <!-- 所有城市 -->
-                    <foreach name="reschengs" item="vocs" >
-                        <option value="{$vocs.id}" <if condition="$vocs['id'] eq $vosscs['depchengshi']">selected="selected"</if> >{$vocs.mingch}</option>
+                <!-- 所有城市  市 -->
+                    <foreach name="shopchengshi" item="vocs" >
+                        <option value="{$vocs.code}" <if condition="$vocs['code'] eq $vosscs['depcsjlshi']">selected="selected"</if> >{$vocs.name}</option>
                     </foreach>
                 </foreach>
+                </select>
+                </span>
+            </div>
+                <!-- 区 （县） -->
+            <div class="formControls col-xs-8 col-sm-9" style="width: 25%;">
+                <span class="select-box">
+                <select name="depcsjlxian" class="select"  id="selshi">
+                <!-- 单条信息城市 -->
+                        <option value="{$data.0.depcsjlxian}">{$data.0.depcsjlxian|depjilianxian=###}</option>
                 </select>
                 </span>
             </div>
@@ -104,4 +114,25 @@
         </div>
     </form>
 </article>
+
+<script type="text/javascript">
+    $(document).on('change','#selsheng',function(){
+        var codesheng = $(this).val();//获取市对应code
+        var str = '';//城市对应区域
+        $.ajax({
+            type:'post',
+            dataType: 'json',
+            url:'{:U("Admin/Ajax/index")}',
+            data:{codesheng:codesheng},
+            success: function (dd) {
+                // 获取区域名称
+                $.each(dd,function(index,item){
+                    str += '<option value="'+item.code+'">'+item.name+'</option>'; 
+                })
+                //赋值区域
+                $("#selshi").html(str);
+            }
+        })
+    });
+</script>
 <include file="Layout/footer"/>

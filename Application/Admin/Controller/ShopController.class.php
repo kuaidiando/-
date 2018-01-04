@@ -1,4 +1,9 @@
 <?php
+/**
+ * AJAX控制器 AJAXController.class.php
+ * Author: 杨旭亚
+ * Date: 2017年12月29日
+*/
 namespace Admin\Controller;
 
 use Admin\Model\SysDmJxModel;
@@ -34,18 +39,18 @@ class ShopController extends Controller
         $id = I('get.id');
         if ($id == 1) {
             $user = M('shop');
-            $result = $user ->select();
+            $resmend = $user ->select();
         }else{
             $user = M('shop');
-            $where['depchengshi'] = $id;
-            $result = $user->where($where)->select();
+            $where['depcsjlshi'] = $id;
+            $resmend = $user->where($where)->select();
         }
-        $this->assign('resshop',$result);//门店信息
+        $this->assign('resshop',$resmend);//门店信息
         //城市级联
-        $user = M('chengshi');
+        $user = M('city');
         $result = $user ->select();//城市级联
-        $this->assign('chengshiid',I('get.id'));//城市id
         $this->assign('res',$result);
+        $this->assign('chengshiid',I('get.id'));//城市id
         $this->display();
     }
     public function add(){
@@ -112,12 +117,14 @@ class ShopController extends Controller
 			$res == true ? $this->success('修改成功') : $this->error('修改失败');
     		// $this->display();
     	}else{
-            $user = M('chengshi');
-            $reschengs = $user->select();//城市信息
+            $user = M('city');//城市-市
+            $result = $user ->select();
+            $this->assign('shopchengshi',$result);//城市信息 -市
+
             $user = M('shop_type');
             $rescaipinlb = $user->select();//门店类别
-            $this->assign("reschengs",$reschengs);
             $this->assign("rescaipinlb",$rescaipinlb);
+
             // 查询门店信息
     		$jxdm = I('get.id');
     		// dump($jxdm);die;
@@ -125,7 +132,7 @@ class ShopController extends Controller
     		$where['id'] = $jxdm;
     		$data = $user->where($where)->select();
     		// dump($data);die();
-    		$this->assign('data',$data);
+    		$this->assign('data',$data);// 查询门店信息
     		$this->display();
     	}
     }

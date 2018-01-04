@@ -43,7 +43,7 @@
             <!-- 市 -->
             <div class="formControls col-xs-8 col-sm-9" style="width: 25%;">
                 <span class="select-box">
-                <select name="depcsjlsheng"  class="select" id="selsheng">
+                <select name="depcsjlshi"  class="select" id="selsheng">
                     <foreach name="shopchengshi" item="vocs" >
                         <option value="{$vocs.code}">{$vocs.name}</option>
                     </foreach>
@@ -53,8 +53,9 @@
             <!-- 县区 -->
             <div class="formControls col-xs-8 col-sm-9" style="width: 25%;">
                 <span class="select-box">
-                <select name="depcsjlshi"  class="select" id="selshi">
-                        <option value=""></option>
+                <select name="depcsjlxian"  class="select" id="selshi">
+                    <!-- js添加 -->
+                    <option ></option>
                 </select>
                 </span>
             </div>
@@ -97,21 +98,22 @@
 </article>
 <script type="text/javascript">
     $(document).on('change','#selsheng',function(){
-        var jlshenid = $(this).val();//获取市对应code
+        var codesheng = $(this).val();//获取市对应code
+        var str = '';//城市对应区域
         $.ajax({
-                    type:'POST',
-                    dataType: 'json',
-                    url:'{:U("Admin/Ajax/index")}',
-                    data:{id:id},
-                    success: function (result) {
-                        if (result.status) {
-                            op_obj.remove();
-                            layer.msg(result.msg,{icon:1,time:1000});
-                        } else {
-                            layer.msg(result.msg,{icon:0,time:2000});
-                        }
-                    }
+            type:'post',
+            dataType: 'json',
+            url:'{:U("Admin/Ajax/index")}',
+            data:{codesheng:codesheng},
+            success: function (dd) {
+                // 获取区域名称
+                $.each(dd,function(index,item){
+                    str += '<option value="'+item.code+'">'+item.name+'</option>'; 
                 })
+                //赋值区域
+                $("#selshi").html(str);
+            }
+        })
     });
 </script>
 <include file="Layout/footer"/>

@@ -40,7 +40,7 @@
                             <td>{$vo.tel}</td>
                             <td>{$vo.maney}</td>
                             <td>{$vo.time_kai}--{$vo.time_zhong}</td>
-                            <td>{$vo.depchengshi|depchengshi=###}</td>
+                            <td>{$vo.depcsjlshi|depchengshi=###}</td>
                             <td>{$vo.type_shop|shoptype=###}</td>
                             <td>{$vo.jutidizhi}</td>
                             <td class="td-status">
@@ -51,11 +51,11 @@
                                 </if>
                             </td>
                             <td class="td-manage" style="text-align: center;">
-                                <a href="{:U('Admin/Food/index',array('id' => $vo['id']))}" style="text-decoration: none;">
+                                <a href="{:U('Admin/Food/index',array('menid' => $vo['id'],'id' => $chengshiid))}" style="text-decoration: none;">
                                    
                                     &nbsp;&nbsp;菜品&nbsp;&nbsp;
                                 </a>
-                                <a href="{:U('Admin/Foodtype/index',array('id' => $vo['id']))}" style="text-decoration: none;">
+                                <a href="{:U('Admin/Foodtype/index',array('id' => $vo['id'],'id' => $chengshiid))}" style="text-decoration: none;">
                                    
                                     菜品类别&nbsp;&nbsp;
                                 </a><br>

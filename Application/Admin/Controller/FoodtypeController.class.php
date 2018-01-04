@@ -37,9 +37,10 @@ class FoodtypeController extends Controller
         $where['dep_type'] = $id;
         $data = $user->where($where)->select();
          //城市级联
-        $user = M('chengshi');
+        $user = M('city');
         $result = $user ->select();
         $this->assign('res',$result);//城市信息
+        $this->assign('chengshiid',I('get.id'));//城市id
         // dump($data);die;
         $this->assign('data',$data);//查询菜品类别信息
         $this->assign('id',$id);//门店代码
