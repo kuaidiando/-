@@ -1,6 +1,36 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!-- <link rel="Bookmark" href="favicon.ico" >
+<link rel="Shortcut Icon" href="favicon.ico" /> -->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/-/Public/lib/html5.js"></script>
+<script type="text/javascript" src="/-/Public/lib/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="/-/Public/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="/-/Public/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="/-/Public/lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="/-/Public/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="/-/Public/static/h-ui.admin/css/style.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="http:///-/Public/lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<!--/meta 作为公共模版分离出去-->
+
+<title>H-ui.admin v3.0</title>
+<meta name="keywords" content="H-ui.admin v3.0,H-ui网站后台模版,后台模版下载,后台管理系统模版,HTML后台模版下载">
+<meta name="description" content="H-ui.admin v3.0，是一款由国人开发的轻量级扁平化网站后台模板，完全免费开源的网站后台管理系统模版，适合中小型CMS后台系统。">
+=======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>快点—智慧餐厅</title>
@@ -8,6 +38,10 @@
     <link rel="stylesheet" href="/kuaidian/Public/Home/kdyd/css/index.css">
     <link rel="stylesheet" href="/kuaidian/Public/Home/kdyd/css/base.css">
     <link rel="stylesheet" href="/kuaidian/Public/Home/kdyd/css/base2.css">
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 </head>
 <body>
     <!--头部-->
@@ -39,10 +73,25 @@
         </div>
     </header>
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="/-/Public/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="/-/Public/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="/-/Public/static/h-ui/js/H-ui.js"></script> 
+<script type="text/javascript" src="/-/Public/static/h-ui.admin/js/H-ui.admin.page.js"></script> 
+<!--/_footer /作为公共模版分离出去-->
+=======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
     <!--中间广告-->
     <section class="ad_pic">
         <img src="/kuaidian/Public/Home/kdyd/images/shangpintu.png" alt="">
     </section>
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 
     <!--中间分类-->
     <section class="job-module"> 

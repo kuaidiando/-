@@ -133,5 +133,54 @@ function foodtype($code){
     $result = $user->where($where)->field('mingch')->select();
     // echo $user->getLastsql();
     // dump($result);die;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  return $result[0]['name'];
+}
+/**
+ * 统一资源定位
+ * @param string $model 数据表名
+ * @param array/int 过滤条件,类型为int时必须是主键
+ * @param string $field 查询字段，为空时返回数组
+ * @return array/string
+ */
+function uri($model, $filter, $field = null)
+{
+    if(!$filter){
+        return ;
+    }
+    if($filter && is_numeric($filter)){
+        $filter  = array("id" => $filter);
+    }else if($filter && is_array($filter)){
+        $filter = $filter;
+    }else{
+        return ;
+    }
+
+    if(!$field){
+        $info = M($model)->where($filter)->find();
+    }else{
+        $info = M($model)->where($filter)->getField($field);
+    }
+    return $info;
+}
+/**
+ * 验证码
+ * @param $num
+ * @return number
+ */
+function sms_code($num=6)
+{
+    if (!$num) {
+        $num = 6;
+    }
+
+    $s_num = pow(10, $num-1);
+    return mt_rand($s_num+1, $s_num*10-1);
+=======
   return $result[0]['mingch'];
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
+  return $result[0]['mingch'];
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 }

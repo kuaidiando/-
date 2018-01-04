@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+[ 2018-01-03T13:53:27+08:00 ] 127.0.0.1 /-/index.php/images/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+ERR: 无法加载模块:Images
+
+=======
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
 [ 2018-01-03T09:11:40+08:00 ] ::1 /kuaidian/Public/static/h-ui/css/H-ui.min.css
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -4553,3 +4564,7 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 ERR: 无法加载模块:Public
 
+<<<<<<< HEAD
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
+=======
+>>>>>>> a2d612aebf75f27d9a7b942920add72b153c0ebd
