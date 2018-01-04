@@ -1,18 +1,27 @@
-<include file="Layout/header"/>
+<include file="Layout/headerys"/>
 </head>
 <body>
 <article class="page-container">
-    <form class="form form-horizontal" id="form-admin-add" action="{:U('Admin/Food/edit')}" method="post">
+    <form class="form form-horizontal" id="form-admin-add" action="{:U('Admin/Food/edit')}" method="post" enctype="multipart/form-data">
        <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="{$data.0.name}" placeholder="" id="" name="name">
+                <input type="text" class="input-text" value="{$data.0.mingch}" placeholder="" id="" name="mingch">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">LOGO：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div class="uploader-thum-container">
+                    <img style="width:20%;" src="__PUBLIC__{$data.0.logo}" alt="图片加载中。。。">
+                    <input type="file" name="logo">
+                </div>
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>价格：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="{$data.0.price}" placeholder="" id="" name="price">
+                <input type="text" class="input-text" value="{$data.0.jiage}" placeholder="" id="" name="jiage">
             </div>
         </div>
         <div class="row cl">
@@ -34,24 +43,16 @@
             <div class="formControls col-xs-8 col-sm-9">
                 <span class="select-box">
                 <select name="food_type" class="select">
+                <!-- 查询单条数据 -->
                 <foreach name="data" item="votype">
+                <!-- 所有类别 -->
                      <foreach name="rescaipinlb" item="volb" >
-                        <option value="{$volb.id}" <if condition="$volb['id'] eq $votype['food_type']"> selected="selected" </if>>{$volb.name}</option>
+                        <option value="{$volb.id}" <if condition="$volb['id'] eq $votype['food_type']"> selected="selected" </if>>{$volb.mingch}</option>
                     </foreach>
                 </foreach>
                    
                 </select>
                 </span>
-            </div>
-        </div>
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">LOGO：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <div class="uploader-thum-container">
-                    <div id="fileList" class="uploader-list"></div>
-                    <div id="filePicker">选择图片</div>
-                    <button id="btn-star" class="btn btn-default btn-uploadstar radius ml-10">开始上传</button>
-                </div>
             </div>
         </div>
        <input type="hidden" value="{$data.0.id}" name='id'>

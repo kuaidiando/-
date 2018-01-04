@@ -38,11 +38,11 @@ $(document).ready(function(){
         <a class="logo navbar-logo f-l mr-10 hidden-xs" href="#">快点LOGO</a>
         <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="<?php echo U('Admin/Index/mokuaia');?>">模块a</a>
         <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="">模块b</a>
-        <li class="dropDown dropDown_hover" style="margin-left: 70%;margin-top: 1%;">
+        <li class="dropDown dropDown_hover" style="margin-left: 60%;margin-top: 1%;">
         <div>
             <!-- 城市级联 -->
-            <select name="choose" id="choose" class="select">
-                <?php if(is_array($res)): foreach($res as $key=>$vo): ?><option value="<?php echo ($vo["code"]); ?>"><?php echo ($vo["mingch"]); ?></option><?php endforeach; endif; ?>
+            <select name="choose" id="choose" style="width: 50%;" class="select">
+                <?php if(is_array($res)): foreach($res as $key=>$vo): ?><option  value="<?php echo ($vo["code"]); ?>" <?php if($vo['id'] == $chengshiid): ?>selected="selected"<?php endif; ?>><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
             </select>
         </div>
         </li>
@@ -57,11 +57,19 @@ $(document).ready(function(){
 <aside class="Hui-aside"><input runat="server" id="divScrollValue" type="hidden" value=""/>
 <div class="menu_dropdown bk_2" id="menu_nav">
     <dl>
+        <dt><a href="#">主页</a></dt>
+        <dd>
+        <ul>
+            <li><a class="shopin" name="<?php echo U('Admin/Index/zhuye');?>"><span id="clickzhuye">主页</span></a></li>
+        </ul>
+        </dd>
+    </dl>
+    <dl>
         <dt><a href="#">门店管理</a></dt>
         <dd>
         <ul>
             <!-- 隐藏主页 -->
-            <a _href="<?php echo U('Admin/Index/yinczhuye');?>" name="<?php echo U('Admin/Index/yinczhuye');?>" style="display: none;" data-title="" class="yincangzhuye" href="javascript:;">隐藏主页</a>
+            <!-- <a _href="<?php echo U('Admin/Index/yinczhuye');?>" name="<?php echo U('Admin/Index/yinczhuye');?>" style="display: none;"class="" href="javascript:;">隐藏主页</a> -->
             <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
             <li><a href="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
         </ul>
@@ -70,12 +78,19 @@ $(document).ready(function(){
 </div>
 </aside>
 <script type="text/javascript">
+    // 门店列表
     $(document).on("click",".shopin",function(){
         //获取城市对应id
         var chengshiid = $("#choose").val();
+        // alert(chengshiid);
         // 页面跳转
         var url = $(this).attr("name")+"?id="+chengshiid;
         window.location.replace(url);
+    });
+    // 城市切换
+    $(document).on("change","#choose",function(){
+        // $("#clickzhuye").click();
+        // alert(aa);
     });
 </script><header class="navbar-wrapper"></header>
 <div class="dislpayArrow hidden-xs">

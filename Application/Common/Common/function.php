@@ -98,24 +98,6 @@ function getZhenDuanContent($id, $uid)
     return $word;
 }
 //yxy
-//后台店铺名称转换
-function shopnamedo($code){
-    $user = M('ceshi_fu');
-    $where['id'] = $code;
-    $result = $user->where($where)->field('name')->select();
-    // echo $user->getLastsql();
-    // dump($result);die;
-  return $result[0]['name'];
-}
-//后台店铺类别
-function shoptype($code){
-    $user = M('shop_type');
-    $where['id'] = $code;
-    $result = $user->where($where)->field('mingch')->select();
-    // echo $user->getLastsql();
-    // dump($result);die;
-  return $result[0]['mingch'];
-}
 //后台城市转换
 function depchengshi($code)
 {
@@ -126,12 +108,30 @@ function depchengshi($code)
     // dump($result);die;
   return $result[0]['mingch'];
 }
+//后台店铺类别
+function shoptype($code){
+    $user = M('shop_type');
+    $where['id'] = $code;
+    $result = $user->where($where)->field('mingch')->select();
+    // echo $user->getLastsql();
+    // dump($result);die;
+  return $result[0]['mingch'];
+}
+//后台店铺名称转换
+function shopnamedo($code){
+    $user = M('shop');
+    $where['id'] = $code;
+    $result = $user->where($where)->field('mingch')->select();
+    // echo $user->getLastsql();
+    // dump($result);die;
+  return $result[0]['mingch'];
+}
 //后台菜品类别
 function foodtype($code){
     $user = M('food_type');
     $where['id'] = $code;
-    $result = $user->where($where)->field('name')->select();
+    $result = $user->where($where)->field('mingch')->select();
     // echo $user->getLastsql();
     // dump($result);die;
-  return $result[0]['name'];
+  return $result[0]['mingch'];
 }

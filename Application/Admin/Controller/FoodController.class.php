@@ -46,14 +46,19 @@ class FoodController extends Controller
     }
     public function add(){
     	if (IS_POST) {
-            //获取机构编码
-             $user = M("food"); // 实例化User对象
-            $data['name'] = I('post.name');
-            $data['price'] = I('post.price');
-            $data['price'] = I('post.price');
-            $data['food_type'] = I('post.food_type');
-            $data['dep'] = I('post.id');
-            $data['zhuangt'] = I('post.zhuangt');
+            $user = M("food"); // 实例化User对象
+            $data = I('post.');//添加数据
+            // 执行图片上传
+            $upload = new \Think\Upload();//实例化上传类
+            $upload->maxSize = 3145728;//设置附件上传大小
+            $upload->exts = array('jpg','jpeg','gif','png');//设置上传类型
+            $upload->rootPath  ='./Public/img/';//附件上传根目录
+            $upload->savePath  = '';//设置上传（子）目录
+            //上传文件
+            $info = $upload->upload();
+            if ($info['logo']['savename']) {
+                $data['logo'] = '/img/'.$info['logo']['savepath'].$info['logo']['savename'];
+            }
             $res = $user->add($data);
 			$res == true ? $this->success('添加成功') : $this->error('添加失败');
     		// $this->display();
@@ -61,9 +66,9 @@ class FoodController extends Controller
             $id = I('get.id');
             // dump($id);die;
             $user = M('food_type');
-            $rescaipinlb = $user->select();//菜品类别
-            $this->assign("id",$id);
-            $this->assign("rescaipinlb",$rescaipinlb);
+            $rescaipinlb = $user->select();
+            $this->assign("id",$id);//门店类别
+            $this->assign("rescaipinlb",$rescaipinlb);//菜品类别
             $this->display();
     	}
     	
@@ -73,10 +78,18 @@ class FoodController extends Controller
     		$id = I('post.id');
     		$User = M("food"); // 实例化User对象
     		$where['id'] = $id;
-            $data['name'] = I('post.name');
-            $data['price'] = I('post.price');
-			$data['food_type'] = I('post.food_type');
-            $data['zhuangt'] = I('post.zhuangt');
+            $data = I('post.');//需要修改的数据
+             // 执行图片上传
+            $upload = new \Think\Upload();//实例化上传类
+            $upload->maxSize = 3145728;//设置附件上传大小
+            $upload->exts = array('jpg','jpeg','gif','png');//设置上传类型
+            $upload->rootPath  ='./Public/img/';//附件上传根目录
+            $upload->savePath  = '';//设置上传（子）目录
+            //上传文件
+            $info = $upload->upload();
+            if ($info['logo']['savename']) {
+                $data['logo'] = '/img/'.$info['logo']['savepath'].$info['logo']['savename'];
+            }
 			// dump($data);die;
 			$res = $User->where($where)->data($data)->save();
         	// echo $User->getLastSql();die;
@@ -85,13 +98,13 @@ class FoodController extends Controller
     		// $this->display();
     	}else{
             $user = M('food_type');
-            $rescaipinlb = $user->select();//菜品类别
-            $this->assign("rescaipinlb",$rescaipinlb);
+            $rescaipinlb = $user->select();
+            $this->assign("rescaipinlb",$rescaipinlb);//菜品类别
     		$jxdm = I('get.id');
     		// dump($jxdm);die;
     		$user = M('food');
     		$where['id'] = $jxdm;
-    		$data = $user->where($where)->select();
+    		$data = $user->where($where)->select();//查询单条信息
     		// dump($data);die();
     		$this->assign('data',$data);
     		$this->display();

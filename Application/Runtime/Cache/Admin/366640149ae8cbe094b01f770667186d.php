@@ -147,8 +147,8 @@ $(document).ready(function(){
         <div>
             <div class="page-container">
         <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-            <a href="javascript:;" onclick="admin_add('添加门店','<?php echo U('Admin/Shop/add',array('id'=>"$id"));?>','800','500')"
-               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加门店</a></span>
+            <a href="javascript:;" onclick="admin_add('添加菜品','<?php echo U('Admin/Food/add',array('id'=>"$id"));?>','800','500')"
+               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加菜品</a></span>
             <span class="r">共有数据：<strong><?php echo ($info["count"]); ?></strong> 条</span> </div>
         <div class="mt-20">
         <table class="table table-border table-bordered table-bg table-hover table-responsive">
@@ -157,43 +157,30 @@ $(document).ready(function(){
                     <th width="30">编号</th>
                     <th width="80">名称</th>
                     <th width="60">LOGO</th>
-                    <th width="80">手机号</th>
-                    <th width="60">人均消费</th>
-                    <th width="80">营业时间</th>
-                    <th width="80">所属城市</th>
-                    <th width="60">门店类别</th>
-                    <th width="60">详细地址</th>
+                    <th width="60">价格</th>
+                    <th width="60">菜品类别</th>
+                    <th width="60">门店</th>
                     <th width="60">发布状态</th>
                     <th width="120">操作</th>
                 </tr>
             </thead>
             <tbody>
-                <?php if(is_array($resshop)): foreach($resshop as $key=>$vo): ?><tr class="text-c">
+                <?php if(is_array($data)): foreach($data as $key=>$vo): ?><tr class="text-c">
                             <td><?php echo ($vo["id"]); ?></td>
                             <td><?php echo ($vo["mingch"]); ?></td>
-                            <td><img style="width: 50%;"src="/kuaidian/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
-                            <td><?php echo ($vo["tel"]); ?></td>
-                            <td><?php echo ($vo["maney"]); ?></td>
-                            <td><?php echo ($vo["time_kai"]); ?>--<?php echo ($vo["time_zhong"]); ?></td>
-                            <td><?php echo (depchengshi($vo["depchengshi"])); ?></td>
-                            <td><?php echo (shoptype($vo["type_shop"])); ?></td>
-                            <td><?php echo ($vo["jutidizhi"]); ?></td>
+                            <td><img style="width: 30%;"src="/kuaidian/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
+                            <td>￥<?php echo ($vo["jiage"]); ?></td>
+                            <td><?php echo (foodtype($vo["food_type"])); ?></td>
+                            <td><?php echo (shopnamedo($vo["dep_shop"])); ?></td>
                             <td class="td-status">
                                 <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">已发布</span>
                                     <?php else: ?> 
                                     <span class="label label-danger radius">未发布</span><?php endif; ?>
                             </td>
                             <td class="td-manage" style="text-align: center;">
-                                <a href="<?php echo U('Admin/Food/index',array('id' => $vo['id']));?>" style="text-decoration: none;">
-                                   
-                                    &nbsp;&nbsp;菜品&nbsp;&nbsp;
-                                </a>
-                                <a href="<?php echo U('Admin/Foodtype/index',array('id' => $vo['id']));?>" style="text-decoration: none;">
-                                   
-                                    菜品类别&nbsp;&nbsp;
-                                </a><br>
+                               
                                 <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Shop/edit', array('id' => $vo['id']));?>'
+                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Food/edit', array('id' => $vo['id']));?>'
                                    ,'800','500')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
                                 </a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -227,7 +214,7 @@ $(document).ready(function(){
                 $.ajax({
                     type:'POST',
                     dataType: 'json',
-                    url:'<?php echo U("Admin/Shop/delete");?>',
+                    url:'<?php echo U("Admin/Food/delete");?>',
                     data:{id:id},
                     success: function (result) {
                         if (result.status) {

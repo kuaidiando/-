@@ -57,6 +57,14 @@ $(document).ready(function(){
 <aside class="Hui-aside"><input runat="server" id="divScrollValue" type="hidden" value=""/>
 <div class="menu_dropdown bk_2" id="menu_nav">
     <dl>
+        <dt><a href="#">主页</a></dt>
+        <dd>
+        <ul>
+            <li><a  href="<?php echo U('Admin/Index/zhuye');?>">主页</a></li>
+        </ul>
+        </dd>
+    </dl>
+    <dl>
         <dt><a href="#">门店管理</a></dt>
         <dd>
         <ul>
@@ -70,13 +78,23 @@ $(document).ready(function(){
 </div>
 </aside>
 <script type="text/javascript">
+// 门店类别
     $(document).on("click",".shopin",function(){
         //获取城市对应id
         var chengshiid = $("#choose").val();
-        alert(chengshiid);
+        // alert(chengshiid);
         // 页面跳转
         var url = $(this).attr("name")+"?id="+chengshiid;
         window.location.replace(url);
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).on("change","#choose",function(){
+        // $('iframe').attr('src',"<?php echo U('Admin/Index/welcome');?>");
+        $(".yincangzhuye").click();
+        // console.log(aa);
+        // alert(aa);
     });
 </script>
 </head>

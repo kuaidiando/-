@@ -40,12 +40,21 @@
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>所属城市：</label>
-            <div class="formControls col-xs-8 col-sm-9">
+            <!-- 市 -->
+            <div class="formControls col-xs-8 col-sm-9" style="width: 25%;">
                 <span class="select-box">
-                <select name="depchengshi" class="select">
-                    <foreach name="reschengs" item="vocs" >
-                        <option value="{$vocs.id}" >{$vocs.mingch}</option>
+                <select name="depcsjlsheng"  class="select" id="selshen">
+                    <foreach name="shopchengshi" item="vocs" >
+                        <option value="{$vocs.code}">{$vocs.name}</option>
                     </foreach>
+                </select>
+                </span>
+            </div>
+            <!-- 县区 -->
+            <div class="formControls col-xs-8 col-sm-9" style="width: 25%;">
+                <span class="select-box">
+                <select name="depcsjlshi"  class="select" id="selshi">
+                        <option value=""></option>
                 </select>
                 </span>
             </div>
@@ -86,4 +95,20 @@
         </div>
     </form>
 </article>
+<script type="text/javascript">
+    $(document).on('change','#selshen',function(){
+        var jlshenid = $(this).val();//获取市对应code
+        $.ajax({
+            type:"post",
+            url:"{:U('Admin/ChenshiAjax/index')}",
+            dataType:"json",
+            data:{jlshenid:jlshenid}
+            success:function(){
+                alert(123);
+            },error:function(){
+                alert(456);
+            }
+        });
+    });
+</script>
 <include file="Layout/footer"/>

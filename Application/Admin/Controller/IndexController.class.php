@@ -26,13 +26,10 @@ class IndexController extends Controller
     }
     //主页
     public function zhuye(){
-        $user = M('chengshi');
+        $user = M('city');
         $result = $user ->select();
-        $this->assign('res',$result);
-        $this->display();
-    }
-    // 隐藏主页
-    public function yinczhuye(){
+        $this->assign('res',$result);//城市信息
+        $this->assign('chengshiid',I('get.id'));//城市id
         $this->display();
     }
     //模块b

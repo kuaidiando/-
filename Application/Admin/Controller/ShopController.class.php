@@ -40,10 +40,11 @@ class ShopController extends Controller
             $where['depchengshi'] = $id;
             $result = $user->where($where)->select();
         }
-        $this->assign('resshop',$result);
+        $this->assign('resshop',$result);//门店信息
         //城市级联
         $user = M('chengshi');
-        $result = $user ->select();
+        $result = $user ->select();//城市级联
+        $this->assign('chengshiid',I('get.id'));//城市id
         $this->assign('res',$result);
         $this->display();
     }
@@ -54,7 +55,7 @@ class ShopController extends Controller
             $data = I('post.');//数据
 
              // 图片上传
-             $upload = new \Think\Upload();// 实例化上传类
+            $upload = new \Think\Upload();// 实例化上传类
             $upload->maxSize   =     3145728 ;// 设置附件上传大小
             $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
             $upload->rootPath  =     './Public/img/'; // 设置附件上传根目录
@@ -73,8 +74,9 @@ class ShopController extends Controller
 			$res == true ? $this->success('添加成功') : $this->error('添加失败');
     		// $this->display();
     	}else{
-            $user = M('chengshi');
-            $reschengs = $user->select();//城市信息
+            $user = M('city');
+            $result = $user ->select();
+            $this->assign('shopchengshi',$result);//城市信息
             $user = M('shop_type');
             $rescaipinlb = $user->select();//门店类别
             $this->assign("reschengs",$reschengs);

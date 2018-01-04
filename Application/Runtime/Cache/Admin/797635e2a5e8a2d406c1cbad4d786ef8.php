@@ -83,10 +83,19 @@ $(document).ready(function(){
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>所属城市：</label>
-            <div class="formControls col-xs-8 col-sm-9">
+            <!-- 市 -->
+            <div class="formControls col-xs-8 col-sm-9" style="width: 25%;">
                 <span class="select-box">
-                <select name="depchengshi" class="select">
-                    <?php if(is_array($reschengs)): foreach($reschengs as $key=>$vocs): ?><option value="<?php echo ($vocs["id"]); ?>" ><?php echo ($vocs["mingch"]); ?></option><?php endforeach; endif; ?>
+                <select name="depcsjlsheng"  class="select" id="selshen">
+                    <?php if(is_array($shopchengshi)): foreach($shopchengshi as $key=>$vocs): ?><option value="<?php echo ($vocs["code"]); ?>"><?php echo ($vocs["name"]); ?></option><?php endforeach; endif; ?>
+                </select>
+                </span>
+            </div>
+            <!-- 县区 -->
+            <div class="formControls col-xs-8 col-sm-9" style="width: 25%;">
+                <span class="select-box">
+                <select name="depcsjlshi"  class="select" id="selshi">
+                        <option value=""></option>
                 </select>
                 </span>
             </div>
@@ -125,6 +134,22 @@ $(document).ready(function(){
         </div>
     </form>
 </article>
+<script type="text/javascript">
+    $(document).on('change','#selshen',function(){
+        var jlshenid = $(this).val();//获取市对应code
+        $.ajax({
+            type:"post",
+            url:"<?php echo U('');?>",
+            dataType:"json",
+            data:{jlshenid:jlshenid}
+            success:function(){
+                alert(123);
+            },error:function(){
+                alert(456);
+            }
+        });
+    });
+</script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
