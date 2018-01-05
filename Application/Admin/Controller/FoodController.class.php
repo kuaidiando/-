@@ -60,13 +60,19 @@ class FoodController extends BasicController
 			$res == true ? $this->success('添加成功') : $this->error('添加失败');
     		// $this->display();
     	}else{
+            //获取菜品类别
             $id = I('get.id');
             // dump($id);die;
             $user = M('food_type');
             $where['dep_type'] = $id;//门店id
             $rescaipinlb = $user->where($where)->select();
+            //获取菜品分量
+            $userfl = M('cpfenliang');
+            $resfl = $userfl ->select();
+
             $this->assign("id",$id);//门店类别
             $this->assign("rescaipinlb",$rescaipinlb);//菜品类别
+            $this->assign("resfl",$resfl);//菜品分量
             $this->display();
     	}
     	

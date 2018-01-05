@@ -81,6 +81,22 @@
             </div>
         </div>
         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>优惠卷：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                 <foreach name="data" item="vo" >
+
+                <if condition="$vo.juan eq 1 ">
+                    
+                    是&nbsp;&nbsp;<input type="radio"  value="1" name="juan" checked="checked">
+                    否&nbsp;&nbsp;<input type="radio"  value="2" name="juan">
+                    <else /> 
+                    是&nbsp;&nbsp;<input type="radio"  value="1" name="juan">
+                    否&nbsp;&nbsp;<input type="radio"  value="2" name="juan" checked="checked">
+                </if>
+            </foreach>
+            </div>
+        </div>
+        <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>类别：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <span class="select-box">

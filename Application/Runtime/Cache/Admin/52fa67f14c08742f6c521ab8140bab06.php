@@ -36,7 +36,7 @@ $(document).ready(function(){
 <div class="navbar navbar-fixed-top">
     <div class="container-fluid cl">
         <a class="logo navbar-logo f-l mr-10 hidden-xs" href="#">快点LOGO</a>
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="<?php echo U('Admin/Index/mokuaia');?>">模块a</a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/Oracle/mokuaia');?>">模块a</span></a>
         <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="">模块b</a>
         <li class="dropDown dropDown_hover" style="margin-left: 60%;margin-top: 1%;">
         <div>
@@ -72,6 +72,7 @@ $(document).ready(function(){
             <!-- <a _href="<?php echo U('Admin/Index/yinczhuye');?>" name="<?php echo U('Admin/Index/yinczhuye');?>" style="display: none;"class="" href="javascript:;">隐藏主页</a> -->
             <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
             <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">单位管理</a></li>
         </ul>
         </dd>
     </dl>
@@ -186,6 +187,7 @@ $(document).ready(function(){
                     <th width="60">门店类别</th>
                     <th width="40">星数量</th>
                     <th width="60">详细地址</th>
+                    <th width="60">优惠卷</th>
                     <th width="60">发布状态</th>
                     <th width="120">操作</th>
                 </tr>
@@ -202,6 +204,11 @@ $(document).ready(function(){
                             <td><?php echo (shoptype($vo["type_shop"])); ?></td>
                             <td><?php echo ($vo["xingsl"]); ?></td>
                             <td><?php echo ($vo["jutidizhi"]); ?></td>
+                            <td class="td-status">
+                                <?php if($vo["juan"] == 1 ): ?><span class="label label-success radius">有</span>
+                                    <?php else: ?> 
+                                    <span class="label label-danger radius">无</span><?php endif; ?>
+                            </td>
                             <td class="td-status">
                                 <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">已发布</span>
                                     <?php else: ?> 
