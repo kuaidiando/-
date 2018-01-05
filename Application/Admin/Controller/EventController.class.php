@@ -30,6 +30,10 @@ class EventController extends Controller {
     public function index(){
        $event = M('event');
         $res = $event->select();
+        // dump($res);exit;
+        $num = $event->count('id');
+        // dump($num);exit;
+        $this->assign('num',$num);
         $this->assign('event',$res);
         $this->display();
     }
@@ -58,37 +62,41 @@ class EventController extends Controller {
           $post = I('post.');
           // dump($post);
           // die;
-          $post['pic'] = $pic;
+          $post['pic'] = '/img/'.$pic;
           $post['addtime'] = date("y-m-d H:i:s",time());
-          dump($post);exit;
+          // dump($post);exit;
            $mod = M("event");
            $res = $mod->data($post)->add();
           //执行添加
            if($res){
-              $this->success("添加成功",U("event/index"));
+              // echo "<script>layer_close();</script>";
+              $this->success("添加成功",U("event/add"));
            }else{
               $this->error("添加失败");
           }             
     }
 
     //图片删除操作
-    public function delete(){
+    public function del(){
       $delete = M('event');
+      $res = $delete->where('id='.I('get.id'))->find();
 
-      // $res=$delete->where('status=0 and eid='.I('get.eid'))->delete();
-      $res = $delete->where('eid='.I('get.eid'))->find();
-      if($res['status']=='0'){
-           $this->error('图片正在使用，不允许删除',U('Event/index'));
-      }else{
-          $delete->where('eid='.I('get.eid'))->delete();
-          $this->success('您删除成功',U('Event/index'));
-      }
+      if (!$res['status']) {
+          $delete->where('id='.I('get.id'))->delete();
+          $this->ajaxReturn(array('status' => 0, 'msg' => '删除成功!'));
+          
+        } else {
+          $this->ajaxReturn(array('status' => 1, 'msg' => '正在使用不允许删除!'));
+        }
+   
     }
 
     //图片的编辑
     public function edit(){
+      // echo md5('123456');exit;
+      // dump($_GET);exit;
       $edit = M('event');
-      $res = $edit->where('eid='.I('get.eid'))->find();
+      $res = $edit->where('id='.I('get.id'))->find();
       // dump($res);
       // die;
       $this->assign('row',$res);
@@ -99,21 +107,30 @@ class EventController extends Controller {
     public function update(){
      // $update=M('event');
       $update = M('event');  
-      $res = $update->where("status='0'")->count();
+      $res = $update->where(array('status'=>1))->count();
+      // dump($res);exit;
      
-      if($res >=4 && I('post.status') =='0'){
-        $this->error('不允许修改为使用状态，请先撤销部分');
+      if($res >=3 && I('post.status') =='1'){
+          $this->ajaxReturn(array('status' => 0, 'msg' => '不允许修改为使用状态，请先撤销部分'));
+
+        // $this->error('不允许修改为使用状态，请先撤销部分');
 
       }
       $update->create();
-      $res = $update->where('eid='.I('post.eid'))->save();
+      $post =$_POST;
+      // dump($post);exit;
+      $res = $update->where('id='.I('post.id'))->save($post);
 
       if(!$res){
-         $this->error('修改失败',U('Event/edit'));
+         // $this->error('修改失败',U('Event/edit'));
+          $this->ajaxReturn(array('status' => 0, 'msg' => '修改失败!'));
+
+        // $this->ajaxReturn
        
       }else{
+          $this->ajaxReturn(array('status' => 1, 'msg' => '修改成功!'));
 
-         $this->success('修改成功',U('Event/index'));
+         // $this->success('修改成功',U('Event/edit'));
       }
       $this->display();
 

@@ -1,11 +1,11 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>主要内容区main</title>
-<link href="css/css.css" type="text/css" rel="stylesheet" />
-<link href="css/main.css" type="text/css" rel="stylesheet" />
+<link href="/-/Public/home/css/css.css" type="text/css" rel="stylesheet" />
+<link href="/-/Public/home/css/main.css" type="text/css" rel="stylesheet" />
 <link rel="shortcut icon" href="images/main/favicon.ico" />
-<script type="text/javascript" src="__ROOT__/Public/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/-/Public/home/js/jquery-1.8.3.min.js"></script>
 <style>
 body{overflow-x:hidden; background:#f2f0f5; padding:15px 0px 10px 5px;}
 #searchmain{ font-size:12px;}
@@ -39,7 +39,7 @@ td.fenye{ padding:10px 0 0 0; text-align:right;}
 <!--main_top-->
 <table width="99%" border="0" cellspacing="0" cellpadding="0" id="searchmain">
   <tr>
-    <td width="99%" align="left" valign="top">您的位置：图片管理 >轮播图添加</td>
+    <td width="99%" align="left" valign="top">您的位置：广告管理&nbsp;&nbsp;>&nbsp;&nbsp;修改广告</td>
   </tr>
   <tr>
     <td align="left" valign="top" id="addinfo">
@@ -47,24 +47,33 @@ td.fenye{ padding:10px 0 0 0; text-align:right;}
   </tr>
   <tr>
     <td align="left" valign="top">
-    <form method="post" action="__MODULE__/Event/insert" enctype="multipart/form-data" id="form" >
+    
+    
+    <form method="post" action="/-/index.php/Admin/Event/update" enctype="multipart/form-data" id="form" >
     <table width="100%" border="0" cellspacing="0" cellpadding="0" id="main-tab">
+      <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
+        <td align="right" valign="middle" class="borderright borderbottom bggray">商品id：</td>
+        <td align="left" valign="middle" class="borderright borderbottom main-for">
+        <input type="text" disabled=true name="eid" value="<<?php echo ($row['eid']); ?>>" class="text-word">
+        </td>
+        </tr>
+      <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
+        <td align="right" valign="middle" class="borderright borderbottom bggray">状态：</td>
+        <td align="left" valign="middle" class="borderright borderbottom main-for">
+        <input type="text" name="status" value="<<?php echo ($row['status']); ?>>" class="text-word"><span>0(正使用)：1(未使用)</span>
+        <input type="hidden" name="eid"value="<<?php echo ($row['eid']); ?>>" />
+        </td>
+        </tr>
       <!-- <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
-        <td align="right" valign="middle" class="borderright borderbottom bggray">图片id：</td>
-        <td align="left" valign="middle" class="borderright borderbottom main-for">
-        <input type="text" name="eid"  class="text-word">
-        </td>
-        </tr> -->
-      <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
-        <td align="right" valign="middle" class="borderright borderbottom bggray">：名称</td>
-        <td align="left" valign="middle" class="borderright borderbottom main-for">
-        <input type="text" name="ename"  class="text-word">
-        </td>
-      </tr>
-      <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
         <td align="right" valign="middle" class="borderright borderbottom bggray">上传照片：</td>
         <td align="left" valign="middle" class="borderright borderbottom main-for">
-        <input type="file" name="pic" >
+        <input type="file" name="uploads" >
+        </td>
+      </tr> -->
+      <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
+        <td align="right" valign="middle" class="borderright borderbottom bggray">图片：</td>
+        <td align="left" valign="middle" class="borderright borderbottom main-for">
+        <img src="/-/Public/Events/<<?php echo ($row['pic']); ?>>"  width="300px" height="300px">
         </td>
       </tr>
       <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
@@ -75,6 +84,7 @@ td.fenye{ padding:10px 0 0 0; text-align:right;}
         </tr>
     </table>
     </form>
+    </volist>
     </td>
     </tr>
 </table>
