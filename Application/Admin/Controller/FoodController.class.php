@@ -2,10 +2,11 @@
 namespace Admin\Controller;
 
 use Admin\Model\SysDmJxModel;
+use Common\Controller\BasicController;  
 use Think\Controller;
 use Think\Page;
 
-class FoodController extends Controller
+class FoodController extends BasicController
 {
 	 // protected function _initialize()
   //   {
@@ -36,11 +37,6 @@ class FoodController extends Controller
         $user = M('food');
         $where['dep_shop'] = $menid;
         $data = $user->where($where)->select();
-        //城市级联
-        $user = M('city');
-        $result = $user ->select();
-        $this->assign('res',$result);//城市信息
-        $this->assign('chengshiid',I('get.id'));//城市id
         $this->assign('data',$data);//查询菜品信息
         $this->assign('id',$menid);//门店id
         $this->display();

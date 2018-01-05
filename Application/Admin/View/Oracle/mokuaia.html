@@ -1,9 +1,28 @@
-<include file="Layout/headera"/><header class="navbar-wrapper">
+<include file="Layout/header"/><header class="navbar-wrapper">
 
-</header><aside class="Hui-aside"><input runat="server" id="divScrollValue" type="hidden" value=""/>
-	<a  class="yincangzhuye" href="{:U('Admin/Index/yinczhuye')}">标题1</a><br>
-	<a  class="yincangzhuye" href="{:U('Admin/Index/biaoti2')}">标题2</a>
-	
+</header>
+<aside class="Hui-aside"><input runat="server" id="divScrollValue" type="hidden" value=""/>
+<div class="menu_dropdown bk_2" id="menu_nav">
+    <dl>
+        <dt><a href="#">模块2</a></dt>
+        <dd>
+        <ul>
+            <li><a class="shopin" name="{:U('Admin/Index/zhuye')}"><span id="clickzhuye">模块2</span></a></li>
+        </ul>
+        </dd>
+    </dl>
+    <dl>
+        <dt><a href="#">模块2</a></dt>
+        <dd>
+        <ul>
+            <!-- 隐藏主页 -->
+            <!-- <a _href="{:U('Admin/Index/yinczhuye')}" name="{:U('Admin/Index/yinczhuye')}" style="display: none;"class="" href="javascript:;">隐藏主页</a> -->
+            <li><a class="shopin" name="{:U('Admin/Shop/index')}">标题1</a></li>
+            <li><a class="shopin" name="{:U('Admin/Oracle/moabiaob')}">标题2</a></li>
+        </ul>
+        </dd>
+    </dl>
+</div>
 </aside>
 <div class="dislpayArrow hidden-xs">
 	<a class="pngfix" href="javascript:;" onclick="displaynavbar(this)"></a>

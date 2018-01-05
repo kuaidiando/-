@@ -32,22 +32,11 @@ class IndexController extends Controller
         $this->assign('chengshiid',I('get.id'));//城市id
         $this->display();
     }
-    //模块b
-    public function mokuaia(){
-        $user = M('chengshi');
-        $result = $user ->select();
-        
-        $menuTree = menuToTree(C('MENUa'));
-        // dump($menuTree);die;
-        $this->assign('menus', $menuTree);
-        $this->assign('res',$result);
-        $this->display();
-    }
     //标题2
     public function biaoti2(){
-        $user = M('chengshi');
-        $result = $user ->select();
-        $this->assign('res',$result);
+        // $user = M('chengshi');
+        // $result = $user ->select();
+        // $this->assign('res',$result);
         $this->display();
     }
     public function welcome()
