@@ -36,7 +36,7 @@ $(document).ready(function(){
 <div class="navbar navbar-fixed-top">
     <div class="container-fluid cl">
         <a class="logo navbar-logo f-l mr-10 hidden-xs" href="#">快点LOGO</a>
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="<?php echo U('Admin/Index/mokuaia');?>">模块a</a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="<?php echo U('Admin/Oracle/mokuaia');?>">模块a</a>
         <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="">模块b</a>
         <li class="dropDown dropDown_hover" style="margin-left: 60%;margin-top: 1%;">
         <div>
