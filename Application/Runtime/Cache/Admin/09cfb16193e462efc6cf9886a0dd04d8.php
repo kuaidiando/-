@@ -6,11 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
-<<<<<<< HEAD
 <script type="text/javascript" src="/-/Public/admin/lib/jquery/1.9.1/jquery.min.js"></script>
-=======
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery/1.9.1/jquery.min.js"></script>
->>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
 <script type="text/javascript">
 $(document).ready(function(){
  $("dd").hide();
@@ -25,7 +21,6 @@ $(document).ready(function(){
 });
 });
 </script>
-<<<<<<< HEAD
 <!-- <script type="text/javascript" src="/-/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
  -->
 <link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui/css/H-ui.min.css"/>
@@ -37,19 +32,6 @@ $(document).ready(function(){
 <link rel="stylesheet" type="text/css" href="/-/Public/css/hidTable.css"/>
 <!-- 分页效果 -->
 <link href="/-/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
-=======
-<!-- <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
- -->
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui/css/H-ui.min.css"/>
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/H-ui.admin.css"/>
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/icheck/icheck.css"/>
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/style.css"/>
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/>
-<!-- 分页效果 -->
-<link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
->>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
 <title>快点</title>
 <script type="text/javascript">
     $(document).on("click",".shopin",function(){
@@ -63,53 +45,39 @@ $(document).ready(function(){
 </head>
 <body>
 <article class="page-container">
-    <form class="form form-horizontal" id="form-article-add" action="<?php echo U('Admin/Food/add');?>" method="post" enctype="multipart/form-data">
+    <form class="form form-horizontal" id="form-article-add" action="<?php echo U('Admin/Event/insert');?>" method="post" enctype="multipart/form-data">
     <!-- 对应门店id -->
-        <input type="hidden" name="dep_shop" value="<?php echo ($id); ?>">
+        <!-- <input type="hidden" name="dep_shop" value="<?php echo ($id); ?>"> -->
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="mingch">
+                <input type="text" class="input-text" value="" placeholder="" id="ename" name="ename">
             </div>
         </div>
         
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">LOGO：</label>
+            <label class="form-label col-xs-4 col-sm-2">图片：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <div class="uploader-thum-container">
                     <div id="fileList" class="uploader-list"></div>
-                    <input type="file" name="logo">
+                    <input type="file" name="pic">
                 </div>
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>原价：</label>
+        <!--     <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>价格：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="" name="jiage">
             </div>
-        </div>
+        </div> -->
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>售价：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>&是否发布：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="jiage_youhui">
+                是&nbsp;&nbsp;<input type="radio"  value="1" name="status" class="satus" checked="checked">
+                否&nbsp;&nbsp;<input type="radio" class="status" value="0" name="status">
             </div>
         </div>
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>是否发布：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                是&nbsp;&nbsp;<input type="radio"  value="1" name="zhuangt" checked="checked">
-                否&nbsp;&nbsp;<input type="radio"  value="2" name="zhuangt">
-            </div>
-        </div>
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>菜品份量：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-            <!-- 真实菜品分量 -->
-                <input type="hidden" value="0" name="flid" id="Jszzdm">
-                <?php if(is_array($resfl)): foreach($resfl as $key=>$vofl): echo ($vofl["mingch"]); ?><input type="checkbox" value="<?php echo ($vofl["id"]); ?>" name="fenliang">&nbsp;&nbsp;<?php endforeach; endif; ?>
-            </div>
-        </div>
-        <div class="row cl">
+        <!-- <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>类别：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <span class="select-box">
@@ -118,26 +86,19 @@ $(document).ready(function(){
                 </select>
                 </span>
             </div>
-        </div>
+        </div> -->
         
         <div class="row cl">
             <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
-                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 添加</button><!-- 
-                <button onClick="article_save();" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button>
-                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button> -->
+                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 添加</button>
+               <!--  <button onClick="article_save();" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button> -->
+                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
             </div>
         </div>
     </form>
+   
+  
 </article>
-<<<<<<< HEAD
-<script>
-// 复选框勾选添加到隐藏框中 --分量
-  $('input[name=fenliang]').change(function(){
-    $('#Jszzdm').val($('input[name=fenliang]:checked').map(function(){return this.value}).get().join(','))
-  })
-</script>
-=======
-<<<<<<< HEAD
 <script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
@@ -146,17 +107,6 @@ $(document).ready(function(){
 <script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
 <script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
 <script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
-=======
->>>>>>> 8990e90c3e932ee2b5ab3bfa0078a7075e86bb67
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
->>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');

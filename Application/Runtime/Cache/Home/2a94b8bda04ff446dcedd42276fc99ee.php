@@ -1,4 +1,12 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<<<<<<< HEAD
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+前台页面
+=======
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -173,5 +181,6 @@
             <a href="#"> <p>我的</p> </a>
         </div>
     </footer>
+>>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
 </body>
 </html>
