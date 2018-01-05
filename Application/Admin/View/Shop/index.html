@@ -26,6 +26,7 @@
                     <th width="80">营业时间</th>
                     <th width="80">所属城市</th>
                     <th width="60">门店类别</th>
+                    <th width="40">星数量</th>
                     <th width="60">详细地址</th>
                     <th width="60">发布状态</th>
                     <th width="120">操作</th>
@@ -42,6 +43,7 @@
                             <td>{$vo.time_kai}--{$vo.time_zhong}</td>
                             <td>{$vo.depcsjlshi|depchengshi=###}</td>
                             <td>{$vo.type_shop|shoptype=###}</td>
+                            <td>{$vo.xingsl}</td>
                             <td>{$vo.jutidizhi}</td>
                             <td class="td-status">
                                 <if condition="$vo.zhuangt eq 1 ">

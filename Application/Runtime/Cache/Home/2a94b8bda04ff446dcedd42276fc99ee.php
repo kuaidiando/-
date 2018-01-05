@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>快点—智慧餐厅</title>
-    <link rel="icon" href="__PUBLIC__/home/kdyd/images/logo1.png">
-    <link rel="stylesheet" href="__PUBLIC__/home/kdyd/css/index.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/kdyd/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/kdyd/css/base2.css">
+    <link rel="icon" href="/kuaidian/Public/home/kdyd/images/logo1.png">
+    <link rel="stylesheet" href="/kuaidian/Public/home/kdyd/css/index.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/kdyd/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/kdyd/css/base2.css">
 </head>
 <body>
     <!--头部-->
@@ -16,7 +16,7 @@
             <div class="city">
                 <div class="ee">
                     <span>北京</span>
-                    <img src="__PUBLIC__/home/kdyd/images/jiantou2.png" alt="">
+                    <img src="/kuaidian/Public/home/kdyd/images/jiantou2.png" alt="">
                 </div>
             </div>
 
@@ -24,7 +24,7 @@
             <div class="lookup">
                 <div class="rr">
                     <a href="#">
-                        <img src="__PUBLIC__/home/kdyd/images/loogup.png" alt="">
+                        <img src="/kuaidian/Public/home/kdyd/images/loogup.png" alt="">
                         <div class="zz">
                             <input type="text" class="search-txt" placeholder="搜索商家名称"/>
                         </div>
@@ -43,7 +43,7 @@
 
     <!--中间广告-->
     <section class="ad_pic">
-        <img src="__PUBLIC__/home/kdyd/images/shangpintu.png" alt="">
+        <img src="/kuaidian/Public/home/kdyd/images/shangpintu.png" alt="">
     </section>
 
     <!--中间分类-->
@@ -98,7 +98,7 @@
         </dd>
     </dl>
 </section>
-<script type="text/javascript" src="__PUBLIC__/home/kdyd/js/jquery.js"></script> 
+<script type="text/javascript" src="/kuaidian/Public/home/kdyd/js/jquery.js"></script> 
 <script type="text/javascript">
   $(function(){ 
     $('.retrie dt a').click(function(){
@@ -126,42 +126,38 @@
     <!--中间商品部分-->
     <div style="position:absolute; height:60%; width: 100%; overflow:auto">
     	
-    <foreach name="data" item="voshop">
-    	<div class="zhongjian">
+    <?php if(is_array($data)): foreach($data as $key=>$voshop): ?><div class="zhongjian">
 	        <div class="shangpin">
 	            <div class="hezi">
 	               <div class="he">
 	                   <div class="tp">
-	                       <img src="__PUBLIC__/{$voshop.logo}" alt="图片加载中。。。">
+	                       <img src="/kuaidian/Public/<?php echo ($voshop["logo"]); ?>" alt="图片加载中。。。">
 	                   </div>
 	                   <div class="seller">
 	                       <div class="dianming">
-	                           <span class="mingzi">{$voshop.mingch}({$voshop.mingch})</span>
+	                           <span class="mingzi"><?php echo ($voshop["mingch"]); ?>(<?php echo ($voshop["mingch"]); ?>)</span>
 	                           <span class="juli">666m</span>
 	                       </div>
 
 	                       <div class="evaluate">
-	                           <a href="#" class="start"> <img src="__PUBLIC__/home/kdyd/images/start.png" alt=""> </a>
-	                           <span class="consume">￥{$voshop.maney}/人</span>
-	                           <if condition="$voshop.juan eq 1">
-	                           <a href="#" class="quan"> <img src="__PUBLIC__/home/kdyd/images/quan.png" alt=""> </a>
-	                           	<elseif>
-	                           </if>
+	                           <a href="#" class="start"> <img src="/kuaidian/Public/home/kdyd/images/start.png" alt=""> </a>
+	                           <span class="consume">￥<?php echo ($voshop["maney"]); ?>/人</span>
+	                           <?php if($voshop["juan"] == 1): ?><a href="#" class="quan"> <img src="/kuaidian/Public/home/kdyd/images/quan.png" alt=""> </a>
+	                           	<elseif><?php endif; ?>
 	                           
-	                           <a href="#" class="dian"> <img src="__PUBLIC__/home/kdyd/images/dian.png" alt=""> </a>
-	                           <a href="#" class="ding"> <img src="__PUBLIC__/home/kdyd/images/ding.png" alt=""> </a>
+	                           <a href="#" class="dian"> <img src="/kuaidian/Public/home/kdyd/images/dian.png" alt=""> </a>
+	                           <a href="#" class="ding"> <img src="/kuaidian/Public/home/kdyd/images/ding.png" alt=""> </a>
 	                       </div>
 
 	                       <div class="activity">
-	                           <img src="__PUBLIC__/home/kdyd/images/tui.png" alt="">
+	                           <img src="/kuaidian/Public/home/kdyd/images/tui.png" alt="">
 	                           <span class="shang">商家已发起“微众代言”可获得 <span class="red">5.0%</span> </span>
 	                       </div>
 	                   </div>
 	               </div>
 	            </div>
 	        </div>
-	    </div>
-    </foreach>
+	    </div><?php endforeach; endif; ?>
     </div>
 	    
 

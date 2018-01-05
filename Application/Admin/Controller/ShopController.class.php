@@ -7,10 +7,11 @@
 namespace Admin\Controller;
 
 use Admin\Model\SysDmJxModel;
+use Common\Controller\BasicController;  
 use Think\Controller;
 use Think\Page;
 
-class ShopController extends Controller
+class ShopController extends BasicController
 {
 	 // protected function _initialize()
   //   {
@@ -46,11 +47,7 @@ class ShopController extends Controller
             $resmend = $user->where($where)->select();
         }
         $this->assign('resshop',$resmend);//门店信息
-        //城市级联
-        $user = M('city');
-        $result = $user ->select();//城市级联
-        $this->assign('res',$result);
-        $this->assign('chengshiid',I('get.id'));//城市id
+       
         $this->display();
     }
     public function add(){
