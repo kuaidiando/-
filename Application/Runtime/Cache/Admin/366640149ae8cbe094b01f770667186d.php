@@ -36,7 +36,19 @@ $(document).ready(function(){
 <div class="navbar navbar-fixed-top">
     <div class="container-fluid cl">
         <a class="logo navbar-logo f-l mr-10 hidden-xs" href="#">快点LOGO</a>
+<<<<<<< HEAD
         <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/Oracle/mokuaia');?>">模块a</span></a>
+=======
+<<<<<<< HEAD
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/Oracle/mokuaia');?>">模块a</span></a>
+=======
+<<<<<<< HEAD
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="<?php echo U('Admin/Index/mokuaia');?>">模块a</a>
+=======
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="<?php echo U('Admin/Oracle/mokuaia');?>">模块a</a>
+>>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
+>>>>>>> 8990e90c3e932ee2b5ab3bfa0078a7075e86bb67
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
         <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="">模块b</a>
         <li class="dropDown dropDown_hover" style="margin-left: 60%;margin-top: 1%;">
         <div>
@@ -72,6 +84,7 @@ $(document).ready(function(){
             <!-- <a _href="<?php echo U('Admin/Index/yinczhuye');?>" name="<?php echo U('Admin/Index/yinczhuye');?>" style="display: none;"class="" href="javascript:;">隐藏主页</a> -->
             <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
             <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">单位管理</a></li>
         </ul>
         </dd>
     </dl>
@@ -182,8 +195,10 @@ $(document).ready(function(){
                     <th width="30">编号</th>
                     <th width="80">名称</th>
                     <th width="60">LOGO</th>
-                    <th width="60">价格</th>
+                    <th width="60">原价</th>
+                    <th width="60">售价</th>
                     <th width="60">菜品类别</th>
+                    <th width="60">规格</th>
                     <th width="60">门店</th>
                     <th width="60">发布状态</th>
                     <th width="120">操作</th>
@@ -195,7 +210,26 @@ $(document).ready(function(){
                             <td><?php echo ($vo["mingch"]); ?></td>
                             <td><img style="width: 30%;"src="/-/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
                             <td>￥<?php echo ($vo["jiage"]); ?></td>
+                            <td>￥<?php echo ($vo["jiage_youhui"]); ?></td>
                             <td><?php echo (foodtype($vo["food_type"])); ?></td>
+                            <td>
+                                <div style="text-align: center;">
+                                    <span style="vertical-align:-1px;">菜量：大份</span>
+                                    <a style="margin-right: 10%;" href="javascript:;"
+                                       onclick="admin_add('编辑详情','<?php echo U('Admin/Food/edit', array('id' => $vo['id']));?>'
+                                       ,'800','500')">
+                                        <span style="vertical-align:baseline;"><i class="Hui-iconfont">&#xe667;</i></span>
+                                    </a>
+                                </div>
+                                <div>
+                                <span style="vertical-align:-1px;">口味：麻辣</span>
+                                <a style="margin-right: 10%;" href="javascript:;"
+                                       onclick="admin_add('编辑详情','<?php echo U('Admin/Food/edit', array('id' => $vo['id']));?>'
+                                       ,'800','500')">
+                                        <i class="Hui-iconfont">&#xe667;</i>
+                                    </a>
+                                </div>
+                            </td>
                             <td><?php echo (shopnamedo($vo["dep_shop"])); ?></td>
                             <td class="td-status">
                                 <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">已发布</span>

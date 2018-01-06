@@ -65,9 +65,15 @@ $(document).ready(function(){
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>价格：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>原价：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="" name="jiage">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>售价：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="" placeholder="" id="" name="jiage_youhui">
             </div>
         </div>
         <div class="row cl">
@@ -75,6 +81,14 @@ $(document).ready(function(){
             <div class="formControls col-xs-8 col-sm-9">
                 是&nbsp;&nbsp;<input type="radio"  value="1" name="zhuangt" checked="checked">
                 否&nbsp;&nbsp;<input type="radio"  value="2" name="zhuangt">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>菜品份量：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+            <!-- 真实菜品分量 -->
+                <input type="hidden" value="0" name="flid" id="Jszzdm">
+                <?php if(is_array($resfl)): foreach($resfl as $key=>$vofl): echo ($vofl["mingch"]); ?><input type="checkbox" value="<?php echo ($vofl["id"]); ?>" name="fenliang">&nbsp;&nbsp;<?php endforeach; endif; ?>
             </div>
         </div>
         <div class="row cl">
@@ -97,6 +111,18 @@ $(document).ready(function(){
         </div>
     </form>
 </article>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<script>
+// 复选框勾选添加到隐藏框中 --分量
+  $('input[name=fenliang]').change(function(){
+    $('#Jszzdm').val($('input[name=fenliang]:checked').map(function(){return this.value}).get().join(','))
+  })
+</script>
+=======
+<<<<<<< HEAD
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 <script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
@@ -105,6 +131,20 @@ $(document).ready(function(){
 <script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
 <script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
 <script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8990e90c3e932ee2b5ab3bfa0078a7075e86bb67
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+>>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');
