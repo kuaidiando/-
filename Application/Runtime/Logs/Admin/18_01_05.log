@@ -11983,6 +11983,17 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
 >>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
 
+<<<<<<< HEAD
+[ 2018-01-05T18:32:05+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/edit/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `event` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+=======
 [ 2018-01-05T14:31:10+08:00 ] ::1 /kuaidian/index.php/Admin/Index/dodenglu.html
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -12006,10 +12017,23 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0010s ]
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.125000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.125000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.031250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031250s ]
+
+[ 2018-01-05T18:32:10+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/update.html
+=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
 INFO: [ view_filter ] --START--
@@ -12042,12 +12066,19 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-05T14:31:14+08:00 ] ::1 /kuaidian/index.php/Admin/Oracle/moabiaob.html?id=1
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `event` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-01-05T18:32:10+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/edit/id/7.html
+=======
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0020s ]
 INFO: [ view_parse ] --START--
@@ -12078,18 +12109,46 @@ NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\ThinkPHP\Library\T
 SQL: SELECT * FROM `user_admin` LIMIT 1   [ RunTime:0.0000s ]
 
 [ 2018-01-05T14:34:13+08:00 ] ::1 /kuaidian/index.php/Admin/Index/zhuye.html
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `event` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0010s ]
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-05T18:32:11+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/edit/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `event` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0156s ]
+=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
 INFO: [ view_filter ] --START--
@@ -12108,10 +12167,23 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0010s ]
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-05T18:32:12+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/edit/id/7.html
+=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
 INFO: [ view_filter ] --START--
@@ -12122,20 +12194,71 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-05T14:38:04+08:00 ] ::1 /kuaidian/index.php/Admin/Shop/index.html?id=1
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `event` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0156s ]
+=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0020s ]
 SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `shop`  [ RunTime:0.0000s ]
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-05T18:32:13+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `event` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate E:\wamp\wamp\www\-\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\wamp\www\-\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `event` SET `id`='7',`status`='0',`ename`='4325' WHERE ( id=7 ) [ RunTime:0.1719s ]
+
+[ 2018-01-05T18:32:15+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `event` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0156s ]
+
+[ 2018-01-05T18:32:15+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/edit/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.109375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.109375s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `event` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+=======
 NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 109 行.
 NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 109 行.
 NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 112 行.
@@ -12255,10 +12378,31 @@ SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0020s ]
 SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `shop`  [ RunTime:0.0010s ]
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.031250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-05T18:32:15+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/edit/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `event` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+=======
 NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 109 行.
 NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 109 行.
 NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 112 行.
@@ -12322,10 +12466,31 @@ SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0050s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0020s ]
 SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `shop`  [ RunTime:0.0010s ]
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-05T18:32:22+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/edit/id/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `event` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0000s ]
+=======
 NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 109 行.
 NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 109 行.
 NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 112 行.
@@ -12365,10 +12530,23 @@ SQL: SELECT * FROM `city`  [ RunTime:0.0030s ]
 SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0060s ]
 SQL: SELECT * FROM `shop_type`  [ RunTime:0.0000s ]
 NOTIC: [8] Undefined variable: reschengs D:\xampp\htdocs\kuaidian\Application\Admin\Controller\ShopController.class.php 第 84 行.
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.046875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.046875s ]
+
+[ 2018-01-05T18:32:25+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/update.html
+=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075004s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.075004s ]
 INFO: [ view_filter ] --START--
@@ -12379,10 +12557,30 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-05T14:53:48+08:00 ] ::1 /kuaidian/index.php/Admin/Shop/index.html?id=1
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `event` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate E:\wamp\wamp\www\-\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\wamp\www\-\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `event` SET `id`='13',`status`='0',`ename`='765899' WHERE ( id=13 ) [ RunTime:0.3281s ]
+
+[ 2018-01-05T18:32:25+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/edit/id/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `event` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0156s ]
+=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0040s ]
@@ -12432,10 +12630,23 @@ SQL: SELECT * FROM `city`  [ RunTime:0.0020s ]
 SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0060s ]
 SQL: SELECT * FROM `shop_type`  [ RunTime:0.0000s ]
 NOTIC: [8] Undefined variable: reschengs D:\xampp\htdocs\kuaidian\Application\Admin\Controller\ShopController.class.php 第 84 行.
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-05T18:32:32+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/index.html?id=1
+=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
 INFO: [ view_filter ] --START--
@@ -12446,10 +12657,18 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-05T14:53:59+08:00 ] ::1 /kuaidian/index.php/Admin/Shop/edit/id/3.html
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `event`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `event` LIMIT 1   [ RunTime:0.0156s ]
+=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0060s ]
@@ -12459,10 +12678,27 @@ SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0060s ]
 SQL: SELECT * FROM `shop_type`  [ RunTime:0.0000s ]
 SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0050s ]
 SQL: SELECT * FROM `shop` WHERE `id` = 3  [ RunTime:0.0010s ]
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 109 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-05T18:58:03+08:00 ] 127.0.0.1 /-/index.php/Admin/Shop/index.html?id=null
+=======
 SQL: SHOW COLUMNS FROM `area` [ RunTime:0.0040s ]
 SQL: SELECT `name` FROM `area` WHERE `code` = '130103'  [ RunTime:0.0010s ]
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
@@ -12530,12 +12766,19 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-05T14:55:36+08:00 ] ::1 /kuaidian/index.php/Admin/Ajax/index.html
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0781s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop` WHERE `depcsjlshi` = 0  [ RunTime:0.0313s ]
+=======
 SQL: SHOW COLUMNS FROM `area` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `area` WHERE `citycode` = '131000'  [ RunTime:0.0020s ]
 
@@ -12550,10 +12793,27 @@ SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0050s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `shop`  [ RunTime:0.0000s ]
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 109 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 112 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-05T18:58:08+08:00 ] 127.0.0.1 /-/index.php/Admin/Shop/index.html?id=1
+=======
 NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 110 行.
 NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 110 行.
 NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 113 行.
@@ -12581,20 +12841,44 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-05T15:04:09+08:00 ] ::1 /kuaidian/index.php/Admin/Shop/index.html?id=1
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0156s ]
+=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0040s ]
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 SQL: SELECT * FROM `shop`  [ RunTime:0.0000s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 109 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 112 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 174 行.
+SQL: SELECT `name` FROM `city` WHERE `code` = '130500'  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130100'  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130500'  [ RunTime:0.0313s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130500'  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+=======
 NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 110 行.
 NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 110 行.
 NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 113 行.
@@ -12649,34 +12933,76 @@ SQL: SELECT `name` FROM `city` WHERE `code` = '130500'  [ RunTime:0.0000s ]
 SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 2  [ RunTime:0.0000s ]
 SQL: SELECT `name` FROM `city` WHERE `code` = '130500'  [ RunTime:0.0000s ]
 SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0010s ]
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 SQL: SELECT `name` FROM `city` WHERE `code` = '130500'  [ RunTime:0.0000s ]
 SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0000s ]
 SQL: SELECT `name` FROM `city` WHERE `code` = '130500'  [ RunTime:0.0000s ]
 SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+<<<<<<< HEAD
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.171875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.171875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
+<<<<<<< HEAD
+[ 2018-01-05T18:58:11+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/index/menid/1/id/1.html
+=======
 [ 2018-01-05T15:04:30+08:00 ] ::1 /kuaidian/index.php/Admin/Shop/index.html?id=1
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0000s ]
+=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0050s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0020s ]
 SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `shop`  [ RunTime:0.0000s ]
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 109 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 109 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 112 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 174 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 4  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187500s ]
+=======
 NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 110 行.
 NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 110 行.
 NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 113 行.
@@ -12696,10 +13022,27 @@ SQL: SELECT `name` FROM `city` WHERE `code` = '130500'  [ RunTime:0.0000s ]
 SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0000s ]
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_end ] --START--
+<<<<<<< HEAD
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-05T18:58:17+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/add/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1  [ RunTime:0.0000s ]
+=======
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
@@ -12714,10 +13057,29 @@ SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0270s ]
 SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0050s ]
 SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0010s ]
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.046875s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.046875s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-05T19:14:37+08:00 ] 127.0.0.1 /-/index.php/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+=======
 NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 110 行.
 NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 110 行.
 NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 113 行.
@@ -12750,10 +13112,24 @@ SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1  [ RunTime:0.0000s ]
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+NOTIC: [8] Undefined variable: id E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 20 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-05T19:10:56+08:00 ] 127.0.0.1 /-/index.php/Admin/Index/dodenglu.html
+=======
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056003s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.056003s ]
 INFO: [ view_filter ] --START--
@@ -12764,10 +13140,33 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-05T16:39:05+08:00 ] ::1 /kuaidian/index.php/Admin/Food/index/menid/1/id/1.html
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+
+
+[ 2018-01-05T19:11:17+08:00 ] 127.0.0.1 /-/index.php/Admin/Index/dodenglu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-05T19:11:39+08:00 ] 127.0.0.1 /-/index.php/Admin/Index/dodenglu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013001s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
 
@@ -15841,6 +16240,7 @@ INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+>>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
 
 [ 2018-01-05T18:38:04+08:00 ] ::1 /kuaidian/index.php/Admin/Food/index/menid/1/id/1.html
 INFO: [ app_init ] --START--

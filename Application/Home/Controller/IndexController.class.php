@@ -12,10 +12,10 @@ class IndexController extends Controller {
     	$user = M('shop');
     	$where['zhuangt'] =  1;//是否上架 1--上架 2 --否
     	$data = $user->where($where)->field("mingch,maney,logo,juan")->select();
-    	$jsondata = json_encode($data);//转换为json数据
-    	dump($jsondata);
-    	echo "<br>";
-    	dump(json_decode($jsondata));die;
+    	// $jsondata = json_encode($data);//转换为json数据
+    	// dump($jsondata);
+    	// echo "<br>";
+    	// dump(json_decode($jsondata));die;
     	$this->assign('data',$data);
         $this->display();
     }

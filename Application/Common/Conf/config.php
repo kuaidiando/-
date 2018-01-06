@@ -1,4 +1,7 @@
 <?php
+
+//加载助手函数
+load_helper();
 return array(
 	//数据库配置信息
 'DB_TYPE'   => 'mysql', // 数据库类型

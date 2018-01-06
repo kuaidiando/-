@@ -216,3 +216,37 @@ function sms_code($num=6)
     $s_num = pow(10, $num-1);
     return mt_rand($s_num+1, $s_num*10-1);
 }
+
+
+//获取前台提交来的json数据
+function get_json_data()
+{
+    header('Content-Type: application/json; charset=utf-8');
+    return json_decode(file_get_contents("php://input"), true);
+}
+
+/**
+ * 加载助手函数
+ * @param string $helper_name 助手函数名，如config，为空则加载helper目录下的所有助手函数
+ * @return max
+ */ 
+function load_helper($helper_name = null)
+{
+
+    $helper_dir = COMMON_PATH.'Helper/';
+    
+    if ($helper_name) {
+        require_cache($helper_dir.$helper_name.'_helper.php');
+    } else {
+        $dir = new Common\Lib\Dir;
+        $helper_list = $dir->getSubFile($helper_dir);
+    
+        foreach ($helper_list as $helper_file) {
+            if (stripos($helper_file, '_helper.php', 0) > -1) {
+                require_cache($helper_dir.$helper_file);
+            }
+        }
+    }
+    
+    
+} 

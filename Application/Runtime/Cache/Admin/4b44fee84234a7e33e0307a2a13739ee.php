@@ -118,8 +118,7 @@ $(document).ready(function(){
 
                             layer.msg(result.msg,{icon:1,time:1000});
                             layer_close();
-                            // window.location.href='U("Admin/Event/index")'
-                            document.parent.location.reload()
+                            
                         } else {
                             // op_obj.remove();
 
