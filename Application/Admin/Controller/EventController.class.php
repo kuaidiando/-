@@ -9,7 +9,8 @@
 */
 namespace Admin\Controller;
 use Think\Controller;
-class EventController extends Controller {
+use Common\Controller\BasicController;
+class EventController extends BasicController {
    
     public function _initialize()
     {

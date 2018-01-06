@@ -45,46 +45,24 @@ $(document).ready(function(){
 </head>
 <body>
 <article class="page-container">
-    <form class="form form-horizontal" id="form-article-add" action="<?php echo U('Admin/Food/add');?>" method="post" enctype="multipart/form-data">
-    <!-- 对应门店id -->
-        <input type="hidden" name="dep_shop" value="<?php echo ($id); ?>">
+    <form class="form form-horizontal" id="form-article-add" action="<?php echo U('Admin/Shoptype/add');?>" method="post" enctype="multipart/form-data">
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>名称：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>分类名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" placeholder="" id="" name="mingch">
             </div>
         </div>
-        
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">LOGO：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>状态：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <div class="uploader-thum-container">
-                    <div id="fileList" class="uploader-list"></div>
-                    <input type="file" name="logo">
-                </div>
+                有效&nbsp;&nbsp;<input type="radio"  value="1" name="zhuangt" checked="checked">
+                无效&nbsp;&nbsp;<input type="radio"  value="2" name="zhuangt">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>价格：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>排序：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="jiage">
-            </div>
-        </div>
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>是否发布：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                是&nbsp;&nbsp;<input type="radio"  value="1" name="zhuangt" checked="checked">
-                否&nbsp;&nbsp;<input type="radio"  value="2" name="zhuangt">
-            </div>
-        </div>
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>类别：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <span class="select-box">
-                <select name="food_type" class="select">
-                    <?php if(is_array($rescaipinlb)): foreach($rescaipinlb as $key=>$volb): ?><option value="<?php echo ($volb["id"]); ?>" ><?php echo ($volb["mingch"]); ?></option><?php endforeach; endif; ?>
-                </select>
-                </span>
+                <input type="text" class="input-text" value="" placeholder="" id="" name="paix">
             </div>
         </div>
         

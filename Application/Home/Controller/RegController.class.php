@@ -10,85 +10,120 @@
 namespace Home\Controller;
 use Think\Controller;
 class RegController extends Controller {
+    private $get_data;
+
     public function _initialize()
     {
+        $this->get_data = get_json_data();
         //如果登录就调至前台的模块
-       $this->checkreg($tel);
+       // $this->checkreg($tel);
     }
 
     public function __call($action = '', $params = array())
     {
-        $this->display('reg');
+        $mobile = '13331385580';
+        $mobile_status = \user_helper::check_mobile($mobile);
+        dump($mobile_status);exit;
+        // $this->display('index');
     }
 
 
     //注册用户
     public function save(){
 
-        $user = M("user");
 
         $mobile     = I('tel', '', 'trim');
         $password   = I('password', '', 'trim');
-        $repassword = I('repassword', '', 'trim');
         $status     = I('status','','trim');
-        $ad_code    = I('code','','trim');
+        // $ad_code    = I('code','','trim');
+
+        $user = M("user");
+         if (isset($this->get_data['tel']) && $this->get_data['tel']) {
+            $mobile = $this->get_data['tel'];
+        }
+        if (isset($this->get_data['password']) && $this->get_data['password']) {
+            $password = $this->get_data['password'];
+        }
+        if (isset($this->get_data['code']) && $this->get_data['code']) {
+            $code = $this->get_data['code'];
+        }
 
         if (!$password) {
-            $this->error('请填写密码');
+            $data = array(
+                    'data' => false,
+                    'code' => 208,
+                    'msg'  => '请填写登录密码',
+            );
+
+            $this->ajaxReturn($data);
+        }
+        $password_len = strlen($password);
+        if (6 > $password_len || 32 < $password_len) {
+            $data = array(
+                    'data' => false,
+                    'code' => 209,
+                    'msg'  => '密码长度需大于6位且小于32位字符',
+            );
+
+            $this->ajaxReturn($data);
         }
 
-        if (!$repassword) {
-            $this->error('请填写重复密码');
+        if (!$code) {
+            $data = array(
+                    'data' => false,
+                    'code' => 300,
+                    'msg'  => '请输入手机验证码',
+            );
+            $this->ajaxReturn($data);
         }
-
-        if ($password != $repassword) {
-            $this->error('重复密码与密码不一致');
-        }
-
-        if (!$mobile) {
-            $this->error('请填写帐号');
-        }
-
-        $mobile_length = strlen($mobile);
-        if ($mobile_length < 5 || $mobile_length > 30) {
-            $this->error('账号长度要多于5个且少于30个字符');
-        }
-       
 
         //验证验证码
-        $verify = new \Think\Verify();  
-        if(!$verify->check($ad_code)){
-           $this->error("验证码错误!","index",3);
-        }
+        // $verify = new \Think\Verify();  
+        // if(!$verify->check($ad_code)){
+        //    $this->error("验证码错误!","index",3);
+        // }
 
-        $user_info = uri('user', array('tel'=>$mobile));
-        if ($user_info) {
-            $this->error('该用户已存在');
+        // $user_info = uri('user', array('tel'=>$mobile));
+        // if ($user_info) {
+        //     $this->error('该用户已存在');
+        // }
+
+      
+        $user_info = $this->checkreg($mobile);
+        if(!$user_info){
+            $info = array(
+                    'password' => md5($password),
+                    'tel'     => $mobile,
+                    'add_time'      => date('Y-m-d H:i:s'),
+                    // 'update_time'   => date('Y-m-d H:i:s'),
+                    // 'update_ip'     => get_client_ip(),
+                    'status'          => $status,
+            );
+
+        $result = $user->add($data);
+        if(!$result){
+            $data = array(
+                        'data' => false,
+                        'code' => 304,
+                        'msg'  => '注册用户失败',
+                        );
+
+            $this->ajaxReturn($data);
+        }else{
+            $this->ajaxReturn(array(
+                'data' => false,
+                'code' => 311,
+                'msg' => '该会员已存在，无需重复注册'
+            ));
         }
 
         $data = array(
-            'password' => md5($password),
-            'tel'     => $mobile,
-            'add_time'      => date('Y-m-d H:i:s'),
-            // 'update_time'   => date('Y-m-d H:i:s'),
-            // 'update_ip'     => get_client_ip(),
-            'status'          => $status,
+                'data' => true,
+                'code' => 200,
+                'msg'  => '',
         );
-        // dump($data);exit;
 
-        $result = $user->add($data);
-
-        if($result){
-            $this->success('用户添加成功', U('home/login/index'));
-            /*$group_result = M('auth_group_access')->add(array('user_id'=>$result, 'group_id'=>5));
-            if ($group_result) {
-                $this->success('用户添加成功', U('manage/index/index'));
-            } else {
-                $this->error('用户添加失败');
-            }*/
-        }else{
-            $this->error('用户添加失败');
-        }
+        $this->ajaxReturn($data);
     }
     //验证用户是否注册
     private function checkreg($tel){
@@ -97,9 +132,7 @@ class RegController extends Controller {
             );
         $user = M('user')->where($where)->find();
         // dump($user);exit;
-        if($user){
-            redirect(U('home/index/index'));
-        }
+        return $user;
     }
 
      //生成验证码方法

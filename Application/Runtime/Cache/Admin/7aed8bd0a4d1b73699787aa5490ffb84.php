@@ -45,54 +45,34 @@ $(document).ready(function(){
 </head>
 <body>
 <article class="page-container">
-    <form class="form form-horizontal" id="form-article-add" action="<?php echo U('Admin/Food/add');?>" method="post" enctype="multipart/form-data">
-    <!-- 对应门店id -->
-        <input type="hidden" name="dep_shop" value="<?php echo ($id); ?>">
+    <form class="form form-horizontal" id="form-admin-add" action="<?php echo U('Admin/Shoptype/edit');?>" method="post">
+        <input type="hidden" name="id" value="<?php echo ($data["0"]["id"]); ?>">
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>名称：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>分类名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="mingch">
-            </div>
-        </div>
-        
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">LOGO：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <div class="uploader-thum-container">
-                    <div id="fileList" class="uploader-list"></div>
-                    <input type="file" name="logo">
-                </div>
+                <input type="text" class="input-text" value="<?php echo ($data["0"]["mingch"]); ?>" name="mingch">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>价格：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>状态：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="jiage">
+            <?php if(is_array($data)): foreach($data as $key=>$vo): if($vo["zhuangt"] == 1 ): ?>有效&nbsp;&nbsp;<input type="radio"  value="1" name="zhuangt" checked="checked">
+                    无效&nbsp;&nbsp;<input type="radio"  value="2" name="zhuangt">
+                    <?php else: ?> 
+                    有效&nbsp;&nbsp;<input type="radio"  value="1" name="zhuangt">
+                    无效&nbsp;&nbsp;<input type="radio"  value="2" name="zhuangt" checked="checked"><?php endif; endforeach; endif; ?>
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>是否发布：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>排序：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                是&nbsp;&nbsp;<input type="radio"  value="1" name="zhuangt" checked="checked">
-                否&nbsp;&nbsp;<input type="radio"  value="2" name="zhuangt">
+                <input type="text" class="input-text" value="<?php echo ($data["0"]["paix"]); ?>"  name="paix">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>类别：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <span class="select-box">
-                <select name="food_type" class="select">
-                    <?php if(is_array($rescaipinlb)): foreach($rescaipinlb as $key=>$volb): ?><option value="<?php echo ($volb["id"]); ?>" ><?php echo ($volb["mingch"]); ?></option><?php endforeach; endif; ?>
-                </select>
-                </span>
-            </div>
-        </div>
-        
-        <div class="row cl">
-            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
-                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 添加</button><!-- 
-                <button onClick="article_save();" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button>
-                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button> -->
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 修改</button>
+                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
             </div>
         </div>
     </form>
