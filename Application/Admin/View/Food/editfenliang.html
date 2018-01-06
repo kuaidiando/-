@@ -1,0 +1,57 @@
+<include file="Layout/headerys"/>
+</head>
+<body>
+<article class="page-container">
+    <form class="form form-horizontal" id="form-admin-add" action="{:U('Admin/Food/editfenliang')}" method="post" enctype="multipart/form-data">
+         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>菜品份量：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+            <!-- 真实菜品分量 -->
+                <input type="hidden" value="0" name="flid" id="Jszzdm">
+                <!-- 分量列表 -->
+                <foreach name="rescpfl" item="vofl" key="k">
+                    <if condition="$vofl.id eq $flid[$k]">
+                    {$vofl.mingch}<input type="checkbox" value="{$vofl.id}" name="fenliang" checked="checked">&nbsp;&nbsp;
+                    <else />
+                    {$vofl.mingch}<input type="checkbox" value="{$vofl.id}" name="fenliang" >&nbsp;&nbsp;
+                    </if>
+                </foreach>
+            </div>
+        </div>
+         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>菜品口味：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+            <!-- 真实菜品口味 -->
+                <input type="hidden" value="0" name="kwid" id="kwid">
+                <!-- 分量列表 -->
+                <foreach name="rescpkw" item="vokw" key="k">
+                    <if condition="$vokw.id eq $kwid[$k]">
+                    {$vokw.mingch}<input type="checkbox" value="{$vokw.id}" name="kouwei" checked="checked">&nbsp;&nbsp;
+                    <else />
+                    {$vokw.mingch}<input type="checkbox" value="{$vokw.id}" name="kouwei" >&nbsp;&nbsp;
+                    </if>
+                </foreach>
+            </div>
+        </div>
+        <!-- 菜品id -->
+       <input type="hidden" value="{$cpid}" name='cpid'>
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 修改</button>
+                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    </form>
+</article>
+<script>
+// 复选框勾选添加到隐藏框中 --分量
+  $('input[name=fenliang]').change(function(){
+    $('#Jszzdm').val($('input[name=fenliang]:checked').map(function(){return this.value}).get().join(','))
+  })
+
+// 复选框勾选添加到隐藏框中 --口味
+  $('input[name=kouwei]').change(function(){
+    $('#kwid').val($('input[name=kouwei]:checked').map(function(){return this.value}).get().join(','))
+  })
+</script>
+<include file="Layout/footer"/>

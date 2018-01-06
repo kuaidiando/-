@@ -6,11 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
-<<<<<<< HEAD
-<script type="text/javascript" src="/-/Public/jquery/jquery.js"></script>
-=======
 <script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
->>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
 <script type="text/javascript">
 $(document).ready(function(){
  $("dd").hide();
@@ -25,19 +21,6 @@ $(document).ready(function(){
 });
 });
 </script>
-<<<<<<< HEAD
-<!-- <script type="text/javascript" src="/-/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
- -->
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui/css/H-ui.min.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/H-ui.admin.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/icheck/icheck.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/style.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/css/hidTable.css"/>
-<!-- 分页效果 -->
-<link href="/-/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
-=======
 <!-- <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
  -->
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui/css/H-ui.min.css"/>
@@ -49,16 +32,11 @@ $(document).ready(function(){
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/>
 <!-- 分页效果 -->
 <link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
->>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
 <title>快点</title>
 <div class="navbar navbar-fixed-top">
     <div class="container-fluid cl">
         <a class="logo navbar-logo f-l mr-10 hidden-xs" href="#">快点LOGO</a>
-<<<<<<< HEAD
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="<?php echo U('Admin/Index/mokuaia');?>">模块a</a>
-=======
         <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/Oracle/mokuaia');?>">模块a</span></a>
->>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
         <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="">模块b</a>
         <li class="dropDown dropDown_hover" style="margin-left: 60%;margin-top: 1%;">
         <div>
@@ -94,6 +72,7 @@ $(document).ready(function(){
             <!-- <a _href="<?php echo U('Admin/Index/yinczhuye');?>" name="<?php echo U('Admin/Index/yinczhuye');?>" style="display: none;"class="" href="javascript:;">隐藏主页</a> -->
             <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
             <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">单位管理</a></li>
         </ul>
         </dd>
     </dl>
@@ -133,19 +112,11 @@ $(document).ready(function(){
 		</div>
 		<!-- 主题内容 -->
 		<div>
-<<<<<<< HEAD
-			<link rel="icon" type="image/png" href="/-/Public/xin/assets/i/favicon.png">
-			<link rel="apple-touch-icon-precomposed" href="/-/Public/xin/assets/i/app-icon72x72@2x.png">
-			<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
-			<link rel="stylesheet" href="/-/Public/xin/assets/css/amazeui.min.css"/>
-			<link rel="stylesheet" href="/-/Public/xin/assets/css/admin.css">
-=======
 			<link rel="icon" type="image/png" href="/kuaidian/Public/xin/assets/i/favicon.png">
 			<link rel="apple-touch-icon-precomposed" href="/kuaidian/Public/xin/assets/i/app-icon72x72@2x.png">
 			<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
 			<link rel="stylesheet" href="/kuaidian/Public/xin/assets/css/amazeui.min.css"/>
 			<link rel="stylesheet" href="/kuaidian/Public/xin/assets/css/admin.css">
->>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
 			<div class="admin-index">
 				<dl data-am-scrollspy="{animation: 'slide-right', delay: 100}">
 					<dt class="qs"><i class="am-icon-users"></i></dt>
@@ -531,16 +502,6 @@ $(document).ready(function(){
 		// alert(aa);
 	});
 </script>
-<<<<<<< HEAD
-<script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
-=======
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
@@ -549,7 +510,6 @@ $(document).ready(function(){
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
->>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');

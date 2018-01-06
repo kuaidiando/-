@@ -45,60 +45,50 @@ $(document).ready(function(){
 </head>
 <body>
 <article class="page-container">
-    <form class="form form-horizontal" id="form-article-add" action="<?php echo U('Admin/Event/insert');?>" method="post" enctype="multipart/form-data">
-    <!-- 对应门店id -->
-        <!-- <input type="hidden" name="dep_shop" value="<?php echo ($id); ?>"> -->
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>名称：</label>
+    <form class="form form-horizontal" id="form-admin-add" action="<?php echo U('Admin/Food/editfenliang');?>" method="post" enctype="multipart/form-data">
+         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>菜品份量：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="ename" name="ename">
+            <!-- 真实菜品分量 -->
+                <input type="hidden" value="0" name="flid" id="Jszzdm">
+                <!-- 分量列表 -->
+                <?php if(is_array($rescpfl)): foreach($rescpfl as $k=>$vofl): if($vofl["id"] == $flid[$k]): echo ($vofl["mingch"]); ?><input type="checkbox" value="<?php echo ($vofl["id"]); ?>" name="fenliang" checked="checked">&nbsp;&nbsp;
+                    <?php else: ?>
+                    <?php echo ($vofl["mingch"]); ?><input type="checkbox" value="<?php echo ($vofl["id"]); ?>" name="fenliang" >&nbsp;&nbsp;<?php endif; endforeach; endif; ?>
             </div>
         </div>
-        
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">图片：</label>
+         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>菜品口味：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <div class="uploader-thum-container">
-                    <div id="fileList" class="uploader-list"></div>
-                    <input type="file" name="pic">
-                </div>
+            <!-- 真实菜品口味 -->
+                <input type="hidden" value="0" name="kwid" id="kwid">
+                <!-- 分量列表 -->
+                <?php if(is_array($rescpkw)): foreach($rescpkw as $k=>$vokw): if($vokw["id"] == $kwid[$k]): echo ($vokw["mingch"]); ?><input type="checkbox" value="<?php echo ($vokw["id"]); ?>" name="kouwei" checked="checked">&nbsp;&nbsp;
+                    <?php else: ?>
+                    <?php echo ($vokw["mingch"]); ?><input type="checkbox" value="<?php echo ($vokw["id"]); ?>" name="kouwei" >&nbsp;&nbsp;<?php endif; endforeach; endif; ?>
             </div>
         </div>
+        <!-- 菜品id -->
+       <input type="hidden" value="<?php echo ($cpid); ?>" name='cpid'>
         <div class="row cl">
-        <!--     <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>价格：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="jiage">
-            </div>
-        </div> -->
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>&是否发布：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                是&nbsp;&nbsp;<input type="radio"  value="1" name="status" class="satus" checked="checked">
-                否&nbsp;&nbsp;<input type="radio" class="status" value="0" name="status">
-            </div>
-        </div>
-        <!-- <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>类别：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <span class="select-box">
-                <select name="food_type" class="select">
-                    <?php if(is_array($rescaipinlb)): foreach($rescaipinlb as $key=>$volb): ?><option value="<?php echo ($volb["id"]); ?>" ><?php echo ($volb["mingch"]); ?></option><?php endforeach; endif; ?>
-                </select>
-                </span>
-            </div>
-        </div> -->
-        
-        <div class="row cl">
-            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
-                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 添加</button>
-               <!--  <button onClick="article_save();" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button> -->
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 修改</button>
                 <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
             </div>
         </div>
     </form>
-   
-  
 </article>
+<script>
+// 复选框勾选添加到隐藏框中 --分量
+  $('input[name=fenliang]').change(function(){
+    $('#Jszzdm').val($('input[name=fenliang]:checked').map(function(){return this.value}).get().join(','))
+  })
+
+// 复选框勾选添加到隐藏框中 --口味
+  $('input[name=kouwei]').change(function(){
+    $('#kwid').val($('input[name=kouwei]:checked').map(function(){return this.value}).get().join(','))
+  })
+</script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>

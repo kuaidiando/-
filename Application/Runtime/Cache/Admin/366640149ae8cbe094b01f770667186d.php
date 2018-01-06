@@ -6,11 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
-<<<<<<< HEAD
-<script type="text/javascript" src="/-/Public/jquery/jquery.js"></script>
-=======
 <script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
->>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
 <script type="text/javascript">
 $(document).ready(function(){
  $("dd").hide();
@@ -25,19 +21,6 @@ $(document).ready(function(){
 });
 });
 </script>
-<<<<<<< HEAD
-<!-- <script type="text/javascript" src="/-/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
- -->
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui/css/H-ui.min.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/H-ui.admin.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/icheck/icheck.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/style.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/css/hidTable.css"/>
-<!-- 分页效果 -->
-<link href="/-/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
-=======
 <!-- <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
  -->
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui/css/H-ui.min.css"/>
@@ -49,20 +32,11 @@ $(document).ready(function(){
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/>
 <!-- 分页效果 -->
 <link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
->>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
 <title>快点</title>
 <div class="navbar navbar-fixed-top">
     <div class="container-fluid cl">
         <a class="logo navbar-logo f-l mr-10 hidden-xs" href="#">快点LOGO</a>
-<<<<<<< HEAD
         <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/Oracle/mokuaia');?>">模块a</span></a>
-=======
-<<<<<<< HEAD
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="<?php echo U('Admin/Index/mokuaia');?>">模块a</a>
-=======
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="<?php echo U('Admin/Oracle/mokuaia');?>">模块a</a>
->>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
->>>>>>> 8990e90c3e932ee2b5ab3bfa0078a7075e86bb67
         <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="">模块b</a>
         <li class="dropDown dropDown_hover" style="margin-left: 60%;margin-top: 1%;">
         <div>
@@ -144,16 +118,6 @@ $(document).ready(function(){
 
 
 
-<<<<<<< HEAD
-<script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
-=======
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
@@ -162,7 +126,6 @@ $(document).ready(function(){
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
->>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');
@@ -220,7 +183,7 @@ $(document).ready(function(){
                     <th width="60">原价</th>
                     <th width="60">售价</th>
                     <th width="60">菜品类别</th>
-                    <th width="60">规格</th>
+                    <th width="120">规格</th>
                     <th width="60">门店</th>
                     <th width="60">发布状态</th>
                     <th width="120">操作</th>
@@ -230,29 +193,20 @@ $(document).ready(function(){
                 <?php if(is_array($data)): foreach($data as $key=>$vo): ?><tr class="text-c">
                             <td><?php echo ($vo["id"]); ?></td>
                             <td><?php echo ($vo["mingch"]); ?></td>
-<<<<<<< HEAD
-                            <td><img style="width: 30%;"src="/-/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
-=======
                             <td><img style="width: 30%;"src="/kuaidian/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
->>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
                             <td>￥<?php echo ($vo["jiage"]); ?></td>
                             <td>￥<?php echo ($vo["jiage_youhui"]); ?></td>
                             <td><?php echo (foodtype($vo["food_type"])); ?></td>
                             <td>
                                 <div style="text-align: center;">
-                                    <span style="vertical-align:-1px;">菜量：大份</span>
+                                    <?php if($vo["guige"] == 0 ): ?>无
+                                        <?php else: endif; ?>
+                                    <span style="vertical-align:-1px;"><?php echo (fenliangdo($vo["flid"])); ?></span>
+                                    <span style="vertical-align:-1px;"><?php echo (kouweido($vo["kwid"])); ?></span>
                                     <a style="margin-right: 10%;" href="javascript:;"
-                                       onclick="admin_add('编辑详情','<?php echo U('Admin/Food/edit', array('id' => $vo['id']));?>'
+                                       onclick="admin_add('编辑菜量','<?php echo U('Admin/Food/editfenliang', array('id' => $vo['id'],'flid'=>$vo['flid'],'kwid'=>$vo['kwid']));?>'
                                        ,'800','500')">
-                                        <span style="vertical-align:baseline;"><i class="Hui-iconfont">&#xe667;</i></span>
-                                    </a>
-                                </div>
-                                <div>
-                                <span style="vertical-align:-1px;">口味：麻辣</span>
-                                <a style="margin-right: 10%;" href="javascript:;"
-                                       onclick="admin_add('编辑详情','<?php echo U('Admin/Food/edit', array('id' => $vo['id']));?>'
-                                       ,'800','500')">
-                                        <i class="Hui-iconfont">&#xe667;</i>
+                                        <span style="vertical-align:baseline;color: red;"><b><i class="Hui-iconfont">&#xe667;</i></b></span>
                                     </a>
                                 </div>
                             </td>
@@ -305,16 +259,6 @@ $(document).ready(function(){
             });
         });
     </script>
-<<<<<<< HEAD
-<script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
-=======
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
@@ -323,7 +267,6 @@ $(document).ready(function(){
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
->>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');

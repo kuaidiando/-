@@ -24,7 +24,7 @@
                     <th width="60">原价</th>
                     <th width="60">售价</th>
                     <th width="60">菜品类别</th>
-                    <th width="60">规格</th>
+                    <th width="120">规格</th>
                     <th width="60">门店</th>
                     <th width="60">发布状态</th>
                     <th width="120">操作</th>
@@ -41,19 +41,16 @@
                             <td>{$vo.food_type|foodtype=###}</td>
                             <td>
                                 <div style="text-align: center;">
-                                    <span style="vertical-align:-1px;">菜量：大份</span>
+                                    <if condition="$vo.guige eq 0 ">
+                                        无
+                                        <else /> 
+                                    </if>
+                                    <span style="vertical-align:-1px;">{$vo.flid|fenliangdo=###}</span>
+                                    <span style="vertical-align:-1px;">{$vo.kwid|kouweido=###}</span>
                                     <a style="margin-right: 10%;" href="javascript:;"
-                                       onclick="admin_add('编辑详情','{:U('Admin/Food/edit', array('id' => $vo['id']))}'
+                                       onclick="admin_add('编辑菜量','{:U('Admin/Food/editfenliang', array('id' => $vo['id'],'flid'=>$vo['flid'],'kwid'=>$vo['kwid']))}'
                                        ,'800','500')">
-                                        <span style="vertical-align:baseline;"><i class="Hui-iconfont">&#xe667;</i></span>
-                                    </a>
-                                </div>
-                                <div>
-                                <span style="vertical-align:-1px;">口味：麻辣</span>
-                                <a style="margin-right: 10%;" href="javascript:;"
-                                       onclick="admin_add('编辑详情','{:U('Admin/Food/edit', array('id' => $vo['id']))}'
-                                       ,'800','500')">
-                                        <i class="Hui-iconfont">&#xe667;</i>
+                                        <span style="vertical-align:baseline;color: red;"><b><i class="Hui-iconfont">&#xe667;</i></b></span>
                                     </a>
                                 </div>
                             </td>

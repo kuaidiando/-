@@ -145,6 +145,36 @@ function foodtype($code){
     // dump($result);die;
     return $result[0]['mingch'];
 }
+// yxy
+// 菜品分量转换 
+function fenliangdo($code){
+    $user = M('cpfenliang');
+    //判断是否为0
+    if ($code == 0) {
+        $data = "";
+    }else{
+        $fenl = explode(',',$code);//以 ，分隔成数组
+        $where['id'] = $fenl[0];
+        $res = $user->where($where)->select();
+        $data = "菜量：".$res[0]['mingch']."...";
+    }
+
+    return $data;
+}
+// 菜品口味转换
+function kouweido($code){
+    $user = M('cpkouwei');
+    //判断是否为0
+    if ($code == 0) {
+        $data = "";
+    }else{
+        $fenl = explode(',',$code);//以 ，分隔成数组
+        $where['id'] = $fenl[0];
+        $res = $user->where($where)->select();
+        $data = "口味：".$res[0]['mingch']."...";
+    }
+    return $data;
+}
 /**
  * 统一资源定位
  * @param string $model 数据表名

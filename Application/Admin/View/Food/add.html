@@ -40,18 +40,9 @@
                 否&nbsp;&nbsp;<input type="radio"  value="2" name="zhuangt">
             </div>
         </div>
+
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>菜品份量：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-            <!-- 真实菜品分量 -->
-                <input type="hidden" value="0" name="flid" id="Jszzdm">
-                <foreach name="resfl" item="vofl">
-                    {$vofl.mingch}<input type="checkbox" value="{$vofl.id}" name="fenliang">&nbsp;&nbsp;
-                </foreach>
-            </div>
-        </div>
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>类别：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>菜品类别：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <span class="select-box">
                 <select name="food_type" class="select">
@@ -60,6 +51,37 @@
                     </foreach>
                 </select>
                 </span>
+            </div>
+        </div>
+        <div class="row cl">
+            <!-- <button type="button" class="btn btn-primary radius" id="guige" style="margin-left: 5%;">规格</button> -->
+            <label  class="form-label col-xs-4 col-sm-2">规格：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                &nbsp;&nbsp;<input type="checkbox"  value="1" name="guige" id="guige">
+                如添加规格请选择
+            </div>
+        </div>
+        <!-- 隐藏规格 -->
+        <div style="display: none;" id="guigechuf">
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">菜品份量：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                <!-- 真实菜品分量 -->
+                    <input type="hidden" value="0" name="flid" id="Jszzdm">
+                    <foreach name="resfl" item="vofl">
+                        {$vofl.mingch}<input type="checkbox" value="{$vofl.id}" name="fenliang">&nbsp;&nbsp;
+                    </foreach>
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">菜品口味：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                <!-- 真实菜品口味 -->
+                    <input type="hidden" value="0" name="kwid" id="kwid">
+                    <foreach name="reskw" item="vokw">
+                        {$vokw.mingch}<input type="checkbox" value="{$vokw.id}" name="kouwei">&nbsp;&nbsp;
+                    </foreach>
+                </div>
             </div>
         </div>
         
@@ -73,9 +95,16 @@
     </form>
 </article>
 <script>
+$(document).on("click","#guige",function(){
+    $("#guigechuf").toggle();
+});
 // 复选框勾选添加到隐藏框中 --分量
   $('input[name=fenliang]').change(function(){
     $('#Jszzdm').val($('input[name=fenliang]:checked').map(function(){return this.value}).get().join(','))
+  })
+// 复选框勾选添加到隐藏框中 --口味
+  $('input[name=kouwei]').change(function(){
+    $('#kwid').val($('input[name=kouwei]:checked').map(function(){return this.value}).get().join(','))
   })
 </script>
 <include file="Layout/footer"/>
