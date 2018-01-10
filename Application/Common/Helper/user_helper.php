@@ -21,30 +21,39 @@ class user_helper
      */
 
 
+    // public static function get_user_id(){
+    //     @$openid = $_SESSION['openId'];
+    //     if (!$openid) {
+    //         $user_id = 0;
+    //     }else{
+    //         $redis = $GLOBALS['redisClass'];
+    //         $info = $redis->hGet('OpenId&UserInfo',$openid);
+    //         if ($info) {
+    //             $user_id = json_decode($info,true)['user_id'];
+    //         }else{
+    //             $user_id = M('weixin_user')->where(array('openid'=>$openid))->getField('user_id');
+    //             if ($user_id) {
+    //                 $user_mobile = M('user')->where(array('id'=>$user_id))->getField('mobile');
+    //                 $user_info = array(
+    //                     'user_id' => $user_id,
+    //                     'mobile'  => $user_mobile
+    //                 );
+    //                 $redis->hSet('OpenId&UserInfo',$openid,json_encode($user_info));
+    //             }else{
+    //                 $user_id = 0;
+    //             }
+    //         }
+    //     }
+    //     return $user_id;
+    // }
     public static function get_user_id(){
-        @$openid = $_SESSION['openId'];
-        if (!$openid) {
-            $user_id = 0;
+        $user_id = $_SESSION['userid'];
+        if($user_id){
+            return $user_id;
         }else{
-            $redis = $GLOBALS['redisClass'];
-            $info = $redis->hGet('OpenId&UserInfo',$openid);
-            if ($info) {
-                $user_id = json_decode($info,true)['user_id'];
-            }else{
-                $user_id = M('weixin_user')->where(array('openid'=>$openid))->getField('user_id');
-                if ($user_id) {
-                    $user_mobile = M('user')->where(array('id'=>$user_id))->getField('mobile');
-                    $user_info = array(
-                        'user_id' => $user_id,
-                        'mobile'  => $user_mobile
-                    );
-                    $redis->hSet('OpenId&UserInfo',$openid,json_encode($user_info));
-                }else{
-                    $user_id = 0;
-                }
-            }
+            $user_id = 0;
+            return $user_id;
         }
-        return $user_id;
     }
 
     /**
@@ -394,16 +403,16 @@ class user_helper
             return false;
         }
 
-        // if (!check_mobile($mobile)) {
-        //     $data = array(
-        //             'data' => false,
-        //             'code' => 202,
-        //             'msg'  => '手机号格式有误',
-        //     );
+        if (!check_mobile($mobile)) {
+            $data = array(
+                    'data' => false,
+                    'code' => 202,
+                    'msg'  => '手机号格式有误',
+            );
 
-        //     echo json_encode($data);
-        //     return false;
-        // }
+            echo json_encode($data);
+            return false;
+        }
 
         return true;
     }
@@ -473,5 +482,6 @@ class user_helper
 
         return $result['data']['rewardsNum'];
     }
+   
 }
 ?>

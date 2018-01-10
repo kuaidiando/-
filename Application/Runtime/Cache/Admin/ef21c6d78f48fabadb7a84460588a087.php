@@ -72,7 +72,11 @@ $(document).ready(function(){
             <!-- <a _href="<?php echo U('Admin/Index/yinczhuye');?>" name="<?php echo U('Admin/Index/yinczhuye');?>" style="display: none;"class="" href="javascript:;">隐藏主页</a> -->
             <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
             <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
+<<<<<<< HEAD
             <li><a class="shopin" name="<?php echo U('Admin/Danwei/index');?>">单位管理</a></li>
+=======
+            <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">单位管理</a></li>
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
         </ul>
         </dd>
     </dl>
@@ -81,6 +85,14 @@ $(document).ready(function(){
         <dd>
         <ul>
             <li><a class="shopin" name="<?php echo U('Admin/Event/index');?>">轮播图列表</a></li>
+        </ul>
+        </dd>
+    </dl>
+    <dl>
+        <dt><a href="#">会员管理</a></dt>
+        <dd>
+        <ul>
+            <li><a class="shopin" name="<?php echo U('Admin/User/index');?>">会员列表</a></li>
         </ul>
         </dd>
     </dl>

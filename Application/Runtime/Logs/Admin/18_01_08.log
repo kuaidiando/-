@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 [ 2018-01-08T09:21:11+08:00 ] ::1 /kuaidian/index.php/Admin/Index/index.html
+=======
+[ 2018-01-08T11:35:32+08:00 ] 127.0.0.1 /-/index.php/admin/user
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 INFO: [ view_parse ] --START--
@@ -78,10 +83,18 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-08T09:35:54+08:00 ] ::1 /kuaidian/index.php/Admin/Shop/index.html?id=1
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载控制器:User
+
+[ 2018-01-08T11:43:47+08:00 ] 127.0.0.1 /-/index.php/admin/user
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0030s ]
@@ -129,10 +142,18 @@ SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0050s ]
 SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0010s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `event`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `event` LIMIT 1   [ RunTime:0.0156s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 110 行.
 NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 110 行.
 NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 113 行.
@@ -166,25 +187,49 @@ INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 110 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 110 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
+<<<<<<< HEAD
 [ 2018-01-08T09:43:36+08:00 ] ::1 /kuaidian/index.php/Admin/Food/index/menid/1/id/1.html
+=======
+[ 2018-01-08T11:46:03+08:00 ] 127.0.0.1 /-/index.php/admin/user
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0020s ]
 SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0020s ]
 SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0000s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `event`  [ RunTime:0.0156s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `event` LIMIT 1   [ RunTime:0.0000s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 110 行.
 NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 110 行.
 NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 113 行.
@@ -235,18 +280,53 @@ SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0000s ]
 SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0050s ]
 SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0010s ]
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-08T11:46:08+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index.html?id=null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `event`  [ RunTime:0.0156s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `event` LIMIT 1   [ RunTime:0.0156s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [8] Undefined offset: 2 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+<<<<<<< HEAD
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-08T09:43:43+08:00 ] ::1 /kuaidian/index.php/Admin/Food/editfenliang/id/28/flid/5/kwid/5.html
@@ -262,10 +342,25 @@ SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0000s ]
 SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0010s ]
+=======
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-08T11:46:51+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index.html?id=null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `event`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `event` LIMIT 1   [ RunTime:0.0000s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 NOTIC: [8] Undefined offset: 2 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
@@ -273,10 +368,22 @@ INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
+<<<<<<< HEAD
 [ 2018-01-08T09:43:46+08:00 ] ::1 /kuaidian/index.php/Admin/Food/editfenliang/id/25/flid/5%2C6%2C7/kwid/0.html
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -314,10 +421,23 @@ SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0000s ]
+=======
+[ 2018-01-08T11:46:52+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index.html?id=null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `event`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `event` LIMIT 1   [ RunTime:0.0000s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 110 行.
 NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 110 行.
 NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 113 行.
@@ -348,10 +468,19 @@ SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
 SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_end ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
@@ -387,12 +516,19 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-08T09:49:44+08:00 ] ::1 /kuaidian/index.php/Admin/Food/editfenliang/id/25/flid/5%2C6%2C7/kwid/0.html
+=======
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-08T11:47:42+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index.html?id=null
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0050s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0020s ]
 SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0050s ]
@@ -408,18 +544,40 @@ NOTIC: [8] Undefined offset: 2 D:\xampp\htdocs\kuaidian\Application\Runtime\Cach
 NOTIC: [8] Undefined offset: 3 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 66 行.
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+=======
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `event`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `event` LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+<<<<<<< HEAD
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-08T09:49:46+08:00 ] ::1 /kuaidian/index.php/Admin/Food/editfenliang/id/26/flid/0/kwid/5%2C6%2C7%2C8.html
+=======
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-08T12:07:02+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index.html?id=null
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0050s ]
@@ -428,10 +586,18 @@ SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0020s ]
 SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0000s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0156s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 NOTIC: [8] Undefined offset: 2 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
@@ -456,10 +622,24 @@ SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0050s ]
 SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0000s ]
 SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0010s ]
+=======
+
+[ 2018-01-08T12:09:09+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index.html?id=null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0156s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [8] Undefined offset: 2 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 NOTIC: [8] Undefined offset: 2 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 66 行.
 NOTIC: [8] Undefined offset: 3 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 66 行.
@@ -485,10 +665,24 @@ SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0000s ]
 SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0020s ]
 SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0000s ]
+=======
+
+[ 2018-01-08T12:09:12+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index.html?id=null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 NOTIC: [8] Undefined offset: 2 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 66 行.
@@ -504,11 +698,16 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-08T09:50:08+08:00 ] ::1 /kuaidian/index.php/Admin/Food/editfenliang/id/26/flid/0/kwid/5%2C6%2C7%2C8.html
+=======
+
+[ 2018-01-08T12:09:14+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index.html?id=null
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+<<<<<<< HEAD
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0060s ]
@@ -516,10 +715,17 @@ SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0020s ]
 SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0000s ]
 SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0010s ]
+=======
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 NOTIC: [8] Undefined offset: 2 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
@@ -532,12 +738,17 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
 
 [ 2018-01-08T09:50:23+08:00 ] ::1 /kuaidian/index.php/Admin/Food/editfenliang/id/26/flid/0/kwid/5%2C6%2C7%2C8.html
+=======
+
+[ 2018-01-08T12:09:18+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index.html?id=null
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0020s ]
 SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0060s ]
@@ -560,10 +771,22 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
 [ 2018-01-08T09:50:25+08:00 ] ::1 /kuaidian/index.php/Admin/Food/editfenliang/id/25/flid/5%2C6%2C7/kwid/0.html
+=======
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-08T12:10:42+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index.html?id=null
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0030s ]
@@ -632,10 +855,62 @@ SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0000s ]
 SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0010s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: user_num E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 188 行.
+NOTIC: [8] Undefined variable: user_info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.062500s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: user_info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.046875s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-08T12:11:29+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index.html?id=null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Admin\Controller\UserController.class.php 第 36 行.
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 NOTIC: [8] Undefined offset: 2 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 66 行.
@@ -679,10 +954,43 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-08T09:50:38+08:00 ] ::1 /kuaidian/index.php/Admin/Food/add.html
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: user_num E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 188 行.
+NOTIC: [8] Undefined variable: user_info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.078125s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: user_info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.062500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-08T12:11:54+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index.html?id=null
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0040s ]
@@ -690,10 +998,19 @@ SQL: SELECT * FROM `city`  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0030s ]
 NOTIC: [2] finfo_file(): Empty filename or path D:\xampp\htdocs\kuaidian\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
 SQL: INSERT INTO `food` (`dep_shop`,`mingch`,`jiage`,`jiage_youhui`,`zhuangt`,`food_type`,`guige`,`flid`,`kwid`) VALUES ('1','','','','1','4','1','5,6','5,6') [ RunTime:0.0010s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Admin\Controller\UserController.class.php 第 36 行.
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
 INFO: [ view_filter ] --START--
@@ -819,12 +1136,89 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
 
 [ 2018-01-08T09:51:14+08:00 ] ::1 /kuaidian/index.php/Admin/Food/index/menid/1/id/1.html
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: user_num E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.078125s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.078125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-08T12:11:55+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index.html?id=null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Admin\Controller\UserController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: user_num E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.062500s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.062500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-08T12:13:25+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0030s ]
@@ -887,10 +1281,28 @@ SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0070s ]
 SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0000s ]
+=======
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+
+[ 2018-01-08T12:13:41+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Admin\Controller\UserController.class.php 第 37 行.
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 NOTIC: [8] Undefined offset: 2 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 66 行.
@@ -975,10 +1387,53 @@ SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0020s ]
 SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0010s ]
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: user_num E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.078125s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.078125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-08T12:16:45+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0469s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Admin\Controller\UserController.class.php 第 37 行.
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 NOTIC: [8] Undefined offset: 2 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 NOTIC: [8] Undefined offset: 2 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 66 行.
@@ -1050,10 +1505,43 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
 
 [ 2018-01-08T09:52:47+08:00 ] ::1 /kuaidian/index.php/Admin/Food/add/id/1.html
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: user_num E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.265625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.265625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.171875s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.140625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-08T12:16:45+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0420s ]
@@ -1064,10 +1552,19 @@ SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0010s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.046875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046875s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Admin\Controller\UserController.class.php 第 37 行.
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
 INFO: [ view_filter ] --START--
@@ -1156,10 +1653,53 @@ SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0020s ]
 SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0010s ]
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: user_num E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.062500s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.046875s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-08T12:16:46+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Admin\Controller\UserController.class.php 第 37 行.
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 110 行.
 NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 110 行.
 NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 113 行.
@@ -1242,10 +1782,53 @@ SQL: SELECT * FROM `city`  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0030s ]
 NOTIC: [2] finfo_file(): Empty filename or path D:\xampp\htdocs\kuaidian\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
 SQL: INSERT INTO `food` (`dep_shop`,`mingch`,`jiage`,`jiage_youhui`,`zhuangt`,`food_type`,`guige`,`flid`,`kwid`) VALUES ('1','','','','1','4','1','5,6','5,6') [ RunTime:0.0010s ]
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: user_num E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.078125s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.093750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-08T12:16:46+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Admin\Controller\UserController.class.php 第 37 行.
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
 INFO: [ view_filter ] --START--
@@ -1284,10 +1867,43 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2018-01-08T09:53:55+08:00 ] ::1 /kuaidian/index.php/Admin/Food/index/menid/1/id/1.html
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: user_num E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 188 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.062500s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.046875s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-08T12:18:26+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0030s ]
@@ -1355,10 +1971,47 @@ SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0000s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Admin\Controller\UserController.class.php 第 37 行.
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-08T12:22:37+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 110 行.
 NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 110 行.
 NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 113 行.
@@ -1392,10 +2045,37 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
 
 [ 2018-01-08T09:54:15+08:00 ] ::1 /kuaidian/index.php/Admin/Food/add/id/1.html
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 220 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 224 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 220 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 224 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 220 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 224 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 220 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 224 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 220 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-08T12:24:47+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0040s ]
@@ -1406,10 +2086,18 @@ SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0050s ]
 SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0000s ]
 SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0010s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
 INFO: [ view_filter ] --START--
@@ -1431,16 +2119,71 @@ SQL: SELECT * FROM `city`  [ RunTime:0.0010s ]
 SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0030s ]
 NOTIC: [2] finfo_file(): Empty filename or path D:\xampp\htdocs\kuaidian\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
 SQL: INSERT INTO `food` (`dep_shop`,`mingch`,`jiage`,`jiage_youhui`,`zhuangt`,`food_type`,`guige`,`flid`,`kwid`) VALUES ('1','','','','1','4','1','5,6','5,6') [ RunTime:0.0010s ]
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 221 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 225 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 221 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 225 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 221 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 225 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 221 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 225 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 221 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 225 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-08T12:27:34+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 222 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 226 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 222 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 226 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 222 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 226 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 222 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 226 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 222 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_end ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
@@ -1459,10 +2202,26 @@ SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0000s ]
 SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0010s ]
+=======
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-08T13:53:24+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/index.html?id=null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `event`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `event` LIMIT 1   [ RunTime:0.0000s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
 INFO: [ view_filter ] --START--
@@ -1483,10 +2242,33 @@ SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0020s ]
 SQL: SELECT * FROM `city`  [ RunTime:0.0020s ]
 SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0010s ]
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-08T13:54:01+08:00 ] 127.0.0.1 /-/index.php/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 110 行.
 NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 110 行.
 NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 113 行.
@@ -1587,10 +2369,46 @@ SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0050s ]
 SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0000s ]
 SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0040s ]
 SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0000s ]
+=======
+NOTIC: [8] Undefined variable: id E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 20 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-08T13:54:05+08:00 ] 127.0.0.1 /-/index.php/Admin/Index/dodenglu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `user_admin` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in E:\wamp\wamp\www\-\Application\Admin\Controller\IndexController.class.php on line 19 and defined E:\wamp\wamp\www\-\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where E:\wamp\wamp\www\-\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where E:\wamp\wamp\www\-\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where E:\wamp\wamp\www\-\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `user_admin` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-01-08T13:54:06+08:00 ] 127.0.0.1 /-/index.php/Admin/Index/zhuye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0000s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [8] Undefined offset: 2 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 55 行.
 NOTIC: [8] Undefined offset: 2 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 66 行.
 NOTIC: [8] Undefined offset: 3 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 66 行.
@@ -1618,10 +2436,32 @@ SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0030s ]
 SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0000s ]
 SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0020s ]
 SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0010s ]
+=======
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-08T13:54:10+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
 INFO: [ view_filter ] --START--
@@ -26676,10 +27516,29 @@ SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
 SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057003s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.057003s ]
+=======
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 222 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 226 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 222 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 226 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 222 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 226 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 222 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 226 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 222 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_end ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
@@ -26925,4 +27784,8 @@ INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+=======
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 
