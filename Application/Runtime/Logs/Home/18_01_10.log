@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+[ 2018-01-10T09:32:37+08:00 ] ::1 /kuaidian/
+=======
 [ 2018-01-10T10:16:15+08:00 ] 127.0.0.1 /-/index.php/home/user/send_code?tel=13331385580&type=repass
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -155,10 +158,17 @@ SQL: SELECT * FROM `config` WHERE `field` = 'mobile_sms_url' LIMIT 1   [ RunTime
 SQL: INSERT INTO `sms_status` (`tel`,`sms_id`,`type`,`content`,`report_info`,`add_time`) VALUES ('13331385580','14','repass','å°Šæ•¬çš„å®¢æˆ·ï¼šæ‚¨çš„éªŒè¯ç æ˜¯259149ï¼Œè¯·æ­£ç¡®è¾“å…¥éªŒè¯ç å®Œæˆå¯†ç é‡ç½®ï¼Œè¯·å‹¿æ³„éœ²éªŒè¯ç ã€‚','{\\\"returnstatus\\\":\\\"Success\\\",\\\"message\\\":\\\"æ“ä½œæˆåŠŸ\\\",\\\"remainpoint\\\":\\\"9848\\\",\\\"taskID\\\":\\\"1801103542161210\\\",\\\"successCounts\\\":\\\"1\\\"}','2018-01-10 11:42:16') [ RunTime:0.1719s ]
 
 [ 2018-01-10T11:43:13+08:00 ] 127.0.0.1 /-/index.php/home/user/forget_password?tel=13331385580&code=261755&password=111112&type=repass
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+=======
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
 SQL: SHOW COLUMNS FROM `mobile_code` [ RunTime:0.0156s ]
@@ -176,6 +186,7 @@ SQL: SELECT * FROM `mobile_code` WHERE `tel` = '13331385580' AND `res_name` = 'r
 SQL: UPDATE `mobile_code` SET `status`='1' WHERE `id` = 14 [ RunTime:0.1406s ]
 SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
 SQL: UPDATE `user` SET `password`='9a952cd91000872a8d7d1f5ee0c87317' WHERE `tel` = '13331385580' AND `is_reg` = 1 [ RunTime:0.0000s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 
 [ 2018-01-10T13:25:05+08:00 ] 127.0.0.1 /-/index.php/home/event/index
 INFO: [ app_init ] --START--

@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+[ 2018-01-09T14:09:25+08:00 ] ::1 /kuaidian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0030s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+=======
 [ 2018-01-09T11:12:42+08:00 ] 127.0.0.1 /-/
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -374,4 +397,5 @@ SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0000s ]
 SQL: SELECT * FROM `user` WHERE `tel` = '13331385580' LIMIT 1   [ RunTime:0.0000s ]
 SQL: INSERT INTO `user` (`tel`,`password`,`is_reg`,`add_time`,`status`) VALUES ('13331385580','e10adc3949ba59abbe56e057f20f883e','1','2018-01-09 17:31:58','0') [ RunTime:0.0156s ]
 SQL: SELECT * FROM `user` WHERE `tel` = '13331385580' LIMIT 1   [ RunTime:0.0000s ]
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 

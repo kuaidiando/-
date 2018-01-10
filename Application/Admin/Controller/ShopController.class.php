@@ -133,6 +133,18 @@ class ShopController extends BasicController
     		$this->display();
     	}
     }
+    //详情
+    public function xiangqing(){
+        // 查询门店信息
+            $jxdm = I('get.id');
+            // dump($jxdm);die;
+            $user = M('shop');
+            $where['id'] = $jxdm;
+            $data = $user->where($where)->select();
+            // dump($data);die();
+            $this->assign('data',$data);// 查询门店信息
+            $this->display();
+    }
     public function delete(){
     	$condition = I('post.id');
     	$where['id'] = $condition;

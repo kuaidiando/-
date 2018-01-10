@@ -6,7 +6,7 @@ use Common\Controller\BasicController;
 use Think\Controller;
 use Think\Page;
 
-class FoodtypeController extends BasicController
+class SaleController extends BasicController
 {
 	 // protected function _initialize()
   //   {
@@ -32,9 +32,12 @@ class FoodtypeController extends BasicController
         // // dump($res);die;
         // // echo $this->mod->getLastSql();
         // $this->assign('info', array('list' => $res,'count' => $count, 'page' => $page->show()));
+        //判断有无
+        $typeid = I('get.type');
+        $this->assign("typeid",$typeid);//判断有无
         $id = I('get.menid');
         // dump($id);die;
-        $user = M('food_type');
+        $user = M('sale');
         $where['dep_type'] = $id;
         $data = $user->where($where)->select();
         $this->assign('data',$data);//查询菜品类别信息
@@ -44,9 +47,15 @@ class FoodtypeController extends BasicController
     public function add(){
     	if (IS_POST) {
             //获取机构编码
-            $user = M("food_type"); // 实例化User对象
+            $user = M("Sale"); // 实例化User对象
             $data = I('post.');//数据
             $res = $user->add($data);
+            //修改该门店优惠卷状态
+            $menid = I('post.dep_type');
+            $usermen = M('shop');
+            $wheremen['id'] = $menid;
+            $gai['juan'] =1;
+            $usermen->where($wheremen)->data($gai)->save();//修改门店的优惠卷状态
 			$res == true ? $this->success('添加成功') : $this->error('添加失败');
     		// $this->display();
     	}else{
@@ -59,7 +68,7 @@ class FoodtypeController extends BasicController
     public function edit(){
     	if (IS_POST) {
     		$id = I('post.id');
-    		$User = M("food_type"); // 实例化User对象
+    		$User = M("Sale"); // 实例化User对象
     		$where['id'] = $id;
             $data = I('post.');
 			// dump($data);die;
@@ -69,7 +78,7 @@ class FoodtypeController extends BasicController
 			$res == true ? $this->success('修改成功') : $this->error('修改失败');
     		// $this->display();
     	}else{
-    		$user = M('food_type');
+    		$user = M('Sale');
     		$where['id'] = I('get.id');
     		$data = $user->where($where)->select();
     		// dump($data);die();
@@ -80,7 +89,7 @@ class FoodtypeController extends BasicController
     public function delete(){
     	$condition = I('post.id');
     	$where['id'] = $condition;
-    	$res = M('Food_type')->where($where)->delete();
+    	$res = M('Sale')->where($where)->delete();
     	if ($res) {
             $this->ajaxReturn(array('status' => true, 'msg' => '删除成功!'));
         } else {

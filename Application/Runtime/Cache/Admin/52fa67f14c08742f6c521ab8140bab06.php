@@ -6,7 +6,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
+<<<<<<< HEAD
+<script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
+=======
 <script type="text/javascript" src="/-/Public/jquery/jquery.js"></script>
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 <script type="text/javascript">
 $(document).ready(function(){
  $("dd").hide();
@@ -21,6 +25,19 @@ $(document).ready(function(){
 });
 });
 </script>
+<<<<<<< HEAD
+<!-- <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
+ -->
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui/css/H-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/H-ui.admin.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/icheck/icheck.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/>
+<!-- 分页效果 -->
+<link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
+=======
 <!-- <script type="text/javascript" src="/-/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
  -->
 <link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui/css/H-ui.min.css"/>
@@ -32,6 +49,7 @@ $(document).ready(function(){
 <link rel="stylesheet" type="text/css" href="/-/Public/css/hidTable.css"/>
 <!-- 分页效果 -->
 <link href="/-/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 <title>快点</title>
 <div class="navbar navbar-fixed-top">
     <div class="container-fluid cl">
@@ -72,7 +90,7 @@ $(document).ready(function(){
             <!-- <a _href="<?php echo U('Admin/Index/yinczhuye');?>" name="<?php echo U('Admin/Index/yinczhuye');?>" style="display: none;"class="" href="javascript:;">隐藏主页</a> -->
             <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
             <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
-            <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">单位管理</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Danwei/index');?>">单位管理</a></li>
         </ul>
         </dd>
     </dl>
@@ -126,6 +144,16 @@ $(document).ready(function(){
 
 
 
+<<<<<<< HEAD
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+=======
 <script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
@@ -134,6 +162,7 @@ $(document).ready(function(){
 <script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
 <script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
 <script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');
@@ -191,15 +220,15 @@ $(document).ready(function(){
                     <th width="30">编号</th>
                     <th width="80">名称</th>
                     <th width="60">LOGO</th>
-                    <th width="80">手机号</th>
-                    <th width="60">人均消费</th>
-                    <th width="80">营业时间</th>
+                    <!-- <th width="80">手机号123</th> -->
+                    <!-- <th width="60">人均消费123</th> -->
+                    <!-- <th width="80">营业时间123</th> -->
                     <th width="80">所属城市</th>
                     <th width="60">门店类别</th>
                     <th width="40">星数量</th>
-                    <th width="60">详细地址</th>
+                    <!-- <th width="60">详细地址123</th> -->
                     <th width="60">优惠卷</th>
-                    <th width="60">发布状态</th>
+                    <th width="60">认证状态</th>
                     <th width="120">操作</th>
                 </tr>
             </thead>
@@ -207,18 +236,31 @@ $(document).ready(function(){
                 <?php if(is_array($resshop)): foreach($resshop as $key=>$vo): ?><tr class="text-c">
                             <td><?php echo ($vo["id"]); ?></td>
                             <td><?php echo ($vo["mingch"]); ?></td>
+<<<<<<< HEAD
+                            <td><img style="width: 20%;"src="/kuaidian/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
+                            <!-- <td><?php echo ($vo["tel"]); ?></td> -->
+                            <!-- <td><?php echo ($vo["maney"]); ?></td> -->
+                            <!-- <td><?php echo ($vo["time_kai"]); ?>--<?php echo ($vo["time_zhong"]); ?></td> -->
+=======
                             <td><img style="width: 50%;"src="/-/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
                             <td><?php echo ($vo["tel"]); ?></td>
                             <td><?php echo ($vo["maney"]); ?></td>
                             <td><?php echo ($vo["time_kai"]); ?>--<?php echo ($vo["time_zhong"]); ?></td>
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
                             <td><?php echo (depchengshi($vo["depcsjlshi"])); ?></td>
                             <td><?php echo (shoptype($vo["type_shop"])); ?></td>
                             <td><?php echo ($vo["xingsl"]); ?></td>
-                            <td><?php echo ($vo["jutidizhi"]); ?></td>
+                            <!-- <td><?php echo ($vo["jutidizhi"]); ?></td> -->
                             <td class="td-status">
-                                <?php if($vo["juan"] == 1 ): ?><span class="label label-success radius">有</span>
+                                <?php if($vo["juan"] == 1 ): ?><span class="label label-success radius">
+                                        <a href="<?php echo U('Admin/Sale/index',array('menid' => $vo['id'],'type'=>1));?>" style="text-decoration: none;color:#fff;">有<?php echo (youhuishul($vo["id"])); ?>
+                                        </a>
+                                    </span> 
                                     <?php else: ?> 
-                                    <span class="label label-danger radius">无</span><?php endif; ?>
+                                    <span class="label label-danger radius">
+                                         <a href="<?php echo U('Admin/Sale/index',array('menid' => $vo['id'],'type'=>2));?>" style="text-decoration: none;color:#fff;">添加<?php echo (youhuishul($vo["id"])); ?>
+                                        </a>
+                                    </span><?php endif; ?>
                             </td>
                             <td class="td-status">
                                 <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">已发布</span>
@@ -226,19 +268,26 @@ $(document).ready(function(){
                                     <span class="label label-danger radius">未发布</span><?php endif; ?>
                             </td>
                             <td class="td-manage" style="text-align: center;">
+                                
                                 <a href="<?php echo U('Admin/Food/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
                                    
                                     &nbsp;&nbsp;菜品&nbsp;&nbsp;
                                 </a>
-                                <a href="<?php echo U('Admin/Foodtype/index',array('id' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
+                                <a href="<?php echo U('Admin/Foodtype/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
                                    
                                     菜品类别&nbsp;&nbsp;
-                                </a><br>
+                                </a>
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Shop/edit', array('id' => $vo['id']));?>'
+                                   onclick="admin_add('详情','<?php echo U('Admin/Shop/xiangqing', array('id' => $vo['id']));?>'
+                                   ,'800','500')">
+                                    <i class="Hui-iconfont">&#xe627;</i>
+                                </a>&nbsp;&nbsp;&nbsp;
+                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
+                                   onclick="admin_add('编辑','<?php echo U('Admin/Shop/edit', array('id' => $vo['id']));?>'
                                    ,'800','500')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
-                                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                </a>&nbsp;
                                 <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
                             </td>
                         </tr><?php endforeach; endif; ?>
@@ -275,6 +324,16 @@ $(document).ready(function(){
             });
         });
     </script>
+<<<<<<< HEAD
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+=======
 <script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
@@ -283,6 +342,7 @@ $(document).ready(function(){
 <script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
 <script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
 <script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+>>>>>>> 9743727ce9fb84e9bdc45f9e55e892e0bab5296c
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');

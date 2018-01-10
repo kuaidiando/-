@@ -21,15 +21,15 @@
                     <th width="30">编号</th>
                     <th width="80">名称</th>
                     <th width="60">LOGO</th>
-                    <th width="80">手机号</th>
-                    <th width="60">人均消费</th>
-                    <th width="80">营业时间</th>
+                    <!-- <th width="80">手机号123</th> -->
+                    <!-- <th width="60">人均消费123</th> -->
+                    <!-- <th width="80">营业时间123</th> -->
                     <th width="80">所属城市</th>
                     <th width="60">门店类别</th>
                     <th width="40">星数量</th>
-                    <th width="60">详细地址</th>
+                    <!-- <th width="60">详细地址123</th> -->
                     <th width="60">优惠卷</th>
-                    <th width="60">发布状态</th>
+                    <th width="60">认证状态</th>
                     <th width="120">操作</th>
                 </tr>
             </thead>
@@ -38,19 +38,25 @@
                         <tr class="text-c">
                             <td>{$vo.id}</td>
                             <td>{$vo.mingch}</td>
-                            <td><img style="width: 50%;"src="__PUBLIC__{$vo.logo}" alt="图片加载中。。。"></td>
-                            <td>{$vo.tel}</td>
-                            <td>{$vo.maney}</td>
-                            <td>{$vo.time_kai}--{$vo.time_zhong}</td>
+                            <td><img style="width: 20%;"src="__PUBLIC__{$vo.logo}" alt="图片加载中。。。"></td>
+                            <!-- <td>{$vo.tel}</td> -->
+                            <!-- <td>{$vo.maney}</td> -->
+                            <!-- <td>{$vo.time_kai}--{$vo.time_zhong}</td> -->
                             <td>{$vo.depcsjlshi|depchengshi=###}</td>
                             <td>{$vo.type_shop|shoptype=###}</td>
                             <td>{$vo.xingsl}</td>
-                            <td>{$vo.jutidizhi}</td>
+                            <!-- <td>{$vo.jutidizhi}</td> -->
                             <td class="td-status">
                                 <if condition="$vo.juan eq 1 ">
-                                    <span class="label label-success radius">有</span>
+                                    <span class="label label-success radius">
+                                        <a href="{:U('Admin/Sale/index',array('menid' => $vo['id'],'type'=>1))}" style="text-decoration: none;color:#fff;">有{$vo.id|youhuishul=###}
+                                        </a>
+                                    </span> 
                                     <else /> 
-                                    <span class="label label-danger radius">无</span>
+                                    <span class="label label-danger radius">
+                                         <a href="{:U('Admin/Sale/index',array('menid' => $vo['id'],'type'=>2))}" style="text-decoration: none;color:#fff;">添加{$vo.id|youhuishul=###}
+                                        </a>
+                                    </span>
                                 </if>
                             </td>
                             <td class="td-status">
@@ -61,19 +67,26 @@
                                 </if>
                             </td>
                             <td class="td-manage" style="text-align: center;">
+                                
                                 <a href="{:U('Admin/Food/index',array('menid' => $vo['id'],'id' => $chengshiid))}" style="text-decoration: none;">
                                    
                                     &nbsp;&nbsp;菜品&nbsp;&nbsp;
                                 </a>
-                                <a href="{:U('Admin/Foodtype/index',array('id' => $vo['id'],'id' => $chengshiid))}" style="text-decoration: none;">
+                                <a href="{:U('Admin/Foodtype/index',array('menid' => $vo['id'],'id' => $chengshiid))}" style="text-decoration: none;">
                                    
                                     菜品类别&nbsp;&nbsp;
-                                </a><br>
+                                </a>
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑详情','{:U('Admin/Shop/edit', array('id' => $vo['id']))}'
+                                   onclick="admin_add('详情','{:U('Admin/Shop/xiangqing', array('id' => $vo['id']))}'
+                                   ,'800','500')">
+                                    <i class="Hui-iconfont">&#xe627;</i>
+                                </a>&nbsp;&nbsp;&nbsp;
+                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
+                                   onclick="admin_add('编辑','{:U('Admin/Shop/edit', array('id' => $vo['id']))}'
                                    ,'800','500')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
-                                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                </a>&nbsp;
                                 <a class="h-text-sc" id="{$vo.id}"><i class="Hui-iconfont">&#xe6e2;</i></a>
                             </td>
                         </tr>

@@ -46,19 +46,53 @@ $(document).ready(function(){
 <body>
 <article class="page-container">
     <form class="form form-horizontal" id="form-admin-add" action="<?php echo U('Admin/Food/editfenliang');?>" method="post" enctype="multipart/form-data">
-         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>菜品份量：</label>
+     <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">规格：</label>
             <div class="formControls col-xs-8 col-sm-9">
-            <!-- 真实菜品分量 -->
-                <input type="hidden" value="0" name="flid" id="Jszzdm">
-                <!-- 分量列表 -->
-                <?php if(is_array($rescpfl)): foreach($rescpfl as $k=>$vofl): if($vofl["id"] == $flid[$k]): echo ($vofl["mingch"]); ?><input type="checkbox" value="<?php echo ($vofl["id"]); ?>" name="fenliang" checked="checked">&nbsp;&nbsp;
-                    <?php else: ?>
-                    <?php echo ($vofl["mingch"]); ?><input type="checkbox" value="<?php echo ($vofl["id"]); ?>" name="fenliang" >&nbsp;&nbsp;<?php endif; endforeach; endif; ?>
+                 <?php if(is_array($data)): foreach($data as $key=>$vo): if($vo["guige"] == 1 ): ?>有&nbsp;&nbsp;<input type="radio"  value="1" name="guige" checked="checked">
+                        无&nbsp;&nbsp;<input type="radio"  value="2" name="guige">
+                        <?php else: ?>
+                        有&nbsp;&nbsp;<input type="radio"  value="1" name="guige">
+                        无&nbsp;&nbsp;<input type="radio"  value="2" name="guige" checked="checked"><?php endif; endforeach; endif; ?>
             </div>
         </div>
          <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>菜品口味：</label>
+            <label class="form-label col-xs-4 col-sm-2">菜品份量：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                    <div style="margin-top: 1%;">
+                        <input type="checkbox" name="fenliang[1]" value="1" />&nbsp;&nbsp;大&nbsp;&nbsp;
+                        <input type="text" name="fljiage[1]" class="input-text" placeholder="售价" style="width: 30%;"/><br>
+                    </div>
+                    <div style="margin-top: 1%;">
+                        <input type="checkbox" name="fenliang[2]" value="2" />&nbsp;&nbsp;中&nbsp;&nbsp;
+                        <input type="text" name="fljiage[2]" class="input-text" placeholder="售价" style="width: 30%;"/><br>
+                    </div>
+                    <div style="margin-top: 1%;">
+                        <input type="checkbox" name="fenliang[3]" value="3" />&nbsp;&nbsp;小&nbsp;&nbsp;
+                        <input type="text" name="fljiage[3]" class="input-text" placeholder="售价" style="width: 30%;"/><br>
+                    </div>
+           
+            <!-- 真实菜品分量 -->
+                <input type="hidden" value="0" name="flid" id="Jszzdm">
+                <!-- 分量列表 -->
+                <?php if(is_array($rescpfl)): foreach($rescpfl as $k=>$vofl): ?><!-- 遍历份量id -->
+                    <?php if(is_array($flid)): foreach($flid as $key=>$voflid): echo ($vofl['id']); ?>--<?php echo ($voflid); ?>
+                        <?php if($vofl["id"] == $voflid): ?><div style="margin-top: 1%;">
+                                <input type="checkbox" value="<?php echo ($vofl["id"]); ?>" name="fenliang" checked="checked">
+                                &nbsp;&nbsp;<?php echo ($vofl["mingch"]); ?>&nbsp;&nbsp;
+                                <input type="text" class="input-text"  placeholder="售价" value="<?php echo ($vofl["cpfljg"]); ?>" style="width: 30%;">
+                            </div>
+                            <?php break;?>
+                        <?php else: ?>
+                            <div style="margin-top: 1%;">
+                                <input type="checkbox" value="<?php echo ($vofl["id"]); ?>" name="fenliang" >
+                                &nbsp;&nbsp;<?php echo ($vofl["mingch"]); ?>&nbsp;&nbsp;
+                                <input type="text" class="input-text"  placeholder="售价" value="<?php echo ($vofl["cpfljg"]); ?>" style="width: 30%;">
+                            </div><?php endif; endforeach; endif; endforeach; endif; ?>
+            </div>
+        </div>
+         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">菜品口味：</label>
             <div class="formControls col-xs-8 col-sm-9">
             <!-- 真实菜品口味 -->
                 <input type="hidden" value="0" name="kwid" id="kwid">
@@ -88,6 +122,11 @@ $(document).ready(function(){
   $('input[name=kouwei]').change(function(){
     $('#kwid').val($('input[name=kouwei]:checked').map(function(){return this.value}).get().join(','))
   })
+  //页面一进来加载事件
+  $(document).ready(function(){ 
+　　$('#Jszzdm').val($('input[name=fenliang]:checked').map(function(){return this.value}).get().join(','));
+    $('#kwid').val($('input[name=kouwei]:checked').map(function(){return this.value}).get().join(','))
+　});
 </script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>

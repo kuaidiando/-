@@ -45,10 +45,10 @@ $(document).ready(function(){
 </head>
 <body>
 <article class="page-container">
-    <form class="form form-horizontal" id="form-admin-add" action="<?php echo U('Admin/Shoptype/edit');?>" method="post">
+    <form class="form form-horizontal" id="form-admin-add" action="<?php echo U('Admin/Danwei/edit');?>" method="post">
         <input type="hidden" name="id" value="<?php echo ($data["0"]["id"]); ?>">
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>分类名称：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>单位名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="<?php echo ($data["0"]["mingch"]); ?>" name="mingch">
             </div>
