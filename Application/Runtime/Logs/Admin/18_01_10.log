@@ -5567,3 +5567,1753 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
 >>>>>>> be195aa591cecddbd7bb7fea02e6fbff5e3cdd36
 
+[ 2018-01-10T13:40:54+08:00 ] 127.0.0.1 /-/index.php/Admin/Shop/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0469s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `shop`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 186 行.
+SQL: SELECT `name` FROM `city` WHERE `code` = '130500'  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sale` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 1 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130100'  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130500'  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 2  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 6 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130500'  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130500'  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130500'  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 12 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '1'  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 13 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '1'  [ RunTime:0.0313s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 14 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.281250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.281250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.062500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.062500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-10T13:40:59+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/index/menid/1/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 186 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 6  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 5  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.328125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.328125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-10T13:41:02+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/add/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpdanwei`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.218750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.218750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.031250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-10T13:42:59+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0469s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0156s ]
+SQL: INSERT INTO `food` (`dep_shop`,`mingch`,`jiage`,`jiage_youhui`,`zhuangt`,`food_type`,`dwid`,`shicai`,`kougan`,`guige`,`kwid`,`flid`) VALUES ('1','麻辣香锅','20','15','1','1','9','肉','辣','1','6','1,3') [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT MAX(id) AS tp_Max FROM `food` LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `cpfljiage` (`cpcode`,`flcode`,`cpfljiage`) VALUES ('55','1','15') [ RunTime:0.0156s ]
+SQL: INSERT INTO `cpfljiage` (`cpcode`,`flcode`,`cpfljiage`) VALUES ('55','3','10') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.156250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.031250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-10T13:43:01+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/add/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpdanwei`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.156250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-10T13:43:06+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/index/menid/1/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 186 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 2  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 6  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 9  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.453125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.453125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-10T13:43:12+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0625s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `food` WHERE `id` = 55  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: rescpfl E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 78 行.
+NOTIC: [8] Undefined offset: 1 E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 100 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 100 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.312500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.312500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.031250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-10T13:44:09+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.046875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046875s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0781s ]
+SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `food` WHERE `id` = 55  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.046875s ]
+NOTIC: [8] Undefined variable: rescpfl E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 78 行.
+NOTIC: [8] Undefined offset: 1 E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 100 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 100 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.203125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.203125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.062500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.062500s ]
+
+[ 2018-01-10T13:44:37+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0313s ]
+
+[ 2018-01-10T13:45:33+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0000s ]
+
+[ 2018-01-10T13:49:17+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046875s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0156s ]
+
+[ 2018-01-10T13:57:38+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.140625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.140625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 227 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 229 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 227 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 229 行.
+
+[ 2018-01-10T13:58:02+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 227 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 229 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 227 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 229 行.
+
+[ 2018-01-10T13:59:15+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 227 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 229 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 227 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 229 行.
+
+[ 2018-01-10T14:00:19+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0156s ]
+
+[ 2018-01-10T14:02:39+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 236 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 239 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 236 行.
+
+[ 2018-01-10T14:03:19+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 231 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 236 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 239 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 236 行.
+
+[ 2018-01-10T14:04:44+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 232 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 240 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 237 行.
+
+[ 2018-01-10T14:06:28+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.046875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046875s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0625s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0156s ]
+
+[ 2018-01-10T14:07:24+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 232 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 240 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 237 行.
+
+[ 2018-01-10T14:07:30+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/index/menid/1/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0781s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 186 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 2  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 6  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 5  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0313s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 9  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 6  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.546875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.546875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-10T14:07:33+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0938s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 232 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 240 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 237 行.
+
+[ 2018-01-10T14:08:27+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.093750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 232 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 241 行.
+NOTIC: [8] Undefined index: fclode E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 237 行.
+
+[ 2018-01-10T14:08:47+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0000s ]
+
+[ 2018-01-10T14:09:39+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 232 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 241 行.
+
+[ 2018-01-10T14:10:20+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/add/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.046875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046875s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpdanwei`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.437500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.437500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.062500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.062500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-10T14:10:55+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0313s ]
+SQL: INSERT INTO `food` (`dep_shop`,`mingch`,`jiage`,`jiage_youhui`,`zhuangt`,`food_type`,`dwid`,`shicai`,`kougan`,`guige`,`kwid`,`flid`) VALUES ('1','白菜','18','12','1','1','4','白菜','啊啊','1','5','2,3') [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT MAX(id) AS tp_Max FROM `food` LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `cpfljiage` (`cpcode`,`flcode`,`cpfljiage`) VALUES ('56','2','10') [ RunTime:0.0000s ]
+SQL: INSERT INTO `cpfljiage` (`cpcode`,`flcode`,`cpfljiage`) VALUES ('56','3','8') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-10T14:10:56+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/add/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpdanwei`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-10T14:11:01+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/index/menid/1/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 186 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 2  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 6  [ RunTime:0.0313s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 9  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 2  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.406250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.406250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-10T14:11:04+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/56/flid/2%2C3/kwid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.046875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046875s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '56'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 223 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 229 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 241 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 232 行.
+
+[ 2018-01-10T14:12:05+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/56/flid/2%2C3/kwid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.046875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046875s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '56'  [ RunTime:0.0156s ]
+
+[ 2018-01-10T14:13:23+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/56/flid/2%2C3/kwid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '56'  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 223 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 229 行.
+
+[ 2018-01-10T14:13:54+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/index/menid/1/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 186 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 6  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0313s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 9  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 2  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.437500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.437500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-10T14:13:57+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/56/flid/2%2C3/kwid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '56'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 223 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 229 行.
+
+[ 2018-01-10T14:14:27+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/index/menid/1/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 186 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 6  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 5  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 9  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 6  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 2  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.312500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.312500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-10T14:14:30+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/56/flid/2%2C3/kwid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '56'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 223 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 229 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 242 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 233 行.
+
+[ 2018-01-10T14:14:55+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/56/flid/2%2C3/kwid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '56'  [ RunTime:0.0156s ]
+
+[ 2018-01-10T14:15:48+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/56/flid/2%2C3/kwid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '56'  [ RunTime:0.0156s ]
+
+[ 2018-01-10T14:16:22+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/56/flid/2%2C3/kwid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.125000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.125000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '56'  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 223 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 229 行.
+
+[ 2018-01-10T14:16:42+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/index/menid/1/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 186 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 2  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 6  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0313s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 9  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 2  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.453125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.453125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-10T14:16:44+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/56/flid/2%2C3/kwid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '56'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 223 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 229 行.
+
+[ 2018-01-10T14:17:22+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/56/flid/2%2C3/kwid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '56'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 223 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 229 行.
+
+[ 2018-01-10T14:18:48+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/index/menid/1/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 186 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 2  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 6  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 5  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 9  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 6  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 2  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.546875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.546875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-10T14:18:51+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/56/flid/2%2C3/kwid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '56'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 223 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 229 行.
+
+[ 2018-01-10T14:19:24+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/56/flid/2%2C3/kwid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '56'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 223 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 242 行.
+
+[ 2018-01-10T14:19:37+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/index/menid/1/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 121 行.
+NOTIC: [8] Undefined variable: info E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 186 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 6  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 5  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 155 行.
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 9  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 6  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 2  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\wamp\www\-\Application\Common\Common\function.php 第 168 行.
+SQL: SELECT * FROM `cpkouwei` WHERE `id` = 5  [ RunTime:0.0156s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.359375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.359375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.031250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-10T14:19:39+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/56/flid/2%2C3/kwid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0625s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '56'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 223 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 242 行.
+NOTIC: [8] Undefined variable: data E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 249 行.
+
+[ 2018-01-10T14:19:50+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/56/flid/2%2C3/kwid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0469s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '56'  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 223 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 242 行.
+
+[ 2018-01-10T14:20:00+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/55/flid/1%2C3/kwid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '55'  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 233 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\wamp\www\-\Application\Admin\Controller\FoodController.class.php 第 242 行.
+
+[ 2018-01-10T14:24:12+08:00 ] 127.0.0.1 /-/index.php/Admin/Food/editfenliang/id/56/flid/2%2C3/kwid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.046875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046875s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '56'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cpkouwei` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cpkouwei`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `food` WHERE `id` = 56  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: rescpfl E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 78 行.
+NOTIC: [8] Undefined offset: 1 E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 100 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 100 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\3ba58e4a9753619d917b9a6825cedb57.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.359375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.359375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.031250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031250s ]
+
+[ 2018-01-10T14:24:27+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `event`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `event` LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-10T14:24:30+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index.html?id=null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined index: con E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 221 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 233 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 237 行.
+NOTIC: [8] Undefined index: con E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 221 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 233 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 237 行.
+NOTIC: [8] Undefined index: con E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 221 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 233 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 237 行.
+NOTIC: [8] Undefined index: con E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 221 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 233 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 237 行.
+NOTIC: [8] Undefined index: con E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 221 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 233 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 237 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-10T14:31:37+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/index.html?id=null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `event`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `event` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-10T14:34:03+08:00 ] 127.0.0.1 /-/index.php/Admin/Oracle/mokuaia.html?id=null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.1094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-10T14:34:43+08:00 ] 127.0.0.1 /-/index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: id E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 20 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-10T14:37:25+08:00 ] 127.0.0.1 /-/index.php/Admin/Index/dodenglu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user_admin` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in E:\wamp\wamp\www\-\Application\Admin\Controller\IndexController.class.php on line 19 and defined E:\wamp\wamp\www\-\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where E:\wamp\wamp\www\-\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where E:\wamp\wamp\www\-\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where E:\wamp\wamp\www\-\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `user_admin` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-01-10T14:37:25+08:00 ] 127.0.0.1 /-/index.php/Admin/Index/zhuye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-10T14:38:35+08:00 ] 127.0.0.1 /-/index.php/Admin/User/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 121 行.
+NOTIC: [8] Undefined index: con E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 221 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 233 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 237 行.
+NOTIC: [8] Undefined index: con E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 221 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 233 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 237 行.
+NOTIC: [8] Undefined index: con E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 221 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 233 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 237 行.
+NOTIC: [8] Undefined index: con E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 221 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 233 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 237 行.
+NOTIC: [8] Undefined index: con E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 221 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 233 行.
+NOTIC: [8] Undefined variable: vo E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 237 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-10T14:38:39+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/index.html?id=null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `event`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `event` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2018-01-10T14:38:46+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/edit/id/17.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.046875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046875s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `event` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.156250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.031250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.046875s ]
+
+[ 2018-01-10T14:38:55+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `event` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate E:\wamp\wamp\www\-\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp\wamp\www\-\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `event` SET `id`='17',`status`='0',`ename`='3214' WHERE ( id=17 ) [ RunTime:0.5000s ]
+
+[ 2018-01-10T14:38:55+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/edit/id/17.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `event` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-10T14:38:59+08:00 ] 127.0.0.1 /-/index.php/Admin/Event/index.html?id=null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `event`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `event` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 45 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 118 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 118 行.
+NOTIC: [8] Undefined variable: active E:\wamp\wamp\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
