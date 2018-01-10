@@ -177,3 +177,13 @@ SQL: UPDATE `mobile_code` SET `status`='1' WHERE `id` = 14 [ RunTime:0.1406s ]
 SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0156s ]
 SQL: UPDATE `user` SET `password`='9a952cd91000872a8d7d1f5ee0c87317' WHERE `tel` = '13331385580' AND `is_reg` = 1 [ RunTime:0.0000s ]
 
+[ 2018-01-10T13:25:05+08:00 ] 127.0.0.1 /-/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031250s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0000s ]
+
