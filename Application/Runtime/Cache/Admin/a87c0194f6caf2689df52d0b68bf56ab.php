@@ -6,11 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
-<<<<<<< HEAD
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery/1.9.1/jquery.min.js"></script>
-=======
-<script type="text/javascript" src="/-/Public/admin/lib/jquery/1.9.1/jquery.min.js"></script>
->>>>>>> a1e5bf6e35618caf44db171b517a84ab77eb7f91
 <script type="text/javascript">
 $(document).ready(function(){
  $("dd").hide();
@@ -25,7 +21,6 @@ $(document).ready(function(){
 });
 });
 </script>
-<<<<<<< HEAD
 <!-- <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
  -->
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui/css/H-ui.min.css"/>
@@ -37,19 +32,6 @@ $(document).ready(function(){
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/>
 <!-- 分页效果 -->
 <link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
-=======
-<!-- <script type="text/javascript" src="/-/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
- -->
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui/css/H-ui.min.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/H-ui.admin.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/icheck/icheck.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/style.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/css/hidTable.css"/>
-<!-- 分页效果 -->
-<link href="/-/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
->>>>>>> a1e5bf6e35618caf44db171b517a84ab77eb7f91
 <title>快点</title>
 <script type="text/javascript">
     $(document).on("click",".shopin",function(){
@@ -113,6 +95,34 @@ $(document).ready(function(){
             </div>
         </div>
         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>菜品单位：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <span class="select-box">
+                <select name="dwid" class="select">
+                    <?php if(is_array($resdw)): foreach($resdw as $key=>$vodw): ?><option value="<?php echo ($vodw["id"]); ?>" ><?php echo ($vodw["mingch"]); ?></option><?php endforeach; endif; ?>
+                </select>
+                </span>
+            </div>
+        </div>
+        <!-- 菜品介绍 -->
+        <div style="margin-top: 2%;width: 87%;margin-left: 4%;background-color: #F7F7F7;">
+             <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="margin-left: -3%;"><b>菜品介绍</b></label>
+            </div>
+            <div class="row cl" style="margin-left: -5%;">
+                <label class="form-label col-xs-4 col-sm-2">食材：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" class="input-text" value="" placeholder="" id="" name="shicai">
+                </div>
+            </div>
+            <div class="row cl" style="margin-left: -5%;">
+                <label class="form-label col-xs-4 col-sm-2">口感：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" class="input-text" value="" placeholder="" id="" name="kougan">
+                </div>
+            </div><br>
+        </div>
+        <div class="row cl">
             <!-- <button type="button" class="btn btn-primary radius" id="guige" style="margin-left: 5%;">规格</button> -->
             <label  class="form-label col-xs-4 col-sm-2">规格：</label>
             <div class="formControls col-xs-8 col-sm-9">
@@ -126,8 +136,24 @@ $(document).ready(function(){
                 <label class="form-label col-xs-4 col-sm-2">菜品份量：</label>
                 <div class="formControls col-xs-8 col-sm-9">
                 <!-- 真实菜品分量 -->
-                    <input type="hidden" value="0" name="flid" id="Jszzdm">
-                    <?php if(is_array($resfl)): foreach($resfl as $key=>$vofl): echo ($vofl["mingch"]); ?><input type="checkbox" value="<?php echo ($vofl["id"]); ?>" name="fenliang">&nbsp;&nbsp;<?php endforeach; endif; ?>
+                    <!-- <input type="text" value="0" name="flid" id="Jszzdm"> -->
+                    <!-- <?php if(is_array($resfl)): foreach($resfl as $key=>$vofl): ?><div style="margin-top: 1%;">
+                            <input type="checkbox" value="<?php echo ($vofl["id"]); ?>" name="fenliang[]">&nbsp;&nbsp; <?php echo ($vofl["mingch"]); ?> &nbsp;&nbsp;<span class="flshoujia">
+                            <input type="text" class="input-text" name="flshoujia[]" placeholder="售价" value="" style="width: 30%;"></span>
+                       
+                        </div><?php endforeach; endif; ?> -->
+                    <div style="margin-top: 1%;">
+                        <input type="checkbox" name="fenliang[1]" value="1" />&nbsp;&nbsp;大&nbsp;&nbsp;
+                        <input type="text" name="fljiage[1]" class="input-text" placeholder="售价" style="width: 30%;"/><br>
+                    </div>
+                    <div style="margin-top: 1%;">
+                        <input type="checkbox" name="fenliang[2]" value="2" />&nbsp;&nbsp;中&nbsp;&nbsp;
+                        <input type="text" name="fljiage[2]" class="input-text" placeholder="售价" style="width: 30%;"/><br>
+                    </div>
+                    <div style="margin-top: 1%;">
+                        <input type="checkbox" name="fenliang[3]" value="3" />&nbsp;&nbsp;小&nbsp;&nbsp;
+                        <input type="text" name="fljiage[3]" class="input-text" placeholder="售价" style="width: 30%;"/><br>
+                    </div>
                 </div>
             </div>
             <div class="row cl">
@@ -142,50 +168,53 @@ $(document).ready(function(){
         
         <div class="row cl">
             <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
-                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 添加</button><!-- 
-                <button onClick="article_save();" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button>
-                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button> -->
+                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> <span id="submittijia">添加</span></button>
             </div>
         </div>
     </form>
 </article>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a1e5bf6e35618caf44db171b517a84ab77eb7f91
 <script>
-$(document).on("click","#guige",function(){
-    $("#guigechuf").toggle();
-});
-// 复选框勾选添加到隐藏框中 --分量
-  $('input[name=fenliang]').change(function(){
-    $('#Jszzdm').val($('input[name=fenliang]:checked').map(function(){return this.value}).get().join(','))
-  })
-// 复选框勾选添加到隐藏框中 --口味
-  $('input[name=kouwei]').change(function(){
-    $('#kwid').val($('input[name=kouwei]:checked').map(function(){return this.value}).get().join(','))
-  })
+    // 显示隐藏
+    $(document).on("click","#guige",function(){
+        $("#guigechuf").toggle();
+    });
+    // 复选框勾选添加到隐藏框中 --分量
+    $('input[name=fenliang]').change(function(){
+        $('#Jszzdm').val($('input[name=fenliang]:checked').map(function(){return this.value}).get().join(','))
+    })
+    // 复选框勾选添加到隐藏框中 --口味
+    $('input[name=kouwei]').change(function(){
+        $('#kwid').val($('input[name=kouwei]:checked').map(function(){return this.value}).get().join(','))
+    })
+    // 点击提交
+    // $(document).on("click","#submittijia",function(){
+    //     //获取分量 选中的分量
+    //     var flid = "";//分量id
+    //     var fljiage = "";//分量对应售价
+    //     var cpid = "";//菜品id
+    //     $("input[name=fenliang]:checked").each(function(){
+    //         flid += $(this).val()+",";//分量id
+    //         fljiage += $(this).parent().find(".flshoujia").find("input").val()+",";//分量对应售价
+    //         // alert(fljiage);
+    //     });
+    //     //ajax 添加分量 及价格
+    //     $.ajax({
+    //         type:"post",
+    //         dataType:"json",
+    //         url:'<?php echo U("Admin/Ajax/fljiageadd");?>',
+    //         data:{flid:flid,fljiage:fljiage},
+    //         success:function(dd){
+    //             if (dd == 1) { 
+    //                 // 提交表单
+    //                 $("form").submit();
+    //             }else{
+    //                 alert("失败了");
+    //             }
+    //         }
+    //     });
+       
+    // });
 </script>
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
-<script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 8990e90c3e932ee2b5ab3bfa0078a7075e86bb67
->>>>>>> a1e5bf6e35618caf44db171b517a84ab77eb7f91
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
@@ -194,11 +223,6 @@ $(document).on("click","#guige",function(){
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
-<<<<<<< HEAD
-=======
->>>>>>> d7d238f8d701d7016b1fe2320075da5f62bf89bc
->>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370
->>>>>>> a1e5bf6e35618caf44db171b517a84ab77eb7f91
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');

@@ -61,6 +61,86 @@
                 </span>
             </div>
         </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>单位：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <span class="select-box">
+                <select name="dwid" class="select">
+                <!-- 查询单条数据 -->
+                <foreach name="data" item="votype">
+                <!-- 所有类别 -->
+                     <foreach name="resdpdw" item="vodw" >
+                        <option value="{$vodw.id}" <if condition="$vodw['id'] eq $votype['dwid']"> selected="selected" </if>>{$vodw.mingch}</option>
+                    </foreach>
+                </foreach>
+                   
+                </select>
+                </span>
+            </div>
+        </div>
+        <!-- 菜品介绍 -->
+        <div style="margin-top: 2%;width: 87%;margin-left: 4%;background-color: #F7F7F7;">
+             <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="margin-left: -3%;"><b>菜品介绍</b></label>
+            </div>
+            <div class="row cl" style="margin-left: -5%;">
+                <label class="form-label col-xs-4 col-sm-2">食材：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" class="input-text" value="{$data.0.shicai}" placeholder="" id="" name="shicai">
+                </div>
+            </div>
+            <div class="row cl" style="margin-left: -5%;">
+                <label class="form-label col-xs-4 col-sm-2">口感：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" class="input-text" value="{$data.0.kougan}" placeholder="" id="" name="kougan">
+                </div>
+            </div><br>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>规格：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                 <foreach name="data" item="vo" >
+                    <if condition="$vo.guige eq 1 ">
+                        有&nbsp;&nbsp;<input type="radio"  value="1" name="guige" checked="checked">
+                        无&nbsp;&nbsp;<input type="radio"  value="2" name="guige">
+                        <else />
+                        有&nbsp;&nbsp;<input type="radio"  value="1" name="guige">
+                        无&nbsp;&nbsp;<input type="radio"  value="2" name="guige" checked="checked">
+                    </if>
+                </foreach>
+            </div>
+        </div>
+        <!-- 菜品id -->
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>菜品份量：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+            <!-- 真实菜品分量 -->
+                <input type="hidden" value="0" name="flid" id="Jszzdm">
+                <!-- 分量列表 -->
+                <foreach name="rescpfl" item="vofl" key="k">
+                    <if condition="$vofl.id eq $flid[$k]">
+                    {$vofl.mingch}<input type="checkbox" value="{$vofl.id}" name="fenliang" checked="checked">&nbsp;&nbsp;
+                    <else />
+                    {$vofl.mingch}<input type="checkbox" value="{$vofl.id}" name="fenliang" >&nbsp;&nbsp;
+                    </if>
+                </foreach>
+            </div>
+        </div>
+         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>菜品口味：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+            <!-- 真实菜品口味 -->
+                <input type="hidden" value="0" name="kwid" id="kwid">
+                <!-- 分量列表 -->
+                <foreach name="rescpkw" item="vokw" key="k">
+                    <if condition="$vokw.id eq $kwid[$k]">
+                    {$vokw.mingch}<input type="checkbox" value="{$vokw.id}" name="kouwei" checked="checked">&nbsp;&nbsp;
+                    <else />
+                    {$vokw.mingch}<input type="checkbox" value="{$vokw.id}" name="kouwei" >&nbsp;&nbsp;
+                    </if>
+                </foreach>
+            </div>
+        </div>
        <input type="hidden" value="{$data.0.id}" name='id'>
         <div class="row cl">
             <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
@@ -70,4 +150,20 @@
         </div>
     </form>
 </article>
+<script>
+// 复选框勾选添加到隐藏框中 --分量
+  $('input[name=fenliang]').change(function(){
+    $('#Jszzdm').val($('input[name=fenliang]:checked').map(function(){return this.value}).get().join(','))
+  })
+
+// 复选框勾选添加到隐藏框中 --口味
+  $('input[name=kouwei]').change(function(){
+    $('#kwid').val($('input[name=kouwei]:checked').map(function(){return this.value}).get().join(','))
+  })
+  //页面一进来加载事件
+  $(document).ready(function(){ 
+　　$('#Jszzdm').val($('input[name=fenliang]:checked').map(function(){return this.value}).get().join(','));
+    $('#kwid').val($('input[name=kouwei]:checked').map(function(){return this.value}).get().join(','))
+　});
+</script>
 <include file="Layout/footer"/>

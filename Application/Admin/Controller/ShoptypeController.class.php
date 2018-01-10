@@ -63,9 +63,7 @@ class ShoptypeController extends BasicController
     		$id = I('post.id');
     		$User = M("shop_type"); // 实例化User对象
     		$where['id'] = I('post.id');
-			$data['name'] = I('post.name');
-            $data['zhuangt'] = I('post.zhuangt');
-			$data['paix'] = I('post.paix');
+			$data = I('post.');
 			// dump($data);die;
 			$res = $User->where($where)->data($data)->save();
         	// echo $User->getLastSql();die;

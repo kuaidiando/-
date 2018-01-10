@@ -45,27 +45,8 @@ $(document).ready(function(){
 </head>
 <body>
 <article class="page-container">
-<<<<<<< HEAD:Application/Runtime/Cache/Admin/7aed8bd0a4d1b73699787aa5490ffb84.php
     <form class="form form-horizontal" id="form-admin-add" action="<?php echo U('Admin/Shoptype/edit');?>" method="post">
         <input type="hidden" name="id" value="<?php echo ($data["0"]["id"]); ?>">
-=======
-    <form class="form form-horizontal" id="form-admin-add" action="<?php echo U('Admin/Food/edit');?>" method="post" enctype="multipart/form-data">
-       <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>名称：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="<?php echo ($data["0"]["mingch"]); ?>" placeholder="" id="" name="mingch">
-            </div>
-        </div>
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">LOGO：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <div class="uploader-thum-container">
-                    <img style="width:20%;" src="/kuaidian/Public<?php echo ($data["0"]["logo"]); ?>" alt="图片加载中。。。">
-                    <input type="file" name="logo">
-                </div>
-            </div>
-        </div>
->>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370:Application/Runtime/Cache/Admin/e877f65e21a451bf99eb605f1e8f6f7d.php
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>分类名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
@@ -73,21 +54,7 @@ $(document).ready(function(){
             </div>
         </div>
         <div class="row cl">
-<<<<<<< HEAD:Application/Runtime/Cache/Admin/e877f65e21a451bf99eb605f1e8f6f7d.php
-=======
-<<<<<<< HEAD:Application/Runtime/Cache/Admin/7aed8bd0a4d1b73699787aa5490ffb84.php
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>状态：</label>
-=======
-<<<<<<< HEAD
->>>>>>> a1e5bf6e35618caf44db171b517a84ab77eb7f91:Application/Runtime/Cache/Admin/7aed8bd0a4d1b73699787aa5490ffb84.php
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>优惠价：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="<?php echo ($data["0"]["jiage"]); ?>" placeholder="" id="" name="jiage_youhui">
-            </div>
-        </div>
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>是否发布：</label>
->>>>>>> 1e69820d2df3765bd7120d2b3bf2d6976b8b9370:Application/Runtime/Cache/Admin/e877f65e21a451bf99eb605f1e8f6f7d.php
             <div class="formControls col-xs-8 col-sm-9">
             <?php if(is_array($data)): foreach($data as $key=>$vo): if($vo["zhuangt"] == 1 ): ?>有效&nbsp;&nbsp;<input type="radio"  value="1" name="zhuangt" checked="checked">
                     无效&nbsp;&nbsp;<input type="radio"  value="2" name="zhuangt">

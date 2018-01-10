@@ -145,6 +145,15 @@ function foodtype($code){
     // dump($result);die;
     return $result[0]['mingch'];
 }
+//后台菜品单位
+function caipindanwei($code){
+    $user = M('cpdanwei');
+    $where['id'] = $code;
+    $result = $user->where($where)->field('mingch')->select();
+    // echo $user->getLastsql();
+    // dump($result);die;
+    return $result[0]['mingch'];
+}
 // yxy
 // 菜品分量转换 
 function fenliangdo($code){
@@ -174,6 +183,16 @@ function kouweido($code){
         $data = "口味：".$res[0]['mingch']."...";
     }
     return $data;
+}
+//优惠卷数量
+function youhuishul($code){
+    $user = M('sale');
+    $where['dep_type'] = $code;
+    $result = $user->where($where)->count();
+    if (!$result) {
+        $result = "";
+    }
+    return $result;
 }
 /**
  * 统一资源定位

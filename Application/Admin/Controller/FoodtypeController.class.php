@@ -32,7 +32,7 @@ class FoodtypeController extends BasicController
         // // dump($res);die;
         // // echo $this->mod->getLastSql();
         // $this->assign('info', array('list' => $res,'count' => $count, 'page' => $page->show()));
-        $id = I('get.id');
+        $id = I('get.menid');
         // dump($id);die;
         $user = M('food_type');
         $where['dep_type'] = $id;

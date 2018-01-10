@@ -19,4 +19,31 @@ class AjaxController extends Controller
     	$data = $user->where($where)->select();
         $this->ajaxReturn($data);
     }
+    // //份量 价格 添加
+    // public function fljiageadd(){
+    // 	//获取菜品id
+    // 	$userfood = M('food');
+    // 	$datafood = $userfood->Max('id');//获取表中最大id
+    // 	$cpid = $datafood*1+1;//菜品id
+    // 	$flid = rtrim(I('post.flid'),",");//份量id
+    // 	$fljiage = rtrim(I('post.fljiage'),",");//份量对应价格
+    // 	$doflid = explode(",",$flid);//, 分隔分量id
+    // 	$dofljiage = explode(",",$fljiage);//, 分隔分量对应价格
+    // 	//判断添加是否成功
+    // 	$cgtype = 1;
+    // 	foreach ($doflid as $k => $v) {
+    // 		// 菜品价格表
+    // 		$usercpfljg = M('cpfljiage');
+    // 		$datafljiage['cpcode'] =$cpid;
+    // 		$datafljiage['flcode'] =$v;
+    // 		$datafljiage['cpfljiage'] =$dofljiage[$k];
+    // 		// 执行添加
+    // 		$rescgadd = $usercpfljg->add($datafljiage);
+    // 		// 判断添加是否成功
+    // 		if (!$rescgadd) {
+    // 			$cgtype = 2;
+    // 		}
+    // 	}
+    // 	$this->ajaxReturn($cgtype);
+    // }
 }
