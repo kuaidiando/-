@@ -1,6 +1,6 @@
 <?php
 /**
- * 后台注册控制器 RegController.class.php
+ * 前台注册控制器 RegController.class.php
  * ============================================================================
  * 许可声明：这是一个开源程序，未经许可不得将本软件的整体或任何部分用于商业用途及再发布。
  * ============================================================================
@@ -38,7 +38,7 @@ class RegController extends Controller {
         // $ad_code    = I('code','','trim');
 
         $user = M("user");
-         if (isset($this->get_data['tel']) && $this->get_data['tel']) {
+        if (isset($this->get_data['tel']) && $this->get_data['tel']) {
             $mobile = $this->get_data['tel'];
         }
         if (isset($this->get_data['password']) && $this->get_data['password']) {
@@ -100,23 +100,23 @@ class RegController extends Controller {
                     'status'          => $status,
             );
 
-        $result = $user->add($data);
-        if(!$result){
-            $data = array(
-                        'data' => false,
-                        'code' => 304,
-                        'msg'  => '注册用户失败',
-                        );
+            $result = $user->add($data);
+            if(!$result){
+                $data = array(
+                            'data' => false,
+                            'code' => 304,
+                            'msg'  => '注册用户失败',
+                            );
 
-            $this->ajaxReturn($data);
+                $this->ajaxReturn($data);
+            }
         }else{
-            $this->ajaxReturn(array(
-                'data' => false,
-                'code' => 311,
-                'msg' => '该会员已存在，无需重复注册'
-            ));
+                $this->ajaxReturn(array(
+                    'data' => false,
+                    'code' => 311,
+                    'msg' => '该会员已存在，无需重复注册'
+                ));
         }
-
         $data = array(
                 'data' => true,
                 'code' => 200,
@@ -131,8 +131,13 @@ class RegController extends Controller {
             'tel' => $tel,
             );
         $user = M('user')->where($where)->find();
+        if($uesr){
+            return true;
+        }else{
+            return false;
+        }
         // dump($user);exit;
-        return $user;
+        // return $user;
     }
 
      //生成验证码方法
