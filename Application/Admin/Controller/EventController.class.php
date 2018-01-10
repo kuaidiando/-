@@ -106,32 +106,20 @@ class EventController extends BasicController {
     } 
 
     public function update(){
-     // $update=M('event');
       $update = M('event');  
       $res = $update->where(array('status'=>1))->count();
-      // dump($res);exit;
      
-      if($res >=3 && I('post.status') =='1'){
+      if($res >=3 && I('post.status') == 1){
           $this->ajaxReturn(array('status' => 0, 'msg' => '不允许修改为使用状态，请先撤销部分'));
-
-        // $this->error('不允许修改为使用状态，请先撤销部分');
-
       }
       $update->create();
       $post =$_POST;
-      // dump($post);exit;
-      $res = $update->where('id='.I('post.id'))->save($post);
+      $result = $update->where('id='.I('post.id'))->save($post);
 
-      if(!$res){
-         // $this->error('修改失败',U('Event/edit'));
+      if(!$result){
           $this->ajaxReturn(array('status' => 0, 'msg' => '修改失败!'));
-
-        // $this->ajaxReturn
-       
       }else{
           $this->ajaxReturn(array('status' => 1, 'msg' => '修改成功!'));
-
-         // $this->success('修改成功',U('Event/edit'));
       }
       $this->display();
 

@@ -29,9 +29,9 @@ $(document).ready(function(){
 <link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/icheck/icheck.css"/>
 <link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
 <link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/style.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/css/hidTable.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/-/Public/css/hidTable.css"/> -->
 <!-- 分页效果 -->
-<link href="/-/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
+<!-- <link href="/-/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
 <title>快点</title>
 <script type="text/javascript">
     $(document).on("click",".shopin",function(){
@@ -94,6 +94,7 @@ $(document).ready(function(){
         $(document).on("click", '.edit', function () {
             var id = $(this).attr('id');
             var isAutoSend = document.getElementsByName('status');
+            var status ;
             for (var i = 0; i < isAutoSend.length; i++) {
                 if (isAutoSend[i].checked == true) {
                     var status = isAutoSend[i].value;
@@ -114,8 +115,9 @@ $(document).ready(function(){
                     url:'<?php echo U("Admin/Event/update");?>',
                     data:{id:id,status:status,ename:ename},
                     success: function (result) {
-                        if (result.status) {
-
+                        // alert(result.status);exit;
+                        if (result.status == 1) {
+                            // alert(result.status);exit;
                             layer.msg(result.msg,{icon:1,time:1000});
                             layer_close();
                             
@@ -123,7 +125,7 @@ $(document).ready(function(){
                             // op_obj.remove();
 
                             layer.msg(result.msg,{icon:0,time:2000});
-                            location.reload()
+                            // location.reload()
 
 
                         }

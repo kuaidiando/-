@@ -54,6 +54,7 @@
         $(document).on("click", '.edit', function () {
             var id = $(this).attr('id');
             var isAutoSend = document.getElementsByName('status');
+            var status ;
             for (var i = 0; i < isAutoSend.length; i++) {
                 if (isAutoSend[i].checked == true) {
                     var status = isAutoSend[i].value;
@@ -74,8 +75,9 @@
                     url:'{:U("Admin/Event/update")}',
                     data:{id:id,status:status,ename:ename},
                     success: function (result) {
-                        if (result.status) {
-
+                        // alert(result.status);exit;
+                        if (result.status == 1) {
+                            // alert(result.status);exit;
                             layer.msg(result.msg,{icon:1,time:1000});
                             layer_close();
                             
@@ -83,7 +85,7 @@
                             // op_obj.remove();
 
                             layer.msg(result.msg,{icon:0,time:2000});
-                            location.reload()
+                            // location.reload()
 
 
                         }
