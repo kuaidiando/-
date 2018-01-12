@@ -20,7 +20,7 @@
                 <tr class="text-c">
                     <th width="30">编号</th>
                     <th width="80">名称</th>
-                    <th width="60">LOGO</th>
+                    <th width="30" style="width:10%;">LOGO</th>
                     <!-- <th width="80">手机号123</th> -->
                     <!-- <th width="60">人均消费123</th> -->
                     <!-- <th width="80">营业时间123</th> -->
@@ -38,7 +38,7 @@
                         <tr class="text-c">
                             <td>{$vo.id}</td>
                             <td>{$vo.mingch}</td>
-                            <td><img style="width: 20%;"src="__PUBLIC__{$vo.logo}" alt="图片加载中。。。"></td>
+                            <td><img style="width: 30%;"src="__PUBLIC__{$vo.logo}" alt="图片加载中。。。"></td>
                             <!-- <td>{$vo.tel}</td> -->
                             <!-- <td>{$vo.maney}</td> -->
                             <!-- <td>{$vo.time_kai}--{$vo.time_zhong}</td> -->
@@ -61,7 +61,11 @@
                             </td>
                             <td class="td-status">
                                 <if condition="$vo.zhuangt eq 1 ">
-                                    <span class="label label-success radius">已发布</span>
+                                    <span class="label label-success radius">
+                                        <a  href="javascript:;"
+                                   onclick="admin_add('认证','{:U('Admin/Authentica/index', array('mdid' => $vo['id']))}'
+                                   ,'800','500')" style="text-decoration: none;color:#fff;">已发布</a>
+                                    </span>
                                     <else /> 
                                     <span class="label label-danger radius">未发布</span>
                                 </if>
@@ -77,11 +81,11 @@
                                     菜品类别&nbsp;&nbsp;
                                 </a>
                                 <br>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
+                                <!-- <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
                                    onclick="admin_add('详情','{:U('Admin/Shop/xiangqing', array('id' => $vo['id']))}'
                                    ,'800','500')">
                                     <i class="Hui-iconfont">&#xe627;</i>
-                                </a>&nbsp;&nbsp;&nbsp;
+                                </a>&nbsp;&nbsp;&nbsp; -->
                                 <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
                                    onclick="admin_add('编辑','{:U('Admin/Shop/edit', array('id' => $vo['id']))}'
                                    ,'800','500')">

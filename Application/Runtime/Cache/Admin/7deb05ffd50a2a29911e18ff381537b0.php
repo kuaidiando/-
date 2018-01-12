@@ -84,6 +84,14 @@ $(document).ready(function(){
         </ul>
         </dd>
     </dl>
+    <dl>
+        <dt><a href="#">会员管理</a></dt>
+        <dd>
+        <ul>
+            <li><a class="shopin" name="<?php echo U('Admin/User/index');?>">会员列表</a></li>
+        </ul>
+        </dd>
+    </dl>
 </div>
 </aside>
 <script type="text/javascript">
@@ -184,7 +192,7 @@ $(document).ready(function(){
                     <th width="30">名称</th>
                     <th width="80">注释</th>
                     <th width="80">发布状态</th>
-                    <th width="60">发布状态</th>
+                    <th width="60">排序</th>
                     <th width="120">操作</th>
                 </tr>
             </thead>

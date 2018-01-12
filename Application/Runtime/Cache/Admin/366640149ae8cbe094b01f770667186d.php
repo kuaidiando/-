@@ -84,6 +84,14 @@ $(document).ready(function(){
         </ul>
         </dd>
     </dl>
+    <dl>
+        <dt><a href="#">会员管理</a></dt>
+        <dd>
+        <ul>
+            <li><a class="shopin" name="<?php echo U('Admin/User/index');?>">会员列表</a></li>
+        </ul>
+        </dd>
+    </dl>
 </div>
 </aside>
 <script type="text/javascript">
@@ -181,16 +189,16 @@ $(document).ready(function(){
             <thead>
                 <tr class="text-c">
                     <th width="30">编号</th>
-                    <th width="80">名称</th>
-                    <th width="60">LOGO</th>
-                    <th width="60">原价</th>
+                    <th width="100">名称</th>
+                    <th width="60" style="width: 8%">LOGO</th>
+                    <!-- <th width="60">原价</th> -->
                     <th width="60">售价</th>
                     <th width="60">菜品类别</th>
                     <th width="60">菜品单位</th>
                     <th width="120">规格</th>
-                    <th width="60">食材</th>
-                    <th width="60">口感</th>
-                    <th width="60">门店</th>
+                   <!--  <th width="60">食材</th>
+                    <th width="60">口感</th> -->
+                    <th width="120">门店</th>
                     <th width="60">发布状态</th>
                     <th width="120">操作</th>
                 </tr>
@@ -199,14 +207,14 @@ $(document).ready(function(){
                 <?php if(is_array($data)): foreach($data as $key=>$vo): ?><tr class="text-c">
                             <td><?php echo ($vo["id"]); ?></td>
                             <td><?php echo ($vo["mingch"]); ?></td>
-                            <td><img style="width: 30%;"src="/kuaidian/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
-                            <td>￥<?php echo ($vo["jiage"]); ?></td>
+                            <td><img style="width: 50%;"src="/kuaidian/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
+                            <!-- <td>￥<?php echo ($vo["jiage"]); ?></td> -->
                             <td>￥<?php echo ($vo["jiage_youhui"]); ?></td>
                             <td><?php echo (foodtype($vo["food_type"])); ?></td>
                             <td><?php echo (caipindanwei($vo["dwid"])); ?></td>
                             <td>
                                 <div style="text-align: center;">
-                                    <?php if($vo["guige"] == 0 ): ?>无
+                                    <?php if($vo["guige"] == 2 ): ?>无
                                         <?php else: endif; ?>
                                     <span style="vertical-align:-1px;"><?php echo (fenliangdo($vo["flid"])); ?></span>
                                     <span style="vertical-align:-1px;"><?php echo (kouweido($vo["kwid"])); ?></span>
@@ -217,8 +225,8 @@ $(document).ready(function(){
                                     </a>
                                 </div>
                             </td>
-                            <td><?php echo ($vo["shicai"]); ?></td>
-                            <td><?php echo ($vo["kougan"]); ?></td>
+                           <!--  <td><?php echo ($vo["shicai"]); ?></td>
+                            <td><?php echo ($vo["kougan"]); ?></td> -->
                             <td><?php echo (shopnamedo($vo["dep_shop"])); ?></td>
                             <td class="td-status">
                                 <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">已发布</span>

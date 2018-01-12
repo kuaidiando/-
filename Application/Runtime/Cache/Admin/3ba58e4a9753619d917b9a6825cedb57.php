@@ -45,88 +45,92 @@ $(document).ready(function(){
 </head>
 <body>
 <article class="page-container">
-    <form class="form form-horizontal" id="form-admin-add" action="<?php echo U('Admin/Food/editfenliang');?>" method="post" enctype="multipart/form-data">
-     <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">规格：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                 <?php if(is_array($data)): foreach($data as $key=>$vo): if($vo["guige"] == 1 ): ?>有&nbsp;&nbsp;<input type="radio"  value="1" name="guige" checked="checked">
-                        无&nbsp;&nbsp;<input type="radio"  value="2" name="guige">
-                        <?php else: ?>
-                        有&nbsp;&nbsp;<input type="radio"  value="1" name="guige">
-                        无&nbsp;&nbsp;<input type="radio"  value="2" name="guige" checked="checked"><?php endif; endforeach; endif; ?>
+<form class="form form-horizontal" id="form-admin-add" action="<?php echo U('Admin/Food/editfenliang');?>" method="post" enctype="multipart/form-data">
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-2">规格：</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <?php if(is_array($data)): foreach($data as $key=>$vo): if($vo["guige"] == 1 ): ?>有&nbsp;&nbsp;
+            <input type="radio" value="1" name="guige" checked="checked">
+                        无&nbsp;&nbsp;
+            <input type="radio" class="guigeclick" value="2" name="guige">
+            <?php else: ?>
+                        有&nbsp;&nbsp;
+            <input type="radio" value="1" name="guige">
+                        无&nbsp;&nbsp;
+            <input type="radio" class="guigeclick" value="2" name="guige" checked="checked"><?php endif; endforeach; endif; ?>
+        </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-2">菜品份量：</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <?php if(is_array($data1)): foreach($data1 as $key=>$vodata1): if($vodata1['cpfljiage'] == 0): ?><div style="margin-top: 1%;">
+                <input type="checkbox" name="fenliang[<?php echo ($vodata1['flcode']); ?>]" class="fenliangk" value="<?php echo ($vodata1['flcode']); ?>"/>&nbsp;&nbsp;<?php echo (flhanzi($vodata1['flcode'])); ?>&nbsp;&nbsp;
+                <span class="fljiagek"><input type="text" name="fljiage[<?php echo ($vodata1['flcode']); ?>]" value="售价" class="input-text" style="width: 30%;"/></span><br>
+            </div>
+            <?php else: ?>
+            <div style="margin-top: 1%;">
+                <input type="checkbox" name="fenliang[<?php echo ($vodata1['flcode']); ?>]" class="fenliangk" value="<?php echo ($vodata1['flcode']); ?>" checked="checked"/>&nbsp;&nbsp;<?php echo (flhanzi($vodata1['flcode'])); ?>&nbsp;&nbsp;
+                <span class="fljiagek"><input type="text" name="fljiage[<?php echo ($vodata1['flcode']); ?>]" value="<?php echo ($vodata1['cpfljiage']); ?>" class="input-text" style="width: 30%;"/></span><br>
+            </div><?php endif; endforeach; endif; ?>
+        </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-2">菜品口味：</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <!-- 口味 -->
+            <div>
+                <!-- 单个 -->
+                <span class="kouweik">
+                <?php if(is_array($kwid)): foreach($kwid as $key=>$vokwid): ?><span style="margin-right: 5%;">
+                <input type="text" class="input-text" value="<?php echo ($vokwid); ?>" name="kouweishuru[]" maxlength="5" style="width: 20%;">
+                <span class="delkouwei" style="margin-left: -5%;color: #ddd; cursor: pointer;">
+                <b><i class="Hui-iconfont">&#xe6a6;</i></b>
+                </span>
+                </span><?php endforeach; endif; ?>
+                </span>
+                <!-- 添加按钮 -->
+                <span id="addkouwei" style="color: #5A98DD;font-size: 20px; cursor: pointer;">
+                <b><i class="Hui-iconfont">&#xe604;</i></b>
+                </span>
             </div>
         </div>
-         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">菜品份量：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                    <div style="margin-top: 1%;">
-                        <input type="checkbox" name="fenliang[1]" value="1" />&nbsp;&nbsp;大&nbsp;&nbsp;
-                        <input type="text" name="fljiage[1]" class="input-text" placeholder="售价" style="width: 30%;"/><br>
-                    </div>
-                    <div style="margin-top: 1%;">
-                        <input type="checkbox" name="fenliang[2]" value="2" />&nbsp;&nbsp;中&nbsp;&nbsp;
-                        <input type="text" name="fljiage[2]" class="input-text" placeholder="售价" style="width: 30%;"/><br>
-                    </div>
-                    <div style="margin-top: 1%;">
-                        <input type="checkbox" name="fenliang[3]" value="3" />&nbsp;&nbsp;小&nbsp;&nbsp;
-                        <input type="text" name="fljiage[3]" class="input-text" placeholder="售价" style="width: 30%;"/><br>
-                    </div>
-           
-            <!-- 真实菜品分量 -->
-                <input type="hidden" value="0" name="flid" id="Jszzdm">
-                <!-- 分量列表 -->
-                <?php if(is_array($rescpfl)): foreach($rescpfl as $k=>$vofl): ?><!-- 遍历份量id -->
-                    <?php if(is_array($flid)): foreach($flid as $key=>$voflid): echo ($vofl['id']); ?>--<?php echo ($voflid); ?>
-                        <?php if($vofl["id"] == $voflid): ?><div style="margin-top: 1%;">
-                                <input type="checkbox" value="<?php echo ($vofl["id"]); ?>" name="fenliang" checked="checked">
-                                &nbsp;&nbsp;<?php echo ($vofl["mingch"]); ?>&nbsp;&nbsp;
-                                <input type="text" class="input-text"  placeholder="售价" value="<?php echo ($vofl["cpfljg"]); ?>" style="width: 30%;">
-                            </div>
-                            <?php break;?>
-                        <?php else: ?>
-                            <div style="margin-top: 1%;">
-                                <input type="checkbox" value="<?php echo ($vofl["id"]); ?>" name="fenliang" >
-                                &nbsp;&nbsp;<?php echo ($vofl["mingch"]); ?>&nbsp;&nbsp;
-                                <input type="text" class="input-text"  placeholder="售价" value="<?php echo ($vofl["cpfljg"]); ?>" style="width: 30%;">
-                            </div><?php endif; endforeach; endif; endforeach; endif; ?>
-            </div>
+    </div>
+    <!-- 菜品id -->
+    <input type="hidden" value="<?php echo ($cpid); ?>" name='cpid'>
+    <div class="row cl">
+        <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+            <button class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 修改</button>
+            <button onclick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
         </div>
-         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">菜品口味：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-            <!-- 真实菜品口味 -->
-                <input type="hidden" value="0" name="kwid" id="kwid">
-                <!-- 分量列表 -->
-                <?php if(is_array($rescpkw)): foreach($rescpkw as $k=>$vokw): if($vokw["id"] == $kwid[$k]): echo ($vokw["mingch"]); ?><input type="checkbox" value="<?php echo ($vokw["id"]); ?>" name="kouwei" checked="checked">&nbsp;&nbsp;
-                    <?php else: ?>
-                    <?php echo ($vokw["mingch"]); ?><input type="checkbox" value="<?php echo ($vokw["id"]); ?>" name="kouwei" >&nbsp;&nbsp;<?php endif; endforeach; endif; ?>
-            </div>
-        </div>
-        <!-- 菜品id -->
-       <input type="hidden" value="<?php echo ($cpid); ?>" name='cpid'>
-        <div class="row cl">
-            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
-                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 修改</button>
-                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
-            </div>
-        </div>
-    </form>
+    </div>
+</form>
 </article>
 <script>
+//点击添加口味
+$(document).on("click", "#addkouwei", function() {
+    var dgkw = '<span style="margin-right:5%"><input type="text" class="input-text"  name="kouweishuru[]" value="" style="width:20%"> <span class="delkouwei" style="margin-left:-5%;color:#ddd;cursor:pointer"><b><i class="Hui-iconfont">&#xe6a6;</i></b></span></span>';
+    // alert(dgkw);
+    $(".kouweik").append(dgkw);
+});
+// 点击删除口味
+$(document).on("click", ".delkouwei", function() {
+    $(this).parent().remove();
+});
 // 复选框勾选添加到隐藏框中 --分量
-  $('input[name=fenliang]').change(function(){
-    $('#Jszzdm').val($('input[name=fenliang]:checked').map(function(){return this.value}).get().join(','))
-  })
-
-// 复选框勾选添加到隐藏框中 --口味
-  $('input[name=kouwei]').change(function(){
-    $('#kwid').val($('input[name=kouwei]:checked').map(function(){return this.value}).get().join(','))
-  })
-  //页面一进来加载事件
-  $(document).ready(function(){ 
-　　$('#Jszzdm').val($('input[name=fenliang]:checked').map(function(){return this.value}).get().join(','));
-    $('#kwid').val($('input[name=kouwei]:checked').map(function(){return this.value}).get().join(','))
-　});
+$('input[name=fenliang]').change(function() {
+    $('#Jszzdm').val($('input[name=fenliang]:checked').map(function() {
+        return this.value
+    }).get().join(','))
+})
+//规格选无
+$(document).on("click", ".guigeclick", function() {
+    // 份量变为未选定状态
+    $(".fenliangk").attr("checked", false);
+    $(".fljiagek").find("input").val("售价");
+    //口味 变为无
+    $(".kouweik").html('<span style="margin-right:5%"><input type="text" class="input-text"  name="kouweishuru[]" value="" style="width:20%"> <span class="delkouwei" style="margin-left:-5%;color:#ddd;cursor:pointer"><b><i class="Hui-iconfont">&#xe6a6;</i></b></span></span>');
+    // alert(123);
+});
 </script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>

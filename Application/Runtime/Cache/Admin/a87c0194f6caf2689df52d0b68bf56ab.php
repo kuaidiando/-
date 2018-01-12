@@ -123,7 +123,6 @@ $(document).ready(function(){
             </div><br>
         </div>
         <div class="row cl">
-            <!-- <button type="button" class="btn btn-primary radius" id="guige" style="margin-left: 5%;">规格</button> -->
             <label  class="form-label col-xs-4 col-sm-2">规格：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 &nbsp;&nbsp;<input type="checkbox"  value="1" name="guige" id="guige">
@@ -135,13 +134,6 @@ $(document).ready(function(){
             <div class="row cl">
                 <label class="form-label col-xs-4 col-sm-2">菜品份量：</label>
                 <div class="formControls col-xs-8 col-sm-9">
-                <!-- 真实菜品分量 -->
-                    <!-- <input type="text" value="0" name="flid" id="Jszzdm"> -->
-                    <!-- <?php if(is_array($resfl)): foreach($resfl as $key=>$vofl): ?><div style="margin-top: 1%;">
-                            <input type="checkbox" value="<?php echo ($vofl["id"]); ?>" name="fenliang[]">&nbsp;&nbsp; <?php echo ($vofl["mingch"]); ?> &nbsp;&nbsp;<span class="flshoujia">
-                            <input type="text" class="input-text" name="flshoujia[]" placeholder="售价" value="" style="width: 30%;"></span>
-                       
-                        </div><?php endforeach; endif; ?> -->
                     <div style="margin-top: 1%;">
                         <input type="checkbox" name="fenliang[1]" value="1" />&nbsp;&nbsp;大&nbsp;&nbsp;
                         <input type="text" name="fljiage[1]" class="input-text" placeholder="售价" style="width: 30%;"/><br>
@@ -159,9 +151,26 @@ $(document).ready(function(){
             <div class="row cl">
                 <label class="form-label col-xs-4 col-sm-2">菜品口味：</label>
                 <div class="formControls col-xs-8 col-sm-9">
+                <!-- 口味 -->
+                <div>
+                    <!-- 单个 -->
+                    <span class="kouweik">
+                        <span style="margin-right: 5%;">
+                            <input type="text" class="input-text" value="" name="kouweishuru[]" maxlength="5" style="width: 20%;">
+                            <span class="delkouwei" style="margin-left: -5%;color: #ddd; cursor: pointer;">
+                                <b><i class="Hui-iconfont">&#xe6a6;</i></b>
+                            </span>
+                        </span>
+                    </span>
+                    <!-- 添加按钮 -->
+                    <span id="addkouwei" style="color: #5A98DD;font-size: 20px; cursor: pointer;">
+                        <b><i class="Hui-iconfont">&#xe604;</i></b>
+                    </span>
+                </div>
+                    
                 <!-- 真实菜品口味 -->
-                    <input type="hidden" value="0" name="kwid" id="kwid">
-                    <?php if(is_array($reskw)): foreach($reskw as $key=>$vokw): echo ($vokw["mingch"]); ?><input type="checkbox" value="<?php echo ($vokw["id"]); ?>" name="kouwei">&nbsp;&nbsp;<?php endforeach; endif; ?>
+                    <!-- <input type="hidden" value="0" name="kwid" id="kwid">
+                    <?php if(is_array($reskw)): foreach($reskw as $key=>$vokw): echo ($vokw["mingch"]); ?><input type="checkbox" value="<?php echo ($vokw["id"]); ?>" name="kouwei">&nbsp;&nbsp;<?php endforeach; endif; ?> -->
                 </div>
             </div>
         </div>
@@ -178,14 +187,24 @@ $(document).ready(function(){
     $(document).on("click","#guige",function(){
         $("#guigechuf").toggle();
     });
+    //点击添加口味
+    $(document).on("click","#addkouwei",function(){
+        var dgkw = '<span style="margin-right:5%"><input type="text" class="input-text"  name="kouweishuru[]" value="" style="width:20%"> <span class="delkouwei" style="margin-left:-5%;color:#ddd;cursor:pointer"><b><i class="Hui-iconfont">&#xe6a6;</i></b></span></span>';
+        // alert(dgkw);
+        $(".kouweik").append(dgkw);
+    });
+    // 点击删除口味
+    $(document).on("click",".delkouwei",function(){
+        $(this).parent().remove();
+    });
     // 复选框勾选添加到隐藏框中 --分量
-    $('input[name=fenliang]').change(function(){
-        $('#Jszzdm').val($('input[name=fenliang]:checked').map(function(){return this.value}).get().join(','))
-    })
+    // $('input[name=fenliang]').change(function(){
+    //     $('#Jszzdm').val($('input[name=fenliang]:checked').map(function(){return this.value}).get().join(','))
+    // })
     // 复选框勾选添加到隐藏框中 --口味
-    $('input[name=kouwei]').change(function(){
-        $('#kwid').val($('input[name=kouwei]:checked').map(function(){return this.value}).get().join(','))
-    })
+    // $('input[name=kouwei]').change(function(){
+    //     $('#kwid').val($('input[name=kouwei]:checked').map(function(){return this.value}).get().join(','))
+    // })
     // 点击提交
     // $(document).on("click","#submittijia",function(){
     //     //获取分量 选中的分量

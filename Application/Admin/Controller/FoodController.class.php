@@ -48,6 +48,9 @@ class FoodController extends BasicController
     }
     public function add(){
     	if (IS_POST) {
+            /**
+             *  向菜品表添加数据
+             */
             $user = M("food"); // 实例化User对象
             $data = I('post.');//添加数据
             // dump($data);die;
@@ -75,6 +78,19 @@ class FoodController extends BasicController
             if ($info['logo']['savename']) {
                 $data['logo'] = '/img/'.$info['logo']['savepath'].$info['logo']['savename'];
             }
+             /**
+             * 拼接口味
+             */
+              // 获取口味
+              $kwid = "";
+            foreach ($data['kouweishuru'] as $k => $v) {
+                //拼接 份量id
+                $kwid = $kwid.$v.",";
+            }
+            //去除最后 的 “，”
+            $kwid = rtrim($kwid,",");
+            $data['kwid'] = $kwid;
+            //将拼接好的份量id 拼接回去
             $res = $user->add($data);
             /**
              *  向份量价格表添加数据
@@ -91,8 +107,9 @@ class FoodController extends BasicController
                     // 执行添加
                     $rescgadd = $usercpfljg->add($datafljiage);
             }
+           
+            $data['flid'] = $flid;
 			$res == true ? $this->success('添加成功') : $this->error('添加失败');
-    		// $this->display();
     	}else{
             //获取菜品类别
             $id = I('get.id');
@@ -101,9 +118,6 @@ class FoodController extends BasicController
             $where['dep_type'] = $id;//门店id
             $rescaipinlb = $user->where($where)->select();
 
-            //获取菜品分量
-            $userfl = M('cpfenliang');
-            $resfl = $userfl ->select();
             //获取菜品口味
             $userfl = M('cpkouwei');
             $reskw = $userfl ->select();
@@ -114,7 +128,6 @@ class FoodController extends BasicController
 
             $this->assign("id",$id);//门店类别
             $this->assign("rescaipinlb",$rescaipinlb);//菜品类别
-            $this->assign("resfl",$resfl);//菜品分量
             $this->assign("reskw",$reskw);//菜品口味
             $this->assign("resdw",$resdw);//菜品单位
             $this->display();
@@ -124,9 +137,9 @@ class FoodController extends BasicController
     //修改菜品
     public function edit(){
         if (IS_POST) {
-            $id = I('post.id');
+            $cpid = I('post.id');
             $User = M("food"); // 实例化User对象
-            $where['id'] = $id;
+            $where['id'] = $cpid;
             $data = I('post.');//需要修改的数据
              // 执行图片上传
             $upload = new \Think\Upload();//实例化上传类
@@ -139,13 +152,58 @@ class FoodController extends BasicController
             if ($info['logo']['savename']) {
                 $data['logo'] = '/img/'.$info['logo']['savepath'].$info['logo']['savename'];
             }
+            /**
+             * 修改菜品表
+             */
+            $User = M("food"); // 实例化User对象
+            $where['id'] = $cpid;
+            $data = I('post.');//需要修改的数据
+            // dump($data);die;
+            foreach ($data['fenliang'] as $k => $v) {
+                //拼接 份量id
+                $flid = $flid.$v.",";
+            }
+            //去除最后 的 “，”
+            $flid = rtrim($flid,",");
+            //将拼接好的份量id 拼接回去
+            $data['flid'] = $flid;
+             /**
+             * 拼接口味
+             */
+              // 获取口味
+            $kwid = "";
+            foreach ($data['kouweishuru'] as $k => $v) {
+                //拼接 份量id
+                $kwid = $kwid.$v.",";
+            }
+            //去除最后 的 “，”
+            $kwid = rtrim($kwid,",");
+            $data['kwid'] = $kwid;
             // dump($data);die;
             $res = $User->where($where)->data($data)->save();
+             /**
+             * 删除菜品分量价格表对应 的菜品
+             */
+            $usercpfljg = M('cpfljiage');
+            $wherecpfljg['cpcode'] = $cpid;
+            $usercpfljg->where($wherecpfljg)->delete();
+            /**
+             * 添加对应的分量价格
+             */
+            foreach ($data['fenliang'] as $k => $v) {
+                //拼接 份量id
+                    $datafljiage['cpcode'] =$cpid;
+                    $datafljiage['flcode'] =$v;
+                    $datafljiage['cpfljiage'] =$data['fljiage'][$k];
+                    // 执行添加
+                    $rescgadd = $usercpfljg->add($datafljiage);
+            }
             // echo $User->getLastSql();die;
 
             $res == true ? $this->success('修改成功') : $this->error('修改失败');
             // $this->display();
         }else{
+            $jxdm = I('get.id');//菜品id
             $user = M('food_type');
             $rescaipinlb = $user->select();
             $this->assign("rescaipinlb",$rescaipinlb);//菜品类别
@@ -153,27 +211,75 @@ class FoodController extends BasicController
             $userdpdw = M('cpdanwei');
             $resdpdw = $userdpdw->select();
             $this->assign("resdpdw",$resdpdw);//菜品单位
-            $jxdm = I('get.id');
             // dump($jxdm);die;
             $user = M('food');
             $where['id'] = $jxdm;
             $data = $user->where($where)->select();//查询单条信息
-            $flid = I('get.flid');//分量id
-            $doflid = explode(",",$flid);//, 分隔分量id
-            $kwid = I('get.kwid');//口味id
-            $dokwid = explode(",",$kwid);//, 分隔口味id
-            $user = M('cpfenliang');
-            $rescpfl = $user->select();
-            $this->assign("rescpfl",$rescpfl);//菜品份量
+            /**
+             * 分量拼接
+             */
+            $usercpfljg = M('cpfljiage');//分量对应价格表
+            $whereflje['cpcode'] = $jxdm;
+            $rescpfljg = $usercpfljg->where($whereflje)->select();
+            // dump($rescpfljg);die;
+            // 判断是否存在
+            if($rescpfljg){
+                $data1 = array();
+                // 遍历份量 及价格
+                foreach($rescpfljg as $k=>$v){
+                    // dump($v);die;
+                    if($v['flcode']==1 && isset($v['flcode'])){
+                        $data1['1']['cpfljiage'] = $v['cpfljiage'];
+                        $data1['1']['flcode'] = 1;
+                        // dump($data);exit;
+                    }else{
+                        if(!$data1['1']){
+                        $data1['1']['cpfljiage'] = 0;
+                        $data1['1']['flcode'] = 1;
+                        }
+                    }
+                    if($v['flcode'] == 2 && isset($v['flcode'])){
+                        $data1['2']['cpfljiage'] = $v['cpfljiage'];
+                        $data1['2']['flcode'] = 2;
+                        // dump($v['cpfljiage']);exit;
+                        // dump($data1);exit;
+                    }else{
+                        if(!$data1['2']){
+                        $data1['2']['cpfljiage'] = 0;
+                        $data1['2']['flcode'] = 2;
+                        }
+                    }
+                    if($v['flcode'] == 3 && isset($v['flcode'])){
+                        // dump($v['flcode']);exit;
+                        $data1['3']['cpfljiage'] = $v['cpfljiage'];
+                        $data1['3']['flcode'] =3;
+                    }else{
+                        if(!$data1['3']){
+                        $data1['3']['cpfljiage'] = 0;
+                        $data1['3']['flcode'] = 3;
+                        }
+                    }
+                }
+            }else{
+                
+                    if (!isset($v['flcode'])) {
+                        $data1['1']['cpfljiage'] = 0;
+                        $data1['1']['flcode'] = 1;
+                        $data1['2']['cpfljiage'] = 0;
+                        $data1['2']['flcode'] = 2;
+                        $data1['3']['cpfljiage'] = 0;
+                        $data1['3']['flcode'] = 3;
+                    }
+            }
+             /*
+            * 拼接口味
+             */ 
+            $dokwid = explode(",",$data[0]['kwid']);//, 分隔分量id
 
-            $userkw = M('cpkouwei');
-            $rescpkw = $userkw->select();
-            $this->assign("rescpkw",$rescpkw);//菜品口味
-
-            $this->assign('flid',$doflid);//分量id
-            $this->assign('kwid',$dokwid);//分量id
             // dump($data);die();
             $this->assign('data',$data);//查询单条信息
+            $this->assign('data1',$data1);//查询份量对应价格
+            $this->assign('kwid',$dokwid);//口味
             $this->display();
         }
     }
@@ -181,68 +287,127 @@ class FoodController extends BasicController
     public function editfenliang(){
     	if (IS_POST) {
     		$cpid = I('post.cpid');
+            /**
+             * 修改菜品表
+             */
     		$User = M("food"); // 实例化User对象
     		$where['id'] = $cpid;
             $data = I('post.');//需要修改的数据
-            
+            // dump($data);die;
+            foreach ($data['fenliang'] as $k => $v) {
+                //拼接 份量id
+                $flid = $flid.$v.",";
+            }
+            //去除最后 的 “，”
+            $flid = rtrim($flid,",");
+            //将拼接好的份量id 拼接回去
+            $data['flid'] = $flid;
+             /**
+             * 拼接口味
+             */
+              // 获取口味
+            $kwid = "";
+            foreach ($data['kouweishuru'] as $k => $v) {
+                //拼接 份量id
+                $kwid = $kwid.$v.",";
+            }
+            //去除最后 的 “，”
+            $kwid = rtrim($kwid,",");
+            $data['kwid'] = $kwid;
 			$res = $User->where($where)->data($data)->save();
+            /**
+             * 删除菜品分量价格表对应 的菜品
+             */
+            $usercpfljg = M('cpfljiage');
+            $wherecpfljg['cpcode'] = $cpid;
+            $usercpfljg->where($wherecpfljg)->delete();
+            /**
+             * 添加对应的分量价格
+             */
+            foreach ($data['fenliang'] as $k => $v) {
+                //拼接 份量id
+                    $datafljiage['cpcode'] =$cpid;
+                    $datafljiage['flcode'] =$v;
+                    $datafljiage['cpfljiage'] =$data['fljiage'][$k];
+                    // 执行添加
+                    $rescgadd = $usercpfljg->add($datafljiage);
+            }
         	// echo $User->getLastSql();die;
 
 			$res == true ? $this->success('修改成功') : $this->error('修改失败');
     		// $this->display();
     	}else{
             $cpid = I('get.id');//菜品id
-            $flid = I('get.flid');//分量id
-            $doflid = explode(",",$flid);//, 分隔分量id
-            $kwid = I('get.kwid');//口味id
-            $dokwid = explode(",",$kwid);//, 分隔口味id
-
-            // 根据菜品id和分量id 获取对应价格
-            // $cpfljgarr = array();
-            // $usercpfljg = M('cpfljiage');//分量对应价格表
-            // foreach ($doflid as $k => $v) {
-            //     $whereflje['cpcode'] = $cpid;
-            //     $whereflje['flcode'] = $v;
-            //     $rescpfljg = $usercpfljg->where($whereflje)->select();
-            //     $zuizjg = $rescpfljg[0]['cpfljiage'];
-            //     array_push($cpfljgarr,$zuizjg);
-            // }
+            /**
+             * 分量拼接
+             */
             $usercpfljg = M('cpfljiage');//分量对应价格表
-                $whereflje['cpcode'] = $cpid;
-                $rescpfljg = $usercpfljg->where($whereflje)->select();
-
-            // dump($doflid);
+            $whereflje['cpcode'] = $cpid;
+            $rescpfljg = $usercpfljg->where($whereflje)->select();
             // dump($rescpfljg);die;
-            // //获取菜品的分量
-            // $user = M('cpfenliang');
-            // $rescpfl = $user->select();
-            // //拼接数组 将各份量对应的价格拼接到 原数组中
-            // //遍历份量数组
-            // foreach ($rescpfl as $k => $v) {
-            //     // 遍历份量对应价格数组
-            //     foreach ($doflid as $kjg => $vjg) {
-            //         //判断份量数组中的id 是否有匹配的 价格
-            //         if ($v['id'] == $vjg ) {
-            //             $rescpfl[$k]['cpfljg'] =$cpfljgarr[$kjg];//赋值将对应的价格 添加到对应的份量中
-            //             break;
-            //         }else{
-            //             $rescpfl[$k]['cpfljg'] ="售价";
-            //         }
-            //     } 
-            // }
-
-            $userkw = M('cpkouwei');
-            $rescpkw = $userkw->select();
-            $this->assign("rescpkw",$rescpkw);//菜品口味
+            // 判断是否存在
+            if($rescpfljg){
+                $data1 = array();
+                // 遍历份量 及价格
+                foreach($rescpfljg as $k=>$v){
+                    // dump($v);die;
+                    if($v['flcode']==1 && isset($v['flcode'])){
+                        $data1['1']['cpfljiage'] = $v['cpfljiage'];
+                        $data1['1']['flcode'] = 1;
+                        // dump($data);exit;
+                    }else{
+                        if(!$data1['1']){
+                        $data1['1']['cpfljiage'] = 0;
+                        $data1['1']['flcode'] = 1;
+                        }
+                    }
+                    if($v['flcode'] == 2 && isset($v['flcode'])){
+                        $data1['2']['cpfljiage'] = $v['cpfljiage'];
+                        $data1['2']['flcode'] = 2;
+                        // dump($v['cpfljiage']);exit;
+                        // dump($data1);exit;
+                    }else{
+                        if(!$data1['2']){
+                        $data1['2']['cpfljiage'] = 0;
+                        $data1['2']['flcode'] = 2;
+                        }
+                    }
+                    if($v['flcode'] == 3 && isset($v['flcode'])){
+                        // dump($v['flcode']);exit;
+                        $data1['3']['cpfljiage'] = $v['cpfljiage'];
+                        $data1['3']['flcode'] =3;
+                    }else{
+                        if(!$data1['3']){
+                        $data1['3']['cpfljiage'] = 0;
+                        $data1['3']['flcode'] = 3;
+                        }
+                    }
+                }
+            }else{
+                
+                    if (!isset($v['flcode'])) {
+                        $data1['1']['cpfljiage'] = 0;
+                        $data1['1']['flcode'] = 1;
+                        $data1['2']['cpfljiage'] = 0;
+                        $data1['2']['flcode'] = 2;
+                        $data1['3']['cpfljiage'] = 0;
+                        $data1['3']['flcode'] = 3;
+                    }
+            }
 
             $user = M('food');
             $where['id'] = $cpid;
             $data = $user->where($where)->select();//查询单条信息
+            /*
+            * 拼接口味
+             */ 
+            $dokwid = explode(",",$data[0]['kwid']);//, 分隔口味id
+            // dump($dokwid);die;
             // $this->assign("rescpfl",$rescpfl);//菜品份量
             $this->assign('cpid',$cpid);//菜品id
-            $this->assign('flid',$doflid);//分量id
-    		$this->assign('kwid',$dokwid);//分量id
+    		$this->assign('kwid',$dokwid);//口味
             $this->assign('data',$data);//查询单条信息
+            $this->assign('data1',$data1);//查询份量对应价格
     		$this->display();
     	}
     }
