@@ -583,7 +583,7 @@ class UserController extends Controller {
             $data = array(
                     'data' => false,
                     'code' => 301,
-                    'msg'  => '请输入手机验证码',
+                    'msg'  => '请输入密码',
             );
             $this->ajaxReturn($data);
         }

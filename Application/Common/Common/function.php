@@ -145,6 +145,15 @@ function foodtype($code){
     // dump($result);die;
     return $result[0]['mingch'];
 }
+//后台座位类别
+function seattype($code){
+    $user = M('seat_type');
+    $where['id'] = $code;
+    $result = $user->where($where)->field('mingch')->select();
+    // echo $user->getLastsql();
+    // dump($result);die;
+    return $result[0]['mingch'];
+}
 //后台菜品单位
 function caipindanwei($code){
     $user = M('cpdanwei');

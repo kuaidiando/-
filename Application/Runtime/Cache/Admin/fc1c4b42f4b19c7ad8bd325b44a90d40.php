@@ -29,9 +29,9 @@ $(document).ready(function(){
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/icheck/icheck.css"/>
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/style.css"/>
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/> -->
 <!-- 分页效果 -->
-<link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
+<!-- <link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
 <title>快点</title>
 <script type="text/javascript">
     $(document).on("click",".shopin",function(){
@@ -114,13 +114,13 @@ $(document).ready(function(){
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>优惠卷：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>是否在线：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                 <?php if(is_array($data)): foreach($data as $key=>$vo): if($vo["juan"] == 1 ): ?>是&nbsp;&nbsp;<input type="radio"  value="1" name="juan" checked="checked">
-                    否&nbsp;&nbsp;<input type="radio"  value="2" name="juan">
+                 <?php if(is_array($data)): foreach($data as $key=>$vo): if($vo["line_type"] == 1 ): ?>是&nbsp;&nbsp;<input type="radio"  value="1" name="line_type" checked="checked">
+                    否&nbsp;&nbsp;<input type="radio"  value="2" name="line_type">
                     <?php else: ?> 
-                    是&nbsp;&nbsp;<input type="radio"  value="1" name="juan">
-                    否&nbsp;&nbsp;<input type="radio"  value="2" name="juan" checked="checked"><?php endif; endforeach; endif; ?>
+                    是&nbsp;&nbsp;<input type="radio"  value="1" name="line_type">
+                    否&nbsp;&nbsp;<input type="radio"  value="2" name="line_type" checked="checked"><?php endif; endforeach; endif; ?>
             </div>
         </div>
         <div class="row cl">

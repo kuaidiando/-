@@ -29,9 +29,9 @@ $(document).ready(function(){
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/icheck/icheck.css"/>
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/style.css"/>
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/> -->
 <!-- 分页效果 -->
-<link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
+<!-- <link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
 <title>快点</title>
 <div class="navbar navbar-fixed-top">
     <div class="container-fluid cl">
@@ -154,10 +154,26 @@ $(document).ready(function(){
 
     /*增加*/
     function admin_add(title, url, w, h) {
-        layer_show(title, url, w, h);
-        // end: function () {
-        //         location.reload();
-        //     }
+        // layer_show(title, url, w, h);
+     parent.layer.open({
+            type: 2,
+            title: title,
+            shadeClose: false, //点击遮罩关闭
+            shade: 0.8,
+            area: [w, h],
+            maxmin: true,
+            closeBtn: 1,
+            content: [url, 'yes'], //iframe的url，yes是否有滚动条
+            //yes: function (index, layero) {
+            //    alert(index);
+            //    alert(layero);
+            //},
+            end: function () {
+                layer.close;
+                location.reload();
+            }
+
+        });
     }
 
     function product_add(title,url){
@@ -181,7 +197,7 @@ $(document).ready(function(){
         <div>
             <div class="page-container">
         <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-            <a href="javascript:;" onclick="admin_add('添加门店','<?php echo U('Admin/Shop/add');?>','800','500')"
+            <a href="javascript:;" onclick="admin_add('添加门店','<?php echo U('Admin/Shop/add');?>','800px','500px')"
                class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加门店</a></span>
             <span class="r">共有数据：<strong><?php echo ($info["count"]); ?></strong> 条</span> </div>
         <div class="mt-20">
@@ -230,32 +246,41 @@ $(document).ready(function(){
                                 <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">
                                         <a  href="javascript:;"
                                    onclick="admin_add('认证','<?php echo U('Admin/Authentica/index', array('mdid' => $vo['id']));?>'
-                                   ,'800','500')" style="text-decoration: none;color:#fff;">已发布</a>
+                                   ,'800px','500px')" style="text-decoration: none;color:#fff;">已发布</a>
                                     </span>
                                     <?php else: ?> 
                                     <span class="label label-danger radius">未发布</span><?php endif; ?>
                             </td>
                             <td class="td-manage" style="text-align: center;">
                                 
+                                <a href="<?php echo U('Admin/Seat/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
+                                   
+                                    &nbsp;&nbsp;座位管理&nbsp;&nbsp;
+                                </a>
+                                <!-- <a href="<?php echo U('Admin/Seattype/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
+                                   
+                                   &nbsp;&nbsp;座位类别&nbsp;&nbsp;
+                                </a> -->
+                                 <a  href="javascript:;"
+                                   onclick="admin_add('编辑','<?php echo U('Admin/Shop/edit', array('id' => $vo['id']));?>'
+                                   ,'800px','500px')">
+                                    <i class="Hui-iconfont">&#xe6df;</i>
+                                </a>
+                                <br>
                                 <a href="<?php echo U('Admin/Food/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
                                    
-                                    &nbsp;&nbsp;菜品&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;菜品管理&nbsp;&nbsp;
                                 </a>
                                 <a href="<?php echo U('Admin/Foodtype/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
                                    
-                                    菜品类别&nbsp;&nbsp;
-                                </a>
-                                <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;菜品类别
+                                </a>&nbsp;&nbsp;
                                 <!-- <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
                                    onclick="admin_add('详情','<?php echo U('Admin/Shop/xiangqing', array('id' => $vo['id']));?>'
                                    ,'800','500')">
                                     <i class="Hui-iconfont">&#xe627;</i>
                                 </a>&nbsp;&nbsp;&nbsp; -->
-                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑','<?php echo U('Admin/Shop/edit', array('id' => $vo['id']));?>'
-                                   ,'800','500')">
-                                    <i class="Hui-iconfont">&#xe6df;</i>
-                                </a>&nbsp;
+                               
                                 <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
                             </td>
                         </tr><?php endforeach; endif; ?>

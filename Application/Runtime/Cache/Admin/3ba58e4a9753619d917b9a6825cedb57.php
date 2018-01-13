@@ -29,9 +29,9 @@ $(document).ready(function(){
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/icheck/icheck.css"/>
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/style.css"/>
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/> -->
 <!-- 分页效果 -->
-<link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
+<!-- <link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
 <title>快点</title>
 <script type="text/javascript">
     $(document).on("click",".shopin",function(){
@@ -130,6 +130,10 @@ $(document).on("click", ".guigeclick", function() {
     //口味 变为无
     $(".kouweik").html('<span style="margin-right:5%"><input type="text" class="input-text"  name="kouweishuru[]" value="" style="width:20%"> <span class="delkouwei" style="margin-left:-5%;color:#ddd;cursor:pointer"><b><i class="Hui-iconfont">&#xe6a6;</i></b></span></span>');
     // alert(123);
+});
+// input框点击全选
+$(document).on("click","input",function(){
+    $(this).select();
 });
 </script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>

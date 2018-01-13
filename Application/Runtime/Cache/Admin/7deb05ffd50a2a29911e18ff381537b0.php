@@ -29,9 +29,9 @@ $(document).ready(function(){
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/icheck/icheck.css"/>
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/style.css"/>
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/> -->
 <!-- 分页效果 -->
-<link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
+<!-- <link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
 <title>快点</title>
 <div class="navbar navbar-fixed-top">
     <div class="container-fluid cl">
@@ -154,10 +154,26 @@ $(document).ready(function(){
 
     /*增加*/
     function admin_add(title, url, w, h) {
-        layer_show(title, url, w, h);
-        // end: function () {
-        //         location.reload();
-        //     }
+        // layer_show(title, url, w, h);
+     parent.layer.open({
+            type: 2,
+            title: title,
+            shadeClose: false, //点击遮罩关闭
+            shade: 0.8,
+            area: [w, h],
+            maxmin: true,
+            closeBtn: 1,
+            content: [url, 'yes'], //iframe的url，yes是否有滚动条
+            //yes: function (index, layero) {
+            //    alert(index);
+            //    alert(layero);
+            //},
+            end: function () {
+                layer.close;
+                location.reload();
+            }
+
+        });
     }
 
     function product_add(title,url){

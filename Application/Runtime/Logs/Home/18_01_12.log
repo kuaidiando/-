@@ -73,3 +73,158 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
 ERR: 无法加载控制器:Event
 
+[ 2018-01-12T17:05:37+08:00 ] 192.168.0.107 /kuaidian/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0050s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0000s ]
+
+[ 2018-01-12T17:06:00+08:00 ] 192.168.0.107 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0000s ]
+
+[ 2018-01-12T17:06:54+08:00 ] 192.168.0.107 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0010s ]
+
+[ 2018-01-12T17:09:06+08:00 ] 192.168.0.105 /kuaidian/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0050s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0000s ]
+
+[ 2018-01-12T17:09:08+08:00 ] ::1 /kuaidian/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0040s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0000s ]
+
+[ 2018-01-12T17:14:31+08:00 ] 192.168.0.107 /kuaidian/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0030s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0000s ]
+
+[ 2018-01-12T17:14:53+08:00 ] 192.168.0.107 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0010s ]
+
+[ 2018-01-12T17:17:20+08:00 ] 192.168.0.107 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0000s ]
+
+[ 2018-01-12T17:17:22+08:00 ] 192.168.0.107 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0000s ]
+
+[ 2018-01-12T17:17:22+08:00 ] 192.168.0.107 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0010s ]
+
+[ 2018-01-12T17:17:23+08:00 ] 192.168.0.107 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0000s ]
+
+[ 2018-01-12T17:17:23+08:00 ] 192.168.0.107 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0010s ]
+
+[ 2018-01-12T17:17:52+08:00 ] 192.168.0.107 /kuaidian/index.php/home/event/index/public/img/2018-01-10/5a55d2ed81b32.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T17:38:41+08:00 ] ::1 /kuaidian/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0050s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0010s ]
+
+[ 2018-01-12T17:39:50+08:00 ] ::1 /kuaidian/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0030s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0000s ]
+
+[ 2018-01-12T17:53:08+08:00 ] 192.168.0.101 /kuaidian/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0030s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0000s ]
+

@@ -31,10 +31,26 @@
 
     /*增加*/
     function admin_add(title, url, w, h) {
-        layer_show(title, url, w, h);
-        // end: function () {
-        //         location.reload();
-        //     }
+        // layer_show(title, url, w, h);
+     parent.layer.open({
+            type: 2,
+            title: title,
+            shadeClose: false, //点击遮罩关闭
+            shade: 0.8,
+            area: [w, h],
+            maxmin: true,
+            closeBtn: 1,
+            content: [url, 'yes'], //iframe的url，yes是否有滚动条
+            //yes: function (index, layero) {
+            //    alert(index);
+            //    alert(layero);
+            //},
+            end: function () {
+                layer.close;
+                location.reload();
+            }
+
+        });
     }
 
     function product_add(title,url){

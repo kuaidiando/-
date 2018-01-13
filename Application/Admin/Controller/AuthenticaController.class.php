@@ -16,7 +16,12 @@ class AuthenticaController extends BasicController
     public function index()
     {
     	$mdid = I('get.mdid');//门店id
+    	$User = M("shop"); // 实例化User对象
+		$where['id'] = $mdid;
+		// dump($data);die;
+		$res = $User->select();
     	$this->assign('mdid',$mdid);//门店id
+    	$this->assign('res',$res);//门店单条信息
         $this->display();
     }
     public function edit(){
@@ -28,6 +33,6 @@ class AuthenticaController extends BasicController
 		$res = $User->where($where)->save($data);
     	// echo $User->getLastSql();die;
 
-		$res == true ? $this->success('认证成功') : $this->error('认证失败');
+		$res ? $this->success('认证成功') : $this->error('认证失败');
     }
 }

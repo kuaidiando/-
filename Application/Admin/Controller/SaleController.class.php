@@ -1,4 +1,9 @@
 <?php
+/**
+ * 优惠卷控制器 AJAXController.class.php
+ * Author: 杨旭亚
+ * Date: 2017年12月29日
+*/
 namespace Admin\Controller;
 
 use Admin\Model\SysDmJxModel;

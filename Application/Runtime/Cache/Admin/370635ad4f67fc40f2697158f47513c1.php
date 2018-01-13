@@ -29,9 +29,9 @@ $(document).ready(function(){
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/icheck/icheck.css"/>
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/style.css"/>
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/> -->
 <!-- 分页效果 -->
-<link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
+<!-- <link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
 <title>快点</title>
 <script type="text/javascript">
     $(document).on("click",".shopin",function(){
@@ -47,23 +47,23 @@ $(document).ready(function(){
 <article class="page-container">
     <form class="form form-horizontal" id="form-article-add" action="<?php echo U('Admin/Authentica/edit');?>" method="post" enctype="multipart/form-data">
     <!-- 隐藏门店ID -->
-    <input type="text" value="<?php echo ($mdid); ?>" name="mendianid">
+    <input type="hidden" value="<?php echo ($mdid); ?>" name="mendianid">
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>营业执照：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="renz_business">
+                <input type="text" class="input-text" value="<?php echo ($res["0"]["renz_business"]); ?>" placeholder="" id="" name="renz_business">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>卫生许可证：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="renz_hygiene">
+                <input type="text" class="input-text" value="<?php echo ($res["0"]["renz_hygiene"]); ?>" placeholder="" id="" name="renz_hygiene">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>法人电话：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="renz_legaltel">
+                <input type="text" class="input-text" value="<?php echo ($res["0"]["renz_legaltel"]); ?>" placeholder="" id="" name="renz_legaltel">
             </div>
         </div>
         

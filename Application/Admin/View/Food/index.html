@@ -11,7 +11,7 @@
         <div>
             <div class="page-container">
         <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-            <a href="javascript:;" onclick="admin_add('添加菜品','{:U('Admin/Food/add',array('id'=>"$id"))}','800','500')"
+            <a href="javascript:;" onclick="admin_add('添加菜品','{:U('Admin/Food/add',array('id'=>"$id"))}','800px','500px')"
                class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加菜品</a></span>
             <span class="r">共有数据：<strong>{$info.count}</strong> 条</span> </div>
         <div class="mt-20">
@@ -53,7 +53,7 @@
                                     <span style="vertical-align:-1px;">{$vo.kwid|kouweido=###}</span>
                                     <a style="margin-right: 10%;" href="javascript:;"
                                        onclick="admin_add('编辑规格','{:U('Admin/Food/editfenliang', array('id' => $vo['id'],'flid'=>$vo['flid'],'kwid'=>$vo['kwid']))}'
-                                       ,'800','500')">
+                                       ,'800px','500px')">
                                         <span style="vertical-align:baseline;color: red;"><b><i class="Hui-iconfont">&#xe667;</i></b></span>
                                     </a>
                                 </div>
@@ -72,7 +72,7 @@
                                
                                 <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
                                    onclick="admin_add('编辑详情','{:U('Admin/Food/edit', array('id' => $vo['id'],'flid'=>$vo['flid'],'kwid'=>$vo['kwid']))}'
-                                   ,'800','500')">
+                                   ,'800px','500px')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
                                 </a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a class="h-text-sc" id="{$vo.id}"><i class="Hui-iconfont">&#xe6e2;</i></a>

@@ -46,6 +46,13 @@ class ShopController extends BasicController
             $where['depcsjlshi'] = $id;
             $resmend = $user->where($where)->select();
         }
+        /**
+         * 查询该门店有无优惠卷 
+         */
+        // dump($resmend);die;
+        // foreach ($resmend as $k => $v) {
+        //     dump($v['id']);die;
+        // }
         $this->assign('resshop',$resmend);//门店信息
        
         $this->display();
