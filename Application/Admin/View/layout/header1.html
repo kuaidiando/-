@@ -36,11 +36,11 @@ $(document).ready(function(){
 <div class="navbar navbar-fixed-top">
     <div class="container-fluid cl">
         <a class="logo navbar-logo f-l mr-10 hidden-xs" href="{:U('Admin/Index/zhuye')}">首页</a>
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="{:U('Admin/shop/index')}">商户管理</span></a>
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="{:U('Admin/User/index')}">会员管理</span></a>
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="{:U('Admin/code/index')}">短信管理</span></a>
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="{:U('Admin/order/index')}">订单管理</span></a>
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="{:U('Admin/config')}">系统配置</span></a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="{:U('Admin/Oracle/mokuaia')}">商户管理</span></a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="{:U('Admin/Oracle/mokuaia')}">会员管理</span></a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="{:U('Admin/Oracle/mokuaia')}">短信管理</span></a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="{:U('Admin/Oracle/mokuaia')}">订单管理</span></a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="{:U('Admin/Oracle/mokuaia')}">系统配置</span></a>
 
 
         <!-- <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="">会员管理</a> -->
@@ -65,7 +65,6 @@ $(document).ready(function(){
 </div>
 <aside class="Hui-aside"><input runat="server" id="divScrollValue" type="hidden" value=""/>
 <div class="menu_dropdown bk_2" id="menu_nav">
-    <if condition="CONTROLLER_NAME eq Index">
     <dl>
         <dt><a href="#">主页</a></dt>
         <dd>
@@ -74,54 +73,12 @@ $(document).ready(function(){
         </ul>
         </dd>
     </dl>
-    <elseif condition="CONTROLLER_NAME eq Shop || CONTROLLER_NAME eq Shoptype || CONTROLLER_NAME eq Danwei" />
     <dl>
         <dt><a href="#">门店管理</a></dt>
         <dd>
         <ul>
-           
-            <li><a class="shopin" name="{:U('Admin/Shop/index')}">门店列表</a></li>
-            <li><a class="shopin" name="{:U('Admin/Shoptype/index')}">门店类别</a></li>
-            <li><a class="shopin" name="{:U('Admin/Danwei/index')}">单位管理</a></li>
-        </ul>
-        </dd>
-    </dl>
-    <elseif condition="CONTROLLER_NAME eq User" />
-     <dl>
-        <dt><a href="#">会员管理</a></dt>
-        <dd>
-        <ul>
-            <li><a class="shopin" name="{:U('Admin/User/index')}">会员列表</a></li>
-        </ul>
-        </dd>
-    </dl>
-    <elseif condition="CONTROLLER_NAME eq Event" />
-     <dl>
-        <dt><a href="#">轮播图管理</a></dt>
-        <dd>
-        <ul>
-            <li><a class="shopin" name="{:U('Admin/Event/index')}">轮播图列表</a></li>
-        </ul>
-        </dd>
-    </dl>
-    <elseif condition="CONTROLLER_NAME eq Shop" />
-    <dl>
-        <dt><a href="#">门店管理</a></dt>
-        <dd>
-        <ul>
-           
-            <li><a class="shopin" name="{:U('Admin/Shop/index')}">门店列表</a></li>
-            <li><a class="shopin" name="{:U('Admin/Shoptype/index')}">门店类别</a></li>
-            <li><a class="shopin" name="{:U('Admin/Danwei/index')}">单位管理</a></li>
-        </ul>
-        </dd>
-    </dl>
-    </if>
-    <!-- <dl>
-        <dt><a href="#">门店管理</a></dt>
-        <dd>
-        <ul>
-           
+            <!-- 隐藏主页 -->
+            <!-- <a _href="{:U('Admin/Index/yinczhuye')}" name="{:U('Admin/Index/yinczhuye')}" style="display: none;"class="" href="javascript:;">隐藏主页</a> -->
             <li><a class="shopin" name="{:U('Admin/Shop/index')}">门店列表</a></li>
             <li><a class="shopin" name="{:U('Admin/Shoptype/index')}">门店类别</a></li>
             <li><a class="shopin" name="{:U('Admin/Danwei/index')}">单位管理</a></li>
@@ -143,7 +100,7 @@ $(document).ready(function(){
             <li><a class="shopin" name="{:U('Admin/User/index')}">会员列表</a></li>
         </ul>
         </dd>
-    </dl> -->
+    </dl>
 </div>
 </aside>
 <script type="text/javascript">

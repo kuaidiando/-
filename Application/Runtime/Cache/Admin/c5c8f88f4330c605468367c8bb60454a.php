@@ -111,13 +111,7 @@ $(document).ready(function(){
         /*编辑轮播图*/
         $(document).on("click", '.edit', function () {
           
-            var del_status ;
-            var password;
-            var repassword;
-            var tel;
-            var real_name;
-            var id;
-            var isAutoSend;
+            var del_status,password,repassword,tel,real_name,id,isAutoSend;
 
 
             var id = $(this).attr('id');
@@ -154,24 +148,24 @@ $(document).ready(function(){
     </script>
 
 <script type="text/javascript">
-    $(document).on('change','#selsheng',function(){
-        var codesheng = $(this).val();//获取市对应code
-        var str = '';//城市对应区域
-        $.ajax({
-            type:'post',
-            dataType: 'json',
-            url:'<?php echo U("Admin/Ajax/index");?>',
-            data:{codesheng:codesheng},
-            success: function (dd) {
-                // 获取区域名称
-                $.each(dd,function(index,item){
-                    str += '<option value="'+item.code+'">'+item.name+'</option>'; 
-                })
-                //赋值区域
-                $("#selshi").html(str);
-            }
-        })
-    });
+    // $(document).on('change','#selsheng',function(){
+    //     var codesheng = $(this).val();//获取市对应code
+    //     var str = '';//城市对应区域
+    //     $.ajax({
+    //         type:'post',
+    //         dataType: 'json',
+    //         url:'<?php echo U("Admin/Ajax/index");?>',
+    //         data:{codesheng:codesheng},
+    //         success: function (dd) {
+    //             // 获取区域名称
+    //             $.each(dd,function(index,item){
+    //                 str += '<option value="'+item.code+'">'+item.name+'</option>'; 
+    //             })
+    //             //赋值区域
+    //             $("#selshi").html(str);
+    //         }
+    //     })
+    // });
 </script>
 <script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>

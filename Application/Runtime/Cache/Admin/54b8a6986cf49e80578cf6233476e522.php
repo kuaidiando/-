@@ -35,10 +35,20 @@ $(document).ready(function(){
 <title>快点</title>
 <div class="navbar navbar-fixed-top">
     <div class="container-fluid cl">
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" href="#">快点LOGO</a>
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/Oracle/mokuaia');?>">模块a</span></a>
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="">模块b</a>
-        <li class="dropDown dropDown_hover" style="margin-left: 60%;margin-top: 1%;">
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" href="#">首页</a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/Oracle/mokuaia');?>">商户管理</span></a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/Oracle/mokuaia');?>">会员管理</span></a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/Oracle/mokuaia');?>">短信管理</span></a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/Oracle/mokuaia');?>">订单管理</span></a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/Oracle/mokuaia');?>">系统配置</span></a>
+
+
+        <!-- <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="">会员管理</a> -->
+
+
+
+
+        <li class="dropDown dropDown_hover" style="margin-left: 50%;margin-top: 1%;">
         <div>
             <!-- 城市级联 -->
             <select name="choose" id="choose" style="width: 50%;" class="select">

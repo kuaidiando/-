@@ -8,17 +8,20 @@
  * Date: 2018年1月4日
 */
 namespace Admin\Controller;
+// use Think\Controller;
+// use Common\Controller\BasicController;
+use Common\Controller\BasicController;  
 use Think\Controller;
-use Common\Controller\BasicController;
+use Think\Page;
 class EventController extends BasicController {
    
-    public function _initialize()
-    {
-        //如果登录就调至后台的模块
-        //$user_id = D('user')->get_user_id();
-        // $user_id = \user_helper::get_admin_id();
-        // $this->checkreg();
-    }
+    // public function _initialize()
+    // {
+    //     //如果登录就调至后台的模块
+    //     //$user_id = D('user')->get_user_id();
+    //     // $user_id = \user_helper::get_admin_id();
+    //     // $this->checkreg();
+    // }
 
     public function __call($action = '', $params = array())
     {

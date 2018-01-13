@@ -125,12 +125,12 @@ $(document).ready(function(){
                         }
                     }
                 })
-                if(flag){
-                    layer.msg(result.msg,{icon:1,time:3000});
-                            layer_close();
-                }else{
-                    layer.msg(result.msg,{icon:0,time:2000});
-                }
+                // if(flag){
+                //     layer.msg(result.msg,{icon:1,time:3000});
+                //             layer_close();
+                // }else{
+                //     layer.msg(result.msg,{icon:0,time:2000});
+                // }
         });
     </script>
 

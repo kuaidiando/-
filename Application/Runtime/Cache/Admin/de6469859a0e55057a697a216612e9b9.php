@@ -71,7 +71,7 @@ $(document).ready(function(){
         </ul>
         </dd>
     </dl>
-    <?php elseif(CONTROLLER_NAME == Shop || CONTROLLER_NAME == Shoptype || CONTROLLER_NAME == Danwei): ?>
+    <?php elseif(CONTROLLER_NAME == Shop): ?>
     <dl>
         <dt><a href="#">门店管理</a></dt>
         <dd>
@@ -157,169 +157,79 @@ $(document).ready(function(){
         // $("#clickzhuye").click();
         // alert(aa);
     });
-</script>
-</head>
-<body>
-<nav class="breadcrumb">
-    <i class="Hui-iconfont">&#xe67f;</i>
-    <?php
- array_pop($location); foreach ($location as $value) { echo $value['name']; ?>
-    <span class="c-gray en">&gt;</span>
-    <?php } ?>
-    <?php echo ($active["name"]); ?>
-    <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" >
-        <i class="Hui-iconfont">&#xe68f;</i>
-    </a>
-</nav>
+</script><header class="navbar-wrapper">
 
-
-
-<script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
-<script type="text/javascript">
-    $("#menu_nav .menu_id").click(function () {
-        var id = $(this).attr('data-id');
-        $.cookie('active', id, {path: '/' });
-    })
-</script>
-</body>
-</html>
-<script type="text/javascript">
-    $(function () {
-        $('.skin-minimal input').iCheck({
-            checkboxClass: 'icheckbox-blue',
-            radioClass: 'iradio-blue',
-            increaseArea: '20%'
-        });
-        $.Huitab("#tab-system .tabBar span", "#tab-system .tabCon", "current", "click", "0");
-    });
-
-    /*增加*/
-    function admin_add(title, url, w, h) {
-        // layer_show(title, url, w, h);
-     parent.layer.open({
-            type: 2,
-            title: title,
-            shadeClose: false, //点击遮罩关闭
-            shade: 0.8,
-            area: [w, h],
-            maxmin: true,
-            closeBtn: 1,
-            content: [url, 'yes'], //iframe的url，yes是否有滚动条
-            //yes: function (index, layero) {
-            //    alert(index);
-            //    alert(layero);
-            //},
-            end: function () {
-                layer.close;
-                location.reload();
-            }
-
-        });
-    }
-
-    function product_add(title,url){
-        var index = layer.open({
-            type: 2,
-            title: title,
-            content: url
-        });
-        layer.full(index);
-    }
-</script><header class="navbar-wrapper"></header>
+</header>
+<aside class="Hui-aside"><input runat="server" id="divScrollValue" type="hidden" value=""/>
+<div class="menu_dropdown bk_2" id="menu_nav">
+    <dl>
+        <dt><a href="#">模块2</a></dt>
+        <dd>
+        <ul>
+            <li><a class="shopin" name="<?php echo U('Admin/Index/zhuye');?>"><span id="clickzhuye">模块2</span></a></li>
+        </ul>
+        </dd>
+    </dl>
+    <dl>
+        <dt><a href="#">模块2</a></dt>
+        <dd>
+        <ul>
+            <!-- 隐藏主页 -->
+            <!-- <a _href="<?php echo U('Admin/Index/yinczhuye');?>" name="<?php echo U('Admin/Index/yinczhuye');?>" style="display: none;"class="" href="javascript:;">隐藏主页</a> -->
+            <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">标题1</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Oracle/moabiaob');?>">标题2</a></li>
+        </ul>
+        </dd>
+    </dl>
+</div>
+</aside>
 <div class="dislpayArrow hidden-xs">
-    <a class="pngfix" href="javascript:;" onclick="displaynavbar(this)"></a>
+	<a class="pngfix" href="javascript:;" onclick="displaynavbar(this)"></a>
 </div>
 <section class="Hui-article-box">
 <div id="iframe_box" class="Hui-article">
-    <div class="show_iframe">
-        <div style="display:none" class="loading">
-        </div>
-        <!-- 主题内容 -->
-        <div>
-            <div class="page-container">
-        <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-            <a href="javascript:;" onclick="admin_add('添加门店类别','<?php echo U('Admin/Shoptype/add');?>','800','500')"
-               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加门店类别</a></span>
-            <span class="r">共有数据：<strong><?php echo ($info["count"]); ?></strong> 条</span> </div>
-        <div class="mt-20">
-        <table class="table table-border table-bordered table-bg table-hover table-responsive">
-            <thead>
-                <tr class="text-c">
-                   <th width="80">编号</th>
-                    <th width="80">分类名称</th>
-                    <th width="80">状态</th>
-                    <th width="80">排序</th>
-                    <th width="120">操作</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php if(is_array($resshoptype)): foreach($resshoptype as $key=>$vo): ?><tr class="text-c">
-                            <td><?php echo ($vo["id"]); ?></td>
-                            <td><?php echo ($vo["mingch"]); ?></td>
-                            <td class="td-status">
-                                <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">已发布</span>
-                                    <?php else: ?> 
-                                    <span class="label label-danger radius">未发布</span><?php endif; ?>
-                            </td>
-                            <td><?php echo ($vo["paix"]); ?></td>
-                            <td class="td-manage" style="text-align: center;">
-                                
-                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Shoptype/edit', array('id' => $vo['id']));?>'
-                                   ,'800','500')">
-                                    <i class="Hui-iconfont">&#xe6df;</i>
-                                </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
-                            </td>
-                        </tr><?php endforeach; endif; ?>
-                
-            </tbody>
-        </table>
-        </div>
-    </div>
-        </div>
-    </div>
+	<div class="show_iframe">
+		<div style="display:none" class="loading">
+		</div>
+		<!-- 主题内容 -->
+		<link rel="icon" type="image/png" href="/-/Public/xin/assets/i/favicon.png">
+			<link rel="apple-touch-icon-precomposed" href="/-/Public/xin/assets/i/app-icon72x72@2x.png">
+			<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+			<link rel="stylesheet" href="/-/Public/xin/assets/css/amazeui.min.css"/>
+			<link rel="stylesheet" href="/-/Public/xin/assets/css/admin.css">
+			<div class="admin-index">
+				<dl data-am-scrollspy="{animation: 'slide-right', delay: 100}">
+					<dt class="qs"><i class="am-icon-users"></i></dt>
+					<dd>455</dd>
+					<dd class="f12">团队数量</dd>
+				</dl>
+				<dl data-am-scrollspy="{animation: 'slide-right', delay: 300}">
+					<dt class="cs"><i class="am-icon-area-chart"></i></dt>
+					<dd>455</dd>
+					<dd class="f12">今日收入</dd>
+				</dl>
+				<dl data-am-scrollspy="{animation: 'slide-right', delay: 600}">
+					<dt class="hs"><i class="am-icon-shopping-cart"></i></dt>
+					<dd>455</dd>
+					<dd class="f12">商品数量</dd>
+				</dl>
+				<dl data-am-scrollspy="{animation: 'slide-right', delay: 900}">
+					<dt class="ls"><i class="am-icon-cny"></i></dt>
+					<dd>455</dd>
+					<dd class="f12">全部收入</dd>
+				</dl>
+			</div>
+	</div>
 </div>
 </section>
 <script type="text/javascript">
-    $(document).on("change","#choose",function(){
-        // $('iframe').attr('src',"<?php echo U('Admin/Index/welcome');?>");
-        $(".yincangzhuye").click();
-        // console.log(aa);
-        // alert(aa);
-    });
+	$(document).on("change","#choose",function(){
+		// $('iframe').attr('src',"<?php echo U('Admin/Index/welcome');?>");
+		$(".yincangzhuye").click();
+		// console.log(aa);
+		// alert(aa);
+	});
 </script>
-<script type="text/javascript">
-        /*删除*/
-        $(document).on("click", '.h-text-sc', function () {
-            var op_obj = $(this).parents("tr");
-            var id = $(this).attr('id');
-            // alert(id);
-            layer.confirm('确认要删除吗？',function(){
-                $.ajax({
-                    type:'POST',
-                    dataType: 'json',
-                    url:'<?php echo U("Admin/Shoptype/delete");?>',
-                    data:{id:id},
-                    success: function (result) {
-                        if (result.status) {
-                            op_obj.remove();
-                            layer.msg(result.msg,{icon:1,time:1000});
-                        } else {
-                            layer.msg(result.msg,{icon:0,time:2000});
-                        }
-                    }
-                })
-            });
-        });
-    </script>
 <script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
