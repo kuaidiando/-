@@ -52,45 +52,45 @@
 <script type="text/javascript">
         /*编辑轮播图*/
         $(document).on("click", '.edit', function () {
+            var id,isAutoSend,status,ename;
             var id = $(this).attr('id');
             var isAutoSend = document.getElementsByName('status');
-            var status ;
             for (var i = 0; i < isAutoSend.length; i++) {
                 if (isAutoSend[i].checked == true) {
                     var status = isAutoSend[i].value;
                 }
             }
-            // var status = document.getElementById('statuss').children();
-            // alert(status);exit;
             var ename = document.getElementById('ename').value;
-            // alert(id);
-            // alert(status);
-            // alert(ename);
-            // exit;
-
-            
+            // var flag = false;
                 $.ajax({
                     type:'POST',
                     dataType: 'json',
                     url:'{:U("Admin/Event/update")}',
                     data:{id:id,status:status,ename:ename},
                     success: function (result) {
-                        // alert(result.status);exit;
+                        // if(result){
+                        //     var flag = true;
+                        // }else{
+                        //     var flag = false;
+                        // }
                         if (result.status == 1) {
-                            // alert(result.status);exit;
-                            layer.msg(result.msg,{icon:1,time:1000});
+                            layer.msg(result.msg,{icon:1,time:3000});
                             layer_close();
                             
                         } else {
-                            // op_obj.remove();
 
                             layer.msg(result.msg,{icon:0,time:2000});
-                            // location.reload()
 
 
                         }
                     }
                 })
+                // if(flag){
+                //     layer.msg(result.msg,{icon:1,time:3000});
+                //             layer_close();
+                // }else{
+                //     layer.msg(result.msg,{icon:0,time:2000});
+                // }
         });
     </script>
 

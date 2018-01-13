@@ -8,17 +8,20 @@
  * Date: 2018年1月4日
 */
 namespace Admin\Controller;
+// use Think\Controller;
+// use Common\Controller\BasicController;
+use Common\Controller\BasicController;  
 use Think\Controller;
-use Common\Controller\BasicController;
+use Think\Page;
 class EventController extends BasicController {
    
-    public function _initialize()
-    {
-        //如果登录就调至后台的模块
-        //$user_id = D('user')->get_user_id();
-        // $user_id = \user_helper::get_admin_id();
-        // $this->checkreg();
-    }
+    // public function _initialize()
+    // {
+    //     //如果登录就调至后台的模块
+    //     //$user_id = D('user')->get_user_id();
+    //     // $user_id = \user_helper::get_admin_id();
+    //     // $this->checkreg();
+    // }
 
     public function __call($action = '', $params = array())
     {
@@ -94,12 +97,8 @@ class EventController extends BasicController {
 
     //图片的编辑
     public function edit(){
-      // echo md5('123456');exit;
-      // dump($_GET);exit;
       $edit = M('event');
       $res = $edit->where('id='.I('get.id'))->find();
-      // dump($res);
-      // die;
       $this->assign('row',$res);
       $this->display('edit') ;
 
@@ -115,6 +114,12 @@ class EventController extends BasicController {
       $update->create();
       $post =$_POST;
       $result = $update->where('id='.I('post.id'))->save($post);
+
+      // if(!$result){
+      //   echo 0;
+      // }else{
+      //   echo 1;
+      // }
 
       if(!$result){
           $this->ajaxReturn(array('status' => 0, 'msg' => '修改失败!'));

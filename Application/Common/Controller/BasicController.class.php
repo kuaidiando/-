@@ -13,9 +13,10 @@ class BasicController extends Controller {
   	// 城市级联 以及点击城市的 市id
     public function _initialize() {  
         //城市级联
-        $user = M('city');
-        $result = $user ->select();//城市级联
-        $this->assign('res',$result);
+        $user1 = M('city');
+        $result1 = $user1 ->select();//城市级联
+        // dump($result1);exit;
+        $this->assign('res',$result1);
         $this->assign('chengshiid',I('get.id'));//城市id
     }  
   

@@ -12,13 +12,13 @@ use Think\Controller;
 use Common\Controller\BasicController;
 class UserController extends BasicController {
    
-    public function _initialize()
-    {
-        //如果登录就调至后台的模块
-        //$user_id = D('user')->get_user_id();
-        // $user_id = \user_helper::get_admin_id();
-        // $this->checkreg();
-    }
+    // public function _initialize()
+    // {
+    //     //如果登录就调至后台的模块
+    //     //$user_id = D('user')->get_user_id();
+    //     // $user_id = \user_helper::get_admin_id();
+    //     // $this->checkreg();
+    // }
 
     public function __call($action = '', $params = array())
     {
@@ -39,5 +39,34 @@ class UserController extends BasicController {
       $this->display('index');
     }
 
-  
+    //会员编辑
+    public function edit(){
+      $uid = I('id','');
+      $res = M('user')->where(array('id'=>$uid))->find();
+      $this->assign('res',$res);
+      $this->display();
+    }
+
+    //会员编辑保存
+    public function update(){
+      $user = M('user');
+      $filter = array();
+      $filter['password'] = md5($_POST['password']);
+      $filter['tel'] = $_POST['tel'];
+      $filter['del_status'] = $_POST['del_status'];
+      $filter['real_name'] = $_POST['real_name'];
+      $id = $_POST['id'];
+
+      if($_POST['password'] != $_POST['repassword']){
+        $this->ajaxReturn(array('status'=>0,'msg'=>'两次输入密码不一致!'));
+      }
+        $result = $user->where(array('id'=>$id))->save($filter);
+
+        if(!$result){
+          $this->ajaxReturn(array('status' => 0, 'msg' => '修改失败!'));
+        }else{
+          $this->ajaxReturn(array('status' => 1, 'msg' => '修改成功!'));
+        }
+     
+    }
 }
