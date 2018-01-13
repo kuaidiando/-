@@ -94,12 +94,8 @@ class EventController extends BasicController {
 
     //图片的编辑
     public function edit(){
-      // echo md5('123456');exit;
-      // dump($_GET);exit;
       $edit = M('event');
       $res = $edit->where('id='.I('get.id'))->find();
-      // dump($res);
-      // die;
       $this->assign('row',$res);
       $this->display('edit') ;
 
@@ -115,6 +111,12 @@ class EventController extends BasicController {
       $update->create();
       $post =$_POST;
       $result = $update->where('id='.I('post.id'))->save($post);
+
+      // if(!$result){
+      //   echo 0;
+      // }else{
+      //   echo 1;
+      // }
 
       if(!$result){
           $this->ajaxReturn(array('status' => 0, 'msg' => '修改失败!'));

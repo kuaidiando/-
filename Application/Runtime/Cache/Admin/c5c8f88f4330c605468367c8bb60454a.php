@@ -45,14 +45,32 @@ $(document).ready(function(){
 </head>
 <body>
 <article class="page-container">
-    <form class="form form-horizontal" id="form-admin-add"  method="post" enctype="multipart/form-data">
+    <form class="form form-horizontal" id="form-admin-add"  method="post" enctype="multipart/form-data" >
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>名称：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>会员名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="<?php echo ($row["ename"]); ?>"  id="ename"name="ename">
+                <input type="text" class="input-text" value="<?php echo ($res["real_name"]); ?>"  id="real_name" name="real_name">
             </div>
         </div>
         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>会员手机号：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="<?php echo ($res["tel"]); ?>"  id="tel" name="tel">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>会员密码：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="password" class="input-text" value=""  id="password" name="password">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>确认密码：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="password" class="input-text" value=""  id="repassword" name="repassword">
+            </div>
+        </div>
+       <!--  <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>图片：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <img width="100" height="50" src="/-/Public<?php echo ($row["pic"]); ?>" alt="图片加载中。。。">
@@ -60,7 +78,7 @@ $(document).ready(function(){
                     <input type="file" name="pic">
                 </div>
             </div>
-        </div>
+        </div> -->
         
         
         </div>
@@ -68,21 +86,21 @@ $(document).ready(function(){
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>是否发布：</label>
             <div class="formControls col-xs-8 col-sm-9" id="statuss">
 
-                <?php if($row["status"] == 1 ): ?>使用&nbsp;&nbsp;<input type="radio"  value="1" name="status" class= "status" checked="checked">
-                    不使用&nbsp;&nbsp;<input type="radio" class= "status" value="0" name="status" >
+                <?php if($res["del_status"] == 0 ): ?>有效&nbsp;&nbsp;<input type="radio"  value="0" name="del_status" class= "status" checked="checked">
+                    无效&nbsp;&nbsp;<input type="radio" class= "del_status" value="1" name="del_status" >
                     <?php else: ?> 
-                    使用&nbsp;&nbsp;<input type="radio" class= "status" value="1" name="status" >
-                    不使用&nbsp;&nbsp;<input type="radio" class= "status" value="0" name="status" checked="checked"><?php endif; ?>
+                    有效&nbsp;&nbsp;<input type="radio" class= "del_status" value="0" name="del_status" >
+                    无效&nbsp;&nbsp;<input type="radio" class= "del_status" value="1" name="del_status" checked="checked"><?php endif; ?>
             </div>
         </div>
         
 
        
         <!-- 隐藏id充当条件 -->
-       <input type="hidden" value="<?php echo ($row["id"]); ?>" name='id'>
+       <input type="hidden" value="<?php echo ($res["id"]); ?>" name='id'>
         <div class="row cl">
             <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
-                <button  class="edit btn btn-primary radius" id = "<?php echo ($row["id"]); ?>"type="submit"><i class="Hui-iconfont ">&#xe632;</i> 修改</button>
+                <button  class="edit btn btn-primary radius" id = "<?php echo ($res["id"]); ?>"type="submit"><i class="Hui-iconfont ">&#xe632;</i> 修改</button>
                 <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
             </div>
         </div>
@@ -92,45 +110,46 @@ $(document).ready(function(){
 <script type="text/javascript">
         /*编辑轮播图*/
         $(document).on("click", '.edit', function () {
-            var id,isAutoSend,status,ename;
+          
+            var del_status ;
+            var password;
+            var repassword;
+            var tel;
+            var real_name;
+            var id;
+            var isAutoSend;
+
+
             var id = $(this).attr('id');
-            var isAutoSend = document.getElementsByName('status');
+            var isAutoSend = document.getElementsByName('del_status');
             for (var i = 0; i < isAutoSend.length; i++) {
                 if (isAutoSend[i].checked == true) {
-                    var status = isAutoSend[i].value;
+                    var del_status = isAutoSend[i].value;
                 }
             }
-            var ename = document.getElementById('ename').value;
-            // var flag = false;
+
+            var real_name = document.getElementById('real_name').value;
+            var password = document.getElementById('password').value;
+            var repassword = document.getElementById('repassword').value;
+            var tel = document.getElementById('tel').value;
+            
+                
+
+            
                 $.ajax({
                     type:'POST',
                     dataType: 'json',
-                    url:'<?php echo U("Admin/Event/update");?>',
-                    data:{id:id,status:status,ename:ename},
+                    url:'<?php echo U("Admin/User/update");?>',
+                    data:{id:id,del_status:del_status,real_name:real_name,password:password,repassword:repassword,tel:tel},
                     success: function (result) {
-                        // if(result){
-                        //     var flag = true;
-                        // }else{
-                        //     var flag = false;
-                        // }
                         if (result.status == 1) {
-                            layer.msg(result.msg,{icon:1,time:3000});
+                            layer.msg(result.msg,{icon:1,time:1000});
                             layer_close();
-                            
                         } else {
-
                             layer.msg(result.msg,{icon:0,time:2000});
-
-
                         }
                     }
                 })
-                if(flag){
-                    layer.msg(result.msg,{icon:1,time:3000});
-                            layer_close();
-                }else{
-                    layer.msg(result.msg,{icon:0,time:2000});
-                }
         });
     </script>
 

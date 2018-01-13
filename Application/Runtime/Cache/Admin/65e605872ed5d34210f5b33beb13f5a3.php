@@ -29,9 +29,9 @@ $(document).ready(function(){
 <link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/icheck/icheck.css"/>
 <link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
 <link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/style.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/css/hidTable.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/-/Public/css/hidTable.css"/> -->
 <!-- 分页效果 -->
-<link href="/-/Public/css/mypage.css" rel="stylesheet" type="text/css"/>
+<!-- <link href="/-/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
 <title>快点</title>
 <div class="navbar navbar-fixed-top">
     <div class="container-fluid cl">
@@ -154,10 +154,26 @@ $(document).ready(function(){
 
     /*增加*/
     function admin_add(title, url, w, h) {
-        layer_show(title, url, w, h);
-        // end: function () {
-        //         location.reload();
-        //     }
+        // layer_show(title, url, w, h);
+     parent.layer.open({
+            type: 2,
+            title: title,
+            shadeClose: false, //点击遮罩关闭
+            shade: 0.8,
+            area: [w, h],
+            maxmin: true,
+            closeBtn: 1,
+            content: [url, 'yes'], //iframe的url，yes是否有滚动条
+            //yes: function (index, layero) {
+            //    alert(index);
+            //    alert(layero);
+            //},
+            end: function () {
+                layer.close;
+                location.reload();
+            }
+
+        });
     }
 
     function product_add(title,url){
@@ -191,7 +207,8 @@ $(document).ready(function(){
             <thead>
                 <tr class="text-c">
                     <th width="30">编号</th>
-                    <th width="80">昵称</th>
+                    <th width="80">真实姓名</th>
+                    <th width="80">电话</th>
                     <th width="60">头像</th>
                     <th width="80">性别</th>
                     <th width="80">省份</th>
@@ -204,7 +221,8 @@ $(document).ready(function(){
             <tbody>
                 <?php if(is_array($user_info)): foreach($user_info as $key=>$one_info): ?><tr class="text-c">
                             <td><?php echo ($one_info["id"]); ?></td>
-                            <td><?php echo ($one_info["nick_name"]); ?></td>
+                            <td><?php echo ($one_info["real_name"]); ?></td>
+                            <td><?php echo ($one_info["tel"]); ?></td>
                             <td><img width = "100" height = "50" src="/-/Public<?php echo ($one_info["photo"]); ?>" alt="无头像"></td>
                             <?php if($one_info["sex"] == 1): ?><td>男</td>
                             <?php elseif($one_info["sex"] == 2): ?>
@@ -229,12 +247,12 @@ $(document).ready(function(){
                            
                             <td class="td-manage" style="text-align: center;">
                              
-                                <!-- <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Event/edit', array('id' => $vo['id']));?>'
-                                   ,'800','500')">
+                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
+                                   onclick="admin_add('编辑详情','<?php echo U('Admin/User/edit', array('id' => $one_info["id"]));?>'
+                                   ,'800px','500px')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
                                 </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a> -->
+                                <!-- <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a> -->
                             </td>
                         </tr><?php endforeach; endif; ?>
                 
