@@ -19,7 +19,7 @@
             <thead>
                 <tr class="text-c">
                     <th width="30">编号</th>
-                    <th width="100">名称</th>
+                    <th width="100">座位号/名称</th>
                     <th width="100">人数</th>
                     <th width="60">座位类别</th>
                     <th width="120">门店</th>
@@ -32,7 +32,7 @@
                         <tr class="text-c">
                             <td>{$vo.id}</td>
                             <td>{$vo.mingch}</td>
-                            <td>{$vo.zuoweiren_kai} -- {$vo.zuoweiren_zhong}</td>
+                            <td>（{$vo.zuoweiren_kai} - {$vo.zuoweiren_zhong}人）</td>
                             <td>{$vo.seat_type|seattype=###}</td>
                             <td>{$vo.dep_shop|shopnamedo=###}</td>
                             <td class="td-status">

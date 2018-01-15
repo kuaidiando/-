@@ -19,6 +19,12 @@
             </div>
         </div>
         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span id="scerweim">二维码：</span></label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <img src="{$data.0.erweima}" alt="二维码生成中。。。" >
+            </div>
+        </div>
+        <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">手机号：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="{$data.0.tel}" placeholder="" id="" name="tel">
@@ -33,31 +39,56 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">营业时间：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="time" class="input-text" value="06:00" style="width: 20%" value="{$data.0.time_kai}" name="time_kai">&nbsp;
+                <select name="time_kai" class="select" style="width: 25%;" id="">
+                <!-- 单条信息城市 -->
+                <foreach name="data" item="vosscs">
+                    <!-- 所有时间 -->
+                    <foreach name="restime"  item="votime">
+                        <option value="{$votime.id}" <if condition="$votime['id'] eq $vosscs['time_kai']">selected="selected"</if> >{$votime.name}</option>
+                    </foreach>
+                </foreach>
+                </select>
                 &nbsp;&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="time" class="input-text" value="18:00" style="width: 20%" value="{$data.0.time_zhong}" name="time_zhong">
+                <select name="time_zhong" class="select" style="width: 25%;" id="">
+                    <!-- 单条信息城市 -->
+                <foreach name="data" item="vosscs">
+                    <!-- 所有时间 -->
+                    <foreach name="restime"  item="votime">
+                        <option value="{$votime.id}" <if condition="$votime['id'] eq $vosscs['time_zhong']">selected="selected"</if> >{$votime.name}</option>
+                    </foreach>
+                </foreach>
+                </select>
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>所属城市：</label>
-            <!-- 市 -->
+            <!-- 省 -->
             <div class="formControls col-xs-8 col-sm-9" style="width: 25%;">
                 <span class="select-box">
-                <select name="depcsjlshi" class="select"  id="selsheng">
+                <select name="depcsjlsheng" class="select"  id="selsheng">
                 <!-- 单条信息城市 -->
                 <foreach name="data" item="vosscs">
                 <!-- 所有城市  市 -->
-                    <foreach name="shopchengshi" item="vocs" >
-                        <option value="{$vocs.code}" <if condition="$vocs['code'] eq $vosscs['depcsjlshi']">selected="selected"</if> >{$vocs.name}</option>
+                    <foreach name="ressheng" item="vocssheng" >
+                        <option value="{$vocssheng.code}" <if condition="$vocssheng['code'] eq $vosscs['depcsjlsheng']">selected="selected"</if> >{$vocssheng.name}</option>
                     </foreach>
                 </foreach>
                 </select>
                 </span>
             </div>
-                <!-- 区 （县） -->
+            <!-- 市 -->
             <div class="formControls col-xs-8 col-sm-9" style="width: 25%;">
                 <span class="select-box">
-                <select name="depcsjlxian" class="select"  id="selshi">
+                <select name="depcsjlshi" class="select"  id="selshi">
+                <!-- 单条信息城市 -->
+                        <option value="{$data.0.depcsjlshi}">{$data.0.depcsjlshi|depchengshi=###}</option>
+                </select>
+                </span>
+            </div>
+                <!-- 区 （县） -->
+            <div class="formControls col-xs-8 col-sm-9" id="jlquxianshi" style="width: 25%;">
+                <span class="select-box">
+                <select name="depcsjlxian" class="select"  id="selqu">
                 <!-- 单条信息城市 -->
                         <option value="{$data.0.depcsjlxian}">{$data.0.depcsjlxian|depjilianxian=###}</option>
                 </select>
@@ -138,9 +169,32 @@
 </article>
 
 <script type="text/javascript">
-    $(document).on('change','#selsheng',function(){
-        var codesheng = $(this).val();//获取市对应code
+    // 城市级联 省--》市
+    $(document).on('click','#selsheng',function(){
+        var codesheng = $(this).val();//获取省对应code
         var str = '';//城市对应区域
+        $.ajax({
+            type:'post',
+            dataType: 'json',
+            url:'{:U("Admin/Ajax/shengdoshi")}',
+            data:{codesheng:codesheng},
+            success: function (dd) {
+                console.log(dd);
+                // 获取区域名称
+                $.each(dd,function(index,item){
+                    str += '<option value="'+item.code+'">'+item.name+'</option>'; 
+                })
+                //赋值区域
+                $("#selshi").html(str);
+                // 清空区
+                $("#jlquxianshi").html("");
+            }
+        })
+    });
+    // 城市级联 市--》县/区
+    $(document).on('click','#selshi',function(){
+        var codesheng = $(this).val();//获取市对应code
+        var str = '<span class="select-box"><select name="depcsjlxian"  class="select" id="selqu">';//城市对应区域
         $.ajax({
             type:'post',
             dataType: 'json',
@@ -151,8 +205,9 @@
                 $.each(dd,function(index,item){
                     str += '<option value="'+item.code+'">'+item.name+'</option>'; 
                 })
+                str += '</select></span>';
                 //赋值区域
-                $("#selshi").html(str);
+                $("#jlquxianshi").html(str);
             }
         })
     });

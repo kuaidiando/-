@@ -80,26 +80,43 @@ class ShopController extends BasicController
             
             // dump($data);die;
             $res = $user->add($data);
+            /**
+             * 添加二维码
+             */
+            $mdidda = $user->Max('id');//获取表中最大id
+            $whereerweima['id'] = $mdidda;
+            $dataerweim['erweima'] = "http://pan.baidu.com/share/qrcode?w=130&h=130&url=http://www.baidu.com?mdid=".$mdidda;
+            $user->where($whereerweima)->save($dataerweim);
 			$res == true ? $this->success('添加成功') : $this->error('添加失败');
     		// $this->display();
     	}else{
+            $usersheng = M('province');//城市-省
+            $ressheng = $usersheng->select();
+            // dump($ressheng);die;
             $user = M('city');//城市-市
             $result = $user ->select();
             $this->assign('shopchengshi',$result);//城市信息
             $user = M('shop_type');
             $rescaipinlb = $user->select();//门店类别
-            $this->assign("reschengs",$reschengs);
+
+            $usertime = M('time_business');//营业时间
+            $restime = $usertime->order("paix asc")->select();
+            // dump($restime);die;
+            $this->assign("restime",$restime);//营业时间
+            $this->assign("ressheng",$ressheng);//城市-省
+            $this->assign("reschengs",$reschengs);//城市-市
             $this->assign("rescaipinlb",$rescaipinlb);
             $this->display();
     	}
     	
     }
     public function edit(){
-    	if (IS_POST) {
-    		$id = I('post.id');
-    		$User = M("shop"); // 实例化User对象
-    		$where['id'] = $id;
-			$data = I('post.');//更改数据
+        if (IS_POST) {
+            $id = I('post.id');
+            $User = M("shop"); // 实例化User对象
+            $where['id'] = $id;
+            $data = I('post.');//更改数据
+            // dump($data);die;
               // 图片上传
              $upload = new \Think\Upload();// 实例化上传类
             $upload->maxSize   =     3145728 ;// 设置附件上传大小
@@ -114,13 +131,16 @@ class ShopController extends BasicController
                 $logolujing = '/img/'.$info['logo']['savepath'].$info['logo']['savename'];
                 $data['logo'] = $logolujing;
             }
-			// dump($data);die;
-			$res = $User->where($where)->data($data)->save();
-        	// echo $User->getLastSql();die;
+            // dump($data);die;
+            $res = $User->where($where)->data($data)->save();
+            // echo $User->getLastSql();die;
 
-			$res == true ? $this->success('修改成功') : $this->error('修改失败');
-    		// $this->display();
-    	}else{
+            $res == true ? $this->success('修改成功') : $this->error('修改失败');
+            // $this->display();
+        }else{
+              $usersheng = M('province');//城市-省
+            $ressheng = $usersheng->select();
+            $this->assign("ressheng",$ressheng);//城市-省
             $user = M('city');//城市-市
             $result = $user ->select();
             $this->assign('shopchengshi',$result);//城市信息 -市
@@ -130,15 +150,32 @@ class ShopController extends BasicController
             $this->assign("rescaipinlb",$rescaipinlb);
 
             // 查询门店信息
-    		$jxdm = I('get.id');
-    		// dump($jxdm);die;
-    		$user = M('shop');
-    		$where['id'] = $jxdm;
-    		$data = $user->where($where)->select();
-    		// dump($data);die();
-    		$this->assign('data',$data);// 查询门店信息
-    		$this->display();
-    	}
+            $jxdm = I('get.id');
+            // dump($jxdm);die;
+            $user = M('shop');
+            $where['id'] = $jxdm;
+            $data = $user->where($where)->select();
+
+            $usertime = M('time_business');//营业时间
+            $restime = $usertime->order("paix asc")->select();
+            // dump($restime);die;
+            $this->assign("restime",$restime);//营业时间
+            // dump($data);die();
+            $this->assign('data',$data);// 查询门店信息
+            $this->display();
+        }
+    }
+    // 二维码
+    public function editerweim(){
+    	 // 查询门店信息
+            $jxdm = I('get.id');
+            // dump($jxdm);die;
+            $user = M('shop');
+            $where['id'] = $jxdm;
+            $data = $user->where($where)->select();
+            // dump($data);die();
+            $this->assign('data',$data);// 查询门店信息
+            $this->display();
     }
     //详情
     public function xiangqing(){

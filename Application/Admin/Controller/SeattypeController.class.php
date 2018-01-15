@@ -40,10 +40,8 @@ class SeattypeController extends BasicController
         $id = I('get.menid');
         // dump($id);die;
         $user = M('seat_type');
-        $where['dep_type'] = $id;
         $data = $user->where($where)->select();
         $this->assign('data',$data);//查询菜品类别信息
-        $this->assign('id',$id);//门店代码
         $this->display();
     }
     public function add(){

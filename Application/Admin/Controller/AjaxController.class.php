@@ -14,8 +14,16 @@ class AjaxController extends Controller
 	// 城市级联 市->县（区）
     public function index()
     {
-    	$user = M('area');//区(县)
-    	$where['citycode'] = I('post.codesheng');//市的code
+        $user = M('area');//区(县)
+        $where['citycode'] = I('post.codesheng');//市的code
+        $data = $user->where($where)->select();
+        $this->ajaxReturn($data);
+    }
+    // 城市级联 省->市
+    public function shengdoshi()
+    {
+    	$user = M('city');//区(县)
+    	$where['provincecode'] = I('post.codesheng');//市的code
     	$data = $user->where($where)->select();
         $this->ajaxReturn($data);
     }

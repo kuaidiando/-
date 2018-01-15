@@ -69,7 +69,7 @@
                 if($("#youhuiid").length > 0){
                     // alert("存在");
                 }else{
-                    $("#addyouhui").click();
+                    // $("#addyouhui").click();
                 }
             // }
         });
@@ -82,7 +82,7 @@
                 $.ajax({
                     type:'POST',
                     dataType: 'json',
-                    url:'{:U("Admin/Foodtype/delete")}',
+                    url:'{:U("Admin/Sale/delete")}',
                     data:{id:id},
                     success: function (result) {
                         if (result.status) {
