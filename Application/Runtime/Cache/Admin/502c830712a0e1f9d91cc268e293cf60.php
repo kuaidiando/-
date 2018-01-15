@@ -36,22 +36,38 @@ $(document).ready(function(){
 <style type="text/css">
     .tu{
         width:199px;
+<<<<<<< HEAD
         height:50px;
         float:left;
         text-align: center;
         line-height: 50px
+=======
+        height:80px;
+        float:left;
+        text-align: center;
+        line-height: 80px
+>>>>>>> d89785b1ff7e7ab1aa4cebe62b415745d2c50497
     }
     .tu img{
         width:130px;
         height: 50px;
     }
 </style>
+<<<<<<< HEAD
 <div class="navbar navbar-fixed-top" style="height:60px">
    
     <div class="container-fluid cl">
         <!-- <div class="tu"> -->
         <!-- <img src="/-/Public/img/logo.png"> -->
         <!-- </div> -->
+=======
+<div class="navbar navbar-fixed-top">
+   
+    <div class="container-fluid cl">
+        <div class="tu">
+        <img src="/kuaidian/Public/img/logo.png">
+        </div>
+>>>>>>> d89785b1ff7e7ab1aa4cebe62b415745d2c50497
             <a class="logo navbar-logo f-l mr-10 hidden-xs" href="<?php echo U('Admin/Index/zhuye');?>">首页</a>
             <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/shop/index');?>">商户管理</span></a>
             <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/User/index');?>">会员管理</span></a>
@@ -65,6 +81,10 @@ $(document).ready(function(){
 
         <li class="dropDown dropDown_hover" style="margin-left: 30%;margin-top: 2.8%;">
         <div>
+<<<<<<< HEAD
+=======
+            <!-- 城市级联 -->
+>>>>>>> d89785b1ff7e7ab1aa4cebe62b415745d2c50497
             <select name="choose" id="choose" style="width: 30%;" class="select">
                 <?php if(is_array($res)): foreach($res as $key=>$vo): ?><option  value="<?php echo ($vo["code"]); ?>" <?php if($vo['code'] == $chengshiid): ?>selected="selected"<?php endif; ?>><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
             </select>
@@ -80,7 +100,32 @@ $(document).ready(function(){
 </div>
 <aside class="Hui-aside"><input runat="server" id="divScrollValue" type="hidden" value=""/>
 <div class="menu_dropdown bk_2" id="menu_nav">
+<<<<<<< HEAD
     <?php if(CONTROLLER_NAME == Index): elseif(CONTROLLER_NAME == User): ?>
+=======
+    <?php if(CONTROLLER_NAME == Index): ?><dl>
+        <dt><a href="#">主页</a></dt>
+        <dd>
+        <ul>
+            <li><a class="shopin" name="<?php echo U('Admin/Index/zhuye');?>"><span id="clickzhuye">主页</span></a></li>
+        </ul>
+        </dd>
+    </dl>
+    <?php elseif(CONTROLLER_NAME == Shop || CONTROLLER_NAME == Shoptype || CONTROLLER_NAME == Danwei|| CONTROLLER_NAME == Seat || CONTROLLER_NAME == Sale || CONTROLLER_NAME == Food || CONTROLLER_NAME == Seattype || CONTROLLER_NAME == Foodtype): ?>
+    <dl>
+        <dt><a href="#">门店管理</a></dt>
+        <dd>
+        <ul>
+           
+            <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Danwei/index');?>">单位管理</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Seattype/index');?>">座位类别</a></li>
+        </ul>
+        </dd>
+    </dl>
+    <?php elseif(CONTROLLER_NAME == User): ?>
+>>>>>>> d89785b1ff7e7ab1aa4cebe62b415745d2c50497
         <dl>
             <dt><a href="#">会员管理</a></dt>
             <dd>
