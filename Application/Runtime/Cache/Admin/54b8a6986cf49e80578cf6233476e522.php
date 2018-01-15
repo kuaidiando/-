@@ -35,23 +35,22 @@ $(document).ready(function(){
 <title>快点</title>
 <div class="navbar navbar-fixed-top">
     <div class="container-fluid cl">
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" href="#">首页</a>
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/Oracle/mokuaia');?>">商户管理</span></a>
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/Oracle/mokuaia');?>">会员管理</span></a>
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/Oracle/mokuaia');?>">短信管理</span></a>
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/Oracle/mokuaia');?>">订单管理</span></a>
-        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/Oracle/mokuaia');?>">系统配置</span></a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" href="<?php echo U('Admin/Index/zhuye');?>">首页</a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/shop/index');?>">商户管理</span></a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/User/index');?>">会员管理</span></a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/code/index');?>">短信管理</span></a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/order/index');?>">订单管理</span></a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/config/index');?>">系统配置</span></a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/money/index');?>">资金管理</span></a>
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/operator/index');?>">运营商管理</span></a>
 
 
         <!-- <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="">会员管理</a> -->
 
-
-
-
-        <li class="dropDown dropDown_hover" style="margin-left: 50%;margin-top: 1%;">
+        <li class="dropDown dropDown_hover" style="margin-left: 40%;margin-top: 1%;">
         <div>
             <!-- 城市级联 -->
-            <select name="choose" id="choose" style="width: 50%;" class="select">
+            <select name="choose" id="choose" style="width: 40%;" class="select">
                 <?php if(is_array($res)): foreach($res as $key=>$vo): ?><option  value="<?php echo ($vo["code"]); ?>" <?php if($vo['code'] == $chengshiid): ?>selected="selected"<?php endif; ?>><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
             </select>
         </div>
@@ -66,42 +65,54 @@ $(document).ready(function(){
 </div>
 <aside class="Hui-aside"><input runat="server" id="divScrollValue" type="hidden" value=""/>
 <div class="menu_dropdown bk_2" id="menu_nav">
-    <dl>
-        <dt><a href="#">主页</a></dt>
-        <dd>
-        <ul>
-            <li><a class="shopin" name="<?php echo U('Admin/Index/zhuye');?>"><span id="clickzhuye">主页</span></a></li>
-        </ul>
-        </dd>
-    </dl>
-    <dl>
-        <dt><a href="#">门店管理</a></dt>
-        <dd>
-        <ul>
-            <!-- 隐藏主页 -->
-            <!-- <a _href="<?php echo U('Admin/Index/yinczhuye');?>" name="<?php echo U('Admin/Index/yinczhuye');?>" style="display: none;"class="" href="javascript:;">隐藏主页</a> -->
-            <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
-            <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
-            <li><a class="shopin" name="<?php echo U('Admin/Danwei/index');?>">单位管理</a></li>
-        </ul>
-        </dd>
-    </dl>
-    <dl>
-        <dt><a href="#">轮播图管理</a></dt>
-        <dd>
-        <ul>
-            <li><a class="shopin" name="<?php echo U('Admin/Event/index');?>">轮播图列表</a></li>
-        </ul>
-        </dd>
-    </dl>
-    <dl>
-        <dt><a href="#">会员管理</a></dt>
-        <dd>
-        <ul>
-            <li><a class="shopin" name="<?php echo U('Admin/User/index');?>">会员列表</a></li>
-        </ul>
-        </dd>
-    </dl>
+    <?php if(CONTROLLER_NAME == Index): ?><dl>
+            <dt><a href="#">主页</a></dt>
+            <dd>
+            <ul>
+                <li><a class="shopin" name="<?php echo U('Admin/Index/zhuye');?>">主页</a></li>
+            </ul>
+            </dd>
+        </dl>
+    <?php elseif(CONTROLLER_NAME == Shop || CONTROLLER_NAME == Shoptype || CONTROLLER_NAME == Danwei): ?>
+        <dl>
+            <dt><a href="#">门店管理</a></dt>
+            <dd>
+            <ul>
+               
+                <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
+                <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
+                <li><a class="shopin" name="<?php echo U('Admin/Danwei/index');?>">单位管理</a></li>
+            </ul>
+            </dd>
+        </dl>
+    <?php elseif(CONTROLLER_NAME == User): ?>
+        <dl>
+            <dt><a href="#">会员管理</a></dt>
+            <dd>
+            <ul>
+                <li><a class="shopin" name="<?php echo U('Admin/User/index');?>">会员列表</a></li>
+            </ul>
+            </dd>
+        </dl>
+    <?php elseif(CONTROLLER_NAME == Code): ?>
+        <dl>
+            <dt><a href="#">短信管理</a></dt>
+            <dd>
+            <ul>
+                <li><a class="shopin" name="<?php echo U('Admin/Code/index');?>">短信列表</a></li>
+            </ul>
+            </dd>
+        </dl>
+    <?php elseif(CONTROLLER_NAME == Event || CONTROLLER_NAME == Config): ?>
+        <dl>
+            <dt><a href="#">轮播图管理</a></dt>
+            <dd>
+            <ul>
+                <li><a class="shopin" name="<?php echo U('Admin/Event/index');?>">轮播图列表</a></li>
+            </ul>
+            </dd>
+        </dl><?php endif; ?>
+   
 </div>
 </aside>
 <script type="text/javascript">
