@@ -45,34 +45,35 @@ $(document).ready(function(){
 </head>
 <body>
 <article class="page-container">
-    <form class="form form-horizontal" id="form-article-add" action="<?php echo U('Admin/Authentica/edit');?>" method="post" enctype="multipart/form-data">
-    <!-- 隐藏门店ID -->
-    <input type="hidden" value="<?php echo ($mdid); ?>" name="mendianid">
+    <form class="form form-horizontal" id="form-admin-add" action="<?php echo U('Admin/Seattype/edit');?>" method="post">
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>营业执照：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="<?php echo ($res["0"]["renz_business"]); ?>" placeholder="" id="" name="renz_business">
+                <input type="text" class="input-text" value="<?php echo ($data["0"]["mingch"]); ?>" placeholder="" id="" name="mingch">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>卫生许可证：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>状态：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="<?php echo ($res["0"]["renz_hygiene"]); ?>" placeholder="" id="" name="renz_hygiene">
+                <?php if(is_array($data)): foreach($data as $key=>$vo): if($vo["zhuangt"] == 1 ): ?>是&nbsp;&nbsp;<input type="radio"  value="1" name="zhuangt" checked="checked">
+                        否&nbsp;&nbsp;<input type="radio"  value="2" name="zhuangt">
+                        <?php else: ?>
+                        是&nbsp;&nbsp;<input type="radio"  value="1" name="zhuangt">
+                        否&nbsp;&nbsp;<input type="radio"  value="2" name="zhuangt" checked="checked"><?php endif; endforeach; endif; ?>
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>法人电话：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>排序：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="<?php echo ($res["0"]["renz_legaltel"]); ?>" placeholder="" id="" name="renz_legaltel">
+                <input type="text" class="input-text" value="<?php echo ($data["0"]["paix"]); ?>" placeholder="" id="" name="paix">
             </div>
         </div>
-        
-        
+        <!-- 隐藏id充当条件 -->
+       <input type="hidden" value="<?php echo ($data["0"]["id"]); ?>" name='id'>
         <div class="row cl">
-            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
-                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 认证</button><!-- 
-                <button onClick="article_save();" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button>
-                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button> -->
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 修改</button>
+                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
             </div>
         </div>
     </form>

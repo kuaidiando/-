@@ -245,43 +245,63 @@ $(document).ready(function(){
         <!-- 主题内容 -->
         <div>
             <div class="page-container">
-        <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-            <a href="javascript:;" onclick="admin_add('添加座位','<?php echo U('Admin/Seat/add',array('id'=>"$id"));?>','800px','500px')"
-               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加座位</a></span>
-            <span class="r">共有数据：<strong><?php echo ($info["count"]); ?></strong> 条</span> </div>
+        <div class="cl pd-5 bg-1 bk-gray mt-20"> 
+            <span class="l">会员列表
+            <!-- <a href="javascript:;" onclick="admin_add('添加轮播图','<?php echo U('Admin/Event/add');?>','800','500')"
+               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加轮播图</a> -->
+           </span>
+            <span class="r">共有数据：<strong><?php echo ($user_num); ?></strong> 条</span> </div>
         <div class="mt-20">
         <table class="table table-border table-bordered table-bg table-hover table-responsive">
             <thead>
                 <tr class="text-c">
                     <th width="30">编号</th>
-                    <th width="100">座位号/名称</th>
-                    <th width="100">人数</th>
-                    <th width="60">座位类别</th>
-                    <th width="120">门店</th>
-                    <th width="60">发布状态</th>
+                    <th width="80">真实姓名</th>
+                    <th width="80">电话</th>
+                    <th width="60">头像</th>
+                    <th width="80">性别</th>
+                    <th width="80">省份</th>
+                    <th width="80">城市</th>
+                    <th width="80">注册状态</th>
+                    <th width="80">关注状态</th>
                     <th width="120">操作</th>
                 </tr>
             </thead>
             <tbody>
-                <?php if(is_array($data)): foreach($data as $key=>$vo): ?><tr class="text-c">
-                            <td><?php echo ($vo["id"]); ?></td>
-                            <td><?php echo ($vo["mingch"]); ?></td>
-                            <td>（<?php echo ($vo["zuoweiren_kai"]); ?> - <?php echo ($vo["zuoweiren_zhong"]); ?>人）</td>
-                            <td><?php echo (seattype($vo["seat_type"])); ?></td>
-                            <td><?php echo (shopnamedo($vo["dep_shop"])); ?></td>
-                            <td class="td-status">
-                                <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">已发布</span>
-                                    <?php else: ?> 
-                                    <span class="label label-danger radius">未发布</span><?php endif; ?>
-                            </td>
+                <?php if(is_array($user_info)): foreach($user_info as $key=>$one_info): ?><tr class="text-c">
+                            <td><?php echo ($one_info["id"]); ?></td>
+                            <td><?php echo ($one_info["real_name"]); ?></td>
+                            <td><?php echo ($one_info["tel"]); ?></td>
+                            <td><img width = "100" height = "50" src="/kuaidian/Public<?php echo ($one_info["photo"]); ?>" alt="无头像"></td>
+                            <?php if($one_info["sex"] == 1): ?><td>男</td>
+                            <?php elseif($one_info["sex"] == 2): ?>
+                            <td>女</td>
+                            <?php else: ?>
+                            <td>未知</td><?php endif; ?>
+                            <td><?php echo ($one_info["province"]); ?></td>
+                            <td><?php echo ($one_info["city"]); ?></td>
+                            <?php if($one_info["is_reg"] == 0): ?><td>未注册</td>
+                            <?php elseif($one_info["is_reg"] == 1): ?>
+                            <td>已注册</td>
+                            <?php else: ?>
+                            <td>未知</td><?php endif; ?>
+                            <?php if($one_info["con"] == 0): ?><td>未关注</td>
+                            <?php elseif($one_info["con"] == 1): ?>
+                            <td>已关注</td>
+                            <?php else: ?>
+                            <td>未知</td><?php endif; ?>
+                            <!-- <td><?php echo ($one_info["status"]); ?></td> -->
+
+                            
+                           
                             <td class="td-manage" style="text-align: center;">
-                               
+                             
                                 <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Seat/edit', array('id' => $vo['id'],'flid'=>$vo['flid'],'kwid'=>$vo['kwid']));?>'
+                                   onclick="admin_add('编辑详情','<?php echo U('Admin/User/edit', array('id' => $one_info["id"]));?>'
                                    ,'800px','500px')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
                                 </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
+                                <!-- <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a> -->
                             </td>
                         </tr><?php endforeach; endif; ?>
                 
@@ -298,19 +318,21 @@ $(document).ready(function(){
         $(document).on("click", '.h-text-sc', function () {
             var op_obj = $(this).parents("tr");
             var id = $(this).attr('id');
-            // alert(id);
+            // alert(id);exit;
             layer.confirm('确认要删除吗？',function(){
                 $.ajax({
-                    type:'POST',
+                    type:'GET',
                     dataType: 'json',
-                    url:'<?php echo U("Admin/Seat/delete");?>',
+                    url:'<?php echo U("Admin/Event/del");?>',
                     data:{id:id},
                     success: function (result) {
                         if (result.status) {
-                            op_obj.remove();
                             layer.msg(result.msg,{icon:1,time:1000});
                         } else {
+                            op_obj.remove();
+
                             layer.msg(result.msg,{icon:0,time:2000});
+
                         }
                     }
                 })

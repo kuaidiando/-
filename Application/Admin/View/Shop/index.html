@@ -21,13 +21,9 @@
                     <th width="30">编号</th>
                     <th width="80">名称</th>
                     <th width="30" style="width:10%;">LOGO</th>
-                    <!-- <th width="80">手机号123</th> -->
-                    <!-- <th width="60">人均消费123</th> -->
-                    <!-- <th width="80">营业时间123</th> -->
                     <th width="80">所属城市</th>
                     <th width="60">门店类别</th>
                     <th width="40">星数量</th>
-                    <!-- <th width="60">详细地址123</th> -->
                     <th width="60">优惠卷</th>
                     <th width="60">认证状态</th>
                     <th width="120">操作</th>
@@ -39,13 +35,9 @@
                             <td>{$vo.id}</td>
                             <td>{$vo.mingch}</td>
                             <td><img style="width: 30%;"src="__PUBLIC__{$vo.logo}" alt="图片加载中。。。"></td>
-                            <!-- <td>{$vo.tel}</td> -->
-                            <!-- <td>{$vo.maney}</td> -->
-                            <!-- <td>{$vo.time_kai}--{$vo.time_zhong}</td> -->
                             <td>{$vo.depcsjlshi|depchengshi=###}</td>
                             <td>{$vo.type_shop|shoptype=###}</td>
                             <td>{$vo.xingsl}</td>
-                            <!-- <td>{$vo.jutidizhi}</td> -->
                             <td class="td-status">
                                 <if condition="$vo.juan eq 1 ">
                                     <span class="label label-success radius">
@@ -72,9 +64,14 @@
                             </td>
                             <td class="td-manage" style="text-align: center;">
                                 
+                                <a  href="javascript:;"
+                                   onclick="admin_add('编辑','{:U('Admin/Shop/editerweim', array('id' => $vo['id']))}'
+                                   ,'800px','500px')">
+                                    &nbsp;&nbsp;二维码&nbsp;&nbsp;
+                                </a>
                                 <a href="{:U('Admin/Seat/index',array('menid' => $vo['id'],'id' => $chengshiid))}" style="text-decoration: none;">
                                    
-                                    &nbsp;&nbsp;座位管理&nbsp;&nbsp;
+                                    &nbsp;&nbsp;座位列表&nbsp;&nbsp;
                                 </a>
                                 <!-- <a href="{:U('Admin/Seattype/index',array('menid' => $vo['id'],'id' => $chengshiid))}" style="text-decoration: none;">
                                    

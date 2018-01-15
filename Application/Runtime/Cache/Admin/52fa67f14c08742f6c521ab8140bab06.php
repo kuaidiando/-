@@ -71,7 +71,7 @@ $(document).ready(function(){
         </ul>
         </dd>
     </dl>
-    <?php elseif(CONTROLLER_NAME == Shop || CONTROLLER_NAME == Shoptype || CONTROLLER_NAME == Danwei|| CONTROLLER_NAME == Seat || CONTROLLER_NAME == Sale || CONTROLLER_NAME == Food|| CONTROLLER_NAME == Foodtype): ?>
+    <?php elseif(CONTROLLER_NAME == Shop || CONTROLLER_NAME == Shoptype || CONTROLLER_NAME == Danwei|| CONTROLLER_NAME == Seat || CONTROLLER_NAME == Sale || CONTROLLER_NAME == Food || CONTROLLER_NAME == Seattype || CONTROLLER_NAME == Foodtype): ?>
     <dl>
         <dt><a href="#">门店管理</a></dt>
         <dd>
@@ -80,6 +80,7 @@ $(document).ready(function(){
             <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
             <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
             <li><a class="shopin" name="<?php echo U('Admin/Danwei/index');?>">单位管理</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Seattype/index');?>">座位类别</a></li>
         </ul>
         </dd>
     </dl>
@@ -255,13 +256,9 @@ $(document).ready(function(){
                     <th width="30">编号</th>
                     <th width="80">名称</th>
                     <th width="30" style="width:10%;">LOGO</th>
-                    <!-- <th width="80">手机号123</th> -->
-                    <!-- <th width="60">人均消费123</th> -->
-                    <!-- <th width="80">营业时间123</th> -->
                     <th width="80">所属城市</th>
                     <th width="60">门店类别</th>
                     <th width="40">星数量</th>
-                    <!-- <th width="60">详细地址123</th> -->
                     <th width="60">优惠卷</th>
                     <th width="60">认证状态</th>
                     <th width="120">操作</th>
@@ -272,13 +269,9 @@ $(document).ready(function(){
                             <td><?php echo ($vo["id"]); ?></td>
                             <td><?php echo ($vo["mingch"]); ?></td>
                             <td><img style="width: 30%;"src="/kuaidian/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
-                            <!-- <td><?php echo ($vo["tel"]); ?></td> -->
-                            <!-- <td><?php echo ($vo["maney"]); ?></td> -->
-                            <!-- <td><?php echo ($vo["time_kai"]); ?>--<?php echo ($vo["time_zhong"]); ?></td> -->
                             <td><?php echo (depchengshi($vo["depcsjlshi"])); ?></td>
                             <td><?php echo (shoptype($vo["type_shop"])); ?></td>
                             <td><?php echo ($vo["xingsl"]); ?></td>
-                            <!-- <td><?php echo ($vo["jutidizhi"]); ?></td> -->
                             <td class="td-status">
                                 <?php if($vo["juan"] == 1 ): ?><span class="label label-success radius">
                                         <a href="<?php echo U('Admin/Sale/index',array('menid' => $vo['id'],'type'=>1));?>" style="text-decoration: none;color:#fff;">有<?php echo (youhuishul($vo["id"])); ?>
@@ -301,9 +294,14 @@ $(document).ready(function(){
                             </td>
                             <td class="td-manage" style="text-align: center;">
                                 
+                                <a  href="javascript:;"
+                                   onclick="admin_add('编辑','<?php echo U('Admin/Shop/editerweim', array('id' => $vo['id']));?>'
+                                   ,'800px','500px')">
+                                    &nbsp;&nbsp;二维码&nbsp;&nbsp;
+                                </a>
                                 <a href="<?php echo U('Admin/Seat/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
                                    
-                                    &nbsp;&nbsp;座位管理&nbsp;&nbsp;
+                                    &nbsp;&nbsp;座位列表&nbsp;&nbsp;
                                 </a>
                                 <!-- <a href="<?php echo U('Admin/Seattype/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
                                    

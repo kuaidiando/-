@@ -71,7 +71,7 @@ $(document).ready(function(){
         </ul>
         </dd>
     </dl>
-    <?php elseif(CONTROLLER_NAME == Shop || CONTROLLER_NAME == Shoptype || CONTROLLER_NAME == Danwei|| CONTROLLER_NAME == Seat || CONTROLLER_NAME == Sale || CONTROLLER_NAME == Food|| CONTROLLER_NAME == Foodtype): ?>
+    <?php elseif(CONTROLLER_NAME == Shop || CONTROLLER_NAME == Shoptype || CONTROLLER_NAME == Danwei|| CONTROLLER_NAME == Seat || CONTROLLER_NAME == Sale || CONTROLLER_NAME == Food || CONTROLLER_NAME == Seattype || CONTROLLER_NAME == Foodtype): ?>
     <dl>
         <dt><a href="#">门店管理</a></dt>
         <dd>
@@ -80,6 +80,7 @@ $(document).ready(function(){
             <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
             <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
             <li><a class="shopin" name="<?php echo U('Admin/Danwei/index');?>">单位管理</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Seattype/index');?>">座位类别</a></li>
         </ul>
         </dd>
     </dl>
