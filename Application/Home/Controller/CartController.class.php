@@ -16,7 +16,13 @@ class EventController extends Controller {
        // $this->checkreg($tel);
     }
     public function index(){
-      
+        $code = M('mobile_code');
+        $res = $code->where('mobile_code.id= sms_status.sms_id')
+                   ->field('mobile_code.tel,mobile.add_time,sms_status.id,sms_status.status,sms_status.type,sms_status.content,sms_status.uodate_time')
+                   ->join("left join sms_status on mobile_code.id = sms_status.sms_id")
+                   ->select();
+        $this->assign('codes',$res);
+        $this->display();
     }
  
    

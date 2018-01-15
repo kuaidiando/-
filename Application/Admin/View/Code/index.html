@@ -1,0 +1,138 @@
+<include file="Layout/main"/><header class="navbar-wrapper"></header>
+<div class="dislpayArrow hidden-xs">
+    <a class="pngfix" href="javascript:;" onclick="displaynavbar(this)"></a>
+</div>
+<section class="Hui-article-box">
+<div id="iframe_box" class="Hui-article">
+    <div class="show_iframe">
+        <div style="display:none" class="loading">
+        </div>
+        <!-- 主题内容 -->
+        <div>
+            <div class="page-container">
+        <div class="cl pd-5 bg-1 bk-gray mt-20"> 
+            <span class="l">短信列表
+            <!-- <a href="javascript:;" onclick="admin_add('添加轮播图','{:U('Admin/Event/add')}','800','500')"
+               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加轮播图</a> -->
+           </span>
+            <span class="r">共有数据：<strong>{$num}</strong> 条</span> </div>
+        <div class="mt-20">
+        <table class="table table-border table-bordered table-bg table-hover table-responsive">
+            <thead>
+                <tr class="text-c">
+                    <th width="30">编号</th>
+                    <th width="80">发送类型</th>
+                    <th width="80">接收人</th>
+                    <th width="60">验证码</th>
+
+                    <th width="80">创建时间</th>
+                    <th width="80">发送时间</th>
+                    <th width="80">发送状态</th>
+                    <th width="80">验证状态</th>
+                    <th width="120">操作</th>
+                </tr>
+            </thead>
+            <!-- 弹出层代码 -->
+            <div id="modal-demo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content radius">
+                        <div class="modal-header">
+                            <h3 class="modal-title">短信内容是：</h3>
+                            <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+                        </div>
+                        <div class="modal-body">
+                            {$one_code.content}
+                        </div>
+                        <div class="modal-footer">
+                           <!--  <button class="btn btn-primary">确定</button> -->
+                            <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <tbody>
+                <foreach name="codes" item="one_code" >
+                        <tr class="text-c">
+                            <td>{$one_code.id}</td>
+                            <if condition="$one_code.type eq register">
+                            <td>注册</td>
+                            <elseif condition="$one_code.type eq repass"/>
+                            <td>重置密码</td>
+                            <else />
+                            <td>未知</td>
+                            </if>
+                            <td>{$one_code.tel}</td>
+                           <!--  <td><button class="btn radius btn-primary size-L" onClick="modaldemo('{$one_code.content}')">查看</button></td> -->
+                            <td>{$one_code.code}</td>
+                            <td>{$one_code.add_time}</td>
+                            <td>{$one_code.update_time}</td>
+
+                            <if condition="$one_code.status eq 1">
+                            <td>发送失败</td>
+                            <elseif condition="$one_code.status eq 5"/>
+                            <td>已发送</td>
+                            <elseif condition="$one_code.status eq 10"/>
+
+                            <td>已收到</td>
+                            </if>
+                            <!-- <td>{$one_info.status}</td> -->
+                            <if condition="$one_code.yz_status eq 0">
+                            <td>未验证</td>
+                            <elseif condition="$one_code.yz_status eq 1"/>
+                            <td>已验证</td>
+                            </if>
+
+                            
+                           
+                            <td class="td-manage" style="text-align: center;">
+                             
+                                <!-- <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
+                                   onclick="admin_add('编辑详情','{:U('Admin/User/edit', array('id' => $one_info["id"]))}'
+                                   ,'800px','500px')">
+                                    <i class="Hui-iconfont">&#xe6df;</i>
+                                </a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+                                <a class="h-text-sc" id="{$one_code.sms_id}"><i class="Hui-iconfont">&#xe6e2;</i></a>
+                            </td>
+                        </tr>
+                </foreach>
+                
+            </tbody>
+        </table>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</section>
+<script type="text/javascript">
+        // function modaldemo(res){
+        //     $("#modal-demo").modal("show")
+        //     $(".modal-body").html(res);
+        // }
+        /*删除*/
+        $(document).on("click", '.h-text-sc', function () {
+            var op_obj = $(this).parents("tr");
+            var id = $(this).attr('id');
+            layer.confirm('确认要删除吗？',function(){
+                $.ajax({
+                    type:'GET',
+                    dataType: 'json',
+                    url:'{:U("Admin/Code/del")}',
+                    data:{id:id},
+                    success: function (result) {
+                        if (result.status) {
+                            layer.msg(result.msg,{icon:1,time:1000});
+                        } else {
+                            op_obj.remove();
+
+                            layer.msg(result.msg,{icon:0,time:2000});
+
+                        }
+                    }
+                })
+            });
+        });
+    </script>
+<include file="Layout/footer"/>
