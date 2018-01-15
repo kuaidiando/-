@@ -84,28 +84,6 @@ $(document).ready(function(){
 <aside class="Hui-aside"><input runat="server" id="divScrollValue" type="hidden" value=""/>
 <div class="menu_dropdown bk_2" id="menu_nav">
     <if condition="CONTROLLER_NAME eq Index">
-<<<<<<< HEAD
-        <dl>
-            <dt><a href="#">主页</a></dt>
-            <dd>
-            <ul>
-                <li><a class="shopin" name="{:U('Admin/Index/zhuye')}">主页</a></li>
-            </ul>
-            </dd>
-        </dl>
-    <elseif condition="CONTROLLER_NAME eq Shop || CONTROLLER_NAME eq Shoptype || CONTROLLER_NAME eq Danwei" />
-        <dl>
-            <dt><a href="#">门店管理</a></dt>
-            <dd>
-            <ul>
-               
-                <li><a class="shopin" name="{:U('Admin/Shop/index')}">门店列表</a></li>
-                <li><a class="shopin" name="{:U('Admin/Shoptype/index')}">门店类别</a></li>
-                <li><a class="shopin" name="{:U('Admin/Danwei/index')}">单位管理</a></li>
-            </ul>
-            </dd>
-        </dl>
-=======
     <dl>
         <dt><a href="#">主页</a></dt>
         <dd>
@@ -127,7 +105,6 @@ $(document).ready(function(){
         </ul>
         </dd>
     </dl>
->>>>>>> 478c2d5e71ecf20759d8de2ef4851b7f7a3d9dff
     <elseif condition="CONTROLLER_NAME eq User" />
         <dl>
             <dt><a href="#">会员管理</a></dt>
