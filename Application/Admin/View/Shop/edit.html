@@ -81,17 +81,17 @@
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>优惠卷：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>是否在线：</label>
             <div class="formControls col-xs-8 col-sm-9">
                  <foreach name="data" item="vo" >
 
-                <if condition="$vo.juan eq 1 ">
+                <if condition="$vo.line_type eq 1 ">
                     
-                    是&nbsp;&nbsp;<input type="radio"  value="1" name="juan" checked="checked">
-                    否&nbsp;&nbsp;<input type="radio"  value="2" name="juan">
+                    是&nbsp;&nbsp;<input type="radio"  value="1" name="line_type" checked="checked">
+                    否&nbsp;&nbsp;<input type="radio"  value="2" name="line_type">
                     <else /> 
-                    是&nbsp;&nbsp;<input type="radio"  value="1" name="juan">
-                    否&nbsp;&nbsp;<input type="radio"  value="2" name="juan" checked="checked">
+                    是&nbsp;&nbsp;<input type="radio"  value="1" name="line_type">
+                    否&nbsp;&nbsp;<input type="radio"  value="2" name="line_type" checked="checked">
                 </if>
             </foreach>
             </div>

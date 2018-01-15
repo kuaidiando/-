@@ -11,7 +11,7 @@
         <div>
             <div class="page-container">
         <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-            <a href="javascript:;" onclick="admin_add('添加门店','{:U('Admin/Shop/add')}','800','500')"
+            <a href="javascript:;" onclick="admin_add('添加门店','{:U('Admin/Shop/add')}','800px','500px')"
                class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加门店</a></span>
             <span class="r">共有数据：<strong>{$info.count}</strong> 条</span> </div>
         <div class="mt-20">
@@ -20,7 +20,7 @@
                 <tr class="text-c">
                     <th width="30">编号</th>
                     <th width="80">名称</th>
-                    <th width="60">LOGO</th>
+                    <th width="30" style="width:10%;">LOGO</th>
                     <!-- <th width="80">手机号123</th> -->
                     <!-- <th width="60">人均消费123</th> -->
                     <!-- <th width="80">营业时间123</th> -->
@@ -38,7 +38,7 @@
                         <tr class="text-c">
                             <td>{$vo.id}</td>
                             <td>{$vo.mingch}</td>
-                            <td><img style="width: 20%;"src="__PUBLIC__{$vo.logo}" alt="图片加载中。。。"></td>
+                            <td><img style="width: 30%;"src="__PUBLIC__{$vo.logo}" alt="图片加载中。。。"></td>
                             <!-- <td>{$vo.tel}</td> -->
                             <!-- <td>{$vo.maney}</td> -->
                             <!-- <td>{$vo.time_kai}--{$vo.time_zhong}</td> -->
@@ -61,32 +61,45 @@
                             </td>
                             <td class="td-status">
                                 <if condition="$vo.zhuangt eq 1 ">
-                                    <span class="label label-success radius">已发布</span>
+                                    <span class="label label-success radius">
+                                        <a  href="javascript:;"
+                                   onclick="admin_add('认证','{:U('Admin/Authentica/index', array('mdid' => $vo['id']))}'
+                                   ,'800px','500px')" style="text-decoration: none;color:#fff;">已发布</a>
+                                    </span>
                                     <else /> 
                                     <span class="label label-danger radius">未发布</span>
                                 </if>
                             </td>
                             <td class="td-manage" style="text-align: center;">
                                 
+                                <a href="{:U('Admin/Seat/index',array('menid' => $vo['id'],'id' => $chengshiid))}" style="text-decoration: none;">
+                                   
+                                    &nbsp;&nbsp;座位管理&nbsp;&nbsp;
+                                </a>
+                                <!-- <a href="{:U('Admin/Seattype/index',array('menid' => $vo['id'],'id' => $chengshiid))}" style="text-decoration: none;">
+                                   
+                                   &nbsp;&nbsp;座位类别&nbsp;&nbsp;
+                                </a> -->
+                                 <a  href="javascript:;"
+                                   onclick="admin_add('编辑','{:U('Admin/Shop/edit', array('id' => $vo['id']))}'
+                                   ,'800px','500px')">
+                                    <i class="Hui-iconfont">&#xe6df;</i>
+                                </a>
+                                <br>
                                 <a href="{:U('Admin/Food/index',array('menid' => $vo['id'],'id' => $chengshiid))}" style="text-decoration: none;">
                                    
-                                    &nbsp;&nbsp;菜品&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;菜品管理&nbsp;&nbsp;
                                 </a>
                                 <a href="{:U('Admin/Foodtype/index',array('menid' => $vo['id'],'id' => $chengshiid))}" style="text-decoration: none;">
                                    
-                                    菜品类别&nbsp;&nbsp;
-                                </a>
-                                <br>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
+                                    &nbsp;菜品类别
+                                </a>&nbsp;&nbsp;
+                                <!-- <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
                                    onclick="admin_add('详情','{:U('Admin/Shop/xiangqing', array('id' => $vo['id']))}'
                                    ,'800','500')">
                                     <i class="Hui-iconfont">&#xe627;</i>
-                                </a>&nbsp;&nbsp;&nbsp;
-                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑','{:U('Admin/Shop/edit', array('id' => $vo['id']))}'
-                                   ,'800','500')">
-                                    <i class="Hui-iconfont">&#xe6df;</i>
-                                </a>&nbsp;
+                                </a>&nbsp;&nbsp;&nbsp; -->
+                               
                                 <a class="h-text-sc" id="{$vo.id}"><i class="Hui-iconfont">&#xe6e2;</i></a>
                             </td>
                         </tr>

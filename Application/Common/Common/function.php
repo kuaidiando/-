@@ -145,6 +145,15 @@ function foodtype($code){
     // dump($result);die;
     return $result[0]['mingch'];
 }
+//后台座位类别
+function seattype($code){
+    $user = M('seat_type');
+    $where['id'] = $code;
+    $result = $user->where($where)->field('mingch')->select();
+    // echo $user->getLastsql();
+    // dump($result);die;
+    return $result[0]['mingch'];
+}
 //后台菜品单位
 function caipindanwei($code){
     $user = M('cpdanwei');
@@ -170,17 +179,22 @@ function fenliangdo($code){
 
     return $data;
 }
+// 菜品分量转化为汉子
+function flhanzi($code){
+    $user = M('cpfenliang');
+    $where['id'] = $code;
+    $res = $user->where($where)->select();
+
+    return $res[0]['mingch'];
+}
 // 菜品口味转换
 function kouweido($code){
-    $user = M('cpkouwei');
-    //判断是否为0
-    if ($code == 0) {
+    // dump($code);
+    if (empty($code)) {
         $data = "";
     }else{
-        $fenl = explode(',',$code);//以 ，分隔成数组
-        $where['id'] = $fenl[0];
-        $res = $user->where($where)->select();
-        $data = "口味：".$res[0]['mingch']."...";
+        $docode = explode(",",$code);//, 分隔口味
+        $data ="口味：".$docode[0]."...";
     }
     return $data;
 }

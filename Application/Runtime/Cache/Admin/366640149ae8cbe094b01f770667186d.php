@@ -71,7 +71,7 @@ $(document).ready(function(){
         </ul>
         </dd>
     </dl>
-    <?php elseif(CONTROLLER_NAME == Shop || CONTROLLER_NAME == Shoptype || CONTROLLER_NAME == Danwei): ?>
+    <?php elseif(CONTROLLER_NAME == Shop || CONTROLLER_NAME == Shoptype || CONTROLLER_NAME == Danwei|| CONTROLLER_NAME == Seat || CONTROLLER_NAME == Sale || CONTROLLER_NAME == Food): ?>
     <dl>
         <dt><a href="#">门店管理</a></dt>
         <dd>
@@ -245,35 +245,63 @@ $(document).ready(function(){
         <div>
             <div class="page-container">
         <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-            <a href="javascript:;" onclick="admin_add('添加菜品单位','<?php echo U('Admin/Danwei/add');?>','800','500')"
-               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加菜品单位</a></span>
+            <a href="javascript:;" onclick="admin_add('添加菜品','<?php echo U('Admin/Food/add',array('id'=>"$id"));?>','800px','500px')"
+               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加菜品</a></span>
             <span class="r">共有数据：<strong><?php echo ($info["count"]); ?></strong> 条</span> </div>
         <div class="mt-20">
         <table class="table table-border table-bordered table-bg table-hover table-responsive">
             <thead>
                 <tr class="text-c">
-                   <th width="80">编号</th>
-                    <th width="80">分类名称</th>
-                    <th width="80">状态</th>
-                    <th width="80">排序</th>
+                    <th width="30">编号</th>
+                    <th width="100">名称</th>
+                    <th width="60" style="width: 8%">LOGO</th>
+                    <!-- <th width="60">原价</th> -->
+                    <th width="60">售价</th>
+                    <th width="60">菜品类别</th>
+                    <th width="60">菜品单位</th>
+                    <th width="120">规格</th>
+                   <!--  <th width="60">食材</th>
+                    <th width="60">口感</th> -->
+                    <th width="120">门店</th>
+                    <th width="60">发布状态</th>
                     <th width="120">操作</th>
                 </tr>
             </thead>
             <tbody>
-                <?php if(is_array($resdw)): foreach($resdw as $key=>$vo): ?><tr class="text-c">
+                <?php if(is_array($data)): foreach($data as $key=>$vo): ?><tr class="text-c">
                             <td><?php echo ($vo["id"]); ?></td>
                             <td><?php echo ($vo["mingch"]); ?></td>
+                            <td><img style="width: 50%;"src="/kuaidian/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
+                            <!-- <td>￥<?php echo ($vo["jiage"]); ?></td> -->
+                            <td>￥<?php echo ($vo["jiage_youhui"]); ?></td>
+                            <td><?php echo (foodtype($vo["food_type"])); ?></td>
+                            <td><?php echo (caipindanwei($vo["dwid"])); ?></td>
+                            <td>
+                                <div style="text-align: center;">
+                                    <?php if($vo["guige"] == 2 ): ?>无
+                                        <?php else: endif; ?>
+                                    <span style="vertical-align:-1px;"><?php echo (fenliangdo($vo["flid"])); ?></span>
+                                    <span style="vertical-align:-1px;"><?php echo (kouweido($vo["kwid"])); ?></span>
+                                    <a style="margin-right: 10%;" href="javascript:;"
+                                       onclick="admin_add('编辑规格','<?php echo U('Admin/Food/editfenliang', array('id' => $vo['id'],'flid'=>$vo['flid'],'kwid'=>$vo['kwid']));?>'
+                                       ,'800px','500px')">
+                                        <span style="vertical-align:baseline;color: red;"><b><i class="Hui-iconfont">&#xe667;</i></b></span>
+                                    </a>
+                                </div>
+                            </td>
+                           <!--  <td><?php echo ($vo["shicai"]); ?></td>
+                            <td><?php echo ($vo["kougan"]); ?></td> -->
+                            <td><?php echo (shopnamedo($vo["dep_shop"])); ?></td>
                             <td class="td-status">
                                 <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">已发布</span>
                                     <?php else: ?> 
                                     <span class="label label-danger radius">未发布</span><?php endif; ?>
                             </td>
-                            <td><?php echo ($vo["paix"]); ?></td>
                             <td class="td-manage" style="text-align: center;">
-                                
+                               
                                 <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Danwei/edit', array('id' => $vo['id']));?>'
-                                   ,'800','500')">
+                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Food/edit', array('id' => $vo['id'],'flid'=>$vo['flid'],'kwid'=>$vo['kwid']));?>'
+                                   ,'800px','500px')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
                                 </a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
@@ -289,14 +317,6 @@ $(document).ready(function(){
 </div>
 </section>
 <script type="text/javascript">
-    $(document).on("change","#choose",function(){
-        // $('iframe').attr('src',"<?php echo U('Admin/Index/welcome');?>");
-        $(".yincangzhuye").click();
-        // console.log(aa);
-        // alert(aa);
-    });
-</script>
-<script type="text/javascript">
         /*删除*/
         $(document).on("click", '.h-text-sc', function () {
             var op_obj = $(this).parents("tr");
@@ -306,7 +326,7 @@ $(document).ready(function(){
                 $.ajax({
                     type:'POST',
                     dataType: 'json',
-                    url:'<?php echo U("Admin/Danwei/delete");?>',
+                    url:'<?php echo U("Admin/Food/delete");?>',
                     data:{id:id},
                     success: function (result) {
                         if (result.status) {

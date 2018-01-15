@@ -71,7 +71,7 @@ $(document).ready(function(){
         </ul>
         </dd>
     </dl>
-    <?php elseif(CONTROLLER_NAME == Shop || CONTROLLER_NAME == Shoptype || CONTROLLER_NAME == Danwei): ?>
+    <?php elseif(CONTROLLER_NAME == Shop || CONTROLLER_NAME == Shoptype || CONTROLLER_NAME == Danwei|| CONTROLLER_NAME == Seat|| CONTROLLER_NAME == Sale): ?>
     <dl>
         <dt><a href="#">门店管理</a></dt>
         <dd>
@@ -245,23 +245,25 @@ $(document).ready(function(){
         <div>
             <div class="page-container">
         <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-            <a href="javascript:;" onclick="admin_add('添加菜品单位','<?php echo U('Admin/Danwei/add');?>','800','500')"
-               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加菜品单位</a></span>
+            <a href="javascript:;" onclick="admin_add('添加优惠卷','<?php echo U('Admin/Sale/add',array('id'=>"$id"));?>','800px','500px')"
+               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> <span id="addyouhui">添加优惠卷</span></a></span>
             <span class="r">共有数据：<strong><?php echo ($info["count"]); ?></strong> 条</span> </div>
         <div class="mt-20">
+        <!-- 判断有无优惠卷 -->
+        <input type="hidden" value="<?php echo ($typeid); ?>" id="typeid">
         <table class="table table-border table-bordered table-bg table-hover table-responsive">
             <thead>
                 <tr class="text-c">
-                   <th width="80">编号</th>
-                    <th width="80">分类名称</th>
-                    <th width="80">状态</th>
-                    <th width="80">排序</th>
+                    <th width="30">编号</th>
+                    <th width="30">名称</th>
+                    <th width="80">认证状态</th>
+                    <th width="60">排序</th>
                     <th width="120">操作</th>
                 </tr>
             </thead>
             <tbody>
-                <?php if(is_array($resdw)): foreach($resdw as $key=>$vo): ?><tr class="text-c">
-                            <td><?php echo ($vo["id"]); ?></td>
+                <?php if(is_array($data)): foreach($data as $key=>$vo): ?><tr class="text-c">
+                            <td id="youhuiid"><?php echo ($vo["id"]); ?></td>
                             <td><?php echo ($vo["mingch"]); ?></td>
                             <td class="td-status">
                                 <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">已发布</span>
@@ -272,14 +274,13 @@ $(document).ready(function(){
                             <td class="td-manage" style="text-align: center;">
                                 
                                 <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Danwei/edit', array('id' => $vo['id']));?>'
-                                   ,'800','500')">
+                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Sale/edit', array('id' => $vo['id']));?>'
+                                   ,'800px','500px')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
                                 </a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
                             </td>
                         </tr><?php endforeach; endif; ?>
-                
             </tbody>
         </table>
         </div>
@@ -289,14 +290,19 @@ $(document).ready(function(){
 </div>
 </section>
 <script type="text/javascript">
-    $(document).on("change","#choose",function(){
-        // $('iframe').attr('src',"<?php echo U('Admin/Index/welcome');?>");
-        $(".yincangzhuye").click();
-        // console.log(aa);
-        // alert(aa);
-    });
-</script>
-<script type="text/javascript">
+        // 判断有无优惠卷 
+        $(document).ready(function(){ 
+        　　var typeid = $("#typeid").val();
+        // 从门店处传来
+            // if (typeid == 2) {
+                // 从页面内判断
+                if($("#youhuiid").length > 0){
+                    // alert("存在");
+                }else{
+                    $("#addyouhui").click();
+                }
+            // }
+        });
         /*删除*/
         $(document).on("click", '.h-text-sc', function () {
             var op_obj = $(this).parents("tr");
@@ -306,7 +312,7 @@ $(document).ready(function(){
                 $.ajax({
                     type:'POST',
                     dataType: 'json',
-                    url:'<?php echo U("Admin/Danwei/delete");?>',
+                    url:'<?php echo U("Admin/Foodtype/delete");?>',
                     data:{id:id},
                     success: function (result) {
                         if (result.status) {

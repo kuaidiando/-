@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
-<script type="text/javascript" src="/-/Public/jquery/jquery.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
  $("dd").hide();
@@ -21,17 +21,17 @@ $(document).ready(function(){
 });
 });
 </script>
-<!-- <script type="text/javascript" src="/-/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
+<!-- <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
  -->
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui/css/H-ui.min.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/H-ui.admin.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/icheck/icheck.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/style.css"/>
-<!-- <link rel="stylesheet" type="text/css" href="/-/Public/css/hidTable.css"/> -->
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui/css/H-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/H-ui.admin.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/icheck/icheck.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/style.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/> -->
 <!-- 分页效果 -->
-<!-- <link href="/-/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
+<!-- <link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
 <title>快点</title>
 <div class="navbar navbar-fixed-top">
     <div class="container-fluid cl">
@@ -40,14 +40,22 @@ $(document).ready(function(){
         <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/User/index');?>">会员管理</span></a>
         <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/code/index');?>">短信管理</span></a>
         <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/order/index');?>">订单管理</span></a>
+<<<<<<< HEAD:Application/Runtime/Cache/Admin/54b8a6986cf49e80578cf6233476e522.php
         <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/config/index');?>">系统配置</span></a>
         <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/money/index');?>">资金管理</span></a>
         <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/operator/index');?>">运营商管理</span></a>
+=======
+        <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/config');?>">系统配置</span></a>
+>>>>>>> 478c2d5e71ecf20759d8de2ef4851b7f7a3d9dff:Application/Runtime/Cache/Admin/7deb05ffd50a2a29911e18ff381537b0.php
 
 
         <!-- <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " href="">会员管理</a> -->
 
+<<<<<<< HEAD:Application/Runtime/Cache/Admin/54b8a6986cf49e80578cf6233476e522.php
         <li class="dropDown dropDown_hover" style="margin-left: 40%;margin-top: 1%;">
+=======
+        <li class="dropDown dropDown_hover" style="margin-left: 50%;margin-top: 1%;">
+>>>>>>> 478c2d5e71ecf20759d8de2ef4851b7f7a3d9dff:Application/Runtime/Cache/Admin/7deb05ffd50a2a29911e18ff381537b0.php
         <div>
             <!-- 城市级联 -->
             <select name="choose" id="choose" style="width: 40%;" class="select">
@@ -66,6 +74,7 @@ $(document).ready(function(){
 <aside class="Hui-aside"><input runat="server" id="divScrollValue" type="hidden" value=""/>
 <div class="menu_dropdown bk_2" id="menu_nav">
     <?php if(CONTROLLER_NAME == Index): ?><dl>
+<<<<<<< HEAD:Application/Runtime/Cache/Admin/54b8a6986cf49e80578cf6233476e522.php
             <dt><a href="#">主页</a></dt>
             <dd>
             <ul>
@@ -113,6 +122,84 @@ $(document).ready(function(){
             </dd>
         </dl><?php endif; ?>
    
+=======
+        <dt><a href="#">主页</a></dt>
+        <dd>
+        <ul>
+            <li><a class="shopin" name="<?php echo U('Admin/Index/zhuye');?>"><span id="clickzhuye">主页</span></a></li>
+        </ul>
+        </dd>
+    </dl>
+    <?php elseif(CONTROLLER_NAME == Shop || CONTROLLER_NAME == Shoptype || CONTROLLER_NAME == Danwei|| CONTROLLER_NAME == Seat || CONTROLLER_NAME == Sale || CONTROLLER_NAME == Food|| CONTROLLER_NAME == Foodtype): ?>
+    <dl>
+        <dt><a href="#">门店管理</a></dt>
+        <dd>
+        <ul>
+           
+            <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Danwei/index');?>">单位管理</a></li>
+        </ul>
+        </dd>
+    </dl>
+    <?php elseif(CONTROLLER_NAME == User): ?>
+     <dl>
+        <dt><a href="#">会员管理</a></dt>
+        <dd>
+        <ul>
+            <li><a class="shopin" name="<?php echo U('Admin/User/index');?>">会员列表</a></li>
+        </ul>
+        </dd>
+    </dl>
+    <?php elseif(CONTROLLER_NAME == Event): ?>
+     <dl>
+        <dt><a href="#">轮播图管理</a></dt>
+        <dd>
+        <ul>
+            <li><a class="shopin" name="<?php echo U('Admin/Event/index');?>">轮播图列表</a></li>
+        </ul>
+        </dd>
+    </dl>
+    <?php elseif(CONTROLLER_NAME == Shop): ?>
+    <dl>
+        <dt><a href="#">门店管理</a></dt>
+        <dd>
+        <ul>
+           
+            <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Danwei/index');?>">单位管理</a></li>
+        </ul>
+        </dd>
+    </dl><?php endif; ?>
+    <!-- <dl>
+        <dt><a href="#">门店管理</a></dt>
+        <dd>
+        <ul>
+           
+            <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Danwei/index');?>">单位管理</a></li>
+        </ul>
+        </dd>
+    </dl>
+    <dl>
+        <dt><a href="#">轮播图管理</a></dt>
+        <dd>
+        <ul>
+            <li><a class="shopin" name="<?php echo U('Admin/Event/index');?>">轮播图列表</a></li>
+        </ul>
+        </dd>
+    </dl>
+    <dl>
+        <dt><a href="#">会员管理</a></dt>
+        <dd>
+        <ul>
+            <li><a class="shopin" name="<?php echo U('Admin/User/index');?>">会员列表</a></li>
+        </ul>
+        </dd>
+    </dl> -->
+>>>>>>> 478c2d5e71ecf20759d8de2ef4851b7f7a3d9dff:Application/Runtime/Cache/Admin/7deb05ffd50a2a29911e18ff381537b0.php
 </div>
 </aside>
 <script type="text/javascript">
@@ -147,14 +234,14 @@ $(document).ready(function(){
 
 
 
-<script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');
@@ -218,42 +305,42 @@ $(document).ready(function(){
         <div>
             <div class="page-container">
         <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-            <a href="javascript:;" onclick="admin_add('添加轮播图','<?php echo U('Admin/Event/add');?>','800px','500px')"
-               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加轮播图</a></span>
-            <span class="r">共有数据：<strong><?php echo ($num); ?></strong> 条</span> </div>
+            <a href="javascript:;" onclick="admin_add('添加菜品类别','<?php echo U('Admin/Foodtype/add',array('id'=>"$id"));?>','800px','500px')"
+               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加菜品类别</a></span>
+            <span class="r">共有数据：<strong><?php echo ($info["count"]); ?></strong> 条</span> </div>
         <div class="mt-20">
         <table class="table table-border table-bordered table-bg table-hover table-responsive">
             <thead>
                 <tr class="text-c">
                     <th width="30">编号</th>
-                    <th width="80">名称</th>
-                    <th width="60">照片</th>
-                    <th width="80">图片状态</th>
+                    <th width="30">名称</th>
+                    <th width="80">注释</th>
+                    <th width="80">发布状态</th>
+                    <th width="60">排序</th>
                     <th width="120">操作</th>
                 </tr>
             </thead>
             <tbody>
-                <?php if(is_array($event)): foreach($event as $key=>$vo): ?><tr class="text-c">
+                <?php if(is_array($data)): foreach($data as $key=>$vo): ?><tr class="text-c">
                             <td><?php echo ($vo["id"]); ?></td>
-                            <td><?php echo ($vo["ename"]); ?></td>
-                            <td><img width = "100" height = "50" src="/-/Public<?php echo ($vo["pic"]); ?>" alt="图片加载中。。。"></td>
-                            
+                            <td><?php echo ($vo["mingch"]); ?></td>
+                            <td><?php echo ($vo["zhushi"]); ?></td>
                             <td class="td-status">
-                                <?php if($vo["status"] == 1 ): ?><span class="label label-success radius">在使用</span>
+                                <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">已发布</span>
                                     <?php else: ?> 
-                                    <span class="label label-danger radius">未使用</span><?php endif; ?>
+                                    <span class="label label-danger radius">未发布</span><?php endif; ?>
                             </td>
+                            <td><?php echo ($vo["paix"]); ?></td>
                             <td class="td-manage" style="text-align: center;">
-                             
+                                
                                 <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Event/edit', array('id' => $vo['id']));?>'
+                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Foodtype/edit', array('id' => $vo['id']));?>'
                                    ,'800px','500px')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
                                 </a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
                             </td>
                         </tr><?php endforeach; endif; ?>
-                
             </tbody>
         </table>
         </div>
@@ -263,39 +350,45 @@ $(document).ready(function(){
 </div>
 </section>
 <script type="text/javascript">
+    $(document).on("change","#choose",function(){
+        // $('iframe').attr('src',"<?php echo U('Admin/Index/welcome');?>");
+        $(".yincangzhuye").click();
+        // console.log(aa);
+        // alert(aa);
+    });
+</script>
+<script type="text/javascript">
         /*删除*/
         $(document).on("click", '.h-text-sc', function () {
             var op_obj = $(this).parents("tr");
             var id = $(this).attr('id');
-            // alert(id);exit;
+            // alert(id);
             layer.confirm('确认要删除吗？',function(){
                 $.ajax({
-                    type:'GET',
+                    type:'POST',
                     dataType: 'json',
-                    url:'<?php echo U("Admin/Event/del");?>',
+                    url:'<?php echo U("Admin/Foodtype/delete");?>',
                     data:{id:id},
                     success: function (result) {
                         if (result.status) {
+                            op_obj.remove();
                             layer.msg(result.msg,{icon:1,time:1000});
                         } else {
-                            op_obj.remove();
-
                             layer.msg(result.msg,{icon:0,time:2000});
-
                         }
                     }
                 })
             });
         });
     </script>
-<script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');
