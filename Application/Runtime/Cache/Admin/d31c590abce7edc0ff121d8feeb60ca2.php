@@ -233,86 +233,41 @@ $(document).ready(function(){
         <!-- 主题内容 -->
         <div>
             <div class="page-container">
-        <div class="cl pd-5 bg-1 bk-gray mt-20"> 
-            <span class="l">短信列表
-            <!-- <a href="javascript:;" onclick="admin_add('添加轮播图','<?php echo U('Admin/Event/add');?>','800','500')"
-               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加轮播图</a> -->
-           </span>
-            <span class="r">共有数据：<strong><?php echo ($num); ?></strong> 条</span> </div>
+        <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
+            <a href="javascript:;" onclick="admin_add('添加座位类别','<?php echo U('Admin/Seattype/add',array('id'=>"$id"));?>','800px','500px')"
+               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加座位类别</a></span>
+            <span class="r">共有数据：<strong><?php echo ($info["count"]); ?></strong> 条</span> </div>
         <div class="mt-20">
         <table class="table table-border table-bordered table-bg table-hover table-responsive">
             <thead>
                 <tr class="text-c">
                     <th width="30">编号</th>
-                    <th width="80">发送类型</th>
-                    <th width="80">接收人</th>
-                    <th width="60">验证码</th>
-
-                    <th width="80">创建时间</th>
-                    <th width="80">发送时间</th>
-                    <th width="80">发送状态</th>
-                    <th width="80">验证状态</th>
+                    <th width="30">名称</th>
+                    <th width="80">发布状态</th>
+                    <th width="60">排序</th>
                     <th width="120">操作</th>
                 </tr>
             </thead>
-            <!-- 弹出层代码 -->
-            <div id="modal-demo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content radius">
-                        <div class="modal-header">
-                            <h3 class="modal-title">短信内容是：</h3>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
-                        </div>
-                        <div class="modal-body">
-                            <?php echo ($one_code["content"]); ?>
-                        </div>
-                        <div class="modal-footer">
-                           <!--  <button class="btn btn-primary">确定</button> -->
-                            <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
             <tbody>
-                <?php if(is_array($codes)): foreach($codes as $key=>$one_code): ?><tr class="text-c">
-                            <td><?php echo ($one_code["id"]); ?></td>
-                            <?php if($one_code["type"] == register): ?><td>注册</td>
-                            <?php elseif($one_code["type"] == repass): ?>
-                            <td>重置密码</td>
-                            <?php else: ?>
-                            <td>未知</td><?php endif; ?>
-                            <td><?php echo ($one_code["tel"]); ?></td>
-                           <!--  <td><button class="btn radius btn-primary size-L" onClick="modaldemo('<?php echo ($one_code["content"]); ?>')">查看</button></td> -->
-                            <td><?php echo ($one_code["code"]); ?></td>
-                            <td><?php echo ($one_code["add_time"]); ?></td>
-                            <td><?php echo ($one_code["update_time"]); ?></td>
-
-                            <?php if($one_code["status"] == 1): ?><td>发送失败</td>
-                            <?php elseif($one_code["status"] == 5): ?>
-                            <td>已发送</td>
-                            <?php elseif($one_code["status"] == 10): ?>
-
-                            <td>已收到</td><?php endif; ?>
-                            <!-- <td><?php echo ($one_info["status"]); ?></td> -->
-                            <?php if($one_code["yz_status"] == 0): ?><td>未验证</td>
-                            <?php elseif($one_code["yz_status"] == 1): ?>
-                            <td>已验证</td><?php endif; ?>
-
-                            
-                           
+                <?php if(is_array($data)): foreach($data as $key=>$vo): ?><tr class="text-c">
+                            <td><?php echo ($vo["id"]); ?></td>
+                            <td><?php echo ($vo["mingch"]); ?></td>
+                            <td class="td-status">
+                                <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">已发布</span>
+                                    <?php else: ?> 
+                                    <span class="label label-danger radius">未发布</span><?php endif; ?>
+                            </td>
+                            <td><?php echo ($vo["paix"]); ?></td>
                             <td class="td-manage" style="text-align: center;">
-                             
-                                <!-- <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑详情','<?php echo U('Admin/User/edit', array('id' => $one_info["id"]));?>'
+                                
+                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
+                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Seattype/edit', array('id' => $vo['id']));?>'
                                    ,'800px','500px')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
-                                </a>&nbsp;&nbsp;&nbsp;&nbsp; -->
-                                <a class="h-text-sc" id="<?php echo ($one_code["sms_id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
+                                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
                             </td>
                         </tr><?php endforeach; endif; ?>
-                
             </tbody>
         </table>
         </div>
@@ -322,28 +277,31 @@ $(document).ready(function(){
 </div>
 </section>
 <script type="text/javascript">
-        // function modaldemo(res){
-        //     $("#modal-demo").modal("show")
-        //     $(".modal-body").html(res);
-        // }
+    $(document).on("change","#choose",function(){
+        // $('iframe').attr('src',"<?php echo U('Admin/Index/welcome');?>");
+        $(".yincangzhuye").click();
+        // console.log(aa);
+        // alert(aa);
+    });
+</script>
+<script type="text/javascript">
         /*删除*/
         $(document).on("click", '.h-text-sc', function () {
             var op_obj = $(this).parents("tr");
             var id = $(this).attr('id');
+            // alert(id);
             layer.confirm('确认要删除吗？',function(){
                 $.ajax({
-                    type:'GET',
+                    type:'POST',
                     dataType: 'json',
-                    url:'<?php echo U("Admin/Code/del");?>',
+                    url:'<?php echo U("Admin/Seattype/delete");?>',
                     data:{id:id},
                     success: function (result) {
                         if (result.status) {
+                            op_obj.remove();
                             layer.msg(result.msg,{icon:1,time:1000});
                         } else {
-                            op_obj.remove();
-
                             layer.msg(result.msg,{icon:0,time:2000});
-
                         }
                     }
                 })
