@@ -69,4 +69,21 @@ class UserController extends BasicController {
         }
      
     }
+    //会员账号编辑
+    public function member(){
+      dump($_SESSION);exit;
+      $mid = I('id','');
+      $money = M('user')->where(array('id'=>$mid))->find()['money'];
+      $this->assign('m_res',$money);
+      $this->display('member');
+    }
+    //会员余额修改
+    public function update_member(){
+      $user_name = ''; 
+      if($_SESSION['user']){
+        $user_name = $_SESSION['user'];
+      }
+      
+
+    }
 }

@@ -23,6 +23,7 @@
                     <th width="30">编号</th>
                     <th width="80">真实姓名</th>
                     <th width="80">电话</th>
+                    <th width="80">余额</th>
                     <th width="60">头像</th>
                     <th width="80">性别</th>
                     <th width="80">省份</th>
@@ -38,6 +39,8 @@
                             <td>{$one_info.id}</td>
                             <td>{$one_info.real_name}</td>
                             <td>{$one_info.tel}</td>
+                            <td>{$one_info.money}</td>
+
                             <td><img width = "100" height = "50" src="__PUBLIC__{$one_info.photo}" alt="无头像"></td>
                             <if condition="$one_info.sex eq 1">
                             <td>男</td>
@@ -73,7 +76,12 @@
                                    ,'800px','500px')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
                                 </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <!-- <a class="h-text-sc" id="{$vo.id}"><i class="Hui-iconfont">&#xe6e2;</i></a> -->
+                                 <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
+                                   onclick="admin_add('编辑会员账号:￥{$one_info["money"]}','{:U('Admin/User/member', array('id' => $one_info["id"]))}'
+                                   ,'800px','500px')">
+                                    <i class="Hui-iconfont">会员账号</i>
+                                </a>
+                                <!-- <a class="" id="{$one_info.id}" onclick="admin_add('会员账号编辑','{:U('Admin/User/member'),array('id'=>$one_info["id"])}','800px','500px')"><i class="Hui-iconfont">会员账号</i></a> -->
                             </td>
                         </tr>
                 </foreach>
@@ -88,28 +96,28 @@
 </section>
 <script type="text/javascript">
         /*删除*/
-        $(document).on("click", '.h-text-sc', function () {
-            var op_obj = $(this).parents("tr");
-            var id = $(this).attr('id');
-            // alert(id);exit;
-            layer.confirm('确认要删除吗？',function(){
-                $.ajax({
-                    type:'GET',
-                    dataType: 'json',
-                    url:'{:U("Admin/Event/del")}',
-                    data:{id:id},
-                    success: function (result) {
-                        if (result.status) {
-                            layer.msg(result.msg,{icon:1,time:1000});
-                        } else {
-                            op_obj.remove();
+        // $(document).on("click", '.h-text-sc', function () {
+        //     var op_obj = $(this).parents("tr");
+        //     var id = $(this).attr('id');
+        //     // alert(id);exit;
+        //     layer.confirm('确认要删除吗？',function(){
+        //         $.ajax({
+        //             type:'GET',
+        //             dataType: 'json',
+        //             url:'{:U("Admin/Event/del")}',
+        //             data:{id:id},
+        //             success: function (result) {
+        //                 if (result.status) {
+        //                     layer.msg(result.msg,{icon:1,time:1000});
+        //                 } else {
+        //                     op_obj.remove();
 
-                            layer.msg(result.msg,{icon:0,time:2000});
+        //                     layer.msg(result.msg,{icon:0,time:2000});
 
-                        }
-                    }
-                })
-            });
-        });
+        //                 }
+        //             }
+        //         })
+        //     });
+        // });
     </script>
 <include file="Layout/footer"/>

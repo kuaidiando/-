@@ -255,6 +255,7 @@ $(document).ready(function(){
                     <th width="30">编号</th>
                     <th width="80">真实姓名</th>
                     <th width="80">电话</th>
+                    <th width="80">余额</th>
                     <th width="60">头像</th>
                     <th width="80">性别</th>
                     <th width="80">省份</th>
@@ -269,6 +270,8 @@ $(document).ready(function(){
                             <td><?php echo ($one_info["id"]); ?></td>
                             <td><?php echo ($one_info["real_name"]); ?></td>
                             <td><?php echo ($one_info["tel"]); ?></td>
+                            <td><?php echo ($one_info["money"]); ?></td>
+
                             <td><img width = "100" height = "50" src="/kuaidian/Public<?php echo ($one_info["photo"]); ?>" alt="无头像"></td>
                             <?php if($one_info["sex"] == 1): ?><td>男</td>
                             <?php elseif($one_info["sex"] == 2): ?>
@@ -298,7 +301,12 @@ $(document).ready(function(){
                                    ,'800px','500px')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
                                 </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <!-- <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a> -->
+                                 <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
+                                   onclick="admin_add('编辑会员账号:￥<?php echo ($one_info["money"]); ?>','<?php echo U('Admin/User/member', array('id' => $one_info["id"]));?>'
+                                   ,'800px','500px')">
+                                    <i class="Hui-iconfont">会员账号</i>
+                                </a>
+                                <!-- <a class="" id="<?php echo ($one_info["id"]); ?>" onclick="admin_add('会员账号编辑','<?php echo U('Admin/User/member'),array('id'=>$one_info["id"]);?>','800px','500px')"><i class="Hui-iconfont">会员账号</i></a> -->
                             </td>
                         </tr><?php endforeach; endif; ?>
                 
@@ -312,29 +320,29 @@ $(document).ready(function(){
 </section>
 <script type="text/javascript">
         /*删除*/
-        $(document).on("click", '.h-text-sc', function () {
-            var op_obj = $(this).parents("tr");
-            var id = $(this).attr('id');
-            // alert(id);exit;
-            layer.confirm('确认要删除吗？',function(){
-                $.ajax({
-                    type:'GET',
-                    dataType: 'json',
-                    url:'<?php echo U("Admin/Event/del");?>',
-                    data:{id:id},
-                    success: function (result) {
-                        if (result.status) {
-                            layer.msg(result.msg,{icon:1,time:1000});
-                        } else {
-                            op_obj.remove();
+        // $(document).on("click", '.h-text-sc', function () {
+        //     var op_obj = $(this).parents("tr");
+        //     var id = $(this).attr('id');
+        //     // alert(id);exit;
+        //     layer.confirm('确认要删除吗？',function(){
+        //         $.ajax({
+        //             type:'GET',
+        //             dataType: 'json',
+        //             url:'<?php echo U("Admin/Event/del");?>',
+        //             data:{id:id},
+        //             success: function (result) {
+        //                 if (result.status) {
+        //                     layer.msg(result.msg,{icon:1,time:1000});
+        //                 } else {
+        //                     op_obj.remove();
 
-                            layer.msg(result.msg,{icon:0,time:2000});
+        //                     layer.msg(result.msg,{icon:0,time:2000});
 
-                        }
-                    }
-                })
-            });
-        });
+        //                 }
+        //             }
+        //         })
+        //     });
+        // });
     </script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
