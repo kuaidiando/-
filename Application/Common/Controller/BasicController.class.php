@@ -14,7 +14,7 @@ class BasicController extends Controller {
     public function _initialize() {  
         //城市级联
         $user1 = M('city');
-        $result1 = $user1 ->select();//城市级联
+        $result1 = $user1->order("paix desc") ->select();//城市级联
         // dump($result1);exit;
         $this->assign('res',$result1);
         $this->assign('chengshiid',I('get.id'));//城市id

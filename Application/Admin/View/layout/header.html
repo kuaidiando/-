@@ -46,7 +46,7 @@ $(document).ready(function(){
         height: 50px;
     }
 </style>
-<div class="navbar navbar-fixed-top" style="height:60px">
+<div class="navbar navbar-fixed-top" >
    
     <div class="container-fluid cl">
         <!-- <div class="tu"> -->
@@ -63,7 +63,7 @@ $(document).ready(function(){
 
       
 
-        <li class="dropDown dropDown_hover" style="margin-left: 30%;margin-top: 2.8%;">
+        <li class="dropDown dropDown_hover" style="margin-left: 30%;margin-top: 1%;">
         <div>
             <select name="choose" id="choose" style="width: 30%;" class="select">
                 <foreach name="res" item="vo">
@@ -101,6 +101,15 @@ $(document).ready(function(){
             <li><a class="shopin" name="{:U('Admin/Shoptype/index')}">门店类别</a></li>
             <li><a class="shopin" name="{:U('Admin/Danwei/index')}">单位管理</a></li>
             <li><a class="shopin" name="{:U('Admin/Seattype/index')}">座位类别</a></li>
+        </ul>
+        </dd>
+    </dl>
+    <dl>
+        <dt><a href="#">商家入驻</a></dt>
+        <dd>
+        <ul>
+           
+            <li><a class="shopin" name="{:U('Admin/Shop/settled')}">入驻列表</a></li>
         </ul>
         </dd>
     </dl>

@@ -138,7 +138,7 @@ class ShopController extends BasicController
             $res == true ? $this->success('修改成功') : $this->error('修改失败');
             // $this->display();
         }else{
-              $usersheng = M('province');//城市-省
+            $usersheng = M('province');//城市-省
             $ressheng = $usersheng->select();
             $this->assign("ressheng",$ressheng);//城市-省
             $user = M('city');//城市-市
@@ -197,6 +197,64 @@ class ShopController extends BasicController
             $this->ajaxReturn(array('status' => true, 'msg' => '删除成功!'));
         } else {
             $this->ajaxReturn(array('status' => false, 'msg' => '删除失败!'));
+        }
+    }
+    // 商家入驻
+    public function settled(){
+        $id = I('get.id');
+            $user = M('shop');
+        if ($id == 1) {
+            $where['zhuangt'] = 2;
+        }else{
+            $where['depcsjlshi'] = $id;
+            $where['zhuangt'] = 2;
+        }
+        $resmend = $user->where($where)->select();
+        // dump($resmend[0]['lianxiren']);
+        // dump($resmend[0]['time_ruzhu']);
+        // dump($resmend);die;
+        $this->assign('resshop',$resmend);//门店信息
+       
+        $this->display();
+    }
+    // 执行入驻
+    public function editruzhu(){
+        if (IS_POST) {
+            $id = I('post.id');
+            $User = M("shop"); // 实例化User对象
+            $where['id'] = $id;
+            $data = I('post.');//更改数据
+            // dump($data);die;
+              // 图片上传
+             $upload = new \Think\Upload();// 实例化上传类
+            $upload->maxSize   =     3145728 ;// 设置附件上传大小
+            $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+            $upload->rootPath  =     './Public/img/'; // 设置附件上传根目录
+            $upload->savePath  =     ''; // 设置附件上传（子）目录
+
+            // 上传文件
+            $info   =   $upload->upload();
+            // 判断图片是否存在
+            if ($info['logo']['savename']) {
+                $logolujing = '/img/'.$info['logo']['savepath'].$info['logo']['savename'];
+                $data['logo'] = $logolujing;
+            }
+            // dump($data);die;
+            $res = $User->where($where)->data($data)->save();
+            // echo $User->getLastSql();die;
+
+            $res == true ? $this->success('修改成功') : $this->error('修改失败');
+            // $this->display();
+        }else{
+            // 查询门店信息
+            $jxdm = I('get.id');
+            // dump($jxdm);die;
+            $user = M('shop');
+            $where['id'] = $jxdm;
+            $data = $user->where($where)->select();
+            dump($data);
+            $this->assign('data',$data);// 查询门店信息
+            $this->display();
         }
     }
 }

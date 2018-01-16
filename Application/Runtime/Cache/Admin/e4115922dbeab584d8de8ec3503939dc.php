@@ -46,18 +46,12 @@ $(document).ready(function(){
         height: 50px;
     }
 </style>
-<div class="navbar navbar-fixed-top" style="height:60px">
+<div class="navbar navbar-fixed-top" style="height:50px">
    
     <div class="container-fluid cl">
-<<<<<<< HEAD
         <!-- <div class="tu"> -->
-        <!-- <img src="/-/Public/img/logo.png"> -->
+        <!-- <img src="/kuaidian/Public/img/logo.png"> -->
         <!-- </div> -->
-=======
-        <div class="tu">
-        <img src="/kuaidian/Public/img/logo.png">
-        </div>
->>>>>>> d89785b1ff7e7ab1aa4cebe62b415745d2c50497
             <a class="logo navbar-logo f-l mr-10 hidden-xs" href="<?php echo U('Admin/Index/zhuye');?>">首页</a>
             <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/shop/index');?>">商户管理</span></a>
             <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/User/index');?>">会员管理</span></a>
@@ -86,32 +80,7 @@ $(document).ready(function(){
 </div>
 <aside class="Hui-aside"><input runat="server" id="divScrollValue" type="hidden" value=""/>
 <div class="menu_dropdown bk_2" id="menu_nav">
-<<<<<<< HEAD
-    <?php if(CONTROLLER_NAME == Index): elseif(CONTROLLER_NAME == User): ?>
-=======
-    <?php if(CONTROLLER_NAME == Index): ?><<<<<<< HEAD
-        <dl>
-            <dt><a href="#">主页</a></dt>
-            <dd>
-            <ul>
-                <li><a class="shopin" name="<?php echo U('Admin/Index/zhuye');?>">主页</a></li>
-            </ul>
-            </dd>
-        </dl>
-    <?php elseif(CONTROLLER_NAME == Shop || CONTROLLER_NAME == Shoptype || CONTROLLER_NAME == Danwei): ?>
-        <dl>
-            <dt><a href="#">门店管理</a></dt>
-            <dd>
-            <ul>
-               
-                <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
-                <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
-                <li><a class="shopin" name="<?php echo U('Admin/Danwei/index');?>">单位管理</a></li>
-            </ul>
-            </dd>
-        </dl>
-=======
-    <dl>
+    <?php if(CONTROLLER_NAME == Index): ?><dl>
         <dt><a href="#">主页</a></dt>
         <dd>
         <ul>
@@ -119,11 +88,7 @@ $(document).ready(function(){
         </ul>
         </dd>
     </dl>
-<<<<<<< HEAD
-    <?php elseif(CONTROLLER_NAME == Shop || CONTROLLER_NAME == Shoptype || CONTROLLER_NAME == Danwei|| CONTROLLER_NAME == Seat || CONTROLLER_NAME == Sale || CONTROLLER_NAME == Food|| CONTROLLER_NAME == Foodtype): ?>
-=======
     <?php elseif(CONTROLLER_NAME == Shop || CONTROLLER_NAME == Shoptype || CONTROLLER_NAME == Danwei|| CONTROLLER_NAME == Seat || CONTROLLER_NAME == Sale || CONTROLLER_NAME == Food || CONTROLLER_NAME == Seattype || CONTROLLER_NAME == Foodtype): ?>
->>>>>>> 87195f0a6e76d644e48cb229732c90655981ed49
     <dl>
         <dt><a href="#">门店管理</a></dt>
         <dd>
@@ -132,16 +97,20 @@ $(document).ready(function(){
             <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
             <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
             <li><a class="shopin" name="<?php echo U('Admin/Danwei/index');?>">单位管理</a></li>
-<<<<<<< HEAD
-=======
             <li><a class="shopin" name="<?php echo U('Admin/Seattype/index');?>">座位类别</a></li>
->>>>>>> 87195f0a6e76d644e48cb229732c90655981ed49
         </ul>
         </dd>
     </dl>
->>>>>>> 478c2d5e71ecf20759d8de2ef4851b7f7a3d9dff
+    <dl>
+        <dt><a href="#">商家入驻</a></dt>
+        <dd>
+        <ul>
+           
+            <li><a class="shopin" name="<?php echo U('Admin/Shop/settled');?>">入驻列表</a></li>
+        </ul>
+        </dd>
+    </dl>
     <?php elseif(CONTROLLER_NAME == User): ?>
->>>>>>> d89785b1ff7e7ab1aa4cebe62b415745d2c50497
         <dl>
             <dt><a href="#">会员管理</a></dt>
             <dd>
