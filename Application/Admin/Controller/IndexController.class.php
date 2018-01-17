@@ -12,12 +12,19 @@ class IndexController extends Controller
     }
     //执行登录
     public function dodenglu(){
-        $name = I('post.name');
+        $name = I('post.username');
         $submit = I('post.submit');
-        $user = M('user_admin');
-        $where['name'] = $name;
+        $user = M('user');
+        // $where['code'] = $name;
+        $where = array(
+            'tel' => $name,
+            'status' => 1
+            );
         $sub = $user->where($where)->find();
-        if ($sub['submit'] == $submit) {
+        // var_dump($sub);
+        // exit;
+        $_SESSION['user_admin'] = $name;
+        if ($sub['password'] == md5($submit)) {
             $this->redirect('Index/zhuye');
         }else{
             $this->assign('id',1);

@@ -69,4 +69,72 @@ class UserController extends BasicController {
         }
      
     }
+    //会员账号编辑
+    public function member(){
+
+    
+      // var_dump($_SESSION);exit;
+      $mid = I('id','');
+      // dump($mid);exit;
+      $money = M('user')->where(array('id'=>$mid))->find();
+      // dump($money);exit;
+
+      $this->assign('m_res',$money);
+      $this->display('member');
+    }
+    //会员余额修改
+    public function update_member(){
+      $user_name = ''; 
+
+      $old_money = '';
+      $filter = array();
+      $data = array();
+      $money = I('post.money');
+      if($_SESSION['user_admin']){
+        $user_name = $_SESSION['user_admin'];
+        $userinfo = M('user')->where(array('tel'=>$user_name))->find();
+        $username = $userinfo['username'];
+        $admin_id = $userinfo['id'];
+        $user_id = I('post.id');
+        $old_money = M('user')->where(array('id'=>$user_id))->find()['money'] ;
+
+        $filter = array(
+          'money' => $old_money + $money,
+         );
+
+        $save = M('user')->where(array('id'=>$user_id))->save($filter);
+        if($save){
+          $data = array(
+              'user_id'  => $user_id,
+              'money'    => $money,
+              'remark'   => '管理员编辑账号',
+              'admin_id' => $admin_id,
+              'add_time' => date('Y-m-d H:i:s',time()),
+          );
+          $res = M('user_info')->add($data);
+        }
+         
+
+        if($res){
+          $this->ajaxReturn(array('status'=>1,'msg'=>'修改成功'));
+        }else{
+          $this->ajaxReturn(array('status'=>0,'msg'=>'修改失败'));
+        }
+
+      }
+     
+    }
+
+    //账户明细
+    public function info(){
+      $aid = '';
+      $aid = I('uid','');
+      $mx = M('user_info')->where(array('user_id'=>$aid))->select();
+      $this->assign('mx',$mx);
+
+      // dump($aid);exit;
+
+      $this->display();
+    }
+
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [ 2018-01-16T09:28:20+08:00 ] ::1 /kuaidian/index.php/Admin/Index/index.html
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -593,6 +594,24 @@ INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+=======
+[ 2018-01-16T17:55:09+08:00 ] ::1 /kuaidian/index.php/Admin/User/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+>>>>>>> e6571e52e5e4726001c4278ada3b61ebd52842dc
 NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 83 行.
 NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
 NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
@@ -606,6 +625,7 @@ NOTIC: [8] Use of undefined constant User - assumed 'User' D:\xampp\htdocs\kuaid
 NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 164 行.
 NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 164 行.
 NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 167 行.
+<<<<<<< HEAD
 NOTIC: [8] Undefined index: con D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 285 行.
 NOTIC: [8] Undefined index: con D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 285 行.
 NOTIC: [8] Undefined index: con D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 285 行.
@@ -684,6 +704,101 @@ INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+=======
+NOTIC: [8] Undefined index: con D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 288 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 309 行.
+NOTIC: [8] Undefined index: con D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 288 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 309 行.
+NOTIC: [8] Undefined index: con D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 288 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 309 行.
+NOTIC: [8] Undefined index: con D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 288 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 309 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2018-01-16T17:55:10+08:00 ] ::1 /kuaidian/index.php/Admin/order/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+ERR: 无法加载控制器:Order
+
+[ 2018-01-16T17:55:16+08:00 ] ::1 /kuaidian/index.php/Admin/shop/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0196s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `shop`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 91 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 164 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 164 行.
+NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 167 行.
+NOTIC: [8] Undefined variable: info D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 248 行.
+SQL: SELECT `name` FROM `city` WHERE `code` = '130500'  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0032s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sale` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130100'  [ RunTime:0.0002s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 3 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '350300'  [ RunTime:0.0002s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 23 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '140400'  [ RunTime:0.0005s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130400'  [ RunTime:0.0003s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 25 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '0'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\kuaidian\Application\Common\Common\function.php 第 109 行.
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 26 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2018-01-16T17:55:24+08:00 ] ::1 /kuaidian/index.php/Admin/User/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+>>>>>>> e6571e52e5e4726001c4278ada3b61ebd52842dc
 NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 83 行.
 NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
 NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
@@ -697,6 +812,7 @@ NOTIC: [8] Use of undefined constant User - assumed 'User' D:\xampp\htdocs\kuaid
 NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 164 行.
 NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 164 行.
 NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 167 行.
+<<<<<<< HEAD
 NOTIC: [8] Undefined index: con D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 285 行.
 NOTIC: [8] Undefined index: con D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 285 行.
 NOTIC: [8] Undefined index: con D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 285 行.
@@ -5503,4 +5619,22 @@ INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+=======
+NOTIC: [8] Undefined index: con D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 288 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 309 行.
+NOTIC: [8] Undefined index: con D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 288 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 309 行.
+NOTIC: [8] Undefined index: con D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 288 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 309 行.
+NOTIC: [8] Undefined index: con D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 288 行.
+NOTIC: [8] Array to string conversion D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 309 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+>>>>>>> e6571e52e5e4726001c4278ada3b61ebd52842dc
 

@@ -46,7 +46,7 @@ $(document).ready(function(){
         height: 50px;
     }
 </style>
-<div class="navbar navbar-fixed-top" style="height:60px">
+<div class="navbar navbar-fixed-top" >
    
     <div class="container-fluid cl">
         <!-- <div class="tu"> -->
@@ -63,7 +63,7 @@ $(document).ready(function(){
 
       
 
-        <li class="dropDown dropDown_hover" style="margin-left: 30%;margin-top: 2.8%;">
+        <li class="dropDown dropDown_hover" style="margin-left: 30%;margin-top: 1%;">
         <div>
             <select name="choose" id="choose" style="width: 30%;" class="select">
                 <?php if(is_array($res)): foreach($res as $key=>$vo): ?><option  value="<?php echo ($vo["code"]); ?>" <?php if($vo['code'] == $chengshiid): ?>selected="selected"<?php endif; ?>><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
@@ -80,7 +80,37 @@ $(document).ready(function(){
 </div>
 <aside class="Hui-aside"><input runat="server" id="divScrollValue" type="hidden" value=""/>
 <div class="menu_dropdown bk_2" id="menu_nav">
-    <?php if(CONTROLLER_NAME == Index): elseif(CONTROLLER_NAME == User): ?>
+    <?php if(CONTROLLER_NAME == Index): ?><dl>
+        <dt><a href="#">主页</a></dt>
+        <dd>
+        <ul>
+            <li><a class="shopin" name="<?php echo U('Admin/Index/zhuye');?>"><span id="clickzhuye">主页</span></a></li>
+        </ul>
+        </dd>
+    </dl>
+    <?php elseif(CONTROLLER_NAME == Shop || CONTROLLER_NAME == Shoptype || CONTROLLER_NAME == Danwei|| CONTROLLER_NAME == Seat || CONTROLLER_NAME == Sale || CONTROLLER_NAME == Food || CONTROLLER_NAME == Seattype || CONTROLLER_NAME == Foodtype): ?>
+    <dl>
+        <dt><a href="#">门店管理</a></dt>
+        <dd>
+        <ul>
+           
+            <li><a class="shopin" name="<?php echo U('Admin/Shop/index');?>">门店列表</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Shoptype/index');?>">门店类别</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Danwei/index');?>">单位管理</a></li>
+            <li><a class="shopin" name="<?php echo U('Admin/Seattype/index');?>">座位类别</a></li>
+        </ul>
+        </dd>
+    </dl>
+    <dl>
+        <dt><a href="#">商家入驻</a></dt>
+        <dd>
+        <ul>
+           
+            <li><a class="shopin" name="<?php echo U('Admin/Shop/settled');?>">入驻列表</a></li>
+        </ul>
+        </dd>
+    </dl>
+    <?php elseif(CONTROLLER_NAME == User): ?>
         <dl>
             <dt><a href="#">会员管理</a></dt>
             <dd>
@@ -223,53 +253,26 @@ $(document).ready(function(){
             <thead>
                 <tr class="text-c">
                     <th width="30">编号</th>
-                    <th width="80">真实姓名</th>
-                    <th width="80">电话</th>
-                    <th width="60">头像</th>
-                    <th width="80">性别</th>
-                    <th width="80">省份</th>
-                    <th width="80">城市</th>
-                    <th width="80">注册状态</th>
-                    <th width="80">关注状态</th>
-                    <th width="120">操作</th>
+                    <th width="80">操作备注</th>
+                    <th width="80">操作时间</th>
+                    <th width="80">资金变动</th>
+                    <th width="60">管理员</th>
+                    <!-- <th width="120">操作</th> -->
                 </tr>
             </thead>
             <tbody>
-                <?php if(is_array($user_info)): foreach($user_info as $key=>$one_info): ?><tr class="text-c">
+                <?php if(is_array($mx)): foreach($mx as $key=>$one_info): ?><tr class="text-c">
                             <td><?php echo ($one_info["id"]); ?></td>
-                            <td><?php echo ($one_info["real_name"]); ?></td>
-                            <td><?php echo ($one_info["tel"]); ?></td>
-                            <td><img width = "100" height = "50" src="/-/Public<?php echo ($one_info["photo"]); ?>" alt="无头像"></td>
-                            <?php if($one_info["sex"] == 1): ?><td>男</td>
-                            <?php elseif($one_info["sex"] == 2): ?>
-                            <td>女</td>
-                            <?php else: ?>
-                            <td>未知</td><?php endif; ?>
-                            <td><?php echo ($one_info["province"]); ?></td>
-                            <td><?php echo ($one_info["city"]); ?></td>
-                            <?php if($one_info["is_reg"] == 0): ?><td>未注册</td>
-                            <?php elseif($one_info["is_reg"] == 1): ?>
-                            <td>已注册</td>
-                            <?php else: ?>
-                            <td>未知</td><?php endif; ?>
-                            <?php if($one_info["con"] == 0): ?><td>未关注</td>
-                            <?php elseif($one_info["con"] == 1): ?>
-                            <td>已关注</td>
-                            <?php else: ?>
-                            <td>未知</td><?php endif; ?>
-                            <!-- <td><?php echo ($one_info["status"]); ?></td> -->
-
-                            
+                            <td><?php echo ($one_info["remark"]); ?></td>
+                            <td><?php echo ($one_info["add_time"]); ?></td>
+                            <td>￥<?php echo ($one_info["money"]); ?>元</td>
+                            <td><?php echo ($one_info["admin_id"]); ?></td>
                            
-                            <td class="td-manage" style="text-align: center;">
+                            <!-- <td class="td-manage" style="text-align: center;">
                              
-                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑详情','<?php echo U('Admin/User/edit', array('id' => $one_info["id"]));?>'
-                                   ,'800px','500px')">
-                                    <i class="Hui-iconfont">&#xe6df;</i>
-                                </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <!-- <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a> -->
-                            </td>
+                                <a class="h-text-sc" id="<?php echo ($one_info["id"]); ?>"><i class="Hui-iconfont">彻底删除</i></a>
+                               
+                            </td> -->
                         </tr><?php endforeach; endif; ?>
                 
             </tbody>
@@ -281,7 +284,7 @@ $(document).ready(function(){
 </div>
 </section>
 <script type="text/javascript">
-        /*删除*/
+        // 删除
         $(document).on("click", '.h-text-sc', function () {
             var op_obj = $(this).parents("tr");
             var id = $(this).attr('id');

@@ -226,7 +226,6 @@ class ShopController extends BasicController
             $User = M("shop"); // 实例化User对象
             $where['id'] = $id;
             $data['zhuangt'] = 1;//更改数据
-            
             // dump($data);die;
             $res = $User->where($where)->data($data)->save();
             // echo $User->getLastSql();die;
@@ -240,7 +239,6 @@ class ShopController extends BasicController
             $user = M('shop');
             $where['id'] = $jxdm;
             $data = $user->where($where)->select();
-            // dump($data);
             $this->assign('data',$data);// 查询门店信息
             $this->display();
         }

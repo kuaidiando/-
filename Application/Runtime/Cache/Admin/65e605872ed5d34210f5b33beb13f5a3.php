@@ -6,7 +6,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
+<<<<<<< HEAD
+<script type="text/javascript" src="/-/Public/jquery/jquery.js"></script>
+=======
 <script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
+>>>>>>> b1ebaf69038ab64fc94e99530f0d03629693161e
 <script type="text/javascript">
 $(document).ready(function(){
  $("dd").hide();
@@ -21,6 +25,19 @@ $(document).ready(function(){
 });
 });
 </script>
+<<<<<<< HEAD
+<!-- <script type="text/javascript" src="/-/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
+ -->
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui/css/H-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/H-ui.admin.css"/>
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/icheck/icheck.css"/>
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/style.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/-/Public/css/hidTable.css"/> -->
+<!-- 分页效果 -->
+<!-- <link href="/-/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
+=======
 <!-- <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
  -->
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui/css/H-ui.min.css"/>
@@ -32,6 +49,7 @@ $(document).ready(function(){
 <!-- <link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/> -->
 <!-- 分页效果 -->
 <!-- <link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
+>>>>>>> b1ebaf69038ab64fc94e99530f0d03629693161e
 <title>快点</title>
 <style type="text/css">
     .tu{
@@ -50,7 +68,15 @@ $(document).ready(function(){
    
     <div class="container-fluid cl">
         <!-- <div class="tu"> -->
+<<<<<<< HEAD
         <!-- <img src="/kuaidian/Public/img/logo.png"> -->
+=======
+<<<<<<< HEAD
+        <!-- <img src="/-/Public/img/logo.png"> -->
+=======
+        <!-- <img src="/kuaidian/Public/img/logo.png"> -->
+>>>>>>> b1ebaf69038ab64fc94e99530f0d03629693161e
+>>>>>>> e6571e52e5e4726001c4278ada3b61ebd52842dc
         <!-- </div> -->
             <a class="logo navbar-logo f-l mr-10 hidden-xs" href="<?php echo U('Admin/Index/zhuye');?>">首页</a>
             <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/shop/index');?>">商户管理</span></a>
@@ -172,6 +198,16 @@ $(document).ready(function(){
 
 
 
+<<<<<<< HEAD
+<script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+=======
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
@@ -180,6 +216,7 @@ $(document).ready(function(){
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+>>>>>>> b1ebaf69038ab64fc94e99530f0d03629693161e
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');
@@ -255,6 +292,7 @@ $(document).ready(function(){
                     <th width="30">编号</th>
                     <th width="80">真实姓名</th>
                     <th width="80">电话</th>
+                    <th width="80">余额</th>
                     <th width="60">头像</th>
                     <th width="80">性别</th>
                     <th width="80">省份</th>
@@ -269,7 +307,13 @@ $(document).ready(function(){
                             <td><?php echo ($one_info["id"]); ?></td>
                             <td><?php echo ($one_info["real_name"]); ?></td>
                             <td><?php echo ($one_info["tel"]); ?></td>
+                            <td><?php echo ($one_info["money"]); ?></td>
+
+<<<<<<< HEAD
+                            <td><img width = "100" height = "50" src="/-/Public<?php echo ($one_info["photo"]); ?>" alt="无头像"></td>
+=======
                             <td><img width = "100" height = "50" src="/kuaidian/Public<?php echo ($one_info["photo"]); ?>" alt="无头像"></td>
+>>>>>>> b1ebaf69038ab64fc94e99530f0d03629693161e
                             <?php if($one_info["sex"] == 1): ?><td>男</td>
                             <?php elseif($one_info["sex"] == 2): ?>
                             <td>女</td>
@@ -298,7 +342,22 @@ $(document).ready(function(){
                                    ,'800px','500px')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
                                 </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <!-- <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a> -->
+<<<<<<< HEAD
+                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
+=======
+                                 <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
+>>>>>>> b1ebaf69038ab64fc94e99530f0d03629693161e
+                                   onclick="admin_add('编辑会员账号:￥<?php echo ($one_info["money"]); ?>','<?php echo U('Admin/User/member', array('id' => $one_info["id"]));?>'
+                                   ,'800px','500px')">
+                                    <i class="Hui-iconfont">会员账号</i>
+                                </a>
+<<<<<<< HEAD
+                             
+                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;" ><span id="<?php echo ($one_info['id']); ?>" class="shop" name="<?php echo U('Admin/User/info');?>">账户明细</span></a>
+                              
+=======
+                                <!-- <a class="" id="<?php echo ($one_info["id"]); ?>" onclick="admin_add('会员账号编辑','<?php echo U('Admin/User/member'),array('id'=>$one_info["id"]);?>','800px','500px')"><i class="Hui-iconfont">会员账号</i></a> -->
+>>>>>>> b1ebaf69038ab64fc94e99530f0d03629693161e
                             </td>
                         </tr><?php endforeach; endif; ?>
                 
@@ -311,31 +370,53 @@ $(document).ready(function(){
 </div>
 </section>
 <script type="text/javascript">
+<<<<<<< HEAD
+ // 门店列表
+    $(document).on("click",".shop",function(){
+        //获取对应id
+        var uid;
+        var uid = $(this).attr('id');
+        // 页面跳转
+        var url = $(this).attr("name")+"?uid="+uid;
+        window.location.replace(url);
+    });
+=======
+>>>>>>> b1ebaf69038ab64fc94e99530f0d03629693161e
         /*删除*/
-        $(document).on("click", '.h-text-sc', function () {
-            var op_obj = $(this).parents("tr");
-            var id = $(this).attr('id');
-            // alert(id);exit;
-            layer.confirm('确认要删除吗？',function(){
-                $.ajax({
-                    type:'GET',
-                    dataType: 'json',
-                    url:'<?php echo U("Admin/Event/del");?>',
-                    data:{id:id},
-                    success: function (result) {
-                        if (result.status) {
-                            layer.msg(result.msg,{icon:1,time:1000});
-                        } else {
-                            op_obj.remove();
+        // $(document).on("click", '.h-text-sc', function () {
+        //     var op_obj = $(this).parents("tr");
+        //     var id = $(this).attr('id');
+        //     // alert(id);exit;
+        //     layer.confirm('确认要删除吗？',function(){
+        //         $.ajax({
+        //             type:'GET',
+        //             dataType: 'json',
+        //             url:'<?php echo U("Admin/Event/del");?>',
+        //             data:{id:id},
+        //             success: function (result) {
+        //                 if (result.status) {
+        //                     layer.msg(result.msg,{icon:1,time:1000});
+        //                 } else {
+        //                     op_obj.remove();
 
-                            layer.msg(result.msg,{icon:0,time:2000});
+        //                     layer.msg(result.msg,{icon:0,time:2000});
 
-                        }
-                    }
-                })
-            });
-        });
+        //                 }
+        //             }
+        //         })
+        //     });
+        // });
     </script>
+<<<<<<< HEAD
+<script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+=======
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
@@ -344,6 +425,7 @@ $(document).ready(function(){
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+>>>>>>> b1ebaf69038ab64fc94e99530f0d03629693161e
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
-<script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
+<script type="text/javascript" src="/-/Public/jquery/jquery.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
  $("dd").hide();
@@ -21,17 +21,17 @@ $(document).ready(function(){
 });
 });
 </script>
-<!-- <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
+<!-- <script type="text/javascript" src="/-/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
  -->
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui/css/H-ui.min.css"/>
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/H-ui.admin.css"/>
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/icheck/icheck.css"/>
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/style.css"/>
-<!-- <link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/> -->
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui/css/H-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/H-ui.admin.css"/>
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/icheck/icheck.css"/>
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/style.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/-/Public/css/hidTable.css"/> -->
 <!-- 分页效果 -->
-<!-- <link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
+<!-- <link href="/-/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
 <title>快点</title>
 <style type="text/css">
     .tu{
@@ -50,7 +50,7 @@ $(document).ready(function(){
    
     <div class="container-fluid cl">
         <!-- <div class="tu"> -->
-        <!-- <img src="/kuaidian/Public/img/logo.png"> -->
+        <!-- <img src="/-/Public/img/logo.png"> -->
         <!-- </div> -->
             <a class="logo navbar-logo f-l mr-10 hidden-xs" href="<?php echo U('Admin/Index/zhuye');?>">首页</a>
             <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/shop/index');?>">商户管理</span></a>
@@ -172,14 +172,14 @@ $(document).ready(function(){
 
 
 
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');
@@ -268,21 +268,10 @@ $(document).ready(function(){
                             <td><?php echo ($vo["lianxiren"]); ?></td>
                             <td><?php echo ($vo["tel"]); ?></td>
                             <td><?php echo ($vo["time_ruzhu"]); ?></td>
-                            <td class="td-status" style="text-align: center;">
-                                <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">
-                                        <a  href="javascript:;"
-                                   onclick="admin_add('认证','<?php echo U('Admin/Authentica/index', array('mdid' => $vo['id']));?>'
-                                   ,'800px','500px')" style="text-decoration: none;color:#fff;">已通过</a>
-                                    </span>
-                                    <?php elseif($vo["zhuangt"] == 2): ?>
-                                    <div style="background-color:#ffae00;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;"><b>驳回中</b></div>
-                                    <?php elseif($vo["zhuangt"] == 3): ?>
-                                    <span class="label label-danger radius">未认证</span>
-                                    <?php elseif($vo["zhuangt"] == 4): ?>
-                                    <div style="background-color:#1160BA;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;"><b>待审核</b></div>
-                                    
-                                    <?php elseif($vo["zhuangt"] == 5): ?>
-                                    <div style="background-color:#B300FF;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;"><b>已过期</b></div><?php endif; ?>
+                            <td class="td-status">
+                                <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-danger radius">已审核</span>
+                                    <?php else: ?> 
+                                    <span class="label label-danger radius">待审核</span><?php endif; ?>
                             </td>
                             <td class="td-manage" style="text-align: center;">
                                 
@@ -326,14 +315,14 @@ $(document).ready(function(){
             });
         });
     </script>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');
