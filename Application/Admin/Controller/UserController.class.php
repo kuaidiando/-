@@ -71,18 +71,21 @@ class UserController extends BasicController {
     }
     //会员账号编辑
     public function member(){
+
     
       // var_dump($_SESSION);exit;
       $mid = I('id','');
       // dump($mid);exit;
       $money = M('user')->where(array('id'=>$mid))->find();
       // dump($money);exit;
+
       $this->assign('m_res',$money);
       $this->display('member');
     }
     //会员余额修改
     public function update_member(){
       $user_name = ''; 
+
       $old_money = '';
       $filter = array();
       $data = array();
