@@ -1,0 +1,74 @@
+<include file="Layout/header"/><header class="navbar-wrapper">
+
+</header>
+<aside class="Hui-aside"><input runat="server" id="divScrollValue" type="hidden" value=""/>
+<div class="menu_dropdown bk_2" id="menu_nav">
+    <dl>
+        <dt><a href="#">模块2</a></dt>
+        <dd>
+        <ul>
+            <li><a class="shopin" name="{:U('Admin/Index/zhuye')}"><span id="clickzhuye">模块2</span></a></li>
+        </ul>
+        </dd>
+    </dl>
+    <dl>
+        <dt><a href="#">模块2</a></dt>
+        <dd>
+        <ul>
+            <!-- 隐藏主页 -->
+            <!-- <a _href="{:U('Admin/Index/yinczhuye')}" name="{:U('Admin/Index/yinczhuye')}" style="display: none;"class="" href="javascript:;">隐藏主页</a> -->
+            <li><a class="shopin" name="{:U('Admin/Shop/index')}">标题1</a></li>
+            <li><a class="shopin" name="{:U('Admin/Oracle/moabiaob')}">标题2</a></li>
+        </ul>
+        </dd>
+    </dl>
+</div>
+</aside>
+<div class="dislpayArrow hidden-xs">
+	<a class="pngfix" href="javascript:;" onclick="displaynavbar(this)"></a>
+</div>
+<section class="Hui-article-box">
+<div id="iframe_box" class="Hui-article">
+	<div class="show_iframe">
+		<div style="display:none" class="loading">
+		</div>
+		<!-- 主题内容 -->
+		<link rel="icon" type="image/png" href="__PUBLIC__/xin/assets/i/favicon.png">
+			<link rel="apple-touch-icon-precomposed" href="__PUBLIC__/xin/assets/i/app-icon72x72@2x.png">
+			<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+			<link rel="stylesheet" href="__PUBLIC__/xin/assets/css/amazeui.min.css"/>
+			<link rel="stylesheet" href="__PUBLIC__/xin/assets/css/admin.css">
+			<div class="admin-index">
+				<dl data-am-scrollspy="{animation: 'slide-right', delay: 100}">
+					<dt class="qs"><i class="am-icon-users"></i></dt>
+					<dd>455</dd>
+					<dd class="f12">团队数量</dd>
+				</dl>
+				<dl data-am-scrollspy="{animation: 'slide-right', delay: 300}">
+					<dt class="cs"><i class="am-icon-area-chart"></i></dt>
+					<dd>455</dd>
+					<dd class="f12">今日收入</dd>
+				</dl>
+				<dl data-am-scrollspy="{animation: 'slide-right', delay: 600}">
+					<dt class="hs"><i class="am-icon-shopping-cart"></i></dt>
+					<dd>455</dd>
+					<dd class="f12">商品数量</dd>
+				</dl>
+				<dl data-am-scrollspy="{animation: 'slide-right', delay: 900}">
+					<dt class="ls"><i class="am-icon-cny"></i></dt>
+					<dd>455</dd>
+					<dd class="f12">全部收入</dd>
+				</dl>
+			</div>
+	</div>
+</div>
+</section>
+<script type="text/javascript">
+	$(document).on("change","#choose",function(){
+		// $('iframe').attr('src',"{:U('Admin/Index/welcome')}");
+		$(".yincangzhuye").click();
+		// console.log(aa);
+		// alert(aa);
+	});
+</script>
+<include file="Layout/footer"/>

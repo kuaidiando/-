@@ -1,0 +1,66 @@
+<include file="Layout/headerys"/>
+</head>
+<body>
+<article class="page-container">
+    <form class="form form-horizontal" id="form-admin-add"  method="post" enctype="multipart/form-data" >
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>余额操作：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" style="width:200px" value=""  id="money" name="money"><span style="color:red">[正数为充值，负数为扣款]</span>
+            </div>
+        </div>
+       
+        <!-- 隐藏id充当条件 -->
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button  class="qr btn btn-primary radius" id = "{$m_res.id}"type="submit"><i class="Hui-iconfont ">&#xe632;</i> 确认</button>
+                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    </form>
+</article>
+
+<script type="text/javascript">
+        /*编辑轮播图*/
+        $(document).on("click", '.qr', function () {
+            var id,money;
+            var id = $(this).attr('id');
+            var money = document.getElementById('money').value;
+                $.ajax({
+                    type:'POST',
+                    dataType: 'json',
+                    url:'{:U("Admin/User/update_member")}',
+                    data:{id:id,money:money},
+                    success: function (result) {
+                        if (result.status == 1) {
+                            layer.msg(result.msg,{icon:1,time:1000});
+                            layer_close();
+                        } else {
+                            layer.msg(result.msg,{icon:0,time:2000});
+                        }
+                    }
+                })
+        });
+    </script>
+
+<script type="text/javascript">
+    // $(document).on('change','#selsheng',function(){
+    //     var codesheng = $(this).val();//获取市对应code
+    //     var str = '';//城市对应区域
+    //     $.ajax({
+    //         type:'post',
+    //         dataType: 'json',
+    //         url:'{:U("Admin/Ajax/index")}',
+    //         data:{codesheng:codesheng},
+    //         success: function (dd) {
+    //             // 获取区域名称
+    //             $.each(dd,function(index,item){
+    //                 str += '<option value="'+item.code+'">'+item.name+'</option>'; 
+    //             })
+    //             //赋值区域
+    //             $("#selshi").html(str);
+    //         }
+    //     })
+    // });
+</script>
+<include file="Layout/footer"/>

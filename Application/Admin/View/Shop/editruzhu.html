@@ -1,0 +1,68 @@
+<include file="Layout/headerys"/>
+</head>
+<body>
+<article class="page-container">
+    <form class="form form-horizontal" id="form-admin-add" action="{:U('Admin/Shop/edit')}" method="post" enctype="multipart/form-data">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>名称：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="{$data.0.mingch}"  name="mingch">
+            </div>
+        </div>
+        
+        <!-- 隐藏id充当条件 -->
+       <input type="hidden" value="{$data.0.id}" name='id'>
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 通过审核</button>
+                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    </form>
+</article>
+
+<script type="text/javascript">
+    // 城市级联 省--》市
+    $(document).on('click','#selsheng',function(){
+        var codesheng = $(this).val();//获取省对应code
+        var str = '';//城市对应区域
+        $.ajax({
+            type:'post',
+            dataType: 'json',
+            url:'{:U("Admin/Ajax/shengdoshi")}',
+            data:{codesheng:codesheng},
+            success: function (dd) {
+                console.log(dd);
+                // 获取区域名称
+                $.each(dd,function(index,item){
+                    str += '<option value="'+item.code+'">'+item.name+'</option>'; 
+                })
+                //赋值区域
+                $("#selshi").html(str);
+                // 清空区
+                $("#jlquxianshi").html("");
+            }
+        })
+    });
+    // 城市级联 市--》县/区
+    $(document).on('click','#selshi',function(){
+        var codesheng = $(this).val();//获取市对应code
+        var str = '<span class="select-box"><select name="depcsjlxian"  class="select" id="selqu">';//城市对应区域
+        $.ajax({
+            type:'post',
+            dataType: 'json',
+            url:'{:U("Admin/Ajax/index")}',
+            data:{codesheng:codesheng},
+            success: function (dd) {
+                // 获取区域名称
+                $.each(dd,function(index,item){
+                    str += '<option value="'+item.code+'">'+item.name+'</option>'; 
+                })
+                str += '</select></span>';
+                //赋值区域
+                $("#jlquxianshi").html(str);
+            }
+        })
+    });
+</script>
+<include file="Layout/footer"/>
