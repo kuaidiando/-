@@ -1,0 +1,10 @@
+[ 2018-01-16T09:19:28+08:00 ] 127.0.0.1 /kuaidian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0330s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0000s ]
+

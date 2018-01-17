@@ -243,100 +243,42 @@ $(document).ready(function(){
         <div>
             <div class="page-container">
         <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-            <a href="javascript:;" onclick="admin_add('添加门店','<?php echo U('Admin/Shop/add');?>','800px','500px')"
-               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加门店</a></span>
+            <a href="javascript:;" onclick="admin_add('添加优惠卷','<?php echo U('Admin/Sale/add',array('id'=>"$id"));?>','800px','500px')"
+               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> <span id="addyouhui">添加优惠卷</span></a></span>
             <span class="r">共有数据：<strong><?php echo ($info["count"]); ?></strong> 条</span> </div>
         <div class="mt-20">
+        <!-- 判断有无优惠卷 -->
+        <input type="hidden" value="<?php echo ($typeid); ?>" id="typeid">
         <table class="table table-border table-bordered table-bg table-hover table-responsive">
             <thead>
                 <tr class="text-c">
                     <th width="30">编号</th>
-                    <th width="80">名称</th>
-                    <th width="30" style="width:10%;">LOGO</th>
-                    <th width="80">所属城市</th>
-                    <th width="60">门店类别</th>
-                    <th width="40">星数量</th>
-                    <th width="60">优惠卷</th>
-                    <th width="60">认证状态</th>
+                    <th width="30">名称</th>
+                    <th width="80">认证状态</th>
+                    <th width="60">排序</th>
                     <th width="120">操作</th>
                 </tr>
             </thead>
             <tbody>
-                <?php if(is_array($resshop)): foreach($resshop as $key=>$vo): ?><tr class="text-c">
-                            <td><?php echo ($vo["id"]); ?></td>
+                <?php if(is_array($data)): foreach($data as $key=>$vo): ?><tr class="text-c">
+                            <td id="youhuiid"><?php echo ($vo["id"]); ?></td>
                             <td><?php echo ($vo["mingch"]); ?></td>
-                            <td><img style="width: 30%;"src="/kuaidian/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
-                            <td><?php echo (depchengshi($vo["depcsjlshi"])); ?></td>
-                            <td><?php echo (shoptype($vo["type_shop"])); ?></td>
-                            <td><?php echo ($vo["xingsl"]); ?></td>
                             <td class="td-status">
-                                <?php if($vo["juan"] == 1 ): ?><span class="label label-success radius">
-                                        <a href="<?php echo U('Admin/Sale/index',array('menid' => $vo['id'],'type'=>1));?>" style="text-decoration: none;color:#fff;">有<?php echo (youhuishul($vo["id"])); ?>
-                                        </a>
-                                    </span> 
+                                <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">已发布</span>
                                     <?php else: ?> 
-                                    <span class="label label-danger radius">
-                                         <a href="<?php echo U('Admin/Sale/index',array('menid' => $vo['id'],'type'=>2));?>" style="text-decoration: none;color:#fff;">添加<?php echo (youhuishul($vo["id"])); ?>
-                                        </a>
-                                    </span><?php endif; ?>
+                                    <span class="label label-danger radius">未发布</span><?php endif; ?>
                             </td>
-                            <td class="td-status">
-                                <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">
-                                        <a  href="javascript:;"
-                                   onclick="admin_add('认证','<?php echo U('Admin/Authentica/index', array('mdid' => $vo['id']));?>'
-                                   ,'800px','500px')" style="text-decoration: none;color:#fff;">已通过</a>
-                                    </span>
-                                    <?php elseif($vo["zhuangt"] == 2): ?>
-                                    <div style="background-color:#ffae00;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;"><b>驳回中</b></div>
-                                    <?php elseif($vo["zhuangt"] == 3): ?>
-                                    <span class="label label-danger radius">未认证</span>
-                                    <?php elseif($vo["zhuangt"] == 4): ?>
-                                    <div style="background-color:#1160BA;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;"><b>待审核</b></div>
-                                    <?php elseif($vo["zhuangt"] == 5): ?>
-                                    <div style="background-color:#B300FF;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;">
-                                        <a  href="javascript:;"
-                                   onclick="admin_add('认证','<?php echo U('Admin/Authentica/index', array('mdid' => $vo['id']));?>'
-                                   ,'800px','500px')" style="text-decoration: none;color:#fff;"><b>已过期</b></a></div><?php endif; ?>
-                            </td>
+                            <td><?php echo ($vo["paix"]); ?></td>
                             <td class="td-manage" style="text-align: center;">
                                 
-                                <a  href="javascript:;"
-                                   onclick="admin_add('编辑','<?php echo U('Admin/Shop/editerweim', array('id' => $vo['id']));?>'
-                                   ,'800px','500px')">
-                                    &nbsp;&nbsp;二维码&nbsp;&nbsp;
-                                </a>
-                                <a href="<?php echo U('Admin/Seat/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
-                                   
-                                    &nbsp;&nbsp;座位列表&nbsp;&nbsp;
-                                </a>
-                                <!-- <a href="<?php echo U('Admin/Seattype/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
-                                   
-                                   &nbsp;&nbsp;座位类别&nbsp;&nbsp;
-                                </a> -->
-                                 <a  href="javascript:;"
-                                   onclick="admin_add('编辑','<?php echo U('Admin/Shop/edit', array('id' => $vo['id']));?>'
+                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
+                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Sale/edit', array('id' => $vo['id']));?>'
                                    ,'800px','500px')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
-                                </a>
-                                <br>
-                                <a href="<?php echo U('Admin/Food/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
-                                   
-                                    &nbsp;&nbsp;&nbsp;菜品管理&nbsp;&nbsp;
-                                </a>
-                                <a href="<?php echo U('Admin/Foodtype/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
-                                   
-                                    &nbsp;菜品类别
-                                </a>&nbsp;&nbsp;
-                                <!-- <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('详情','<?php echo U('Admin/Shop/xiangqing', array('id' => $vo['id']));?>'
-                                   ,'800','500')">
-                                    <i class="Hui-iconfont">&#xe627;</i>
-                                </a>&nbsp;&nbsp;&nbsp; -->
-                               
+                                </a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
                             </td>
                         </tr><?php endforeach; endif; ?>
-                
             </tbody>
         </table>
         </div>
@@ -346,6 +288,19 @@ $(document).ready(function(){
 </div>
 </section>
 <script type="text/javascript">
+        // 判断有无优惠卷 
+        $(document).ready(function(){ 
+        　　var typeid = $("#typeid").val();
+        // 从门店处传来
+            // if (typeid == 2) {
+                // 从页面内判断
+                if($("#youhuiid").length > 0){
+                    // alert("存在");
+                }else{
+                    // $("#addyouhui").click();
+                }
+            // }
+        });
         /*删除*/
         $(document).on("click", '.h-text-sc', function () {
             var op_obj = $(this).parents("tr");
@@ -355,7 +310,7 @@ $(document).ready(function(){
                 $.ajax({
                     type:'POST',
                     dataType: 'json',
-                    url:'<?php echo U("Admin/Shop/delete");?>',
+                    url:'<?php echo U("Admin/Sale/delete");?>',
                     data:{id:id},
                     success: function (result) {
                         if (result.status) {

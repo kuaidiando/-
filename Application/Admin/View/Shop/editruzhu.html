@@ -2,9 +2,8 @@
 </head>
 <body>
 <article class="page-container">
-    <form class="form form-horizontal" id="form-article-add" action="{:U('Admin/Authentica/edit')}" method="post" enctype="multipart/form-data">
-    
-          <!-- 基本信息 -->
+    <form class="form form-horizontal" id="form-admin-add" action="{:U('Admin/Shop/editruzhu')}" method="post" enctype="multipart/form-data">
+        <!-- 基本信息 -->
         <div style="margin-top: 2%;width: 87%;margin-left: 4%;background-color: #F7F7F7;">
              <div class="row cl">
                 <label class="form-label col-xs-4 col-sm-2" style="margin-left: -3%;"><b>认证信息</b></label>
@@ -36,10 +35,6 @@
             <div class="row cl">
                 <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">营业执照有效期：</label>
                 <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 50%;">{$data.0.ren_cyxukeriqi}</label>
-                <!-- 判断该字段是否过期 -->
-                <if condition="$data[0][type_shijianshifouguoqi] eq 2">
-                    <span style="color: red;"><b>营业执照过期</b></span>
-                </if>
             </div>
 
             <div class="row cl">
@@ -105,7 +100,7 @@
 
                 <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 50%;">{$data.0.caiwu_tel}</label>
             </div>
-            
+
             <div class="row cl">
                 <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">身份证（正面/反面）：</label>
                 <div class="formControls col-xs-8 col-sm-9" style="width: 62%;">
@@ -115,17 +110,30 @@
             </div>
             <div class="row cl">
                 <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">身份证有效期：</label>
-                <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 50%;">{$data.0.caiwu_sfzyouq}</label>
+                <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 30%;">{$data.0.caiwu_sfzyouq}</label>
+                <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 30%;">
+                <!-- 驳回信息 -->
+                <input type="text" class="bohuiyangshi" style="border: 1px;display: black;" placeholder="驳回信息"></label>
             </div>
             <br>
-        </div> 
+        </div>
+           
+        
+        <!-- 隐藏id充当条件 -->
+       <input type="hidden" value="{$data.0.id}" name='id'>
         <div class="row cl">
-            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
-                <!-- <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 认证</button> --><!-- 
-                <button onClick="article_save();" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button>
-                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button> -->
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 提交</button>
+                <button  class="btn btn-primary radius" type="button" id="bohui"><i class="Hui-iconfont">&#xe632;</i> 驳回</button>
+                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
             </div>
         </div>
     </form>
 </article>
+
+<script type="text/javascript">
+    $(document).on('click','#bohui',function(){
+        $(".bohuiyangshi").css("display","black");
+    });
+</script>
 <include file="Layout/footer"/>

@@ -16,7 +16,7 @@ class IndexController extends Controller
         $submit = I('post.submit');
         $user = M('user_admin');
         $where['name'] = $name;
-        $sub = $user->where()->find();
+        $sub = $user->where($where)->find();
         if ($sub['submit'] == $submit) {
             $this->redirect('Index/zhuye');
         }else{
@@ -27,7 +27,7 @@ class IndexController extends Controller
     //主页
     public function zhuye(){
         $user = M('city');
-        $result = $user ->select();
+        $result = $user ->order('paix desc')->select();
         $this->assign('res',$result);//城市信息
         $this->assign('chengshiid',I('get.id'));//城市id
         $this->display();
