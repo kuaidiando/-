@@ -1,3 +1,219 @@
+<<<<<<< HEAD
+[ 2018-01-17T14:23:00+08:00 ] 192.168.0.107 /kuaidian/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:23:00+08:00 ] 192.168.0.107 /kuaidian/Public/muban/assets/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000969s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:23:00+08:00 ] 192.168.0.107 /kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.theme.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:23:00+08:00 ] 192.168.0.107 /kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:23:00+08:00 ] 192.168.0.107 /kuaidian/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:23:00+08:00 ] 192.168.0.107 /kuaidian/Public/xin/admin/login/images/txt_input_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:23:45+08:00 ] 192.168.0.104 /kuaidian/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:23:45+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:23:45+08:00 ] 192.168.0.104 /kuaidian/Public/muban/assets/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:23:45+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.theme.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:23:45+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/images/txt_input_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:24:18+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:24:18+08:00 ] 192.168.0.104 /kuaidian/Public/muban/assets/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:24:18+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.theme.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:24:18+08:00 ] 192.168.0.104 /kuaidian/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:24:18+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/images/txt_input_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:25:02+08:00 ] 192.168.0.104 /kuaidian/Public/muban/assets/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:25:02+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.theme.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:25:02+08:00 ] 192.168.0.104 /kuaidian/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:25:02+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:25:02+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/images/txt_input_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:25:04+08:00 ] 192.168.0.104 /kuaidian/Public/muban/assets/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:25:04+08:00 ] 192.168.0.104 /kuaidian/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:25:04+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:25:04+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.theme.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:25:04+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/images/txt_input_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:25:04+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:25:04+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.theme.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:25:04+08:00 ] 192.168.0.104 /kuaidian/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:25:04+08:00 ] 192.168.0.104 /kuaidian/Public/muban/assets/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T14:25:04+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/images/txt_input_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T18:12:03+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T18:12:03+08:00 ] 192.168.0.104 /kuaidian/Public/muban/assets/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001205s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T18:12:03+08:00 ] 192.168.0.104 /kuaidian/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T18:12:03+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.theme.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T18:12:03+08:00 ] 192.168.0.104 /kuaidian/Public/xin/admin/login/images/txt_input_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+=======
 [ 2018-01-17T11:04:54+08:00 ] ::1 /-/Public/muban/assets/js/jquery.js
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
@@ -1714,5 +1930,42 @@ ERR: 无法加载模块:Public
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+>>>>>>> e6571e52e5e4726001c4278ada3b61ebd52842dc
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T19:14:19+08:00 ] ::1 /kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.theme.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T19:14:19+08:00 ] ::1 /kuaidian/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T19:14:19+08:00 ] ::1 /kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T19:14:19+08:00 ] ::1 /kuaidian/Public/muban/assets/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T19:14:19+08:00 ] ::1 /kuaidian/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-17T19:14:19+08:00 ] ::1 /kuaidian/Public/xin/admin/login/images/txt_input_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
 ERR: 无法加载模块:Public
 

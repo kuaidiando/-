@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
-<script type="text/javascript" src="/-/Public/jquery/jquery.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
  $("dd").hide();
@@ -21,17 +21,17 @@ $(document).ready(function(){
 });
 });
 </script>
-<!-- <script type="text/javascript" src="/-/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
+<!-- <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
  -->
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui/css/H-ui.min.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/H-ui.admin.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/icheck/icheck.css"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
-<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/style.css"/>
-<!-- <link rel="stylesheet" type="text/css" href="/-/Public/css/hidTable.css"/> -->
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui/css/H-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/H-ui.admin.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/icheck/icheck.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/style.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/> -->
 <!-- 分页效果 -->
-<!-- <link href="/-/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
+<!-- <link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
 <title>快点</title>
 <style type="text/css">
     .tu{
@@ -46,11 +46,7 @@ $(document).ready(function(){
         height: 50px;
     }
 </style>
-<<<<<<< HEAD
-<div class="navbar navbar-fixed-top" style="height:50px">
-=======
 <div class="navbar navbar-fixed-top" >
->>>>>>> e6571e52e5e4726001c4278ada3b61ebd52842dc
    
     <div class="container-fluid cl">
         <!-- <div class="tu"> -->
@@ -176,14 +172,14 @@ $(document).ready(function(){
 
 
 
-<script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');
@@ -246,83 +242,67 @@ $(document).ready(function(){
         <!-- 主题内容 -->
         <div>
             <div class="page-container">
-        <div class="cl pd-5 bg-1 bk-gray mt-20"> 
-            <span class="l">短信列表
-            <!-- <a href="javascript:;" onclick="admin_add('添加轮播图','<?php echo U('Admin/Event/add');?>','800','500')"
-               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加轮播图</a> -->
-           </span>
-            <span class="r">共有数据：<strong><?php echo ($num); ?></strong> 条</span> </div>
+        <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
+            <a href="javascript:;" onclick="admin_add('添加菜品','<?php echo U('Admin/Food/add',array('id'=>"$id"));?>','800px','500px')"
+               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加菜品</a></span>
+            <span class="r">共有数据：<strong><?php echo ($info["count"]); ?></strong> 条</span> </div>
         <div class="mt-20">
         <table class="table table-border table-bordered table-bg table-hover table-responsive">
             <thead>
                 <tr class="text-c">
                     <th width="30">编号</th>
-                    <th width="80">发送类型</th>
-                    <th width="80">接收人</th>
-                    <th width="60">验证码</th>
-
-                    <th width="80">创建时间</th>
-                    <th width="80">发送时间</th>
-                    <th width="80">发送状态</th>
-                    <th width="80">验证状态</th>
+                    <th width="100">名称</th>
+                    <th width="60" style="width: 8%">LOGO</th>
+                    <!-- <th width="60">原价</th> -->
+                    <th width="60">售价</th>
+                    <th width="60">菜品类别</th>
+                    <th width="60">菜品单位</th>
+                    <th width="120">规格</th>
+                   <!--  <th width="60">食材</th>
+                    <th width="60">口感</th> -->
+                    <th width="120">门店</th>
+                    <th width="60">发布状态</th>
                     <th width="120">操作</th>
                 </tr>
             </thead>
-            <!-- 弹出层代码 -->
-            <div id="modal-demo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content radius">
-                        <div class="modal-header">
-                            <h3 class="modal-title">短信内容是：</h3>
-                            <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
-                        </div>
-                        <div class="modal-body">
-                            <?php echo ($one_code["content"]); ?>
-                        </div>
-                        <div class="modal-footer">
-                           <!--  <button class="btn btn-primary">确定</button> -->
-                            <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
             <tbody>
-                <?php if(is_array($codes)): foreach($codes as $key=>$one_code): ?><tr class="text-c">
-                            <td><?php echo ($one_code["id"]); ?></td>
-                            <?php if($one_code["type"] == register): ?><td>注册</td>
-                            <?php elseif($one_code["type"] == repass): ?>
-                            <td>重置密码</td>
-                            <?php else: ?>
-                            <td>未知</td><?php endif; ?>
-                            <td><?php echo ($one_code["tel"]); ?></td>
-                           <!--  <td><button class="btn radius btn-primary size-L" onClick="modaldemo('<?php echo ($one_code["content"]); ?>')">查看</button></td> -->
-                            <td><?php echo ($one_code["code"]); ?></td>
-                            <td><?php echo ($one_code["add_time"]); ?></td>
-                            <td><?php echo ($one_code["update_time"]); ?></td>
-
-                            <?php if($one_code["status"] == 1): ?><td>发送失败</td>
-                            <?php elseif($one_code["status"] == 5): ?>
-                            <td>已发送</td>
-                            <?php elseif($one_code["status"] == 10): ?>
-
-                            <td>已收到</td><?php endif; ?>
-                            <!-- <td><?php echo ($one_info["status"]); ?></td> -->
-                            <?php if($one_code["yz_status"] == 0): ?><td>未验证</td>
-                            <?php elseif($one_code["yz_status"] == 1): ?>
-                            <td>已验证</td><?php endif; ?>
-
-                            
-                           
+                <?php if(is_array($data)): foreach($data as $key=>$vo): ?><tr class="text-c">
+                            <td><?php echo ($vo["id"]); ?></td>
+                            <td><?php echo ($vo["mingch"]); ?></td>
+                            <td><img style="width: 50%;"src="/kuaidian/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
+                            <!-- <td>￥<?php echo ($vo["jiage"]); ?></td> -->
+                            <td>￥<?php echo ($vo["jiage_youhui"]); ?></td>
+                            <td><?php echo (foodtype($vo["food_type"])); ?></td>
+                            <td><?php echo (caipindanwei($vo["dwid"])); ?></td>
+                            <td>
+                                <div style="text-align: center;">
+                                    <?php if($vo["guige"] == 2 ): ?>无
+                                        <?php else: endif; ?>
+                                    <span style="vertical-align:-1px;"><?php echo (fenliangdo($vo["flid"])); ?></span>
+                                    <span style="vertical-align:-1px;"><?php echo (kouweido($vo["kwid"])); ?></span>
+                                    <a style="margin-right: 10%;" href="javascript:;"
+                                       onclick="admin_add('编辑规格','<?php echo U('Admin/Food/editfenliang', array('id' => $vo['id'],'flid'=>$vo['flid'],'kwid'=>$vo['kwid']));?>'
+                                       ,'800px','500px')">
+                                        <span style="vertical-align:baseline;color: red;"><b><i class="Hui-iconfont">&#xe667;</i></b></span>
+                                    </a>
+                                </div>
+                            </td>
+                           <!--  <td><?php echo ($vo["shicai"]); ?></td>
+                            <td><?php echo ($vo["kougan"]); ?></td> -->
+                            <td><?php echo (shopnamedo($vo["dep_shop"])); ?></td>
+                            <td class="td-status">
+                                <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">已发布</span>
+                                    <?php else: ?> 
+                                    <span class="label label-danger radius">未发布</span><?php endif; ?>
+                            </td>
                             <td class="td-manage" style="text-align: center;">
-                             
-                                <!-- <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑详情','<?php echo U('Admin/User/edit', array('id' => $one_info["id"]));?>'
+                               
+                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
+                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Food/edit', array('id' => $vo['id'],'flid'=>$vo['flid'],'kwid'=>$vo['kwid']));?>'
                                    ,'800px','500px')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
-                                </a>&nbsp;&nbsp;&nbsp;&nbsp; -->
-                                <a class="h-text-sc" id="<?php echo ($one_code["sms_id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
+                                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
                             </td>
                         </tr><?php endforeach; endif; ?>
                 
@@ -335,42 +315,37 @@ $(document).ready(function(){
 </div>
 </section>
 <script type="text/javascript">
-        // function modaldemo(res){
-        //     $("#modal-demo").modal("show")
-        //     $(".modal-body").html(res);
-        // }
         /*删除*/
         $(document).on("click", '.h-text-sc', function () {
             var op_obj = $(this).parents("tr");
             var id = $(this).attr('id');
+            // alert(id);
             layer.confirm('确认要删除吗？',function(){
                 $.ajax({
-                    type:'GET',
+                    type:'POST',
                     dataType: 'json',
-                    url:'<?php echo U("Admin/Code/del");?>',
+                    url:'<?php echo U("Admin/Food/delete");?>',
                     data:{id:id},
                     success: function (result) {
                         if (result.status) {
+                            op_obj.remove();
                             layer.msg(result.msg,{icon:1,time:1000});
                         } else {
-                            op_obj.remove();
-
                             layer.msg(result.msg,{icon:0,time:2000});
-
                         }
                     }
                 })
             });
         });
     </script>
-<script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');

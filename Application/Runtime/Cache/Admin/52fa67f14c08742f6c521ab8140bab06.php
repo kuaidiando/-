@@ -321,10 +321,19 @@ $(document).ready(function(){
                                 <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">
                                         <a  href="javascript:;"
                                    onclick="admin_add('认证','<?php echo U('Admin/Authentica/index', array('mdid' => $vo['id']));?>'
-                                   ,'800px','500px')" style="text-decoration: none;color:#fff;">已发布</a>
+                                   ,'800px','500px')" style="text-decoration: none;color:#fff;">已通过</a>
                                     </span>
-                                    <?php else: ?> 
-                                    <span class="label label-danger radius">未发布</span><?php endif; ?>
+                                    <?php elseif($vo["zhuangt"] == 2): ?>
+                                    <div style="background-color:#ffae00;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;"><b>驳回中</b></div>
+                                    <?php elseif($vo["zhuangt"] == 3): ?>
+                                    <span class="label label-danger radius">未认证</span>
+                                    <?php elseif($vo["zhuangt"] == 4): ?>
+                                    <div style="background-color:#1160BA;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;"><b>待审核</b></div>
+                                    <?php elseif($vo["zhuangt"] == 5): ?>
+                                    <div style="background-color:#B300FF;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;">
+                                        <a  href="javascript:;"
+                                   onclick="admin_add('认证','<?php echo U('Admin/Authentica/index', array('mdid' => $vo['id']));?>'
+                                   ,'800px','500px')" style="text-decoration: none;color:#fff;"><b>已过期</b></a></div><?php endif; ?>
                             </td>
                             <td class="td-manage" style="text-align: center;">
                                 

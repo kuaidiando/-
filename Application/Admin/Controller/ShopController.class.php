@@ -204,10 +204,10 @@ class ShopController extends BasicController
         $id = I('get.id');
             $user = M('shop');
         if ($id == 1) {
-            $where['zhuangt'] = 2;
+            $where['zhuangt'] = array('neq',1);
         }else{
             $where['depcsjlshi'] = $id;
-            $where['zhuangt'] = 2;
+            $where['zhuangt'] = array('neq',1);
         }
         $resmend = $user->where($where)->select();
         // dump($resmend[0]['lianxiren']);
@@ -221,24 +221,11 @@ class ShopController extends BasicController
     public function editruzhu(){
         if (IS_POST) {
             $id = I('post.id');
+            // dump(I('post.'));
+            // dump($id);die;
             $User = M("shop"); // 实例化User对象
             $where['id'] = $id;
-            $data = I('post.');//更改数据
-            // dump($data);die;
-              // 图片上传
-             $upload = new \Think\Upload();// 实例化上传类
-            $upload->maxSize   =     3145728 ;// 设置附件上传大小
-            $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
-            $upload->rootPath  =     './Public/img/'; // 设置附件上传根目录
-            $upload->savePath  =     ''; // 设置附件上传（子）目录
-
-            // 上传文件
-            $info   =   $upload->upload();
-            // 判断图片是否存在
-            if ($info['logo']['savename']) {
-                $logolujing = '/img/'.$info['logo']['savepath'].$info['logo']['savename'];
-                $data['logo'] = $logolujing;
-            }
+            $data['zhuangt'] = 1;//更改数据
             // dump($data);die;
             $res = $User->where($where)->data($data)->save();
             // echo $User->getLastSql();die;
@@ -252,7 +239,6 @@ class ShopController extends BasicController
             $user = M('shop');
             $where['id'] = $jxdm;
             $data = $user->where($where)->select();
-            dump($data);
             $this->assign('data',$data);// 查询门店信息
             $this->display();
         }

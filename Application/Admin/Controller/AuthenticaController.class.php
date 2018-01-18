@@ -19,9 +19,8 @@ class AuthenticaController extends BasicController
     	$User = M("shop"); // 实例化User对象
 		$where['id'] = $mdid;
 		// dump($data);die;
-		$res = $User->select();
-    	$this->assign('mdid',$mdid);//门店id
-    	$this->assign('res',$res);//门店单条信息
+		$res = $User->where($where)->select();
+    	$this->assign('data',$res);//门店单条信息
         $this->display();
     }
     public function edit(){
