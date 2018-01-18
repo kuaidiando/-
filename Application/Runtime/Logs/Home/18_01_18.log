@@ -2534,3 +2534,23 @@ INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
 SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0035s ]
 SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0007s ]
 
+[ 2018-01-18T17:44:35+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0008s ]
+
+[ 2018-01-18T17:44:44+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
