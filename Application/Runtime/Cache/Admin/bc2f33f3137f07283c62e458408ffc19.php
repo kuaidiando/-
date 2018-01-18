@@ -244,8 +244,6 @@ $(document).ready(function(){
             <div class="page-container">
         <div class="cl pd-5 bg-1 bk-gray mt-20"> 
             <span class="l">会员列表
-            <!-- <a href="javascript:;" onclick="admin_add('添加轮播图','<?php echo U('Admin/Event/add');?>','800','500')"
-               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加轮播图</a> -->
            </span>
             <span class="r">共有数据：<strong><?php echo ($user_num); ?></strong> 条</span> </div>
         <div class="mt-20">
@@ -267,12 +265,6 @@ $(document).ready(function(){
                             <td><?php echo ($one_info["add_time"]); ?></td>
                             <td>￥<?php echo ($one_info["money"]); ?>元</td>
                             <td><?php echo ($one_info["admin_id"]); ?></td>
-                           
-                            <!-- <td class="td-manage" style="text-align: center;">
-                             
-                                <a class="h-text-sc" id="<?php echo ($one_info["id"]); ?>"><i class="Hui-iconfont">彻底删除</i></a>
-                               
-                            </td> -->
                         </tr><?php endforeach; endif; ?>
                 
             </tbody>
@@ -285,29 +277,29 @@ $(document).ready(function(){
 </section>
 <script type="text/javascript">
         // 删除
-        $(document).on("click", '.h-text-sc', function () {
-            var op_obj = $(this).parents("tr");
-            var id = $(this).attr('id');
-            // alert(id);exit;
-            layer.confirm('确认要删除吗？',function(){
-                $.ajax({
-                    type:'GET',
-                    dataType: 'json',
-                    url:'<?php echo U("Admin/Event/del");?>',
-                    data:{id:id},
-                    success: function (result) {
-                        if (result.status) {
-                            layer.msg(result.msg,{icon:1,time:1000});
-                        } else {
-                            op_obj.remove();
+        // $(document).on("click", '.h-text-sc', function () {
+        //     var op_obj = $(this).parents("tr");
+        //     var id = $(this).attr('id');
+        //     // alert(id);exit;
+        //     layer.confirm('确认要删除吗？',function(){
+        //         $.ajax({
+        //             type:'GET',
+        //             dataType: 'json',
+        //             url:'<?php echo U("Admin/Event/del");?>',
+        //             data:{id:id},
+        //             success: function (result) {
+        //                 if (result.status) {
+        //                     layer.msg(result.msg,{icon:1,time:1000});
+        //                 } else {
+        //                     op_obj.remove();
 
-                            layer.msg(result.msg,{icon:0,time:2000});
+        //                     layer.msg(result.msg,{icon:0,time:2000});
 
-                        }
-                    }
-                })
-            });
-        });
+        //                 }
+        //             }
+        //         })
+        //     });
+        // });
     </script>
 <script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
