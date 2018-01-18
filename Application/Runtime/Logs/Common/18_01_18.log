@@ -34,3 +34,33 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001281s ]
 ERR: 无法加载模块:Public
 
+[ 2018-01-18T11:33:34+08:00 ] 192.168.0.106 /kuaidian/index.php%E3%80%81home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+ERR: 无法加载模块:Index.php、home
+
+[ 2018-01-18T11:33:49+08:00 ] 192.168.0.106 /kuaidian/index.php%E3%80%81home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+ERR: 无法加载模块:Index.php、home
+
+[ 2018-01-18T11:34:05+08:00 ] 192.168.0.106 /kuaidian/index.php%E3%80%81home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+ERR: 无法加载模块:Index.php、home
+
+[ 2018-01-18T15:29:02+08:00 ] 192.168.0.111 /kuaidian/index.php/public/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-18T15:29:13+08:00 ] 192.168.0.111 /kuaidian/index.php/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000983s ]
+ERR: 无法加载模块:Img
+

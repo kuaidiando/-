@@ -73,7 +73,7 @@ $(document).ready(function(){
         <nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
         <ul class="cl">
             <li><?php echo (session('uname')); ?></li>
-            <li><a href="<?php echo U('Admin/Public/loginout');?>">退出asdfaaaa</a></li>
+            <li><a href="<?php echo U('Admin/Public/loginout');?>">退出</a></li>
         </ul>
         </nav>
     </div>

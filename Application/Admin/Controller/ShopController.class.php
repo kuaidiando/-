@@ -220,12 +220,19 @@ class ShopController extends BasicController
     // 执行入驻
     public function editruzhu(){
         if (IS_POST) {
+            $data= I('post.');
             $id = I('post.id');
             // dump(I('post.'));
             // dump($id);die;
             $User = M("shop"); // 实例化User对象
+            // dump($data['type_shijianshifouguoqi']);
+            // 判断是否有驳回信息
+            if (!empty($data['type_shijianshifouguoqi'])) {
+                $data['zhuangt'] = 2;//更改数据
+            }else{
+                $data['zhuangt'] = 1;//更改数据
+            }
             $where['id'] = $id;
-            $data['zhuangt'] = 1;//更改数据
             // dump($data);die;
             $res = $User->where($where)->data($data)->save();
             // echo $User->getLastSql();die;

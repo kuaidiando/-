@@ -8,3 +8,2529 @@ INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
 SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0625s ]
 SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0009s ]
 
+[ 2018-01-18T09:50:09+08:00 ] 192.168.0.111 /kuaidian/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0042s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T09:52:44+08:00 ] 192.168.0.106 /kuaidian/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0039s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T09:57:01+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0462s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T09:57:51+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T09:57:53+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T09:57:53+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T10:06:42+08:00 ] ::1 /kuaidian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.4414s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0010s ]
+
+[ 2018-01-18T10:07:02+08:00 ] ::1 /kuaidian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0040s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T10:07:09+08:00 ] ::1 /kuaidian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0052s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T10:07:10+08:00 ] ::1 /kuaidian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0050s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T11:32:54+08:00 ] 192.168.0.106 /kuaidian/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001568s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0055s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T11:57:19+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T11:59:29+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?callback=jQuery20007525856503499713_1516248085944&id=1&_=1516248085945
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T12:01:17+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?callback=jQuery20001556509098588068_1516248191270&id=1&_=1516248191271
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T12:06:47+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T12:07:02+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T12:08:11+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?callback=jQuery2000734377614627229_1516248608494&id=1&_=1516248608495
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T12:11:02+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?callback=jQuery200024086008295557493_1516248779056&id=1&_=1516248779057
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T12:12:49+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T12:14:34+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T12:14:50+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?callback=jQuery2000981171091865275_1516249006989&id=1&_=1516249006990
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T12:15:37+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?callback=jQuery20006668722299595382_1516249054775&id=1&_=1516249054776
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T12:15:39+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?callback=jQuery20006668722299595382_1516249054775&id=1&_=1516249054777
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T12:15:40+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?callback=jQuery20006668722299595382_1516249054775&id=1&_=1516249054778
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T12:15:40+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?callback=jQuery20006668722299595382_1516249054775&id=1&_=1516249054779
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T12:15:40+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?callback=jQuery20006668722299595382_1516249054775&id=1&_=1516249054780
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T12:15:41+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?callback=jQuery20006668722299595382_1516249054775&id=1&_=1516249054781
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T12:15:41+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?callback=jQuery20006668722299595382_1516249054775&id=1&_=1516249054782
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T13:21:22+08:00 ] 192.168.0.106 /kuaidian/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0055s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T13:46:46+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?callback=jQuery2000895041869275478_1516254518205&id=1&_=1516254518206
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002048s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T13:53:36+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?callback=jQuery20006081307413582373_1516254932912&id=1&_=1516254932913
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T13:56:59+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T13:57:29+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T13:58:05+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T13:58:40+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T14:48:07+08:00 ] 192.168.0.107 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003763s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.4551s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T14:49:49+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001782s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2018-01-18T14:51:21+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T14:52:47+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T15:01:48+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T15:08:05+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `food`  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:11:12+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T15:11:12+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T15:11:12+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:11:13+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T15:11:13+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:11:13+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T15:11:14+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000178s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T15:11:14+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T15:11:14+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:11:14+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:11:27+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 0 AND `zhuangt` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T15:11:35+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0448s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 0 AND `zhuangt` = 1  [ RunTime:0.0018s ]
+
+[ 2018-01-18T15:11:49+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:19:51+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T15:19:51+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T15:19:52+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T15:19:52+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T15:19:52+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T15:19:52+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:19:52+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T15:19:52+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:19:53+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T15:19:53+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:19:53+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:19:53+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0351s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T15:19:53+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:19:54+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:19:56+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1 AND `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:21:12+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
+ERR: 1052:Column 'zhuangt' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `food` INNER JOIN food_type on food_type.id = food.food_type  WHERE `dep_shop` = 1 AND `zhuangt` = 1 
+ERR: 1052:Column 'zhuangt' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `food` INNER JOIN food_type on food_type.id = food.food_type  WHERE `dep_shop` = 1 AND `zhuangt` = 1 
+
+[ 2018-01-18T15:22:51+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0037s ]
+ERR: 1052:Column 'zhuangt' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE `dep_shop` = 1 AND `zhuangt` = 1 
+ERR: 1052:Column 'zhuangt' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE `dep_shop` = 1 AND `zhuangt` = 1 
+
+[ 2018-01-18T15:23:37+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T15:24:17+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T15:25:13+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
+SQL: SELECT food.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:25:14+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0039s ]
+SQL: SELECT food.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T15:25:21+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0045s ]
+SQL: SELECT food.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:25:54+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+
+[ 2018-01-18T15:26:05+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0047s ]
+SQL: SELECT food.mingch,food.food_type,food_type.id FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:26:20+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0045s ]
+SQL: SELECT food.mingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T15:26:38+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T15:27:17+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0039s ]
+SQL: SELECT food.mingch,food.food_type,food_type.mingchf FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:30:13+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+
+[ 2018-01-18T15:30:14+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+
+[ 2018-01-18T15:30:33+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+
+[ 2018-01-18T15:30:33+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+
+[ 2018-01-18T15:30:34+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2018-01-18T15:30:34+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+
+[ 2018-01-18T15:30:34+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+
+[ 2018-01-18T15:30:34+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2018-01-18T15:30:34+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2018-01-18T15:30:34+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+
+[ 2018-01-18T15:30:34+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+
+[ 2018-01-18T15:30:35+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+
+[ 2018-01-18T15:30:35+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+
+[ 2018-01-18T15:30:36+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+
+[ 2018-01-18T15:30:36+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+
+[ 2018-01-18T15:30:36+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+
+[ 2018-01-18T15:30:36+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+
+[ 2018-01-18T15:30:36+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+
+[ 2018-01-18T15:30:36+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+
+[ 2018-01-18T15:30:37+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+
+[ 2018-01-18T15:30:37+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+
+[ 2018-01-18T15:30:37+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+
+[ 2018-01-18T15:30:37+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+
+[ 2018-01-18T15:30:37+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+
+[ 2018-01-18T15:30:53+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+
+[ 2018-01-18T15:30:54+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index/img/2018-01-10/5a55d1b0e4e1c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+
+[ 2018-01-18T15:31:11+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0075s ]
+SQL: SELECT food.mingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:31:11+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0049s ]
+SQL: SELECT food.mingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0008s ]
+
+[ 2018-01-18T15:31:23+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0043s ]
+SQL: SELECT food.mingch as dd,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:31:40+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0045s ]
+SQL: SELECT food.mingch as mdmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T15:34:51+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0047s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T15:34:52+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0033s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.zhuangt = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T15:34:52+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.zhuangt = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T15:34:52+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0039s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.zhuangt = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:35:02+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:35:03+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0005s ]
+
+[ 2018-01-18T15:35:03+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0003s ]
+
+[ 2018-01-18T15:35:03+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0003s ]
+
+[ 2018-01-18T15:35:03+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0047s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0005s ]
+
+[ 2018-01-18T15:35:04+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0043s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0005s ]
+
+[ 2018-01-18T15:35:04+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0038s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0003s ]
+
+[ 2018-01-18T15:35:04+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:35:04+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0005s ]
+
+[ 2018-01-18T15:35:05+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0005s ]
+
+[ 2018-01-18T15:35:05+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:35:05+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0054s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0007s ]
+
+[ 2018-01-18T15:35:05+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0054s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:35:05+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0195s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0003s ]
+
+[ 2018-01-18T15:35:06+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:35:06+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0003s ]
+
+[ 2018-01-18T15:37:28+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0041s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0004s ]
+ERR: Call to a member function select() on array
+
+[ 2018-01-18T15:38:01+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0005s ]
+ERR: Call to a member function select() on array
+
+[ 2018-01-18T15:38:02+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0003s ]
+ERR: Call to a member function select() on array
+
+[ 2018-01-18T15:38:03+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0042s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0003s ]
+ERR: Call to a member function select() on array
+
+[ 2018-01-18T15:39:02+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0044s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0003s ]
+
+[ 2018-01-18T15:50:05+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0038s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 35 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0003s ]
+
+[ 2018-01-18T15:55:09+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0428s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 48 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0008s ]
+
+[ 2018-01-18T15:55:28+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0034s ]
+ERR: 1054:Unknown column 'food_type.dep_shop' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `food_type` WHERE food_type.dep_shop = 1 AND food_type.zhuangt = 1 
+ERR: 1054:Unknown column 'food_type.dep_shop' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `food_type` WHERE food_type.dep_shop = 1 AND food_type.zhuangt = 1 
+
+[ 2018-01-18T15:55:39+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T15:59:40+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T16:00:04+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T16:00:10+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:00:31+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+
+[ 2018-01-18T16:02:34+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+NOTIC: [8] Undefined variable: res D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 34 行.
+
+[ 2018-01-18T16:02:44+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+
+[ 2018-01-18T16:02:54+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T16:04:14+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T16:04:23+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+
+[ 2018-01-18T16:04:36+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T16:05:32+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+
+[ 2018-01-18T16:06:25+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+
+[ 2018-01-18T16:06:30+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T16:09:04+08:00 ] ::1 /kuaidian/index.php/Home/Index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0039s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T16:09:11+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T16:09:51+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0038s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 64 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0004s ]
+
+[ 2018-01-18T16:09:53+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T16:09:53+08:00 ] ::1 /kuaidian/index.php/Home/Index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0045s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T16:09:54+08:00 ] ::1 /kuaidian/index.php/Home/Index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0052s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T16:09:55+08:00 ] ::1 /kuaidian/index.php/Home/Index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0045s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:09:55+08:00 ] ::1 /kuaidian/index.php/Home/Index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0051s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T16:10:40+08:00 ] ::1 /kuaidian/index.php/Home/Index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0041s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:10:41+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T16:10:42+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T16:10:43+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0008s ]
+
+[ 2018-01-18T16:10:43+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T16:11:00+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+
+[ 2018-01-18T16:11:27+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+
+[ 2018-01-18T16:11:40+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T16:13:28+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+
+[ 2018-01-18T16:14:53+08:00 ] ::1 /kuaidian/index.php/Home/Index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0043s ]
+SQL: SELECT `mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T16:15:18+08:00 ] ::1 /kuaidian/index.php/Home/Index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `zhuangt` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T16:15:28+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+
+[ 2018-01-18T16:15:51+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T16:22:41+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0053s ]
+SQL: SELECT `id`,`mingch`,`paix`,`zhushi` FROM `food_type` WHERE `zhuangt` = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T16:23:05+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`mingch`,`paix`,`zhushi` FROM `food_type` WHERE `zhuangt` = 1 ORDER BY paix desc  [ RunTime:0.0006s ]
+
+[ 2018-01-18T16:23:23+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`mingch`,`paix`,`zhushi` FROM `food_type` WHERE `zhuangt` = 1 ORDER BY paix desc  [ RunTime:0.0010s ]
+
+[ 2018-01-18T16:23:33+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`mingch`,`paix`,`zhushi` FROM `food_type` WHERE `zhuangt` = 1 ORDER BY paix asc  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:23:47+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`mingch`,`paix`,`zhushi` FROM `food_type` WHERE `zhuangt` = 1 ORDER BY paix asc  [ RunTime:0.0003s ]
+
+[ 2018-01-18T16:27:22+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0004s ]
+
+[ 2018-01-18T16:27:23+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 62 行.
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type   [ RunTime:0.0004s ]
+
+[ 2018-01-18T16:27:54+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0043s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:29:17+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:29:34+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0042s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T16:29:49+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000216s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0041s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T16:30:12+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0038s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T16:31:38+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001176s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0035s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:32:09+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0041s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T16:43:06+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,`` FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1 
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,`` FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1 
+
+[ 2018-01-18T16:43:17+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0043s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,`` FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1 
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,`` FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1 
+
+[ 2018-01-18T16:43:19+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001352s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T16:43:34+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0059s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia FROM `food` INNER JOIN food_type ON food_type.id = food.food_type  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T16:43:57+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0036s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON food_type.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:45:00+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0034s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:45:47+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0041s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T16:46:12+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0037s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:47:09+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T16:48:00+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0044s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:48:03+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0049s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:48:04+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T16:48:07+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0045s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T16:48:07+08:00 ] ::1 /kuaidian/index.php/Home/Index/food?shopid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0045s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:48:08+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0034s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T16:48:08+08:00 ] ::1 /kuaidian/index.php/Home/Index/foodtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`mingch`,`paix`,`zhushi` FROM `food_type` WHERE `zhuangt` = 1 ORDER BY paix asc  [ RunTime:0.0008s ]
+
+[ 2018-01-18T16:48:12+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T16:49:16+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0034s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:50:16+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0037s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T16:50:45+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001870s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0036s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:51:03+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0042s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T16:51:07+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0037s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:51:12+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T16:51:40+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T16:51:44+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T16:51:57+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0345s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T16:52:02+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0042s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T16:52:02+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0039s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:52:03+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0039s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T16:52:03+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0085s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T16:53:06+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T16:53:29+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0014s ]
+
+[ 2018-01-18T16:54:04+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0042s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:54:39+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0051s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T16:55:10+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T16:55:11+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0036s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:55:31+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:56:59+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0041s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T16:57:30+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+
+[ 2018-01-18T16:57:32+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T16:57:51+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0008s ]
+
+[ 2018-01-18T17:05:38+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0033s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T17:05:38+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0044s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T17:05:39+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0036s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T17:05:39+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0034s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T17:05:39+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T17:05:54+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T17:06:34+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0051s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0018s ]
+
+[ 2018-01-18T17:08:19+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0033s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T17:09:33+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0043s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T17:09:40+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+
+[ 2018-01-18T17:14:12+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T17:15:15+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T17:17:59+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
+SQL: SELECT food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-18T17:21:19+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0041s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T17:23:52+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2018-01-18T17:24:17+08:00 ] 192.168.0.111 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0009s ]
+
+[ 2018-01-18T17:28:29+08:00 ] ::1 /kuaidian/index.php/Home/Index/dantiaoshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `id` = 1 AND `zhuangt` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T17:28:48+08:00 ] ::1 /kuaidian/index.php/Home/Index/dantiaoshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `id` = 1 AND `zhuangt` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T17:28:55+08:00 ] ::1 /kuaidian/index.php/Home/Index/dantiaoshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+
+[ 2018-01-18T17:29:36+08:00 ] ::1 /kuaidian/index.php/Home/Index/dantiaoshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0048s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `id` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T17:29:36+08:00 ] ::1 /kuaidian/index.php/Home/Index/dantiaoshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `id` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T17:29:42+08:00 ] 192.168.0.106 /kuaidian/index.php/home/event/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `event` WHERE `status` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T17:29:53+08:00 ] ::1 /kuaidian/index.php/Home/Index/dantiaoshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `id` = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T17:30:01+08:00 ] ::1 /kuaidian/index.php/Home/Index/dantiaoshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan` FROM `shop` WHERE `id` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T17:30:28+08:00 ] ::1 /kuaidian/index.php/Home/Index/dantiaoshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T17:30:54+08:00 ] ::1 /kuaidian/index.php/Home/Index/dantiaoshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+
+[ 2018-01-18T17:31:15+08:00 ] ::1 /kuaidian/index.php/Home/Index/dantiaoshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+
+[ 2018-01-18T17:31:30+08:00 ] ::1 /kuaidian/index.php/Home/Index/dantiaoshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0004s ]
+
+[ 2018-01-18T17:37:32+08:00 ] ::1 /kuaidian/index.php/Home/Index/dantiaoshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0006s ]
+
+[ 2018-01-18T17:37:55+08:00 ] ::1 /kuaidian/index.php/Home/Index/csjlshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2018-01-18T17:38:25+08:00 ] ::1 /kuaidian/index.php/Home/Index/csjlshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0045s ]
+
+[ 2018-01-18T17:38:45+08:00 ] ::1 /kuaidian/index.php/Home/Index/csjlshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0044s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\kuaidian\ThinkPHP\Common\functions.php:850) D:\xampp\htdocs\kuaidian\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2018-01-18T17:40:22+08:00 ] ::1 /kuaidian/index.php/Home/Index/csjlshi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0043s ]
+
+[ 2018-01-18T17:40:26+08:00 ] ::1 /kuaidian/index.php/Home/Index/dantiaoshop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0003s ]
+
+[ 2018-01-18T17:42:05+08:00 ] ::1 /kuaidian/index.php/Home/Index/food
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0035s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` INNER JOIN food_type ON food_type.id = food.food_type INNER JOIN cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 AND food.zhuangt = 1  [ RunTime:0.0007s ]
+

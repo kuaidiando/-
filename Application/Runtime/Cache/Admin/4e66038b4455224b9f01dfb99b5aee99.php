@@ -286,7 +286,7 @@ $(document).ready(function(){
                             </td>
                             <td class="td-manage" style="text-align: center;">
                                 
-                              <a  href="javascript:;"
+                                <a  href="javascript:;"
                                    onclick="admin_add('查看商家入驻申请','<?php echo U('Admin/Shop/editruzhu', array('id' => $vo['id']));?>'
                                    ,'800px','500px')">
                                     查看
