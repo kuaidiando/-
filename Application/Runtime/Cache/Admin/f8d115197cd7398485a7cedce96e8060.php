@@ -156,7 +156,10 @@ $(document).ready(function(){
                 <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 30%;"><?php echo ($data["0"]["caiwu_sfzyouq"]); ?></label>
                 <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 30%;">
                 <!-- 驳回信息 -->
-                <input type="text" class="bohuiyangshi" style="border: 1px;display: black;" placeholder="驳回信息"></label>
+                <span class="bohuiyangshi" style="display: none;">
+                    <input type="text" name="type_shijianshifouguoqi" style="border: 1px;" placeholder="驳回信息">
+                </span>
+                </label>
             </div>
             <br>
         </div>
@@ -176,7 +179,7 @@ $(document).ready(function(){
 
 <script type="text/javascript">
     $(document).on('click','#bohui',function(){
-        $(".bohuiyangshi").css("display","black");
+        $(".bohuiyangshi").toggle();
     });
 </script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
