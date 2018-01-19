@@ -54,7 +54,7 @@ $(document).ready(function(){
         </div>
        
         <!-- 隐藏id充当条件 -->
-       <!-- <input type="hidden" value="<?php echo ($res["id"]); ?>" name='id'> -->
+
         <div class="row cl">
             <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
                 <button  class="qr btn btn-primary radius" id = "<?php echo ($m_res["id"]); ?>"type="submit"><i class="Hui-iconfont ">&#xe632;</i> 确认</button>
@@ -70,14 +70,12 @@ $(document).ready(function(){
             var id,money;
             var id = $(this).attr('id');
             var money = document.getElementById('money').value;
-            // console.log(id);
-            // console.log(money);
-            // return false;
                 $.ajax({
                     type:'POST',
                     dataType: 'json',
                     url:'<?php echo U("Admin/User/update_member");?>',
                     data:{id:id,money:money},
+
                     success: function (result) {
                         if (result.status == 1) {
                             layer.msg(result.msg,{icon:1,time:1000});

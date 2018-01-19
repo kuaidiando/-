@@ -46,15 +46,11 @@ $(document).ready(function(){
         height: 50px;
     }
 </style>
-<<<<<<< HEAD
-<div class="navbar navbar-fixed-top" style="height:50px">
-=======
 <div class="navbar navbar-fixed-top" >
->>>>>>> e6571e52e5e4726001c4278ada3b61ebd52842dc
    
     <div class="container-fluid cl">
         <!-- <div class="tu"> -->
-        <!-- <img src="/kuaidian/Public/img/logo.png"> -->
+        <!-- <img src="/-/Public/img/logo.png"> -->
         <!-- </div> -->
             <a class="logo navbar-logo f-l mr-10 hidden-xs" href="<?php echo U('Admin/Index/zhuye');?>">首页</a>
             <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/shop/index');?>">商户管理</span></a>
