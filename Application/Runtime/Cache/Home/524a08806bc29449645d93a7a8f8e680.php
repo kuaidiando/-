@@ -1,0 +1,64 @@
+<?php if (!defined('THINK_PATH')) exit();?><html lang="en" data-dpr="1" style="font-size: 42.4px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script type="text/javascript" src="js/jquery-1.8.3-min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/jquery.metadata.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+
+
+    <title>注册</title>
+</head>
+<body style="font-size: 12px">
+
+<div class="header">
+    <span>注册</span>
+</div>
+
+<div class="zhuce">
+    <span>新用户注册</span>
+</div>
+
+
+<div class="wrapper">
+    <form id="signupForm" method="post" action="" class="zcform">
+        <div class="clearfix">
+            <label class="one" for="telphone">
+                <img src="images/geren2.png" alt="">
+            </label>
+
+            <div class="text">
+                <input id="telphone" name="telphone" class="required" value placeholder="请输入手机号" />
+            </div>
+        </div>
+
+        <div class="clearfix2">
+            <label class="two"  for="password">
+                <img src="images/mima.png" alt="">
+            </label>
+
+            <div class="text2">
+                <input id="password" name="password" type="password" class="{required:true,rangelength:[8,20],}" value placeholder="请输入密码" />
+            </div>
+        </div>
+
+        <!--<p class="clearfix3">-->
+            <!--<label class="three" >校验码:</label>-->
+            <!--<input class="identifying_code" type="text" value placeholder="请输入手机6位校验码" />-->
+            <!--<input class="get_code" type="button" value="获取验证码" />-->
+        <!--</p>-->
+
+        <!--<p class="clearfix4 agreement">-->
+            <!--<input type="checkbox" />-->
+            <!--<b class="left">已阅读并同意<a href="#">《用户协议》</a></b>-->
+        <!--</p>-->
+        <!--<p class="clearfix"><input class="submit" type="submit" value="立即注册"/></p>-->
+    </form>
+</div>
+
+
+</body>
+</html>

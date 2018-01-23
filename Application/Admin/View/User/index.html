@@ -27,8 +27,8 @@
                     <th width="80">余额</th>
                     <th width="60">头像</th>
                     <th width="80">性别</th>
-                    <th width="80">省份</th>
-                    <th width="80">城市</th>
+                    <th width="80">省份/城市</th>
+                    <!-- <th width="80">城市</th> -->
                     <th width="80">注册状态</th>
                     <th width="80">关注状态</th>
                     <th width="120">操作</th>
@@ -50,19 +50,40 @@
                             <else />
                             <td>未知</td>
                             </if>
-                            <td>{$one_info.province}</td>
-                            <td>{$one_info.city}</td>
+                            <td>{$one_info.province}/{$one_info.city}</td>
+                            <!-- <td>{$one_info.city}</td> -->
                             <if condition="$one_info.is_reg eq 0">
-                            <td>未注册</td>
+                            <td>
+                                <span class="label label-danger radius">
+                                        <a href="#" style="text-decoration: none;color:#fff;">未注册
+                                        </a>
+                                </span> 
+                            </td>
                             <elseif condition="$one_info.is_reg eq 1"/>
-                            <td>已注册</td>
+                            <td>
+                                <span class="label label-success radius">
+                                         <a href="#" style="text-decoration: none;color:#fff;">已注册
+                                        </a>
+                                </span>
+                            </td>
                             <else />
                             <td>未知</td>
                             </if>
                             <if condition="$one_info.con eq 0">
-                            <td>未关注</td>
+                            <td>
+                                <span class="label label-danger radius">
+                                        <a href="#" style="text-decoration: none;color:#fff;">未关注
+                                        </a>
+                                </span>
+                            </td>
                             <elseif condition="$one_info.con eq 1"/>
-                            <td>已关注</td>
+                            <td>
+                                <span class="label label-success radius">
+                                         <a href="#" style="text-decoration: none;color:#fff;">已关注
+                                        </a>
+                                </span>                          
+                                                            
+                            </td>
                             <else />
                             <td>未知</td>
                             </if>

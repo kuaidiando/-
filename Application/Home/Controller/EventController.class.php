@@ -12,7 +12,6 @@ use Think\Controller;
 class EventController extends Controller {
     public function _initialize()
     {
-        header('Access-Control-Allow-Origin:*'); 
         //如果登录就调至前台的模块
        // $this->checkreg($tel);
     }

@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #EAEAEA;
+}
+.hezi{
+    width: 100%;
+    height: 300px;
+    margin-top: 12px;
+    background-color: white;
+    border-top: 1.2px solid #DEDEDE;
+    border-bottom: 1.2px solid #DEDEDE;
+}
+.top{
+    width: 92%;
+    height: 150px;
+    border-bottom: 1.2px dashed #DEDEDE;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.ren{
+    width: 150px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-right: 1.2px solid #DEDEDE;
+    float: left;
+    margin-top: 40px;
+}
+.ren span{
+    font-size: 40px;
+    font-weight: normal;
+    color: black;
+}
+.qing{
+    width: 76%;
+    height: 150px;
+    line-height: 150px;
+    margin-left: 60px;
+    float:left;
+}
+.qing input{
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+}
+
+
+.top2{
+    width: 92%;
+    height: 150px;
+    border-bottom: 1.2px dashed #DEDEDE;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.time{
+    width: 150px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-right: 1.2px solid #DEDEDE;
+    float: left;
+    margin-top: 40px;
+}
+.time span{
+    font-size: 40px;
+    font-weight: normal;
+    color: #000;
+}
+.kong{
+    width: 76%;
+    height: 150px;
+    line-height: 150px;
+    margin-left: 60px;
+    float:left;
+}
+.kong input{
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+}
+
+
+.hezi2{
+    width: 100%;
+    height: 450px;
+    margin-top: 12px;
+    background-color: white;
+    border-top: 1.2px solid #DEDEDE;
+    border-bottom: 1.2px solid #DEDEDE;
+}
+.bottom{
+    width: 92%;
+    height: 150px;
+    border-bottom: 1.2px dashed #DEDEDE;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.xing{
+    width: 150px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-right: 1.2px solid #DEDEDE;
+    float: left;
+    margin-top: 40px;
+}
+.xing span{
+    font-size: 40px;
+    font-weight: normal;
+    color: #000;
+}
+.mingzi{
+    width: 76%;
+    height: 150px;
+    line-height: 150px;
+    margin-left: 60px;
+    float:left;
+}
+.mingzi input{
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+}
+
+
+.bottom2{
+    width: 92%;
+    height: 150px;
+    border-bottom: 1.2px dashed #DEDEDE;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.phone{
+    width: 150px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-right: 1.2px solid #DEDEDE;
+    float: left;
+    margin-top: 40px;
+}
+.phone span{
+    font-size: 40px;
+    font-weight: normal;
+    color: #000;
+}
+.lianxi{
+    width: 76%;
+    height: 150px;
+    line-height: 150px;
+    margin-left: 60px;
+    float:left;
+}
+.lianxi input{
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+}
+
+
+.bottom3{
+    width: 92%;
+    height: 150px;
+    border-bottom: 1.2px dashed #DEDEDE;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.bei{
+    width: 150px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-right: 1.2px solid #DEDEDE;
+    float: left;
+    margin-top: 40px;
+}
+.bei span{
+    font-size: 40px;
+    font-weight: normal;
+    color: #000;
+}
+.qita{
+    width: 76%;
+    height: 150px;
+    line-height: 150px;
+    margin-left: 60px;
+    float:left;
+}
+.qita input{
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+}
+
+.tijiao{
+    width: 100%;
+    height: 120px;
+    background-color: #ffae00;
+    text-align: center;
+    line-height: 120px;
+    position: absolute;
+    bottom:0;
+}
+.tijiao span{
+    color:white;
+    font-size: 40px;
+}

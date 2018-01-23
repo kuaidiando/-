@@ -548,6 +548,7 @@ class UserController extends Controller {
         $this->ajaxReturn($data);
 
     }
+  
 
      //忘记密码
     public function forget_password()
