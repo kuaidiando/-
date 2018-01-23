@@ -17,12 +17,13 @@
 
             <div class="person">
                 <a href="#">
-                    <?php if($user_info["photo"] == ''): ?><img src="/-/Public/home/img/person.jpg" alt="">
+                    <?php if($user_info["photo"] == ''): ?><img src="/-/Public/<?php echo ($user_info["photo"]); ?>" alt="">
                     <?php else: ?>
-                    <img src="/-/Public/home/img/<?php echo ($user_info["photo"]); ?>" alt=""><?php endif; ?>
+                    <img src="/-/Public/<?php echo ($user_info["photo"]); ?>" alt=""><?php endif; ?>
 
                 </a>
             </div>
+
 
             <div class="shezhi">
                 <a href="#">
