@@ -371,7 +371,10 @@
 /*中间商品css结束*/
 
 
-
+.kong{
+    width: 100%;
+    height: 125px;
+}
 /*底部css*/
 .foott{
     width: 100%;
@@ -384,58 +387,29 @@
     left:0;
     right:0;
 }
-
 .foot{
     width: 33.33%;
-    height:110px;
+    height: 110px;
     float: left;
+}
+.ttu{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
     text-align: center;
 }
-.foot img{
+.ttu img{
     width: 65px;
-    height:65px;
-    margin-top:5px;
+    height: 65px;
+    margin-top: 5px;
 }
-
-.foot p{
-    font-size:25px;
-    color:#98999E;
-}
-
-
-.dan{
-    width: 33.33%;
-    height:110px;
-    float: left;
+.shou{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
     text-align: center;
 }
-
-.dan img{
-    width: 65px;
-    height:65px;
-    vertical-align: middle;
-    margin-top:5px;
-}
-
-.dan p{
-    font-size:25px;
-    color:#98999E;
-}
-
-.food{
-    width: 33.33%;
-    height:110px;
-    float: right;
-    text-align: center;
-}
-
-.food img{
-    width: 65px;
-    height:65px;
-    margin-top:5px;
-}
-
-.food p{
-    font-size:25px;
-    color:#98999E;
+.shou span{
+    font-size: 25px;
+    color: #98999E;
 }

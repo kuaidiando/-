@@ -208,6 +208,14 @@ function youhuishul($code){
     }
     return $result;
 }
+//门店对应座位数目
+function zuoweishu($code){
+    $user = M('seat');
+    $where['dep_shop'] = $code;
+    $where['zhuangt'] = 1;
+    $result = $user->where($where)->count();
+    return $result;
+}
 /**
  * 统一资源定位
  * @param string $model 数据表名
