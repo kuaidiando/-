@@ -259,8 +259,8 @@ $(document).ready(function(){
                     <th width="80">余额</th>
                     <th width="60">头像</th>
                     <th width="80">性别</th>
-                    <th width="80">省份</th>
-                    <th width="80">城市</th>
+                    <th width="80">省份/城市</th>
+                    <!-- <th width="80">城市</th> -->
                     <th width="80">注册状态</th>
                     <th width="80">关注状态</th>
                     <th width="120">操作</th>
@@ -279,16 +279,37 @@ $(document).ready(function(){
                             <td>女</td>
                             <?php else: ?>
                             <td>未知</td><?php endif; ?>
-                            <td><?php echo ($one_info["province"]); ?></td>
-                            <td><?php echo ($one_info["city"]); ?></td>
-                            <?php if($one_info["is_reg"] == 0): ?><td>未注册</td>
+                            <td><?php echo ($one_info["province"]); ?>/<?php echo ($one_info["city"]); ?></td>
+                            <!-- <td><?php echo ($one_info["city"]); ?></td> -->
+                            <?php if($one_info["is_reg"] == 0): ?><td>
+                                <span class="label label-danger radius">
+                                        <a href="#" style="text-decoration: none;color:#fff;">未注册
+                                        </a>
+                                </span> 
+                            </td>
                             <?php elseif($one_info["is_reg"] == 1): ?>
-                            <td>已注册</td>
+                            <td>
+                                <span class="label label-success radius">
+                                         <a href="#" style="text-decoration: none;color:#fff;">已注册
+                                        </a>
+                                </span>
+                            </td>
                             <?php else: ?>
                             <td>未知</td><?php endif; ?>
-                            <?php if($one_info["con"] == 0): ?><td>未关注</td>
+                            <?php if($one_info["con"] == 0): ?><td>
+                                <span class="label label-danger radius">
+                                        <a href="#" style="text-decoration: none;color:#fff;">未关注
+                                        </a>
+                                </span>
+                            </td>
                             <?php elseif($one_info["con"] == 1): ?>
-                            <td>已关注</td>
+                            <td>
+                                <span class="label label-success radius">
+                                         <a href="#" style="text-decoration: none;color:#fff;">已关注
+                                        </a>
+                                </span>                          
+                                                            
+                            </td>
                             <?php else: ?>
                             <td>未知</td><?php endif; ?>
 

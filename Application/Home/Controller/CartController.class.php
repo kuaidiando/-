@@ -15,27 +15,27 @@ class CartController extends Controller {
     public function _initialize()
     {
         $this->get_data = get_json_data();
-        // $this->user_id = \user_helper::get_user_id();
-        // if (!$this->user_id) {
-        //     $data = array(
-        //             'data' => false,
-        //             'code' => 220,
-        //             'msg'  => '请登录',
-        //     );
+        $this->user_id = \user_helper::get_user_id();
+        if (!$this->user_id) {
+            $data = array(
+                    'data' => false,
+                    'code' => 220,
+                    'msg'  => '请登录',
+            );
 
-        //     $this->ajaxReturn($data);
-        // }
+            $this->ajaxReturn($data);
+        }
 
-        // $user_info = uri('user', $this->user_id);
-        // if (!$user_info) {
-        //     $data = array(
-        //             'data' => false,
-        //             'code' => 221,
-        //             'msg'  => '请登录',
-        //     );
+        $user_info = uri('user', $this->user_id);
+        if (!$user_info) {
+            $data = array(
+                    'data' => false,
+                    'code' => 221,
+                    'msg'  => '请登录',
+            );
 
-        //     $this->ajaxReturn($data);
-        // }
+            $this->ajaxReturn($data);
+        }
     }
     public function index(){
         // $code = M('mobile_code');

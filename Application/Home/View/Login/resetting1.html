@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-dpr="1" style="font-size: 42.4px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/text.css">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/resetting.css">
+    <script type="text/javascript" src="__PUBLIC__/home/js/jquery.js"></script>
+    <title>重置密码</title>
+</head>
+<body style="font-size: 12px">
+
+    <div class="header">
+        <span>重置密码</span>
+    </div>
+
+
+    <div class="phone">
+        <div class="tu">
+            <img src="__PUBLIC__/home/img/geren2.png" alt="">
+        </div>
+
+        <div class="text">
+            <input type="text" id="tel" value="" placeholder="请输入您的手机号">
+        </div>
+    </div>
+
+
+    <div class="shu">
+
+
+        <div class="yan">
+            <div class="duan">
+                <div class="xin">
+                    <img src="__PUBLIC__/home/img/duanxin.png" alt="">
+                </div>
+            </div>
+
+            <input type="text" id="yzm" value="" placeholder="请输入短信验证码">
+        </div>
+
+        <div class="send">
+            <a href="#">
+                <span id="code">发送验证码</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="mima">
+        <div class="tu2">
+            <img src="__PUBLIC__/home/img/mima.png" alt="">
+        </div>
+
+        <div class="text2">
+            <input type="password" id="password" placeholder="请输入新的密码">
+        </div>
+    </div>
+    
+    <div class="footer">
+        <a href="#">
+            <span id="reset_password">重置密码</span>
+        </a>
+    </div>
+</body>
+<script type="text/javascript">
+    $("#code").click(function(){
+        var tel;
+        var tel = $("#tel").val();
+        $.ajax({
+            type:'post',
+            dataType: 'json',
+            url:'{:U("Home/User/send_code")}',
+            data:{tel:tel,type:'repass'},
+            success: function (result) {
+                if(result.code == 205){
+                    alert('今日验证次数超限，请明日再试');   
+                }else if(result.code == 206){
+                    alert('请稍后再试');
+                }else if(result.code == 200){
+                    return true;
+                }
+               
+                //赋值区域
+                // $("#selshi").html(str);
+            }
+
+        })
+    });
+    $("#reset_password").click(function(){
+            var tel = $("#tel").val();
+            var password = $("#password").val();
+            var yzm = $("#yzm").val();
+            $.ajax({
+                type:'post',
+                dataType: 'json',
+                url:'{:U("Home/Login/forget_password")}',
+                data:{tel:tel,password:password,yzm:yzm},
+                success: function (result) {
+                    // alert(result.msg);return false;
+                    if(result.code == 200){
+                        $(location).attr('href', '{:U("Home/Login/index")}');
+                    }else{
+                        alert(result);
+                    }
+                   
+                }
+
+            })
+        
+    });
+</script>
+</html>
