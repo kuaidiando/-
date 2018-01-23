@@ -94,6 +94,7 @@ class IndexController extends Controller {
             $data['data'] = $resfood;
             $data['code'] = 200;
             $data['msg'] = "对接成功";
+            dump($data);die;
             $this->ajaxReturn($data);
     }
     // 菜品接口
@@ -122,7 +123,7 @@ class IndexController extends Controller {
         $data['data'] = $resfood;
         $data['code'] = 200;
         $data['msg'] = "对接成功";
-        // dump($data);die;
+        dump($data);die;
         $this->ajaxReturn($data);
     }
 }
