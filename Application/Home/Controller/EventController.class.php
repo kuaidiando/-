@@ -16,17 +16,23 @@ class EventController extends Controller {
        // $this->checkreg($tel);
     }
     public function index(){
-        $res = M('event')->where(array('status'=>1))->select();
-        if(!$res){
-            $this->ajaxReturn(array('data'=>false,'code'=>201,'msg'=>'没有在使用的轮播图'));
-        }else{
-            $data = array(
-                'data'=>$res,
-                'code'=>200,
-                'msg' => '',
-                );
-            $this->ajaxReturn($data);
-        }
+        $user_id = \user_helper::get_user_id();
+        $user_photo = uri("user",array('id'=>$user_id,"del_status"=>0),"photo");
+        $this->assign('user_photo',$user_photo);
+        // dump($user_photo);exit;
+        $event = M('event')->where(array('status'=>1))->getField('pic',true);
+        $this->assign('event',$event);
+        // dump($res);exit;
+        
+    }
+    public function detail(){
+        $type_info = M('food_type')->where(array('dep_type'=>1))->select();
+        // dump($type_info);exit;
+        $food_info = M('food')->where(array('dep_shop'=>1))->select();
+        // dump($food_info);exit;
+        $this->assign('type_info',$type_info);
+        $this->assign('food_info',$food_info);
+        $this->display("detail");
     }
  
    

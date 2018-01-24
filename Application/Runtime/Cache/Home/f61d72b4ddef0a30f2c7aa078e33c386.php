@@ -148,17 +148,10 @@
     </script>
 
 <script type="text/javascript">
-    var tel = document.getElementById("tel");
-    var mi = document.getElementById("mi");
-    var send = document.getElementById("send");
-
-    yanZheng(tel,/^1[345678]\d{9}$/);
-    yanZheng(mi,/^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,22}$/);
-    yanZheng(send,/^[0-9]{6}$/);
-
-
-    function yanZheng(tel, reg) {
+    var tel,mi,send,reg;
+        var tel = document.getElementById("tel");
         tel.onblur = function () {
+            var reg = /^1[345678]\d{9}$/;
             var ts = document.getElementById("ts");
             if (reg.test(this.value)) {
                 ts.innerText="";
@@ -167,7 +160,9 @@
             }
         };
 
+        var mi =  document.getElementById("mi");
         mi.onblur = function () {
+            var reg = /^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,22}$/;
             var ts2 = document.getElementById("ts2");
             if (reg.test(this.value)) {
                 ts2.innerText="";
@@ -176,8 +171,9 @@
             }
         };
 
-
+        var send = document.getElementById("send");
         send.onblur = function () {
+            var reg = /^[0-9]{6}$/;
             var ts3 = document.getElementById("ts3");
             if (reg.test(this.value)) {
                 ts3.innerText="";
@@ -186,7 +182,6 @@
             }
         };
 
-    }
 
 
 </script>

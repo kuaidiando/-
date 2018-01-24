@@ -25,9 +25,8 @@ class PersonController extends Controller {
     public function index(){
         $per = M('user');
         $uid = \user_helper::get_user_id();
-        // dump($uid);exit;
         $user_info = $per->where(array('id'=>$uid))->find();
-        // dump($user_info);exit;
+        $user_info['tel'] = substr_replace($user_info['tel'], '****', 3, 4);
         $this->assign('user_info',$user_info);
         $this->display("person");
     }

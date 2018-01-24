@@ -18,9 +18,9 @@
             <div class="person">
                 <a href="#">
                     <if condition="$user_info.photo eq ''">
-                    <img src="__PUBLIC__/home/img/person.jpg" alt="">
+                    <img src="__PUBLIC__/{$user_info.photo}" alt="">
                     <else />
-                    <img src="__PUBLIC__/home/img/{$user_info.photo}" alt="">
+                    <img src="__PUBLIC__/{$user_info.photo}" alt="">
                     </if>
 
                 </a>

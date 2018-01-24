@@ -17,9 +17,15 @@
 
             <div class="person">
                 <a href="#">
+<<<<<<< HEAD
+                    <?php if($user_info["photo"] == ''): ?><img src="/-/Public/<?php echo ($user_info["photo"]); ?>" alt="">
+                    <?php else: ?>
+                    <img src="/-/Public/<?php echo ($user_info["photo"]); ?>" alt=""><?php endif; ?>
+=======
                     <?php if($user_info["photo"] == ''): ?><img src="/kuaidian/Public/home/img/person.jpg" alt="">
                     <?php else: ?>
                     <img src="/kuaidian/Public/home/img/<?php echo ($user_info["photo"]); ?>" alt=""><?php endif; ?>
+>>>>>>> 3b8a54b355dd85928808fa6731a063768d2785ab
 
                 </a>
             </div>
