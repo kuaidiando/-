@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>我的</title>
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/person.css">
+    <link rel="stylesheet" href="/-/Public/home/css/base.css">
+    <link rel="stylesheet" href="/-/Public/home/css/text.css">
+    <link rel="stylesheet" href="/-/Public/home/css/person.css">
 </head>
 <body style="font-size: 12px">
     <div class="header">
@@ -17,15 +17,9 @@
 
             <div class="person">
                 <a href="#">
-<<<<<<< HEAD
                     <?php if($user_info["photo"] == ''): ?><img src="/-/Public/<?php echo ($user_info["photo"]); ?>" alt="">
                     <?php else: ?>
                     <img src="/-/Public/<?php echo ($user_info["photo"]); ?>" alt=""><?php endif; ?>
-=======
-                    <?php if($user_info["photo"] == ''): ?><img src="/kuaidian/Public/home/img/person.jpg" alt="">
-                    <?php else: ?>
-                    <img src="/kuaidian/Public/home/img/<?php echo ($user_info["photo"]); ?>" alt=""><?php endif; ?>
->>>>>>> 3b8a54b355dd85928808fa6731a063768d2785ab
 
                 </a>
             </div>
@@ -33,7 +27,7 @@
 
             <div class="shezhi">
                 <a href="#">
-                    <img src="/kuaidian/Public/home/img/shezhi.png" alt="">
+                    <img src="/-/Public/home/img/shezhi.png" alt="">
                 </a>
             </div>
         </div>
@@ -78,7 +72,7 @@
     <a href="mydingdan.html">
         <div class="all">
             <div class="tu">
-                    <img src="/kuaidian/Public/home/img/dinagdan.png" alt="">
+                    <img src="/-/Public/home/img/dinagdan.png" alt="">
                 </div>
 
             <div class="quan">
@@ -86,7 +80,7 @@
                 </div>
 
             <div class="you">
-                    <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+                    <img src="/-/Public/home/img/youjiantou.png" alt="">
                 </div>
         </div>
     </a>
@@ -94,7 +88,7 @@
     <div class="di">
         <div class="qq">
             <div class="tu2">
-                <img src="/kuaidian/Public/home/img/dianping.png" alt="">
+                <img src="/-/Public/home/img/dianping.png" alt="">
             </div>
 
             <div class="wo">
@@ -102,13 +96,13 @@
             </div>
 
             <div class="you2">
-                <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+                <img src="/-/Public/home/img/youjiantou.png" alt="">
             </div>
         </div>
 
         <div class="qq2">
             <div class="tu3">
-                <img src="/kuaidian/Public/home/img/xin.png" alt="">
+                <img src="/-/Public/home/img/xin.png" alt="">
             </div>
 
             <div class="shou">
@@ -116,14 +110,14 @@
             </div>
 
             <div class="you3">
-                <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+                <img src="/-/Public/home/img/youjiantou.png" alt="">
             </div>
         </div>
 
 
         <div class="qq3">
             <div class="tu4">
-                <img src="/kuaidian/Public/home/img/tui.png" alt="">
+                <img src="/-/Public/home/img/tui.png" alt="">
             </div>
 
             <div class="tui1">
@@ -132,7 +126,7 @@
             </div>
 
             <div class="you4">
-                <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+                <img src="/-/Public/home/img/youjiantou.png" alt="">
             </div>
         </div>
     </div>
@@ -141,21 +135,21 @@
     <footer>
         <div class="foot">
             <a href="index.html">
-                <img src="/kuaidian/Public/home/img/shangjia.png" alt="">
+                <img src="/-/Public/home/img/shangjia.png" alt="">
                 <p>首页</p>
             </a>
         </div>
 
         <div class="dan">
             <a href="#">
-                <img src="/kuaidian/Public/home/img/diangdan.png" alt="">
+                <img src="/-/Public/home/img/diangdan.png" alt="">
                 <p>订单</p>
             </a>
         </div>
 
         <div class="food">
             <a href="#">
-                <img src="/kuaidian/Public/home/img/geren.png" alt="">
+                <img src="/-/Public/home/img/geren.png" alt="">
                 <p>我的</p>
             </a>
         </div>

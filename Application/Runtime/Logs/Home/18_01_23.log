@@ -19091,3 +19091,296 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000808s ]
 >>>>>>> 3b8a54b355dd85928808fa6731a063768d2785ab
 
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/index.php/Home/event/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001377s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000429s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000975s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001157s ]
+
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/index.php/Home/event/images/tui.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/index.php/Home/event/images/baixin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/index.php/Home/event/images/phone.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000939s ]
+
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/index.php/Home/event/images/yin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/index.php/Home/event/images/quan2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/index.php/Home/event/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000889s ]
+
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/index.php/Home/event/images/start.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/index.php/Home/event/images/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/index.php/Home/event/images/tan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001709s ]
+
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/index.php/Home/event/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/index.php/Home/event/images/gouwuche.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001998s ]
+
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/index.php/Home/event/images/ding.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001145s ]
+
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/index.php/Home/event/images/fu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/index.php/Home/event/images/tui2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/index.php/Home/event/images/dizhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001349s ]
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/index.php/Home/event/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001613s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000564s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001033s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001353s ]
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/index.php/Home/event/images/baixin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/index.php/Home/event/images/start.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000370s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001505s ]
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/index.php/Home/event/images/dizhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/index.php/Home/event/images/phone.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/index.php/Home/event/images/tui2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001094s ]
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/index.php/Home/event/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/index.php/Home/event/images/tui.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/index.php/Home/event/images/quan2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/index.php/Home/event/images/tan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/index.php/Home/event/images/yin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001234s ]
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/index.php/Home/event/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/index.php/Home/event/images/ding.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/index.php/Home/event/images/fu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000870s ]
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/index.php/Home/event/images/gouwuche.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014827s ]
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/index.php/Home/event/images/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000988s ]
+
+[ 2018-01-23T19:07:53+08:00 ] ::1 /-/index.php/Home/event/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 1  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2018-01-23T19:07:53+08:00 ] ::1 /-/index.php/Home/event/images/baixin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+
+[ 2018-01-23T19:07:53+08:00 ] ::1 /-/index.php/Home/event/images/phone.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+
+[ 2018-01-23T19:07:53+08:00 ] ::1 /-/index.php/Home/event/images/start.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+
+[ 2018-01-23T19:07:53+08:00 ] ::1 /-/index.php/Home/event/images/tui2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001168s ]
+
+[ 2018-01-23T19:07:53+08:00 ] ::1 /-/index.php/Home/event/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+
+[ 2018-01-23T19:07:53+08:00 ] ::1 /-/index.php/Home/event/images/tui.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001147s ]
+
+[ 2018-01-23T19:07:53+08:00 ] ::1 /-/index.php/Home/event/images/tan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+
+
+[ 2018-01-23T19:07:53+08:00 ] ::1 /-/index.php/Home/event/images/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+
+[ 2018-01-23T19:07:54+08:00 ] ::1 /-/index.php/Home/event/images/ding.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+
+[ 2018-01-23T19:07:54+08:00 ] ::1 /-/index.php/Home/event/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001273s ]
+
+[ 2018-01-23T19:07:54+08:00 ] ::1 /-/index.php/Home/event/images/yin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000167s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001848s ]
+
+[ 2018-01-23T19:07:54+08:00 ] ::1 /-/index.php/Home/event/images/fu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+
+[ 2018-01-23T19:07:54+08:00 ] ::1 /-/index.php/Home/event/images/gouwuche.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+
+[ 2018-01-23T19:07:54+08:00 ] ::1 /-/index.php/Home/event/images/dizhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+

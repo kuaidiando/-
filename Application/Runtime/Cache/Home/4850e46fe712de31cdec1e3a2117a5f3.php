@@ -64,7 +64,7 @@
                             </div>
                             <div class="con">
                                 <div class="right-con con-active">
-                                <?php if(is_array($food_info)): foreach($food_info as $key=>$fod_info): ?><ul>
+                                <?php if(is_array($food_info)): foreach($food_info as $key=>$fod_info): ?><ul class="<?php echo ($fod_info["dep_shop"]); ?>">
                                         <li>
                                             <div class="tit">
                                                 <span></span>
@@ -155,7 +155,7 @@
                                         var a = $("#totalpriceshow").html();//获取当前所选总价
                                         $("#totalpriceshow").html((a * 1 + danjia * 1).toFixed(2));//计算当前所选总价
 
-                                        var nm = $("#totalcountshow").html();//获取数量
+                                        // var nm = $("#totalcountshow").html();//获取数量
                                         $("#totalcountshow").html(nm*1+1);
                                         jss();//<span style='font-family: Arial, Helvetica, sans-serif;'></span>   改变按钮样式
                                     });
@@ -195,10 +195,13 @@
 
                                     $(".left-menu li").click(function(){
                                         $(this).addClass("active").siblings().removeClass("active");
-                                        var n = $(".left-menu li").index(this);
-                                        $(".left-menu li").index(this);
-                                        $(".con>div").hide();
-                                        $(".con>div:eq("+n+")").show();
+                                        // var n = $(".left-menu li").index(this);
+                                        var n = $(".left-menu li").attr("id");
+                                        alert(n);
+                                        
+                                        // $(".left-menu li").index(this);
+                                        // $(".con>div").hide();
+                                        // $(".con>div:eq("+n+")").show();
                                     });
                                 });
                             </script>

@@ -4187,3 +4187,21 @@ INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
 >>>>>>> 3b8a54b355dd85928808fa6731a063768d2785ab
 ERR: 无法加载模块:Public
 
+[ 2018-01-23T19:06:59+08:00 ] ::1 /-/Public/home/images/beijing.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-23T19:07:12+08:00 ] ::1 /-/Public/home/images/beijing.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-23T19:07:54+08:00 ] ::1 /-/Public/home/images/beijing.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+ERR: 无法加载模块:Public
+

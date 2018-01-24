@@ -50,11 +50,7 @@ $(document).ready(function(){
    
     <div class="container-fluid cl">
         <!-- <div class="tu"> -->
-<<<<<<< HEAD
         <!-- <img src="/-/Public/img/logo.png"> -->
-=======
-        <!-- <img src="/kuaidian/Public/img/logo.png"> -->
->>>>>>> 3b8a54b355dd85928808fa6731a063768d2785ab
         <!-- </div> -->
             <a class="logo navbar-logo f-l mr-10 hidden-xs" href="<?php echo U('Admin/Index/zhuye');?>">首页</a>
             <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/shop/index');?>">商户管理</span></a>
