@@ -1,13 +1,13 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-dpr="1" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>商家</title>
-    <link rel="icon" href="/kuaidian/Public/home/img/logo1.png">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/detail.css">
+    <link rel="icon" href="__PUBLIC__/home/img/logo1.png">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/text.css">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/detail.css">
 </head>
 <body style="font-size: 12px">
     <!--商家-->
@@ -15,18 +15,18 @@
             <div class="shangjia">
                 <div class="top">
                     <div class="shang">
-                        <img src="/kuaidian/Public/home/img/person.jpg" alt="">
+                        <img src="__PUBLIC__/home/img/person.jpg" alt="">
                     </div>
                     <div class="you">
                         <div class="name">
-                            <span>山西肉夹馍<?php echo ($resspdan["0"]["id"]); ?></span>
-                            <img src="/kuaidian/Public/home/img/baixin.png" alt="">
+                            <span>aaa</span>
+                            <img src="__PUBLIC__/home/img/baixin.png" alt="">
                         </div>
                         <div class="evaluate">
-                            <img src="/kuaidian/Public/home/img/start.png" alt="">
+                            <img src="__PUBLIC__/home/img/start.png" alt="">
                         </div>
                         <div class="tui">
-                            <img src="/kuaidian/Public/home/img/tui.png" alt="">
+                            <img src="__PUBLIC__/home/img/tui.png" alt="">
                             <span class="gai">该商家已开通"微众代言",代言可获得</span>
                             <span class="red">5.0%</span>
                         </div>
@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="bottom">
-                    <img src="/kuaidian/Public/home/img/yin.png" alt="">
+                    <img src="__PUBLIC__/home/img/yin.png" alt="">
                     <span>欢迎光临,用餐高峰期请提前下单,谢谢</span>
                     <a href="../predetermine.html"><input type="button" value="订座/请客"></a>
                 </div>
@@ -56,91 +56,104 @@
                             <div class="left-menu">
                                 <!-- 菜品列表 -->
                                 <ul>
-                                    <?php if(is_array($resft)): foreach($resft as $key=>$voresft): ?><!-- 判断是否是第一个 -->
-                                        <?php if($voresft["typefd"] == 1): ?><li class="active"><?php echo ($voresft["mingch"]); ?><span class="num-price"></span></li>
-                                        <?php else: ?>
-                                            <li><?php echo ($voresft["mingch"]); ?></li><?php endif; endforeach; endif; ?>
+                                    <foreach name="resft" item="voresft">
+                                        <!-- 判断是否是第一个 -->
+                                        <if condition="$voresft.typefd eq 1">
+                                            <li class="active">{$voresft.mingch}<span class="foodtypeid">{$voresft.id}</span><span class="num-price"></span></li>
+                                        <else />
+                                            <li>{$voresft.mingch}<span class="foodtypeid">{$voresft.id}</span></li>
+                                        </if>
+                                    </foreach>
                                 </ul>
                             </div>
-                            <!-- 菜品详情 -->
-                            <!-- 遍历新数组菜品类别 -->
-                            <?php if(is_array($zuizhongfood)): foreach($zuizhongfood as $key=>$vozuizhongfood): ?><div class="con">
-                                    <div class="right-con con-active" >
-                                        <div class="tit">
-                                            <span><?php echo ($vozuizhongfood["zhushi"]); ?></span>
-                                        </div>
-                                        <!-- 遍历菜品详情 -->
-                                        <?php if(is_array($vozuizhongfood['foodxq'])): foreach($vozuizhongfood['foodxq'] as $key=>$vofoodxq): ?><ul>
-                                        <!--     ["id"] => string(2) "59"
-    ["cpmingch"] => string(15) "酸辣土豆丝"
-    ["food_type"] => string(2) "14"
-    ["mingch"] => string(12) "今日特价"
-    ["kouwei"] => string(13) "清香,麻辣"
-    ["logo"] => string(18) "/img/yuxiangrs.jpg"
-    ["yuanjia"] => string(2) "30"
-    ["shoujia"] => string(2) "20"
-    ["danweimc"] => string(3) "份"
-    ["dwid"] => string(1) "9"
-    ["foodnum"] => string(1) "2" -->
-                                            <li>
+                            
+
+                            <div class="con">
+                                <div class="right-con con-active">
+
+                                            <div class="tit">
+                                                <span>推荐(默认)</span>
+                                            </div>
+                                    <foreach name="resfood" item="voresfood">
+                                    <ul>
+                                        <li>
+
                                             <div class="menu-txt">
                                                 <div class="tu">
-                                                    <img src="/kuaidian/Public<?php echo ($vofoodxq["logo"]); ?>" alt="">
+                                                    <img src="__PUBLIC__/{$voresfood.logo}" alt="">
                                                 </div>
+
                                                 <div class="youbian">
                                                     <div class="biao">
-                                                        <span><?php echo ($vofoodxq["cpmingch"]); ?></span>
+                                                        <span>{$voresfood.cpmingch}</span>
                                                     </div>
+
                                                     <div class="center">
-                                                        <span>口味:<?php echo ($vofoodxq["kouwei"]); ?></span>
+                                                        <span>口味:{$voresfood.kouwei}</span>
                                                     </div>
+
                                                     <div class="fuhao">
                                                         <span>￥</span>
                                                     </div>
+
                                                     <div class="qqian">
-                                                        <span><?php echo ($vofoodxq["shoujia"]); ?></span>
+                                                        <span>{$voresfood.shoujia}</span>
                                                     </div>
+
                                                     <div class="danwei">
                                                         <span>/份</span>
                                                     </div>
+
                                                     <div class="yuanjia">
-                                                        <del>￥<?php echo ($vofoodxq["yuanjia"]); ?></del>
+                                                        <del>￥{$voresfood.yuanjia}</del>
                                                     </div>
+
                                                 </div>
+
                                                 <div class="btn">
-                                                    <!-- 判断是否有数量 -->
-                                                    <?php if($vofoodxq["foodnum"] == null): ?><button class="minus" >
+                                                    <button class="minus">
                                                         <strong>
-                                                            <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
+                                                            <img src="__PUBLIC__/home/img/jianhao.png" alt="">
                                                         </strong>
-                                                        </button>
-                                                        <i>0</i>
-                                                        <button class="add">
+                                                    </button>
+                                                    <i>0</i>
+                                                    <button class="add">
                                                         <strong>
-                                                            <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
+                                                            <img src="__PUBLIC__/home/img/jiahao.png" alt="">
                                                         </strong>
-                                                        </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i>
-                                                    <?php else: ?>
-                                                         <button class="minus" style="display: inline-block;">
-                                                        <strong>
-                                                            <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
-                                                        </strong>
-                                                        </button>
-                                                        <i style="display: inline-block;"><?php echo ($vofoodxq["foodnum"]); ?></i>
-                                                        <button class="add">
-                                                        <strong>
-                                                            <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
-                                                        </strong>
-                                                        </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i><?php endif; ?>
+                                                    </button>
+                                                    <i class="price">{$voresfood.shoujia}</i>
                                                 </div>
                                             </div>
-                                            </li>
-                                        </ul><?php endforeach; endif; ?>
-                                    </div>
-                                </div><?php endforeach; endif; ?>
+                                        </li>
+                                    </ul>
+                                    </foreach>
+                                </div>
+                            </div>
+
+                            <div class="con">
+                                <div class="right-con con-active">
+                                </div>
+                            </div>
+                            <div class="con">
+                                <div class="right-con con-active">
+                                </div>
+                            </div>
+                            <div class="con">
+                                <div class="right-con con-active">
+                                </div>
+                            </div>
+                            <div class="con">
+                                <div class="right-con con-active">
+                                </div>
+                            </div>
+                            <div class="con">
+                                <div class="right-con con-active">   
+                                </div>
+                            </div>
                             <div class="footer">
                                 <div class="gou">
-                                    <img src="/kuaidian/Public/home/img/gouwuche.png" alt="">
+                                    <img src="__PUBLIC__/home/img/gouwuche.png" alt="">
                                 </div>
 
                                 <div class="left">
@@ -156,7 +169,7 @@
                             </div>
 
 
-                            <script type="text/javascript" src="/kuaidian/Public/home/js/jquery.min.js"></script>
+                            <script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
                             <script type="text/javascript">
                                 $(function () {
                                     //加的效果
@@ -189,8 +202,8 @@
                                         $("#totalcountshow").html(nm*1+1);
                                         jss();//<span style='font-family: Arial, Helvetica, sans-serif;'></span>   改变按钮样式
                                     });
-                                    //减的效果 yxy 优化
-                                    $(document).on("click",".minus",function(){
+                                    //减的效果
+                                    $(".minus").click(function () {
                                         var n = $(this).next().text();
                                         var num = parseInt(n) - 1;
 
@@ -227,10 +240,17 @@
                                     $(".con>div:eq(0)").show();
 
                                     $(".left-menu li").click(function(){
+                                        //获取门店id
+                                        
+                                        // 获取菜品类别id
+                                        var foodtypeid = $(this).find(".foodtypeid").html();
+
+                                        // alert(foodtypeid);
                                         $(this).addClass("active").siblings().removeClass("active");
                                         var n = $(".left-menu li").index(this);
                                         $(".left-menu li").index(this);
                                         $(".con>div").hide();
+                                        $(".con>div:eq("+n+")").html('<div class="right-con con-active" style="width:100%;"><div class="tit"><span>推荐</span></div><ul><li><div class="menu-txt"><div class="tu"><img src="__PUBLIC__/home/img/person.jpg" alt=""></div><div class="youbian"><div class="biao"><span>宫保鸡丁a</span></div><div class="center"><span>口味:甜</span></div><div class="fuhao"><span>￥</span></div><div class="qqian"><span>18.5</span></div><div class="danwei"><span>/份</span></div><div class="yuanjia"><del>￥20</del></div></div><div class="btn"><button class="minus"><strong><img src="__PUBLIC__/home/img/jianhao.png" alt=""></strong></button> <i>0</i> <button class="add"><strong><img src="__PUBLIC__/home/img/jiahao.png" alt=""></strong></button> <i class="price">18.5</i></div></div></li></ul></div>');
                                         $(".con>div:eq("+n+")").show();
                                     });
                                 });
@@ -241,7 +261,7 @@
                         <div class="address">
                             <div class="dizhi">
                                 <div class="tt">
-                                    <img src="/kuaidian/Public/home/img/dizhi.png" alt="">
+                                    <img src="__PUBLIC__/home/img/dizhi.png" alt="">
                                 </div>
 
                                 <div class="zz">
@@ -251,7 +271,7 @@
 
                             <div class="phone">
                                 <div class="iphone">
-                                    <img src="/kuaidian/Public/home/img/phone.png" alt="">
+                                    <img src="__PUBLIC__/home/img/phone.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -259,7 +279,7 @@
                         <!--微众代言-->
                         <div class="hezi2">
                             <div class="you6">
-                                <img src="/kuaidian/Public/home/img/tui2.png" alt="">
+                                <img src="__PUBLIC__/home/img/tui2.png" alt="">
                             </div>
 
                             <div class="zhongjian">
@@ -282,7 +302,7 @@
                             </div>
 
                             <div class="tu3">
-                                <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+                                <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
                             </div>
                         </div>
 
@@ -290,14 +310,14 @@
                         <div class="youhui">
                             <div class="quan">
                                 <div class="quan3">
-                                    <img src="/kuaidian/Public/home/img/quan2.png" alt="">
+                                    <img src="__PUBLIC__/home/img/quan2.png" alt="">
                                 </div>
                                 <span>优惠券</span>
                             </div>
 
                             <div class="xia2">
                                 <div class="q1">
-                                    <img src="/kuaidian/Public/home/img/person.jpg" alt="">
+                                    <img src="__PUBLIC__/home/img/person.jpg" alt="">
                                 </div>
 
                                 <div class="youhe">
@@ -346,7 +366,7 @@
 
                             <div class="he4">
                                 <div class="tt1">
-                                    <img src="/kuaidian/Public/home/img/tan.png" alt="">
+                                    <img src="__PUBLIC__/home/img/tan.png" alt="">
                                 </div>
 
                                 <div class="zz1">
@@ -360,7 +380,7 @@
                             <div class="dian">
                                 <div class="ww">
                                     <a href="#">
-                                        <img src="/kuaidian/Public/home/img/dian.png" alt="">
+                                        <img src="__PUBLIC__/home/img/dian.png" alt="">
                                     </a>
                                 </div>
 
@@ -374,7 +394,7 @@
                             <div class="ding">
                                 <div class="aa">
                                     <a href="#">
-                                        <img src="/kuaidian/Public/home/img/ding.png" alt="">
+                                        <img src="__PUBLIC__/home/img/ding.png" alt="">
                                     </a>
                                 </div>
 
@@ -388,7 +408,7 @@
                             <div class="fu">
                                 <div class="vv">
                                     <a href="#">
-                                        <img src="/kuaidian/Public/home/img/fu.png" alt="">
+                                        <img src="__PUBLIC__/home/img/fu.png" alt="">
                                     </a>
                                 </div>
 
@@ -408,8 +428,8 @@
             </div>
         </div>
 
-    <script src="/kuaidian/Public/home/js/jquery.js"></script>
-    <script src="/kuaidian/Public/home/js/tab.js"></script>
+    <script src="__PUBLIC__/home/js/jquery.js"></script>
+    <script src="__PUBLIC__/home/js/tab.js"></script>
     <script>
         $(function () {
 
