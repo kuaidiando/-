@@ -1,3 +1,707 @@
+<<<<<<< HEAD
+[ 2018-01-24T15:20:40+08:00 ] ::1 /-/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002847s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000769s ]
+NOTIC: [8] Undefined variable: id E:\wamp64\www\-\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 20 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002671s ]
+
+[ 2018-01-24T15:20:47+08:00 ] ::1 /-/index.php/Admin/Index/dodenglu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `user` WHERE `tel` = '111111' AND `status` = 1 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-01-24T15:20:47+08:00 ] ::1 /-/index.php/Admin/Index/zhuye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001676s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000454s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\502c830712a0e1f9d91cc268e293cf60.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000941s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001138s ]
+
+[ 2018-01-24T15:21:16+08:00 ] ::1 /-/index.php/Admin/code/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `mobile_code` [ RunTime:0.0049s ]
+SQL: SELECT mobile_code.tel,mobile_code.code,mobile_code.status as yz_status,mobile_code.add_time,sms_status.sms_id,sms_status.id,sms_status.status,sms_status.type,sms_status.update_time FROM `mobile_code` right join sms_status on mobile_code.id = sms_status.sms_id  WHERE ( mobile_code.is_del = 1 ) ORDER BY id desc  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000448s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seattype - assumed 'Seattype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 91 行.
+NOTIC: [8] Use of undefined constant Foodtype - assumed 'Foodtype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 91 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 113 行.
+NOTIC: [8] Use of undefined constant Code - assumed 'Code' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 122 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 164 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 164 行.
+NOTIC: [8] Undefined variable: active E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 167 行.
+NOTIC: [8] Undefined variable: one_code E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 276 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Use of undefined constant repass - assumed 'repass' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 291 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Use of undefined constant repass - assumed 'repass' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 291 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Use of undefined constant repass - assumed 'repass' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 291 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Use of undefined constant repass - assumed 'repass' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 291 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001125s ]
+
+[ 2018-01-24T15:21:48+08:00 ] ::1 /-/index.php/Admin/User/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0094s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000461s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seattype - assumed 'Seattype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Foodtype - assumed 'Foodtype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 113 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 164 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 164 行.
+NOTIC: [8] Undefined variable: active E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 167 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001135s ]
+
+[ 2018-01-24T15:22:04+08:00 ] ::1 /-/index.php/Admin/User/member/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002726s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000400s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001200s ]
+
+[ 2018-01-24T15:22:06+08:00 ] ::1 /-/index.php/Admin/User/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000391s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seattype - assumed 'Seattype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Foodtype - assumed 'Foodtype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 113 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 164 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 164 行.
+NOTIC: [8] Undefined variable: active E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 167 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2018-01-24T15:22:58+08:00 ] ::1 /-/index.php/Admin/config/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seattype - assumed 'Seattype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 91 行.
+NOTIC: [8] Use of undefined constant Foodtype - assumed 'Foodtype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 91 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 113 行.
+NOTIC: [8] Use of undefined constant Code - assumed 'Code' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 122 行.
+NOTIC: [8] Use of undefined constant Event - assumed 'Event' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 131 行.
+NOTIC: [8] Use of undefined constant Config - assumed 'Config' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2018-01-24T15:24:06+08:00 ] ::1 /-/index.php/Admin/Event/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001510s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `event`  [ RunTime:0.0012s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `event` LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000395s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\wamp64\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' E:\wamp64\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' E:\wamp64\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' E:\wamp64\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' E:\wamp64\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seattype - assumed 'Seattype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 91 行.
+NOTIC: [8] Use of undefined constant Foodtype - assumed 'Foodtype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 91 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\wamp64\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 113 行.
+NOTIC: [8] Use of undefined constant Code - assumed 'Code' E:\wamp64\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 122 行.
+NOTIC: [8] Use of undefined constant Event - assumed 'Event' E:\wamp64\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 131 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp64\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 164 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 164 行.
+NOTIC: [8] Undefined variable: active E:\wamp64\www\-\Application\Runtime\Cache\Admin\54b8a6986cf49e80578cf6233476e522.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001148s ]
+
+[ 2018-01-24T15:24:21+08:00 ] ::1 /-/index.php/Admin/shop/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `shop`  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000440s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 91 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 164 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 164 行.
+NOTIC: [8] Undefined variable: active E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 167 行.
+NOTIC: [8] Undefined variable: info E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 248 行.
+SQL: SELECT `name` FROM `city` WHERE `code` = '130500'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0050s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sale` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130100'  [ RunTime:0.0011s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 2  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 3 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '350300'  [ RunTime:0.0016s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 3  [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 23 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '140400'  [ RunTime:0.0012s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 7  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 24 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130400'  [ RunTime:0.0012s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 8  [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 25 LIMIT 1   [ RunTime:0.0011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001179s ]
+
+[ 2018-01-24T15:24:22+08:00 ] ::1 /-/index.php/Admin/User/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000451s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seattype - assumed 'Seattype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Foodtype - assumed 'Foodtype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 113 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 164 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 164 行.
+NOTIC: [8] Undefined variable: active E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 167 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001459s ]
+
+[ 2018-01-24T15:24:24+08:00 ] ::1 /-/index.php/Admin/code/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `mobile_code` [ RunTime:0.0079s ]
+SQL: SELECT mobile_code.tel,mobile_code.code,mobile_code.status as yz_status,mobile_code.add_time,sms_status.sms_id,sms_status.id,sms_status.status,sms_status.type,sms_status.update_time FROM `mobile_code` right join sms_status on mobile_code.id = sms_status.sms_id  WHERE ( mobile_code.is_del = 1 ) ORDER BY id desc  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000462s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seattype - assumed 'Seattype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 91 行.
+NOTIC: [8] Use of undefined constant Foodtype - assumed 'Foodtype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 91 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 113 行.
+NOTIC: [8] Use of undefined constant Code - assumed 'Code' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 122 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 164 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 164 行.
+NOTIC: [8] Undefined variable: active E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 167 行.
+NOTIC: [8] Undefined variable: one_code E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 276 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Use of undefined constant repass - assumed 'repass' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 291 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Use of undefined constant repass - assumed 'repass' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 291 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Use of undefined constant repass - assumed 'repass' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 291 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Use of undefined constant repass - assumed 'repass' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 291 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+NOTIC: [8] Use of undefined constant register - assumed 'register' E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 290 行.
+NOTIC: [8] Undefined index: content E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 296 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 307 行.
+NOTIC: [8] Undefined variable: one_info E:\wamp64\www\-\Application\Runtime\Cache\Admin\e4115922dbeab584d8de8ec3503939dc.php 第 317 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000927s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001194s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001418s ]
+
+[ 2018-01-24T15:24:27+08:00 ] ::1 /-/index.php/Admin/config/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seattype - assumed 'Seattype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 91 行.
+NOTIC: [8] Use of undefined constant Foodtype - assumed 'Foodtype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 91 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 113 行.
+NOTIC: [8] Use of undefined constant Code - assumed 'Code' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 122 行.
+NOTIC: [8] Use of undefined constant Event - assumed 'Event' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 131 行.
+NOTIC: [8] Use of undefined constant Config - assumed 'Config' E:\wamp64\www\-\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001340s ]
+
+[ 2018-01-24T15:24:30+08:00 ] ::1 /-/index.php/Admin/money/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+ERR: 无法加载控制器:Money
+
+[ 2018-01-24T15:24:34+08:00 ] ::1 /-/index.php/Admin/Index/dodenglu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001555s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `user` WHERE `tel` = '111111' AND `status` = 1 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001126s ]
+
+[ 2018-01-24T15:24:41+08:00 ] ::1 /-/index.php/Admin/Index/dodenglu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `user` WHERE `tel` = '111111' AND `status` = 1 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-01-24T15:24:41+08:00 ] ::1 /-/index.php/Admin/Index/zhuye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000402s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\502c830712a0e1f9d91cc268e293cf60.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001213s ]
+
+[ 2018-01-24T15:27:30+08:00 ] ::1 /-/index.php/Admin/User/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user` WHERE `status` = 0  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seattype - assumed 'Seattype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant Foodtype - assumed 'Foodtype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 91 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 113 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 164 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 164 行.
+NOTIC: [8] Undefined variable: active E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 167 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+NOTIC: [8] Undefined index: con E:\wamp64\www\-\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001520s ]
+
+[ 2018-01-24T15:27:44+08:00 ] ::1 /-/index.php/Admin/User/info.html?uid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `user_info` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `user_info` WHERE `user_id` = 3  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000387s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\bc2f33f3137f07283c62e458408ffc19.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\wamp64\www\-\Application\Runtime\Cache\Admin\bc2f33f3137f07283c62e458408ffc19.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\bc2f33f3137f07283c62e458408ffc19.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' E:\wamp64\www\-\Application\Runtime\Cache\Admin\bc2f33f3137f07283c62e458408ffc19.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' E:\wamp64\www\-\Application\Runtime\Cache\Admin\bc2f33f3137f07283c62e458408ffc19.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' E:\wamp64\www\-\Application\Runtime\Cache\Admin\bc2f33f3137f07283c62e458408ffc19.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' E:\wamp64\www\-\Application\Runtime\Cache\Admin\bc2f33f3137f07283c62e458408ffc19.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seattype - assumed 'Seattype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\bc2f33f3137f07283c62e458408ffc19.php 第 91 行.
+NOTIC: [8] Use of undefined constant Foodtype - assumed 'Foodtype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\bc2f33f3137f07283c62e458408ffc19.php 第 91 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\wamp64\www\-\Application\Runtime\Cache\Admin\bc2f33f3137f07283c62e458408ffc19.php 第 113 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp64\www\-\Application\Runtime\Cache\Admin\bc2f33f3137f07283c62e458408ffc19.php 第 164 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Runtime\Cache\Admin\bc2f33f3137f07283c62e458408ffc19.php 第 164 行.
+NOTIC: [8] Undefined variable: active E:\wamp64\www\-\Application\Runtime\Cache\Admin\bc2f33f3137f07283c62e458408ffc19.php 第 167 行.
+NOTIC: [8] Undefined variable: user_num E:\wamp64\www\-\Application\Runtime\Cache\Admin\bc2f33f3137f07283c62e458408ffc19.php 第 248 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001426s ]
+=======
 [ 2018-01-24T15:14:40+08:00 ] ::1 /kuaidian/index.php/Admin/shop/index.html?id=1
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
@@ -3012,4 +3716,5 @@ INFO: [ view_filter ] --END-- [ RunTime:0.000757s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+>>>>>>> b51e17ff38df45694eb29e93baab2a3bbea33102
 

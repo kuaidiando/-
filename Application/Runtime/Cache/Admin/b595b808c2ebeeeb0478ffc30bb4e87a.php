@@ -2,20 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>Wopop</title>
-<link href="/kuaidian/Public/xin/admin/login/Wopop_files/style_log.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/xin/admin/login/Wopop_files/style.css">
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/xin/admin/login/Wopop_files/userpanel.css">
-<link rel="stylesheet" type="text/css" href="/kuaidian/Public/xin/admin/login/Wopop_files/jquery.ui.all.css">
-<!-- <link rel="stylesheet" href="/kuaidian/Public/muban/assets/css/bootstrap.css"> -->
-    <script type="text/javascript" src="/kuaidian/Public/muban/assets/js/jquery.js"></script>
-    <script type="text/javascript" src="/kuaidian/Public/muban/assets/js/bootstrap.js"></script>
+<link href="/-/Public/xin/admin/login/Wopop_files/style_log.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/-/Public/xin/admin/login/Wopop_files/style.css">
+<link rel="stylesheet" type="text/css" href="/-/Public/xin/admin/login/Wopop_files/userpanel.css">
+<link rel="stylesheet" type="text/css" href="/-/Public/xin/admin/login/Wopop_files/jquery.ui.all.css">
+<!-- <link rel="stylesheet" href="/-/Public/muban/assets/css/bootstrap.css"> -->
+    <script type="text/javascript" src="/-/Public/muban/assets/js/jquery.js"></script>
+    <script type="text/javascript" src="/-/Public/muban/assets/js/bootstrap.js"></script>
 
 </head>
 
 <body class="login" mycollectionplug="bind">
 <div class="login_m">
 
-<div class="login_logo"><img src="/kuaidian/Public/xin/admin/login/Wopop_files/logo.png" width="196" height="46"></div>
+<div class="login_logo"><img src="/-/Public/xin/admin/login/Wopop_files/logo.png" width="196" height="46"></div>
 
 <?php if($id == 1 ): ?><div style=" margin-left: 40%;margin-top: 10px;color:red;">账户名密码有误
 </div>

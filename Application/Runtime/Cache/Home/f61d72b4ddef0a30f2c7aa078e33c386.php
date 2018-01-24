@@ -2,9 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/register.css">
-    <script type="text/javascript" src="/kuaidian/Public/home/js/jquery.js"></script>
+    <link rel="stylesheet" href="/-/Public/home/css/base.css">
+    <link rel="stylesheet" href="/-/Public/home/css/register.css">
+    <script type="text/javascript" src="/-/Public/home/js/jquery.js"></script>
 
 
     <title>注册</title>
@@ -21,7 +21,7 @@
 
     <div class="phone">
         <label class="tu">
-            <img src="/kuaidian/Public/home/img/geren2.png" alt="">
+            <img src="/-/Public/home/img/geren2.png" alt="">
         </label>
 
         <div class="text">
@@ -32,7 +32,7 @@
 
     <div class="mima">
         <label class="tu2">
-            <img src="/kuaidian/Public/home/img/mima.png" alt="">
+            <img src="/-/Public/home/img/mima.png" alt="">
         </label>
 
         <div class="text2">
