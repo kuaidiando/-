@@ -39,11 +39,23 @@ class IndexController extends Controller {
     // 菜品列表
     public function detail(){
         $shopid = I('get.shopid');//门店id
-        // dump($shopid);die;
-        // 获取菜品分类
+        /**
+         * 获取单条信息
+         */
+        $userspdan = M('shop');
+        $wherespdan['id'] = $shopid;
+        $resspdan = $userspdan->where($wherespdan)
+                ->field('id,mingch,maney,logo,juan,xingsl')
+                ->select();
+        $this->assign("resspdan",$resspdan);
+        // dump($resspdan);die;
+        /**
+         *  获取菜品分类
+         * @var [type]
+         */
         $userfoodtype = M('food_type');
-        $where['dep_type'] = $shopid;//对应门店id
-        $resft = $userfoodtype->where($where)->order("paix desc")->select();
+        $whereft['dep_type'] = $shopid;//对应门店id
+        $resft = $userfoodtype->where($whereft)->order("paix desc")->select();
         // 区分菜品类别 那个是默认的
         foreach ($resft as $k => $v) {
             //判断是否是第一个
@@ -53,22 +65,46 @@ class IndexController extends Controller {
                 $resft[$k]['typefd'] = 2;
             }
         }
-        // dump($resft);die;
+        // dump($resft);
         $this->assign("resft",$resft);
-        //获取菜品类别最大的id
-        $shoptypedaid = $resft[0]['id'];
-        // dump($shoptypedaid);die;
-        // 获取菜品
-        $user = M('food');
-        $where['food.dep_shop'] = $shopid;//对应门店id
-        $where['food.zhuangt'] = 1;//菜品状态
-        $where['food.food_type'] = $shoptypedaid;//最大菜品类别id
-        $resfood = $user->where($where)
-                    ->join('food_type ON food_type.id = food.food_type')
-                    ->join('cpdanwei ON cpdanwei.id = food.dwid')
-                    ->field('food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid')->select();
-                    // dump($resfood);die;
-        $this->assign("resfood",$resfood);
+        /**
+         * 获取菜品优化
+         */
+
+
+        // $user = M('food');
+        // $wherefd['food.dep_shop'] = $shopid;//对应门店id
+        // $wherefd['food.zhuangt'] = 1;//菜品状态
+        // $wherefd['linshijj.userid'] = 1;//临时表用户id
+        // $resfood = $user->where($wherefd)
+        //             ->join('left join food_type ON food_type.id = food.food_type')
+        //             ->join('left join cpdanwei ON cpdanwei.id = food.dwid')
+        //             ->join("left join linshijj ON food.id = linshijj.foodid")
+        //             ->field('food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum')->select();
+                    //sql 语句运行
+                    $user = M();
+        $sqlcp = "SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = '1') WHERE food.dep_shop = ".$shopid." AND food.zhuangt = '1' ";
+                    $resfood = $user ->query($sqlcp);
+                    // echo $user->getLastsql();
+        // dump($resfood);
+        /**
+         * 拼接菜品数组
+         */
+        $zuizhongfood = array();
+        //遍历菜品类别
+        foreach ($resft as $kft => $vft) {
+            foreach ($resfood as $kfd => $vfd) {
+                // 判断resfood菜品类型id  是否  等于resft菜品类型id
+                // 将菜品详情拼接到菜品类别里
+                if($vft['id'] == $vfd['food_type']){
+                    $vft['foodxq'][]= $vfd;
+                }
+            }
+            //将菜品类别拼接到新数组中
+            $zuizhongfood[] = $vft;
+            // dump($vft);echo 123;
+        }
+        $this->assign("zuizhongfood",$zuizhongfood);//菜品详情
 
         
         $this->display();
