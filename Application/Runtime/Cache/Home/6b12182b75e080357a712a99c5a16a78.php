@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" data-dpr="1" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
@@ -6,10 +6,10 @@
     <meta content="telephone=yes" name="format-detection" />
     <meta content="email=no" name="format-detection" />
     <title>订单提交</title>
-    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/text.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/dingdan.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/demo.css">
+    <link rel="stylesheet" href="/-/Public/home/css/base.css">
+    <link rel="stylesheet" href="/-/Public/home/css/text.css">
+    <link rel="stylesheet" href="/-/Public/home/css/dingdan.css">
+    <link rel="stylesheet" href="/-/Public/home/css/demo.css">
 </head>
 <body style="font-size: 12px">
     <div class="header">

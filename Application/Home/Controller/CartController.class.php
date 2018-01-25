@@ -51,7 +51,7 @@ class CartController extends Controller {
     public function save_cart()
     {
         $info = array();
-        $shop_id = 1;// I('post.shopid');
+        $shop_id = 1;// I('shopid');
         $user_id = \user_helper::get_user_id();
         $where = array(
             'userid'=>$user_id,
@@ -67,17 +67,11 @@ class CartController extends Controller {
         if($info){
             foreach($info as $infok=>$infov){
                 if($store_id && $store_id != $infov['shopid']){
-                    // if($store_id != $infov['shopid']){
                     //如果购物车中已存在其他店铺商品 清空购物车
                     $result = $cart->where(array('user_id'=>$user_id,'status'=>1))->save(array('status'=>0));
                         if(!$result){
-                            $this->ajaxReturn(array(
-                                'data' => false,
-                                'code'=>230,
-                                'msg'=>'数据有误'
-                            ));
+                            $this->error("Index/detail","存在其他商家商品");
                         }
-                    // }
                 }else{
                     $filter = array(
                         'user_id'  => $user_id,
@@ -92,13 +86,8 @@ class CartController extends Controller {
                         $filter['store_id']  = $shop_id;
                         $result = $cart->add($filter);
                         if (!$result) {
-                            $data = array(
-                                    'data' => false,
-                                    'code' => 225,
-                                    'msg'  => '保存失败',
-                            );
-
-                        $this->ajaxReturn($data);
+                      
+                        $this->error("index/detail","保存失败请重试");
                         }
                     }else{
                         $info = array(
@@ -112,36 +101,35 @@ class CartController extends Controller {
 
                         $result = $cart->where(array('id'=>$cart_info['id']))->save($info);
                         if (!$result) {
-                            $data = array(
-                                    'data' => false,
-                                    'code' => 225,
-                                    'msg'  => '保存失败'
-                            );
-
-                            $this->ajaxReturn($data);
+                          
+                            $this->error('index/detail','保存失败请重试');
                         }
                     }
 
                 }
             }
-        }else{
-            $this->ajaxReturn(array('data'=>false,'code'=>201,'msg'=>'无数据'));
+            M('linshijj')->where($where)->delete();
         }
-        $data = array(
-                'data' => true,
-                'code' => 200,
-                'msg'  => '',
-        );
+      
+        
+        $shopname = uri('shop',array('id'=>$shop_id),'mingch');
+        $end_cart_info = M('cart')->where(array('user_id'=>$user_id,'store_id'=>$shop_id,'status'=>1))->select();
+        $total_price = 0.00;
 
-        $this->ajaxReturn($data);
-
+        foreach($end_cart_info as $k=>$v){
+            $end_cart_info[$k]['name'] = uri('food',array('id'=>$v['goods_id']),'mingch');
+            $end_cart_info[$k]['price'] = uri('food',array('id'=>$v['goods_id']),'jiage_youhui');
+            // $total_price = 
+            $total_price += $v['goods_num'] * uri('food',array('id'=>$v['goods_id']),'jiage_youhui');
+        }
+        // dump($end_cart_info);exit;
+        $this->assign('total_price',$total_price);
+        $this->assign('shopid',$shop_id);
+        $this->assign('end_cart_info',$end_cart_info);
+        $this->assign('shopname',$shopname);
+        $this->display('cart/diandanye');
        
     }
 
-   
-     
-
-
-   
      
 }

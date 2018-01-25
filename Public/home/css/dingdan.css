@@ -417,11 +417,15 @@
     width: 35%;
     height: 120px;
     background-color: #ffae00;
-    text-align: center;
     float: left;
-    line-height: 120px;
 }
-.tj span{
+
+.tj button{
+    width: 100%;
+    height: 120px;
+    background-color: #ffae00;
+    text-align: center;
+    line-height: 120px;
+    color: #ffffff;
     font-size: 40px;
-    color: white;
 }

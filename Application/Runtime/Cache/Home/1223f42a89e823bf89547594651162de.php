@@ -19,13 +19,8 @@
                     </div>
                     <div class="you">
                         <div class="name">
-<<<<<<< HEAD
-                            <span>aaa</span>
-                            <img src="/-/Public/home/img/baixin.png" alt="">
-=======
                             <span>山西肉夹馍<?php echo ($resspdan["0"]["id"]); ?></span>
-                            <img src="/kuaidian/Public/home/img/baixin.png" alt="">
->>>>>>> b51e17ff38df45694eb29e93baab2a3bbea33102
+                            <img src="/-/Public/home/img/baixin.png" alt="">
                         </div>
                         <div class="evaluate">
                             <img src="/-/Public/home/img/start.png" alt="">
@@ -90,11 +85,7 @@
                                             <li>
                                             <div class="menu-txt">
                                                 <div class="tu">
-<<<<<<< HEAD
-                                                    <img src="/-/Public/<?php echo ($voresfood["logo"]); ?>" alt="">
-=======
-                                                    <img src="/kuaidian/Public<?php echo ($vofoodxq["logo"]); ?>" alt="">
->>>>>>> b51e17ff38df45694eb29e93baab2a3bbea33102
+                                                    <img src="/-/Public<?php echo ($vofoodxq["logo"]); ?>" alt="">
                                                 </div>
                                                 <div class="youbian">
                                                     <div class="biao">
@@ -120,13 +111,13 @@
                                                     <!-- 判断是否有数量 -->
                                                     <?php if($vofoodxq["foodnum"] == null): ?><button class="minus" >
                                                         <strong>
-                                                            <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
+                                                            <img src="/-/Public/home/img/jianhao.png" alt="">
                                                         </strong>
                                                         </button>
                                                         <i>0</i>
                                                         <button class="add">
                                                         <strong>
-                                                            <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
+                                                            <img src="/-/Public/home/img/jiahao.png" alt="">
                                                         </strong>
                                                         </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i>
                                                     <?php else: ?>
@@ -240,10 +231,6 @@
                                         var n = $(".left-menu li").index(this);
                                         $(".left-menu li").index(this);
                                         $(".con>div").hide();
-<<<<<<< HEAD
-                                        $(".con>div:eq("+n+")").html('<div class="right-con con-active" style="width:100%;"><div class="tit"><span>推荐</span></div><ul><li><div class="menu-txt"><div class="tu"><img src="/-/Public/home/img/person.jpg" alt=""></div><div class="youbian"><div class="biao"><span>宫保鸡丁a</span></div><div class="center"><span>口味:甜</span></div><div class="fuhao"><span>￥</span></div><div class="qqian"><span>18.5</span></div><div class="danwei"><span>/份</span></div><div class="yuanjia"><del>￥20</del></div></div><div class="btn"><button class="minus"><strong><img src="/-/Public/home/img/jianhao.png" alt=""></strong></button> <i>0</i> <button class="add"><strong><img src="/-/Public/home/img/jiahao.png" alt=""></strong></button> <i class="price">18.5</i></div></div></li></ul></div>');
-=======
->>>>>>> b51e17ff38df45694eb29e93baab2a3bbea33102
                                         $(".con>div:eq("+n+")").show();
                                     });
                                 });

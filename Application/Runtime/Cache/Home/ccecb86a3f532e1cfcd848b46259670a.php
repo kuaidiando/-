@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" data-dpr="1" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
@@ -6,10 +6,10 @@
     <meta content="telephone=yes" name="format-detection" />
     <meta content="email=no" name="format-detection" />
     <title>订单提交</title>
-    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/text.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/dingdan.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/demo.css">
+    <link rel="stylesheet" href="/-/Public/home/css/base.css">
+    <link rel="stylesheet" href="/-/Public/home/css/text.css">
+    <link rel="stylesheet" href="/-/Public/home/css/dingdan.css">
+    <link rel="stylesheet" href="/-/Public/home/css/demo.css">
 </head>
 <body style="font-size: 12px">
     <div class="header">
@@ -22,16 +22,17 @@
 
     <div class="name">
         <div class="dianming">
-            <span>渝乡辣婆婆(万达店)</span>
+            <span><?php echo ($shopname); ?></span>
         </div>
 
         <div class="jia">
             <div class="jia2">
-                <span>加菜</span>
+                <span><a href="<?php echo U('Home/Index/detail',array('shopid'=>$shopid));?>">加菜</a></span>
             </div>
         </div>
     </div>
-
+    <form action="<?php echo U('Home/Order/save_order');?>" name="myform" method="post">
+    
     <div class="mingxi">
         <span>订单明细</span>
     </div>
@@ -54,48 +55,22 @@
         </div>
 
         <div class="center">
-
-            <div class="cai2">
+        <?php if(is_array($end_cart_info)): foreach($end_cart_info as $key=>$info): ?><div class="cai2">
                 <div class="qq">
-                    <span>玉米鲜肉馄饨</span>
+                    <span><?php echo ($info["name"]); ?></span>
                 </div>
 
                 <div class="liang">
-                    <span>X2</span>
+                    <span>X<?php echo ($info["goods_num"]); ?></span>
+
                 </div>
 
                 <div class="jiage">
-                    <span>￥24</span>
-                </div>
-            </div>
+                    <span>￥<?php echo ($info["price"]); ?></span>
 
-            <div class="cai3">
-                <div class="qq2">
-                    <span>酸辣土豆丝</span>
                 </div>
-
-                <div class="liang2">
-                    <span>X2</span>
-                </div>
-
-                <div class="jiage2">
-                    <span>￥24</span>
-                </div>
-            </div>
-
-            <div class="cai4">
-                <div class="qq3">
-                    <span>酸辣土豆丝</span>
-                </div>
-
-                <div class="liang3">
-                    <span>X2</span>
-                </div>
-
-                <div class="jiage3">
-                    <span>￥24</span>
-                </div>
-            </div>
+            </div><?php endforeach; endif; ?>
+           
         </div>
 
         <div class="jie">
@@ -108,11 +83,10 @@
             </div>
 
             <div class="qqian">
-                <span>￥72</span>
+                <span>￥<?php echo ($total_price); ?></span>
             </div>
         </div>
     </div>
-
     <div class="juti">
         <div class="renshu">
             <div class="ren">
@@ -120,7 +94,7 @@
             </div>
 
             <div class="shu">
-                <input type="text" placeholder="请填写就餐人数">
+                <input type="text" name="order_pnum" placeholder="请填写就餐人数">
             </div>
         </div>
 
@@ -130,7 +104,7 @@
             </div>
 
             <div class="mming">
-                <input type="text" placeholder="请输入您的名字">
+                <input type="text" name="buyer_name" placeholder="请输入您的名字">
             </div>
         </div>
 
@@ -140,24 +114,28 @@
             </div>
 
             <div class="ll">
-                <input type="text" placeholder="选填、口味、偏好、忌口等其他要求">
+                <input type="text" name="order_remark" placeholder="选填、口味、偏好、忌口等其他要求">
             </div>
         </div>
     </div>
-
     <div class="ddi">
         <div class="fen">
             <span>提交订单获取折扣</span>
         </div>
 
         <div class="zong">
-            <span>￥72</span>
+            <span>￥<?php echo ($total_price); ?></span>
+            <input type="hidden" name="total_price" value="<?php echo ($total_price); ?>"
+            >
+            <input type="hidden" name="store_id" value="<?php echo ($shopid); ?>"/>
+
         </div>
 
         <div class="tj">
-            <span>提交订单</span>
+           <button>提交订单</button>
         </div>
     </div>
-
+    </form>
+    
 </body>
 </html>
