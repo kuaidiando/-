@@ -88,6 +88,26 @@ class IndexController extends Controller {
                     // echo $user->getLastsql();
         // dump($resfood);
         /**
+         * 拼接总分数总价格
+         */
+        $zfsjg = array();
+        $zfshu = 0;
+        $zjiage = 0;
+        foreach ($resfood as $kzf => $vzf) {
+            // 判断 foodnum 是否为空
+            if(!$vzf['foodnum'] == null){
+                // 获取总份数
+                $zfshu = $vzf['foodnum']+$zfshu;
+                // 整理总价格
+                $zjiage = $vzf['foodnum']*$vzf['shoujia']+$zjiage;//单个菜品总价格
+                // dump($zjiage);
+            }
+        }
+        $zfsjg['zfshu'] = $zfshu;
+        $zfsjg['zjiage'] = $zjiage;
+
+        $this->assign("zfsjg",$zfsjg);//总分数总价格
+        /**
          * 拼接菜品数组
          */
         $zuizhongfood = array();
@@ -104,10 +124,79 @@ class IndexController extends Controller {
             $zuizhongfood[] = $vft;
             // dump($vft);echo 123;
         }
+        // dump($zuizhongfood);die;
         $this->assign("zuizhongfood",$zuizhongfood);//菜品详情
 
         
         $this->display();
+    }
+    //ajax add 菜品份数
+    public function ajaxaddlinshijj(){
+        //获取数据
+        $shopid = I('post.shopid');//，门店id
+        $foodtypeid = I('post.foodtypeid');// 菜品类型id
+        $foodid = I('post.caipinid');// 菜品id
+        $foodnum = I('post.caipinfenshu');// 菜品份数
+        $user = M('linshijj');
+        // 判断份数是否是 第一份
+        if($foodnum == 1){
+            //执行添加
+            $data['shopid'] = $shopid;
+            $data['foodtypeid'] = $foodtypeid;
+            $data['foodid'] = $foodid;
+            $data['foodnum'] = $foodnum;
+            $data['userid'] = 1;
+            $res = $user->add($data);
+        }else{
+            //执行修改
+            $where['shopid'] = $shopid;
+            $where['foodtypeid'] = $foodtypeid;
+            $where['foodid'] = $foodid;
+            $where['userid'] = 1;
+            $data['foodnum'] = $foodnum;
+            $res = $user->where($where)->data($data)->save();
+        }
+        // 判断是否添加成功
+        if ($res) {
+            $this->ajaxReturn(1);
+        }else{
+            $this->ajaxReturn(2);
+        }
+        
+    }
+    //ajax del 菜品份数
+    public function ajaxdellinshijj(){
+        //获取数据
+        $shopid = I('post.shopid');//，门店id
+        $foodtypeid = I('post.foodtypeid');// 菜品类型id
+        $foodid = I('post.caipinid');// 菜品id
+        $foodnum = I('post.caipinfenshu');// 菜品份数
+        $user = M('linshijj');
+        // 判断份数是否是 第一份
+        if($foodnum == 0){
+            // $this->ajaxReturn(123);
+            //执行删除
+            $where['shopid'] = $shopid;
+            $where['foodtypeid'] = $foodtypeid;
+            $where['foodid'] = $foodid;
+            $where['userid'] = 1;
+            $res = $user->where($where)->delete(); 
+        }else{
+            // $this->ajaxReturn(456);
+            //执行修改
+            $where['shopid'] = $shopid;
+            $where['foodtypeid'] = $foodtypeid;
+            $where['foodid'] = $foodid;
+            $where['userid'] = 1;
+            $data['foodnum'] = $foodnum;
+            $res = $user->where($where)->data($data)->save();
+        }
+        // 判断是否添加成功
+        if ($res) {
+            $this->ajaxReturn(1);
+        }else{
+            $this->ajaxReturn(2);
+        }
     }
     // 单条门店展示
     public function dantiaoshop(){

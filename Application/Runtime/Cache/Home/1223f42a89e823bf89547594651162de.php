@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>商家</title>
-    <link rel="icon" href="/-/Public/home/img/logo1.png">
-    <link rel="stylesheet" href="/-/Public/home/css/base.css">
-    <link rel="stylesheet" href="/-/Public/home/css/text.css">
-    <link rel="stylesheet" href="/-/Public/home/css/detail.css">
+    <link rel="icon" href="/kuaidian/Public/home/img/logo1.png">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/detail.css">
 </head>
 <body style="font-size: 12px">
     <!--商家-->
@@ -15,18 +15,26 @@
             <div class="shangjia">
                 <div class="top">
                     <div class="shang">
-                        <img src="/-/Public/home/img/person.jpg" alt="">
+                        <img src="/kuaidian/Public/home/img/person.jpg" alt="">
                     </div>
                     <div class="you">
                         <div class="name">
+<<<<<<< HEAD
                             <span>山西肉夹馍<?php echo ($resspdan["0"]["id"]); ?></span>
                             <img src="/-/Public/home/img/baixin.png" alt="">
+=======
+                            <span>山西肉夹馍
+                            <!-- 商家id -->
+                            <span id="shopid" style="display: none;"><?php echo ($resspdan["0"]["id"]); ?></span>
+                            </span>
+                            <img src="/kuaidian/Public/home/img/baixin.png" alt="">
+>>>>>>> 7cd28dd93a22565f5880c2fe66a932799b14227c
                         </div>
                         <div class="evaluate">
-                            <img src="/-/Public/home/img/start.png" alt="">
+                            <img src="/kuaidian/Public/home/img/start.png" alt="">
                         </div>
                         <div class="tui">
-                            <img src="/-/Public/home/img/tui.png" alt="">
+                            <img src="/kuaidian/Public/home/img/tui.png" alt="">
                             <span class="gai">该商家已开通"微众代言",代言可获得</span>
                             <span class="red">5.0%</span>
                         </div>
@@ -34,7 +42,7 @@
                 </div>
 
                 <div class="bottom">
-                    <img src="/-/Public/home/img/yin.png" alt="">
+                    <img src="/kuaidian/Public/home/img/yin.png" alt="">
                     <span>欢迎光临,用餐高峰期请提前下单,谢谢</span>
                     <a href="../predetermine.html"><input type="button" value="订座/请客"></a>
                 </div>
@@ -71,21 +79,17 @@
                                         </div>
                                         <!-- 遍历菜品详情 -->
                                         <?php if(is_array($vozuizhongfood['foodxq'])): foreach($vozuizhongfood['foodxq'] as $key=>$vofoodxq): ?><ul>
-                                        <!--     ["id"] => string(2) "59"
-    ["cpmingch"] => string(15) "酸辣土豆丝"
-    ["food_type"] => string(2) "14"
-    ["mingch"] => string(12) "今日特价"
-    ["kouwei"] => string(13) "清香,麻辣"
-    ["logo"] => string(18) "/img/yuxiangrs.jpg"
-    ["yuanjia"] => string(2) "30"
-    ["shoujia"] => string(2) "20"
-    ["danweimc"] => string(3) "份"
-    ["dwid"] => string(1) "9"
-    ["foodnum"] => string(1) "2" -->
                                             <li>
                                             <div class="menu-txt">
+                                            <!-- 隐藏菜品id 菜品类型  -->
+                                                    <span style="display: none;" class="caipinleix"><?php echo ($vozuizhongfood["id"]); ?></span>
+                                                    <span style="display: none;" class="caipinid"><?php echo ($vofoodxq["id"]); ?></span>
                                                 <div class="tu">
+<<<<<<< HEAD
                                                     <img src="/-/Public<?php echo ($vofoodxq["logo"]); ?>" alt="">
+=======
+                                                    <img src="/kuaidian/Public<?php echo ($vofoodxq["logo"]); ?>" alt="">
+>>>>>>> 7cd28dd93a22565f5880c2fe66a932799b14227c
                                                 </div>
                                                 <div class="youbian">
                                                     <div class="biao">
@@ -108,13 +112,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="btn">
+                                                    
                                                     <!-- 判断是否有数量 -->
                                                     <?php if($vofoodxq["foodnum"] == null): ?><button class="minus" >
                                                         <strong>
                                                             <img src="/-/Public/home/img/jianhao.png" alt="">
                                                         </strong>
                                                         </button>
-                                                        <i>0</i>
+                                                        <i  class="caipinfenshu">0</i>
                                                         <button class="add">
                                                         <strong>
                                                             <img src="/-/Public/home/img/jiahao.png" alt="">
@@ -123,13 +128,13 @@
                                                     <?php else: ?>
                                                          <button class="minus" style="display: inline-block;">
                                                         <strong>
-                                                            <img src="/-/Public/home/img/jianhao.png" alt="">
+                                                            <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
                                                         </strong>
                                                         </button>
-                                                        <i style="display: inline-block;"><?php echo ($vofoodxq["foodnum"]); ?></i>
+                                                        <i style="display: inline-block;" class="caipinfenshu"><?php echo ($vofoodxq["foodnum"]); ?></i>
                                                         <button class="add">
                                                         <strong>
-                                                            <img src="/-/Public/home/img/jiahao.png" alt="">
+                                                            <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
                                                         </strong>
                                                         </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i><?php endif; ?>
                                                 </div>
@@ -138,42 +143,47 @@
                                         </ul><?php endforeach; endif; ?>
                                     </div>
                                 </div><?php endforeach; endif; ?>
-                            <div class="footer">
-                                <div class="gou">
-                                    <img src="/-/Public/home/img/gouwuche.png" alt="">
+                            <!-- 判断总份数是否存在 -->
+                            <?php if($zfsjg['zfshu'] == 0): ?><div class="footer">
+                                    <div class="gou">
+                                        <img src="/kuaidian/Public/home/img/gouwuche.png" alt="">
+                                    </div>
+
+                                    <div class="left">
+    		                        <span id="cartN">
+                                        <span id="totalcountshow">0</span>份　总计：￥
+                                        <span id="totalpriceshow">0</span>
+                                    </span>元
+                                    </div>
+
+                                    <div class="right">
+                                        <a id="btnselect" class="xhlbtn  disable" href="javascript:void(0)">下一步</a>
+                                    </div>
                                 </div>
+                            <?php else: ?>
+                                <div class="footer">
+                                    <div class="gou">
+                                        <img src="/kuaidian/Public/home/img/gouwuche.png" alt="">
+                                    </div>
 
-                                <div class="left">
-		                        <span id="cartN">
-                                    <span id="totalcountshow">0</span>份　总计：￥
-                                    <span id="totalpriceshow">0</span>
-                                </span>元
-                                </div>
+                                    <div class="left">
+                                    <span id="cartN">
+                                        <span id="totalcountshow"><?php echo ($zfsjg['zfshu']); ?></span>份　总计：￥
+                                        <span id="totalpriceshow"><?php echo ($zfsjg['zjiage']); ?></span>
+                                    </span>元
+                                    </div>
 
-                                <div class="right">
-                                    <a id="btnselect" class="xhlbtn  disable" href="javascript:void(0)">下一步</a>
-                                </div>
-                            </div>
+                                    <div class="right">
+                                        <a id="btnselect" class="xhlbtn" href="javascript:void(0)">下一步</a>
+                                    </div>
+                                </div><?php endif; ?>
 
 
-                            <script type="text/javascript" src="/-/Public/home/js/jquery.min.js"></script>
+                            <script type="text/javascript" src="/kuaidian/Public/home/js/jquery.min.js"></script>
                             <script type="text/javascript">
                                 $(function () {
                                     //加的效果
-                                    // $(".add").click(function () {
-                                    //     $(this).prevAll().css("display", "inline-block");
-                                    //     var n = $(this).prev().text();
-                                    //     var num = parseInt(n) + 1;
-                                    //     if (num == 0) { return; }
-                                    //     $(this).prev().text(num);
-                                    //     var danjia = $(this).next().text();//获取单价
-                                    //     var a = $("#totalpriceshow").html();//获取当前所选总价
-                                    //     $("#totalpriceshow").html((a * 1 + danjia * 1).toFixed(2));//计算当前所选总价
-
-                                    //     var nm = $("#totalcountshow").html();//获取数量
-                                    //     $("#totalcountshow").html(nm*1+1);
-                                    //     jss();//<span style='font-family: Arial, Helvetica, sans-serif;'></span>   改变按钮样式
-                                    // });
+                                   
                                     // yxy 优化
                                     $(document).on("click",".add",function(){
                                         $(this).prevAll().css("display", "inline-block");
@@ -188,6 +198,29 @@
                                         var nm = $("#totalcountshow").html();//获取数量
                                         $("#totalcountshow").html(nm*1+1);
                                         jss();//<span style='font-family: Arial, Helvetica, sans-serif;'></span>   改变按钮样式
+                                        /**
+                                         *  yxy改变数据库-增加
+                                         */
+                                        // 获取门店id -shopid
+                                        var shopid = $("#shopid").html();
+                                        // 获取菜品类型id
+                                        var foodtypeid = $(this).parent().parent().find('.caipinleix').html();
+                                        // 获取菜品id
+                                        var caipinid = $(this).parent().parent().find('.caipinid').html();
+                                        // 获取菜品份数
+                                        var caipinfenshu = $(this).parent().find(".caipinfenshu").html();
+                                        //ajax更改数据库
+                                        $.ajax({
+                                            type:'POST',
+                                            dataType: 'json',
+                                            url:'<?php echo U("Home/Index/ajaxaddlinshijj");?>',
+                                            data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu},
+                                            success: function (result) {
+                                                if (result == 2) {
+                                                    alert("操作失败");
+                                                }
+                                            }
+                                        })
                                     });
                                     //减的效果 yxy 优化
                                     $(document).on("click",".minus",function(){
@@ -207,8 +240,33 @@
                                             $(this).next().css("display", "none");
                                             $(this).css("display", "none");
                                             jss();//改变按钮样式
-                                            return
+                                            // return
                                         }
+                                        /**
+                                         *  yxy改变数据库-减号
+                                         */
+                                        // 获取门店id -shopid
+                                        var shopid = $("#shopid").html();
+                                        // 获取菜品类型id
+                                        var foodtypeid = $(this).parent().parent().find('.caipinleix').html();
+                                        // 获取菜品id
+                                        var caipinid = $(this).parent().parent().find('.caipinid').html();
+                                        // 获取菜品份数
+                                        var caipinfenshu = $(this).parent().find(".caipinfenshu").html();
+                                        // alert(caipinfenshu);
+                                        //ajax更改数据库
+                                        $.ajax({
+                                            type:'POST',
+                                            dataType: 'json',
+                                            url:'<?php echo U("Home/Index/ajaxdellinshijj");?>',
+                                            data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu},
+                                            success: function (result) {
+                                                // alert(result);
+                                                if (result == 2) {
+                                                    alert("操作失败");
+                                                }
+                                            }
+                                        })
                                     });
                                     // 下一步
                                     $(document).on("click","#btnselect",function(){
@@ -241,7 +299,7 @@
                         <div class="address">
                             <div class="dizhi">
                                 <div class="tt">
-                                    <img src="/-/Public/home/img/dizhi.png" alt="">
+                                    <img src="/kuaidian/Public/home/img/dizhi.png" alt="">
                                 </div>
 
                                 <div class="zz">
@@ -251,7 +309,7 @@
 
                             <div class="phone">
                                 <div class="iphone">
-                                    <img src="/-/Public/home/img/phone.png" alt="">
+                                    <img src="/kuaidian/Public/home/img/phone.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -259,7 +317,7 @@
                         <!--微众代言-->
                         <div class="hezi2">
                             <div class="you6">
-                                <img src="/-/Public/home/img/tui2.png" alt="">
+                                <img src="/kuaidian/Public/home/img/tui2.png" alt="">
                             </div>
 
                             <div class="zhongjian">
@@ -282,7 +340,7 @@
                             </div>
 
                             <div class="tu3">
-                                <img src="/-/Public/home/img/youjiantou.png" alt="">
+                                <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
                             </div>
                         </div>
 
@@ -290,14 +348,14 @@
                         <div class="youhui">
                             <div class="quan">
                                 <div class="quan3">
-                                    <img src="/-/Public/home/img/quan2.png" alt="">
+                                    <img src="/kuaidian/Public/home/img/quan2.png" alt="">
                                 </div>
                                 <span>优惠券</span>
                             </div>
 
                             <div class="xia2">
                                 <div class="q1">
-                                    <img src="/-/Public/home/img/person.jpg" alt="">
+                                    <img src="/kuaidian/Public/home/img/person.jpg" alt="">
                                 </div>
 
                                 <div class="youhe">
@@ -346,7 +404,7 @@
 
                             <div class="he4">
                                 <div class="tt1">
-                                    <img src="/-/Public/home/img/tan.png" alt="">
+                                    <img src="/kuaidian/Public/home/img/tan.png" alt="">
                                 </div>
 
                                 <div class="zz1">
@@ -360,7 +418,7 @@
                             <div class="dian">
                                 <div class="ww">
                                     <a href="#">
-                                        <img src="/-/Public/home/img/dian.png" alt="">
+                                        <img src="/kuaidian/Public/home/img/dian.png" alt="">
                                     </a>
                                 </div>
 
@@ -374,7 +432,7 @@
                             <div class="ding">
                                 <div class="aa">
                                     <a href="#">
-                                        <img src="/-/Public/home/img/ding.png" alt="">
+                                        <img src="/kuaidian/Public/home/img/ding.png" alt="">
                                     </a>
                                 </div>
 
@@ -388,7 +446,7 @@
                             <div class="fu">
                                 <div class="vv">
                                     <a href="#">
-                                        <img src="/-/Public/home/img/fu.png" alt="">
+                                        <img src="/kuaidian/Public/home/img/fu.png" alt="">
                                     </a>
                                 </div>
 
@@ -408,8 +466,8 @@
             </div>
         </div>
 
-    <script src="/-/Public/home/js/jquery.js"></script>
-    <script src="/-/Public/home/js/tab.js"></script>
+    <script src="/kuaidian/Public/home/js/jquery.js"></script>
+    <script src="/kuaidian/Public/home/js/tab.js"></script>
     <script>
         $(function () {
 
