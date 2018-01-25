@@ -19,7 +19,10 @@
                     </div>
                     <div class="you">
                         <div class="name">
-                            <span>山西肉夹馍{$resspdan.0.id}</span>
+                            <span>山西肉夹馍
+                            <!-- 商家id -->
+                            <span id="shopid" style="display: none;">{$resspdan.0.id}</span>
+                            </span>
                             <img src="__PUBLIC__/home/img/baixin.png" alt="">
                         </div>
                         <div class="evaluate">
@@ -77,19 +80,11 @@
                                         <!-- 遍历菜品详情 -->
                                         <foreach name="vozuizhongfood['foodxq']" item="vofoodxq">
                                         <ul>
-                                        <!--     ["id"] => string(2) "59"
-    ["cpmingch"] => string(15) "酸辣土豆丝"
-    ["food_type"] => string(2) "14"
-    ["mingch"] => string(12) "今日特价"
-    ["kouwei"] => string(13) "清香,麻辣"
-    ["logo"] => string(18) "/img/yuxiangrs.jpg"
-    ["yuanjia"] => string(2) "30"
-    ["shoujia"] => string(2) "20"
-    ["danweimc"] => string(3) "份"
-    ["dwid"] => string(1) "9"
-    ["foodnum"] => string(1) "2" -->
                                             <li>
                                             <div class="menu-txt">
+                                            <!-- 隐藏菜品id 菜品类型  -->
+                                                    <span style="display: none;" class="caipinleix">{$vozuizhongfood.id}</span>
+                                                    <span style="display: none;" class="caipinid">{$vofoodxq.id}</span>
                                                 <div class="tu">
                                                     <img src="__PUBLIC__{$vofoodxq.logo}" alt="">
                                                 </div>
@@ -114,6 +109,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="btn">
+                                                    
                                                     <!-- 判断是否有数量 -->
                                                     <if condition="$vofoodxq.foodnum eq null">
                                                         <button class="minus" >
@@ -121,7 +117,7 @@
                                                             <img src="__PUBLIC__/home/img/jianhao.png" alt="">
                                                         </strong>
                                                         </button>
-                                                        <i>0</i>
+                                                        <i  class="caipinfenshu">0</i>
                                                         <button class="add">
                                                         <strong>
                                                             <img src="__PUBLIC__/home/img/jiahao.png" alt="">
@@ -133,7 +129,7 @@
                                                             <img src="__PUBLIC__/home/img/jianhao.png" alt="">
                                                         </strong>
                                                         </button>
-                                                        <i style="display: inline-block;">{$vofoodxq.foodnum}</i>
+                                                        <i style="display: inline-block;" class="caipinfenshu">{$vofoodxq.foodnum}</i>
                                                         <button class="add">
                                                         <strong>
                                                             <img src="__PUBLIC__/home/img/jiahao.png" alt="">
@@ -148,42 +144,49 @@
                                     </div>
                                 </div>
                             </foreach>
-                            <div class="footer">
-                                <div class="gou">
-                                    <img src="__PUBLIC__/home/img/gouwuche.png" alt="">
-                                </div>
+                            <!-- 判断总份数是否存在 -->
+                            <if condition="$zfsjg['zfshu'] eq 0">
+                                <div class="footer">
+                                    <div class="gou">
+                                        <img src="__PUBLIC__/home/img/gouwuche.png" alt="">
+                                    </div>
 
-                                <div class="left">
-		                        <span id="cartN">
-                                    <span id="totalcountshow">0</span>份　总计：￥
-                                    <span id="totalpriceshow">0</span>
-                                </span>元
-                                </div>
+                                    <div class="left">
+    		                        <span id="cartN">
+                                        <span id="totalcountshow">0</span>份　总计：￥
+                                        <span id="totalpriceshow">0</span>
+                                    </span>元
+                                    </div>
 
-                                <div class="right">
-                                    <a id="btnselect" class="xhlbtn  disable" href="javascript:void(0)">下一步</a>
+                                    <div class="right">
+                                        <a id="btnselect" class="xhlbtn  disable" href="javascript:void(0)">下一步</a>
+                                    </div>
                                 </div>
-                            </div>
+                            <else />
+                                <div class="footer">
+                                    <div class="gou">
+                                        <img src="__PUBLIC__/home/img/gouwuche.png" alt="">
+                                    </div>
+
+                                    <div class="left">
+                                    <span id="cartN">
+                                        <span id="totalcountshow">{$zfsjg['zfshu']}</span>份　总计：￥
+                                        <span id="totalpriceshow">{$zfsjg['zjiage']}</span>
+                                    </span>元
+                                    </div>
+
+                                    <div class="right">
+                                        <a id="btnselect" class="xhlbtn" href="javascript:void(0)">下一步</a>
+                                    </div>
+                                </div>
+                            </if>
 
 
                             <script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
                             <script type="text/javascript">
                                 $(function () {
                                     //加的效果
-                                    // $(".add").click(function () {
-                                    //     $(this).prevAll().css("display", "inline-block");
-                                    //     var n = $(this).prev().text();
-                                    //     var num = parseInt(n) + 1;
-                                    //     if (num == 0) { return; }
-                                    //     $(this).prev().text(num);
-                                    //     var danjia = $(this).next().text();//获取单价
-                                    //     var a = $("#totalpriceshow").html();//获取当前所选总价
-                                    //     $("#totalpriceshow").html((a * 1 + danjia * 1).toFixed(2));//计算当前所选总价
-
-                                    //     var nm = $("#totalcountshow").html();//获取数量
-                                    //     $("#totalcountshow").html(nm*1+1);
-                                    //     jss();//<span style='font-family: Arial, Helvetica, sans-serif;'></span>   改变按钮样式
-                                    // });
+                                   
                                     // yxy 优化
                                     $(document).on("click",".add",function(){
                                         $(this).prevAll().css("display", "inline-block");
@@ -198,6 +201,29 @@
                                         var nm = $("#totalcountshow").html();//获取数量
                                         $("#totalcountshow").html(nm*1+1);
                                         jss();//<span style='font-family: Arial, Helvetica, sans-serif;'></span>   改变按钮样式
+                                        /**
+                                         *  yxy改变数据库-增加
+                                         */
+                                        // 获取门店id -shopid
+                                        var shopid = $("#shopid").html();
+                                        // 获取菜品类型id
+                                        var foodtypeid = $(this).parent().parent().find('.caipinleix').html();
+                                        // 获取菜品id
+                                        var caipinid = $(this).parent().parent().find('.caipinid').html();
+                                        // 获取菜品份数
+                                        var caipinfenshu = $(this).parent().find(".caipinfenshu").html();
+                                        //ajax更改数据库
+                                        $.ajax({
+                                            type:'POST',
+                                            dataType: 'json',
+                                            url:'{:U("Home/Index/ajaxaddlinshijj")}',
+                                            data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu},
+                                            success: function (result) {
+                                                if (result == 2) {
+                                                    alert("操作失败");
+                                                }
+                                            }
+                                        })
                                     });
                                     //减的效果 yxy 优化
                                     $(document).on("click",".minus",function(){
@@ -217,8 +243,33 @@
                                             $(this).next().css("display", "none");
                                             $(this).css("display", "none");
                                             jss();//改变按钮样式
-                                            return
+                                            // return
                                         }
+                                        /**
+                                         *  yxy改变数据库-减号
+                                         */
+                                        // 获取门店id -shopid
+                                        var shopid = $("#shopid").html();
+                                        // 获取菜品类型id
+                                        var foodtypeid = $(this).parent().parent().find('.caipinleix').html();
+                                        // 获取菜品id
+                                        var caipinid = $(this).parent().parent().find('.caipinid').html();
+                                        // 获取菜品份数
+                                        var caipinfenshu = $(this).parent().find(".caipinfenshu").html();
+                                        // alert(caipinfenshu);
+                                        //ajax更改数据库
+                                        $.ajax({
+                                            type:'POST',
+                                            dataType: 'json',
+                                            url:'{:U("Home/Index/ajaxdellinshijj")}',
+                                            data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu},
+                                            success: function (result) {
+                                                // alert(result);
+                                                if (result == 2) {
+                                                    alert("操作失败");
+                                                }
+                                            }
+                                        })
                                     });
                                     // 下一步
                                     $(document).on("click","#btnselect",function(){
