@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>商家</title>
-    <link rel="icon" href="/-/Public/home/img/logo1.png">
-    <link rel="stylesheet" href="/-/Public/home/css/base.css">
-    <link rel="stylesheet" href="/-/Public/home/css/text.css">
-    <link rel="stylesheet" href="/-/Public/home/css/detail.css">
+    <link rel="icon" href="/kuaidian/Public/home/img/logo1.png">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/detail.css">
 </head>
 <body style="font-size: 12px">
     <form action="<?php echo U('Home/Cart/save_cart');?>" id="dateshangjia" style="display: none;" method="post">
-        <input type="text" name="shopid" value="123">
+        <input type="text" name="shopid" value="<?php echo ($resspdan["0"]["id"]); ?>">
     </form>
     <!--商家-->
     <div class="he">
             <div class="shangjia">
                 <div class="top">
                     <div class="shang">
-                        <img src="/-/Public/home/img/person.jpg" alt="">
+                        <img src="/kuaidian/Public/home/img/person.jpg" alt="">
                     </div>
                     <div class="you">
                         <div class="name">
@@ -26,17 +26,13 @@
                             <!-- 商家id -->
                             <span id="shopid" style="display: none;"><?php echo ($resspdan["0"]["id"]); ?></span>
                             </span>
-<<<<<<< HEAD
                             <img src="/kuaidian/Public/home/img/baixin.png" alt="">
-=======
-                            <img src="/-/Public/home/img/baixin.png" alt="">
->>>>>>> 8b02099666b674884b9041b4372374877da91d0e
                         </div>
                         <div class="evaluate">
-                            <img src="/-/Public/home/img/start.png" alt="">
+                            <img src="/kuaidian/Public/home/img/start.png" alt="">
                         </div>
                         <div class="tui">
-                            <img src="/-/Public/home/img/tui.png" alt="">
+                            <img src="/kuaidian/Public/home/img/tui.png" alt="">
                             <span class="gai">该商家已开通"微众代言",代言可获得</span>
                             <span class="red">5.0%</span>
                         </div>
@@ -44,7 +40,7 @@
                 </div>
 
                 <div class="bottom">
-                    <img src="/-/Public/home/img/yin.png" alt="">
+                    <img src="/kuaidian/Public/home/img/yin.png" alt="">
                     <span>欢迎光临,用餐高峰期请提前下单,谢谢</span>
                     <a href="../predetermine.html"><input type="button" value="订座/请客"></a>
                 </div>
@@ -87,11 +83,7 @@
                                                     <span style="display: none;" class="caipinleix"><?php echo ($vozuizhongfood["id"]); ?></span>
                                                     <span style="display: none;" class="caipinid"><?php echo ($vofoodxq["id"]); ?></span>
                                                 <div class="tu">
-<<<<<<< HEAD
                                                     <img src="/kuaidian/Public<?php echo ($vofoodxq["logo"]); ?>" alt="">
-=======
-                                                    <img src="/-/Public<?php echo ($vofoodxq["logo"]); ?>" alt="">
->>>>>>> 8b02099666b674884b9041b4372374877da91d0e
                                                 </div>
                                                 <div class="youbian">
                                                     <div class="biao">
@@ -130,13 +122,13 @@
                                                     <?php else: ?>
                                                          <button class="minus" style="display: inline-block;">
                                                         <strong>
-                                                            <img src="/-/Public/home/img/jianhao.png" alt="">
+                                                            <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
                                                         </strong>
                                                         </button>
                                                         <i style="display: inline-block;" class="caipinfenshu"><?php echo ($vofoodxq["foodnum"]); ?></i>
                                                         <button class="add">
                                                         <strong>
-                                                            <img src="/-/Public/home/img/jiahao.png" alt="">
+                                                            <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
                                                         </strong>
                                                         </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i><?php endif; ?>
                                                 </div>
@@ -148,7 +140,7 @@
                             <!-- 判断总份数是否存在 -->
                             <?php if($zfsjg['zfshu'] == 0): ?><div class="footer">
                                     <div class="gou">
-                                        <img src="/-/Public/home/img/gouwuche.png" alt="">
+                                        <img src="/kuaidian/Public/home/img/gouwuche.png" alt="">
                                     </div>
 
                                     <div class="left">
@@ -165,7 +157,7 @@
                             <?php else: ?>
                                 <div class="footer">
                                     <div class="gou">
-                                        <img src="/-/Public/home/img/gouwuche.png" alt="">
+                                        <img src="/kuaidian/Public/home/img/gouwuche.png" alt="">
                                     </div>
 
                                     <div class="left">
@@ -181,7 +173,7 @@
                                 </div><?php endif; ?>
 
 
-                            <script type="text/javascript" src="/-/Public/home/js/jquery.min.js"></script>
+                            <script type="text/javascript" src="/kuaidian/Public/home/js/jquery.min.js"></script>
                             <script type="text/javascript">
                                 $(function () {
                                     //加的效果
@@ -302,7 +294,7 @@
                         <div class="address">
                             <div class="dizhi">
                                 <div class="tt">
-                                    <img src="/-/Public/home/img/dizhi.png" alt="">
+                                    <img src="/kuaidian/Public/home/img/dizhi.png" alt="">
                                 </div>
 
                                 <div class="zz">
@@ -312,7 +304,7 @@
 
                             <div class="phone">
                                 <div class="iphone">
-                                    <img src="/-/Public/home/img/phone.png" alt="">
+                                    <img src="/kuaidian/Public/home/img/phone.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -320,7 +312,7 @@
                         <!--微众代言-->
                         <div class="hezi2">
                             <div class="you6">
-                                <img src="/-/Public/home/img/tui2.png" alt="">
+                                <img src="/kuaidian/Public/home/img/tui2.png" alt="">
                             </div>
 
                             <div class="zhongjian">
@@ -343,7 +335,7 @@
                             </div>
 
                             <div class="tu3">
-                                <img src="/-/Public/home/img/youjiantou.png" alt="">
+                                <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
                             </div>
                         </div>
 
@@ -351,14 +343,14 @@
                         <div class="youhui">
                             <div class="quan">
                                 <div class="quan3">
-                                    <img src="/-/Public/home/img/quan2.png" alt="">
+                                    <img src="/kuaidian/Public/home/img/quan2.png" alt="">
                                 </div>
                                 <span>优惠券</span>
                             </div>
 
                             <div class="xia2">
                                 <div class="q1">
-                                    <img src="/-/Public/home/img/person.jpg" alt="">
+                                    <img src="/kuaidian/Public/home/img/person.jpg" alt="">
                                 </div>
 
                                 <div class="youhe">
@@ -407,7 +399,7 @@
 
                             <div class="he4">
                                 <div class="tt1">
-                                    <img src="/-/Public/home/img/tan.png" alt="">
+                                    <img src="/kuaidian/Public/home/img/tan.png" alt="">
                                 </div>
 
                                 <div class="zz1">
@@ -421,7 +413,7 @@
                             <div class="dian">
                                 <div class="ww">
                                     <a href="#">
-                                        <img src="/-/Public/home/img/dian.png" alt="">
+                                        <img src="/kuaidian/Public/home/img/dian.png" alt="">
                                     </a>
                                 </div>
 
@@ -435,7 +427,7 @@
                             <div class="ding">
                                 <div class="aa">
                                     <a href="#">
-                                        <img src="/-/Public/home/img/ding.png" alt="">
+                                        <img src="/kuaidian/Public/home/img/ding.png" alt="">
                                     </a>
                                 </div>
 
@@ -449,7 +441,7 @@
                             <div class="fu">
                                 <div class="vv">
                                     <a href="#">
-                                        <img src="/-/Public/home/img/fu.png" alt="">
+                                        <img src="/kuaidian/Public/home/img/fu.png" alt="">
                                     </a>
                                 </div>
 
@@ -469,8 +461,8 @@
             </div>
         </div>
 
-    <script src="/-/Public/home/js/jquery.js"></script>
-    <script src="/-/Public/home/js/tab.js"></script>
+    <script src="/kuaidian/Public/home/js/jquery.js"></script>
+    <script src="/kuaidian/Public/home/js/tab.js"></script>
     <script>
         $(function () {
 

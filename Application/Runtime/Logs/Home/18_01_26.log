@@ -3647,3 +3647,1246 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001097s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001283s ]
 >>>>>>> 8b02099666b674884b9041b4372374877da91d0e
 
+[ 2018-01-26T16:00:14+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2018-01-26T16:00:14+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0005s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2018-01-26T16:00:15+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0006s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2018-01-26T16:00:15+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2018-01-26T16:00:15+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0048s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2018-01-26T16:00:15+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0005s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2018-01-26T16:00:16+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxaddlinshijj.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `linshijj` [ RunTime:0.0032s ]
+SQL: INSERT INTO `linshijj` (`shopid`,`foodtypeid`,`foodid`,`foodnum`,`userid`) VALUES ('1','14','59','1','18') [ RunTime:0.0420s ]
+
+[ 2018-01-26T16:00:17+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxaddlinshijj.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `linshijj` [ RunTime:0.0037s ]
+SQL: INSERT INTO `linshijj` (`shopid`,`foodtypeid`,`foodid`,`foodnum`,`userid`) VALUES ('1','14','60','1','18') [ RunTime:0.0475s ]
+
+[ 2018-01-26T16:00:18+08:00 ] ::1 /kuaidian/index.php/Home/Cart/save_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `linshijj` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `linshijj` WHERE `userid` = '18' AND `shopid` = 123  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0031s ]
+SQL: SELECT `store_id` FROM `cart` WHERE `user_id` = 18 AND `status` = 1 ORDER BY `id` DESC LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0036s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 123 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cart` WHERE `user_id` = 18 AND `store_id` = 123 AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2018-01-26T16:00:21+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/123.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 123  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 123 ORDER BY paix desc  [ RunTime:0.0003s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 123 AND food.zhuangt = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000469s ]
+
+[ 2018-01-26T16:00:29+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2018-01-26T16:00:29+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0052s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0003s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-01-26T16:00:29+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0005s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-01-26T16:00:30+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2018-01-26T16:00:30+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0005s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2018-01-26T16:00:30+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0003s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000504s ]
+
+[ 2018-01-26T16:00:30+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0003s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2018-01-26T16:00:30+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0005s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001135s ]
+
+[ 2018-01-26T16:00:30+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0003s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-01-26T16:00:32+08:00 ] ::1 /kuaidian/index.php/Home/Cart/save_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `linshijj` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `linshijj` WHERE `userid` = '18' AND `shopid` = 123  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0042s ]
+SQL: SELECT `store_id` FROM `cart` WHERE `user_id` = 18 AND `status` = 1 ORDER BY `id` DESC LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0038s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 123 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cart` WHERE `user_id` = 18 AND `store_id` = 123 AND `status` = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2018-01-26T16:00:33+08:00 ] ::1 /kuaidian/index.php/Home/Cart/save_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `linshijj` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `linshijj` WHERE `userid` = '18' AND `shopid` = 123  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0035s ]
+SQL: SELECT `store_id` FROM `cart` WHERE `user_id` = 18 AND `status` = 1 ORDER BY `id` DESC LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0038s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 123 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cart` WHERE `user_id` = 18 AND `store_id` = 123 AND `status` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2018-01-26T16:00:34+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/123.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 123  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 123 ORDER BY paix desc  [ RunTime:0.0003s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 123 AND food.zhuangt = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000317s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000356s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+
+[ 2018-01-26T16:03:27+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2018-01-26T16:03:29+08:00 ] ::1 /kuaidian/index.php/Home/Cart/save_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `linshijj` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `linshijj` WHERE `userid` = '18' AND `shopid` = 123  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0038s ]
+SQL: SELECT `store_id` FROM `cart` WHERE `user_id` = 18 AND `status` = 1 ORDER BY `id` DESC LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0050s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 123 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cart` WHERE `user_id` = 18 AND `store_id` = 123 AND `status` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2018-01-26T16:03:30+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/123.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 123  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 123 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 123 AND food.zhuangt = '1'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2018-01-26T16:07:59+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/123.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0055s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 123  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 123 ORDER BY paix desc  [ RunTime:0.0003s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 123 AND food.zhuangt = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: session D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 14 行.
+ERR: Function name must be a string
+
+[ 2018-01-26T16:08:03+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0003s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: session D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 14 行.
+ERR: Function name must be a string
+
+[ 2018-01-26T16:08:04+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0048s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0005s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: session D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 14 行.
+ERR: Function name must be a string
+
+[ 2018-01-26T16:08:50+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0003s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2018-01-26T16:08:53+08:00 ] ::1 /kuaidian/index.php/Home/Cart/save_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+
+[ 2018-01-26T16:09:01+08:00 ] ::1 /kuaidian/index.php/Home/Cart/save_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `linshijj` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `linshijj` WHERE `userid` = '18' AND `shopid` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0031s ]
+SQL: SELECT `store_id` FROM `cart` WHERE `user_id` = 18 AND `status` = 1 ORDER BY `id` DESC LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cart` WHERE `user_id` = 18 AND `goods_id` = 59 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cart` SET `goods_num`='4',`update_time`='2018-01-26 16:09:01' WHERE `id` = 9 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cart` WHERE `user_id` = 18 AND `goods_id` = 60 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cart` SET `goods_num`='2',`update_time`='2018-01-26 16:09:01' WHERE `id` = 10 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0044s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cart` WHERE `user_id` = 18 AND `store_id` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0057s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 59 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 59 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 59 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 61 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 61 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 61 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2018-01-26T16:09:05+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0003s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2018-01-26T16:09:08+08:00 ] ::1 /kuaidian/index.php/Home/Cart/save_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `linshijj` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `linshijj` WHERE `userid` = '18' AND `shopid` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: SELECT `store_id` FROM `cart` WHERE `user_id` = 18 AND `status` = 1 ORDER BY `id` DESC LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cart` WHERE `user_id` = 18 AND `goods_id` = 59 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cart` SET `goods_num`='5',`update_time`='2018-01-26 16:09:08' WHERE `id` = 9 [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cart` WHERE `user_id` = 18 AND `goods_id` = 60 AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `cart` SET `goods_num`='3',`update_time`='2018-01-26 16:09:08' WHERE `id` = 10 [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0044s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cart` WHERE `user_id` = 18 AND `store_id` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0035s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 59 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 59 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 59 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 61 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 61 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 61 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004867s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2018-01-26T16:09:19+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2018-01-26T16:09:20+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000504s ]
+
+[ 2018-01-26T16:09:20+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0005s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2018-01-26T16:09:20+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0077s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2018-01-26T16:09:20+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0007s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2018-01-26T16:09:20+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2018-01-26T16:09:21+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2018-01-26T16:09:21+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2018-01-26T16:09:44+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0003s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2018-01-26T16:09:44+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2018-01-26T16:09:45+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0010s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2018-01-26T16:09:45+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2018-01-26T16:09:46+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxaddlinshijj.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `linshijj` [ RunTime:0.0031s ]
+SQL: INSERT INTO `linshijj` (`shopid`,`foodtypeid`,`foodid`,`foodnum`,`userid`) VALUES ('1','14','59','1','18') [ RunTime:0.0494s ]
+
+[ 2018-01-26T16:09:47+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxaddlinshijj.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `linshijj` [ RunTime:0.0031s ]
+SQL: INSERT INTO `linshijj` (`shopid`,`foodtypeid`,`foodid`,`foodnum`,`userid`) VALUES ('1','14','60','1','18') [ RunTime:0.0513s ]
+
+[ 2018-01-26T16:09:47+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0052s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2018-01-26T16:09:49+08:00 ] ::1 /kuaidian/index.php/Home/Cart/save_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `linshijj` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `linshijj` WHERE `userid` = '18' AND `shopid` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0039s ]
+SQL: SELECT `store_id` FROM `cart` WHERE `user_id` = 18 AND `status` = 1 ORDER BY `id` DESC LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cart` WHERE `user_id` = 18 AND `goods_id` = 59 AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: INSERT INTO `cart` (`user_id`,`goods_id`,`status`,`goods_num`,`goods_type`,`add_time`,`store_id`) VALUES ('18','59','1','1','14','2018-01-26 16:09:49','1') [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cart` WHERE `user_id` = 18 AND `goods_id` = 60 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `cart` (`user_id`,`goods_id`,`status`,`goods_num`,`goods_type`,`add_time`,`store_id`) VALUES ('18','60','1','1','14','2018-01-26 16:09:49','1') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0044s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cart` WHERE `user_id` = 18 AND `store_id` = 1 AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0042s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 59 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 59 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 59 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2018-01-26T16:09:52+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`mingch`,`maney`,`logo`,`juan`,`xingsl` FROM `shop` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0004s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = 1 AND food.zhuangt = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined index: foodxq D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+

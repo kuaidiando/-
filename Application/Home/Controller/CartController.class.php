@@ -52,6 +52,7 @@ class CartController extends Controller {
     {
         $info = array();
         $shop_id = I('shopid');
+        // dump($shop_id);die;
         $user_id = \user_helper::get_user_id();
         $where = array(
             'userid'=>$user_id,
