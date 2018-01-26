@@ -58,7 +58,7 @@ class CartController extends Controller {
             'userid'=>$user_id,
             'shopid'=>$shop_id,
             );
-
+        $cart_y = M('cart')->where(array('user_id'=>$user_id,'store_id'=>$shop_id))->delete();
         //获取商品临时表里的数据
         $info = M("linshijj")->where($where)->select();
         $cart = M('cart');
