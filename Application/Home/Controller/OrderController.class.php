@@ -21,12 +21,13 @@ class OrderController extends Controller {
     }
     //提交订单
     public function save_order(){
+
         $order_filter = $_POST;
         $order_filter['user_id'] = $this->user_id;
         $order_filter['order_code'] = date('ymdHis').sms_code(4);
         $order_filter['add_time'] = date('Y-m-d H:i:s',time());
         // dump($order_filter);exit;
-
+        $order_id = 0;
         $order_id = M('order')->add($order_filter);
         if($order_id){
         	$order_goods_info = M('cart')->where(array('store_id'=>$_POST['store_id'],'user_id'=>$this->user_id,'status'=>1))->select();
@@ -45,12 +46,17 @@ class OrderController extends Controller {
         		}
 
         	}
+            if(count($order_goods_info) == M('order_fu')->where(array('order_id'=>$order_id))->count()){
+                M('cart')->where(array('store_id'=>$_POST['store_id'],'user_id'=>$this->user_id,'status'=>1))->save(array('status'=>0));
+            }
         	
         }
         // dump($order_filter);exit;
-
-
-
+        $order_res = M('order')->where(array('user_id'=>$this->user_id))->select();
+        foreach($order_res as $key=>$value){
+            $order_res[$key]['shopname'] = uri('shop',array('id'=>$value['store_id']),'mingch');
+        }
+        $this->assign('order_res',$order_res);
         $this->display('order/mydingdan');
     }
  

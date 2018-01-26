@@ -51,7 +51,7 @@ class CartController extends Controller {
     public function save_cart()
     {
         $info = array();
-        $shop_id = 1;// I('shopid');
+        $shop_id = I('shopid');
         $user_id = \user_helper::get_user_id();
         $where = array(
             'userid'=>$user_id,

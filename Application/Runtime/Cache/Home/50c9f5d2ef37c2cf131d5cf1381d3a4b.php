@@ -106,7 +106,7 @@
             data:{tel:tel,password:password},
             success: function (result) {
                 if(result.code == 200){
-                    $(location).attr('href', '<?php echo U("Home/Person/index");?>');
+                    $(location).attr('href', '<?php echo U("Home/Index/index");?>');
                 }else{
                     alert(result.msg);
                 }
