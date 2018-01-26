@@ -38,6 +38,8 @@ class IndexController extends Controller {
     
     // 菜品列表
     public function detail(){
+        $userid = session('userid');//获取用户id
+        // dump($userid);die;
         $shopid = I('get.shopid');//门店id
         /**
          * 获取单条信息
@@ -83,7 +85,7 @@ class IndexController extends Controller {
         //             ->field('food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum')->select();
                     //sql 语句运行
                     $user = M();
-        $sqlcp = "SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = '1') WHERE food.dep_shop = ".$shopid." AND food.zhuangt = '1' ";
+        $sqlcp = "SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = ".$userid.") WHERE food.dep_shop = ".$shopid." AND food.zhuangt = '1' ";
                     $resfood = $user ->query($sqlcp);
                     // echo $user->getLastsql();
         // dump($resfood);
@@ -132,6 +134,7 @@ class IndexController extends Controller {
     }
     //ajax add 菜品份数
     public function ajaxaddlinshijj(){
+        $userid = session('userid');//获取用户id
         //获取数据
         $shopid = I('post.shopid');//，门店id
         $foodtypeid = I('post.foodtypeid');// 菜品类型id
@@ -145,14 +148,14 @@ class IndexController extends Controller {
             $data['foodtypeid'] = $foodtypeid;
             $data['foodid'] = $foodid;
             $data['foodnum'] = $foodnum;
-            $data['userid'] = 1;
+            $data['userid'] = $userid;
             $res = $user->add($data);
         }else{
             //执行修改
             $where['shopid'] = $shopid;
             $where['foodtypeid'] = $foodtypeid;
             $where['foodid'] = $foodid;
-            $where['userid'] = 1;
+            $where['userid'] = $userid;
             $data['foodnum'] = $foodnum;
             $res = $user->where($where)->data($data)->save();
         }
@@ -166,6 +169,7 @@ class IndexController extends Controller {
     }
     //ajax del 菜品份数
     public function ajaxdellinshijj(){
+        $userid = session('userid');//获取用户id
         //获取数据
         $shopid = I('post.shopid');//，门店id
         $foodtypeid = I('post.foodtypeid');// 菜品类型id
@@ -179,7 +183,7 @@ class IndexController extends Controller {
             $where['shopid'] = $shopid;
             $where['foodtypeid'] = $foodtypeid;
             $where['foodid'] = $foodid;
-            $where['userid'] = 1;
+            $where['userid'] = $userid ;
             $res = $user->where($where)->delete(); 
         }else{
             // $this->ajaxReturn(456);
@@ -187,7 +191,7 @@ class IndexController extends Controller {
             $where['shopid'] = $shopid;
             $where['foodtypeid'] = $foodtypeid;
             $where['foodid'] = $foodid;
-            $where['userid'] = 1;
+            $where['userid'] = $userid;
             $data['foodnum'] = $foodnum;
             $res = $user->where($where)->data($data)->save();
         }
