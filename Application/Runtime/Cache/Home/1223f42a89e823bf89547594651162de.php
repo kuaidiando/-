@@ -26,11 +26,7 @@
                             <!-- 商家id -->
                             <span id="shopid" style="display: none;"><?php echo ($resspdan["0"]["id"]); ?></span>
                             </span>
-<<<<<<< HEAD
-                            <img src="/kuaidian/Public/home/img/baixin.png" alt="">
-=======
                             <img src="/-/Public/home/img/baixin.png" alt="">
->>>>>>> 8b02099666b674884b9041b4372374877da91d0e
                         </div>
                         <div class="evaluate">
                             <img src="/-/Public/home/img/start.png" alt="">
@@ -87,11 +83,7 @@
                                                     <span style="display: none;" class="caipinleix"><?php echo ($vozuizhongfood["id"]); ?></span>
                                                     <span style="display: none;" class="caipinid"><?php echo ($vofoodxq["id"]); ?></span>
                                                 <div class="tu">
-<<<<<<< HEAD
-                                                    <img src="/kuaidian/Public<?php echo ($vofoodxq["logo"]); ?>" alt="">
-=======
                                                     <img src="/-/Public<?php echo ($vofoodxq["logo"]); ?>" alt="">
->>>>>>> 8b02099666b674884b9041b4372374877da91d0e
                                                 </div>
                                                 <div class="youbian">
                                                     <div class="biao">
@@ -118,13 +110,13 @@
                                                     <!-- 判断是否有数量 -->
                                                     <?php if($vofoodxq["foodnum"] == null): ?><button class="minus" >
                                                         <strong>
-                                                            <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
+                                                            <img src="/-/Public/home/img/jianhao.png" alt="">
                                                         </strong>
                                                         </button>
                                                         <i  class="caipinfenshu">0</i>
                                                         <button class="add">
                                                         <strong>
-                                                            <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
+                                                            <img src="/-/Public/home/img/jiahao.png" alt="">
                                                         </strong>
                                                         </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i>
                                                     <?php else: ?>
