@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="__PUBLIC__/home/css/detail.css">
 </head>
 <body style="font-size: 12px">
+    <form action="{:U('Home/Cart/save_cart')}" id="dateshangjia" style="display: none;" method="post">
+        <input type="text" name="shopid" value="123">
+    </form>
     <!--商家-->
     <div class="he">
             <div class="shangjia">
@@ -273,7 +276,8 @@
                                     });
                                     // 下一步
                                     $(document).on("click","#btnselect",function(){
-                                        alert(132);
+                                        //提交表单
+                                        $("#dateshangjia").submit();
                                     });
                                     function jss() {
                                         var m = $("#totalcountshow").html();

@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="/kuaidian/Public/home/css/detail.css">
 </head>
 <body style="font-size: 12px">
+    <form action="<?php echo U('Home/Cart/save_cart');?>" id="dateshangjia" style="display: none;" method="post">
+        <input type="text" name="shopid" value="123">
+    </form>
     <!--商家-->
     <div class="he">
             <div class="shangjia">
@@ -19,16 +22,11 @@
                     </div>
                     <div class="you">
                         <div class="name">
-<<<<<<< HEAD
-                            <span>山西肉夹馍<?php echo ($resspdan["0"]["id"]); ?></span>
-                            <img src="/-/Public/home/img/baixin.png" alt="">
-=======
                             <span>山西肉夹馍
                             <!-- 商家id -->
                             <span id="shopid" style="display: none;"><?php echo ($resspdan["0"]["id"]); ?></span>
                             </span>
                             <img src="/kuaidian/Public/home/img/baixin.png" alt="">
->>>>>>> 7cd28dd93a22565f5880c2fe66a932799b14227c
                         </div>
                         <div class="evaluate">
                             <img src="/kuaidian/Public/home/img/start.png" alt="">
@@ -85,11 +83,7 @@
                                                     <span style="display: none;" class="caipinleix"><?php echo ($vozuizhongfood["id"]); ?></span>
                                                     <span style="display: none;" class="caipinid"><?php echo ($vofoodxq["id"]); ?></span>
                                                 <div class="tu">
-<<<<<<< HEAD
-                                                    <img src="/-/Public<?php echo ($vofoodxq["logo"]); ?>" alt="">
-=======
                                                     <img src="/kuaidian/Public<?php echo ($vofoodxq["logo"]); ?>" alt="">
->>>>>>> 7cd28dd93a22565f5880c2fe66a932799b14227c
                                                 </div>
                                                 <div class="youbian">
                                                     <div class="biao">
@@ -116,13 +110,13 @@
                                                     <!-- 判断是否有数量 -->
                                                     <?php if($vofoodxq["foodnum"] == null): ?><button class="minus" >
                                                         <strong>
-                                                            <img src="/-/Public/home/img/jianhao.png" alt="">
+                                                            <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
                                                         </strong>
                                                         </button>
                                                         <i  class="caipinfenshu">0</i>
                                                         <button class="add">
                                                         <strong>
-                                                            <img src="/-/Public/home/img/jiahao.png" alt="">
+                                                            <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
                                                         </strong>
                                                         </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i>
                                                     <?php else: ?>
@@ -270,7 +264,8 @@
                                     });
                                     // 下一步
                                     $(document).on("click","#btnselect",function(){
-                                        alert(132);
+                                        //提交表单
+                                        $("#dateshangjia").submit();
                                     });
                                     function jss() {
                                         var m = $("#totalcountshow").html();
