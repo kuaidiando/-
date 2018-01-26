@@ -47,6 +47,7 @@ class OrderController extends Controller {
 
         	}
             if(count($order_goods_info) == M('order_fu')->where(array('order_id'=>$order_id))->count()){
+                M('linshijj')->where(array('userid'=>$this->user_id,'shopid'=>))->delete();
                 M('cart')->where(array('store_id'=>$_POST['store_id'],'user_id'=>$this->user_id,'status'=>1))->save(array('status'=>0));
             }
         	

@@ -108,7 +108,7 @@ class CartController extends Controller {
 
                 }
             }
-            M('linshijj')->where($where)->delete();
+            // M('linshijj')->where($where)->delete();
         }
       
         
