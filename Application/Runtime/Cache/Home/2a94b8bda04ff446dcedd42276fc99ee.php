@@ -152,7 +152,7 @@
 
 
     <!--中间商品部分-->
-    <?php if(is_array($res)): foreach($res as $key=>$vores): ?><a href="<?php echo U('Home/Index/detail',array('shopid'=>$vores[id]));?>">
+    <?php if(is_array($res)): foreach($res as $k=>$vores): ?><a href="<?php echo U('Home/Index/detail',array('shopid'=>$vores[id]));?>">
         <div class="shangpin">
             <div class="hezi">
                 <div class="hz">
@@ -171,9 +171,9 @@
 
                             <div class="center">
                                 <div class="xing">
-                                <?php echo ($vores["xingsl"]); ?>
-                                     <!-- 遍历星星 -->
-                                   
+                                <!-- 星数量 -->
+                                <?php $__FOR_START_1063653819__=0;$__FOR_END_1063653819__=$vores["xingsl"];for($i=$__FOR_START_1063653819__;$i < $__FOR_END_1063653819__;$i+=1){ ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
+                                    
                                 </div>
 
 

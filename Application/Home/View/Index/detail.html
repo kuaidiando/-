@@ -31,7 +31,7 @@
                     <div class="evaluate">
                         <!-- 遍历星星 -->
                         <foreach name="xingxingshul" item="voxingxingshul">
-                        <img src="__PUBLIC__/home/img/quanstart.png" style="width:8%;" alt="">
+                        <img src="__PUBLIC__/home/img/quanstart.png" style="width:5%;" alt="">
                         </foreach>
                     </div>
                     <div class="tui">
@@ -283,8 +283,15 @@
                                     });
                                     // 下一步
                                     $(document).on("click","#btnselect",function(){
-                                        //提交表单
+                                        //判断有误菜品
+                                        var zfens = $(this).parent().parent().find("#totalcountshow").html();
+                                        if (zfens == 0) {
+                                            alert("未选择菜品");
+                                        }else{
+                                            //提交表单
                                         $("#dateshangjia").submit();
+                                        }
+                                        
                                     });
                                     function jss() {
                                         var m = $("#totalcountshow").html();

@@ -30,7 +30,7 @@
                     </div>
                     <div class="evaluate">
                         <!-- 遍历星星 -->
-                        <?php if(is_array($xingxingshul)): foreach($xingxingshul as $key=>$voxingxingshul): ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:8%;" alt=""><?php endforeach; endif; ?>
+                        <?php if(is_array($xingxingshul)): foreach($xingxingshul as $key=>$voxingxingshul): ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:5%;" alt=""><?php endforeach; endif; ?>
                     </div>
                     <div class="tui">
                         <img src="/kuaidian/Public/home/img/tui.png" alt="">
@@ -269,8 +269,15 @@
                                     });
                                     // 下一步
                                     $(document).on("click","#btnselect",function(){
-                                        //提交表单
+                                        //判断有误菜品
+                                        var zfens = $(this).parent().parent().find("#totalcountshow").html();
+                                        if (zfens == 0) {
+                                            alert("未选择菜品");
+                                        }else{
+                                            //提交表单
                                         $("#dateshangjia").submit();
+                                        }
+                                        
                                     });
                                     function jss() {
                                         var m = $("#totalcountshow").html();

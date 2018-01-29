@@ -100,20 +100,24 @@ class IndexController extends Controller {
 
 
         // $user = M('food');
-        // $wherefd['food.dep_shop'] = $shopid;//对应门店id
+        // // $wherefd['food.dep_shop'] = 1;//对应门店id
         // $wherefd['food.zhuangt'] = 1;//菜品状态
-        // $wherefd['linshijj.userid'] = 1;//临时表用户id
+        // // $wherefd['linshijj.userid'] = 1;//临时表用户id
         // $resfood = $user->where($wherefd)
         //             ->join('left join food_type ON food_type.id = food.food_type')
         //             ->join('left join cpdanwei ON cpdanwei.id = food.dwid')
         //             ->join("left join linshijj ON food.id = linshijj.foodid")
-        //             ->field('food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum')->select();
+        //             ->field('food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum')
+        //             ->order('food.id desc')
+        //             ->select();
+        //             echo $user->getLastsql();
+        //             dump($resfood);die;
                     //sql 语句运行
                     $user = M();
-        $sqlcp = "SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = ".$userid.") WHERE food.dep_shop = ".$shopid." AND food.zhuangt = '1' ";
+        $sqlcp = "SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = ".$userid.") WHERE food.dep_shop = ".$shopid." AND food.zhuangt = '1' ORDER BY food.id asc" ;
                     $resfood = $user ->query($sqlcp);
                     // echo $user->getLastsql();
-        // dump($resfood);
+        // dump($resfood);die;
         /**
          * 拼接总分数总价格
          */
