@@ -5,17 +5,66 @@
     <meta name="viewport" content="user-scalable=no">
     <title>我的订单</title>
     <link rel="stylesheet" href="/-/Public/home/css/my%20dingdan.css">
+
+    <script src="/-/Public/home/js/jquery-1.12.4.js"></script>
+    <script src="/-/Public/home/js/jquery-1.12.4.min.js"></script>
+    <script src="/-/Public/home/js/tab.js"></script>
+    <script>
+        $(function(){
+            $(window).scroll(function() {
+                if($(window).scrollTop()>1){
+                    $(".nav").addClass("fixedNav");
+                }else{
+                    $(".nav").removeClass("fixedNav");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function(){
+            $(window).scroll(function() {
+                if($(window).scrollTop()>5){
+                    $("nav2").addClass("fixedNav2");
+                }else{
+                    $(".nav2").removeClass("fixedNav2");
+                }
+            });
+        });
+    </script>
+    <style>
+        .fixedNav {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: 100000;
+            _position: absolute;
+            _top: expression(eval(document.documentElement.scrollTop));
+        }
+        .fixedNav2 {
+            position: fixed;
+            top: 120px;
+            left: 0px;
+            width: 100%;
+            z-index: 100000;
+            _position: absolute;
+            _top: expression(eval(document.documentElement.scrollTop));
+        }
+    </style>
 </head>
 <body style="font-size: 12px">
 <div class="tab" js-tab="1">
-    <div class="tab-title">
-        <a href="javascript:;" class="item item-cur">订单</a>
-        <a href="javascript:;" class="item">订座</a>
-    </div>
+    <section class="nav">
+        <div class="tab-title">
+            <a href="javascript:;" class="item item-cur">订单</a>
+            <a href="javascript:;" class="item">订座</a>
+        </div>
+    </section>
     <div class="tab-cont">
         <ul class="tab-cont__wrap">
             <li class="item">
                 <div class="tab1" id="tab1">
+                    <section class="nav2">
                         <div class="menu">
                             <ul>
                                 <li id="one1" onclick="setTab('one',1)">全部</li>
@@ -23,16 +72,93 @@
                                 <li id="one3" onclick="setTab('one',3)">待使用</li>
                                 <li id="one4" onclick="setTab('one',4)">已使用</li>
                                 <li id="one5" onclick="setTab('one',5)">待评价</li>
-                                <li id="one6" onclick="setTab('one',6)">退款</li>
+                                <li id="one6" onclick="setTab('one',6)">取消单</li>
                             </ul>
                         </div>
+                    </section>
+
                         <div class="menudiv">
+
                             <div id="con_one_1">
-                                <a href="dingdanxiangqing.html">
+                            <?php if(is_array($order_res)): foreach($order_res as $key=>$res): ?><!-- <a href="dingdanxiangqing.html"> -->
                                     <div class="hezi">
                                         <div class="name">
                                             <div class="dian">
-                                                <span>渝乡辣婆婆(亦庄店)</span>
+                                                <span><?php echo ($res["shopname"]); ?></span>
+                                            </div>
+
+                                            <div class="qu">
+                                            <?php if($res["order_status"] == 1 || $res["order_status"] == 5): ?><span>取消订单</span>
+                                            <?php elseif($res["order_status"] == 10): ?>    
+                                                <span>去使用</span>
+                                            <?php elseif($res["order_status"] == 15): ?>
+                                                <span>去评价</span>
+                                            <?php else: ?>
+                                                <span></span><?php endif; ?>     
+                                            </div>
+                                        </div>
+
+                                        <div class="hezi2">
+                                            <div class="tu">
+                                                <img src="/-/Public<?php echo ($res["logo"]); ?>" alt="">
+                                            </div>
+
+                                            <div class="hao">
+                                                <div class="top">
+                                                    <span>订单号:</span>
+                                                </div>
+
+                                                <div class="center">
+                                                    <span><?php echo ($res["order_code"]); ?></span>
+                                                </div>
+
+                                                <div class="xia">
+                                                    <div class="xiaz">
+                                                        <span>订单金额:</span>
+                                                    </div>
+
+                                                    <div class="xiay">
+                                                        <span>￥<?php echo ($res["total_price"]); ?></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="<?php echo U('Home/Order/order_xq');?>" style="text-decoration:none">
+                                            <div class="dai">
+                                                <div class="yong">
+                                                <?php if($res["order_status"] == 1 ): ?><span>未支付</span>
+                                                <?php elseif($res["order_status"] == 5): ?>
+                                                    <span>已支付</span>
+                                                    <?php elseif($res["order_status"] == 10): ?>
+                                                    <span>待评价</span>
+                                                    <?php elseif($res["order_status"] == 15): ?>
+                                                    <span>已完成</span>
+                                                    <?php elseif($res["order_status"] == 20): ?>
+                                                    <span>已取消</span>
+                                                    <?php else: ?>
+                                                    <span>未知</span><?php endif; ?>
+                                                </div>
+
+                                                <div class="jian">
+                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
+                                                </div>
+
+                                            </div>
+                                            </a>    
+
+                                        </div>
+                                    </div>
+                                <!-- </a> --><?php endforeach; endif; ?>    
+
+                            </div>
+
+
+
+                            <div id="con_one_2" style="display:none;">
+                            <?php if(is_array($order_n)): foreach($order_n as $key=>$resn): ?><!-- <a href="dingdanxiangqing.html"> -->
+                                    <div class="hezi">
+                                        <div class="name">
+                                            <div class="dian">
+                                                <span><?php echo ($resn["shopname"]); ?></span>
                                             </div>
 
                                             <div class="qu">
@@ -42,7 +168,7 @@
 
                                         <div class="hezi2">
                                             <div class="tu">
-                                                <img src="/-/Public/home/img/person.jpg" alt="">
+                                                <img src="/-/Public<?php echo ($resn["logo"]); ?>" alt="">
                                             </div>
 
                                             <div class="hao">
@@ -51,7 +177,7 @@
                                                 </div>
 
                                                 <div class="center">
-                                                    <span>88888888888888</span>
+                                                    <span><?php echo ($resn["order_code"]); ?></span>
                                                 </div>
 
                                                 <div class="xia">
@@ -60,14 +186,15 @@
                                                     </div>
 
                                                     <div class="xiay">
-                                                        <span>￥888.8</span>
+                                                        <span>￥<?php echo ($resn["total_price"]); ?></span>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="dai">
                                                 <div class="yong">
-                                                    <span>待使用</span>
+                                                    <span>未支付</span>
+                                                    
                                                 </div>
 
                                                 <div class="jian">
@@ -76,16 +203,243 @@
                                             </div>
                                         </div>
                                     </div>
-                                </a>
+                                <!-- </a> --><?php endforeach; endif; ?>    
                             </div>
-                            <div id="con_one_2" style="display:none;">哈哈哈哈哈哈</div>
-                            <div id="con_one_3" style="display:none;">啦啦啦啦啦啦</div>
-                            <div id="con_one_4" style="display:none;">不知道不知道</div>
-                            <div id="con_one_5" style="display:none;">哼哼哼哼哼哼</div>
-                            <div id="con_one_6" style="display:none;">略略略略略略</div>
-                        </div>
-                    </div>
 
+                            <div id="con_one_3" style="display:none;">
+                            <?php if(is_array($order_s)): foreach($order_s as $key=>$ress): ?><!-- <a href="dingdanxiangqing.html"> -->
+                                    <div class="hezi">
+                                        <div class="name">
+                                            <div class="dian">
+                                                <span><?php echo ($ress["shopname"]); ?></span>
+                                            </div>
+
+                                            <div class="qu">
+                                                <span>取消订单</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="hezi2">
+                                            <div class="tu">
+                                                <img src="/-/Public<?php echo ($ress["logo"]); ?>" alt="">
+                                            </div>
+
+                                            <div class="hao">
+                                                <div class="top">
+                                                    <span>订单号:</span>
+                                                </div>
+
+                                                <div class="center">
+                                                    <span><?php echo ($ress["order_code"]); ?></span>
+                                                </div>
+
+                                                <div class="xia">
+                                                    <div class="xiaz">
+                                                        <span>订单金额:</span>
+                                                    </div>
+
+                                                    <div class="xiay">
+                                                        <span>￥<?php echo ($ress["total_price"]); ?></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="dai">
+                                                <div class="yong">
+                                                <?php if($ress["order_status"] == 1 ): ?><span>未支付</span>
+                                                <?php elseif($ress["order_status"] == 5 ): ?>
+                                                    <span>已支付</span>    
+                                                <?php else: ?>
+                                                    <span></span><?php endif; ?>
+                                                    
+                                                </div>
+
+                                                <div class="jian">
+                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- </a> --><?php endforeach; endif; ?>  
+                            </div>
+                            <div id="con_one_4" style="display:none;">
+                            <?php if(is_array($order_u)): foreach($order_u as $key=>$resu): ?><!-- <a href="dingdanxiangqing.html"> -->
+                                    <div class="hezi">
+                                        <div class="name">
+                                            <div class="dian">
+                                                <span><?php echo ($resu["shopname"]); ?></span>
+                                            </div>
+
+                                            <div class="qu">
+                                            <?php if($resu["order_status"] == 10 ): ?><span>去评价</span>
+                                            <?php else: ?>
+                                                <span></span><?php endif; ?>
+                                            </div>
+                                        </div>
+
+                                        <div class="hezi2">
+                                            <div class="tu">
+                                                <img src="/-/Public<?php echo ($resu["logo"]); ?>" alt="">
+                                            </div>
+
+                                            <div class="hao">
+                                                <div class="top">
+                                                    <span>订单号:</span>
+                                                </div>
+
+                                                <div class="center">
+                                                    <span><?php echo ($resu["order_code"]); ?></span>
+                                                </div>
+
+                                                <div class="xia">
+                                                    <div class="xiaz">
+                                                        <span>订单金额:</span>
+                                                    </div>
+
+                                                    <div class="xiay">
+                                                        <span>￥<?php echo ($resu["total_price"]); ?></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="dai">
+                                                <div class="yong">
+                                                <?php if($resu["order_status"] == 10 ): ?><span>待评价</span>
+                                                <?php elseif($resu["order_status"] == 15 ): ?>
+                                                    <span>已完成</span>
+                                                <?php elseif($resu["order_status"] == 20 ): ?>
+                                                    <span>已取消</span>
+                                                <?php else: ?>
+                                                    <span></span><?php endif; ?>
+                                                    
+                                                </div>
+
+                                                <div class="jian">
+                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- </a> --><?php endforeach; endif; ?> 
+                            </div>
+                            <div id="con_one_5" style="display:none;">
+                            <?php if(is_array($order_p)): foreach($order_p as $key=>$resp): ?><!-- <a href="dingdanxiangqing.html"> -->
+                                    <div class="hezi">
+                                        <div class="name">
+                                            <div class="dian">
+                                                <span><?php echo ($resp["shopname"]); ?></span>
+                                            </div>
+
+                                            <div class="qu">
+                                                <span>去评价</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="hezi2">
+                                            <div class="tu">
+                                                <img src="/-/Public<?php echo ($resp["logo"]); ?>" alt="">
+                                            </div>
+
+                                            <div class="hao">
+                                                <div class="top">
+                                                    <span>订单号:</span>
+                                                </div>
+
+                                                <div class="center">
+                                                    <span><?php echo ($resp["order_code"]); ?></span>
+                                                </div>
+
+                                                <div class="xia">
+                                                    <div class="xiaz">
+                                                        <span>订单金额:</span>
+                                                    </div>
+
+                                                    <div class="xiay">
+                                                        <span>￥<?php echo ($resp["total_price"]); ?></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="dai">
+                                                <div class="yong">
+                                                    <?php if($resp["is_use"] == 1 ): ?><span>已使用</span>
+                                                    <?php else: ?>
+                                                    <span>未使用</span><?php endif; ?>
+                                                    
+                                                </div>
+
+                                                <div class="jian">
+                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- </a> --><?php endforeach; endif; ?> 
+                            </div>
+                            <div id="con_one_6" style="display:none;">
+                            <?php if(is_array($order_x)): foreach($order_x as $key=>$resx): ?><!-- <a href="dingdanxiangqing.html"> -->
+                                    <div class="hezi">
+                                        <div class="name">
+                                            <div class="dian">
+                                                <span><?php echo ($resx["shopname"]); ?></span>
+                                            </div>
+
+                                            <div class="qu">
+                                                <span></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="hezi2">
+                                            <div class="tu">
+                                                <img src="/-/Public<?php echo ($resx["logo"]); ?>" alt="">
+                                            </div>
+
+                                            <div class="hao">
+                                                <div class="top">
+                                                    <span>订单号:</span>
+                                                </div>
+
+                                                <div class="center">
+                                                    <span><?php echo ($resx["order_code"]); ?></span>
+                                                </div>
+
+                                                <div class="xia">
+                                                    <div class="xiaz">
+                                                        <span>订单金额:</span>
+                                                    </div>
+
+                                                    <div class="xiay">
+                                                        <span>￥<?php echo ($resx["total_price"]); ?></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="dai">
+                                                <div class="yong">
+                                                    <span>已取消</span>
+                                                
+                                                    <!-- <?php if($resx["is_use"] == 1 ): ?>-->
+                                                    <!-- <else> -->
+                                                    <!-- <span>未使用</span> -->
+                                                    <!--<?php endif; ?> -->
+                                                    
+                                                </div>
+
+                                                <div class="jian">
+                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- </a> --><?php endforeach; endif; ?>
+                            </div>
+                        </div>
+                </div>
+
+                <!-- <script src="/-/Public/home/js/jquery-1.12.4.js"></script> -->
+
+                <!-- <script src="/-/Public/home/js/jquery-1.12.4.min.js"></script> -->
+                <!-- <script src="/-/Public/home/js/tab.js"></script> -->
                 <script>
                     function setTab(name,cursel){
                         cursel_0=cursel;
@@ -116,19 +470,13 @@
                         for(var i=0; i<links_len; i++){
                             links[i].onmouseover=function(){
                                 clearInterval(iIntervalId);
-//                                this.onmouseout=function(){
-//                                    iIntervalId = setInterval(Next,ScrollTime);;
-//                                }
                             }
                         }
                         document.getElementById("con_"+name_0+"_"+links_len).parentNode.onmouseover=function(){
-//                            clearInterval(iIntervalId);
                             this.onmouseout=function(){
                                 iIntervalId = setInterval(Next,ScrollTime);;
                             }
                         }
-//                        setTab(name_0,cursel_0);
-//                        iIntervalId = setInterval(Next,ScrollTime);
                     }
                 </script>
 
@@ -142,8 +490,7 @@
     </div>
 </div>
 
-<script src="/-/Public/home/js/jquery.min.js"></script>
-<script src="/-/Public/home/js/tab.js"></script>
+
 <script>
     $(function () {
 
