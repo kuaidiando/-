@@ -695,7 +695,7 @@
     color: #ffae00;
 }
 .qqian{
-    width: 30%;
+    min-width:20%;
     height: 60px;
     line-height: 78px;
     float: left;

@@ -15,37 +15,40 @@
     </form>
     <!--商家-->
     <div class="he">
-            <div class="shangjia">
-                <div class="top">
-                    <div class="shang">
-                        <img src="__PUBLIC__/home/img/person.jpg" alt="">
-                    </div>
-                    <div class="you">
-                        <div class="name">
-                            <span>山西肉夹馍
-                            <!-- 商家id -->
-                            <span id="shopid" style="display: none;">{$resspdan.0.id}</span>
-                            </span>
-                            <img src="__PUBLIC__/home/img/baixin.png" alt="">
-                        </div>
-                        <div class="evaluate">
-                            <img src="__PUBLIC__/home/img/start.png" alt="">
-                        </div>
-                        <div class="tui">
-                            <img src="__PUBLIC__/home/img/tui.png" alt="">
-                            <span class="gai">该商家已开通"微众代言",代言可获得</span>
-                            <span class="red">5.0%</span>
-                        </div>
-                    </div>
+        <div class="shangjia">
+            <div class="top">
+                <div class="shang">
+                    <img src="__PUBLIC__/{$resspdan.0.logo}" alt="">
                 </div>
-
-                <div class="bottom">
-                    <img src="__PUBLIC__/home/img/yin.png" alt="">
-                    <span>欢迎光临,用餐高峰期请提前下单,谢谢</span>
-                    <a href="../predetermine.html"><input type="button" value="订座/请客"></a>
+                <div class="you">
+                    <div class="name">
+                        <span>{$resspdan.0.mingch}
+                        <!-- 商家id -->
+                        <span id="shopid" style="display: none;">{$resspdan.0.id}</span>
+                        </span>
+                        <img src="__PUBLIC__/home/img/baixin.png" alt="">
+                    </div>
+                    <div class="evaluate">
+                        <!-- 遍历星星 -->
+                        <foreach name="xingxingshul" item="voxingxingshul">
+                        <img src="__PUBLIC__/home/img/quanstart.png" style="width:8%;" alt="">
+                        </foreach>
+                    </div>
+                    <div class="tui">
+                        <img src="__PUBLIC__/home/img/tui.png" alt="">
+                        <span class="gai">该商家已开通"微众代言",代言可获得</span>
+                        <span class="red">{$resspdan.0.zuigaolij}%</span>
+                    </div>
                 </div>
             </div>
+
+            <div class="bottom">
+                <img src="__PUBLIC__/home/img/yin.png" alt="">
+                <span>欢迎光临,用餐高峰期请提前下单,谢谢</span>
+                <a href="../predetermine.html"><input type="button" value="订座/请客"></a>
+            </div>
         </div>
+    </div>
 
 
     <!--Tab栏-->
@@ -102,11 +105,15 @@
                                                         <span>￥</span>
                                                     </div>
                                                     <div class="qqian">
-                                                        <span>{$vofoodxq.shoujia}</span>
+                                                        <span>{$vofoodxq.shoujia}
+                                                            
+                                                            <span style="margin-left:2%;font-size: 50%;color: #888 ;font-weight:300;">/份</span>
+                                                            &nbsp;&nbsp;
+                                                        </span>
                                                     </div>
-                                                    <div class="danwei">
+                                                   <!--  <div class="danwei">
                                                         <span>/份</span>
-                                                    </div>
+                                                    </div> -->
                                                     <div class="yuanjia">
                                                         <del>￥{$vofoodxq.yuanjia}</del>
                                                     </div>
@@ -310,13 +317,15 @@
                                 </div>
 
                                 <div class="zz">
-                                    <span>石家庄市裕华区体育大街与槐安路交叉口东行两站地路北</span>
+                                    <span>
+                                    {$resspdan.0.jutidizhi}
+                                    </span>
                                 </div>
                             </div>
 
                             <div class="phone">
                                 <div class="iphone">
-                                    <img src="__PUBLIC__/home/img/phone.png" alt="">
+                                    <a href="tel:{$resspdan.0.tel}"><img src="__PUBLIC__/home/img/phone.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -342,7 +351,7 @@
                                     <span>收入比例</span>
                                 </div>
                                 <div class="red2">
-                                    <span>5.0%</span>
+                                    <span>{$resspdan.0.zuigaolij}%</span>
                                 </div>
                             </div>
 
@@ -362,7 +371,7 @@
 
                             <div class="xia2">
                                 <div class="q1">
-                                    <img src="__PUBLIC__/home/img/person.jpg" alt="">
+                                    <img src="__PUBLIC__/{$resspdan.0.logo}" alt="">
                                 </div>
 
                                 <div class="youhe">
@@ -402,11 +411,17 @@
                             </div>
 
                             <div class="he2">
-                                <span>营业时间：09:00-22:00</span>
+                                <span>营业时间：{$resspdan.0.time_kai}-{$resspdan.0.time_zhong}</span>
                             </div>
 
                             <div class="he3">
-                                <span>实时状态：在线</span>
+                                <span>实时状态：
+                                    <if condition="$resspdan[0][line_type] eq 1">
+                                        在线
+                                    <else/>
+                                        未在线
+                                    </if>
+                                </span>
                             </div>
 
                             <div class="he4">
@@ -431,25 +446,26 @@
 
                                 <div class="zai">
                                     <a href="#">
-                                        <span>在线点才下单,立减活动,最高立减50%</span>
+                                        <span>在线点菜下单,立减活动,最高立减50%</span>
                                     </a>
                                 </div>
                             </div>
+                            <if condition="$resspdan[0][zuoweishu] eq 0">
+                            <else/>
+                                <div class="ding">
+                                    <div class="aa">
+                                        <a href="#">
+                                            <img src="__PUBLIC__/home/img/ding.png" alt="">
+                                        </a>
+                                    </div>
 
-                            <div class="ding">
-                                <div class="aa">
-                                    <a href="#">
-                                        <img src="__PUBLIC__/home/img/ding.png" alt="">
-                                    </a>
+                                    <div class="zhi">
+                                        <a href="#">
+                                            <span>支持在线预订座位</span>
+                                        </a>
+                                    </div>
                                 </div>
-
-                                <div class="zhi">
-                                    <a href="#">
-                                        <span>支持在线预订座位</span>
-                                    </a>
-                                </div>
-                            </div>
-
+                            </if>
                             <div class="fu">
                                 <div class="vv">
                                     <a href="#">

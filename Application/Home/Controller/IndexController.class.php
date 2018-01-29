@@ -19,13 +19,25 @@ class IndexController extends Controller {
     	$where['shop.zhuangt'] =  1;//是否上架 1--上架 2 --否
     	$res = $user->where($where)
                 ->join('shop_type on shop.type_shop = shop_type.id')
-                ->field("shop.id,shop.mingch,shop.maney,shop.logo,shop.juan,shop_type.mingch as lbname")->select();
+                ->field("shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname")->select();
         $this->assign('res',$res);
+        // 拼接星星数量
+        foreach ($res as $kres => $vres) {
+            // dump($vres['xingsl']);
+            $xingxingshul = array();
+            // 星星数量转数组
+            for ($i=0; $i < $vres['xingsl']; $i++) { 
+                $xingxingshul[$i] = 1;
+            }
+            // 将星数组拼接回原来的数组
+            $res[$kres]['xingshuliang'] = $xingxingshul;
+        }
+        // dump($res);die;
+        
         // 门店类别
         $usermdlx = M('shop_type');
         $resmdlx = $usermdlx->where(array('zhuangt'=>1))->field('mingch')->select();
         $this->assign("resmdlx",$resmdlx);
-        // dump($resrmdlx);die;
         $this->display();
     }
     //轮播图
@@ -47,10 +59,23 @@ class IndexController extends Controller {
         $userspdan = M('shop');
         $wherespdan['id'] = $shopid;
         $resspdan = $userspdan->where($wherespdan)
-                ->field('id,mingch,maney,logo,juan,xingsl')
                 ->select();
-        $this->assign("resspdan",$resspdan);
         // dump($resspdan);die;
+        // 判断是否有座位
+        $user = M('seat');
+        $wherezws['dep_shop'] = $shopid;
+        $wherezws['zhuangt'] = 1;
+        $zuoweishu = $user->where($wherezws)->count();
+        //将座位数量拼接进原数组中
+        $resspdan[0]['zuoweishu'] = $zuoweishu;
+        $xingxingshul = array();
+        // 星星数量转数组
+        for ($i=0; $i < $resspdan[0]['xingsl']; $i++) { 
+            $xingxingshul[$i] = 1;
+        }
+        // dump($xingxingshul);die;
+        $this->assign("xingxingshul",$xingxingshul);//星星数量
+        $this->assign("resspdan",$resspdan);//单条信息
         /**
          *  获取菜品分类
          * @var [type]

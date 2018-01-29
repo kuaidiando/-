@@ -171,27 +171,9 @@
 
                             <div class="center">
                                 <div class="xing">
-                                    <ul>
-                                        <li>
-                                            <img src="/kuaidian/Public/home/img/quanstart.png" alt="">
-                                        </li>
-
-                                        <li>
-                                            <img src="/kuaidian/Public/home/img/ban.png" alt="">
-                                        </li>
-
-                                        <li>
-                                            <img src="/kuaidian/Public/home/img/wu.png" alt="">
-                                        </li>
-
-                                        <li>
-                                            <img src="/kuaidian/Public/home/img/wu.png" alt="">
-                                        </li>
-
-                                        <li>
-                                            <img src="/kuaidian/Public/home/img/wu.png" alt="">
-                                        </li>
-                                    </ul>
+                                <?php echo ($vores["xingsl"]); ?>
+                                     <!-- 遍历星星 -->
+                                   
                                 </div>
 
 

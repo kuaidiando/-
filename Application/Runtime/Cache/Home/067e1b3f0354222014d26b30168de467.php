@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
-    <link rel="stylesheet" href="/-/Public/home/css/base.css">
-    <link rel="stylesheet" href="/-/Public/home/css/text.css">
-    <link rel="stylesheet" href="/-/Public/home/css/resetting.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/resetting.css">
     <title>重置密码</title>
 
     <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
-    <script type="text/javascript" src="/-/Public/home/js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="/kuaidian/Public/home/js/jquery-1.12.4.js"></script>
 
     <script type="text/javascript">
         $(function  () {
@@ -65,7 +65,7 @@
 
     <div class="phone">
         <div class="tu">
-            <img src="/-/Public/home/img/geren2.png" alt="">
+            <img src="/kuaidian/Public/home/img/geren2.png" alt="">
         </div>
 
         <div class="text">
@@ -78,7 +78,7 @@
         <div class="center">
             <div class="duan">
                 <div class="xin">
-                    <img src="/-/Public/home/img/duanxin.png" alt="">
+                    <img src="/kuaidian/Public/home/img/duanxin.png" alt="">
                 </div>
 
                 <div class="tet">
@@ -97,7 +97,7 @@
 
     <div class="mima">
         <div class="tu2">
-            <img src="/-/Public/home/img/mima.png" alt="">
+            <img src="/kuaidian/Public/home/img/mima.png" alt="">
         </div>
 
         <div class="text2">
