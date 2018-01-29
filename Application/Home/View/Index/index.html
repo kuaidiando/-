@@ -154,7 +154,7 @@
 
 
     <!--中间商品部分-->
-    <foreach name="res" item="vores">
+    <foreach name="res" item="vores" key="k">
     <a href="{:U('Home/Index/detail',array('shopid'=>$vores[id]))}">
         <div class="shangpin">
             <div class="hezi">
@@ -174,27 +174,11 @@
 
                             <div class="center">
                                 <div class="xing">
-                                    <ul>
-                                        <li>
-                                            <img src="__PUBLIC__/home/img/quanstart.png" alt="">
-                                        </li>
-
-                                        <li>
-                                            <img src="__PUBLIC__/home/img/ban.png" alt="">
-                                        </li>
-
-                                        <li>
-                                            <img src="__PUBLIC__/home/img/wu.png" alt="">
-                                        </li>
-
-                                        <li>
-                                            <img src="__PUBLIC__/home/img/wu.png" alt="">
-                                        </li>
-
-                                        <li>
-                                            <img src="__PUBLIC__/home/img/wu.png" alt="">
-                                        </li>
-                                    </ul>
+                                <!-- 星数量 -->
+                                <for start="0" end="$vores.xingsl">
+                                    <img src="__PUBLIC__/home/img/quanstart.png" style="width:13%;" alt="">
+                                </for>
+                                    
                                 </div>
 
 

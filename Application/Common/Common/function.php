@@ -214,6 +214,9 @@ function zuoweishu($code){
     $where['dep_shop'] = $code;
     $where['zhuangt'] = 1;
     $result = $user->where($where)->count();
+    if($result == 0){
+        $result = " ";
+    }
     return $result;
 }
 /**

@@ -19,13 +19,25 @@ class IndexController extends Controller {
     	$where['shop.zhuangt'] =  1;//是否上架 1--上架 2 --否
     	$res = $user->where($where)
                 ->join('shop_type on shop.type_shop = shop_type.id')
-                ->field("shop.id,shop.mingch,shop.maney,shop.logo,shop.juan,shop_type.mingch as lbname")->select();
+                ->field("shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname")->select();
         $this->assign('res',$res);
+        // 拼接星星数量
+        foreach ($res as $kres => $vres) {
+            // dump($vres['xingsl']);
+            $xingxingshul = array();
+            // 星星数量转数组
+            for ($i=0; $i < $vres['xingsl']; $i++) { 
+                $xingxingshul[$i] = 1;
+            }
+            // 将星数组拼接回原来的数组
+            $res[$kres]['xingshuliang'] = $xingxingshul;
+        }
+        // dump($res);die;
+        
         // 门店类别
         $usermdlx = M('shop_type');
         $resmdlx = $usermdlx->where(array('zhuangt'=>1))->field('mingch')->select();
         $this->assign("resmdlx",$resmdlx);
-        // dump($resrmdlx);die;
         $this->display();
     }
     //轮播图
@@ -47,10 +59,23 @@ class IndexController extends Controller {
         $userspdan = M('shop');
         $wherespdan['id'] = $shopid;
         $resspdan = $userspdan->where($wherespdan)
-                ->field('id,mingch,maney,logo,juan,xingsl')
                 ->select();
-        $this->assign("resspdan",$resspdan);
         // dump($resspdan);die;
+        // 判断是否有座位
+        $user = M('seat');
+        $wherezws['dep_shop'] = $shopid;
+        $wherezws['zhuangt'] = 1;
+        $zuoweishu = $user->where($wherezws)->count();
+        //将座位数量拼接进原数组中
+        $resspdan[0]['zuoweishu'] = $zuoweishu;
+        $xingxingshul = array();
+        // 星星数量转数组
+        for ($i=0; $i < $resspdan[0]['xingsl']; $i++) { 
+            $xingxingshul[$i] = 1;
+        }
+        // dump($xingxingshul);die;
+        $this->assign("xingxingshul",$xingxingshul);//星星数量
+        $this->assign("resspdan",$resspdan);//单条信息
         /**
          *  获取菜品分类
          * @var [type]
@@ -75,20 +100,24 @@ class IndexController extends Controller {
 
 
         // $user = M('food');
-        // $wherefd['food.dep_shop'] = $shopid;//对应门店id
+        // // $wherefd['food.dep_shop'] = 1;//对应门店id
         // $wherefd['food.zhuangt'] = 1;//菜品状态
-        // $wherefd['linshijj.userid'] = 1;//临时表用户id
+        // // $wherefd['linshijj.userid'] = 1;//临时表用户id
         // $resfood = $user->where($wherefd)
         //             ->join('left join food_type ON food_type.id = food.food_type')
         //             ->join('left join cpdanwei ON cpdanwei.id = food.dwid')
         //             ->join("left join linshijj ON food.id = linshijj.foodid")
-        //             ->field('food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum')->select();
+        //             ->field('food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum')
+        //             ->order('food.id desc')
+        //             ->select();
+        //             echo $user->getLastsql();
+        //             dump($resfood);die;
                     //sql 语句运行
                     $user = M();
-        $sqlcp = "SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = ".$userid.") WHERE food.dep_shop = ".$shopid." AND food.zhuangt = '1' ";
+        $sqlcp = "SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = ".$userid.") WHERE food.dep_shop = ".$shopid." AND food.zhuangt = '1' ORDER BY food.id asc" ;
                     $resfood = $user ->query($sqlcp);
                     // echo $user->getLastsql();
-        // dump($resfood);
+        // dump($resfood);die;
         /**
          * 拼接总分数总价格
          */
