@@ -4,83 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>我的订单</title>
+    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/text.css">
     <link rel="stylesheet" href="__PUBLIC__/home/css/my%20dingdan.css">
-
-    <script src="__PUBLIC__/home/js/jquery-1.12.4.js"></script>
-    <script src="__PUBLIC__/home/js/jquery-1.12.4.min.js"></script>
-    <script src="__PUBLIC__/home/js/tab.js"></script>
-    <script>
-        $(function(){
-            $(window).scroll(function() {
-                if($(window).scrollTop()>1){
-                    $(".nav").addClass("fixedNav");
-                }else{
-                    $(".nav").removeClass("fixedNav");
-                }
-            });
-        });
-    </script>
-    <script>
-        $(function(){
-            $(window).scroll(function() {
-                if($(window).scrollTop()>5){
-                    $("nav2").addClass("fixedNav2");
-                }else{
-                    $(".nav2").removeClass("fixedNav2");
-                }
-            });
-        });
-    </script>
-    <style>
-        .fixedNav {
-            position: fixed;
-            top: 0px;
-            left: 0px;
-            width: 100%;
-            z-index: 100000;
-            _position: absolute;
-            _top: expression(eval(document.documentElement.scrollTop));
-        }
-        .fixedNav2 {
-            position: fixed;
-            top: 120px;
-            left: 0px;
-            width: 100%;
-            z-index: 100000;
-            _position: absolute;
-            _top: expression(eval(document.documentElement.scrollTop));
-        }
-    </style>
 </head>
 <body style="font-size: 12px">
 <div class="tab" js-tab="1">
-    <section class="nav">
-        <div class="tab-title">
-            <a href="javascript:;" class="item item-cur">订单</a>
-            <a href="javascript:;" class="item">订座</a>
-        </div>
-    </section>
+    <div class="tab-title">
+        <a href="javascript:;" class="item item-cur">订单</a>
+        <a href="javascript:;" class="item">订座</a>
+    </div>
     <div class="tab-cont">
         <ul class="tab-cont__wrap">
             <li class="item">
-                <div class="tab1" id="tab1">
-                    <section class="nav2">
-                        <div class="menu">
-                            <ul>
-                                <li id="one1" onclick="setTab('one',1)">全部</li>
-                                <li id="one2" onclick="setTab('one',2)">待支付</li>
-                                <li id="one3" onclick="setTab('one',3)">待使用</li>
-                                <li id="one4" onclick="setTab('one',4)">已使用</li>
-                                <li id="one5" onclick="setTab('one',5)">待评价</li>
-                                <li id="one6" onclick="setTab('one',6)">取消单</li>
-                            </ul>
-                        </div>
-                    </section>
-
-                        <div class="menudiv">
-
-                            <div id="con_one_1">
-                            <foreach name="order_res" item="res">
+                <div class="tab">
+                    <ul class="tabs2">
+                        <li><a href="#">全部</a></li>
+                        <li><a href="#">待支付</a></li>
+                        <li><a href="#">待使用</a></li>
+                        <li><a href="#">已使用</a></li>
+                        <li><a href="#">待评价</a></li>
+                        <li><a href="#">取消单</a></li>
+                    </ul>
+                    <!-- / tabs -->
+                    <div class="tab_content">
+                        <div class="tabs_item">
+                             <foreach name="order_res" item="res">
 
                                 <!-- <a href="dingdanxiangqing.html"> -->
                                     <div class="hezi">
@@ -126,7 +75,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="{:U('Home/Order/order_xq')}" style="text-decoration:none">
+                                            <a href="{:U('Home/Order/order_xq', array('order_id' => $res['id']))}" style="text-decoration:none">
                                             <div class="dai">
                                                 <div class="yong">
                                                 <if condition="$res.order_status eq 1 ">
@@ -154,13 +103,10 @@
                                         </div>
                                     </div>
                                 <!-- </a> -->
-                            </foreach>    
+                            </foreach> 
+                        </div>   
 
-                            </div>
-
-
-
-                            <div id="con_one_2" style="display:none;">
+                        <div class="tabs_item hezi3">
                             <foreach name="order_n" item="resn">
 
                                 <!-- <a href="dingdanxiangqing.html"> -->
@@ -199,7 +145,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            <a href="{:U('Home/Order/order_xq', array('order_id' => $res['id']))}" style="text-decoration:none">
                                             <div class="dai">
                                                 <div class="yong">
                                                     <span>未支付</span>
@@ -210,13 +156,14 @@
                                                     <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
                                                 </div>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
                                 <!-- </a> -->
                             </foreach>    
-                            </div>
+                        </div>
 
-                            <div id="con_one_3" style="display:none;">
+                        <div class="tabs_item hezi3">
                             <foreach name="order_s" item="ress">
 
                                 <!-- <a href="dingdanxiangqing.html"> -->
@@ -255,7 +202,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            <a href="{:U('Home/Order/order_xq', array('order_id' => $res['id']))}" style="text-decoration:none">
                                             <div class="dai">
                                                 <div class="yong">
                                                 <if condition="$ress.order_status eq 1 ">
@@ -272,13 +219,15 @@
                                                     <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
                                                 </div>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
                                 <!-- </a> -->
                             </foreach>  
-                            </div>
-                            <div id="con_one_4" style="display:none;">
-                            <foreach name="order_u" item="resu">
+                        </div>
+
+                        <div class="tabs_item hezi3">
+                           <foreach name="order_u" item="resu">
 
                                 <!-- <a href="dingdanxiangqing.html"> -->
                                     <div class="hezi">
@@ -320,7 +269,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            <a href="{:U('Home/Order/order_xq', array('order_id' => $res['id']))}" style="text-decoration:none">
                                             <div class="dai">
                                                 <div class="yong">
                                                 <if condition="$resu.order_status eq 10 ">
@@ -339,12 +288,14 @@
                                                     <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
                                                 </div>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
                                 <!-- </a> -->
                             </foreach> 
-                            </div>
-                            <div id="con_one_5" style="display:none;">
+                        </div>
+
+                        <div class="tabs_item hezi3">
                             <foreach name="order_p" item="resp">
 
                                 <!-- <a href="dingdanxiangqing.html"> -->
@@ -383,7 +334,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            <a href="{:U('Home/Order/order_xq', array('order_id' => $res['id']))}" style="text-decoration:none">
                                             <div class="dai">
                                                 <div class="yong">
                                                     <if condition="$resp.is_use eq 1 ">
@@ -398,12 +349,14 @@
                                                     <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
                                                 </div>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
                                 <!-- </a> -->
                             </foreach> 
-                            </div>
-                            <div id="con_one_6" style="display:none;">
+                        </div>
+
+                        <div class="tabs_item hezi3">
                             <foreach name="order_x" item="resx">
 
                                 <!-- <a href="dingdanxiangqing.html"> -->
@@ -442,7 +395,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            <a href="{:U('Home/Order/order_xq', array('order_id' => $res['id']))}" style="text-decoration:none">
                                             <div class="dai">
                                                 <div class="yong">
                                                     <span>已取消</span>
@@ -458,69 +411,50 @@
                                                     <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
                                                 </div>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
                                 <!-- </a> -->
                             </foreach>
-                            </div>
                         </div>
+                    </div>
+
                 </div>
-
-                <!-- <script src="__PUBLIC__/home/js/jquery-1.12.4.js"></script> -->
-
-                <!-- <script src="__PUBLIC__/home/js/jquery-1.12.4.min.js"></script> -->
-                <!-- <script src="__PUBLIC__/home/js/tab.js"></script> -->
+                <script src='__PUBLIC__/home/js/jquery.js'></script>
                 <script>
-                    function setTab(name,cursel){
-                        cursel_0=cursel;
-                        for(var i=1; i<=links_len; i++){
-                            var menu = document.getElementById(name+i);
-                            var menudiv = document.getElementById("con_"+name+"_"+i);
-                            if(i==cursel){
-                                menu.className="off";
-                                menudiv.style.display="block";
-                            }
-                            else{
-                                menu.className="";
-                                menudiv.style.display="none";
-                            }
-                        }
-                    }
-                    function Next(){
-                        cursel_0++;
-                        if (cursel_0>links_len)cursel_0=1
-                        setTab(name_0,cursel_0);
-                    }
-                    var name_0='one';
-                    var cursel_0=1;
-                    var links_len,iIntervalId;
-                    onload=function(){
-                        var links = document.getElementById("tab1").getElementsByTagName('li')
-                        links_len=links.length;
-                        for(var i=0; i<links_len; i++){
-                            links[i].onmouseover=function(){
-                                clearInterval(iIntervalId);
-                            }
-                        }
-                        document.getElementById("con_"+name_0+"_"+links_len).parentNode.onmouseover=function(){
-                            this.onmouseout=function(){
-                                iIntervalId = setInterval(Next,ScrollTime);;
-                            }
-                        }
-                    }
+                    $(document).ready(function() {
+
+                        (function ($) {
+                            $('.tab ul.tabs2').addClass('active').find('> li:eq(0)').addClass('current');
+
+                            $('.tab ul.tabs2 li a').click(function (g) {
+                                var tab = $(this).closest('.tab'),
+                                        index = $(this).closest('li').index();
+
+                                tab.find('ul.tabs2 > li').removeClass('current');
+                                $(this).closest('li').addClass('current');
+
+                                tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
+                                tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
+
+                                g.preventDefault();
+                            } );
+                        })(jQuery);
+
+                    });
                 </script>
-
-
             </li>
 
             <li class="item">
-                啦啦啦啦啦啦阿拉啦啦爱啦啦爱啦啦
+                Cont2
             </li>
         </ul>
     </div>
 </div>
 
 
+<script src="__PUBLIC__/home/js/jquery-1.12.4.min.js"></script>
+<script src="__PUBLIC__/home/js/tab.js"></script>
 <script>
     $(function () {
 

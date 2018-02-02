@@ -27,15 +27,57 @@ class OrderController extends BasicController {
     }
 
 
-  //轮播图列表
+  //订单列表
 
     public function index(){
      
-        $this->display();
+        $order_info = M('order')->order('id desc')->select();
+        foreach($order_info as $order_k=>$order_v){
+            $order_info[$order_k]['shop_name'] = uri('shop',array('id'=>$order_v['store_id']),'mingch');
+        }
+        $num = count($order_info);
+        $this->assign('num',$num);
+        $this->assign('order_info',$order_info);
+     
+        $this->display('index');
     }
 
-    
+    //获取订单菜品详情
+    public function goods_info(){
+        $order_id = I('id');
+        $goods_info = M('order_fu')->where(array('order_id'=>$order_id))->order('id desc')->select();
+        foreach($goods_info as $k=>$v){
+            $goods_info[$k]['goods_name'] = uri('food',array('id'=>$v['goods_id']),'mingch');
 
+        }
+
+        $this->assign('goods_info',$goods_info);
+        $this->display('goods_info');
+    }
+
+    //查看订单详情
+    public function order_xq(){
+        $order_id = I('id');
+        $one_info = array();
+        $user_info = array();
+        $goods_xq = array();
+        $one_info = M('order')->where(array('id'=>$order_id))->find();
+        $one_info['shop_name'] = uri('shop',array('id'=>$one_info['store_id']),'mingch');
+        $user_info = M('user')->where(array('id'=>$one_info['user_id']))->find();
+        $goods_xq = M('order_fu')->where(array('order_id'=>$order_id))->select();
+        foreach($goods_xq as $k1=>$v1){
+            $goods_xq[$k1]['goods_name'] = uri('food',array('id'=>$v1['goods_id']),'mingch');
+
+        }
+        $this->assign('goods_xq',$goods_xq);
+        $this->assign('user_info',$user_info);
+        $this->assign('one_info',$one_info);
+        $this->display('order_xq');
+
+
+
+
+    }
     
 
 }

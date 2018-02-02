@@ -13,6 +13,12 @@ class LoginController extends Controller {
     //前台登录页面
     public function index()
     {
+        $is_cart = I('is_cart');
+        $shopid = I('shopid');
+        if($is_cart){
+            $this->assign('shopid',$shopid);
+            $this->assign('is_cart',$is_cart);
+        }
     	$this->display('login');
     }
 
@@ -21,6 +27,8 @@ class LoginController extends Controller {
     {
         $mobile   = I('tel', '');
         $password = I('password', '');
+        $is_cart = I('is_cart',0);
+        $shop    = I('shop',0);
         if (isset($this->get_data['mobile']) && $this->get_data['mobile']) {
             $mobile = $this->get_data['mobile'];
         }
@@ -66,7 +74,10 @@ class LoginController extends Controller {
         }
         $_SESSION[$user_info['tel']] = true;
         $_SESSION['userid'] = $user_info['id'];
-
+        $_SESSION['is_cart'] = $is_cart;
+        if($is_cart){
+            $this->ajaxReturn(array('data'=>true,'code'=>300,'shop'=>$shop,'msg'=>"",));
+        }
 
         $data = array(
                 'data' => true,

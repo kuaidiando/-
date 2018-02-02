@@ -171,6 +171,7 @@
 
                             <div class="center">
                                 <div class="xing">
+<<<<<<< HEAD
                                 <!-- 实心星数量 -->
                                 <?php $__FOR_START_1668505285__=0;$__FOR_END_1668505285__=$vores["shixinxing"];for($i=$__FOR_START_1668505285__;$i < $__FOR_END_1668505285__;$i+=1){ ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
                                 <!-- 判断半个 星星 -->
@@ -178,6 +179,10 @@
                         <?php else: endif; ?>
                                 <!-- 空心星数量 -->
                                 <?php $__FOR_START_441444254__=0;$__FOR_END_441444254__=$vores["kongxinxing"];for($i=$__FOR_START_441444254__;$i < $__FOR_END_441444254__;$i+=1){ ?><img src="/kuaidian/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
+=======
+                                <!-- 星数量 -->
+                                <?php $__FOR_START_22664__=0;$__FOR_END_22664__=$vores["xingsl"];for($i=$__FOR_START_22664__;$i < $__FOR_END_22664__;$i+=1){ ?><img src="/-/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
+>>>>>>> e952ca8486b6fba99506e802a7bb248db5449a41
                                     
                                 </div>
 

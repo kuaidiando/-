@@ -136,6 +136,15 @@ $(document).ready(function(){
                 <li><a class="shopin" name="<?php echo U('Admin/Event/index');?>">轮播图列表</a></li>
             </ul>
             </dd>
+        </dl>
+    <?php elseif(CONTROLLER_NAME == Order): ?>
+        <dl>
+            <dt><a href="#">订单管理</a></dt>
+            <dd>
+            <ul>
+                <li><a class="shopin" name="<?php echo U('Admin/Order/index');?>">订单列表</a></li>
+            </ul>
+            </dd>
         </dl><?php endif; ?>
    
 </div>

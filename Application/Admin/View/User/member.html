@@ -2,11 +2,15 @@
 </head>
 <body>
 <article class="page-container">
-    <form class="form form-horizontal" id="form-admin-add"  method="post" enctype="multipart/form-data" >
+    <form class="form form-horizontal" id="form-admin-add"  method="post" enctype="multipart/form-data" action="{:U('Admin/User/update_member')}">
+        <span class="c-red">会员余额：{$m_res.money}</span>
+        
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>余额操作：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" style="width:200px" value=""  id="money" name="money"><span style="color:red">[正数为充值，负数为扣款]</span>
+                <input type="text" class="input-text" style="width:200px" value=""  id="money" name="money"><span style="color:red">[正数为充值，负数为扣款]
+                <input type="hidden" name="id" value="{$m_res.id}">
+                </span>
             </div>
         </div>
        
@@ -14,7 +18,8 @@
 
         <div class="row cl">
             <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
-                <button  class="qr btn btn-primary radius" id = "{$m_res.id}"type="submit"><i class="Hui-iconfont ">&#xe632;</i> 确认</button>
+                <button  class="qr btn btn-primary radius" id = "{$m_res.id}" type="submit"><i class="Hui-iconfont ">&#xe632;</i> 确认</button>
+                <!-- <input type="submit"> -->
                 <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
             </div>
         </div>
@@ -23,26 +28,26 @@
 
 <script type="text/javascript">
         /*编辑轮播图*/
-        $(document).on("click", '.qr', function () {
-            var id,money;
-            var id = $(this).attr('id');
-            var money = document.getElementById('money').value;
-                $.ajax({
-                    type:'POST',
-                    dataType: 'json',
-                    url:'{:U("Admin/User/update_member")}',
-                    data:{id:id,money:money},
+        // $(document).on("click", '.qr', function () {
+        //     var id,money;
+        //     var id = $(this).attr('id');
+        //     var money = document.getElementById('money').value;
+        //         $.ajax({
+        //             type:'POST',
+        //             dataType: 'json',
+        //             url:'{:U("Admin/User/update_member")}',
+        //             data:{id:id,money:money},
 
-                    success: function (result) {
-                        if (result.status == 1) {
-                            layer.msg(result.msg,{icon:1,time:1000});
-                            layer_close();
-                        } else {
-                            layer.msg(result.msg,{icon:0,time:2000});
-                        }
-                    }
-                })
-        });
+        //             success: function (result) {
+        //                 if (result.status == 1) {
+        //                     layer.msg(result.msg,{icon:1,time:1000});
+        //                     layer_close();
+        //                 } else {
+        //                     layer.msg(result.msg,{icon:0,time:2000});
+        //                 }
+        //             }
+        //         })
+        // });
     </script>
 
 <script type="text/javascript">

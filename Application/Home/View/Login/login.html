@@ -27,6 +27,8 @@
 
         <div class="text">
             <input id="tel" type="text" placeholder="请输入您的手机号">
+            <input type="hidden" id="is_cart" name="is_cart" value="{is_cart}">
+            <input type="hidden" id="shop" value="{$shopid}">
             <span id="sp"></span>
         </div>
     </div>
@@ -97,16 +99,28 @@
         
         $("#login").click(function(){
         var tel,passwprd;
+        
         var tel = $("#tel").val();
         var password = $("#mi").val();
+        // alert(tel);
+        // return false;
+        var is_cart = $("#is_cart").val();
+        var shop = $("#shop").val();
+        if(!is_cart || !shop){
+            var is_cart=0;
+            var shop = 0;
+        }
         $.ajax({
             type:'post',
             dataType: 'json',
             url:'{:U("Home/Login/save_login")}',
-            data:{tel:tel,password:password},
+            data:{tel:tel,password:password,is_cart:is_cart,shop:shop},
             success: function (result) {
                 if(result.code == 200){
                     $(location).attr('href', '{:U("Home/Index/index")}');
+                }else if(result.code == 300){
+                     $(location).attr('href', '{:U("Home/Cart/index",array('shop'=>result.shop))}');
+
                 }else{
                     alert(result.msg);
                 }

@@ -114,6 +114,18 @@ class OrderController extends Controller {
     }
  //订单详情
     public function order_xq(){
+
+        $order_id = I('order_id');
+        $info = M('order')->where(array('id'=>$order_id))->find();
+        $goods_info = M('order_fu')->where(array('order_id'=>$order_id))->select();
+        // dump($goods_info);exit;
+        foreach($goods_info as $goods_k=>$goods_v){
+            $goods_info[$goods_k]['goodsname'] = uri('food',array('id'=>$goods_v['goods_id']),'mingch');
+        }
+
+        // dump($order_id);exit;
+        $this->assign('goods_info',$goods_info);
+        $this->assign('info',$info);
         $this->display('dingdanxiangqing');
     }
   
