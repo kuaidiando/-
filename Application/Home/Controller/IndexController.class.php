@@ -9,6 +9,7 @@ use Think\Controller;
 class IndexController extends Controller {
 	//门店列表展示
     public function index(){
+        
         //头像
         $user_id = \user_helper::get_user_id();
         $user_photo = uri("user",array('id'=>1,"del_status"=>0),"photo");
@@ -265,14 +266,14 @@ class IndexController extends Controller {
             $food_num[$max_array_keyid]['foodtypeid'] = $foodtypeid;// 菜品类型id 
             $food_num[$max_array_keyid]['foodid'] = $foodid; // 菜品id
             $food_num[$max_array_keyid]['foodnum'] = $foodnum; // 菜品份数
-            setcookie("food_num",serialize($food_num),time()+3600); 
+            setcookie("food_num",serialize($food_num),time()+3600,"/"); 
         }else{
             // 添加
             $cart_info[0]['shopid'] = $shopid; // ，门店id
             $cart_info[0]['foodtypeid'] = $foodtypeid; // 菜品类型id
             $cart_info[0]['foodid'] = $foodid; // 菜品id
             $cart_info[0]['foodnum'] = $foodnum; // 菜品份数
-            setcookie("food_num",serialize($cart_info),time()+3600); 
+            setcookie("food_num",serialize($cart_info),time()+3600,"/"); 
         }
         
     }
@@ -294,7 +295,7 @@ class IndexController extends Controller {
             }
         } 
         
-        setcookie("food_num",serialize($food_num),time()+3600);
+        setcookie("food_num",serialize($food_num),time()+3600,"/");
     }
      //ajax edit 菜品份数
     public function ajaxeditfoodshuliang(){
@@ -314,7 +315,7 @@ class IndexController extends Controller {
             }
         } 
         
-        setcookie("food_num",serialize($food_num),time()+3600); 
+        setcookie("food_num",serialize($food_num),time()+3600,"/"); 
         
     }
     // 单条门店展示
