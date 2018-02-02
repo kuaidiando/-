@@ -1,0 +1,71 @@
+.head{
+    width: 100%;
+    height: 110px;
+    background-color: #097f7e;
+    line-height: 110px;
+    text-align: center;
+}
+.head span {
+    font-size: 38.4px;
+    color: #ffffff;
+}
+.he{
+    width: 100%;
+    height: 168px;
+    background-color: white;
+    margin-top: 12px;
+}
+.hezi{
+    width: 97%;
+    height: 168px;
+    margin-left: 3%;
+}
+.tu{
+    width: 10%;
+    height: 168px;
+    line-height: 168px;
+    float: left;
+}
+.tu img{
+    width: 72px;
+    height: 72px;
+    vertical-align: middle;
+}
+.li{
+    width: 40%;
+    height: 168px;
+    line-height: 168px;
+    float: left;
+}
+.li span{
+    font-size: 38.4px;
+    color: #000;
+}
+.qian{
+    width: 25%;
+    height: 168px;
+    line-height: 168px;
+    float: left;
+}
+.qian span{
+    font-size: 38.4px;
+    color: #000;
+}
+.kuang{
+    width: 15%;
+    height: 168px;
+    float: left;
+}
+.liu{
+    width: 140px;
+    height: 70px;
+    border:2.4px solid #097f7e;
+    border-radius: 7.2px;
+    margin-top: 49px;
+    line-height: 70px;
+    text-align: center;
+}
+.liu span{
+    font-size: 30px;
+    color: #097f7e;
+}

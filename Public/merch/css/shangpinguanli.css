@@ -1,0 +1,206 @@
+.container {
+    width: 100%;
+    height: 1742px;
+}
+ul.tabs {
+    float: left;
+    height: 1742px;
+    width: 20%;
+}
+ul.tabs li {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 33.6px;
+}
+ul.tabs li a {
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    outline: none;
+}
+ul.tabs li a:hover {
+    background: #ccc;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover  {
+    background: #fff;
+    color: #000;
+}
+.tab_container {
+    float: left;
+    width: 80%;
+    height: 1742px;
+    background: #fff;
+    -moz-border-radius-bottomright: 5px;
+    -khtml-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -khtml-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+}
+.tab_content {
+    width: 100%;
+    height: 100%;
+}
+.dan{
+    width: 100%;
+    height: 60px;
+    background-color: #DEDEDE;
+}
+.ddan{
+    width: 90%;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 5%;
+}
+.dan span{
+    font-size: 30px;
+}
+.he{
+    width: 100%;
+    height:298px;
+    border-bottom: 1.2px solid #DEDEDE;
+}
+.hhe{
+    width: 95%;
+    height: 298px;
+    margin-left: 5%;
+}
+.top{
+    width: 100%;
+    height: 198px;
+}
+.tu {
+    width: 25%;
+    height: 156px;
+    margin-top: 5%;
+    float: left;
+}
+.tu img{
+    width: 156px;
+    height: 156px;
+    vertical-align: middle;
+}
+.you{
+    width: 75%;
+    height: 156px;
+    margin-top: 5%;
+    float: left;
+}
+.name{
+    width: 100%;
+    height: 52px;
+}
+.name span{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.kou{
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+}
+.kou span{
+    font-size: 33.6px;
+    color: #888888;
+}
+.xia {
+    width: 100%;
+    height: 52px;
+}
+.qian{
+    width: 25%;
+    height: 52px;
+    line-height: 60px;
+    float: left;
+}
+.qian span{
+    font-size: 40px;
+    color: red;
+}
+.yuan{
+    width: 45%;
+    height: 52px;
+    line-height: 72px;
+    float: left;
+}
+.yuan del{
+    font-size: 30px;
+    color: #888888;
+}
+.yue{
+    width: 15%;
+    height: 52px;
+    line-height: 60px;
+    float: left;
+}
+.yue span{
+    font-size: 40px;
+    color: #353535;
+}
+.shu{
+    width: 15%;
+    height: 52px;
+    line-height: 65px;
+    float: left;
+}
+.shu span{
+    font-size: 40px;
+    color: #353535;
+}
+.bot{
+    width: 100%;
+    height: 100px;
+}
+.bz{
+    width:50%;
+    height: 100px;
+    float: left;
+}
+.xiao{
+    width:90%;
+    height: 60px;
+    border: 1.2px solid #097f7e;
+    margin-top:20px;
+    line-height: 60px;
+    text-align: center;
+    float: left;
+}
+.xiao span{
+    font-size: 35px;
+    color: #097f7e;
+}
+
+
+.footer{
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    border-top: 1.2px solid #DEDEDE;
+}
+.foot{
+    width: 33.33%;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    border-right: 1.2px solid #DEDEDE;
+    float: left;
+}
+.foot span{
+    font-size: 30px;
+    color: #000;
+}
+.foot2{
+    width: 33.33%;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    float: left;
+}
+.foot2 span{
+    font-size: 30px;
+    color: #000;
+}
