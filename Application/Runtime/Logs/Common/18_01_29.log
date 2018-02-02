@@ -1736,3 +1736,358 @@ INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
 >>>>>>> 821abac86b5cd3c60b482aa2d5019ef310f7869a
 ERR: 无法加载模块:Public
 
+[ 2018-01-29T15:24:05+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T15:37:07+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T15:42:09+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T15:46:29+08:00 ] ::1 /-/Public/muban/assets/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T15:46:29+08:00 ] ::1 /-/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T15:46:30+08:00 ] ::1 /-/Public/xin/admin/login/Wopop_files/jquery.ui.base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+ERR: 无法加载模块:Public
+
+
+[ 2018-01-29T15:46:30+08:00 ] ::1 /-/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T15:46:30+08:00 ] ::1 /-/Public/xin/admin/login/images/txt_input_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T15:46:38+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001410s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T15:46:39+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T15:51:42+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:01:30+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:10:45+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:10:46+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:10:54+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:11:02+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:11:06+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:13:13+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:13:20+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:13:44+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:15:03+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000963s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:17:29+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001013s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:17:35+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:20:00+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:20:08+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001333s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:20:23+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001292s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:20:32+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001076s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:20:40+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:20:51+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:21:12+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:23:53+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:24:34+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:24:56+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001952s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:26:04+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001135s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T16:26:13+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002133s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T17:17:24+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T17:23:29+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T17:24:15+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T17:25:14+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T17:26:59+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000994s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T17:30:50+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001198s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T17:38:52+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T17:56:55+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001267s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T17:57:44+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T17:57:53+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001103s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T18:12:03+08:00 ] ::1 /-/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T18:12:03+08:00 ] ::1 /-/Public/muban/assets/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T18:12:04+08:00 ] ::1 /-/Public/xin/admin/login/Wopop_files/jquery.ui.theme.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T18:12:04+08:00 ] ::1 /-/Public/xin/admin/login/Wopop_files/jquery.ui.base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T18:12:04+08:00 ] ::1 /-/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T18:12:04+08:00 ] ::1 /-/Public/xin/admin/login/images/txt_input_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001594s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-29T18:12:10+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001419s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T18:12:13+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T18:12:23+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T18:13:46+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T18:18:19+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T18:28:57+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T18:29:14+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-01-29T18:29:17+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+ERR: 无法加载模块:Publichome
+

@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" data-dpr="1" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>订单详情</title>
-    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/text.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/dingdanxiangqing.css">
+    <link rel="stylesheet" href="/-/Public/home/css/base.css">
+    <link rel="stylesheet" href="/-/Public/home/css/text.css">
+    <link rel="stylesheet" href="/-/Public/home/css/dingdanxiangqing.css">
 </head>
 <body style="font-size: 12px">
     <div class="header">
@@ -40,7 +40,7 @@
             </div>
 
             <div class="hhao">
-                <span>{$info.order_code}</span>
+                <span><?php echo ($info["order_code"]); ?></span>
             </div>
         </div>
 
@@ -50,19 +50,17 @@
             </div>
 
             <div class="yi">
-            <if condition="$info.order_status eq 1">
-                <span>未支付</span>
-            <elseif condition="$info.order_status eq 5" />
+            <?php if($info["order_status"] == 1): ?><span>未支付</span>
+            <?php elseif($info["order_status"] == 5): ?>
                 <span>已支付</span>
-            <elseif condition="$info.order_status eq 10" />
+            <?php elseif($info["order_status"] == 10): ?>
                 <span>待评价</span>
-            <elseif condition="$info.order_status eq 15" />
+            <?php elseif($info["order_status"] == 15): ?>
                 <span>已完成</span>
-            <elseif condition="$info.order_status eq 20" />
+            <?php elseif($info["order_status"] == 20): ?>
                 <span>已取消</span>
-            <else />
-                <span>未知</span>
-            </if>
+            <?php else: ?>
+                <span>未知</span><?php endif; ?>
             </div>
 
         </div>
@@ -73,15 +71,14 @@
             </div>
 
             <div class="aa3">
-            <if condition="$info.is_use eq 0">
-                <span>待使用</span>
+            <?php if($info["is_use"] == 0): ?><span>待使用</span>
             </div>   
             <div class="tet">
                 <div class="wenben">
                     <span>取消订单</span>
                 </div>
             </div>
-            <elseif condition="$info.is_use eq 1" />
+            <?php elseif($info["is_use"] == 1): ?>
                 <span>已使用</span>
             </div>
             <div class="tet">
@@ -89,8 +86,7 @@
                     <span></span>
                 </div>
             </div>    
-            <else />
-            </if>    
+            <?php else: endif; ?>    
 
 
         </div>
@@ -118,21 +114,19 @@
         </div>
 
         <div class="center">
-        <foreach name="goods_info" item="one_good">
-            <div class="cai2">
+        <?php if(is_array($goods_info)): foreach($goods_info as $key=>$one_good): ?><div class="cai2">
                 <div class="qq">
-                    <span>{$one_good.goodsname}</span>
+                    <span><?php echo ($one_good["goodsname"]); ?></span>
                 </div>
 
                 <div class="liang">
-                    <span>X{$one_good.goods_num}</span>
+                    <span>X<?php echo ($one_good["goods_num"]); ?></span>
                 </div>
 
                 <div class="jiage">
-                    <span>￥{$one_good.goods_price}</span>
+                    <span>￥<?php echo ($one_good["goods_price"]); ?></span>
                 </div>
-            </div>
-        </foreach>
+            </div><?php endforeach; endif; ?>
 
 
             <div class="canju">
@@ -141,11 +135,11 @@
                 </div>
 
                 <div class="ju2">
-                    <span>X{$info.order_pnum}</span>
+                    <span>X<?php echo ($info["order_pnum"]); ?></span>
                 </div>
 
                 <div class="ju3">
-                    <span>￥{$info.order_pnum}</span>
+                    <span>￥<?php echo ($info["order_pnum"]); ?></span>
                 </div>
             </div>
         </div>
@@ -164,11 +158,11 @@
 
                 <div class="zongji">
                     <div class="zj">
-                        <span>总计:&nbsp;&nbsp;￥{$info.payable}</span>
+                        <span>总计:&nbsp;&nbsp;￥<?php echo ($info["payable"]); ?></span>
                     </div>
 
                     <div class="sf">
-                        <span>实付:&nbsp;&nbsp;￥{$info.total_price}</span>
+                        <span>实付:&nbsp;&nbsp;￥<?php echo ($info["total_price"]); ?></span>
                     </div>
                 </div>
             </div>

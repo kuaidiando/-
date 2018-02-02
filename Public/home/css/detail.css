@@ -8,7 +8,7 @@
 .he{
     width: 100%;
     height:336px;
-    background: url("../img/beijing.jpg") 100% 100% no-repeat;
+    background: url("../images/beijing.jpg") 100% 100% no-repeat;
 }
 .shangjia{
     width: 92%;
@@ -695,7 +695,7 @@
     color: #ffae00;
 }
 .qqian{
-    min-width:20%;
+    width: 30%;
     height: 60px;
     line-height: 78px;
     float: left;

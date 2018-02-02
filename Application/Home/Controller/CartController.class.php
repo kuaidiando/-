@@ -12,10 +12,13 @@ use Think\Controller;
 class CartController extends Controller {
     private $get_data;
     private $user_id;
+    private $shopid;
     public function _initialize()
     {
+        // $_SESSION['userid'] = '';
+        // exit;
     //     $this->get_data = get_json_data();
-        $this->user_id = \user_helper::get_user_id();
+      
     //     if (!$this->user_id) {
     //         $data = array(
     //                 'data' => false,
@@ -51,10 +54,25 @@ class CartController extends Controller {
    //保存购物车
     public function save_cart()
     {
+        // $this->shopid = I('shopid');
+        // $this->user_id = \user_helper::get_user_id();
+        // // dump($this->user_id);exit;
+        // if(!$this->user_id){
+        //     $this->redirect('Home/Login/index?is_cart=1&shopid='.$this->shopid);
+        // }else{
+        //     $this->redirect('Home/Cart/save_cart/index?shopid='.$this->shopid);
+
+        // }
+
         $info = array();
         $shop_id = I('shopid');
-        // dump($shop_id);die;
         $user_id = \user_helper::get_user_id();
+        if(!$user_id){
+            $this->redirect('Home/Login/index?is_cart=1&shopid='.$this->shopid);
+        }else{
+            $this->user_id = $user_id;
+            // dump($this->user_id);exit;
+        }
         $where = array(
             'userid'=>$user_id,
             'shopid'=>$shop_id,
@@ -62,6 +80,7 @@ class CartController extends Controller {
         $cart_y = M('cart')->where(array('user_id'=>$user_id,'store_id'=>$shop_id))->delete();
         //获取商品临时表里的数据
         $info = M("linshijj")->where($where)->select();
+        // dump($info);exit;
         $cart = M('cart');
         // $store_id = 0;
         // $store_id = $cart->where(array('user_id'=>$user_id, 'status'=>1))->order('`id` DESC')->getField('store_id');
@@ -78,7 +97,7 @@ class CartController extends Controller {
                         'user_id'  => $user_id,
                         'goods_id' => $infov['foodid'],
                         'status'   => 1,
-                        'store_id' => $shopid,
+                        'store_id' => $shop_id,
                     );
                     $cart_info = uri('cart',$filter);
                     if(!$cart_info){
@@ -136,8 +155,15 @@ class CartController extends Controller {
     //显示diandanye
     public function diandan_info(){
         $store_id = I('store_id');
-        $shopname = uri('shop',array('id'=>$shop_id),'mingch');
-        $end_cart_info = M('cart')->where(array('user_id'=>$this->user_id,'store_id'=>$store_id,'status'=>1))->select();
+        // dump($this->user_id);exit;
+        // dump($store_id);exit;
+        // echo 'jkljhlk';exit;
+        $user_id = \user_helper::get_user_id();
+        $shopname = uri('shop',array('id'=>$store_id),'mingch');
+        $cart = M('cart');
+        $end_cart_info = $cart->where(array('user_id'=>$user_id,'store_id'=>$store_id,'status'=>1))->select();
+        // echo $cart->getLastSql();exit;
+        // dump($end_cart_info);exit;
         $total_price = 0.00;
 
         foreach($end_cart_info as $k=>$v){

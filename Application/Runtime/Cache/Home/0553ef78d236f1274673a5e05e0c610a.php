@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" data-dpr="1" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>我的订单</title>
-    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/text.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/my%20dingdan.css">
+    <link rel="stylesheet" href="/-/Public/home/css/base.css">
+    <link rel="stylesheet" href="/-/Public/home/css/text.css">
+    <link rel="stylesheet" href="/-/Public/home/css/my%20dingdan.css">
 </head>
 <body style="font-size: 12px">
 <div class="tab" js-tab="1">
@@ -29,31 +29,27 @@
                     <!-- / tabs -->
                     <div class="tab_content">
                         <div class="tabs_item">
-                             <foreach name="order_res" item="res">
-
-                                <!-- <a href="dingdanxiangqing.html"> -->
+                             <?php if(is_array($order_res)): foreach($order_res as $key=>$res): ?><!-- <a href="dingdanxiangqing.html"> -->
                                     <div class="hezi">
                                         <div class="name">
                                             <div class="dian">
-                                                <span>{$res.shopname}</span>
+                                                <span><?php echo ($res["shopname"]); ?></span>
                                             </div>
 
                                             <div class="qu">
-                                            <if condition="$res.order_status eq 1 || $res.order_status eq 5">
-                                                <span>取消订单</span>
-                                            <elseif condition="$res.order_status eq 10"/>    
+                                            <?php if($res["order_status"] == 1 || $res["order_status"] == 5): ?><span>取消订单</span>
+                                            <?php elseif($res["order_status"] == 10): ?>    
                                                 <span>去使用</span>
-                                            <elseif condition="$res.order_status eq 15"/>
+                                            <?php elseif($res["order_status"] == 15): ?>
                                                 <span>去评价</span>
-                                            <else />
-                                                <span></span>   
-                                            </if>     
+                                            <?php else: ?>
+                                                <span></span><?php endif; ?>     
                                             </div>
                                         </div>
 
                                         <div class="hezi2">
                                             <div class="tu">
-                                                <img src="__PUBLIC__{$res.logo}" alt="">
+                                                <img src="/-/Public<?php echo ($res["logo"]); ?>" alt="">
                                             </div>
 
                                             <div class="hao">
@@ -62,7 +58,7 @@
                                                 </div>
 
                                                 <div class="center">
-                                                    <span>{$res.order_code}</span>
+                                                    <span><?php echo ($res["order_code"]); ?></span>
                                                 </div>
 
                                                 <div class="xia">
@@ -71,30 +67,28 @@
                                                     </div>
 
                                                     <div class="xiay">
-                                                        <span>￥{$res.total_price}</span>
+                                                        <span>￥<?php echo ($res["total_price"]); ?></span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="{:U('Home/Order/order_xq', array('order_id' => $res['id']))}" style="text-decoration:none">
+                                            <a href="<?php echo U('Home/Order/order_xq', array('order_id' => $res['id']));?>" style="text-decoration:none">
                                             <div class="dai">
                                                 <div class="yong">
-                                                <if condition="$res.order_status eq 1 ">
-                                                    <span>未支付</span>
-                                                <elseif condition="$res.order_status eq 5"/>
+                                                <?php if($res["order_status"] == 1 ): ?><span>未支付</span>
+                                                <?php elseif($res["order_status"] == 5): ?>
                                                     <span>已支付</span>
-                                                    <elseif condition="$res.order_status eq 10"/>
+                                                    <?php elseif($res["order_status"] == 10): ?>
                                                     <span>待评价</span>
-                                                    <elseif condition="$res.order_status eq 15"/>
+                                                    <?php elseif($res["order_status"] == 15): ?>
                                                     <span>已完成</span>
-                                                    <elseif condition="$res.order_status eq 20"/>
+                                                    <?php elseif($res["order_status"] == 20): ?>
                                                     <span>已取消</span>
-                                                    <else />
-                                                    <span>未知</span>
-                                                </if>
+                                                    <?php else: ?>
+                                                    <span>未知</span><?php endif; ?>
                                                 </div>
 
                                                 <div class="jian">
-                                                    <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
+                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
                                                 </div>
 
                                             </div>
@@ -102,18 +96,15 @@
 
                                         </div>
                                     </div>
-                                <!-- </a> -->
-                            </foreach> 
+                                <!-- </a> --><?php endforeach; endif; ?> 
                         </div>   
 
                         <div class="tabs_item hezi3">
-                            <foreach name="order_n" item="resn">
-
-                                <!-- <a href="dingdanxiangqing.html"> -->
+                            <?php if(is_array($order_n)): foreach($order_n as $key=>$resn): ?><!-- <a href="dingdanxiangqing.html"> -->
                                     <div class="hezi">
                                         <div class="name">
                                             <div class="dian">
-                                                <span>{$resn.shopname}</span>
+                                                <span><?php echo ($resn["shopname"]); ?></span>
                                             </div>
 
                                             <div class="qu">
@@ -123,7 +114,7 @@
 
                                         <div class="hezi2">
                                             <div class="tu">
-                                                <img src="__PUBLIC__{$resn.logo}" alt="">
+                                                <img src="/-/Public<?php echo ($resn["logo"]); ?>" alt="">
                                             </div>
 
                                             <div class="hao">
@@ -132,7 +123,7 @@
                                                 </div>
 
                                                 <div class="center">
-                                                    <span>{$resn.order_code}</span>
+                                                    <span><?php echo ($resn["order_code"]); ?></span>
                                                 </div>
 
                                                 <div class="xia">
@@ -141,11 +132,11 @@
                                                     </div>
 
                                                     <div class="xiay">
-                                                        <span>￥{$resn.total_price}</span>
+                                                        <span>￥<?php echo ($resn["total_price"]); ?></span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="{:U('Home/Order/order_xq', array('order_id' => $res['id']))}" style="text-decoration:none">
+                                            <a href="<?php echo U('Home/Order/order_xq', array('order_id' => $res['id']));?>" style="text-decoration:none">
                                             <div class="dai">
                                                 <div class="yong">
                                                     <span>未支付</span>
@@ -153,24 +144,21 @@
                                                 </div>
 
                                                 <div class="jian">
-                                                    <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
+                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
                                                 </div>
                                             </div>
                                             </a>
                                         </div>
                                     </div>
-                                <!-- </a> -->
-                            </foreach>    
+                                <!-- </a> --><?php endforeach; endif; ?>    
                         </div>
 
                         <div class="tabs_item hezi3">
-                            <foreach name="order_s" item="ress">
-
-                                <!-- <a href="dingdanxiangqing.html"> -->
+                            <?php if(is_array($order_s)): foreach($order_s as $key=>$ress): ?><!-- <a href="dingdanxiangqing.html"> -->
                                     <div class="hezi">
                                         <div class="name">
                                             <div class="dian">
-                                                <span>{$ress.shopname}</span>
+                                                <span><?php echo ($ress["shopname"]); ?></span>
                                             </div>
 
                                             <div class="qu">
@@ -180,7 +168,7 @@
 
                                         <div class="hezi2">
                                             <div class="tu">
-                                                <img src="__PUBLIC__{$ress.logo}" alt="">
+                                                <img src="/-/Public<?php echo ($ress["logo"]); ?>" alt="">
                                             </div>
 
                                             <div class="hao">
@@ -189,7 +177,7 @@
                                                 </div>
 
                                                 <div class="center">
-                                                    <span>{$ress.order_code}</span>
+                                                    <span><?php echo ($ress["order_code"]); ?></span>
                                                 </div>
 
                                                 <div class="xia">
@@ -198,56 +186,49 @@
                                                     </div>
 
                                                     <div class="xiay">
-                                                        <span>￥{$ress.total_price}</span>
+                                                        <span>￥<?php echo ($ress["total_price"]); ?></span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="{:U('Home/Order/order_xq', array('order_id' => $res['id']))}" style="text-decoration:none">
+                                            <a href="<?php echo U('Home/Order/order_xq', array('order_id' => $res['id']));?>" style="text-decoration:none">
                                             <div class="dai">
                                                 <div class="yong">
-                                                <if condition="$ress.order_status eq 1 ">
-                                                    <span>未支付</span>
-                                                <elseif condition="$ress.order_status eq 5 "/>
+                                                <?php if($ress["order_status"] == 1 ): ?><span>未支付</span>
+                                                <?php elseif($ress["order_status"] == 5 ): ?>
                                                     <span>已支付</span>    
-                                                <else/>
-                                                    <span></span>
-                                                </if>
+                                                <?php else: ?>
+                                                    <span></span><?php endif; ?>
                                                     
                                                 </div>
 
                                                 <div class="jian">
-                                                    <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
+                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
                                                 </div>
                                             </div>
                                             </a>
                                         </div>
                                     </div>
-                                <!-- </a> -->
-                            </foreach>  
+                                <!-- </a> --><?php endforeach; endif; ?>  
                         </div>
 
                         <div class="tabs_item hezi3">
-                           <foreach name="order_u" item="resu">
-
-                                <!-- <a href="dingdanxiangqing.html"> -->
+                           <?php if(is_array($order_u)): foreach($order_u as $key=>$resu): ?><!-- <a href="dingdanxiangqing.html"> -->
                                     <div class="hezi">
                                         <div class="name">
                                             <div class="dian">
-                                                <span>{$resu.shopname}</span>
+                                                <span><?php echo ($resu["shopname"]); ?></span>
                                             </div>
 
                                             <div class="qu">
-                                            <if condition="$resu.order_status eq 10 ">
-                                                <span>去评价</span>
-                                            <else />
-                                                <span></span>
-                                            </if>
+                                            <?php if($resu["order_status"] == 10 ): ?><span>去评价</span>
+                                            <?php else: ?>
+                                                <span></span><?php endif; ?>
                                             </div>
                                         </div>
 
                                         <div class="hezi2">
                                             <div class="tu">
-                                                <img src="__PUBLIC__{$resu.logo}" alt="">
+                                                <img src="/-/Public<?php echo ($resu["logo"]); ?>" alt="">
                                             </div>
 
                                             <div class="hao">
@@ -256,7 +237,7 @@
                                                 </div>
 
                                                 <div class="center">
-                                                    <span>{$resu.order_code}</span>
+                                                    <span><?php echo ($resu["order_code"]); ?></span>
                                                 </div>
 
                                                 <div class="xia">
@@ -265,44 +246,39 @@
                                                     </div>
 
                                                     <div class="xiay">
-                                                        <span>￥{$resu.total_price}</span>
+                                                        <span>￥<?php echo ($resu["total_price"]); ?></span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="{:U('Home/Order/order_xq', array('order_id' => $res['id']))}" style="text-decoration:none">
+                                            <a href="<?php echo U('Home/Order/order_xq', array('order_id' => $res['id']));?>" style="text-decoration:none">
                                             <div class="dai">
                                                 <div class="yong">
-                                                <if condition="$resu.order_status eq 10 ">
-                                                    <span>待评价</span>
-                                                <elseif condition="$resu.order_status eq 15 "/>
+                                                <?php if($resu["order_status"] == 10 ): ?><span>待评价</span>
+                                                <?php elseif($resu["order_status"] == 15 ): ?>
                                                     <span>已完成</span>
-                                                <elseif condition="$resu.order_status eq 20 "/>
+                                                <?php elseif($resu["order_status"] == 20 ): ?>
                                                     <span>已取消</span>
-                                                <else/>
-                                                    <span></span>
-                                                </if>
+                                                <?php else: ?>
+                                                    <span></span><?php endif; ?>
                                                     
                                                 </div>
 
                                                 <div class="jian">
-                                                    <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
+                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
                                                 </div>
                                             </div>
                                             </a>
                                         </div>
                                     </div>
-                                <!-- </a> -->
-                            </foreach> 
+                                <!-- </a> --><?php endforeach; endif; ?> 
                         </div>
 
                         <div class="tabs_item hezi3">
-                            <foreach name="order_p" item="resp">
-
-                                <!-- <a href="dingdanxiangqing.html"> -->
+                            <?php if(is_array($order_p)): foreach($order_p as $key=>$resp): ?><!-- <a href="dingdanxiangqing.html"> -->
                                     <div class="hezi">
                                         <div class="name">
                                             <div class="dian">
-                                                <span>{$resp.shopname}</span>
+                                                <span><?php echo ($resp["shopname"]); ?></span>
                                             </div>
 
                                             <div class="qu">
@@ -312,7 +288,7 @@
 
                                         <div class="hezi2">
                                             <div class="tu">
-                                                <img src="__PUBLIC__{$resp.logo}" alt="">
+                                                <img src="/-/Public<?php echo ($resp["logo"]); ?>" alt="">
                                             </div>
 
                                             <div class="hao">
@@ -321,7 +297,7 @@
                                                 </div>
 
                                                 <div class="center">
-                                                    <span>{$resp.order_code}</span>
+                                                    <span><?php echo ($resp["order_code"]); ?></span>
                                                 </div>
 
                                                 <div class="xia">
@@ -330,40 +306,35 @@
                                                     </div>
 
                                                     <div class="xiay">
-                                                        <span>￥{$resp.total_price}</span>
+                                                        <span>￥<?php echo ($resp["total_price"]); ?></span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="{:U('Home/Order/order_xq', array('order_id' => $res['id']))}" style="text-decoration:none">
+                                            <a href="<?php echo U('Home/Order/order_xq', array('order_id' => $res['id']));?>" style="text-decoration:none">
                                             <div class="dai">
                                                 <div class="yong">
-                                                    <if condition="$resp.is_use eq 1 ">
-                                                    <span>已使用</span>
-                                                    <else />
-                                                    <span>未使用</span>
-                                                    </if>
+                                                    <?php if($resp["is_use"] == 1 ): ?><span>已使用</span>
+                                                    <?php else: ?>
+                                                    <span>未使用</span><?php endif; ?>
                                                     
                                                 </div>
 
                                                 <div class="jian">
-                                                    <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
+                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
                                                 </div>
                                             </div>
                                             </a>
                                         </div>
                                     </div>
-                                <!-- </a> -->
-                            </foreach> 
+                                <!-- </a> --><?php endforeach; endif; ?> 
                         </div>
 
                         <div class="tabs_item hezi3">
-                            <foreach name="order_x" item="resx">
-
-                                <!-- <a href="dingdanxiangqing.html"> -->
+                            <?php if(is_array($order_x)): foreach($order_x as $key=>$resx): ?><!-- <a href="dingdanxiangqing.html"> -->
                                     <div class="hezi">
                                         <div class="name">
                                             <div class="dian">
-                                                <span>{$resx.shopname}</span>
+                                                <span><?php echo ($resx["shopname"]); ?></span>
                                             </div>
 
                                             <div class="qu">
@@ -373,7 +344,7 @@
 
                                         <div class="hezi2">
                                             <div class="tu">
-                                                <img src="__PUBLIC__{$resx.logo}" alt="">
+                                                <img src="/-/Public<?php echo ($resx["logo"]); ?>" alt="">
                                             </div>
 
                                             <div class="hao">
@@ -382,7 +353,7 @@
                                                 </div>
 
                                                 <div class="center">
-                                                    <span>{$resx.order_code}</span>
+                                                    <span><?php echo ($resx["order_code"]); ?></span>
                                                 </div>
 
                                                 <div class="xia">
@@ -391,36 +362,35 @@
                                                     </div>
 
                                                     <div class="xiay">
-                                                        <span>￥{$resx.total_price}</span>
+                                                        <span>￥<?php echo ($resx["total_price"]); ?></span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="{:U('Home/Order/order_xq', array('order_id' => $res['id']))}" style="text-decoration:none">
+                                            <a href="<?php echo U('Home/Order/order_xq', array('order_id' => $res['id']));?>" style="text-decoration:none">
                                             <div class="dai">
                                                 <div class="yong">
                                                     <span>已取消</span>
                                                 
-                                                    <!-- <if condition="$resx.is_use eq 1 "> -->
+                                                    <!-- <?php if($resx["is_use"] == 1 ): ?>-->
                                                     <!-- <else> -->
                                                     <!-- <span>未使用</span> -->
-                                                    <!-- </if> -->
+                                                    <!--<?php endif; ?> -->
                                                     
                                                 </div>
 
                                                 <div class="jian">
-                                                    <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
+                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
                                                 </div>
                                             </div>
                                             </a>
                                         </div>
                                     </div>
-                                <!-- </a> -->
-                            </foreach>
+                                <!-- </a> --><?php endforeach; endif; ?>
                         </div>
                     </div>
 
                 </div>
-                <script src='__PUBLIC__/home/js/jquery.js'></script>
+                <script src='/-/Public/home/js/jquery.js'></script>
                 <script>
                     $(document).ready(function() {
 
@@ -453,8 +423,8 @@
 </div>
 
 
-<script src="__PUBLIC__/home/js/jquery-1.12.4.min.js"></script>
-<script src="__PUBLIC__/home/js/tab.js"></script>
+<script src="/-/Public/home/js/jquery-1.12.4.min.js"></script>
+<script src="/-/Public/home/js/tab.js"></script>
 <script>
     $(function () {
 

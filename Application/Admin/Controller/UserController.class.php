@@ -84,6 +84,7 @@ class UserController extends BasicController {
     }
     //会员余额修改
     public function update_member(){
+      // dump($_POST);exit;
       $user_name = ''; 
 
       $old_money = '';
@@ -116,9 +117,11 @@ class UserController extends BasicController {
          
 
         if($res){
-          $this->ajaxReturn(array('status'=>1,'msg'=>'修改成功'));
+          // $this->ajaxReturn(array('status'=>1,'msg'=>'修改成功'));
+          $this->success('修改成功');
         }else{
-          $this->ajaxReturn(array('status'=>0,'msg'=>'修改失败'));
+          $this->error('修改失败');
+          // $this->ajaxReturn(array('status'=>0,'msg'=>'修改失败'));
         }
 
       }
