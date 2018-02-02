@@ -92,3 +92,603 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000999s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
 
+[ 2018-02-02T09:45:26+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0010s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0137s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000432s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001255s ]
+
+[ 2018-02-02T09:47:28+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001554s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0013s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000291s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000460s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001606s ]
+
+[ 2018-02-02T09:47:29+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0010s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000479s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001217s ]
+
+[ 2018-02-02T09:47:30+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001199s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0014s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000545s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001247s ]
+
+[ 2018-02-02T09:48:36+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0012s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000493s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2018-02-02T09:48:37+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001474s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0009s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000311s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001215s ]
+
+[ 2018-02-02T09:48:37+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0013s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000309s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002132s ]
+
+[ 2018-02-02T09:48:41+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0008s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000320s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000503s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028785s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001227s ]
+
+[ 2018-02-02T09:48:41+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0011s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000490s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001463s ]
+
+[ 2018-02-02T09:48:41+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001506s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0013s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000487s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001424s ]
+
+[ 2018-02-02T09:48:42+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0011s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000311s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000490s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001398s ]
+
+[ 2018-02-02T09:48:43+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0092s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0015s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001088s ]
+
+[ 2018-02-02T09:48:44+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0009s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000296s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000486s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001651s ]
+
+[ 2018-02-02T10:02:54+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.4487s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.1077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0483s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0014s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000340s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000572s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001852s ]
+
+[ 2018-02-02T10:02:54+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0011s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000391s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000628s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001638s ]
+
+[ 2018-02-02T10:02:54+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0009s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000332s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000508s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001116s ]
+
+[ 2018-02-02T10:02:55+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001448s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0013s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000363s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000579s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001194s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001383s ]
+
+[ 2018-02-02T10:02:55+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001452s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0012s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000361s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000580s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001632s ]
+
+[ 2018-02-02T10:02:55+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001589s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0010s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000494s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001879s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2018-02-02T10:02:55+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0012s ]
+SQL: SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 16) WHERE food.dep_shop = 1 AND food.zhuangt = '1' ORDER BY food.id asc [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000350s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000523s ]
+NOTIC: [8] Undefined index: foodxq E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 80 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 412 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 444 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001644s ]
+
