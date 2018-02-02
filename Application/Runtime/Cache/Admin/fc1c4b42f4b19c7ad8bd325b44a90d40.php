@@ -55,7 +55,7 @@ $(document).ready(function(){
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>LOGO：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <img src="/kuaidian/Public<?php echo ($data["0"]["logo"]); ?>" alt="图片加载中。。。">
+                <img style="width: 10%;" src="/kuaidian/Public<?php echo ($data["0"]["logo"]); ?>" alt="图片加载中。。。">
                 <div class="uploader-thum-container">
                     <input type="file" name="logo">
                 </div>
@@ -85,7 +85,7 @@ $(document).ready(function(){
                 <select name="time_kai" class="select" style="width: 25%;" id="">
                 <!-- 单条信息城市 -->
                 <?php if(is_array($data)): foreach($data as $key=>$vosscs): ?><!-- 所有时间 -->
-                    <?php if(is_array($restime)): foreach($restime as $key=>$votime): ?><option value="<?php echo ($votime["id"]); ?>" <?php if($votime['id'] == $vosscs['time_kai']): ?>selected="selected"<?php endif; ?> ><?php echo ($votime["name"]); ?></option><?php endforeach; endif; endforeach; endif; ?>
+                    <?php if(is_array($restime)): foreach($restime as $key=>$votime): ?><option value="<?php echo ($votime["name"]); ?>" <?php if($votime['id'] == $vosscs['time_kai']): ?>selected="selected"<?php endif; ?> ><?php echo ($votime["name"]); ?></option><?php endforeach; endif; endforeach; endif; ?>
                 </select>
                 &nbsp;&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;&nbsp;
                 <select name="time_zhong" class="select" style="width: 25%;" id="">

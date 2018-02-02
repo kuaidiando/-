@@ -174,9 +174,21 @@
 
                             <div class="center">
                                 <div class="xing">
-                                <!-- 星数量 -->
-                                <for start="0" end="$vores.xingsl">
+                                <!-- 实心星数量 -->
+                                <for start="0" end="$vores.shixinxing">
                                     <img src="__PUBLIC__/home/img/quanstart.png" style="width:13%;" alt="">
+                                
+                                </for>
+                                <!-- 判断半个 星星 -->
+                        <if condition="$vores.bangexing eq 1">
+                            <img src="__PUBLIC__/home/img/ban.png" style="width:13%;" alt="">
+                        <else />
+                            
+                        </if>
+                                <!-- 空心星数量 -->
+                                <for start="0" end="$vores.kongxinxing">
+                                    <img src="__PUBLIC__/home/img/wu.png" style="width:13%;" alt="">
+                                
                                 </for>
                                     
                                 </div>
@@ -233,7 +245,7 @@
                         </div>
 
                         <div class="red">
-                            <span>5.0</span>
+                            <span>{$vores.zuigaolij}</span>
                         </div>
 
                         <div class="bai">

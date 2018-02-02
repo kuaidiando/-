@@ -12,7 +12,7 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>LOGO：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <img src="__PUBLIC__{$data.0.logo}" alt="图片加载中。。。">
+                <img style="width: 10%;" src="__PUBLIC__{$data.0.logo}" alt="图片加载中。。。">
                 <div class="uploader-thum-container">
                     <input type="file" name="logo">
                 </div>
@@ -44,7 +44,7 @@
                 <foreach name="data" item="vosscs">
                     <!-- 所有时间 -->
                     <foreach name="restime"  item="votime">
-                        <option value="{$votime.id}" <if condition="$votime['id'] eq $vosscs['time_kai']">selected="selected"</if> >{$votime.name}</option>
+                        <option value="{$votime.name}" <if condition="$votime['id'] eq $vosscs['time_kai']">selected="selected"</if> >{$votime.name}</option>
                     </foreach>
                 </foreach>
                 </select>
@@ -54,7 +54,7 @@
                 <foreach name="data" item="vosscs">
                     <!-- 所有时间 -->
                     <foreach name="restime"  item="votime">
-                        <option value="{$votime.id}" <if condition="$votime['id'] eq $vosscs['time_zhong']">selected="selected"</if> >{$votime.name}</option>
+                        <option value="{$votime.name}" <if condition="$votime['id'] eq $vosscs['time_zhong']">selected="selected"</if> >{$votime.name}</option>
                     </foreach>
                 </foreach>
                 </select>

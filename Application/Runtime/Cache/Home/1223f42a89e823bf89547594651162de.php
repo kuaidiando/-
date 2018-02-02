@@ -29,8 +29,13 @@
                         <img src="/kuaidian/Public/home/img/baixin.png" alt="">
                     </div>
                     <div class="evaluate">
-                        <!-- 遍历星星 -->
+                        <!-- 遍历实心星星 -->
                         <?php if(is_array($xingxingshul)): foreach($xingxingshul as $key=>$voxingxingshul): ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:5%;" alt=""><?php endforeach; endif; ?>
+                        <!-- 判断半个 星星 -->
+                        <?php if($bangexing == 1): ?><img src="/kuaidian/Public/home/img/ban.png" style="width:5%;" alt="">
+                        <?php else: endif; ?>
+                        <!-- 遍历空心星星 -->
+                        <?php if(is_array($kongxinshuliang)): foreach($kongxinshuliang as $key=>$vokongxinshuliang): ?><img src="/kuaidian/Public/home/img/wu.png" style="width:5%;" alt=""><?php endforeach; endif; ?>
                     </div>
                     <div class="tui">
                         <img src="/kuaidian/Public/home/img/tui.png" alt="">
@@ -88,7 +93,10 @@
                                                 </div>
                                                 <div class="youbian">
                                                     <div class="biao">
-                                                        <span><?php echo ($vofoodxq["cpmingch"]); ?></span>
+                                                        <span><?php echo ($vofoodxq["cpmingch"]); ?>
+                                                        <!-- 判断是否上架 -->
+                                                        <?php if($vofoodxq[zhuangt] == 1): else: endif; ?>  
+                                                        </span>
                                                     </div>
                                                     <div class="center">
                                                         <span>口味:<?php echo ($vofoodxq["kouwei"]); ?></span>
@@ -111,31 +119,33 @@
                                                     </div>
                                                 </div>
                                                 <div class="btn">
-                                                    
-                                                    <!-- 判断是否有数量 -->
-                                                    <?php if($vofoodxq["foodnum"] == null): ?><button class="minus" >
-                                                        <strong>
-                                                            <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
-                                                        </strong>
-                                                        </button>
-                                                        <i  class="caipinfenshu">0</i>
-                                                        <button class="add">
-                                                        <strong>
-                                                            <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
-                                                        </strong>
-                                                        </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i>
-                                                    <?php else: ?>
-                                                         <button class="minus" style="display: inline-block;">
-                                                        <strong>
-                                                            <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
-                                                        </strong>
-                                                        </button>
-                                                        <i style="display: inline-block;" class="caipinfenshu"><?php echo ($vofoodxq["foodnum"]); ?></i>
-                                                        <button class="add">
-                                                        <strong>
-                                                            <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
-                                                        </strong>
-                                                        </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i><?php endif; ?>
+                                                    <!-- 判断是否上架 -->
+                                                    <?php if($vofoodxq[zhuangt] == 1): ?><!-- 判断是否有数量 -->
+                                                        <?php if($vofoodxq["foodnum"] == null): ?><button class="minus" >
+                                                            <strong>
+                                                                <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
+                                                            </strong>
+                                                            </button>
+                                                            <i  class="caipinfenshu">0</i>
+                                                            <button class="add">
+                                                            <strong>
+                                                                <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
+                                                            </strong>
+                                                            </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i>
+                                                        <?php else: ?>
+                                                             <button class="minus" style="display: inline-block;">
+                                                            <strong>
+                                                                <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
+                                                            </strong>
+                                                            </button>
+                                                            <i style="display: inline-block;" class="caipinfenshu"><?php echo ($vofoodxq["foodnum"]); ?></i>
+                                                            <button class="add">
+                                                            <strong>
+                                                                <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
+                                                            </strong>
+                                                            </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i><?php endif; ?>
+                                                    <?php else: endif; ?>  
+                                                        
                                                 </div>
                                             </div>
                                             </li>
@@ -208,18 +218,38 @@
                                         var caipinid = $(this).parent().parent().find('.caipinid').html();
                                         // 获取菜品份数
                                         var caipinfenshu = $(this).parent().find(".caipinfenshu").html();
-                                        //ajax更改数据库
-                                        $.ajax({
-                                            type:'POST',
-                                            dataType: 'json',
-                                            url:'<?php echo U("Home/Index/ajaxaddlinshijj");?>',
-                                            data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu},
-                                            success: function (result) {
-                                                if (result == 2) {
-                                                    alert("操作失败");
+                                        //ajax更改cookie
+                                        //判断 份数是不是 1
+                                        if (caipinfenshu == 1) {
+                                            //执行添加
+                                             $.ajax({
+                                                type:'POST',
+                                                dataType: 'json',
+                                                url:'<?php echo U("Home/Index/ajaxaddlinshijj");?>',
+                                                data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu},
+                                                success: function (result) {
+                                                    
+                                                    // if (result == 2) {
+                                                    //     alert("操作失败");
+                                                    // }
                                                 }
-                                            }
-                                        })
+                                            })
+                                        }else{
+                                            // 执行修改
+                                             $.ajax({
+                                                type:'POST',
+                                                dataType: 'json',
+                                                url:'<?php echo U("Home/Index/ajaxeditfoodshuliang");?>',
+                                                data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu},
+                                                success: function (result) {
+                                                    
+                                                    // if (result == 2) {
+                                                    //     alert("操作失败");
+                                                    // }
+                                                }
+                                            })
+                                        }
+                                           
                                     });
                                     //减的效果 yxy 优化
                                     $(document).on("click",".minus",function(){
@@ -253,29 +283,46 @@
                                         // 获取菜品份数
                                         var caipinfenshu = $(this).parent().find(".caipinfenshu").html();
                                         // alert(caipinfenshu);
-                                        //ajax更改数据库
-                                        $.ajax({
-                                            type:'POST',
-                                            dataType: 'json',
-                                            url:'<?php echo U("Home/Index/ajaxdellinshijj");?>',
-                                            data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu},
-                                            success: function (result) {
-                                                // alert(result);
-                                                if (result == 2) {
-                                                    alert("操作失败");
+                                        //ajax更改 COOkie 
+                                        //判断 份数 是否是0
+                                        if (caipinfenshu == 0) {
+                                            //执行删除
+                                            $.ajax({
+                                                type:'POST',
+                                                dataType: 'json',
+                                                url:'<?php echo U("Home/Index/ajaxdellinshijj");?>',
+                                                data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu},
+                                                success: function (result) {
+                                                    // alert(result);
+                                                    
                                                 }
-                                            }
-                                        })
+                                            })
+                                        }else{
+                                            //执行修改
+                                              $.ajax({
+                                                type:'POST',
+                                                dataType: 'json',
+                                                url:'<?php echo U("Home/Index/ajaxeditfoodshuliang");?>',
+                                                data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu},
+                                                success: function (result) {
+                                                    
+                                                    // if (result == 2) {
+                                                    //     alert("操作失败");
+                                                    // }
+                                                }
+                                            })
+                                        }
+                                            
                                     });
                                     // 下一步
                                     $(document).on("click","#btnselect",function(){
                                         //判断有误菜品
                                         var zfens = $(this).parent().parent().find("#totalcountshow").html();
                                         if (zfens == 0) {
-                                            alert("未选择菜品");
+
                                         }else{
                                             //提交表单
-                                        $("#dateshangjia").submit();
+                                            $("#dateshangjia").submit();
                                         }
                                         
                                     });
@@ -516,4 +563,5 @@
 
 
 </body>
+
 </html>

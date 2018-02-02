@@ -19,19 +19,43 @@ class IndexController extends Controller {
     	$where['shop.zhuangt'] =  1;//是否上架 1--上架 2 --否
     	$res = $user->where($where)
                 ->join('shop_type on shop.type_shop = shop_type.id')
-                ->field("shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname")->select();
-        $this->assign('res',$res);
+                ->field("shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij")->select();
+                // dump($res);die;
         // 拼接星星数量
         foreach ($res as $kres => $vres) {
-            // dump($vres['xingsl']);
-            $xingxingshul = array();
-            // 星星数量转数组
-            for ($i=0; $i < $vres['xingsl']; $i++) { 
-                $xingxingshul[$i] = 1;
+             /**
+             * 转换星星
+             * 
+             */
+            $a = $vres['xingsl'];;//星星评分
+            $shixinxing = 0; //实心星星
+            $kongxinxing = 0; //空心星星
+            $bangexing = 0; // 半个星星
+            //判断数字是否是整数
+            if (is_int($a)) {
+                $shixinxing = $a;//赋值实心星
+                $kongxinxing = 5-$a;//赋值空心星
+            }else{
+                //解决小数点
+                $y=explode(".",$a);
+                if ($y[1] == 0) {
+                    $shixinxing = $a;//赋值实心星
+                    $kongxinxing = 5-$a;//赋值空心星
+                }else{
+                    $zhengshubufen = $y[0];//整数部分
+                    $shixinxing = $zhengshubufen;//赋值实心星
+                    $bangexing = 1;//赋值半个
+                    $kongxinxing = 5-1-$shixinxing;//赋值空心星
+                }
+                    
             }
-            // 将星数组拼接回原来的数组
-            $res[$kres]['xingshuliang'] = $xingxingshul;
+             // 将实心星数组拼接回原来的数组
+            $res[$kres]['shixinxing'] = $shixinxing;//实心星星
+            $res[$kres]['kongxinxing'] = $kongxinxing;//空心星星
+            $res[$kres]['bangexing'] = $bangexing;//半个心星星
         }
+        
+        $this->assign('res',$res);
         // dump($res);die;
         
         // 门店类别
@@ -50,6 +74,7 @@ class IndexController extends Controller {
     
     // 菜品列表
     public function detail(){
+
         $userid = session('userid');//获取用户id
         // dump($userid);die;
         $shopid = I('get.shopid');//门店id
@@ -68,13 +93,51 @@ class IndexController extends Controller {
         $zuoweishu = $user->where($wherezws)->count();
         //将座位数量拼接进原数组中
         $resspdan[0]['zuoweishu'] = $zuoweishu;
+        /**
+         * 转换星星
+         * 
+         */
+        $a = $resspdan[0]['xingsl'];//星星评分
+        $shixinxing = 0; //实心星星
+        $kongxinxing = 0; //空心星星
+        $bangexing = 0; // 半个星星
+        //判断数字是否是整数
+        if (is_int($a)) {
+            $shixinxing = $a;//赋值实心星
+            $kongxinxing = 5-$a;//赋值空心星
+        }else{
+            //解决小数点
+            $y=explode(".",$a);
+            if ($y[1] == 0) {
+                $shixinxing = $a;//赋值实心星
+                $kongxinxing = 5-$a;//赋值空心星
+            }else{
+                $zhengshubufen = $y[0];//整数部分
+                $shixinxing = $zhengshubufen;//赋值实心星
+                $bangexing = 1;//赋值半个
+                $kongxinxing = 5-1-$shixinxing;//赋值空心星
+            }
+                
+        }
+        // dump($shixinxing);
+        // dump($kongxinxing);
+        // dump($bangexing);
+        // dump($a);die;
         $xingxingshul = array();
-        // 星星数量转数组
-        for ($i=0; $i < $resspdan[0]['xingsl']; $i++) { 
+        // 实心星星数量转数组
+        for ($i=0; $i < $shixinxing; $i++) { 
             $xingxingshul[$i] = 1;
         }
         // dump($xingxingshul);die;
-        $this->assign("xingxingshul",$xingxingshul);//星星数量
+        $this->assign("xingxingshul",$xingxingshul);//实心星星数量
+        // 空心星星数量转数组
+        $kongxinshuliang = array();
+        for ($i=0; $i < $kongxinxing; $i++) { 
+            $kongxinshuliang[$i] = 1;
+        }
+        // dump($xingxingshul);die;
+        $this->assign("kongxinshuliang",$kongxinshuliang);//空心星星数量
+        $this->assign("bangexing",$bangexing);//半个星星数量
         $this->assign("resspdan",$resspdan);//单条信息
         /**
          *  获取菜品分类
@@ -95,29 +158,48 @@ class IndexController extends Controller {
         // dump($resft);
         $this->assign("resft",$resft);
         /**
-         * 获取菜品优化
+         * 获取菜品
          */
 
 
-        // $user = M('food');
-        // // $wherefd['food.dep_shop'] = 1;//对应门店id
+        $user = M('food');
+        $wherefd['food.dep_shop'] = 1;//对应门店id
         // $wherefd['food.zhuangt'] = 1;//菜品状态
-        // // $wherefd['linshijj.userid'] = 1;//临时表用户id
-        // $resfood = $user->where($wherefd)
-        //             ->join('left join food_type ON food_type.id = food.food_type')
-        //             ->join('left join cpdanwei ON cpdanwei.id = food.dwid')
-        //             ->join("left join linshijj ON food.id = linshijj.foodid")
-        //             ->field('food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum')
-        //             ->order('food.id desc')
-        //             ->select();
-        //             echo $user->getLastsql();
-        //             dump($resfood);die;
-                    //sql 语句运行
-                    $user = M();
-        $sqlcp = "SELECT food.id,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = ".$userid.") WHERE food.dep_shop = ".$shopid." AND food.zhuangt = '1' ORDER BY food.id asc" ;
-                    $resfood = $user ->query($sqlcp);
+        $resfood = $user->where($wherefd)
+                    ->join('left join food_type ON food_type.id = food.food_type')
+                    ->join('left join cpdanwei ON cpdanwei.id = food.dwid')
+                    ->field('food.id,food.zhuangt,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid')
+                    ->order('food.id asc')
+                    ->select();
                     // echo $user->getLastsql();
+                    // dump($resfood);
+        // 获取cookie的值
+        $food_num = unserialize(stripslashes($_COOKIE['food_num'])); 
+        // 遍历菜品
+        foreach ($resfood as $kref => $vkref) {
+            // 遍历菜品分类
+            foreach ($food_num as $kfnum => $vfnum) {
+                //判断菜品id 与类型id是否一样
+                if ($vkref['id'] == $vfnum['foodid'] && $vkref['food_type'] == $vfnum['foodtypeid']) {
+                    
+                    $resfood[$kref]['foodnum'] = $vfnum['foodnum'];
+                    break;
+                }else{
+                    
+                    $resfood[$kref]['foodnum'] = null;
+                }
+            }
+                
+        }
+        // dump($food_num);
         // dump($resfood);die;
+                    //sql 语句运行18931946118
+                    // $user = M();
+        // $sqlcp = "SELECT food.id,food.zhuangt,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid,linshijj.foodnum FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid left join linshijj ON (food.id = linshijj.foodid AND linshijj.userid = 18) WHERE food.dep_shop = ".$shopid." ORDER BY food.id asc" ;
+                    // $resfood = $user ->query($sqlcp);
+                    // echo $user->getLastsql();
+        // dump($resfood);
+        // die;
         /**
          * 拼接总分数总价格
          */
@@ -161,38 +243,36 @@ class IndexController extends Controller {
         
         $this->display();
     }
+
     //ajax add 菜品份数
     public function ajaxaddlinshijj(){
-        $userid = session('userid');//获取用户id
-        //获取数据
+        //cookie实现
+           // //获取数据
         $shopid = I('post.shopid');//，门店id
         $foodtypeid = I('post.foodtypeid');// 菜品类型id
         $foodid = I('post.caipinid');// 菜品id
         $foodnum = I('post.caipinfenshu');// 菜品份数
-        $user = M('linshijj');
-        // 判断份数是否是 第一份
-        if($foodnum == 1){
-            //执行添加
-            $data['shopid'] = $shopid;
-            $data['foodtypeid'] = $foodtypeid;
-            $data['foodid'] = $foodid;
-            $data['foodnum'] = $foodnum;
-            $data['userid'] = $userid;
-            $res = $user->add($data);
+        // addcart($shopid,$foodid,$foodnum);
+        $food_num = unserialize(stripslashes($_COOKIE['food_num'])); 
+        // dump($food_num);die;
+        // 判断是否存在
+        if(!empty($food_num)){
+            $ar_keys = array_keys($food_num); 
+            rsort($ar_keys); 
+            $max_array_keyid = $ar_keys[0]+1;  
+            // dump($max_array_keyid);die;
+            $food_num[$max_array_keyid]['shopid'] = $shopid; // ，门店id
+            $food_num[$max_array_keyid]['foodtypeid'] = $foodtypeid;// 菜品类型id 
+            $food_num[$max_array_keyid]['foodid'] = $foodid; // 菜品id
+            $food_num[$max_array_keyid]['foodnum'] = $foodnum; // 菜品份数
+            setcookie("food_num",serialize($food_num),time()+3600); 
         }else{
-            //执行修改
-            $where['shopid'] = $shopid;
-            $where['foodtypeid'] = $foodtypeid;
-            $where['foodid'] = $foodid;
-            $where['userid'] = $userid;
-            $data['foodnum'] = $foodnum;
-            $res = $user->where($where)->data($data)->save();
-        }
-        // 判断是否添加成功
-        if ($res) {
-            $this->ajaxReturn(1);
-        }else{
-            $this->ajaxReturn(2);
+            // 添加
+            $cart_info[0]['shopid'] = $shopid; // ，门店id
+            $cart_info[0]['foodtypeid'] = $foodtypeid; // 菜品类型id
+            $cart_info[0]['foodid'] = $foodid; // 菜品id
+            $cart_info[0]['foodnum'] = $foodnum; // 菜品份数
+            setcookie("food_num",serialize($cart_info),time()+3600); 
         }
         
     }
@@ -204,32 +284,38 @@ class IndexController extends Controller {
         $foodtypeid = I('post.foodtypeid');// 菜品类型id
         $foodid = I('post.caipinid');// 菜品id
         $foodnum = I('post.caipinfenshu');// 菜品份数
-        $user = M('linshijj');
-        // 判断份数是否是 第一份
-        if($foodnum == 0){
-            // $this->ajaxReturn(123);
-            //执行删除
-            $where['shopid'] = $shopid;
-            $where['foodtypeid'] = $foodtypeid;
-            $where['foodid'] = $foodid;
-            $where['userid'] = $userid ;
-            $res = $user->where($where)->delete(); 
-        }else{
-            // $this->ajaxReturn(456);
-            //执行修改
-            $where['shopid'] = $shopid;
-            $where['foodtypeid'] = $foodtypeid;
-            $where['foodid'] = $foodid;
-            $where['userid'] = $userid;
-            $data['foodnum'] = $foodnum;
-            $res = $user->where($where)->data($data)->save();
-        }
-        // 判断是否添加成功
-        if ($res) {
-            $this->ajaxReturn(1);
-        }else{
-            $this->ajaxReturn(2);
-        }
+        //  // 获取 cookie
+        $food_num = unserialize(stripslashes($_COOKIE['food_num'])); 
+        foreach($food_num as $kfood=>$vfood){ 
+            //判断是否是一份菜品
+            if ($vfood['shopid'] == $shopid && $vfood['foodid'] == $foodid && $vfood['foodtypeid'] && $foodtypeid  ) {
+                // $food_num[$kfood]['foodnum'] = $foodnum;//修改份数
+                 unset($food_num[$kfood]);//删除份数
+            }
+        } 
+        
+        setcookie("food_num",serialize($food_num),time()+3600);
+    }
+     //ajax edit 菜品份数
+    public function ajaxeditfoodshuliang(){
+        //cookie实现
+           // //获取数据
+        $shopid = I('post.shopid');//，门店id
+        $foodtypeid = I('post.foodtypeid');// 菜品类型id
+        $foodid = I('post.caipinid');// 菜品id
+        $foodnum = I('post.caipinfenshu');// 菜品份数
+        // 获取 cookie
+        $food_num = unserialize(stripslashes($_COOKIE['food_num'])); 
+        foreach($food_num as $kfood=>$vfood){ 
+            //判断是否是一份菜品
+            if ($vfood['shopid'] == $shopid && $vfood['foodid'] == $foodid && $vfood['foodtypeid'] && $foodtypeid  ) {
+                // $vfood['foodnum'] = $foodnum;//修改份数
+                $food_num[$kfood]['foodnum'] = $foodnum;//修改份数
+            }
+        } 
+        
+        setcookie("food_num",serialize($food_num),time()+3600); 
+        
     }
     // 单条门店展示
     public function dantiaoshop(){

@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: #eaeaea;
+}
+.header{
+    width: 100%;
+    height: 120px;
+    background-color: #097f7e;
+    text-align: center;
+    line-height: 120px;
+}
+.header span{
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+}
+.denglu{
+    width: 100%;
+    height: 96px;
+    margin-top: 12px;
+    text-align: center;
+    line-height: 96px;
+}
+.denglu span{
+    font-size: 43.2px;
+    color: #353535;
+    font-weight: normal;
+}
+.phone{
+    width: 90%;
+    height: 120px;
+    background-color: white;
+    margin-left: 5%;
+    margin-top: 12px;
+}
+.lu{
+    width: 120px;
+    height: 84px;
+    float: left;
+    border-right: 2.4px solid #888888;
+    margin-top: 18px;
+    text-align: center;
+    line-height: 84px;
+}
+.lu img{
+    width: 72px;
+    vertical-align: middle;
+}
+.text{
+    width: 82%;
+    height: 120px;
+    float: left;
+    margin-left: 36px;
+}
+.text input{
+    width: 60%;
+    height: 84px;
+    font-size: 35px;
+    margin-top: 18px;
+    float: left;
+}
+.mima{
+    width: 90%;
+    height: 120px;
+    background-color: white;
+    margin-left: 5%;
+    margin-top: 12px;
+}
+.tu2{
+    width: 120px;
+    height: 84px;
+    float: left;
+    border-right: 2.4px solid #888888;
+    margin-top: 18px;
+    text-align: center;
+    line-height: 84px;
+}
+.tu2 img{
+    width: 72px;
+    vertical-align: middle;
+}
+.text2{
+    width: 82%;
+    height: 120px;
+    float: left;
+    margin-left: 36px;
+}
+.text2 input{
+    width: 60%;
+    height: 84px;
+    font-size: 35px;
+    margin-top: 18px;
+    float: left;
+}
+.foot{
+    width: 90%;
+    height: 120px;
+    background-color: #097f7e;
+    text-align: center;
+    line-height: 120px;
+    margin-top: 48px;
+    margin-left: 5%;
+}
+.foot span{
+    font-size: 43.2px;
+    font-weight: normal;
+    color: white;
+}
+.footer{
+    width: 90%;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 5%;
+}
+.wang{
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+}
+.wang span{
+    font-size: 40px;
+    color: #097f7e;
+}
+.yong{
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    text-align: right;
+}
+.yong span{
+    font-size: 40px;
+    color: #097f7e;
+}
+
+#sp{
+    float: left;
+    width: 40%;
+    height: 84px;
+    line-height: 84px;
+    font-size: 30px;
+    margin-top: 18px;
+    color:red;
+}
+#sp2{
+    float: left;
+    width: 40%;
+    height: 84px;
+    line-height: 84px;
+    font-size: 30px;
+    margin-top: 18px;
+    color:red;
+}
