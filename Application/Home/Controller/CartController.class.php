@@ -54,6 +54,9 @@ class CartController extends Controller {
    //保存购物车
     public function save_cart()
     {
+        dump($_POST);
+        dump(($_COOKIE['shop_cart_info']));
+        exit;
         // $this->shopid = I('shopid');
         // $this->user_id = \user_helper::get_user_id();
         // // dump($this->user_id);exit;

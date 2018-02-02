@@ -29,18 +29,13 @@
                         <img src="/-/Public/home/img/baixin.png" alt="">
                     </div>
                     <div class="evaluate">
-<<<<<<< HEAD
                         <!-- 遍历实心星星 -->
-                        <?php if(is_array($xingxingshul)): foreach($xingxingshul as $key=>$voxingxingshul): ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:5%;" alt=""><?php endforeach; endif; ?>
+                        <?php if(is_array($xingxingshul)): foreach($xingxingshul as $key=>$voxingxingshul): ?><img src="/-/Public/home/img/quanstart.png" style="width:5%;" alt=""><?php endforeach; endif; ?>
                         <!-- 判断半个 星星 -->
-                        <?php if($bangexing == 1): ?><img src="/kuaidian/Public/home/img/ban.png" style="width:5%;" alt="">
+                        <?php if($bangexing == 1): ?><img src="/-/Public/home/img/ban.png" style="width:5%;" alt="">
                         <?php else: endif; ?>
                         <!-- 遍历空心星星 -->
-                        <?php if(is_array($kongxinshuliang)): foreach($kongxinshuliang as $key=>$vokongxinshuliang): ?><img src="/kuaidian/Public/home/img/wu.png" style="width:5%;" alt=""><?php endforeach; endif; ?>
-=======
-                        <!-- 遍历星星 -->
-                        <?php if(is_array($xingxingshul)): foreach($xingxingshul as $key=>$voxingxingshul): ?><img src="/-/Public/home/img/quanstart.png" style="width:5%;" alt=""><?php endforeach; endif; ?>
->>>>>>> e952ca8486b6fba99506e802a7bb248db5449a41
+                        <?php if(is_array($kongxinshuliang)): foreach($kongxinshuliang as $key=>$vokongxinshuliang): ?><img src="/-/Public/home/img/wu.png" style="width:5%;" alt=""><?php endforeach; endif; ?>
                     </div>
                     <div class="tui">
                         <img src="/-/Public/home/img/tui.png" alt="">
@@ -124,61 +119,33 @@
                                                     </div>
                                                 </div>
                                                 <div class="btn">
-<<<<<<< HEAD
                                                     <!-- 判断是否上架 -->
                                                     <?php if($vofoodxq[zhuangt] == 1): ?><!-- 判断是否有数量 -->
                                                         <?php if($vofoodxq["foodnum"] == null): ?><button class="minus" >
                                                             <strong>
-                                                                <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
+                                                                <img src="/-/Public/home/img/jianhao.png" alt="">
                                                             </strong>
                                                             </button>
                                                             <i  class="caipinfenshu">0</i>
                                                             <button class="add">
                                                             <strong>
-                                                                <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
+                                                                <img src="/-/Public/home/img/jiahao.png" alt="">
                                                             </strong>
                                                             </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i>
                                                         <?php else: ?>
                                                              <button class="minus" style="display: inline-block;">
                                                             <strong>
-                                                                <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
+                                                                <img src="/-/Public/home/img/jianhao.png" alt="">
                                                             </strong>
                                                             </button>
                                                             <i style="display: inline-block;" class="caipinfenshu"><?php echo ($vofoodxq["foodnum"]); ?></i>
                                                             <button class="add">
                                                             <strong>
-                                                                <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
+                                                                <img src="/-/Public/home/img/jiahao.png" alt="">
                                                             </strong>
                                                             </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i><?php endif; ?>
                                                     <?php else: endif; ?>  
                                                         
-=======
-                                                    
-                                                    <!-- 判断是否有数量 -->
-                                                    <?php if($vofoodxq["foodnum"] == null): ?><button class="minus" >
-                                                        <strong>
-                                                            <img src="/-/Public/home/img/jianhao.png" alt="">
-                                                        </strong>
-                                                        </button>
-                                                        <i  class="caipinfenshu">0</i>
-                                                        <button class="add">
-                                                        <strong>
-                                                            <img src="/-/Public/home/img/jiahao.png" alt="">
-                                                        </strong>
-                                                        </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i>
-                                                    <?php else: ?>
-                                                         <button class="minus" style="display: inline-block;">
-                                                        <strong>
-                                                            <img src="/-/Public/home/img/jianhao.png" alt="">
-                                                        </strong>
-                                                        </button>
-                                                        <i style="display: inline-block;" class="caipinfenshu"><?php echo ($vofoodxq["foodnum"]); ?></i>
-                                                        <button class="add">
-                                                        <strong>
-                                                            <img src="/-/Public/home/img/jiahao.png" alt="">
-                                                        </strong>
-                                                        </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i><?php endif; ?>
->>>>>>> e952ca8486b6fba99506e802a7bb248db5449a41
                                                 </div>
                                             </div>
                                             </li>
@@ -258,6 +225,7 @@
                                              $.ajax({
                                                 type:'POST',
                                                 dataType: 'json',
+                                                async:false,
                                                 url:'<?php echo U("Home/Index/ajaxaddlinshijj");?>',
                                                 data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu},
                                                 success: function (result) {
@@ -272,6 +240,7 @@
                                              $.ajax({
                                                 type:'POST',
                                                 dataType: 'json',
+                                                async:false,
                                                 url:'<?php echo U("Home/Index/ajaxeditfoodshuliang");?>',
                                                 data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu},
                                                 success: function (result) {
@@ -323,6 +292,7 @@
                                             $.ajax({
                                                 type:'POST',
                                                 dataType: 'json',
+                                                async:false,
                                                 url:'<?php echo U("Home/Index/ajaxdellinshijj");?>',
                                                 data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu},
                                                 success: function (result) {
@@ -335,6 +305,7 @@
                                               $.ajax({
                                                 type:'POST',
                                                 dataType: 'json',
+                                                async:false,
                                                 url:'<?php echo U("Home/Index/ajaxeditfoodshuliang");?>',
                                                 data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu},
                                                 success: function (result) {
