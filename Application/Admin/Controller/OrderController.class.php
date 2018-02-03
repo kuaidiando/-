@@ -63,6 +63,7 @@ class OrderController extends BasicController {
         $goods_xq = array();
         $one_info = M('order')->where(array('id'=>$order_id))->find();
         $one_info['shop_name'] = uri('shop',array('id'=>$one_info['store_id']),'mingch');
+        $one_info['lj'] = $one_info['total_price'] * 0.05;
         $user_info = M('user')->where(array('id'=>$one_info['user_id']))->find();
         $goods_xq = M('order_fu')->where(array('order_id'=>$order_id))->select();
         foreach($goods_xq as $k1=>$v1){

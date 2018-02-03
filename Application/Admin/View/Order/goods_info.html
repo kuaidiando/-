@@ -1,45 +1,65 @@
 <!DOCTYPE html>
-<header class="navbar-wrapper">
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/static/h-ui/css/H-ui.min.css"/>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/static/h-ui.admin/css/H-ui.admin.css"/>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/lib/icheck/icheck.css"/>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/static/h-ui.admin/css/style.css"/>
-</header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/xq.css"/>
+
+</head>
 <body>
-<div id="iframe_box" class="Hui-article">
-    <div class="show_iframe">
-        <div style="display:none" class="loading">
-        </div>
-        <!-- 主题内容 -->
-        <div>
-            <div class="page-container">
+ 
+
+    <div class="he">
       
-        <div class="mt-20">
-        <table class="table table-border table-bordered table-bg table-hover table-responsive">
-            <thead>
-                <tr class="text-c">
-                    <th width="80">菜品名称</th>
-                    <th width="80">菜品数量</th>
-                   
-                </tr>
-            </thead>
-            <tbody>
-                <foreach name="goods_info" item="one" >
-                        <tr class="text-c">
-                            <td>{$one.goods_name}</td>
-                            <td>{$one.goods_num}</td>
-                            
-                        </tr>
-                </foreach>
-                
-            </tbody>
-        </table>
+
+        <div class="cai2">
+            <div class="pin">
+                <span>菜品信息</span>
+            </div>
         </div>
-    </div>
+
+        <div class="cai">
+            <div class="nn2">
+                <div class="hhe">
+                    <div class="nn3">
+                        <div class="ming">
+                            <span>名称</span>
+                        </div>
+                    </div>
+                    <div class="nn3">
+                        <div class="ming">
+                            <span>数量</span>
+                        </div>
+                    </div>
+                    <div class="nn3">
+                        <div class="ming">
+                            <span>单价</span>
+                        </div>
+                    </div>
+                </div>
+            <foreach name="goods_info" item="goods">
+            <div class="hhe2">
+                <div class="nn3">
+                    <div class="ming2">
+                        <span>{$goods.goods_name}</span>
+                    </div>
+                </div>
+                <div class="nn3">
+                    <div class="ming2">
+                        <span>{$goods.goods_num}份</span>
+                    </div>
+                </div>
+                <div class="nn3">
+                    <div class="ming2">
+                        <span>￥{$goods.goods_price}</span>
+                    </div>
+                </div>
+            </div>
+            </foreach>
         </div>
+
+       
     </div>
-</div>
+
 </body>
 </html>

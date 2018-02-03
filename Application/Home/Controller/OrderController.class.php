@@ -50,6 +50,7 @@ class OrderController extends Controller {
             }
         	
         }
+        setcookie("food_num",serialize($food_num),time()-10,"/");
         $this->redirect('order/order_info');
      
     }

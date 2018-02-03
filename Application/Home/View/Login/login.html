@@ -26,9 +26,9 @@
         </div>
 
         <div class="text">
-            <input id="tel" type="text" placeholder="请输入您的手机号">
-            <input type="hidden" id="is_cart" name="is_cart" value="{is_cart}">
-            <input type="hidden" id="shop" value="{$shopid}">
+            <input id="tel" type="tel" placeholder="请输入您的手机号">
+            <input type="hidden" id="is_cart" name="is_cart" value="{$is_cart}">
+            <input type="hidden" id="shop" name="shop" value="{$shopid}">
             <span id="sp"></span>
         </div>
     </div>
@@ -102,10 +102,9 @@
         
         var tel = $("#tel").val();
         var password = $("#mi").val();
-        // alert(tel);
-        // return false;
         var is_cart = $("#is_cart").val();
         var shop = $("#shop").val();
+
         if(!is_cart || !shop){
             var is_cart=0;
             var shop = 0;
@@ -119,8 +118,7 @@
                 if(result.code == 200){
                     $(location).attr('href', '{:U("Home/Index/index")}');
                 }else if(result.code == 300){
-                     $(location).attr('href', '{:U("Home/Cart/index",array('shop'=>result.shop))}');
-
+                     $(location).attr('href', '{:U("Home/Cart/save_cart")}');
                 }else{
                     alert(result.msg);
                 }
