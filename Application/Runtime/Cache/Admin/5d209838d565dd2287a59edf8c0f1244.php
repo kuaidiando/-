@@ -55,10 +55,7 @@ $(document).ready(function(){
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>LOGO：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <img src="/kuaidian/Public<?php echo ($data["0"]["logo"]); ?>" alt="图片加载中。。。">
-                <div class="uploader-thum-container">
-                    <input type="file" name="logo">
-                </div>
+                <img src="/kuaidian/Public<?php echo ($data["0"]["logo"]); ?>" style="width: 10%;" alt="图片加载中。。。">
             </div>
         </div>
         <div class="row cl">

@@ -51,14 +51,22 @@
     width: 95%;
     height: 120px;
     float: left;
+    line-height: 120px;
 }
 .ming input{
     width: 100%;
     margin-left: 24px;
     height: 110px;
     font-size: 33.6px;
-    margin-top: 5px;
+/*    margin-top: 5px;*/
 }
+.ming select{
+    width: 435px;
+    height: 100px;
+    font-size: 33.6px;
+    color: #858585;
+}
+
 .fu{
     width: 5%;
     height: 120px;

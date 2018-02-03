@@ -25,12 +25,12 @@
             <a href="register.html">
                 <div class="zhong">
                     <div class="tu2">
-                        <img src="__PUBLIC__/merch/images/person.jpg" alt="">
+                        <img src="__PUBLIC__/{$res[0][logo]}" alt="">
                     </div>
                 </div>
             </a>
 
-            <a href="{:U('Merch/Shopset/index')}">
+            <a href="{:U('Merch/Shopset/index',array('shopid'=>$res[0][id]))}">
                 <div class="you">
                     <div class="tu3">
                         <img src="__PUBLIC__/merch/images/shezhi.png" alt="">
@@ -46,7 +46,7 @@
 
         <div class="center">
             <div class="name">
-                <span>渝乡辣婆婆(体育大街分店)</span>
+                <span>{$res[0][mingch]}</span>
             </div>
         </div>
 
@@ -84,7 +84,7 @@
     </div>
 
     <div class="qq">
-        <a href="renzheng.html">
+        <a href="{:U('Merch/Shopset/renzhengxx',array('shopid'=>$res[0][id]))}">
             <div class="renz">
                 <div class="rentu">
                     <img src="__PUBLIC__/merch/images/renzheng.png" alt="">

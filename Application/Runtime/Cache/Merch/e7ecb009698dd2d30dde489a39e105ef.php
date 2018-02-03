@@ -13,7 +13,7 @@
         <span>门店设置</span>
     </div>
 
-    <a href="<?php echo U('Merch/Shopset/jibenxx');?>">
+    <a href="<?php echo U('Merch/Shopset/jibenxx',array('shopid'=>$shopid));?>">
         <div class="box">
             <div class="he">
                 <div class="zi">
@@ -21,7 +21,9 @@
                 </div>
 
                 <div class="qu">
-                    <span>去完善</span>
+                    <?php if($res[0][jinbenxxtype] == 1): ?><span>已完善</span>
+                    <?php else: ?>
+                     <span>去完善</span><?php endif; ?>
                 </div>
 
                 <div class="jian">

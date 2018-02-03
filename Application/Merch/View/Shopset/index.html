@@ -13,7 +13,7 @@
         <span>门店设置</span>
     </div>
 
-    <a href="{:U('Merch/Shopset/jibenxx')}">
+    <a href="{:U('Merch/Shopset/jibenxx',array('shopid'=>$shopid))}">
         <div class="box">
             <div class="he">
                 <div class="zi">
@@ -21,7 +21,11 @@
                 </div>
 
                 <div class="qu">
-                    <span>去完善</span>
+                    <if condition="$res[0][jinbenxxtype] eq 1">
+                    <span>已完善</span>
+                    <else />
+                     <span>去完善</span>
+                    </if>
                 </div>
 
                 <div class="jian">

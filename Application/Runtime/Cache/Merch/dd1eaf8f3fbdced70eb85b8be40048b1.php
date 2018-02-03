@@ -25,12 +25,12 @@
             <a href="register.html">
                 <div class="zhong">
                     <div class="tu2">
-                        <img src="/kuaidian/Public/merch/images/person.jpg" alt="">
+                        <img src="/kuaidian/Public/<?php echo ($res[0][logo]); ?>" alt="">
                     </div>
                 </div>
             </a>
 
-            <a href="<?php echo U('Merch/Shopset/index');?>">
+            <a href="<?php echo U('Merch/Shopset/index',array('shopid'=>$res[0][id]));?>">
                 <div class="you">
                     <div class="tu3">
                         <img src="/kuaidian/Public/merch/images/shezhi.png" alt="">
@@ -46,7 +46,7 @@
 
         <div class="center">
             <div class="name">
-                <span>渝乡辣婆婆(体育大街分店)</span>
+                <span><?php echo ($res[0][mingch]); ?></span>
             </div>
         </div>
 
@@ -84,7 +84,7 @@
     </div>
 
     <div class="qq">
-        <a href="renzheng.html">
+        <a href="<?php echo U('Merch/Shopset/renzhengxx',array('shopid'=>$res[0][id]));?>">
             <div class="renz">
                 <div class="rentu">
                     <img src="/kuaidian/Public/merch/images/renzheng.png" alt="">
