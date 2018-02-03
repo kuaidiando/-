@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" data-dpr="1" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>我的</title>
-    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/text.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/person.css">
+    <link rel="stylesheet" href="/-/Public/home/css/base.css">
+    <link rel="stylesheet" href="/-/Public/home/css/text.css">
+    <link rel="stylesheet" href="/-/Public/home/css/person.css">
 </head>
 <body style="font-size: 12px">
     <div class="header">
@@ -17,11 +17,9 @@
 
             <div class="person">
                 <a href="#">
-                    <if condition="$user_info.photo eq ''">
-                    <img src="__PUBLIC__/{$user_info.photo}" alt="">
-                    <else />
-                    <img src="__PUBLIC__/{$user_info.photo}" alt="">
-                    </if>
+                    <?php if($user_info["photo"] == ''): ?><img src="/-/Public/<?php echo ($user_info["photo"]); ?>" alt="">
+                    <?php else: ?>
+                    <img src="/-/Public/<?php echo ($user_info["photo"]); ?>" alt=""><?php endif; ?>
 
                 </a>
             </div>
@@ -29,7 +27,7 @@
 
             <div class="shezhi">
                 <a href="#">
-                    <img src="__PUBLIC__/home/img/shezhi.png" alt="">
+                    <img src="/-/Public/home/img/shezhi.png" alt="">
                 </a>
             </div>
         </div>
@@ -37,12 +35,12 @@
        <div class="mingzi">
            <div class="name">
                <a href="login.html">
-                   <span>{$user_info.nick_name}</span>
+                   <span><?php echo ($user_info["nick_name"]); ?></span>
                </a>
            </div>
 
            <div class="phone">
-               <span>{$user_info.tel}</span>
+               <span><?php echo ($user_info["tel"]); ?></span>
            </div>
        </div>
     </div>
@@ -51,7 +49,7 @@
         <div class="pp">
             <div class="zuo">
                 <div class="qian">
-                    <span>￥{$user_info.money}</span>
+                    <span>￥<?php echo ($user_info["money"]); ?></span>
                 </div>
 
                 <div class="zhang">
@@ -61,7 +59,7 @@
 
             <div class="right">
                 <div class="qian2">
-                    <span>￥{$user_info.total_income}</span>
+                    <span>￥<?php echo ($user_info["total_income"]); ?></span>
                 </div>
 
                 <div class="ru">
@@ -74,18 +72,18 @@
     <a href="mydingdan.html">
         <div class="all">
             <div class="tu">
-                    <img src="__PUBLIC__/home/img/dinagdan.png" alt="">
+                    <img src="/-/Public/home/img/dinagdan.png" alt="">
                 </div>
 
             <div class="quan">
-                <a href="{:U('Home/Order/order_info')}">
+                <a href="<?php echo U('Home/Order/order_info');?>">
                     <span>全部订单</span>
                 </a>
                 </div>
 
             <div class="you">
-                <a href="{:U('Home/Order/order_info')}">
-                    <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
+                <a href="<?php echo U('Home/Order/order_info');?>">
+                    <img src="/-/Public/home/img/youjiantou.png" alt="">
                 </a>
                 </div>
         </div>
@@ -94,7 +92,7 @@
     <div class="di">
         <div class="qq">
             <div class="tu2">
-                <img src="__PUBLIC__/home/img/dianping.png" alt="">
+                <img src="/-/Public/home/img/dianping.png" alt="">
             </div>
 
             <div class="wo">
@@ -102,13 +100,13 @@
             </div>
 
             <div class="you2">
-                <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
+                <img src="/-/Public/home/img/youjiantou.png" alt="">
             </div>
         </div>
 
         <div class="qq2">
             <div class="tu3">
-                <img src="__PUBLIC__/home/img/xin.png" alt="">
+                <img src="/-/Public/home/img/xin.png" alt="">
             </div>
 
             <div class="shou">
@@ -116,14 +114,14 @@
             </div>
 
             <div class="you3">
-                <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
+                <img src="/-/Public/home/img/youjiantou.png" alt="">
             </div>
         </div>
 
 
         <div class="qq3">
             <div class="tu4">
-                <img src="__PUBLIC__/home/img/tui.png" alt="">
+                <img src="/-/Public/home/img/tui.png" alt="">
             </div>
 
             <div class="tui1">
@@ -132,7 +130,7 @@
             </div>
 
             <div class="you4">
-                <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
+                <img src="/-/Public/home/img/youjiantou.png" alt="">
             </div>
         </div>
     </div>
@@ -141,30 +139,30 @@
   <!--   <footer>
         <div class="foot">
             <a href="index.html">
-                <img src="__PUBLIC__/home/img/shangjia.png" alt="">
+                <img src="/-/Public/home/img/shangjia.png" alt="">
                 <p>首页</p>
             </a>
         </div>
 
         <div class="dan">
             <a href="#">
-                <img src="__PUBLIC__/home/img/diangdan.png" alt="">
+                <img src="/-/Public/home/img/diangdan.png" alt="">
                 <p>订单</p>
             </a>
         </div>
 
         <div class="food">
             <a href="#">
-                <img src="__PUBLIC__/home/img/geren.png" alt="">
+                <img src="/-/Public/home/img/geren.png" alt="">
                 <p>我的</p>
             </a>
         </div>
     </footer> -->
     <div class="foott">
-    <a href="{:U('Home/Index/index')}">
+    <a href="<?php echo U('Home/Index/index');?>">
         <div class="foot">
             <div class="tupian6">
-                <img src="__PUBLIC__/home/img/shangjia.png" alt="">
+                <img src="/-/Public/home/img/shangjia.png" alt="">
             </div>
 
             <div class="shouye">
@@ -173,10 +171,10 @@
         </div>
     </a>
 
-    <a href="{:U('Home/Order/order_info')}">
+    <a href="<?php echo U('Home/Order/order_info');?>">
         <div class="foot">
             <div class="tupian6">
-                <img src="__PUBLIC__/home/img/diangdan.png" alt="">
+                <img src="/-/Public/home/img/diangdan.png" alt="">
             </div>
 
             <div class="shouye">
@@ -187,7 +185,7 @@
 
     <div class="foot">
         <div class="tupian6">
-            <img src="__PUBLIC__/home/img/geren.png" alt="">
+            <img src="/-/Public/home/img/geren.png" alt="">
         </div>
 
         <div class="shouye">
