@@ -34,6 +34,7 @@ class OrderController extends BasicController {
         $order_info = M('order')->order('id desc')->select();
         foreach($order_info as $order_k=>$order_v){
             $order_info[$order_k]['shop_name'] = uri('shop',array('id'=>$order_v['store_id']),'mingch');
+            $order_info[$order_k]['sf'] = uri('money',array('order_id'=>$order_v['id']),'sf');
         }
         $num = count($order_info);
         $this->assign('num',$num);
@@ -63,13 +64,17 @@ class OrderController extends BasicController {
         $goods_xq = array();
         $one_info = M('order')->where(array('id'=>$order_id))->find();
         $one_info['shop_name'] = uri('shop',array('id'=>$one_info['store_id']),'mingch');
-        $one_info['lj'] = $one_info['total_price'] * 0.05;
+        $one_info['lj'] = $one_info['total_price'] * 0.03;
+        $one_info['sf'] = $one_info['total_price'] - $one_info['lj'];
+
         $user_info = M('user')->where(array('id'=>$one_info['user_id']))->find();
         $goods_xq = M('order_fu')->where(array('order_id'=>$order_id))->select();
         foreach($goods_xq as $k1=>$v1){
             $goods_xq[$k1]['goods_name'] = uri('food',array('id'=>$v1['goods_id']),'mingch');
 
         }
+        $money_info = uri('money',array('order_id'=>$order_id));
+        $this->assign('money_info',$money_info);
         $this->assign('goods_xq',$goods_xq);
         $this->assign('user_info',$user_info);
         $this->assign('one_info',$one_info);
@@ -78,6 +83,27 @@ class OrderController extends BasicController {
 
 
 
+    }
+
+    //商家订单总额
+    public function order_total_info(){
+        $store_id = I('store_id');
+        $order = M('order');
+        $where['order_status'] = array('in','10,15'); 
+        $where['store_id'] = $store_id;
+        $order_ids = $order->where($where)->getField('id',true);
+        $order_total_price = 0;
+        $num =0;
+        foreach($order_ids as $k=>$v){
+            $order_total_price +=uri('money',array('order_id'=>$v),'sf');
+            $num+=1;
+        }
+        $data = array(
+            'data' => array('order_total_price'=>$order_total_price,'num'=>$num),
+            'code'=> 200,
+            'msg' => '',
+            );
+        $this->ajaxReturn($data);
     }
     
 

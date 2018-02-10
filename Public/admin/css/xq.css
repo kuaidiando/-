@@ -1,3 +1,6 @@
+body{
+    font-family: Microsoft YaHei;
+}
 .shanghe {
     width: 800px;
     height: 50px;
@@ -47,7 +50,7 @@
 }
 .big{
     width: 90%;
-    height: 140px;
+    height: 200px;
     margin-left: 5%;
     background-color: #f6f6f6;
 }
@@ -84,6 +87,32 @@
     width: 90%;
     height: 60px;
     margin-left: 5%;
+}
+.bei{
+    width: 90%;
+    height: 60px;
+    margin-left: 5%;
+}
+.zhu{
+    width: 10%;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
+.zhu span{
+    font-size: 15px;
+    font-weight: bolder;
+    color: #000;
+}
+.beizhu{
+    width: 90%;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
+.beizhu span{
+    font-size: 15px;
+    color: #000;
 }
 .yu2{
     width: 50%;

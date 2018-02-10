@@ -7,20 +7,23 @@
     <link rel="stylesheet" href="/-/Public/home/css/base.css">
     <link rel="stylesheet" href="/-/Public/home/css/text.css">
     <link rel="stylesheet" href="/-/Public/home/css/dingdanxiangqing.css">
+    <!-- <script type="text/javascript" src="/-/Public/home/js/jquery.js"></script> -->
+    <script type="text/javascript" src="/-/Public/home/js/jquery-1.12.4.js"></script>
+
+
 </head>
 <body style="font-size: 12px">
     <div class="header">
         <span>订单详情</span>
     </div>
-
-    <div class="hao">
+    <?php if($is_use == 0): ?><div class="hao jc">
         <div class="dd">
             <div class="dd1">
                 <span>D</span>
             </div>
 
             <div class="shuzi">
-                <span>023</span>
+                <span></span>
             </div>
         </div>
 
@@ -32,7 +35,26 @@
             <span>下单后自取小票&nbsp;或&nbsp;向服务员可对订单</span>
         </div>
     </div>
+    <?php else: ?>
+    <div class="hao">
+        <div class="dd">
+            <div class="dd1">
+                <span>D</span>
+            </div>
 
+            <div class="shuzi">
+                <span><?php echo ($jc_code); ?></span>
+            </div>
+        </div>
+
+        <div class="jiu">
+            <span>就餐号</span>
+        </div>
+
+        <div class="an">
+            <span>下单后自取小票&nbsp;或&nbsp;向服务员可对订单</span>
+        </div>
+    </div><?php endif; ?>
     <div class="ding0">
         <div class="dding">
             <div class="dan0">
@@ -40,7 +62,7 @@
             </div>
 
             <div class="hhao">
-                <span><?php echo ($info["order_code"]); ?></span>
+                <span><?php echo ($order_code); ?></span>
             </div>
         </div>
 
@@ -50,14 +72,14 @@
             </div>
 
             <div class="yi">
-            <?php if($info["order_status"] == 1): ?><span>未支付</span>
-            <?php elseif($info["order_status"] == 5): ?>
+            <?php if($order_status == 1): ?><span>未支付</span>
+            <?php elseif($order_status == 5): ?>
                 <span>已支付</span>
-            <?php elseif($info["order_status"] == 10): ?>
+            <?php elseif($order_status == 10): ?>
                 <span>待评价</span>
-            <?php elseif($info["order_status"] == 15): ?>
+            <?php elseif($order_status == 15): ?>
                 <span>已完成</span>
-            <?php elseif($info["order_status"] == 20): ?>
+            <?php elseif($order_status == 20): ?>
                 <span>已取消</span>
             <?php else: ?>
                 <span>未知</span><?php endif; ?>
@@ -71,18 +93,22 @@
             </div>
 
             <div class="aa3">
-            <?php if($info["is_use"] == 0): ?><span>待使用</span>
+            <?php if($is_use == 0 ): if($order_status == 20): ?><span>已取消</span>
+                <?php else: ?>
+                <span id="use">待使用</span><?php endif; ?>
             </div>   
             <div class="tet">
-                <div class="wenben">
-                    <span>取消订单</span>
-                </div>
+                <?php if($order_status == 5): ?><div class="wenben" id="wenben">
+                        <span id="qx">取消订单</span>
+                        <input type="hidden" id="order_id" name="order_id" value="<?php echo ($order_id); ?>">
+                    </div>
+                <?php else: endif; ?>  
             </div>
-            <?php elseif($info["is_use"] == 1): ?>
+            <?php elseif($is_use == 1): ?>
                 <span>已使用</span>
             </div>
             <div class="tet">
-                <div class="wenben">
+                <div >
                     <span></span>
                 </div>
             </div>    
@@ -148,21 +174,22 @@
             <div class="xxiang">
                 <div class="sui">
                     <div class="ssui">
-                        <span>分享随机立减</span>
+                        <span>随机立减</span>
+                        <input type="hidden" id="store_id" name="store_id" value="<?php echo ($store_id); ?>">
                     </div>
 
                     <div class="jian">
-                        <span>-&nbsp;￥8.88</span>
+                        <span>-&nbsp;￥<?php echo ($money_info["lj"]); ?></span>
                     </div>
                 </div>
 
                 <div class="zongji">
                     <div class="zj">
-                        <span>总计:&nbsp;&nbsp;￥<?php echo ($info["total_price"]); ?></span>
+                        <span>总计:&nbsp;&nbsp;￥<?php echo ($money_info["total_price"]); ?></span>
                     </div>
 
                     <div class="sf">
-                        <span>实付:&nbsp;&nbsp;￥<?php echo ($info["total_price"]); ?></span>
+                        <span>实付:&nbsp;&nbsp;￥<?php echo ($money_info["sf"]); ?></span>
                     </div>
                 </div>
             </div>
@@ -173,7 +200,7 @@
     <div class="zhuohao">
         <div class="hhao6">
             <div class="ben">
-                <input type="text" placeholder="下单前,请填写座位号" name="seat" value="">
+                <input type="text" placeholder="下单前,请填写座位号" name="seat" id="seat" value="">
             </div>
 
             <div class="nniu">
@@ -181,16 +208,101 @@
             </div>
         </div>
     </div>
-
+<?php if($order_status == 20): ?><a id="qu" href="<?php echo U('Home/Index/index');?>">
+    <div class="footer">
+        <div class="qtj">
+            <span >去别人家看看</span>
+        </div>
+    </div>   
+</a>
+<?php elseif($is_use == 1): ?>
+<a href="<?php echo U('Home/Order/order_info');?>">
+    <div class="footer">
+        <div class="qtj">
+            <span >已完成</span>
+        </div>
+    </div>  
+</a>
+<?php else: ?>
     <div class="footer">
         <div class="foot">
             <span>未入座，稍后下单</span>
         </div>
 
-        <div class="food">
+        <div class="food" id="xd">
             <span>已入座，立刻下单</span>
         </div>
-    </div>
-
+    </div><?php endif; ?>
 </body>
+<script>
+    $("#qx").click(function(){
+        var order_id;
+        var order_id = $("#order_id").val();
+        var conf = confirm("您确定要取消吗?取消后购买金额将转入您的余额");
+        if(conf == true){
+            $.ajax({
+                    type:'POST',
+                    dataType: 'json',
+                    url:'<?php echo U("Home/Order/cancel_order");?>',
+                    data:{order_id:order_id},
+                    success: function (result) {
+                        // console.log(result);return false;
+                        if(result.code == 200){
+                            // alert('取消成功');
+                            window.location.reload();
+                        }else{
+                            alert(result.msg);
+                        }
+                    }
+                })  
+            return true;
+        }else{
+            // alert("您放弃了");
+            return false;
+        }
+
+        
+    });
+
+    $("#xd").click(function(){
+        var ordr_id,seat,store_id;
+
+        order_id = $("#order_id").val();
+        seat     = $('#seat').val();
+        store_id = $('#store_id').val();
+    
+        if(!seat){
+            alert('请填写座位号');
+            return false;
+        }else{
+            $.ajax({
+                type:'post',
+                dataType: 'json',
+                url:'<?php echo U("Home/Order/sub_mit");?>',
+                data:{ store_id:store_id,order_id:order_id,seat:seat },
+                success: function (result) {
+                    if(result.code == 200){
+                        // $('.hao').removeClass('cj').addClass('jc1');
+                        // $('.shuzi span').html(result.data);
+                        // $('#xd').remove();
+                        // $('.foot').removeClass('foot').addClass('qtj').children().eq(0).html('已完成');
+                        // $('#use').html('已使用');
+                        // $('#wenben').remove();
+                        window.location.reload();
+ 
+                    }else{
+                        alert(result.msg);
+
+                    }
+                }
+            })
+
+        }
+    });
+
+    $('.foot').click(function(){
+        alert('点击后再看订单点击右下角我的-全部订单');
+        $(location).attr('href', '<?php echo U("Home/Person/index");?>');
+    })
+</script>
 </html>

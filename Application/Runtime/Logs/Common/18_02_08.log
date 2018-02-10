@@ -1,0 +1,288 @@
+[ 2018-02-08T10:13:39+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T10:30:10+08:00 ] ::1 /-/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T10:30:10+08:00 ] ::1 /-/Public/xin/admin/login/Wopop_files/jquery.ui.theme.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T10:30:10+08:00 ] ::1 /-/Public/xin/admin/login/Wopop_files/jquery.ui.base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T10:30:10+08:00 ] ::1 /-/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T10:30:10+08:00 ] ::1 /-/Public/xin/admin/login/images/txt_input_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T10:30:17+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-02-08T10:30:37+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-02-08T10:30:42+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-02-08T11:05:05+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T11:07:22+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T11:10:37+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T11:33:39+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:27:48+08:00 ] ::1 /-/Public/muban/assets/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:27:48+08:00 ] ::1 /-/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:27:48+08:00 ] ::1 /-/Public/xin/admin/login/Wopop_files/jquery.ui.theme.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:27:48+08:00 ] ::1 /-/Public/xin/admin/login/Wopop_files/jquery.ui.base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:27:48+08:00 ] ::1 /-/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:27:48+08:00 ] ::1 /-/Public/xin/admin/login/images/txt_input_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:28:20+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-02-08T14:29:23+08:00 ] ::1 /-/Publichome/img/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+ERR: 无法加载模块:Publichome
+
+[ 2018-02-08T14:59:45+08:00 ] 192.168.0.105 /-/Public/muban/assets/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:59:45+08:00 ] 192.168.0.105 /-/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:59:45+08:00 ] 192.168.0.105 /-/Public/xin/admin/login/Wopop_files/jquery.ui.base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:59:45+08:00 ] 192.168.0.105 /-/Public/xin/admin/login/Wopop_files/jquery.ui.theme.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:59:45+08:00 ] 192.168.0.105 /-/Public/xin/admin/login/images/txt_input_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:59:52+08:00 ] 192.168.0.105 /-/Public/muban/assets/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:59:52+08:00 ] 192.168.0.105 /-/Public/xin/admin/login/Wopop_files/jquery.ui.base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:59:52+08:00 ] 192.168.0.105 /-/Public/xin/admin/login/images/txt_input_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:59:52+08:00 ] 192.168.0.105 /-/Public/xin/admin/login/Wopop_files/jquery.ui.theme.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:59:52+08:00 ] 192.168.0.105 /-/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:59:54+08:00 ] 192.168.0.105 /-/Public/xin/admin/login/Wopop_files/jquery.ui.base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:59:54+08:00 ] 192.168.0.105 /-/Public/xin/admin/login/Wopop_files/jquery.ui.theme.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:59:54+08:00 ] 192.168.0.105 /-/Public/muban/assets/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:59:54+08:00 ] 192.168.0.105 /-/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T14:59:54+08:00 ] 192.168.0.105 /-/Public/xin/admin/login/images/txt_input_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T15:29:56+08:00 ] ::1 /-/Public/muban/assets/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T15:29:56+08:00 ] ::1 /-/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T15:29:56+08:00 ] ::1 /-/Public/xin/admin/login/Wopop_files/jquery.ui.base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T15:29:56+08:00 ] ::1 /-/Public/xin/admin/login/Wopop_files/jquery.ui.theme.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T15:29:56+08:00 ] ::1 /-/Public/muban/assets/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T15:29:56+08:00 ] ::1 /-/Public/xin/admin/login/images/txt_input_bg.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T15:37:22+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T16:39:11+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T16:41:03+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T16:55:10+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T17:09:25+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-08T18:06:12+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+ERR: 无法加载模块:Public
+

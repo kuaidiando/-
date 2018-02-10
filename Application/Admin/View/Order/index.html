@@ -40,7 +40,7 @@
                             <td>{$one_order_info.id}</td>
                             <td>{$one_order_info.shop_name}</td>
                             <td>{$one_order_info.order_code}</td>
-                            <td>{$one_order_info.user_id}</td>
+                            <td>{$one_order_info.buyer_name}</td>
                             <td>
                             <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
                                    onclick="admin_add('订单菜品','{:U('Admin/Order/goods_info', array('id' => $one_order_info['id']))}'
@@ -55,8 +55,8 @@
                             <else />
                             <td>未知</td>
                             </if>
-                            <td>{$one_order_info.payable}</td>
                             <td>{$one_order_info.total_price}</td>
+                            <td>{$one_order_info.sf}</td>
                             <td>
                                 <div>预点时间:{$one_order_info.add_time}</div>
                                 <if condition="$one_order_info.use_time eq '0000-00-00 00:00:00'">
@@ -101,7 +101,7 @@
                             <elseif condition="$one_order_info.order_status eq 20"/>
                             <td>
                                 <span class="label label-success radius">
-                                         <a href="#" style="text-decoration: none;color:#B300FF;">已取消
+                                         <a href="#" style="text-decoration: none;color:#B300FF;">已退款
                                         </a>
                                 </span>                          
                                                             

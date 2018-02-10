@@ -1,10 +1,10 @@
-<html lang="en" data-dpr="1" style="font-size: 42.4px;">
+<?php if (!defined('THINK_PATH')) exit();?><html lang="en" data-dpr="1" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/register.css">
-    <script type="text/javascript" src="__PUBLIC__/home/js/jquery.js"></script>
+    <link rel="stylesheet" href="/-/Public/home/css/base.css">
+    <link rel="stylesheet" href="/-/Public/home/css/register.css">
+    <script type="text/javascript" src="/-/Public/home/js/jquery.js"></script>
 
 
     <title>注册</title>
@@ -21,7 +21,7 @@
 
     <div class="phone">
         <label class="tu">
-            <img src="__PUBLIC__/home/img/geren2.png" alt="">
+            <img src="/-/Public/home/img/geren2.png" alt="">
         </label>
 
         <div class="text">
@@ -32,7 +32,7 @@
 
     <div class="mima">
         <label class="tu2">
-            <img src="__PUBLIC__/home/img/mima.png" alt="">
+            <img src="/-/Public/home/img/mima.png" alt="">
         </label>
 
         <div class="text2">
@@ -100,7 +100,7 @@
                    $.ajax({
                     type:'post',
                     dataType: 'json',
-                    url:'{:U("Home/User/send_code")}',
+                    url:'<?php echo U("Home/User/send_code");?>',
                     data:{tel:tel,type:'register'},
                     success: function (result) {
                         if(result.code == 205){
@@ -145,11 +145,11 @@
             $.ajax({
                 type:'post',
                 dataType: 'json',
-                url:'{:U("Home/Register/register")}',
+                url:'<?php echo U("Home/Register/register");?>',
                 data:{tel:tel,password:password,yzm:yzm},
                 success: function (result) {
                     if(result.code == 200){
-                        $(location).attr('href', '{:U("Home/Login/index")}');  
+                        $(location).attr('href', '<?php echo U("Home/Login/index");?>');  
                     }else{
                         alert(result.msg);
                     }

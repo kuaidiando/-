@@ -172,20 +172,12 @@
                             <div class="center">
                                 <div class="xing">
                                 <!-- 实心星数量 -->
-<<<<<<< HEAD
-                                <?php $__FOR_START_1230455443__=0;$__FOR_END_1230455443__=$vores["shixinxing"];for($i=$__FOR_START_1230455443__;$i < $__FOR_END_1230455443__;$i+=1){ ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
-=======
-                                <?php $__FOR_START_22415__=0;$__FOR_END_22415__=$vores["shixinxing"];for($i=$__FOR_START_22415__;$i < $__FOR_END_22415__;$i+=1){ ?><img src="/-/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
->>>>>>> 7682abf9e9f4ba330d78f84a4a7daa0ff9ac09e2
+                                <?php $__FOR_START_25860__=0;$__FOR_END_25860__=$vores["shixinxing"];for($i=$__FOR_START_25860__;$i < $__FOR_END_25860__;$i+=1){ ?><img src="/-/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
                                 <!-- 判断半个 星星 -->
                         <?php if($vores["bangexing"] == 1): ?><img src="/-/Public/home/img/ban.png" style="width:13%;" alt="">
                         <?php else: endif; ?>
                                 <!-- 空心星数量 -->
-<<<<<<< HEAD
-                                <?php $__FOR_START_78113019__=0;$__FOR_END_78113019__=$vores["kongxinxing"];for($i=$__FOR_START_78113019__;$i < $__FOR_END_78113019__;$i+=1){ ?><img src="/kuaidian/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
-=======
-                                <?php $__FOR_START_2588__=0;$__FOR_END_2588__=$vores["kongxinxing"];for($i=$__FOR_START_2588__;$i < $__FOR_END_2588__;$i+=1){ ?><img src="/-/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
->>>>>>> 7682abf9e9f4ba330d78f84a4a7daa0ff9ac09e2
+                                <?php $__FOR_START_27373__=0;$__FOR_END_27373__=$vores["kongxinxing"];for($i=$__FOR_START_27373__;$i < $__FOR_END_27373__;$i+=1){ ?><img src="/-/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
                                     
                                 </div>
 
@@ -284,6 +276,7 @@
 
     <!--底部-->
     <div class="foott">
+    <a href="<?php echo U('Home/Index/index');?>">
         <div class="foot">
             <div class="ttu">
                 <img src="/-/Public/home/img/shangjia.png" alt="">
@@ -293,8 +286,8 @@
                 <span>首页</span>
             </div>
         </div>
-
-        <a href=" ">
+    </a>
+        <a href="<?php echo U('Home/Order/order_info');?> ">
             <div class="foot">
                 <div class="ttu">
                     <img src="/-/Public/home/img/diangdan.png" alt="">
@@ -305,7 +298,7 @@
                 </div>
             </div>
         </a>
-
+    <a href="<?php echo U('Home/Person/index');?>">
         <div class="foot">
             <div class="ttu">
                 <img src="/-/Public/home/img/geren.png" alt="">
@@ -315,7 +308,7 @@
                 <span>我的</span>
             </div>
         </div>
-
+    </a>
     </div>
     <div class="kong"></div>
     </body>

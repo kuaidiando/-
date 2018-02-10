@@ -280,7 +280,7 @@ $(document).ready(function(){
                             <td><?php echo ($one_order_info["id"]); ?></td>
                             <td><?php echo ($one_order_info["shop_name"]); ?></td>
                             <td><?php echo ($one_order_info["order_code"]); ?></td>
-                            <td><?php echo ($one_order_info["user_id"]); ?></td>
+                            <td><?php echo ($one_order_info["buyer_name"]); ?></td>
                             <td>
                             <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
                                    onclick="admin_add('订单菜品','<?php echo U('Admin/Order/goods_info', array('id' => $one_order_info['id']));?>'
@@ -293,8 +293,8 @@ $(document).ready(function(){
                             <td>未订座</td>
                             <?php else: ?>
                             <td>未知</td><?php endif; ?>
-                            <td><?php echo ($one_order_info["payable"]); ?></td>
                             <td><?php echo ($one_order_info["total_price"]); ?></td>
+                            <td><?php echo ($one_order_info["sf"]); ?></td>
                             <td>
                                 <div>预点时间:<?php echo ($one_order_info["add_time"]); ?></div>
                                 <?php if($one_order_info["use_time"] == '0000-00-00 00:00:00'): ?><div></div>
@@ -336,7 +336,7 @@ $(document).ready(function(){
                             <?php elseif($one_order_info["order_status"] == 20): ?>
                             <td>
                                 <span class="label label-success radius">
-                                         <a href="#" style="text-decoration: none;color:#B300FF;">已取消
+                                         <a href="#" style="text-decoration: none;color:#B300FF;">已退款
                                         </a>
                                 </span>                          
                                                             

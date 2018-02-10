@@ -17,6 +17,12 @@ body{
     height: 200px;
     background-color: white;
 }
+.jc{
+    display:none;
+}
+.jc1{
+    display:block;
+}
 .dd{
     width: 100%;
     height: 100px;
@@ -65,7 +71,6 @@ body{
     font-size: 30px;
     color: #888888;
 }
-
 
 
 
@@ -499,6 +504,18 @@ body{
     height: 120px;
     position: absolute;
     bottom: 0;
+}
+.qtj{
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    background-color: #ffae00;
+    float: left;
+}
+.qtj span{
+    font-size: 35px;
+    color: white;    
 }
 .foot{
     width: 50%;

@@ -46,22 +46,15 @@
                         <span>{$user_info.tel}</span>
                     </div>
                 </div>
-
                 <div class="he3">
                     <div class="name">
-                        <span>订单状态</span>
+                        <span>人数</span>
                     </div>
 
                     <div class="name2">
-                    <if condition="$one_info.is_use eq 1">
-                        <span>已使用</span>
-                    <elseif condition="$one_info.is_use eq 0" />
-                        <span>未使用</span>
-                    <else />
-                    </if>
+                        <span>{$one_info.order_pnum}人</span>
                     </div>
                 </div>
-
                 <div class="he3">
                     <div class="name">
                         <span>支付状态</span>
@@ -77,11 +70,27 @@
                     <elseif condition="$one_info.order_status eq 15" />
                         <span>已支付</span>
                     <elseif condition="$one_info.order_status eq 20" />
-                        <span>已取消</span>
+                        <span>已退款</span>
                     <else />
                     </if>
                     </div>
                 </div>
+                <div class="he3">
+                    <div class="name">
+                        <span>订单状态</span>
+                    </div>
+
+                    <div class="name2">
+                    <if condition="$one_info.is_use eq 1">
+                        <span>已使用</span>
+                    <elseif condition="$one_info.is_use eq 0" />
+                        <span>未使用</span>
+                    <else />
+                    </if>
+                    </div>
+                </div>
+
+
 
                 <div class="he3">
                     <div class="name">
@@ -111,15 +120,7 @@
                     </div>
                 </div>
 
-                <div class="he3">
-                    <div class="name">
-                        <span>人数</span>
-                    </div>
 
-                    <div class="name2">
-                        <span>{$one_info.order_pnum}人</span>
-                    </div>
-                </div>
             </div>
 
             <div class="yu">
@@ -144,6 +145,16 @@
                         <span>未下单</span>
                     </if>
                     </div>
+                </div>
+            </div>
+
+            <div class="bei">
+                <div class="zhu">
+                    <span>备注：</span>
+                </div>
+
+                <div class="beizhu">
+                    <span>{$one_info.order_remark}</span>
                 </div>
             </div>
 
@@ -213,7 +224,7 @@
                     </div>
 
                     <div class="ll">
-                        <span>-￥6.66</span>
+                        <span>-￥0.00</span>
                     </div>
                 </div>
 
@@ -233,7 +244,7 @@
                         </div>
 
                         <div class="qian">
-                            <span>￥{$one_info.total_price}</span>
+                            <span>￥{$one_info.sf}</span>
                         </div>
                     </div>
                 </div>

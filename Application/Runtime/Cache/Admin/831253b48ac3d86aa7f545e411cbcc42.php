@@ -46,20 +46,15 @@
                         <span><?php echo ($user_info["tel"]); ?></span>
                     </div>
                 </div>
-
                 <div class="he3">
                     <div class="name">
-                        <span>订单状态</span>
+                        <span>人数</span>
                     </div>
 
                     <div class="name2">
-                    <?php if($one_info["is_use"] == 1): ?><span>已使用</span>
-                    <?php elseif($one_info["is_use"] == 0): ?>
-                        <span>未使用</span>
-                    <?php else: endif; ?>
+                        <span><?php echo ($one_info["order_pnum"]); ?>人</span>
                     </div>
                 </div>
-
                 <div class="he3">
                     <div class="name">
                         <span>支付状态</span>
@@ -74,10 +69,24 @@
                     <?php elseif($one_info["order_status"] == 15): ?>
                         <span>已支付</span>
                     <?php elseif($one_info["order_status"] == 20): ?>
-                        <span>已取消</span>
+                        <span>已退款</span>
                     <?php else: endif; ?>
                     </div>
                 </div>
+                <div class="he3">
+                    <div class="name">
+                        <span>订单状态</span>
+                    </div>
+
+                    <div class="name2">
+                    <?php if($one_info["is_use"] == 1): ?><span>已使用</span>
+                    <?php elseif($one_info["is_use"] == 0): ?>
+                        <span>未使用</span>
+                    <?php else: endif; ?>
+                    </div>
+                </div>
+
+
 
                 <div class="he3">
                     <div class="name">
@@ -103,15 +112,7 @@
                     </div>
                 </div>
 
-                <div class="he3">
-                    <div class="name">
-                        <span>人数</span>
-                    </div>
 
-                    <div class="name2">
-                        <span><?php echo ($one_info["order_pnum"]); ?>人</span>
-                    </div>
-                </div>
             </div>
 
             <div class="yu">
@@ -134,6 +135,16 @@
                     <?php else: ?>
                         <span>未下单</span><?php endif; ?>
                     </div>
+                </div>
+            </div>
+
+            <div class="bei">
+                <div class="zhu">
+                    <span>备注：</span>
+                </div>
+
+                <div class="beizhu">
+                    <span><?php echo ($one_info["order_remark"]); ?></span>
                 </div>
             </div>
 
@@ -201,7 +212,7 @@
                     </div>
 
                     <div class="ll">
-                        <span>-￥6.66</span>
+                        <span>-￥0.00</span>
                     </div>
                 </div>
 
@@ -221,7 +232,7 @@
                         </div>
 
                         <div class="qian">
-                            <span>￥<?php echo ($one_info["total_price"]); ?></span>
+                            <span>￥<?php echo ($one_info["sf"]); ?></span>
                         </div>
                     </div>
                 </div>

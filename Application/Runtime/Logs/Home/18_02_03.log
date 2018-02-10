@@ -3293,3 +3293,309 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001504s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001720s ]
 >>>>>>> 7682abf9e9f4ba330d78f84a4a7daa0ff9ac09e2
 
+[ 2018-02-03T17:50:41+08:00 ] ::1 /-/index.php/Home/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+NOTIC: [8] Undefined index: userid E:\wamp64\www\-\Application\Common\Helper\user_helper.php 第 47 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0093s ]
+SQL: SELECT `photo` FROM `user` WHERE `id` = 1 AND `del_status` = 0 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0077s ]
+SQL: SELECT shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij FROM `shop` INNER JOIN shop_type on shop.type_shop = shop_type.id  WHERE shop.zhuangt = 1  [ RunTime:0.0023s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0053s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `zhuangt` = 1  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 155 行.
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 155 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 3 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 155 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 24 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 155 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 25 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 155 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 27 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001294s ]
+
+[ 2018-02-03T17:50:42+08:00 ] ::1 /-/index.php/Home/Index/banner.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0076s ]
+SQL: SELECT `pic` FROM `event` WHERE `status` = 1  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001461s ]
+
+[ 2018-02-03T17:50:46+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0057s ]
+SQL: SELECT food.id,food.zhuangt,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 ORDER BY food.id asc  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: food_num E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 178 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 182 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 182 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 182 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 182 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 182 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 182 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 182 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 212 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 212 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 212 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 212 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 212 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 212 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 212 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000380s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000552s ]
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 98 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 123 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 124 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 98 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 123 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 98 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 123 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 124 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 98 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 123 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 124 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 98 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 123 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 124 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 98 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 123 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 124 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 98 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 123 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 463 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 495 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001235s ]
+
+[ 2018-02-03T17:50:47+08:00 ] ::1 /-/index.php/Home/Index/ajaxaddlinshijj.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+NOTIC: [8] Undefined index: food_num E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 257 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001137s ]
+
+[ 2018-02-03T17:50:49+08:00 ] ::1 /-/index.php/Home/Cart/save_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+NOTIC: [8] Undefined index: userid E:\wamp64\www\-\Application\Common\Helper\user_helper.php 第 47 行.
+
+[ 2018-02-03T17:50:49+08:00 ] ::1 /-/index.php/Home/Login/index/is_cart/1/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001764s ]
+
+[ 2018-02-03T17:50:57+08:00 ] ::1 /-/index.php/Home/Login/save_login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001100s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `tel` = '13331385580' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-02-03T17:50:57+08:00 ] ::1 /-/index.php/Home/Cart/save_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0050s ]
+SQL: DELETE FROM `cart` WHERE `user_id` = 16 AND `store_id` = 1 [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cart` WHERE `user_id` = 16 AND `goods_id` = 59 AND `status` = 1 AND `store_id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: INSERT INTO `cart` (`user_id`,`goods_id`,`status`,`store_id`,`goods_num`,`goods_type`,`add_time`) VALUES ('16','59','1','1','1','14','2018-02-03 17:50:57') [ RunTime:0.0010s ]
+
+[ 2018-02-03T17:50:57+08:00 ] ::1 /-/index.php/Home/cart/diandan_info/store_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001433s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0082s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `cart` WHERE `user_id` = 16 AND `store_id` = 1 AND `status` = 1  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0040s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 59 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 59 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 59 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2018-02-03T17:51:00+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 1 ORDER BY paix desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0043s ]
+SQL: SELECT food.id,food.zhuangt,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 ORDER BY food.id asc  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000349s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000664s ]
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 98 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 123 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 98 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 123 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 98 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 123 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 98 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 123 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 98 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 123 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 98 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 123 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 98 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 123 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 463 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 495 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001379s ]
+
+[ 2018-02-03T17:51:01+08:00 ] ::1 /-/index.php/Home/Index/detail/predetermine.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001619s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 0  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 0 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0033s ]
+NOTIC: [8] Undefined index: xingsl E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 101 行.
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 112 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 0 ORDER BY paix desc  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0060s ]
+SQL: SELECT food.id,food.zhuangt,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = 1 ORDER BY food.id asc  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000361s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000630s ]
+NOTIC: [8] Undefined index: id E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 14 行.
+NOTIC: [8] Undefined index: logo E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 21 行.
+NOTIC: [8] Undefined index: mingch E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 25 行.
+NOTIC: [8] Undefined index: id E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 27 行.
+NOTIC: [8] Undefined index: zuigaolij E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined index: jutidizhi E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 365 行.
+NOTIC: [8] Undefined index: tel E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 372 行.
+NOTIC: [8] Undefined index: zuigaolij E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 398 行.
+NOTIC: [8] Undefined index: logo E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 418 行.
+NOTIC: [8] Undefined index: time_kai E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 458 行.
+NOTIC: [8] Undefined index: time_zhong E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 458 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 463 行.
+NOTIC: [8] Undefined index: line_type E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 463 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 495 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001914s ]
+
