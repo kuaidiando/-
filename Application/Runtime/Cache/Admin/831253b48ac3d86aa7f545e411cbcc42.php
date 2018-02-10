@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <!-- <link rel="stylesheet" href="css/index.css"> -->
-    <link rel="stylesheet" type="text/css" href="/-/Public/admin/css/xq.css"/>
+    <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/css/xq.css"/>
 
 </head>
 <body>

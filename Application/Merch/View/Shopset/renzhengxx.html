@@ -21,7 +21,15 @@
                 </div>
 
                 <div class="qu">
-                    <span>去认证</span>
+                    <!-- 判断认证状态 -->
+                    <if condition="$res[0][zhuangt] eq 0 "> 
+                        <span>去认证</span>
+                    <elseif condition="$res[0][zhuangt] eq 2"/>
+                        <span>待审核</span>
+                    <else /> 
+                        <span>去认证</span>
+                    </if>
+                    
                 </div>
 
                 <div class="jian">

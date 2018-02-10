@@ -1,0 +1,70 @@
+.header{
+    width: 100%;
+    background-color: #fff;
+}
+.head{
+    width: 90%;
+    margin-left: 5%;
+    min-height:120px;
+}
+.top{
+    width: 100%;
+    height: 120px;
+    border-bottom: 1.2px solid #DEDEDE;
+}
+.topz{
+    width: 50%;
+    height: 120px;
+    float: left;
+}
+.dan{
+    width: 100%;
+    height: 60px;
+    line-height: 85px;
+}
+.dan span{
+    font-size: 33.6px;
+}
+.jige{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
+.jige span{
+    font-size: 30px;
+    color: #888;
+}
+.topy{
+    width: 20%;
+    height: 120px;
+    float: left;
+    margin-left: 5%;
+}
+.kuang{
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    border: 1.2px solid #06C1AE;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 7.2px;
+}
+.kuang span{
+    color: #06C1AE;
+    font-size: 33.6px;
+}
+
+.footer{
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    border-top: 1.2px solid #DEDEDE;
+    line-height: 120px;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+}
+.footer span{
+    font-size: 33.6px;
+    color: #06C1AE;
+}

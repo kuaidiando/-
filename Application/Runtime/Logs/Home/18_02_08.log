@@ -1,0 +1,126 @@
+[ 2018-02-08T09:44:50+08:00 ] ::1 /kuaidian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kuaidian\Application\Common\Helper\user_helper.php 第 47 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0304s ]
+SQL: SELECT `photo` FROM `user` WHERE `id` = 1 AND `del_status` = 0 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0320s ]
+SQL: SELECT shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij FROM `shop` INNER JOIN shop_type on shop.type_shop = shop_type.id  WHERE shop.zhuangt = 1  [ RunTime:0.0215s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0039s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `zhuangt` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000622s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000672s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 155 行.
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 155 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 3 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 155 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 24 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 155 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 25 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 155 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 27 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001160s ]
+
+[ 2018-02-08T09:44:50+08:00 ] ::1 /kuaidian/index.php/Home/Index/banner.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0405s ]
+SQL: SELECT `pic` FROM `event` WHERE `status` = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2018-02-08T14:48:12+08:00 ] ::1 /kuaidian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002581s ]
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kuaidian\Application\Common\Helper\user_helper.php 第 47 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0417s ]
+SQL: SELECT `photo` FROM `user` WHERE `id` = 1 AND `del_status` = 0 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0252s ]
+SQL: SELECT shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij FROM `shop` INNER JOIN shop_type on shop.type_shop = shop_type.id  WHERE shop.zhuangt = 1  [ RunTime:0.0109s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0045s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `zhuangt` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000437s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000484s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 155 行.
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 1 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 155 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 3 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 155 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 24 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 155 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 25 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 155 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 27 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001857s ]
+
+[ 2018-02-08T14:48:12+08:00 ] ::1 /kuaidian/index.php/Home/Index/banner.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0596s ]
+SQL: SELECT `pic` FROM `event` WHERE `status` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000927s ]
+

@@ -21,7 +21,13 @@
                 </div>
 
                 <div class="qu">
-                    <span>去认证</span>
+                    <!-- 判断认证状态 -->
+                    <?php if($res[0][zhuangt] == 0 ): ?><span>去认证</span>
+                    <?php elseif($res[0][zhuangt] == 2): ?>
+                        <span>待审核</span>
+                    <?php else: ?> 
+                        <span>去认证</span><?php endif; ?>
+                    
                 </div>
 
                 <div class="jian">

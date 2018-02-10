@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="__PUBLIC__/merch/css/index.css">
     <link rel="stylesheet" href="__PUBLIC__/merch/css/text.css">
     <link rel="stylesheet" href="__PUBLIC__/merch/css/base.css">
+    <script type="text/javascript" src="__PUBLIC__/jquery/jquery.js"></script>
 </head>
 <body style="font-size: 12px">
     <div class="header">
@@ -37,7 +38,7 @@
                     </div>
 
                     <div class="er">
-                        <span>门店设置</span>
+                        <span class="tiaozhuanmend">门店设置</span>
                     </div>
                 </div>
             </a>
@@ -51,9 +52,16 @@
         </div>
 
         <div class="bot">
-            <div class="rz">
-                <span>已认证</span>
-            </div>
+            
+                <if condition="$res[0][zhuangt] eq 1">
+                    <div class="rz">
+                        <span>已认证</span>
+                    </div>
+                <else/>
+                     <div class="rza">
+                        <span>未认证</span>
+                    </div>
+                </if>
         </div>
     </div>
 
@@ -61,7 +69,7 @@
         <div class="danz">
             <div class="ddan">
                 <div class="top2">
-                    <span>￥8888.00</span>
+                    <span>￥{$order.data.order_total_price}</span>
                 </div>
 
                 <div class="xia">
@@ -73,7 +81,7 @@
         <div class="dany">
             <div class="shu">
                 <div class="zi">
-                    <span>888</span>
+                    <span>{$order.data.num}</span>
                 </div>
 
                 <div class="liang">
@@ -91,7 +99,7 @@
                 </div>
 
                 <div class="ziti">
-                    <span>认证</span>
+                    <span class="tiaozrenzheng">认证</span>
                 </div>
 
                 <div class="time">
@@ -138,7 +146,8 @@
             </div>
         </div>
 
-        <div class="ll2">
+        <div class="ll2" id="shopguanli">
+
             <div class="she">
                 <div class="sshe">
                     <div class="shetu">
@@ -146,7 +155,11 @@
                     </div>
 
                     <div class="wenzi">
-                        <span>商品管理</span>
+                        <span >商品管理</span>
+                        <!-- 隐藏状态 基本信息 -->
+                        <input type="text" name="jinbenxx" style="display: none;" class="jinbenxx" value="{$res.0.jinbenxxtype}">
+                        <!-- 隐藏状态 认证信息 -->
+                        <input type="text" name="renzhengxx" style="display: none;" class="renzhengxx" value="{$res.0.zhuangt}">
                     </div>
                 </div>
             </div>
@@ -264,4 +277,32 @@
         </div>
     </div>
 </body>
+    <script type="text/javascript">
+        $("#shopguanli").click(function(){
+            var jinbenxx = $(".jinbenxx").val();//基本信息
+            var renzhengxx = $(".renzhengxx").val();//认证信息
+            //判断基本信息状态
+            if (jinbenxx == 0) {
+                var con = confirm("基本信息未完善");
+                // 点击确定页面跳转
+                if (con) {
+                    $(".tiaozhuanmend").click();//跳转基本信息
+                }else{
+                    // alert("页面不跳转");
+                }
+            }else{
+                if (renzhengxx== 1) {
+                    window.location.href = "{:U('Merch/Foodhoutai/index',array('shopid'=>$res[0][id]))}";
+                }else{
+                     var con = confirm("认证信息未完善");
+                        // 点击确定页面跳转
+                        if (con) {
+                            $(".tiaozrenzheng").click();//跳转认证信息
+                        }else{
+                            // alert("页面不跳转");
+                        }
+                }
+            }
+        });
+    </script>
 </html>
