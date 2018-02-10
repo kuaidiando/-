@@ -23,11 +23,14 @@ class PersonController extends Controller {
 
     }
     public function index(){
+        // dump($_SESSION);exit;
+        // $_SESSION = '';exit;
         $per = M('user');
         $uid = \user_helper::get_user_id();
         $user_info = $per->where(array('id'=>$uid))->find();
         $user_info['tel'] = substr_replace($user_info['tel'], '****', 3, 4);
         $this->assign('user_info',$user_info);
+        $this->assign('uid',$uid);
         $this->display("person");
     }
 
@@ -108,6 +111,10 @@ class PersonController extends Controller {
 
     }
 
-
+    //退出
+    Public function tc(){
+        session(null);
+         $this->redirect('Home/Login/index');
+    }
 
 }

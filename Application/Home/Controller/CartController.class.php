@@ -82,6 +82,9 @@ class CartController extends Controller {
 
     //显示diandanye
     public function diandan_info(){
+        if($_SESSION['order_id']){
+            $this->assign('order_id',$order_id);
+        }
         $store_id = I('store_id');
         // dump($store_id);exit;
         $user_id = \user_helper::get_user_id();

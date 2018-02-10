@@ -174,3 +174,23 @@ function get_json_data()
     return json_decode(file_get_contents("php://input"), true);
 }
  
+//生成就餐号
+function createNum($num){  
+    $i=intval(substr($num,8));  
+    $f=date('Ymd');  
+    if(substr($num,0,8)<$f){  
+        return $f.'0001';  
+        }  
+    else{  
+        $i+=1;  
+        if($i<10){  
+            return $f.'000'.$i;  
+        }else if($i<100){  
+            return $f.'00'.$i;  
+        }else if($i<1000){  
+            return $f.'0'.$i;  
+        }else{  
+            return $f.$i;  
+        }  
+    }  
+}  

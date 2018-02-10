@@ -7,20 +7,24 @@
     <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
     <link rel="stylesheet" href="__PUBLIC__/home/css/text.css">
     <link rel="stylesheet" href="__PUBLIC__/home/css/dingdanxiangqing.css">
+    <!-- <script type="text/javascript" src="__PUBLIC__/home/js/jquery.js"></script> -->
+    <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.12.4.js"></script>
+
+
 </head>
 <body style="font-size: 12px">
     <div class="header">
         <span>订单详情</span>
     </div>
-
-    <div class="hao">
+    <if condition="$is_use eq 0">
+    <div class="hao jc">
         <div class="dd">
             <div class="dd1">
                 <span>D</span>
             </div>
 
             <div class="shuzi">
-                <span>023</span>
+                <span></span>
             </div>
         </div>
 
@@ -32,7 +36,27 @@
             <span>下单后自取小票&nbsp;或&nbsp;向服务员可对订单</span>
         </div>
     </div>
+    <else />
+    <div class="hao">
+        <div class="dd">
+            <div class="dd1">
+                <span>D</span>
+            </div>
 
+            <div class="shuzi">
+                <span>{$jc_code}</span>
+            </div>
+        </div>
+
+        <div class="jiu">
+            <span>就餐号</span>
+        </div>
+
+        <div class="an">
+            <span>下单后自取小票&nbsp;或&nbsp;向服务员可对订单</span>
+        </div>
+    </div>
+    </if>
     <div class="ding0">
         <div class="dding">
             <div class="dan0">
@@ -40,7 +64,7 @@
             </div>
 
             <div class="hhao">
-                <span>{$info.order_code}</span>
+                <span>{$order_code}</span>
             </div>
         </div>
 
@@ -50,15 +74,15 @@
             </div>
 
             <div class="yi">
-            <if condition="$info.order_status eq 1">
+            <if condition="$order_status eq 1">
                 <span>未支付</span>
-            <elseif condition="$info.order_status eq 5" />
+            <elseif condition="$order_status eq 5" />
                 <span>已支付</span>
-            <elseif condition="$info.order_status eq 10" />
+            <elseif condition="$order_status eq 10" />
                 <span>待评价</span>
-            <elseif condition="$info.order_status eq 15" />
+            <elseif condition="$order_status eq 15" />
                 <span>已完成</span>
-            <elseif condition="$info.order_status eq 20" />
+            <elseif condition="$order_status eq 20" />
                 <span>已取消</span>
             <else />
                 <span>未知</span>
@@ -73,19 +97,27 @@
             </div>
 
             <div class="aa3">
-            <if condition="$info.is_use eq 0">
-                <span>待使用</span>
+            <if condition="$is_use eq 0 ">
+                <if condition="$order_status eq 20">
+                <span>已取消</span>
+                <else />
+                <span id="use">待使用</span>
+                </if>
             </div>   
             <div class="tet">
-                <div class="wenben">
-                    <span>取消订单</span>
-                </div>
+                <if condition="$order_status eq 5">
+                    <div class="wenben" id="wenben">
+                        <span id="qx">取消订单</span>
+                        <input type="hidden" id="order_id" name="order_id" value="{$order_id}">
+                    </div>
+                <else />
+                </if>  
             </div>
-            <elseif condition="$info.is_use eq 1" />
+            <elseif condition="$is_use eq 1" />
                 <span>已使用</span>
             </div>
             <div class="tet">
-                <div class="wenben">
+                <div >
                     <span></span>
                 </div>
             </div>    
@@ -154,21 +186,22 @@
             <div class="xxiang">
                 <div class="sui">
                     <div class="ssui">
-                        <span>分享随机立减</span>
+                        <span>随机立减</span>
+                        <input type="hidden" id="store_id" name="store_id" value="{$store_id}">
                     </div>
 
                     <div class="jian">
-                        <span>-&nbsp;￥8.88</span>
+                        <span>-&nbsp;￥{$money_info.lj}</span>
                     </div>
                 </div>
 
                 <div class="zongji">
                     <div class="zj">
-                        <span>总计:&nbsp;&nbsp;￥{$info.total_price}</span>
+                        <span>总计:&nbsp;&nbsp;￥{$money_info.total_price}</span>
                     </div>
 
                     <div class="sf">
-                        <span>实付:&nbsp;&nbsp;￥{$info.total_price}</span>
+                        <span>实付:&nbsp;&nbsp;￥{$money_info.sf}</span>
                     </div>
                 </div>
             </div>
@@ -179,7 +212,7 @@
     <div class="zhuohao">
         <div class="hhao6">
             <div class="ben">
-                <input type="text" placeholder="下单前,请填写座位号" name="seat" value="">
+                <input type="text" placeholder="下单前,请填写座位号" name="seat" id="seat" value="">
             </div>
 
             <div class="nniu">
@@ -187,16 +220,103 @@
             </div>
         </div>
     </div>
-
+<if condition="$order_status eq 20">
+<a id="qu" href="{:U('Home/Index/index')}">
+    <div class="footer">
+        <div class="qtj">
+            <span >去别人家看看</span>
+        </div>
+    </div>   
+</a>
+<elseif condition="$is_use eq 1"/>
+<a href="{:U('Home/Order/order_info')}">
+    <div class="footer">
+        <div class="qtj">
+            <span >已完成</span>
+        </div>
+    </div>  
+</a>
+<else />
     <div class="footer">
         <div class="foot">
             <span>未入座，稍后下单</span>
         </div>
 
-        <div class="food">
+        <div class="food" id="xd">
             <span>已入座，立刻下单</span>
         </div>
     </div>
-
+</if>
 </body>
+<script>
+    $("#qx").click(function(){
+        var order_id;
+        var order_id = $("#order_id").val();
+        var conf = confirm("您确定要取消吗?取消后购买金额将转入您的余额");
+        if(conf == true){
+            $.ajax({
+                    type:'POST',
+                    dataType: 'json',
+                    url:'{:U("Home/Order/cancel_order")}',
+                    data:{order_id:order_id},
+                    success: function (result) {
+                        // console.log(result);return false;
+                        if(result.code == 200){
+                            // alert('取消成功');
+                            window.location.reload();
+                        }else{
+                            alert(result.msg);
+                        }
+                    }
+                })  
+            return true;
+        }else{
+            // alert("您放弃了");
+            return false;
+        }
+
+        
+    });
+
+    $("#xd").click(function(){
+        var ordr_id,seat,store_id;
+
+        order_id = $("#order_id").val();
+        seat     = $('#seat').val();
+        store_id = $('#store_id').val();
+    
+        if(!seat){
+            alert('请填写座位号');
+            return false;
+        }else{
+            $.ajax({
+                type:'post',
+                dataType: 'json',
+                url:'{:U("Home/Order/sub_mit")}',
+                data:{ store_id:store_id,order_id:order_id,seat:seat },
+                success: function (result) {
+                    if(result.code == 200){
+                        // $('.hao').removeClass('cj').addClass('jc1');
+                        // $('.shuzi span').html(result.data);
+                        // $('#xd').remove();
+                        // $('.foot').removeClass('foot').addClass('qtj').children().eq(0).html('已完成');
+                        // $('#use').html('已使用');
+                        // $('#wenben').remove();
+                        window.location.reload();
+ 
+                    }else{
+                        alert(result.msg);
+
+                    }
+                }
+            })
+
+        }
+    });
+
+    $('.foot').click(function(){
+        alert('点击后再看订单点击右下角我的-全部订单');
+        $(location).attr('href', '{:U("Home/Person/index")}');
+    })
+</script>
 </html>
