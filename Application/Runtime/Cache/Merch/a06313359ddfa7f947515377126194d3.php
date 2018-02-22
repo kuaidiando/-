@@ -1,19 +1,19 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>编辑分类</title>
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/text.css">
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/bianji.css">
-    <script type="text/javascript" src="__PUBLIC__/merch/js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/bianji.css">
+    <script type="text/javascript" src="/kuaidian/Public/merch/js/jquery-1.12.4.min.js"></script>
 </head>
 <body style="font-size: 12px">
-<form  action="{:U('Merch/Foodshophoutai/doaddfoodtype')}" id="tijiaoft" method="post" enctype="multipart/form-data">
+<form  action="<?php echo U('Merch/Foodshophoutai/doaddfoodtype');?>" id="tijiaoft" method="post" enctype="multipart/form-data">
     <div class="fen">
         <div class="lei">
-            <input type="text" name="dep_type"  style="display: none;" value="{$shopid}">
+            <input type="text" name="dep_type"  style="display: none;" value="<?php echo ($shopid); ?>">
             <span>分类名称</span>
         </div>
     </div>
