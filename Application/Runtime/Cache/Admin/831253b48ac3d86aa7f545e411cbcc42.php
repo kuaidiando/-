@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <!-- <link rel="stylesheet" href="css/index.css"> -->
-<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/css/xq.css"/>
-=======
-    <link rel="stylesheet" type="text/css" href="/-/Public/admin/css/xq.css"/>
->>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
 
 </head>
 <body>
@@ -126,11 +122,7 @@
                     </div>
 
                     <div class="time">
-<<<<<<< HEAD
-                        <span><?php echo ($one_info["add_time"]); ?></span>
-=======
                         <span><?php echo ($one_info["pay_time"]); ?></span>
->>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
                     </div>
                 </div>
 

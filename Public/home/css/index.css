@@ -92,14 +92,6 @@
 
 
 /*轮播图*/
-/*.ad_pic{*/
-/*width: 100%;*/
-/*height: 350px;*/
-/*}*/
-/*.ad_pic img{*/
-/*width: 100%;*/
-/*height: 350px;*/
-/*}*/
 .banner{
     width: 100%;
     height: 350px;
@@ -115,11 +107,17 @@
 .hezi{
     width: 96%;
     margin-left: 2%;
-    border-bottom: 1.2px solid #DEDEDE;
+    border-top: 1.2px solid #DEDEDE;
 }
 .hz{
+    width: 100%;
+    height: 180px;
+}
+.top{
+    width: 100%;
+    height: 156px;
+    float: left;
     margin-top: 24px;
-    min-height: 156px;
 }
 .tu {
     width: 156px;
@@ -387,29 +385,88 @@
     left:0;
     right:0;
 }
-.foot{
+#foot{
     width: 33.33%;
     height: 110px;
     float: left;
 }
-.ttu{
+#ttu{
     width: 100%;
     height: 70px;
     line-height: 70px;
     text-align: center;
 }
-.ttu img{
+#ttu img{
     width: 65px;
     height: 65px;
     margin-top: 5px;
 }
-.shou{
+#shou{
     width: 100%;
     height: 30px;
     line-height: 30px;
     text-align: center;
 }
-.shou span{
+#shou span{
+    font-size: 25px;
+    color: #ffae00;
+}
+
+
+
+#foot2{
+    width: 33.33%;
+    height: 110px;
+    float: left;
+}
+#ttu2{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+#ttu2 img{
+    width: 65px;
+    height: 65px;
+    margin-top: 5px;
+}
+#shou2{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+#shou2 span{
+    font-size: 25px;
+    color: #98999E;
+}
+
+
+
+
+#foot3{
+    width: 33.33%;
+    height: 110px;
+    float: left;
+}
+#ttu3{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+#ttu3 img{
+    width: 65px;
+    height: 65px;
+    margin-top: 5px;
+}
+#shou3{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+#shou3 span{
     font-size: 25px;
     color: #98999E;
 }

@@ -5,6 +5,7 @@
 .body{
     background-color:#EAEAEA;
 }
+/*个人信息css*/
 .header{
     width: 100%;
     height: 408px;
@@ -72,7 +73,10 @@
     font-size: 38.4px;
     font-weight: normal;
 }
+/*个人信息css结束*/
 
+
+/*收入css*/
 .money{
     width: 100%;
     height: 144px;
@@ -142,8 +146,10 @@
     font-weight: normal;
     color: #939393;
 }
+/*收入css结束*/
 
 
+/*全部订单css*/
 .all{
     width: 100%;
     height: 120px;
@@ -189,7 +195,9 @@
     height: 33.6px;
     vertical-align: middle;
 }
+/*全部订单css结束*/
 
+/*点评、收藏、推广css*/
 .di{
     width: 100%;
     height: 362.4px;
@@ -330,41 +338,101 @@
     height: 33.6px;
     vertical-align: middle;
 }
+/*点评、收藏、推广css结束*/
 
 /*底部css*/
+/*底部左*/
 .foott{
     width: 100%;
     height:110px;
     border-top: 1.2px solid #DEDEDE;
     background-color: #F7F6FB;
+    float: left;
     position: fixed;
     bottom:0px;
     left:0;
     right:0;
 }
-.foot{
+#foot{
     width: 33.33%;
     height: 110px;
     float: left;
 }
-.tupian6{
+#ttu{
     width: 100%;
     height: 70px;
     line-height: 70px;
     text-align: center;
 }
-.tupian6 img{
+#ttu img{
     width: 65px;
     height: 65px;
     margin-top: 5px;
 }
-.shouye{
+#shou{
     width: 100%;
     height: 30px;
     line-height: 30px;
     text-align: center;
 }
-.shouye span{
+#shou span{
     font-size: 25px;
     color: #98999E;
 }
+
+/*底部中间*/
+#foot2{
+    width: 33.33%;
+    height: 110px;
+    float: left;
+}
+#ttu2{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+#ttu2 img{
+    width: 65px;
+    height: 65px;
+    margin-top: 5px;
+}
+#shou2{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+#shou2 span{
+    font-size: 25px;
+    color: #98999E;
+}
+
+/*底部右*/
+#foot3{
+    width: 33.33%;
+    height: 110px;
+    float: left;
+}
+#ttu3{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+#ttu3 img{
+    width: 65px;
+    height: 65px;
+    margin-top: 5px;
+}
+#shou3{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+#shou3 span{
+    font-size: 25px;
+    color: #ffae00;
+}
+/*底部css结束*/

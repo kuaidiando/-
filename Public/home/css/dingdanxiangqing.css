@@ -17,40 +17,23 @@ body{
     height: 200px;
     background-color: white;
 }
-.jc{
-    display:none;
-}
-.jc1{
-    display:block;
-}
 .dd{
     width: 100%;
     height: 100px;
 }
+
 .dd1{
-    width: 45%;
+    width: 100%;
     height: 100px;
     line-height: 100px;
-    text-align: right;
-    float: left;
+    text-align: center;
 }
 .dd1 span{
     font-size: 60px;
     font-weight: bolder;
     color: #ffae00;
 }
-.shuzi{
-    width: 52%;
-    height: 100px;
-    line-height: 100px;
-    margin-left: 3%;
-    float: left;
-}
-.shuzi span{
-    font-size: 60px;
-    font-weight: bolder;
-    color: #ffae00;
-}
+
 .jiu{
     width: 100%;
     height: 35px;
@@ -71,6 +54,7 @@ body{
     font-size: 30px;
     color: #888888;
 }
+
 
 
 
@@ -454,7 +438,7 @@ body{
 
 .zhuohao{
     width: 100%;
-    height: 140px;
+    height: 110px;
     background-color: white;
     margin-top: 12px;
 }
@@ -462,60 +446,47 @@ body{
     width: 95%;
     height: 110px;
     margin-left: 2.5%;
-    margin-top: 15px;
-    border: 1.2px solid #ffae00;
     float: left;
-    border-radius: 10px;
+    border-bottom: 1.2px solid #DEDEDE;
 }
-.ben {
-    width: 70%;
+.xuan{
+    width: 73%;
     height: 110px;
+    line-height: 110px;
     float: left;
+    margin-left: 2%;
 }
-.ben input{
-    width: 90%;
-    height: 100px;
+.xuan span{
     font-size: 33.6px;
-    margin-top: 5px;
-    margin-left: 5%;
 }
-.nniu{
-    width: 30%;
+.zwh{
+    width: 20%;
     height: 110px;
+    line-height: 110px;
     float: left;
+}
+.zwh span{
+    font-size: 30px;
+    color: #888;
+}
+.jian{
+    width: 5%;
+    height: 110px;
     line-height: 110px;
     text-align: center;
+    float: left;
 }
-.nniu span{
-    font-size: 33.6px;
-    color: #ffae00;
+.jian img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
 }
-
-
-
-
-
-
-
-
 
 .footer{
     width: 100%;
     height: 120px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-}
-.qtj{
-    width: 100%;
-    height: 120px;
-    text-align: center;
-    line-height: 120px;
-    background-color: #ffae00;
-    float: left;
-}
-.qtj span{
-    font-size: 35px;
-    color: white;    
 }
 .foot{
     width: 50%;

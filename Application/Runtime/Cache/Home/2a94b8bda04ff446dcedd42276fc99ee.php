@@ -5,21 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>快点—智慧餐厅</title>
-<<<<<<< HEAD
     <link rel="icon" href="/kuaidian/Public/home/img/logo1.png">
     <link rel="stylesheet" href="/kuaidian/Public/home/css/index.css">
     <link rel="stylesheet" href="/kuaidian/Public/home/css/base-index.css">
     <link rel="stylesheet" href="/kuaidian/Public/home/css/base2.css">
     <script src="/kuaidian/Public/home/js/flexible.js"></script>
     <script src="/kuaidian/Public/home/js/jquery-1.12.4.js"></script>
-=======
-    <link rel="icon" href="/-/Public/home/img/logo1.png">
-    <link rel="stylesheet" href="/-/Public/home/css/index.css">
-    <link rel="stylesheet" href="/-/Public/home/css/base-index.css">
-    <link rel="stylesheet" href="/-/Public/home/css/base2.css">
-    <script src="/-/Public/home/js/flexible.js"></script>
-    <script src="/-/Public/home/js/jquery-1.12.4.js"></script>
->>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
     <script>
         $(function(){
             $(window).scroll(function() {
@@ -56,11 +47,7 @@
                 </div>
                 
                 <div class="xl">
-<<<<<<< HEAD
                     <img src="/kuaidian/Public/home/img/jiantou2.png" alt="">
-=======
-                    <img src="/-/Public/home/img/jiantou2.png" alt="">
->>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
                 </div>
             </div>
 
@@ -68,11 +55,7 @@
             <div class="lookup">
                 <div class="look">
                     <div class="sou">
-<<<<<<< HEAD
                         <img src="/kuaidian/Public/home/img/loogup.png" alt="">
-=======
-                        <img src="/-/Public/home/img/loogup.png" alt="">
->>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
                     </div>
 
                     <div class="tet">
@@ -84,11 +67,7 @@
 
             <div class="person">
                 <div class="tx">
-<<<<<<< HEAD
                     <img src="/kuaidian/Public/<?php echo ($user_photo); ?>" alt="">
-=======
-                    <img src="/-/Public/<?php echo ($user_photo); ?>" alt="">
->>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
                 </div>
             </div>
         </div>
@@ -147,11 +126,7 @@
             </dd>
         </dl>
     </section>
-<<<<<<< HEAD
     <script type="text/javascript" src="/kuaidian/Public/home/js/jquery.js"></script>
-=======
-    <script type="text/javascript" src="/-/Public/home/js/jquery.js"></script>
->>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
     <script type="text/javascript">
         $(function(){
             $('.retrie dt a').click(function(){
@@ -183,11 +158,7 @@
                 <div class="hz">
                     <div class="top">
                         <div class="tu">
-<<<<<<< HEAD
                             <img src="/kuaidian/Public/<?php echo ($vores["logo"]); ?>" alt="">
-=======
-                            <img src="/-/Public/<?php echo ($vores["logo"]); ?>" alt="">
->>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
                         </div>
 
                         <div class="you">
@@ -201,21 +172,12 @@
                             <div class="center">
                                 <div class="xing">
                                 <!-- 实心星数量 -->
-<<<<<<< HEAD
-                                <?php $__FOR_START_257287981__=0;$__FOR_END_257287981__=$vores["shixinxing"];for($i=$__FOR_START_257287981__;$i < $__FOR_END_257287981__;$i+=1){ ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
+                                <?php $__FOR_START_1953443881__=0;$__FOR_END_1953443881__=$vores["shixinxing"];for($i=$__FOR_START_1953443881__;$i < $__FOR_END_1953443881__;$i+=1){ ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
                                 <!-- 判断半个 星星 -->
                         <?php if($vores["bangexing"] == 1): ?><img src="/kuaidian/Public/home/img/ban.png" style="width:13%;" alt="">
                         <?php else: endif; ?>
                                 <!-- 空心星数量 -->
-                                <?php $__FOR_START_1565043323__=0;$__FOR_END_1565043323__=$vores["kongxinxing"];for($i=$__FOR_START_1565043323__;$i < $__FOR_END_1565043323__;$i+=1){ ?><img src="/kuaidian/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
-=======
-                                <?php $__FOR_START_17669__=0;$__FOR_END_17669__=$vores["shixinxing"];for($i=$__FOR_START_17669__;$i < $__FOR_END_17669__;$i+=1){ ?><img src="/-/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
-                                <!-- 判断半个 星星 -->
-                        <?php if($vores["bangexing"] == 1): ?><img src="/-/Public/home/img/ban.png" style="width:13%;" alt="">
-                        <?php else: endif; ?>
-                                <!-- 空心星数量 -->
-                                <?php $__FOR_START_6490__=0;$__FOR_END_6490__=$vores["kongxinxing"];for($i=$__FOR_START_6490__;$i < $__FOR_END_6490__;$i+=1){ ?><img src="/-/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
->>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
+                                <?php $__FOR_START_1365132371__=0;$__FOR_END_1365132371__=$vores["kongxinxing"];for($i=$__FOR_START_1365132371__;$i < $__FOR_END_1365132371__;$i+=1){ ?><img src="/kuaidian/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
                                     
                                 </div>
 
@@ -245,19 +207,11 @@
                                 </div>
 
                                 <div class="quan">
-<<<<<<< HEAD
                                     <img src="/kuaidian/Public/home/img/quan2.png" alt="">
                                 </div>
 
                                 <div class="dian">
                                     <img src="/kuaidian/Public/home/img/dian.png" alt="">
-=======
-                                    <img src="/-/Public/home/img/quan2.png" alt="">
-                                </div>
-
-                                <div class="dian">
-                                    <img src="/-/Public/home/img/dian.png" alt="">
->>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
                                 </div>
                             </div>
 
@@ -271,11 +225,7 @@
 
                     <div class="bot">
                         <div class="tui">
-<<<<<<< HEAD
                             <img src="/kuaidian/Public/home/img/tuiguang.png" alt="">
-=======
-                            <img src="/-/Public/home/img/tuiguang.png" alt="">
->>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
                         </div>
 
                         <div class="jia">
@@ -293,20 +243,12 @@
 
                     <div class="xia2">
                         <div class="zzuo">
-<<<<<<< HEAD
                             <img src="/kuaidian/Public/home/img/jinri.png" alt="">
-=======
-                            <img src="/-/Public/home/img/jinri.png" alt="">
->>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
                         </div>
 
                         <div class="yyou">
                             <div class="xuan">
-<<<<<<< HEAD
                                 <img src="/kuaidian/Public/home/img/dingzuo.png" alt="">
-=======
-                                <img src="/-/Public/home/img/dingzuo.png" alt="">
->>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
                             </div>
 
                             <div class="ke">
@@ -337,11 +279,7 @@
     <a href="<?php echo U('Home/Index/index');?>">
         <div class="foot">
             <div class="ttu">
-<<<<<<< HEAD
                 <img src="/kuaidian/Public/home/img/shangjia.png" alt="">
-=======
-                <img src="/-/Public/home/img/shangjia.png" alt="">
->>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
             </div>
 
             <div class="shou">
@@ -352,11 +290,7 @@
         <a href="<?php echo U('Home/Order/order_info');?> ">
             <div class="foot">
                 <div class="ttu">
-<<<<<<< HEAD
                     <img src="/kuaidian/Public/home/img/diangdan.png" alt="">
-=======
-                    <img src="/-/Public/home/img/diangdan.png" alt="">
->>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
                 </div>
 
                 <div class="shou">
@@ -367,11 +301,7 @@
     <a href="<?php echo U('Home/Person/index');?>">
         <div class="foot">
             <div class="ttu">
-<<<<<<< HEAD
                 <img src="/kuaidian/Public/home/img/geren.png" alt="">
-=======
-                <img src="/-/Public/home/img/geren.png" alt="">
->>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
             </div>
 
             <div class="shou">
