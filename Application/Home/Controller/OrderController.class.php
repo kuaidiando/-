@@ -192,7 +192,7 @@ class OrderController extends Controller {
                 // M('order')->where()
                 $money_change = M('user')->where(array('id'=>$this->user_id))->save($filter);
                 if($money_change){
-                    M('order')->where(array('id'=>$order_id))->save(array('order_status'=>5));
+                    M('order')->where(array('id'=>$order_id))->save(array('order_status'=>5,'pay_time'=>date('Y-m-d H:i:s'),time()));
                     $money_data = array();
                     $money_data = array(
                         'order_id'   =>$order_id,
@@ -411,7 +411,7 @@ class OrderController extends Controller {
 
         $jc_id = M('order_jc')->add(array('store_id'=>$store_id,'order_id'=>$order_id,'jc_code'=>$jc_code,'seat'=>$seat));
         if($jc_id){
-            M('order')->where(array('id'=>$order_id))->save(array('is_use'=>1,'order_status'=>10));
+            M('order')->where(array('id'=>$order_id))->save(array('is_use'=>1,'order_status'=>10,'use_time'=>date('Y-m-d H:i:s',time()),'table_no'=>$jc_code));
             $data=array(
                 'data'=>$end_jc_code,
                 'code'=>200,

@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>门店设置</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="/kuaidian/Public/merch/css/text.css">
     <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
     <link rel="stylesheet" href="/kuaidian/Public/merch/css/Settings.css">
+=======
+    <link rel="stylesheet" href="/-/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/-/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/-/Public/merch/css/Settings.css">
+>>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
 </head>
 <body style="font-size: 12px">
     <div class="head">
@@ -27,7 +33,11 @@
                 </div>
 
                 <div class="jian">
+<<<<<<< HEAD
                     <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+=======
+                    <img src="/-/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
                 </div>
             </div>
         </div>
@@ -44,7 +54,11 @@
             </div>
 
             <div class="jian">
+<<<<<<< HEAD
                 <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+=======
+                <img src="/-/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
             </div>
         </div>
     </div>
@@ -64,7 +78,11 @@
             </div>
 
             <div class="jian">
+<<<<<<< HEAD
                 <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+=======
+                <img src="/-/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
             </div>
         </div>
     </div>
@@ -80,7 +98,11 @@
             </div>
 
             <div class="jian">
+<<<<<<< HEAD
                 <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+=======
+                <img src="/-/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> 079121bc30ad9dfc9ba20ad13116347b48468068
             </div>
         </div>
     </div>

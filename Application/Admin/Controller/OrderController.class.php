@@ -73,6 +73,7 @@ class OrderController extends BasicController {
             $goods_xq[$k1]['goods_name'] = uri('food',array('id'=>$v1['goods_id']),'mingch');
 
         }
+        $one_info['table_no'] = substr($one_info['table_no'],8);
         $money_info = uri('money',array('order_id'=>$order_id));
         $this->assign('money_info',$money_info);
         $this->assign('goods_xq',$goods_xq);
