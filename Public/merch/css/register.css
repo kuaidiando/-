@@ -2,20 +2,10 @@
     margin: 0;
     padding: 0;
 }
-.body{
-    background-color: #eaeaea;
-}
-.header{
-    width: 100%;
-    height: 120px;
-    background-color: #097f7e;
-    text-align: center;
-    line-height: 120px;
-}
-.header span{
-    font-size: 40px;
-    font-weight: bolder;
-    color: white;
+body{
+    background-image: url("../images/beijing.png");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
 }
 .zhuce{
     width: 100%;
@@ -26,7 +16,7 @@
 }
 .zhuce span{
     font-size: 43.2px;
-    color: #353535;
+    color: #097f7e;
     font-weight: normal;
 }
 .phone{
@@ -173,28 +163,42 @@
 
 .hetong{
     width: 90%;
-    height:76.8px;
-    margin-left: 8.5%;
+    height:80px;
+    margin-left: 5%;
     margin-top: 12px;
-    line-height: 76.8px;
+    line-height:80px;
 }
-input{
-    width: 30px;
-    height: 30px;
-    margin-top: -13px;
+.fu{
+    width: 5%;
+    height: 80px;
+    line-height: 80px;
+    float: left;
+}
+.fu input{
+    width: 36px;
+    height: 36px;
+    margin-top: 25px;
 }
 .yi{
-    font-size: 28.8px;
-    font-weight: normal;
-    color: #888888;
+    width: 30%;
+    height: 80px;
+    line-height: 80px;
+    float: left;
 }
-.hetong img{
-    width: 48px;
-    height: 48px;
+.yi span{
+    font-size: 36px;
 }
 .xieyi{
-    font-size: 30px;
+    width: 65%;
+    height: 80px;
+    line-height: 80px;
+    float: left;
 }
+.xieyi span{
+    font-size: 36px;
+    color: #097f7e;
+}
+
 
 
 
@@ -224,17 +228,53 @@ form .send1{
 
 .logo{
     width: 100%;
-    height: 120px;
+    height: 400px;
     text-align: center;
-    margin-top:80px;
 }
 .logo img{
-    width: 312px;
-    height: 120px;
+    margin-top: 80px;
+    width: 50%;
+    height: 60%;
     vertical-align: middle;
 }
 
+select{
+    width:31.4%;
+    height: 120px;
+    font-size: 33.6px;
+    border: none;
+    outline: none;
+    line-height: 80px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-left: 12px;
+    padding-left: 66px;
+    color: #888;
+    background-color: #fff;
+}
 
-
-
+.dizhi{
+    width: 90%;
+    height: 120px;
+    margin-left: 5%;
+    margin-top: 12px;
+}
+.ditu{
+    width: 13%;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    float: left;
+    background-color: #fff;
+}
+.ditu img{
+    width: 72px;
+    margin-top: 20px;
+}
+.text8{
+    width: 87%;
+    height: 120px;
+    float: left;
+}
 

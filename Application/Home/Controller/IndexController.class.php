@@ -79,6 +79,7 @@ class IndexController extends Controller {
         $userid = session('userid');//获取用户id
         // dump($userid);die;
         $shopid = I('get.shopid');//门店id
+        // dump($shopid);die;
         /**
          * 获取单条信息
          */
@@ -164,7 +165,7 @@ class IndexController extends Controller {
 
 
         $user = M('food');
-        $wherefd['food.dep_shop'] = 1;//对应门店id
+        $wherefd['food.dep_shop'] = $shopid;//对应门店id
         // $wherefd['food.zhuangt'] = 1;//菜品状态
         $resfood = $user->where($wherefd)
                     ->join('left join food_type ON food_type.id = food.food_type')
@@ -173,7 +174,7 @@ class IndexController extends Controller {
                     ->order('food.id asc')
                     ->select();
                     // echo $user->getLastsql();
-                    // dump($resfood);
+                    // dump($resfood);die;
         // 获取cookie的值
         $food_num = unserialize(stripslashes($_COOKIE['food_num'])); 
         // 遍历菜品

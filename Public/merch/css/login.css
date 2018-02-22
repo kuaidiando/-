@@ -2,31 +2,32 @@
     margin: 0;
     padding: 0;
 }
-.body{
-    background-color: #eaeaea;
+body{
+    background-image: url("../images/beijing.png");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
 }
-.header{
+.kong{
     width: 100%;
-    height: 120px;
-    background-color: #097f7e;
+    height: 400px;
     text-align: center;
-    line-height: 120px;
 }
-.header span{
-    font-size: 40px;
-    font-weight: bolder;
-    color: white;
+.kong img{
+    margin-top: 80px;
+    width: 50%;
+    height: 60%;
+    vertical-align: middle;
 }
+
 .denglu{
     width: 100%;
     height: 96px;
-    margin-top: 12px;
     text-align: center;
     line-height: 96px;
 }
 .denglu span{
     font-size: 43.2px;
-    color: #353535;
+    color: #097f7e;
     font-weight: normal;
 }
 .phone{

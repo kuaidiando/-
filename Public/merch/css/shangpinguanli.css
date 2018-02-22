@@ -1,10 +1,10 @@
 .container {
     width: 100%;
-    height: 1742px;
+    height: 1600px;
 }
 ul.tabs {
     float: left;
-    height: 1742px;
+    height: 1600px;
     width: 20%;
 }
 ul.tabs li {
@@ -21,7 +21,7 @@ ul.tabs li a {
     outline: none;
 }
 ul.tabs li a:hover {
-    background: #ccc;
+    border-left: 5px solid #097f7e;
 }
 html ul.tabs li.active, html ul.tabs li.active a:hover  {
     background: #fff;
@@ -30,14 +30,11 @@ html ul.tabs li.active, html ul.tabs li.active a:hover  {
 .tab_container {
     float: left;
     width: 80%;
-    height: 1742px;
+    height: 1600px;
     background: #fff;
-    -moz-border-radius-bottomright: 5px;
-    -khtml-border-radius-bottomright: 5px;
-    -webkit-border-bottom-right-radius: 5px;
-    -moz-border-radius-bottomleft: 5px;
-    -khtml-border-radius-bottomleft: 5px;
-    -webkit-border-bottom-left-radius: 5px;
+    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 .tab_content {
     width: 100%;
@@ -47,6 +44,9 @@ html ul.tabs li.active, html ul.tabs li.active a:hover  {
     width: 100%;
     height: 60px;
     background-color: #DEDEDE;
+    position: fixed;
+    top:0;
+    z-index: 5;
 }
 .ddan{
     width: 90%;
@@ -59,12 +59,12 @@ html ul.tabs li.active, html ul.tabs li.active a:hover  {
 }
 .he{
     width: 100%;
-    height:298px;
+    height:318px;
     border-bottom: 1.2px solid #DEDEDE;
 }
 .hhe{
     width: 95%;
-    height: 298px;
+    height: 318px;
     margin-left: 5%;
 }
 .top{
@@ -117,6 +117,7 @@ html ul.tabs li.active, html ul.tabs li.active a:hover  {
 }
 .qian span{
     font-size: 40px;
+    font-weight: bolder;
     color: red;
 }
 .yuan{
@@ -151,19 +152,19 @@ html ul.tabs li.active, html ul.tabs li.active a:hover  {
 }
 .bot{
     width: 100%;
-    height: 100px;
+    height: 120px;
 }
 .bz{
     width:50%;
-    height: 100px;
+    height: 120px;
     float: left;
 }
 .xiao{
     width:90%;
-    height: 60px;
+    height: 90px;
     border: 1.2px solid #097f7e;
-    margin-top:20px;
-    line-height: 60px;
+    margin-top:15px;
+    line-height: 90px;
     text-align: center;
     float: left;
 }
@@ -176,31 +177,91 @@ html ul.tabs li.active, html ul.tabs li.active a:hover  {
 .footer{
     width: 100%;
     height: 120px;
+    border-top:2.4px solid #DEDEDE;
     position: fixed;
     bottom: 0;
-    background-color: #fff;
-    border-top: 1.2px solid #DEDEDE;
 }
 .foot{
-    width: 33.33%;
+    width: 20%;
+    height: 120px;
+    background-color: #097f7e;
+    float: left;
+}
+.ztu{
+    width: 25%;
     height: 120px;
     line-height: 120px;
-    text-align: center;
+    text-align: right;
+    float: left;
+}
+.ztu img{
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+.fen{
+    width: 70%;
+    height: 120px;
+    margin-left: 5%;
+    line-height: 120px;
+    float: left;
+}
+.fen span{
+    font-size: 30px;
+    color: #fff;
+}
+.foot2{
+    width: 80%;
+    height: 120px;
+    background-color: #fff;
+    float: left;
+}
+.xian{
+    width: 50%;
+    height: 100px;
+    margin-top: 10px;
     border-right: 1.2px solid #DEDEDE;
     float: left;
 }
-.foot span{
-    font-size: 30px;
-    color: #000;
-}
-.foot2{
-    width: 33.33%;
-    height: 120px;
-    line-height: 120px;
+.can{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
     text-align: center;
+}
+.can {
+    font-size: 35px;
+    color: #097f7e;
+}
+.yy{
+    width: 50%;
+    height: 120px;
     float: left;
 }
-.foot2 span{
-    font-size: 30px;
-    color: #000;
+.xtu{
+    width: 35%;
+    height: 120px;
+    line-height: 120px;
+    text-align: right;
+    float: left;
+}
+.xtu img{
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+.xin {
+    width: 60%;
+    height: 120px;
+    margin-left: 5%;
+    float: left;
+    line-height: 120px;
+}
+.xin span{
+    color: #097f7e;
+    font-size: 35px;
+}
+.kong{
+    width: 100%;
+    height:100px;
 }
