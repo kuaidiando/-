@@ -122,7 +122,7 @@
                     </div>
 
                     <div class="time">
-                        <span><?php echo ($one_info["add_time"]); ?></span>
+                        <span><?php echo ($one_info["pay_time"]); ?></span>
                     </div>
                 </div>
 
