@@ -6,10 +6,17 @@
     <meta content="telephone=yes" name="format-detection" />
     <meta content="email=no" name="format-detection" />
     <title>订单提交</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="/-/Public/home/css/base.css">
     <link rel="stylesheet" href="/-/Public/home/css/text.css">
     <link rel="stylesheet" href="/-/Public/home/css/dingdan.css">
     <link rel="stylesheet" href="/-/Public/home/css/demo.css">
+=======
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/dingdan.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/demo.css">
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
 </head>
 <body style="font-size: 12px">
     <div class="header">

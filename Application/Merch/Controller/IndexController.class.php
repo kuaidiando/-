@@ -19,7 +19,14 @@ class IndexController extends Controller {
     	$res = $user->where($where)->select();
     	// 获取总金额
     	$order = $this->order_total_info($shopid);
-    	// dump($aa);die;
+        // 数字 0 改为 0.00
+        // if ($order['data']['num'] == 0) {
+        //     $order['data']['num'] = "0.00";
+        // }
+        if ($order['data']['order_total_price'] == 0) {
+            $order['data']['order_total_price'] = "0.00";
+        }
+    	// dump($order);die;
     	$this->assign("res",$res);//单条门店信息
     	$this->assign("order",$order);//订单信息
         $this->display();

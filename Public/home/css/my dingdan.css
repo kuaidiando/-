@@ -42,9 +42,7 @@
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
-.tab_content{
 
-}
 
 
 
@@ -106,11 +104,11 @@
 
 
 .hezi{
-    margin-top: 12px;
-    width: 100%;
-    height: 295.2px;
-    background-color: white;
-}
+     margin-top: 12px;
+     width: 100%;
+     height: 295.2px;
+     background-color: white;
+ }
 .name{
     width: 98%;
     height: 96px;
@@ -147,9 +145,6 @@
     width:100%;
     height: 192px;
     margin-top: 3px;
-}
-.hezi3{
-    display:none;
 }
 .tu{
     width: 192px;
