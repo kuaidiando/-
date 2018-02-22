@@ -857,3 +857,45 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
 ERR: 无法加载模块:Public
 
+[ 2018-02-22T17:31:11+08:00 ] 192.168.0.107 /kuaidian/Public/home/images/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-22T17:37:17+08:00 ] 192.168.0.107 /kuaidian/Public/home/images/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-22T17:38:41+08:00 ] 192.168.0.107 /kuaidian/Public/home/images/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-22T17:45:48+08:00 ] 192.168.0.107 /kuaidian/Public/home/images/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-22T17:46:23+08:00 ] 192.168.0.107 /kuaidian/Public/home/images/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-22T17:46:48+08:00 ] 192.168.0.107 /kuaidian/Public/home/images/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-22T17:47:20+08:00 ] 192.168.0.107 /kuaidian/Public/home/images/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
