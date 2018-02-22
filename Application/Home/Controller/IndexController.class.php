@@ -177,23 +177,7 @@ class IndexController extends Controller {
                     // dump($resfood);die;
         // 获取cookie的值
         $food_num = unserialize(stripslashes($_COOKIE['food_num']));
-        /**
-         * 购物车商品
-         */
-        $gsfood = array();
-        // dump($food_num); 
-        foreach ($food_num as $gsk => $gsv) {
-            // dump($gsv);die;
-            $gswhere['id'] = $gsv['foodid'];
-            // dump($gswhere);die;
-            $gsres = $user->where($gswhere)->find();
-            $gsfood[$gsk]['name'] = $gsres['mingch'];//名称
-            $gsfood[$gsk]['shou_price'] = $gsres['jiage_youhui'];//售价
-            $gsfood[$gsk]['num'] = $gsv['foodnum'];//数量
-            // dump($gsres); die;
-        }
-        // dump($gsfood);die;
-        $this->assign("gsfood",$gsfood);//购物车商品
+       
         // 遍历菜品
         foreach ($resfood as $kref => $vkref) {
             // 遍历菜品分类
@@ -262,7 +246,30 @@ class IndexController extends Controller {
         
         $this->display();
     }
-
+    //购物车商品
+    public function ajaxgsfood(){
+        $user = M("food");
+         // 获取cookie的值
+        $food_num = unserialize(stripslashes($_COOKIE['food_num']));
+        /**
+         * 购物车商品
+         */
+        $gsfood = array();
+        // dump($food_num); 
+        foreach ($food_num as $gsk => $gsv) {
+            // dump($gsv);die;
+            $gswhere['id'] = $gsv['foodid'];
+            // dump($gswhere);die;
+            $gsres = $user->where($gswhere)->find();
+            $gsfood[$gsk]['name'] = $gsres['mingch'];//名称
+            $gsfood[$gsk]['shou_price'] = $gsres['jiage_youhui'];//售价
+            $gsfood[$gsk]['num'] = $gsv['foodnum'];//数量
+            // dump($gsres); die;
+        }
+        // dump($gsfood);die;
+        // $this->assign("gsfood",$gsfood);//购物车商品
+        $this->ajaxReturn($gsfood);
+    }
     //ajax add 菜品份数
     public function ajaxaddlinshijj(){
         //cookie实现

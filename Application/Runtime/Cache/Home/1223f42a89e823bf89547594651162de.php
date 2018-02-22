@@ -501,6 +501,7 @@
                 <span>清空</span>
             </div>
         </div>
+<<<<<<< HEAD
         <!-- 购物车商品 -->
         <?php if(is_array($gsfood)): foreach($gsfood as $key=>$vogsfood): ?><div class="nnei">
             <div class="neirong">
@@ -531,6 +532,12 @@
                 </div>
             </div>
         </div><?php endforeach; endif; ?>
+=======
+        <!-- 购物车商品 js添加 -->
+        <div class="ajaxaddgsfood">
+            
+        </div>
+>>>>>>> aa293cbf2e0167321b363d73e67493e2b95adee5
     </ul>
     <div class="kong">
     </div>
@@ -566,10 +573,11 @@
 <script src="/-/Public/home/js/tab.js"></script>
 <!--购物车遮罩层-->
 <script type="text/javascript">
-    $(".qing").click(function () {
+        $(".qing").click(function () {
             $('.am-share').hide();
             $(".sharebg-active").removeClass("sharebg-active");
         });
+        //触发购物车
         function toshare(){
             if($('.sharebg').hasClass("sharebg-active")){;
                 $(".sharebg").removeClass("sharebg-active");
@@ -584,6 +592,22 @@
                 $("body").append('<div class="sharebg"></div>');
                 $(".sharebg").addClass("sharebg-active");
             }
+            //ajax 铺取数据
+             $.ajax({
+                type:'POST',
+                dataType: 'json',
+                async:false,
+                url:'<?php echo U("Home/Index/ajaxgsfood");?>',
+                data:{},
+                success: function (result) {
+                    var str = "";
+                    $.each(result,function(index,item){
+                        str += '<div class="nnei"><div class="neirong"><div class="neirong2"><div class="mmingzi"><span>'+item.name+'</span></div><div class="left2"><span id="cartN2">￥ <span id="totalpriceshow2">'+item.shou_price+'</span></span></div><div class="btn2"><button class="minus2" style="display:inline-block"><strong><img src="/kuaidian/Public/home/img/jianhao.png" alt=""></strong></button> <i style="display:inline-block">'+item.num+'</i> <button class="add2"><strong><img src="/kuaidian/Public/home/img/jiahao.png" alt=""></strong></button> <i class="price2">18.5</i></div></div></div></div>';
+                    });
+                    $(".ajaxaddgsfood").html(str);
+                    // console.log(result);
+                }
+            })
         }
     </script>
 <!--选择人数遮罩层-->
