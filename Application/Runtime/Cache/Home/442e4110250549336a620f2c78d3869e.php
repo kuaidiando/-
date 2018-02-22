@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>订单详情</title>
+<<<<<<< HEAD
+    <link rel="stylesheet" href="/-/Public/home/css/base.css">
+    <link rel="stylesheet" href="/-/Public/home/css/text.css">
+    <link rel="stylesheet" href="/-/Public/home/css/dingdanxiangqing.css">
+    <!-- <script type="text/javascript" src="/-/Public/home/js/jquery.js"></script> -->
+    <script type="text/javascript" src="/-/Public/home/js/jquery-1.12.4.js"></script>
+=======
     <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
     <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
     <link rel="stylesheet" href="/kuaidian/Public/home/css/dingdanxiangqing.css">
     <!-- <script type="text/javascript" src="/kuaidian/Public/home/js/jquery.js"></script> -->
     <script type="text/javascript" src="/kuaidian/Public/home/js/jquery-1.12.4.js"></script>
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
 
 
 </head>
@@ -16,7 +24,11 @@
     <div class="header">
         <span>订单详情</span>
     </div>
+<<<<<<< HEAD
+    <?php if($is_use == 0): ?><!--  <div class="hao jc">
+=======
     <?php if($is_use == 0): ?><div class="hao jc">
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
         <div class="dd">
             <div class="dd1">
                 <span>D</span>
@@ -34,12 +46,20 @@
         <div class="an">
             <span>下单后自取小票&nbsp;或&nbsp;向服务员可对订单</span>
         </div>
+<<<<<<< HEAD
+    </div> -->
+=======
     </div>
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
     <?php else: ?>
     <div class="hao">
         <div class="dd">
             <div class="dd1">
+<<<<<<< HEAD
+                <span></span>
+=======
                 <span>D</span>
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
             </div>
 
             <div class="shuzi">

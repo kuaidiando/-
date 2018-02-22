@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>支付订单</title>
+<<<<<<< HEAD
+    <link rel="stylesheet" href="/-/Public/home/css/base.css">
+    <link rel="stylesheet" href="/-/Public/home/css/zhifuye.css">
+=======
     <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
     <link rel="stylesheet" href="/kuaidian/Public/home/css/zhifuye.css">
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
     <style>
         .qq {
             position: relative;
@@ -101,7 +106,11 @@
         <div class="sui">
             <div class="li">
                 <div class="tu">
+<<<<<<< HEAD
+                    <img src="/-/Public/home/img/jian.png" alt="">
+=======
                     <img src="/kuaidian/Public/home/img/jian.png" alt="">
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                 </div>
 
                 <div class="jian">
@@ -130,7 +139,11 @@
         <div class="bot2">
             <div class="wei">
                 <div class="tu2">
+<<<<<<< HEAD
+                    <img src="/-/Public/home/img/weixin.png" alt="">
+=======
                     <img src="/kuaidian/Public/home/img/weixin.png" alt="">
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                 </div>
 
                 <div class="xin">
@@ -150,7 +163,11 @@
 
             <div class="yu">
                 <div class="tu2">
+<<<<<<< HEAD
+                    <img src="/-/Public/home/img/yu.png" alt="">
+=======
                     <img src="/kuaidian/Public/home/img/yu.png" alt="">
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                 </div>
 
                 <div class="yue">

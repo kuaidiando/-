@@ -172,12 +172,20 @@
                             <div class="center">
                                 <div class="xing">
                                 <!-- 实心星数量 -->
+<<<<<<< HEAD
+                                <?php $__FOR_START_5737__=0;$__FOR_END_5737__=$vores["shixinxing"];for($i=$__FOR_START_5737__;$i < $__FOR_END_5737__;$i+=1){ ?><img src="/-/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
+=======
                                 <?php $__FOR_START_1953443881__=0;$__FOR_END_1953443881__=$vores["shixinxing"];for($i=$__FOR_START_1953443881__;$i < $__FOR_END_1953443881__;$i+=1){ ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                                 <!-- 判断半个 星星 -->
                         <?php if($vores["bangexing"] == 1): ?><img src="/kuaidian/Public/home/img/ban.png" style="width:13%;" alt="">
                         <?php else: endif; ?>
                                 <!-- 空心星数量 -->
+<<<<<<< HEAD
+                                <?php $__FOR_START_14574__=0;$__FOR_END_14574__=$vores["kongxinxing"];for($i=$__FOR_START_14574__;$i < $__FOR_END_14574__;$i+=1){ ?><img src="/-/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
+=======
                                 <?php $__FOR_START_1365132371__=0;$__FOR_END_1365132371__=$vores["kongxinxing"];for($i=$__FOR_START_1365132371__;$i < $__FOR_END_1365132371__;$i+=1){ ?><img src="/kuaidian/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                                     
                                 </div>
 

@@ -58,7 +58,7 @@
                             <td>{$one_order_info.total_price}</td>
                             <td>{$one_order_info.sf}</td>
                             <td>
-                                <div>预点时间:{$one_order_info.add_time}</div>
+                                <div>预点时间:{$one_order_info.pay_time}</div>
                                 <if condition="$one_order_info.use_time eq '0000-00-00 00:00:00'">
                                 <div></div>
                                 <else />
@@ -69,11 +69,18 @@
 
                             <if condition="$one_order_info.order_status eq 1">
                             <td>
-                                <span class="label label-danger radius">
-                                        <a href="#" style="text-decoration: none;color:#fff;">未支付
-                                        </a>
-                                </span>
-                            </td>
+                                <if condition="$one_order_info.add_time lt date('Y-m-d H:i:s',time()-60*15)">
+                                    <span class="label label-danger radius">
+                                        <a href="#" style="text-decoration: none;color:#fff;">支付超时
+                                        </a>  
+                                    </span>
+                                <else />
+                                    <span class="label label-danger radius">
+                                            <a href="#" style="text-decoration: none;color:#fff;">未支付
+                                            </a>
+                                    </span>
+                                </if>                           
+                                </td>
                             <elseif condition="$one_order_info.order_status eq 5"/>
                             <td>
                                 <span class="label label-success radius">
@@ -117,6 +124,7 @@
                                        ,'800px','500px')">
                                         <i class="Hui-iconfont">&#xe6df;</i>
                                     查看订单</a>
+                                    <a class="h-text-sc" id="{$one_order_info.id}"><i class="Hui-iconfont">&#xe6e2;</i></a>
                               
 
                             </td>
@@ -143,28 +151,28 @@
     });
 
         /*删除*/
-        // $(document).on("click", '.h-text-sc', function () {
-        //     var op_obj = $(this).parents("tr");
-        //     var id = $(this).attr('id');
-        //     // alert(id);exit;
-        //     layer.confirm('确认要删除吗？',function(){
-        //         $.ajax({
-        //             type:'GET',
-        //             dataType: 'json',
-        //             url:'{:U("Admin/Event/del")}',
-        //             data:{id:id},
-        //             success: function (result) {
-        //                 if (result.status) {
-        //                     layer.msg(result.msg,{icon:1,time:1000});
-        //                 } else {
-        //                     op_obj.remove();
+        $(document).on("click", '.h-text-sc', function () {
+            var op_obj = $(this).parents("tr");
+            var id = $(this).attr('id');
+            // alert(id);exit;
+            layer.confirm('确认要删除吗？',function(){
+                $.ajax({
+                    type:'POST',
+                    dataType: 'json',
+                    url:'{:U("Admin/Order/del")}',
+                    data:{id:id},
+                    success: function (result) {
+                        if (result.status) {
+                            layer.msg(result.msg,{icon:1,time:1000});
+                        } else {
+                            op_obj.remove();
 
-        //                     layer.msg(result.msg,{icon:0,time:2000});
+                            layer.msg(result.msg,{icon:0,time:2000});
 
-        //                 }
-        //             }
-        //         })
-        //     });
-        // });
+                        }
+                    }
+                })
+            });
+        });
     </script>
 <include file="Layout/footer"/>

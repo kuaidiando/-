@@ -23,7 +23,11 @@ body{
 }
 
 .dd1{
+<<<<<<< HEAD
+    width: 40%;
+=======
     width: 100%;
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
     height: 100px;
     line-height: 100px;
     text-align: center;

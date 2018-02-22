@@ -401,6 +401,7 @@ class OrderController extends Controller {
             // dump($this->createNum($jch));exit;
 
         }else{
+            
             $cs = date('Ymd',time()-3600*24).'00';
             $jc_code = createNum($cs);
 

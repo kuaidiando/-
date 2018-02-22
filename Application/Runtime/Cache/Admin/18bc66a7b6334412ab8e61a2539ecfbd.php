@@ -6,7 +6,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
+<<<<<<< HEAD
+<script type="text/javascript" src="/-/Public/jquery/jquery.js"></script>
+=======
 <script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
 <script type="text/javascript">
 $(document).ready(function(){
  $("dd").hide();
@@ -21,6 +25,19 @@ $(document).ready(function(){
 });
 });
 </script>
+<<<<<<< HEAD
+<!-- <script type="text/javascript" src="/-/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
+ -->
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui/css/H-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/H-ui.admin.css"/>
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/lib/icheck/icheck.css"/>
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
+<link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui.admin/css/style.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/-/Public/css/hidTable.css"/> -->
+<!-- 分页效果 -->
+<!-- <link href="/-/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
+=======
 <!-- <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
  -->
 <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui/css/H-ui.min.css"/>
@@ -32,6 +49,7 @@ $(document).ready(function(){
 <!-- <link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/> -->
 <!-- 分页效果 -->
 <!-- <link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
 <title>快点</title>
 <style type="text/css">
     .tu{
@@ -50,7 +68,11 @@ $(document).ready(function(){
    
     <div class="container-fluid cl">
         <!-- <div class="tu"> -->
+<<<<<<< HEAD
+        <!-- <img src="/-/Public/img/logo.png"> -->
+=======
         <!-- <img src="/kuaidian/Public/img/logo.png"> -->
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
         <!-- </div> -->
             <a class="logo navbar-logo f-l mr-10 hidden-xs" href="<?php echo U('Admin/Index/zhuye');?>">首页</a>
             <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/shop/index');?>">商户管理</span></a>
@@ -181,6 +203,16 @@ $(document).ready(function(){
 
 
 
+<<<<<<< HEAD
+<script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+=======
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
@@ -189,6 +221,7 @@ $(document).ready(function(){
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');
@@ -296,7 +329,11 @@ $(document).ready(function(){
                             <td><?php echo ($one_order_info["total_price"]); ?></td>
                             <td><?php echo ($one_order_info["sf"]); ?></td>
                             <td>
+<<<<<<< HEAD
+                                <div>预点时间:<?php echo ($one_order_info["pay_time"]); ?></div>
+=======
                                 <div>预点时间:<?php echo ($one_order_info["add_time"]); ?></div>
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                                 <?php if($one_order_info["use_time"] == '0000-00-00 00:00:00'): ?><div></div>
                                 <?php else: ?>
                                 <div style="color:red">下单时间:<?php echo ($one_order_info["use_time"]); ?></div><?php endif; ?>
@@ -304,11 +341,24 @@ $(document).ready(function(){
 
 
                             <?php if($one_order_info["order_status"] == 1): ?><td>
+<<<<<<< HEAD
+                                <?php if($one_order_info["add_time"] < date('Y-m-d H:i:s',time()-60*15)): ?><span class="label label-danger radius">
+                                        <a href="#" style="text-decoration: none;color:#fff;">支付超时
+                                        </a>  
+                                    </span>
+                                <?php else: ?>
+                                    <span class="label label-danger radius">
+                                            <a href="#" style="text-decoration: none;color:#fff;">未支付
+                                            </a>
+                                    </span><?php endif; ?>                           
+                                </td>
+=======
                                 <span class="label label-danger radius">
                                         <a href="#" style="text-decoration: none;color:#fff;">未支付
                                         </a>
                                 </span>
                             </td>
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                             <?php elseif($one_order_info["order_status"] == 5): ?>
                             <td>
                                 <span class="label label-success radius">
@@ -351,6 +401,10 @@ $(document).ready(function(){
                                        ,'800px','500px')">
                                         <i class="Hui-iconfont">&#xe6df;</i>
                                     查看订单</a>
+<<<<<<< HEAD
+                                    <a class="h-text-sc" id="<?php echo ($one_order_info["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
+=======
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                               
 
                             </td>
@@ -376,6 +430,40 @@ $(document).ready(function(){
     });
 
         /*删除*/
+<<<<<<< HEAD
+        $(document).on("click", '.h-text-sc', function () {
+            var op_obj = $(this).parents("tr");
+            var id = $(this).attr('id');
+            // alert(id);exit;
+            layer.confirm('确认要删除吗？',function(){
+                $.ajax({
+                    type:'POST',
+                    dataType: 'json',
+                    url:'<?php echo U("Admin/Order/del");?>',
+                    data:{id:id},
+                    success: function (result) {
+                        if (result.status) {
+                            layer.msg(result.msg,{icon:1,time:1000});
+                        } else {
+                            op_obj.remove();
+
+                            layer.msg(result.msg,{icon:0,time:2000});
+
+                        }
+                    }
+                })
+            });
+        });
+    </script>
+<script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.form/jquery.form.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+=======
         // $(document).on("click", '.h-text-sc', function () {
         //     var op_obj = $(this).parents("tr");
         //     var id = $(this).attr('id');
@@ -408,6 +496,7 @@ $(document).ready(function(){
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+>>>>>>> 82915d42581279f07177dc506d383202ff0a965c
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');
