@@ -107,5 +107,17 @@ class OrderController extends BasicController {
         $this->ajaxReturn($data);
     }
     
+    //订单删除功能
+    public function del(){
+        $delete = M('order');
+        $res = $delete->where('id='.I('post.id'))->find();
 
+        if ($res['order_status'] == 1) {
+          $delete->where('id='.I('post.id'))->delete();
+          $this->ajaxReturn(array('status' => 0, 'msg' => '删除成功!'));
+          
+        } else {
+          $this->ajaxReturn(array('status' => 1, 'msg' => '订单已经支付不允许删除!'));
+        }   
+    }
 }

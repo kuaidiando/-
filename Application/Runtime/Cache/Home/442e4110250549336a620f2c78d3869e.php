@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" data-dpr="1" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>订单详情</title>
-    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/text.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/dingdanxiangqing.css">
-    <!-- <script type="text/javascript" src="__PUBLIC__/home/js/jquery.js"></script> -->
-    <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="/-/Public/home/css/base.css">
+    <link rel="stylesheet" href="/-/Public/home/css/text.css">
+    <link rel="stylesheet" href="/-/Public/home/css/dingdanxiangqing.css">
+    <!-- <script type="text/javascript" src="/-/Public/home/js/jquery.js"></script> -->
+    <script type="text/javascript" src="/-/Public/home/js/jquery-1.12.4.js"></script>
 
 
 </head>
@@ -16,8 +16,7 @@
     <div class="header">
         <span>订单详情</span>
     </div>
-    <if condition="$is_use eq 0">
-   <!--  <div class="hao jc">
+    <?php if($is_use == 0): ?><!--  <div class="hao jc">
         <div class="dd">
             <div class="dd1">
                 <span>D</span>
@@ -36,7 +35,7 @@
             <span>下单后自取小票&nbsp;或&nbsp;向服务员可对订单</span>
         </div>
     </div> -->
-    <else />
+    <?php else: ?>
     <div class="hao">
         <div class="dd">
             <div class="dd1">
@@ -44,7 +43,7 @@
             </div>
 
             <div class="shuzi">
-                <span>{$jc_code}</span>
+                <span><?php echo ($jc_code); ?></span>
             </div>
         </div>
 
@@ -55,8 +54,7 @@
         <div class="an">
             <span>下单后自取小票&nbsp;或&nbsp;向服务员可对订单</span>
         </div>
-    </div>
-    </if>
+    </div><?php endif; ?>
     <div class="ding0">
         <div class="dding">
             <div class="dan0">
@@ -64,7 +62,7 @@
             </div>
 
             <div class="hhao">
-                <span>{$order_code}</span>
+                <span><?php echo ($order_code); ?></span>
             </div>
         </div>
 
@@ -74,19 +72,17 @@
             </div>
 
             <div class="yi">
-            <if condition="$order_status eq 1">
-                <span>未支付</span>
-            <elseif condition="$order_status eq 5" />
+            <?php if($order_status == 1): ?><span>未支付</span>
+            <?php elseif($order_status == 5): ?>
                 <span>已支付</span>
-            <elseif condition="$order_status eq 10" />
+            <?php elseif($order_status == 10): ?>
                 <span>待评价</span>
-            <elseif condition="$order_status eq 15" />
+            <?php elseif($order_status == 15): ?>
                 <span>已完成</span>
-            <elseif condition="$order_status eq 20" />
+            <?php elseif($order_status == 20): ?>
                 <span>已取消</span>
-            <else />
-                <span>未知</span>
-            </if>
+            <?php else: ?>
+                <span>未知</span><?php endif; ?>
             </div>
 
         </div>
@@ -97,23 +93,18 @@
             </div>
 
             <div class="aa3">
-            <if condition="$is_use eq 0 ">
-                <if condition="$order_status eq 20">
-                <span>已取消</span>
-                <else />
-                <span id="use">待使用</span>
-                </if>
+            <?php if($is_use == 0 ): if($order_status == 20): ?><span>已取消</span>
+                <?php else: ?>
+                <span id="use">待使用</span><?php endif; ?>
             </div>   
             <div class="tet">
-                <if condition="$order_status eq 5">
-                    <div class="wenben" id="wenben">
+                <?php if($order_status == 5): ?><div class="wenben" id="wenben">
                         <span id="qx">取消订单</span>
-                        <input type="hidden" id="order_id" name="order_id" value="{$order_id}">
+                        <input type="hidden" id="order_id" name="order_id" value="<?php echo ($order_id); ?>">
                     </div>
-                <else />
-                </if>  
+                <?php else: endif; ?>  
             </div>
-            <elseif condition="$is_use eq 1" />
+            <?php elseif($is_use == 1): ?>
                 <span>已使用</span>
             </div>
             <div class="tet">
@@ -121,8 +112,7 @@
                     <span></span>
                 </div>
             </div>    
-            <else />
-            </if>    
+            <?php else: endif; ?>    
 
 
         </div>
@@ -150,21 +140,19 @@
         </div>
 
         <div class="center">
-        <foreach name="goods_info" item="one_good">
-            <div class="cai2">
+        <?php if(is_array($goods_info)): foreach($goods_info as $key=>$one_good): ?><div class="cai2">
                 <div class="qq">
-                    <span>{$one_good.goodsname}</span>
+                    <span><?php echo ($one_good["goodsname"]); ?></span>
                 </div>
 
                 <div class="liang">
-                    <span>X{$one_good.goods_num}</span>
+                    <span>X<?php echo ($one_good["goods_num"]); ?></span>
                 </div>
 
                 <div class="jiage">
-                    <span>￥{$one_good.goods_price}</span>
+                    <span>￥<?php echo ($one_good["goods_price"]); ?></span>
                 </div>
-            </div>
-        </foreach>
+            </div><?php endforeach; endif; ?>
 
 
             <div class="canju">
@@ -173,11 +161,11 @@
                 </div>
 
                 <div class="ju2">
-                    <span>X{$info.order_pnum}</span>
+                    <span>X<?php echo ($info["order_pnum"]); ?></span>
                 </div>
 
                 <div class="ju3">
-                    <span>￥{$info.order_pnum}</span>
+                    <span>￥<?php echo ($info["order_pnum"]); ?></span>
                 </div>
             </div>
         </div>
@@ -187,21 +175,21 @@
                 <div class="sui">
                     <div class="ssui">
                         <span>随机立减</span>
-                        <input type="hidden" id="store_id" name="store_id" value="{$store_id}">
+                        <input type="hidden" id="store_id" name="store_id" value="<?php echo ($store_id); ?>">
                     </div>
 
                     <div class="jian">
-                        <span>-&nbsp;￥{$money_info.lj}</span>
+                        <span>-&nbsp;￥<?php echo ($money_info["lj"]); ?></span>
                     </div>
                 </div>
 
                 <div class="zongji">
                     <div class="zj">
-                        <span>总计:&nbsp;&nbsp;￥{$money_info.total_price}</span>
+                        <span>总计:&nbsp;&nbsp;￥<?php echo ($money_info["total_price"]); ?></span>
                     </div>
 
                     <div class="sf">
-                        <span>实付:&nbsp;&nbsp;￥{$money_info.sf}</span>
+                        <span>实付:&nbsp;&nbsp;￥<?php echo ($money_info["sf"]); ?></span>
                     </div>
                 </div>
             </div>
@@ -220,23 +208,22 @@
             </div>
         </div>
     </div>
-<if condition="$order_status eq 20">
-<a id="qu" href="{:U('Home/Index/index')}">
+<?php if($order_status == 20): ?><a id="qu" href="<?php echo U('Home/Index/index');?>">
     <div class="footer">
         <div class="qtj">
             <span >去别人家看看</span>
         </div>
     </div>   
 </a>
-<elseif condition="$is_use eq 1"/>
-<a href="{:U('Home/Order/order_info')}">
+<?php elseif($is_use == 1): ?>
+<a href="<?php echo U('Home/Order/order_info');?>">
     <div class="footer">
         <div class="qtj">
             <span >已完成</span>
         </div>
     </div>  
 </a>
-<else />
+<?php else: ?>
     <div class="footer">
         <div class="foot">
             <span>未入座，稍后下单</span>
@@ -245,8 +232,7 @@
         <div class="food" id="xd">
             <span>已入座，立刻下单</span>
         </div>
-    </div>
-</if>
+    </div><?php endif; ?>
 </body>
 <script>
     $("#qx").click(function(){
@@ -257,7 +243,7 @@
             $.ajax({
                     type:'POST',
                     dataType: 'json',
-                    url:'{:U("Home/Order/cancel_order")}',
+                    url:'<?php echo U("Home/Order/cancel_order");?>',
                     data:{order_id:order_id},
                     success: function (result) {
                         // console.log(result);return false;
@@ -292,7 +278,7 @@
             $.ajax({
                 type:'post',
                 dataType: 'json',
-                url:'{:U("Home/Order/sub_mit")}',
+                url:'<?php echo U("Home/Order/sub_mit");?>',
                 data:{ store_id:store_id,order_id:order_id,seat:seat },
                 success: function (result) {
                     if(result.code == 200){
@@ -316,7 +302,7 @@
 
     $('.foot').click(function(){
         alert('点击后再看订单点击右下角我的-全部订单');
-        $(location).attr('href', '{:U("Home/Person/index")}');
+        $(location).attr('href', '<?php echo U("Home/Person/index");?>');
     })
 </script>
 </html>
