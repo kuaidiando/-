@@ -289,27 +289,33 @@
             alert('请填写座位号');
             return false;
         }else{
-            $.ajax({
-                type:'post',
-                dataType: 'json',
-                url:'{:U("Home/Order/sub_mit")}',
-                data:{ store_id:store_id,order_id:order_id,seat:seat },
-                success: function (result) {
-                    if(result.code == 200){
-                        // $('.hao').removeClass('cj').addClass('jc1');
-                        // $('.shuzi span').html(result.data);
-                        // $('#xd').remove();
-                        // $('.foot').removeClass('foot').addClass('qtj').children().eq(0).html('已完成');
-                        // $('#use').html('已使用');
-                        // $('#wenben').remove();
-                        window.location.reload();
- 
-                    }else{
-                        alert(result.msg);
+            var conf1 = confirm("您确定要取消吗?取消后购买金额将转入您的余额");
+            if(conf1 == true){
+                $.ajax({
+                    type:'post',
+                    dataType: 'json',
+                    url:'{:U("Home/Order/sub_mit")}',
+                    data:{ store_id:store_id,order_id:order_id,seat:seat },
+                    success: function (result) {
+                        if(result.code == 200){
+                            // $('.hao').removeClass('cj').addClass('jc1');
+                            // $('.shuzi span').html(result.data);
+                            // $('#xd').remove();
+                            // $('.foot').removeClass('foot').addClass('qtj').children().eq(0).html('已完成');
+                            // $('#use').html('已使用');
+                            // $('#wenben').remove();
+                            window.location.reload();
+     
+                        }else{
+                            alert(result.msg);
 
+                        }
                     }
-                }
-            })
+                })              
+            }else{
+                return false;
+            }
+
 
         }
     });

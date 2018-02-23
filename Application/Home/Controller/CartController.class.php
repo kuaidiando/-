@@ -26,6 +26,7 @@ class CartController extends Controller {
             $shop_id = $_SESSION['store_id'];
         }
         $user_id = \user_helper::get_user_id();
+        // $_SESSION['seat'] = I('');
         $info = unserialize(stripslashes($_COOKIE['food_num']));
 
         if(!$user_id){
