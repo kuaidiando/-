@@ -261,6 +261,7 @@ class IndexController extends Controller {
             $gswhere['id'] = $gsv['foodid'];
             // dump($gswhere);die;
             $gsres = $user->where($gswhere)->find();
+            $gsfood[$gsk]['foodid'] = $gsres['id'];//菜品id
             $gsfood[$gsk]['name'] = $gsres['mingch'];//名称
             $gsfood[$gsk]['shou_price'] = $gsres['jiage_youhui'];//售价
             $gsfood[$gsk]['num'] = $gsv['foodnum'];//数量
