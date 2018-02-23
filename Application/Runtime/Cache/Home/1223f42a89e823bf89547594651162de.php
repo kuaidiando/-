@@ -12,7 +12,7 @@
 <body style="font-size: 12px">
 <form action="<?php echo U('Home/Cart/save_cart');?>" id="dateshangjia" style="display: none;" method="post">
     <input type="text" name="shopid" value="<?php echo ($resspdan["0"]["id"]); ?>">
-    <input type="text" name="repast" value="2">
+    <input type="text" name="repast" id="repasttiaozhuan" value="2">
 </form>
 <!--商家-->
 <div class="he">
@@ -150,6 +150,7 @@
                 </div>
             </div><?php endforeach; endif; ?>
             <!-- 判断总份数是否存在 -->
+            <!-- 总份数为0下一步为灰色 切不能点击下一步 -->
             <?php if($zfsjg['zfshu'] == 0): ?><div class="footer">
                 <div class="gou" onclick="toshare()">
                     <img src="/kuaidian/Public/home/img/gouwuche.png" alt="">
@@ -185,7 +186,7 @@
                     <a id="btnselect" class="xhlbtn " href="javascript:void(0)">下一步</a>
                 </div>
             </div><?php endif; ?>
-            <script type="text/javascript" src="/kuaidian/Public/home/js/jquery.min.js"></script>
+            <script type="text/javascript" src="/kuaidian/Public/home/js/jquery.js"></script>
             <script type="text/javascript">
                 $(function () {
                     //小购物车加功能
@@ -360,8 +361,15 @@
                         }
                     });
                     //购物车 确定跳转页面
-                    $(document).on("click","#que",function(){
-                        $("#dateshangjia").submit();
+                    $("#que").click(function(){
+
+                        //获取总人数
+                        var m = $("#totalpriceshow,#totalpriceshow2").html();
+                        //获取总就餐人数
+                        var num = $("#number").val();
+                        if (num >0 && m >0) {
+                            $("#dateshangjia").submit();
+                        }
                     });
                     function jss() {
                         var m = $("#totalpriceshow,#totalpriceshow2").html();
@@ -601,7 +609,12 @@
                 url:'<?php echo U("home/cart/del_cart");?>',
                 data:{"shopid":shopid},
                 success:function(dd){
-                    alert(dd);
+                    if (dd.code == 200) {
+                        //清空购物车成功刷新页面
+                        window.location.reload();
+                    }else{
+                        alert("情况购物车失败");
+                    }
                 }
             })
             $('.am-share').hide();
@@ -632,11 +645,7 @@
                 success: function (result) {
                     var str = "";
                     $.each(result,function(index,item){
-<<<<<<< HEAD
                         str += '<div class="nnei"><div class="neirong"><span class="foodidxiaogouwuc" style="display:none;">'+item.foodid+'</span><div class="neirong2"><div class="mmingzi"><span>'+item.name+'</span></div><div class="left2"><span id="cartN2">￥ <span id="totalpriceshow2">'+item.shou_price+'</span></span></div><div class="btn2"><button class="minus2" style="display:inline-block"><strong><img src="/kuaidian/Public/home/img/jianhao.png" alt=""></strong></button> <i style="display:inline-block">'+item.num+'</i> <button class="add2"><strong><img src="/kuaidian/Public/home/img/jiahao.png" alt=""></strong></button> <i class="price2">18.5</i></div></div></div></div>';
-=======
-                        str += '<div class="nnei"><div class="neirong"><div class="neirong2"><div class="mmingzi"><span>'+item.name+'</span></div><div class="left2"><span id="cartN2">￥ <span id="totalpriceshow2">'+item.shou_price+'</span></span></div><div class="btn2"><button class="minus2" style="display:inline-block"><strong><img src="/-/Public/home/img/jianhao.png" alt=""></strong></button> <i style="display:inline-block">'+item.num+'</i> <button class="add2"><strong><img src="/-/Public/home/img/jiahao.png" alt=""></strong></button> <i class="price2">18.5</i></div></div></div></div>';
->>>>>>> 88cc6a3eaa83e678a330f9f14e864f217ae03541
                     });
                     $(".ajaxaddgsfood").html(str);
                     // console.log(result);
@@ -646,21 +655,27 @@
     </script>
 <!--选择人数遮罩层-->
 <script type="text/javascript">
+        // 点击下一步 触发就餐人数
         function toshare2(){
-            $(".am-share2").addClass("am-modal-active2");
-            if($(".sharebg2").length>0){
-                $(".sharebg2").addClass("sharebg-active2");
-            }else{
-                $("body").append('<div class="sharebg2"></div>');
-                $(".sharebg2").addClass("sharebg-active2");
-            }
-            $("#qu,.share_btn2,.sharebg-active2").click(function(){
-                $(".am-share2").removeClass("am-modal-active2");
-                setTimeout(function(){
-                    $(".sharebg-active2").removeClass("sharebg-active2");
-                    $(".sharebg2").remove();
-                },150);
-            })
+            //获取总人数
+            var m = $("#totalpriceshow,#totalpriceshow2").html();
+            if (m > 0) {
+                $(".am-share2").addClass("am-modal-active2");
+                if($(".sharebg2").length>0){
+                    $(".sharebg2").addClass("sharebg-active2");
+                }else{
+                    $("body").append('<div class="sharebg2"></div>');
+                    $(".sharebg2").addClass("sharebg-active2");
+                }
+                $("#qu,.share_btn2,.sharebg-active2").click(function(){
+                    $(".am-share2").removeClass("am-modal-active2");
+                    setTimeout(function(){
+                        $(".sharebg-active2").removeClass("sharebg-active2");
+                        $(".sharebg2").remove();
+                    },150);
+                })
+            } 
+            
         }
     </script>
 <script>
@@ -689,6 +704,7 @@
         });
     </script>
 <script>
+    //购物车减 功能
         function subtraction(){
             //获取-号按钮
             var subtraction = document.getElementById("subtraction");
@@ -702,6 +718,9 @@
             }else {
                 number.value = number.value - 1;
             }
+            //修改就餐人数
+            var num = $("#number").val();
+            editrepast(num);
         };
         function number(){
             var number = document.getElementById("number");
@@ -720,8 +739,8 @@
                 number.value = 0;
             }
         };
+        //小购物车加 功能
         function add(){
-            alert(123);
             var add = document.getElementById("add");
             var number = document.getElementById("number");
             var que = document.getElementById("que");
@@ -730,7 +749,14 @@
             if(number.value>0){
                 que.style.backgroundColor="#ffae00";
             }
+            //修改就餐人数
+            var num = $("#number").val();
+            editrepast(num);
         };
+        //修改就餐人数 跳转页面
+        function editrepast(num){
+            $("#repasttiaozhuan").val(num);
+        }
     </script>
 </body>
 </html>
