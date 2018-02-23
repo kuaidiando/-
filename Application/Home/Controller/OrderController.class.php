@@ -24,6 +24,7 @@ class OrderController extends Controller {
     public function save_order(){
         $order_filter = array();
         $order_filter = $_POST;
+        // dump($_POST);exit;
         if(!$_POST){
             return false;
         }
@@ -248,6 +249,7 @@ class OrderController extends Controller {
         $order_code = uri('order',array('id'=>$order_id),'order_code');
         $order_status = uri('order',array('id'=>$order_id),'order_status');
         $is_use = uri('order',array('id'=>$order_id),'is_use');
+        $seat = uri('order',array('id'=>$order_id),'seat');
         $goods_info = M('order_fu')->where(array('order_id'=>$order_id))->select();
         foreach($goods_info as $k=>$v){
             $goods_info[$k]['goodsname'] = uri('food',array('id'=>$v['goods_id']),'mingch');
@@ -259,7 +261,10 @@ class OrderController extends Controller {
             $this->assign('jc_code',$end_code);
         }
         $money_info = uri('money',array('order_id'=>$order_id));
+        $repast_price = uri('shop',array('id'=>$store_id),'repast_price');
         $this->assign('money_info',$money_info);
+        $this->assign('repast_price',$repast_price);
+        $this->assign('seat',$seat);
 
         $this->assign('order_code',$order_code);
         $this->assign('order_status',$order_status);

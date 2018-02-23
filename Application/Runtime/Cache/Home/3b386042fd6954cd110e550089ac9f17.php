@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>我的</title>
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/person.css">
+    <link rel="stylesheet" href="/-/Public/home/css/base.css">
+    <link rel="stylesheet" href="/-/Public/home/css/text.css">
+    <link rel="stylesheet" href="/-/Public/home/css/person.css">
 </head>
 <body style="font-size: 12px">
 <div class="header">
@@ -18,15 +18,15 @@
         <div class="person">
             <a href="#">
                 <!-- <img src="images/person.jpg" alt=""> -->
-                <?php if($user_info["photo"] == 'NULL'): ?><img src="/kuaidian/Public/<?php echo ($user_info["photo"]); ?>" alt="">
+                <?php if($user_info["photo"] == 'NULL'): ?><img src="/-/Public/<?php echo ($user_info["photo"]); ?>" alt="">
                 <?php else: ?>
-                <img src="/kuaidian/Public/<?php echo ($user_info["photo"]); ?>" alt=""><?php endif; ?>  
+                <img src="/-/Public/<?php echo ($user_info["photo"]); ?>" alt=""><?php endif; ?>  
             </a>
         </div>
 
         <div class="shezhi">
             <a href="#">
-                <img src="/kuaidian/Public/home/img/shezhi.png" alt="">
+                <img src="/-/Public/home/img/shezhi.png" alt="">
             </a>
         </div>
     </div>
@@ -85,7 +85,7 @@
 <a href="<?php echo U('Home/Order/order_info');?>"><?php endif; ?>
     <div class="all">
         <div class="tu">
-            <img src="/kuaidian/Public/home/img/dinagdan.png" alt="">
+            <img src="/-/Public/home/img/dinagdan.png" alt="">
         </div>
 
         <div class="quan">
@@ -93,7 +93,7 @@
         </div>
 
         <div class="you">
-                <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+                <img src="/-/Public/home/img/youjiantou.png" alt="">
             <!-- </a> -->
         </div>
     </div>
@@ -105,7 +105,7 @@
     <a href="#"><?php endif; ?>
         <div class="qq">
             <div class="tu2">
-                <img src="/kuaidian/Public/home/img/dianping.png" alt="">
+                <img src="/-/Public/home/img/dianping.png" alt="">
             </div>
 
             <div class="wo">
@@ -113,7 +113,7 @@
             </div>
 
             <div class="you2">
-                <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+                <img src="/-/Public/home/img/youjiantou.png" alt="">
             </div>
         </div>
     </a>
@@ -122,7 +122,7 @@
     <a href="#"><?php endif; ?>
         <div class="qq2">
             <div class="tu3">
-                <img src="/kuaidian/Public/home/img/xin.png" alt="">
+                <img src="/-/Public/home/img/xin.png" alt="">
             </div>
 
             <div class="shou">
@@ -130,7 +130,7 @@
             </div>
 
             <div class="you3">
-                <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+                <img src="/-/Public/home/img/youjiantou.png" alt="">
             </div>
         </div>
     </a>
@@ -139,7 +139,7 @@
     <a href="#"><?php endif; ?>
         <div class="qq3">
             <div class="tu4">
-                <img src="/kuaidian/Public/home/img/tui.png" alt="">
+                <img src="/-/Public/home/img/tui.png" alt="">
             </div>
 
             <div class="tui1">
@@ -148,7 +148,7 @@
             </div>
 
             <div class="you4">
-                <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+                <img src="/-/Public/home/img/youjiantou.png" alt="">
             </div>
         </div>
     </a>
@@ -157,7 +157,7 @@
 <!-- <a href="../商家版/商家移动端后台/index.html"> -->
     <div class="all">
         <div class="tu">
-            <img src="/kuaidian/Public/home/img/woshi.png" alt="">
+            <img src="/-/Public/home/img/woshi.png" alt="">
         </div>
 
         <div class="quan">
@@ -165,7 +165,7 @@
         </div>
 
         <div class="you">
-            <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+            <img src="/-/Public/home/img/youjiantou.png" alt="">
         </div>
     </div>
 <!-- </a> -->
@@ -173,7 +173,7 @@
 <?php if($uid > 0): ?><a href="<?php echo U('Home/Person/tc');?>">
     <div class="all" id="tc">
         <div class="tu">
-            <img src="/kuaidian/Public/home/img/woshi.png" alt="">
+            <img src="/-/Public/home/img/woshi.png" alt="">
         </div>
 
         <div class="quan">
@@ -187,7 +187,7 @@
     <a href="<?php echo U('Home/Index/index');?>">
         <div class="foot">
             <div class="tupian6">
-                <img src="/kuaidian/Public/home/img/shangjia.png" alt="">
+                <img src="/-/Public/home/img/shangjia.png" alt="">
             </div>
 
             <div class="shouye">
@@ -199,7 +199,7 @@
     <a href="<?php echo U('Home/Order/order_info');?>">
         <div class="foot">
             <div class="tupian6">
-                <img src="/kuaidian/Public/home/img/diangdan.png" alt="">
+                <img src="/-/Public/home/img/diangdan.png" alt="">
             </div>
 
             <div class="shouye">
@@ -210,7 +210,7 @@
 
     <div class="foot">
         <div class="tupian6">
-            <img src="/kuaidian/Public/home/img/geren.png" alt="">
+            <img src="/-/Public/home/img/geren.png" alt="">
         </div>
 
         <div class="shouye">
@@ -223,7 +223,7 @@
     <a href="<?php echo U('Home/Index/index');?>">
         <div id="foot">
             <div id="ttu">
-                <img src="/kuaidian/Public/home/img/shangjia.png" alt="">
+                <img src="/-/Public/home/img/shangjia.png" alt="">
             </div>
 
             <div id="shou">
@@ -236,7 +236,7 @@
     <a href="<?php echo U('Home/Order/order_info');?> ">
         <div id="foot2">
             <div id="ttu2">
-                <img src="/kuaidian/Public/home/img/diangdan.png" alt="">
+                <img src="/-/Public/home/img/diangdan.png" alt="">
             </div>
 
             <div id="shou2">
@@ -248,7 +248,7 @@
     <a href="<?php echo U('Home/Person/index');?>">
         <div id="foot3" onclick="location.href='person.html'">
             <div id="ttu3">
-               <img src="/kuaidian/Public/home/img/geren2.png" alt="">
+               <img src="/-/Public/home/img/geren2.png" alt="">
             </div>
 
             <div id="shou3">

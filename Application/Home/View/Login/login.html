@@ -29,6 +29,7 @@
             <input id="tel" type="tel" placeholder="请输入您的手机号">
             <input type="hidden" id="is_cart" name="is_cart" value="{$is_cart}">
             <input type="hidden" id="shop" name="shop" value="{$shopid}">
+            <input type="hidden" id="seat" name="seat" value="{$seat}">
             <span id="sp"></span>
         </div>
     </div>
@@ -104,6 +105,7 @@
         var password = $("#mi").val();
         var is_cart = $("#is_cart").val();
         var shop = $("#shop").val();
+        var seat = $("#seat").val();
 
         if(!is_cart || !shop){
             var is_cart=0;
@@ -113,7 +115,7 @@
             type:'post',
             dataType: 'json',
             url:'{:U("Home/Login/save_login")}',
-            data:{tel:tel,password:password,is_cart:is_cart,shop:shop},
+            data:{tel:tel,password:password,is_cart:is_cart,shop:shop,seat:seat},
             success: function (result) {
                 if(result.code == 200){
                     $(location).attr('href', '{:U("Home/Index/index")}');

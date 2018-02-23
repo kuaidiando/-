@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <!-- <link rel="stylesheet" href="css/index.css"> -->
-    <link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/css/xq.css"/>
+    <link rel="stylesheet" type="text/css" href="/-/Public/admin/css/xq.css"/>
 
 </head>
 <body>
@@ -96,7 +96,7 @@
                     <div class="name2">
                     <?php if($one_info["seat"] == 0): ?><span>未订座</span>
                     <?php else: ?>
-                        <span><?php echo ($one_info["seat"]); ?>号桌</span><?php endif; ?>
+                        <span><?php echo ($one_info["table_seat"]); ?>号桌</span><?php endif; ?>
                     </div>
                 </div>
 

@@ -4,19 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>订单详情</title>
-<<<<<<< HEAD
     <link rel="stylesheet" href="/-/Public/home/css/base.css">
     <link rel="stylesheet" href="/-/Public/home/css/text.css">
     <link rel="stylesheet" href="/-/Public/home/css/dingdanxiangqing.css">
     <!-- <script type="text/javascript" src="/-/Public/home/js/jquery.js"></script> -->
     <script type="text/javascript" src="/-/Public/home/js/jquery-1.12.4.js"></script>
-=======
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/dingdanxiangqing.css">
-    <!-- <script type="text/javascript" src="/kuaidian/Public/home/js/jquery.js"></script> -->
-    <script type="text/javascript" src="/kuaidian/Public/home/js/jquery-1.12.4.js"></script>
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
 
 
 </head>
@@ -24,11 +16,7 @@
     <div class="header">
         <span>订单详情</span>
     </div>
-<<<<<<< HEAD
     <?php if($is_use == 0): ?><!--  <div class="hao jc">
-=======
-    <?php if($is_use == 0): ?><div class="hao jc">
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
         <div class="dd">
             <div class="dd1">
                 <span>D</span>
@@ -46,23 +34,30 @@
         <div class="an">
             <span>下单后自取小票&nbsp;或&nbsp;向服务员可对订单</span>
         </div>
-<<<<<<< HEAD
     </div> -->
-=======
-    </div>
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
     <?php else: ?>
-    <div class="hao">
+<!--     <div class="hao">
         <div class="dd">
             <div class="dd1">
-<<<<<<< HEAD
                 <span></span>
-=======
-                <span>D</span>
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
             </div>
 
             <div class="shuzi">
+                <span><?php echo ($jc_code); ?></span>
+            </div>
+        </div>
+
+        <div class="jiu">
+            <span>就餐号</span>
+        </div>
+
+        <div class="an">
+            <span>下单后自取小票&nbsp;或&nbsp;向服务员可对订单</span>
+        </div>
+    </div> -->
+       <div class="hao">
+        <div class="dd">
+            <div class="dd1">
                 <span><?php echo ($jc_code); ?></span>
             </div>
         </div>
@@ -181,11 +176,11 @@
                 </div>
 
                 <div class="ju2">
-                    <span>X<?php echo ($info["order_pnum"]); ?></span>
+                    <span>X<?php echo ($seat); ?></span>
                 </div>
 
                 <div class="ju3">
-                    <span>￥<?php echo ($info["order_pnum"]); ?></span>
+                    <span>￥<?php echo ($repast_price); ?></span>
                 </div>
             </div>
         </div>
@@ -217,7 +212,7 @@
     </div>
 
 
-    <div class="zhuohao">
+<!--     <div class="zhuohao">
         <div class="hhao6">
             <div class="ben">
                 <input type="text" placeholder="下单前,请填写座位号" name="seat" id="seat" value="">
@@ -227,6 +222,23 @@
                 <span>选择座位</span>
             </div>
         </div>
+    </div> -->
+    <div class="zhuohao">
+    <div class="hhao6">
+        <div class="xuan">
+            <!-- <span>请选择或填写座位</span> -->
+            <input type="text" placeholder="下单前,请填写座位号" name="seat" id="seat" value="">
+
+        </div>
+
+        <div class="zwh">
+            <span>座位号</span>
+        </div>
+
+        <div class="jian">
+            <img src="/-/Public/home/img/youjiantou.png" alt="">
+        </div>
+    </div>
     </div>
 <?php if($order_status == 20): ?><a id="qu" href="<?php echo U('Home/Index/index');?>">
     <div class="footer">
@@ -295,27 +307,33 @@
             alert('请填写座位号');
             return false;
         }else{
-            $.ajax({
-                type:'post',
-                dataType: 'json',
-                url:'<?php echo U("Home/Order/sub_mit");?>',
-                data:{ store_id:store_id,order_id:order_id,seat:seat },
-                success: function (result) {
-                    if(result.code == 200){
-                        // $('.hao').removeClass('cj').addClass('jc1');
-                        // $('.shuzi span').html(result.data);
-                        // $('#xd').remove();
-                        // $('.foot').removeClass('foot').addClass('qtj').children().eq(0).html('已完成');
-                        // $('#use').html('已使用');
-                        // $('#wenben').remove();
-                        window.location.reload();
- 
-                    }else{
-                        alert(result.msg);
+            var conf1 = confirm("您确定要下单吗");
+            if(conf1 == true){
+                $.ajax({
+                    type:'post',
+                    dataType: 'json',
+                    url:'<?php echo U("Home/Order/sub_mit");?>',
+                    data:{ store_id:store_id,order_id:order_id,seat:seat },
+                    success: function (result) {
+                        if(result.code == 200){
+                            // $('.hao').removeClass('cj').addClass('jc1');
+                            // $('.shuzi span').html(result.data);
+                            // $('#xd').remove();
+                            // $('.foot').removeClass('foot').addClass('qtj').children().eq(0).html('已完成');
+                            // $('#use').html('已使用');
+                            // $('#wenben').remove();
+                            window.location.reload();
+     
+                        }else{
+                            alert(result.msg);
 
+                        }
                     }
-                }
-            })
+                })              
+            }else{
+                return false;
+            }
+
 
         }
     });
@@ -323,6 +341,13 @@
     $('.foot').click(function(){
         alert('点击后再看订单点击右下角我的-全部订单');
         $(location).attr('href', '<?php echo U("Home/Person/index");?>');
+    })
+
+    $("#seat").blur(function(){
+        var seat = $("#seat").val();
+        if(!seat){
+            alert('座位信息请联系服务人员');
+        }
     })
 </script>
 </html>

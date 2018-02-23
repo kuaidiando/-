@@ -632,7 +632,11 @@
                 success: function (result) {
                     var str = "";
                     $.each(result,function(index,item){
+<<<<<<< HEAD
                         str += '<div class="nnei"><div class="neirong"><span class="foodidxiaogouwuc" style="display:none;">'+item.foodid+'</span><div class="neirong2"><div class="mmingzi"><span>'+item.name+'</span></div><div class="left2"><span id="cartN2">￥ <span id="totalpriceshow2">'+item.shou_price+'</span></span></div><div class="btn2"><button class="minus2" style="display:inline-block"><strong><img src="/kuaidian/Public/home/img/jianhao.png" alt=""></strong></button> <i style="display:inline-block">'+item.num+'</i> <button class="add2"><strong><img src="/kuaidian/Public/home/img/jiahao.png" alt=""></strong></button> <i class="price2">18.5</i></div></div></div></div>';
+=======
+                        str += '<div class="nnei"><div class="neirong"><div class="neirong2"><div class="mmingzi"><span>'+item.name+'</span></div><div class="left2"><span id="cartN2">￥ <span id="totalpriceshow2">'+item.shou_price+'</span></span></div><div class="btn2"><button class="minus2" style="display:inline-block"><strong><img src="/-/Public/home/img/jianhao.png" alt=""></strong></button> <i style="display:inline-block">'+item.num+'</i> <button class="add2"><strong><img src="/-/Public/home/img/jiahao.png" alt=""></strong></button> <i class="price2">18.5</i></div></div></div></div>';
+>>>>>>> 88cc6a3eaa83e678a330f9f14e864f217ae03541
                     });
                     $(".ajaxaddgsfood").html(str);
                     // console.log(result);
