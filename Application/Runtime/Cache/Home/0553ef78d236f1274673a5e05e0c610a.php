@@ -4,15 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>我的订单</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="/-/Public/home/css/base.css">
-    <link rel="stylesheet" href="/-/Public/home/css/text.css">
-    <link rel="stylesheet" href="/-/Public/home/css/my%20dingdan.css">
-=======
     <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
     <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
     <link rel="stylesheet" href="/kuaidian/Public/home/css/my%20dingdan.css">
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
 </head>
 <body style="font-size: 12px">
 <div class="tab" js-tab="1">
@@ -60,11 +54,7 @@
 
                                         <div class="hezi2">
                                             <div class="tu">
-<<<<<<< HEAD
-                                                <img src="/-/Public<?php echo ($res["logo"]); ?>" alt="">
-=======
                                                 <img src="/kuaidian/Public<?php echo ($res["logo"]); ?>" alt="">
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                                             </div>
 
                                             <div class="hao">
@@ -103,11 +93,7 @@
                                                 </div>
 
                                                 <div class="jian">
-<<<<<<< HEAD
-                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
-=======
                                                     <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                                                 </div>
 
                                             </div>
@@ -134,11 +120,7 @@
 
                                         <div class="hezi2">
                                             <div class="tu">
-<<<<<<< HEAD
-                                                <img src="/-/Public<?php echo ($resn["logo"]); ?>" alt="">
-=======
                                                 <img src="/kuaidian/Public<?php echo ($resn["logo"]); ?>" alt="">
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                                             </div>
 
                                             <div class="hao">
@@ -168,11 +150,7 @@
                                                 </div>
 
                                                 <div class="jian">
-<<<<<<< HEAD
-                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
-=======
                                                     <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                                                 </div>
                                             </div>
                                             </a>
@@ -198,11 +176,7 @@
 
                                         <div class="hezi2">
                                             <div class="tu">
-<<<<<<< HEAD
-                                                <img src="/-/Public<?php echo ($ress["logo"]); ?>" alt="">
-=======
                                                 <img src="/kuaidian/Public<?php echo ($ress["logo"]); ?>" alt="">
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                                             </div>
 
                                             <div class="hao">
@@ -243,11 +217,7 @@
                                                 </div>
 
                                                 <div class="jian">
-<<<<<<< HEAD
-                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
-=======
                                                     <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                                                 </div>
                                             </div>
                                             <!-- </a> -->
@@ -274,11 +244,7 @@
 
                                         <div class="hezi2">
                                             <div class="tu">
-<<<<<<< HEAD
-                                                <img src="/-/Public<?php echo ($resu["logo"]); ?>" alt="">
-=======
                                                 <img src="/kuaidian/Public<?php echo ($resu["logo"]); ?>" alt="">
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                                             </div>
 
                                             <div class="hao">
@@ -314,11 +280,7 @@
                                                 </div>
 
                                                 <div class="jian">
-<<<<<<< HEAD
-                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
-=======
                                                     <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                                                 </div>
                                             </div>
                                             <!-- </a> -->
@@ -344,11 +306,7 @@
 
                                         <div class="hezi2">
                                             <div class="tu">
-<<<<<<< HEAD
-                                                <img src="/-/Public<?php echo ($resp["logo"]); ?>" alt="">
-=======
                                                 <img src="/kuaidian/Public<?php echo ($resp["logo"]); ?>" alt="">
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                                             </div>
 
                                             <div class="hao">
@@ -381,11 +339,7 @@
                                                 </div>
 
                                                 <div class="jian">
-<<<<<<< HEAD
-                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
-=======
                                                     <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                                                 </div>
                                             </div>
                                             <!-- </a> -->
@@ -410,11 +364,7 @@
 
                                         <div class="hezi2">
                                             <div class="tu">
-<<<<<<< HEAD
-                                                <img src="/-/Public<?php echo ($resx["logo"]); ?>" alt="">
-=======
                                                 <img src="/kuaidian/Public<?php echo ($resx["logo"]); ?>" alt="">
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                                             </div>
 
                                             <div class="hao">
@@ -449,11 +399,7 @@
                                                 </div>
 
                                                 <div class="jian">
-<<<<<<< HEAD
-                                                    <img src="/-/Public/home/img/youjiantou.png" alt="">
-=======
                                                     <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                                                 </div>
                                             </div>
                                             <!-- </a> -->
@@ -464,11 +410,7 @@
                     </div>
 
                 </div>
-<<<<<<< HEAD
-                <script src='/-/Public/home/js/jquery.js'></script>
-=======
                 <script src='/kuaidian/Public/home/js/jquery.js'></script>
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
                 <script>
                     $(document).ready(function() {
 
@@ -501,13 +443,8 @@
 </div>
 
 
-<<<<<<< HEAD
-<script src="/-/Public/home/js/jquery-1.12.4.min.js"></script>
-<script src="/-/Public/home/js/tab.js"></script>
-=======
 <script src="/kuaidian/Public/home/js/jquery-1.12.4.min.js"></script>
 <script src="/kuaidian/Public/home/js/tab.js"></script>
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
 <script>
     $(function () {
 
