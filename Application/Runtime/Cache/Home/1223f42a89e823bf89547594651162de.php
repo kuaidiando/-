@@ -12,6 +12,7 @@
 <body style="font-size: 12px">
 <form action="<?php echo U('Home/Cart/save_cart');?>" id="dateshangjia" style="display: none;" method="post">
     <input type="text" name="shopid" value="<?php echo ($resspdan["0"]["id"]); ?>">
+    <input type="text" name="repast" value="2">
 </form>
 <!--商家-->
 <div class="he">
@@ -314,6 +315,10 @@
                                             //提交表单
                                             // $("#dateshangjia").submit();
                                         }
+                                    });
+                                    //购物车 确定跳转页面
+                                    $(document).on("click","#que",function(){
+                                        $("#dateshangjia").submit();
                                     });
                                     function jss() {
                                     var m = $("#totalpriceshow,#totalpriceshow2").html();

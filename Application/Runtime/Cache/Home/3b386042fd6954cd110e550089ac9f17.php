@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>我的</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="/-/Public/home/css/base.css">
     <link rel="stylesheet" href="/-/Public/home/css/text.css">
     <link rel="stylesheet" href="/-/Public/home/css/person.css">
+=======
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/person.css">
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
 </head>
 <body style="font-size: 12px">
 <div class="header">
@@ -18,15 +24,25 @@
         <div class="person">
             <a href="#">
                 <!-- <img src="images/person.jpg" alt=""> -->
+<<<<<<< HEAD
                 <?php if($user_info["photo"] == 'NULL'): ?><img src="/-/Public/<?php echo ($user_info["photo"]); ?>" alt="">
                 <?php else: ?>
                 <img src="/-/Public/<?php echo ($user_info["photo"]); ?>" alt=""><?php endif; ?>  
+=======
+                <?php if($user_info["photo"] == 'NULL'): ?><img src="/kuaidian/Public/<?php echo ($user_info["photo"]); ?>" alt="">
+                <?php else: ?>
+                <img src="/kuaidian/Public/<?php echo ($user_info["photo"]); ?>" alt=""><?php endif; ?>  
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
             </a>
         </div>
 
         <div class="shezhi">
             <a href="#">
+<<<<<<< HEAD
                 <img src="/-/Public/home/img/shezhi.png" alt="">
+=======
+                <img src="/kuaidian/Public/home/img/shezhi.png" alt="">
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
             </a>
         </div>
     </div>
@@ -85,7 +101,11 @@
 <a href="<?php echo U('Home/Order/order_info');?>"><?php endif; ?>
     <div class="all">
         <div class="tu">
+<<<<<<< HEAD
             <img src="/-/Public/home/img/dinagdan.png" alt="">
+=======
+            <img src="/kuaidian/Public/home/img/dinagdan.png" alt="">
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
         </div>
 
         <div class="quan">
@@ -93,7 +113,11 @@
         </div>
 
         <div class="you">
+<<<<<<< HEAD
                 <img src="/-/Public/home/img/youjiantou.png" alt="">
+=======
+                <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
             <!-- </a> -->
         </div>
     </div>
@@ -105,7 +129,11 @@
     <a href="#"><?php endif; ?>
         <div class="qq">
             <div class="tu2">
+<<<<<<< HEAD
                 <img src="/-/Public/home/img/dianping.png" alt="">
+=======
+                <img src="/kuaidian/Public/home/img/dianping.png" alt="">
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
             </div>
 
             <div class="wo">
@@ -113,7 +141,11 @@
             </div>
 
             <div class="you2">
+<<<<<<< HEAD
                 <img src="/-/Public/home/img/youjiantou.png" alt="">
+=======
+                <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
             </div>
         </div>
     </a>
@@ -122,7 +154,11 @@
     <a href="#"><?php endif; ?>
         <div class="qq2">
             <div class="tu3">
+<<<<<<< HEAD
                 <img src="/-/Public/home/img/xin.png" alt="">
+=======
+                <img src="/kuaidian/Public/home/img/xin.png" alt="">
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
             </div>
 
             <div class="shou">
@@ -130,7 +166,11 @@
             </div>
 
             <div class="you3">
+<<<<<<< HEAD
                 <img src="/-/Public/home/img/youjiantou.png" alt="">
+=======
+                <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
             </div>
         </div>
     </a>
@@ -139,7 +179,11 @@
     <a href="#"><?php endif; ?>
         <div class="qq3">
             <div class="tu4">
+<<<<<<< HEAD
                 <img src="/-/Public/home/img/tui.png" alt="">
+=======
+                <img src="/kuaidian/Public/home/img/tui.png" alt="">
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
             </div>
 
             <div class="tui1">
@@ -148,7 +192,11 @@
             </div>
 
             <div class="you4">
+<<<<<<< HEAD
                 <img src="/-/Public/home/img/youjiantou.png" alt="">
+=======
+                <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
             </div>
         </div>
     </a>
@@ -157,7 +205,11 @@
 <!-- <a href="../商家版/商家移动端后台/index.html"> -->
     <div class="all">
         <div class="tu">
+<<<<<<< HEAD
             <img src="/-/Public/home/img/woshi.png" alt="">
+=======
+            <img src="/kuaidian/Public/home/img/woshi.png" alt="">
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
         </div>
 
         <div class="quan">
@@ -165,7 +217,11 @@
         </div>
 
         <div class="you">
+<<<<<<< HEAD
             <img src="/-/Public/home/img/youjiantou.png" alt="">
+=======
+            <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
         </div>
     </div>
 <!-- </a> -->
@@ -173,7 +229,11 @@
 <?php if($uid > 0): ?><a href="<?php echo U('Home/Person/tc');?>">
     <div class="all" id="tc">
         <div class="tu">
+<<<<<<< HEAD
             <img src="/-/Public/home/img/woshi.png" alt="">
+=======
+            <img src="/kuaidian/Public/home/img/woshi.png" alt="">
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
         </div>
 
         <div class="quan">
@@ -183,11 +243,15 @@
 </a>
 <?php else: endif; ?>
 <!--底部-->
-<div class="foott">
+<!-- <div class="foott">
     <a href="<?php echo U('Home/Index/index');?>">
         <div class="foot">
             <div class="tupian6">
+<<<<<<< HEAD
                 <img src="/-/Public/home/img/shangjia.png" alt="">
+=======
+                <img src="/kuaidian/Public/home/img/shangjia.png" alt="">
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
             </div>
 
             <div class="shouye">
@@ -199,7 +263,11 @@
     <a href="<?php echo U('Home/Order/order_info');?>">
         <div class="foot">
             <div class="tupian6">
+<<<<<<< HEAD
                 <img src="/-/Public/home/img/diangdan.png" alt="">
+=======
+                <img src="/kuaidian/Public/home/img/diangdan.png" alt="">
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
             </div>
 
             <div class="shouye">
@@ -210,7 +278,11 @@
 
     <div class="foot">
         <div class="tupian6">
+<<<<<<< HEAD
             <img src="/-/Public/home/img/geren.png" alt="">
+=======
+            <img src="/kuaidian/Public/home/img/geren.png" alt="">
+>>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
         </div>
 
         <div class="shouye">
@@ -218,6 +290,44 @@
         </div>
     </div>
 
+</div> -->
+<div class="foott">
+    <a href="<?php echo U('Home/Index/index');?>">
+        <div id="foot">
+            <div id="ttu">
+                <img src="/kuaidian/Public/home/img/shangjia.png" alt="">
+            </div>
+
+            <div id="shou">
+                <span>首页</span>
+            </div>
+        </div>
+    </a>
+
+
+    <a href="<?php echo U('Home/Order/order_info');?> ">
+        <div id="foot2">
+            <div id="ttu2">
+                <img src="/kuaidian/Public/home/img/diangdan.png" alt="">
+            </div>
+
+            <div id="shou2">
+                <span>订单</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="<?php echo U('Home/Person/index');?>">
+        <div id="foot3" onclick="location.href='person.html'">
+            <div id="ttu3">
+               <img src="/kuaidian/Public/home/img/geren2.png" alt="">
+            </div>
+
+            <div id="shou3">
+                <span>我的</span>
+            </div>
+        </div>
+    </a>
 </div>
 </body>
 
