@@ -1020,6 +1020,7 @@ INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
 >>>>>>> 5aa5e5e2957138f9a0444237d26184b1aef164c5
 ERR: 无法加载模块:Public
 
+<<<<<<< HEAD
 [ 2018-02-22T17:51:12+08:00 ] 192.168.0.104 /kuaidian/Public/muban/assets/js/jquery.js
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
@@ -1366,5 +1367,35 @@ ERR: 无法加载模块:Public
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+=======
+[ 2018-02-22T17:22:49+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-22T17:23:14+08:00 ] ::1 /-/Public/home/images/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-22T17:23:47+08:00 ] ::1 /-/Public/home/images/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-22T17:26:15+08:00 ] ::1 /-/Public/home/images/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-22T17:36:26+08:00 ] ::1 /-/Public/home/images/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+>>>>>>> a25d49737c964a43893b200fbb135eff78cd438c
 ERR: 无法加载模块:Public
 
