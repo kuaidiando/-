@@ -15,10 +15,12 @@ class LoginController extends Controller {
     {
         $is_cart = I('is_cart');
         $shopid = I('shopid');
+        $seat = I('seat');
         // dump($is_cart);dump($shopid);exit;
         if($is_cart){
             $this->assign('shopid',$shopid);
             $this->assign('is_cart',$is_cart);
+            $this->assign('seat',$seat);
         }
     	$this->display('login');
     }
@@ -30,6 +32,7 @@ class LoginController extends Controller {
         $password = I('password', '');
         $is_cart = I('is_cart',0);
         $shop    = I('shop',0);
+        $seat = I('seat');
         
         if (isset($this->get_data['mobile']) && $this->get_data['mobile']) {
             $mobile = $this->get_data['mobile'];
@@ -80,6 +83,7 @@ class LoginController extends Controller {
         if($is_cart){
             $_SESSION['is_cart'] = $is_cart;
             $_SESSION['store_id'] = $shop;
+            $_SESSION['seat'] = $seat;
 
             $this->ajaxReturn(array('data'=>true,'code'=>300,'shop'=>$shop,'msg'=>"",));
         }

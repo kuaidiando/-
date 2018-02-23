@@ -20,17 +20,25 @@ class CartController extends Controller {
     public function save_cart()
     {
         $info = array();
+        // dump($_POST);exit;
         if(I('shopid')){
             $shop_id = I('shopid');
         }else{
             $shop_id = $_SESSION['store_id'];
         }
         $user_id = \user_helper::get_user_id();
-        // $_SESSION['seat'] = I('');
+        $seat = I('repast');
+        if($seat){
+            $_SESSION['seat'] = $seat;
+        }else{
+            $seat = $_SESSION['seat'];
+        }
+        // dump($_SESSION);exit;
         $info = unserialize(stripslashes($_COOKIE['food_num']));
+        // dump($info);exit;
 
         if(!$user_id){
-            $this->redirect('Home/Login/index?is_cart=1&shopid='.$shop_id);
+            $this->redirect('Home/Login/index?is_cart=1&shopid='.$shop_id.'&seat='.$seat);
         }else{
             $this->user_id = $user_id;
         }
@@ -43,7 +51,8 @@ class CartController extends Controller {
         $cart = M('cart');
         if($info){
             foreach($info as $infok=>$infov){
-                    $filter = array(
+                if($shop_id == $infov['shopid']){
+                     $filter = array(
                         'user_id'  => $user_id,
                         'goods_id' => $infov['foodid'],
                         'status'   => 1,
@@ -71,7 +80,9 @@ class CartController extends Controller {
                           
                             $this->error('index/detail','保存失败请重试');
                         }
-                    }
+                    }    
+                }
+               
 
             }
             // M('linshijj')->where($where)->delete();
@@ -99,12 +110,27 @@ class CartController extends Controller {
             $end_cart_info[$k]['price'] = uri('food',array('id'=>$v['goods_id']),'jiage_youhui');
             $total_price += $v['goods_num'] * uri('food',array('id'=>$v['goods_id']),'jiage_youhui');
         }
+        $seat = $_SESSION['seat'];
+        $repast_price = uri('shop',array('id'=>$store_id),'repast_price');
+        $total_price += $repast_price*$seat;
+        // dump($seat);
+        // dump($repast_price);
+        // dump($total_price);exit;
         $this->assign('total_price',$total_price);
+        $this->assign('repast_price',$repast_price);
         $this->assign('shopid',$store_id);
+        $this->assign('seat',$seat);
         $this->assign('end_cart_info',$end_cart_info);
         $this->assign('shopname',$shopname);
         $this->display('cart/diandanye');
     }
 
-     
+     public function del_cart(){
+        $store_id = I('shopid');
+        $user_id = \user_helper::get_user_id();
+        M('cart')->where(array('store_id'=>$store_id,'user_id'=>$user_id,'status'=>1))->save(array('status'=>0));
+
+        setcookie("food_num",serialize($food_num),time()-10,"/");
+        $this->ajaxReturn(array('data'=>true,'code'=>200,'msg'=>''));
+     }
 }

@@ -81,11 +81,11 @@
             </div>
 
             <div class="liang3">
-                <span>X2</span>
+                <span>X{$seat}</span>
             </div>
 
             <div class="jiage3">
-                <span>￥24</span>
+                <span>￥{$repast_price}</span>
             </div>
         </div>
 
@@ -135,6 +135,7 @@
             <span>￥{$total_price}</span>
             <input type="hidden" name="total_price" value="{$total_price}">
             <input type="hidden" name="store_id" value="{$shopid}"/>
+            <input type="hidden" name="seat" value="{$seat}"/>
         </div>
 
         <div class="tj">

@@ -6,17 +6,10 @@
     <meta content="telephone=yes" name="format-detection" />
     <meta content="email=no" name="format-detection" />
     <title>订单提交</title>
-<<<<<<< HEAD
     <link rel="stylesheet" href="/-/Public/home/css/base.css">
     <link rel="stylesheet" href="/-/Public/home/css/text.css">
     <link rel="stylesheet" href="/-/Public/home/css/dingdan.css">
     <link rel="stylesheet" href="/-/Public/home/css/demo.css">
-=======
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/dingdan.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/demo.css">
->>>>>>> 82915d42581279f07177dc506d383202ff0a965c
 </head>
 <body style="font-size: 12px">
     <div class="header">
@@ -86,11 +79,11 @@
             </div>
 
             <div class="liang3">
-                <span>X2</span>
+                <span>X<?php echo ($seat); ?></span>
             </div>
 
             <div class="jiage3">
-                <span>￥24</span>
+                <span>￥<?php echo ($repast_price); ?></span>
             </div>
         </div>
 
@@ -140,6 +133,7 @@
             <span>￥<?php echo ($total_price); ?></span>
             <input type="hidden" name="total_price" value="<?php echo ($total_price); ?>">
             <input type="hidden" name="store_id" value="<?php echo ($shopid); ?>"/>
+            <input type="hidden" name="seat" value="<?php echo ($seat); ?>"/>
         </div>
 
         <div class="tj">

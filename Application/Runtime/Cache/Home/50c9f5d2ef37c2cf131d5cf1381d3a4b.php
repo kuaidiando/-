@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/login.css">
-    <script type="text/javascript" src="/kuaidian/Public/home/js/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="/-/Public/home/css/base.css">
+    <link rel="stylesheet" href="/-/Public/home/css/text.css">
+    <link rel="stylesheet" href="/-/Public/home/css/login.css">
+    <script type="text/javascript" src="/-/Public/home/js/jquery-1.12.4.js"></script>
 
     <title>登录</title>
 </head>
@@ -22,20 +22,21 @@
 
     <div class="phone">
         <div class="lu">
-            <img src="/kuaidian/Public/home/img/geren2.png" alt="">
+            <img src="/-/Public/home/img/geren2.png" alt="">
         </div>
 
         <div class="text">
             <input id="tel" type="tel" placeholder="请输入您的手机号">
             <input type="hidden" id="is_cart" name="is_cart" value="<?php echo ($is_cart); ?>">
             <input type="hidden" id="shop" name="shop" value="<?php echo ($shopid); ?>">
+            <input type="hidden" id="seat" name="seat" value="<?php echo ($seat); ?>">
             <span id="sp"></span>
         </div>
     </div>
 
     <div class="mima">
         <div class="tu2">
-            <img src="/kuaidian/Public/home/img/mima.png" alt="">
+            <img src="/-/Public/home/img/mima.png" alt="">
         </div>
 
         <div class="text2">
@@ -104,6 +105,7 @@
         var password = $("#mi").val();
         var is_cart = $("#is_cart").val();
         var shop = $("#shop").val();
+        var seat = $("#seat").val();
 
         if(!is_cart || !shop){
             var is_cart=0;
@@ -113,7 +115,7 @@
             type:'post',
             dataType: 'json',
             url:'<?php echo U("Home/Login/save_login");?>',
-            data:{tel:tel,password:password,is_cart:is_cart,shop:shop},
+            data:{tel:tel,password:password,is_cart:is_cart,shop:shop,seat:seat},
             success: function (result) {
                 if(result.code == 200){
                     $(location).attr('href', '<?php echo U("Home/Index/index");?>');

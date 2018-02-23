@@ -172,28 +172,12 @@
                             <div class="center">
                                 <div class="xing">
                                 <!-- 实心星数量 -->
-<<<<<<< HEAD
-                                <?php $__FOR_START_13101__=0;$__FOR_END_13101__=$vores["shixinxing"];for($i=$__FOR_START_13101__;$i < $__FOR_END_13101__;$i+=1){ ?><img src="/-/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
-=======
-<<<<<<< HEAD
-                                <?php $__FOR_START_870023674__=0;$__FOR_END_870023674__=$vores["shixinxing"];for($i=$__FOR_START_870023674__;$i < $__FOR_END_870023674__;$i+=1){ ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
-=======
-                                <?php $__FOR_START_29071__=0;$__FOR_END_29071__=$vores["shixinxing"];for($i=$__FOR_START_29071__;$i < $__FOR_END_29071__;$i+=1){ ?><img src="/-/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
->>>>>>> a25d49737c964a43893b200fbb135eff78cd438c
->>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
+                                <?php $__FOR_START_20588__=0;$__FOR_END_20588__=$vores["shixinxing"];for($i=$__FOR_START_20588__;$i < $__FOR_END_20588__;$i+=1){ ?><img src="/-/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
                                 <!-- 判断半个 星星 -->
                         <?php if($vores["bangexing"] == 1): ?><img src="/-/Public/home/img/ban.png" style="width:13%;" alt="">
                         <?php else: endif; ?>
                                 <!-- 空心星数量 -->
-<<<<<<< HEAD
-                                <?php $__FOR_START_12386__=0;$__FOR_END_12386__=$vores["kongxinxing"];for($i=$__FOR_START_12386__;$i < $__FOR_END_12386__;$i+=1){ ?><img src="/-/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
-=======
-<<<<<<< HEAD
-                                <?php $__FOR_START_1728497355__=0;$__FOR_END_1728497355__=$vores["kongxinxing"];for($i=$__FOR_START_1728497355__;$i < $__FOR_END_1728497355__;$i+=1){ ?><img src="/kuaidian/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
-=======
-                                <?php $__FOR_START_7196__=0;$__FOR_END_7196__=$vores["kongxinxing"];for($i=$__FOR_START_7196__;$i < $__FOR_END_7196__;$i+=1){ ?><img src="/-/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
->>>>>>> a25d49737c964a43893b200fbb135eff78cd438c
->>>>>>> cf134468f9e5c31500bad47e3eea2f237b76ec1f
+                                <?php $__FOR_START_22069__=0;$__FOR_END_22069__=$vores["kongxinxing"];for($i=$__FOR_START_22069__;$i < $__FOR_END_22069__;$i+=1){ ?><img src="/-/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
                                     
                                 </div>
 
@@ -293,15 +277,9 @@
     <!--底部-->
 <div class="foott">
     <a href="<?php echo U('Home/Index/index');?>">
-<<<<<<< HEAD
         <div id="foot">
             <div id="ttu">
-                <img src="/kuaidian/Public/home/img/shangjia2.png" alt="">
-=======
-        <div class="foot">
-            <div class="ttu">
-                <img src="/-/Public/home/img/shangjia.png" alt="">
->>>>>>> a25d49737c964a43893b200fbb135eff78cd438c
+                <img src="/-/Public/home/img/shangjia2.png" alt="">
             </div>
 
             <div id="shou">
@@ -309,20 +287,12 @@
             </div>
         </div>
     </a>
-<<<<<<< HEAD
-=======
-        <a href="<?php echo U('Home/Order/order_info');?> ">
-            <div class="foot">
-                <div class="ttu">
-                    <img src="/-/Public/home/img/diangdan.png" alt="">
-                </div>
->>>>>>> a25d49737c964a43893b200fbb135eff78cd438c
 
 
     <a href="<?php echo U('Home/Order/order_info');?> ">
         <div id="foot2">
             <div id="ttu2">
-                <img src="/kuaidian/Public/home/img/diangdan.png" alt="">
+                <img src="/-/Public/home/img/diangdan.png" alt="">
             </div>
 
             <div id="shou2">
@@ -332,15 +302,9 @@
     </a>
 
     <a href="<?php echo U('Home/Person/index');?>">
-<<<<<<< HEAD
         <div id="foot3" onclick="location.href='person.html'">
             <div id="ttu3">
-               <img src="/kuaidian/Public/home/img/geren.png" alt="">
-=======
-        <div class="foot">
-            <div class="ttu">
-                <img src="/-/Public/home/img/geren.png" alt="">
->>>>>>> a25d49737c964a43893b200fbb135eff78cd438c
+               <img src="/-/Public/home/img/geren.png" alt="">
             </div>
 
             <div id="shou3">

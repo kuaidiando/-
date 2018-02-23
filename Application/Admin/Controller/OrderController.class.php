@@ -66,6 +66,7 @@ class OrderController extends BasicController {
         $one_info['shop_name'] = uri('shop',array('id'=>$one_info['store_id']),'mingch');
         $one_info['lj'] = $one_info['total_price'] * 0.03;
         $one_info['sf'] = $one_info['total_price'] - $one_info['lj'];
+        $one_info['table_seat'] = uri('order_jc',array('order_id'=>$order_id),'seat');
 
         $user_info = M('user')->where(array('id'=>$one_info['user_id']))->find();
         $goods_xq = M('order_fu')->where(array('order_id'=>$order_id))->select();

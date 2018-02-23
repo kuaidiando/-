@@ -37,13 +37,28 @@
         </div>
     </div> -->
     <else />
-    <div class="hao">
+<!--     <div class="hao">
         <div class="dd">
             <div class="dd1">
                 <span></span>
             </div>
 
             <div class="shuzi">
+                <span>{$jc_code}</span>
+            </div>
+        </div>
+
+        <div class="jiu">
+            <span>就餐号</span>
+        </div>
+
+        <div class="an">
+            <span>下单后自取小票&nbsp;或&nbsp;向服务员可对订单</span>
+        </div>
+    </div> -->
+       <div class="hao">
+        <div class="dd">
+            <div class="dd1">
                 <span>{$jc_code}</span>
             </div>
         </div>
@@ -173,11 +188,11 @@
                 </div>
 
                 <div class="ju2">
-                    <span>X{$info.order_pnum}</span>
+                    <span>X{$seat}</span>
                 </div>
 
                 <div class="ju3">
-                    <span>￥{$info.order_pnum}</span>
+                    <span>￥{$repast_price}</span>
                 </div>
             </div>
         </div>
@@ -209,7 +224,7 @@
     </div>
 
 
-    <div class="zhuohao">
+<!--     <div class="zhuohao">
         <div class="hhao6">
             <div class="ben">
                 <input type="text" placeholder="下单前,请填写座位号" name="seat" id="seat" value="">
@@ -219,6 +234,23 @@
                 <span>选择座位</span>
             </div>
         </div>
+    </div> -->
+    <div class="zhuohao">
+    <div class="hhao6">
+        <div class="xuan">
+            <!-- <span>请选择或填写座位</span> -->
+            <input type="text" placeholder="下单前,请填写座位号" name="seat" id="seat" value="">
+
+        </div>
+
+        <div class="zwh">
+            <span>座位号</span>
+        </div>
+
+        <div class="jian">
+            <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
+        </div>
+    </div>
     </div>
 <if condition="$order_status eq 20">
 <a id="qu" href="{:U('Home/Index/index')}">
@@ -289,7 +321,7 @@
             alert('请填写座位号');
             return false;
         }else{
-            var conf1 = confirm("您确定要取消吗?取消后购买金额将转入您的余额");
+            var conf1 = confirm("您确定要下单吗");
             if(conf1 == true){
                 $.ajax({
                     type:'post',
@@ -323,6 +355,13 @@
     $('.foot').click(function(){
         alert('点击后再看订单点击右下角我的-全部订单');
         $(location).attr('href', '{:U("Home/Person/index")}');
+    })
+
+    $("#seat").blur(function(){
+        var seat = $("#seat").val();
+        if(!seat){
+            alert('座位信息请联系服务人员');
+        }
     })
 </script>
 </html>
