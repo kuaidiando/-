@@ -12,7 +12,7 @@
 <body style="font-size: 12px">
 <form action="<?php echo U('Home/Cart/save_cart');?>" id="dateshangjia" style="display: none;" method="post">
     <input type="text" name="shopid" value="<?php echo ($resspdan["0"]["id"]); ?>">
-    <input type="text" name="repast" id="repasttiaozhuan" value="2">
+    <input type="text" name="repast" id="repasttiaozhuan" value="">
 </form>
 <!--商家-->
 <div class="he">
@@ -186,11 +186,7 @@
                     <a id="btnselect" class="xhlbtn " href="javascript:void(0)">下一步</a>
                 </div>
             </div><?php endif; ?>
-<<<<<<< HEAD
-            <script type="text/javascript" src="/kuaidian/Public/home/js/jquery.js"></script>
-=======
-            <script type="text/javascript" src="/-/Public/home/js/jquery.min.js"></script>
->>>>>>> 7b782118b443a4b2dfc734d4dd0e527c84756052
+            <script type="text/javascript" src="/-/Public/home/js/jquery.js"></script>
             <script type="text/javascript">
                 $(function () {
                     //小购物车加功能
@@ -649,11 +645,7 @@
                 success: function (result) {
                     var str = "";
                     $.each(result,function(index,item){
-<<<<<<< HEAD
-                        str += '<div class="nnei"><div class="neirong"><span class="foodidxiaogouwuc" style="display:none;">'+item.foodid+'</span><div class="neirong2"><div class="mmingzi"><span>'+item.name+'</span></div><div class="left2"><span id="cartN2">￥ <span id="totalpriceshow2">'+item.shou_price+'</span></span></div><div class="btn2"><button class="minus2" style="display:inline-block"><strong><img src="/kuaidian/Public/home/img/jianhao.png" alt=""></strong></button> <i style="display:inline-block">'+item.num+'</i> <button class="add2"><strong><img src="/kuaidian/Public/home/img/jiahao.png" alt=""></strong></button> <i class="price2">18.5</i></div></div></div></div>';
-=======
                         str += '<div class="nnei"><div class="neirong"><span class="foodidxiaogouwuc" style="display:none;">'+item.foodid+'</span><div class="neirong2"><div class="mmingzi"><span>'+item.name+'</span></div><div class="left2"><span id="cartN2">￥ <span id="totalpriceshow2">'+item.shou_price+'</span></span></div><div class="btn2"><button class="minus2" style="display:inline-block"><strong><img src="/-/Public/home/img/jianhao.png" alt=""></strong></button> <i style="display:inline-block">'+item.num+'</i> <button class="add2"><strong><img src="/-/Public/home/img/jiahao.png" alt=""></strong></button> <i class="price2">18.5</i></div></div></div></div>';
->>>>>>> 7b782118b443a4b2dfc734d4dd0e527c84756052
                     });
                     $(".ajaxaddgsfood").html(str);
                     // console.log(result);
