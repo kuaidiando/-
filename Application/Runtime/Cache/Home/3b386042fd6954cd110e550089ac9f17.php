@@ -154,7 +154,7 @@
     </a>
 </div>
 
-<!-- <a href="../商家版/商家移动端后台/index.html"> -->
+<a href="<?php echo U('Merch/Login/index');?>">
     <div class="all">
         <div class="tu">
             <img src="/-/Public/home/img/woshi.png" alt="">
@@ -168,7 +168,7 @@
             <img src="/-/Public/home/img/youjiantou.png" alt="">
         </div>
     </div>
-<!-- </a> -->
+</a>
 <!-- 退出 -->
 <?php if($uid > 0): ?><a href="<?php echo U('Home/Person/tc');?>">
     <div class="all" id="tc">

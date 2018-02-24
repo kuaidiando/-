@@ -128,6 +128,21 @@
     font-weight: bolder;
     color: white;
 }
+.rza{
+    width:14%;
+    height: 48px;
+    margin-left: 43%;
+    background-color: red;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 7.2px;
+    margin-top: 12px;
+}
+.rza span{
+    font-size: 33.6px;
+    font-weight: bolder;
+    color: white;
+}
 
 
 
@@ -495,33 +510,15 @@
     float: left;
 }
 .ftu{
-    width: 57%;
+    width: 100%;
     height: 70px;
     line-height: 70px;
-    text-align: right;
-    float: left;
+    text-align: center;
 }
 .ftu img{
     width: 65px;
     height: 65px;
     vertical-align: middle;
-}
-.quan{
-    width:43%;
-    height: 70px;
-    float: left;
-}
-.nm{
-    width: 35px;
-    height: 35px;
-    background-color: red;
-    border-radius: 50%;
-    line-height: 33px;
-    text-align: center;
-}
-.nm span{
-    color: #fff;
-    font-size: 28px;
 }
 .dd{
     width: 100%;
@@ -532,32 +529,5 @@
 .dd span{
     font-size: 25px;
     color: #888888;
-}
-
-.foot2{
-    width: 50%;
-    height: 110px;
-    float: left;
-}
-.ftu2{
-    width: 100%;
-    height: 70px;
-    line-height: 70px;
-    text-align: center;
-}
-.ftu2 img{
-    width: 65px;
-    height: 65px;
-    vertical-align: middle;
-}
-.dd2{
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-}
-.dd2 span{
-    font-size: 25px;
-    color: #097f7e;
 }
 

@@ -257,21 +257,31 @@
     </div>
 
     <div class="footer">
+    <a href="{:U('Merch/Order/index')}">
+
         <div class="foot">
+
+        <audio id="mp3" src="__PUBLIC__/aut/8868.wav"> </audio>
             <div class="ftu">
                 <img src="__PUBLIC__/merch/images/diangdan.png" alt="">
             </div>
+            <div class="quan">
+                <div class="nm">
+                    <span class="remind">6</span>
+                </div>
+            </div>
+
             <div class="dd">
                 <span>门店订单</span>
             </div>
         </div>
+    </a>
 
-
-        <div class="foot">
-            <div class="ftu">
-                <img src="__PUBLIC__/merch/images/geren.png" alt="">
+        <div class="foot2">
+            <div class="ftu2">
+                <img src="__PUBLIC__/merch/images/dian.png" alt="">
             </div>
-            <div class="dd">
+            <div class="dd2">
                 <span>我的门店</span>
             </div>
         </div>
@@ -304,5 +314,45 @@
                 }
             }
         });
+    </script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        // var remind = 1;
+        // var mp3 = $("#mp3")[0];
+        // var play= 0;
+       
+        // if(sessionStorage.num){
+        //     $(".remind").text(sessionStorage.num);
+        // }
+
+        // $.ajax({
+        //     url:"/sendOrderNotice",
+        //     success:function (data) {
+        //         sessionStorage.num = data;
+        //         $(".remind").text(data);
+        //         remind = data;play=data;
+        //         remind<=0?$(".remind").hide():$(".remind").show();
+
+        //     }
+        // })
+
+
+        // setInterval(function () {
+        //     $.ajax({
+        //         url:"/sendOrderNotice",
+        //         success:function (data) {
+        //             remind = data;
+        //             sessionStorage.num = data;
+        //             if(play==remind){
+        //                 remind<=0?$(".remind").hide():$(".remind").show()
+        //             }else{
+        //                 $(".remind").show().text(remind);
+        //                 mp3.play();
+        //                 play=remind;
+        //             }
+        //         }
+        //     })
+        // },10000)      
+
     </script>
 </html>

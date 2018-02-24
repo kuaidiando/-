@@ -247,3 +247,99 @@
     width: 28.8px;
     vertical-align: middle;
 }
+.foott{
+    width: 100%;
+    height:110px;
+    border-top: 1.2px solid #DEDEDE;
+    background-color: #F7F6FB;
+    float: left;
+    position: fixed;
+    bottom:0px;
+    left:0;
+    right:0;
+}
+#foot{
+    width: 33.33%;
+    height: 110px;
+    float: left;
+}
+#ttu{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+#ttu img{
+    width: 65px;
+    height: 65px;
+    margin-top: 5px;
+}
+#shou{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+#shou span{
+    font-size: 25px;
+    color: #98999E;
+}
+
+
+
+#foot2{
+    width: 33.33%;
+    height: 110px;
+    float: left;
+}
+#ttu2{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+#ttu2 img{
+    width: 65px;
+    height: 65px;
+    margin-top: 5px;
+}
+#shou2{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+#shou2 span{
+    font-size: 25px;
+    color: #ffae00;
+}
+
+
+
+
+#foot3{
+    width: 33.33%;
+    height: 110px;
+    float: left;
+}
+#ttu3{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+#ttu3 img{
+    width: 65px;
+    height: 65px;
+    margin-top: 5px;
+}
+#shou3{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+#shou3 span{
+    font-size: 25px;
+    color: #98999E;
+}

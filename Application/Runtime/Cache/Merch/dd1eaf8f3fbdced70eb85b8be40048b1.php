@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>商家首页</title>
-    <link rel="stylesheet" href="/kuaidian/Public/merch/css/index.css">
-    <link rel="stylesheet" href="/kuaidian/Public/merch/css/text.css">
-    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
-    <script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="/-/Public/merch/css/index.css">
+    <link rel="stylesheet" href="/-/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/-/Public/merch/css/base.css">
+    <script type="text/javascript" src="/-/Public/jquery/jquery.js"></script>
 </head>
 <body style="font-size: 12px">
     <div class="header">
@@ -15,7 +15,7 @@
 
             <div class="zuo">
                 <div class="tu">
-                    <img src="/kuaidian/Public/merch/images/qiehuan.png" alt="">
+                    <img src="/-/Public/merch/images/qiehuan.png" alt="">
                 </div>
 
                 <div class="qie">
@@ -26,7 +26,7 @@
             <a href="register.html">
                 <div class="zhong">
                     <div class="tu2">
-                        <img src="/kuaidian/Public/<?php echo ($res[0][logo]); ?>" alt="">
+                        <img src="/-/Public/<?php echo ($res[0][logo]); ?>" alt="">
                     </div>
                 </div>
             </a>
@@ -34,7 +34,7 @@
             <a href="<?php echo U('Merch/Shopset/index',array('shopid'=>$res[0][id]));?>">
                 <div class="you">
                     <div class="tu3">
-                        <img src="/kuaidian/Public/merch/images/shezhi.png" alt="">
+                        <img src="/-/Public/merch/images/shezhi.png" alt="">
                     </div>
 
                     <div class="er">
@@ -93,7 +93,7 @@
         <a href="<?php echo U('Merch/Shopset/renzhengxx',array('shopid'=>$res[0][id]));?>">
             <div class="renz">
                 <div class="rentu">
-                    <img src="/kuaidian/Public/merch/images/renzheng.png" alt="">
+                    <img src="/-/Public/merch/images/renzheng.png" alt="">
                 </div>
 
                 <div class="ziti">
@@ -105,7 +105,7 @@
                 </div>
 
                 <div class="jian">
-                    <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+                    <img src="/-/Public/merch/images/youjiantou.png" alt="">
                 </div>
             </div>
         </a>
@@ -113,7 +113,7 @@
         <a href="tixian.html">
             <div class="qian">
                 <div class="qiantu">
-                    <img src="/kuaidian/Public/merch/images/caiwu.png" alt="">
+                    <img src="/-/Public/merch/images/caiwu.png" alt="">
                 </div>
 
                 <div class="ke">
@@ -125,7 +125,7 @@
                 </div>
 
                 <div class="jian">
-                    <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+                    <img src="/-/Public/merch/images/youjiantou.png" alt="">
                 </div>
             </div>
         </a>
@@ -149,7 +149,7 @@
             <div class="she">
                 <div class="sshe">
                     <div class="shetu">
-                        <img src="/kuaidian/Public/merch/images/shangpin.png" alt="">
+                        <img src="/-/Public/merch/images/shangpin.png" alt="">
                     </div>
 
                     <div class="wenzi">
@@ -166,7 +166,7 @@
             <div class="she2">
                <div class="sshe">
                    <div class="shetu2">
-                       <img src="/kuaidian/Public/merch/images/zuowei.png" alt="">
+                       <img src="/-/Public/merch/images/zuowei.png" alt="">
                    </div>
 
                    <div class="wenzi2">
@@ -179,7 +179,7 @@
             <div class="she3">
                 <div class="sshe">
                     <div class="shetu3">
-                        <img src="/kuaidian/Public/merch/images/yuangong.png" alt="">
+                        <img src="/-/Public/merch/images/yuangong.png" alt="">
                     </div>
 
                     <div class="wenzi3">
@@ -191,7 +191,7 @@
             <div class="she3">
                 <div class="sshe">
                     <div class="shetu3">
-                        <img src="/kuaidian/Public/merch/images/fentang.png" alt="">
+                        <img src="/-/Public/merch/images/fentang.png" alt="">
                     </div>
 
                     <div class="wenzi3">
@@ -205,7 +205,7 @@
             <div class="she">
                 <div class="sshe">
                     <div class="shetu">
-                        <img src="/kuaidian/Public/merch/images/yonghu.png" alt="">
+                        <img src="/-/Public/merch/images/yonghu.png" alt="">
                     </div>
 
                     <div class="wenzi">
@@ -218,7 +218,7 @@
             <div class="she2">
                 <div class="sshe">
                     <div class="shetu2">
-                        <img src="/kuaidian/Public/merch/images/yingxiao.png" alt="">
+                        <img src="/-/Public/merch/images/yingxiao.png" alt="">
                     </div>
 
                     <div class="wenzi2">
@@ -231,7 +231,7 @@
             <div class="she3">
                 <div class="sshe">
                     <div class="shetu3">
-                        <img src="/kuaidian/Public/merch/images/xitong.png" alt="">
+                        <img src="/-/Public/merch/images/xitong.png" alt="">
                     </div>
 
                     <div class="wenzi3">
@@ -243,7 +243,7 @@
             <div class="she3">
                 <div class="sshe">
                     <div class="shetu3">
-                        <img src="/kuaidian/Public/merch/images/sheng.png" alt="">
+                        <img src="/-/Public/merch/images/sheng.png" alt="">
                     </div>
 
                     <div class="wenzi3">
@@ -255,21 +255,31 @@
     </div>
 
     <div class="footer">
+    <a href="<?php echo U('Merch/Order/index');?>">
+
         <div class="foot">
+
+        <audio id="mp3" src="/-/Public/aut/8868.wav"> </audio>
             <div class="ftu">
-                <img src="/kuaidian/Public/merch/images/diangdan.png" alt="">
+                <img src="/-/Public/merch/images/diangdan.png" alt="">
             </div>
+            <div class="quan">
+                <div class="nm">
+                    <span class="remind">6</span>
+                </div>
+            </div>
+
             <div class="dd">
                 <span>门店订单</span>
             </div>
         </div>
+    </a>
 
-
-        <div class="foot">
-            <div class="ftu">
-                <img src="/kuaidian/Public/merch/images/geren.png" alt="">
+        <div class="foot2">
+            <div class="ftu2">
+                <img src="/-/Public/merch/images/dian.png" alt="">
             </div>
-            <div class="dd">
+            <div class="dd2">
                 <span>我的门店</span>
             </div>
         </div>
@@ -302,5 +312,45 @@
                 }
             }
         });
+    </script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        // var remind = 1;
+        // var mp3 = $("#mp3")[0];
+        // var play= 0;
+       
+        // if(sessionStorage.num){
+        //     $(".remind").text(sessionStorage.num);
+        // }
+
+        // $.ajax({
+        //     url:"/sendOrderNotice",
+        //     success:function (data) {
+        //         sessionStorage.num = data;
+        //         $(".remind").text(data);
+        //         remind = data;play=data;
+        //         remind<=0?$(".remind").hide():$(".remind").show();
+
+        //     }
+        // })
+
+
+        // setInterval(function () {
+        //     $.ajax({
+        //         url:"/sendOrderNotice",
+        //         success:function (data) {
+        //             remind = data;
+        //             sessionStorage.num = data;
+        //             if(play==remind){
+        //                 remind<=0?$(".remind").hide():$(".remind").show()
+        //             }else{
+        //                 $(".remind").show().text(remind);
+        //                 mp3.play();
+        //                 play=remind;
+        //             }
+        //         }
+        //     })
+        // },10000)      
+
     </script>
 </html>
