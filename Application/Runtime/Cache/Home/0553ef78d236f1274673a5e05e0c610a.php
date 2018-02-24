@@ -475,6 +475,43 @@
 
     });
 </script>
+<div class="foott">
+    <a href="<?php echo U('Home/Index/index');?>">
 
+    <div id="foot">
+        <div id="ttu">
+            <img src="/-/Public/home/img/shangjia.png" alt="">
+        </div>
+
+        <div id="shou">
+            <span>首页</span>
+        </div>
+    </div>
+    </a>
+    <div id="foot2" >
+    <a href="<?php echo U('Home/Order/order_info');?> ">
+
+        <div id="ttu2">
+            <img src="/-/Public/home/img/dingdan2.png" alt="">
+        </div>
+
+        <div id="shou2">
+            <span>订单</span>
+        </div>
+    </div>
+    </a>
+    <div id="foot3" >
+    <a href="<?php echo U('Home/Person/index');?>">
+
+        <div id="ttu3">
+            <img src="/-/Public/home/img/geren.png" alt="">
+        </div>
+
+        <div id="shou3">
+            <span>我的</span>
+        </div>
+    </a>
+    </div>
+</div>
 </body>
 </html>
