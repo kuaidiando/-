@@ -706,7 +706,7 @@
 
 
 .qqian{
-    width: 30%;
+    width: 50%;
     height: 60px;
     line-height: 78px;
     float: left;
@@ -732,7 +732,7 @@
     width: 19%;
     height: 60px;
     float: left;
-    line-height: 85px;
+    line-height: 98px;
 }
 .yuanjia del{
     font-size: 30px;
@@ -1271,4 +1271,16 @@
 #que span{
     font-size: 43.2px;
     font-weight: bolder;
+}
+
+
+
+
+#totalpriceshow{
+    color: #ffae00;
+    font-weight: block;
+}
+#cartN{
+    color: #ffae00;
+    font-weight: block;
 }

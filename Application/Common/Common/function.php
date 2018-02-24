@@ -198,6 +198,13 @@ function kouweido($code){
     }
     return $data;
 }
+function fooddwzhuanhuan($code){
+  $user = M('cpdanwei');
+    $where['id'] = $code;
+    $res = $user->where($where)->select();
+
+    return $res[0]['mingch'];
+}
 //优惠卷数量
 function youhuishul($code){
     $user = M('sale');

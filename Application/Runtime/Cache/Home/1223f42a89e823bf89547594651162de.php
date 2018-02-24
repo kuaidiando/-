@@ -105,7 +105,7 @@
                                     <div class="qqian">
                                         <span>
                                         <span class="caiprice"><?php echo ($vofoodxq["shoujia"]); ?></span>
-                                        <span style="margin-left:2%;font-size: 50%;color: #888 ;font-weight:300;">/份</span>
+                                        <span style="margin-left:2%;font-size: 50%;color: #888 ;font-weight:300;">/<?php echo (fooddwzhuanhuan($vofoodxq["dwid"])); ?></span>
                                                             &nbsp;&nbsp;
                                         </span>
                                     </div>
@@ -114,7 +114,9 @@
                                 </div>
                                  -->
                                 <div class="yuanjia">
-                                    <del>￥<?php echo ($vofoodxq["yuanjia"]); ?></del>
+                                    <?php if($vofoodxq[yuanjia] > 0): ?><del>￥<?php echo ($vofoodxq["yuanjia"]); ?></del>
+                                    <?php else: ?>
+                                        <!-- <del>￥<?php echo ($vofoodxq["yuanjia"]); ?></del> --><?php endif; ?>
                                 </div>
                             </div>
                             <div class="btn">
@@ -155,14 +157,14 @@
             <?php if($zfsjg['zfshu'] == 0): ?><div class="footer">
                 <div class="gou" onclick="toshare()">
                     <img src="/kuaidian/Public/home/img/gouwuche.png" alt="">
-                    <div class="ii">
+                    <div class="ii" style="display: none;">
                         <span id="totalcountshow">0</span>
                     </div>
                 </div>
                 <div class="left">
-                    <span id="cartN">
+                    <span id="cartN" style="color: #fff;">
                                             ￥
-                    <span id="totalpriceshow">0.00</span>
+                    <span id="totalpriceshow" style="color: #fff;">0.00</span>
                     </span>
                 </div>
                 <div class="right" onclick="toshare2()">
@@ -172,7 +174,7 @@
             <?php else: ?>
             <div class="footer">
                 <div class="gou" onclick="toshare()">
-                    <img src="/kuaidian/Public/home/img/gouwuche.png" alt="">
+                    <img src="/kuaidian/Public/home/img/gouwuche2.png" alt="">
                     <div class="ii">
                         <span id="totalcountshow"><?php echo ($zfsjg['zfshu']); ?></span>
                     </div>
@@ -187,223 +189,8 @@
                     <a id="btnselect" class="xhlbtn " href="javascript:void(0)">下一步</a>
                 </div>
             </div><?php endif; ?>
-<<<<<<< HEAD
-            <script type="text/javascript" src="/kuaidian/Public/home/js/jquery.js"></script>
-=======
-            <script type="text/javascript" src="/-/Public/home/js/jquery.js"></script>
->>>>>>> 0bbfd306213111d78c7acdede20a603183f4684d
-            <script type="text/javascript">
-                $(function () {
-                    //小购物车加功能
-                    $(document).on("click",".add2",function(){
-                        //页面样式
-                        $(this).prevAll().css("display", "inline-block");
-                        var n = $(this).prev().text();
-                        var num = parseInt(n) + 1;
-                        if (num == 0) { return; }
-                        $(this).prev().text(num);
-                        jss();//<span style='font-family: Arial, Helvetica, sans-serif;'></span>   改变按钮样式
-                        //触发主页面菜品的加减
-                        //获取小购物车菜品id
-                        var foodid_xiaogwc = $(this).parent().parent().parent().find(".foodidxiaogouwuc").html();
-                        $.each($(".caipinid"),function(){
-                            //主页面菜品id
-                            var foodid_zhuyemcp = $(this).html();//主页面菜品id
-                            // 判断主页面菜品id = 购物车菜品id
-                            if (foodid_xiaogwc == foodid_zhuyemcp) {
-                                $(this).parent().find(".add").click();//改变主页面菜品份数
-                            }
-                        })
-                    });
-                    //小购物车 减的功能
-                    $(document).on("click",".minus2",function(){
-                        var n = $(this).next().text();
-                        var num = parseInt(n) - 1;
-                        $(this).next().text(num);//减1
-                        //如果数量小于或等于0则隐藏减号和数量
-                        if (num <= 0) {
-                            //删除本行
-                            $(this).parents(".nnei").remove();
-                        }
-                        //触发主页面菜品的加减
-                        //获取小购物车菜品id
-                        var foodid_xiaogwc = $(this).parent().parent().parent().find(".foodidxiaogouwuc").html();
-                        $.each($(".caipinid"),function(){
-                            //主页面菜品id
-                            var foodid_zhuyemcp = $(this).html();//主页面菜品id
-                            // 判断主页面菜品id = 购物车菜品id
-                            if (foodid_xiaogwc == foodid_zhuyemcp) {
-                                $(this).parent().find(".minus").click();//改变主页面菜品份数
-                            }
-                        })
-                    });
-                    //加的效果
-                    // yxy 优化
-                    $(document).on("click",".add",function(){
-                        $(this).prevAll().css("display", "inline-block");
-                        var n = $(this).prev().text();
-                        var num = parseInt(n) + 1;
-                        if (num == 0) { return; }
-                        $(this).prev().text(num);
-                        var danjia = $(this).next().text();//获取单价
-                        var a = $("#totalpriceshow").html();//获取当前所选总价
-                        $("#totalpriceshow").html((a * 1 + danjia * 1).toFixed(2));//计算当前所选总价
-                        var nm = $("#totalcountshow").html();//获取数量
-                        // alert(nm);
-                        $("#totalcountshow").html(nm*1+1);
-                        jss();//<span style='font-family: Arial, Helvetica, sans-serif;'></span>   改变按钮样式
-                        /**
-                         *  yxy改变数据库-增加
-                         */
-                        // 获取门店id -shopid
-                        var shopid = $("#shopid").html();
-                        // 获取菜品类型id
-                        var foodtypeid = $(this).parent().parent().find('.caipinleix').html();
-                        // 获取菜品id
-                        var caipinid = $(this).parent().parent().find('.caipinid').html();
-                        // 获取菜品份数
-                        var caipinfenshu = $(this).parent().find(".caipinfenshu").html();
-                        // 获取菜品名称
-                        var caipname = $(this).parents(".menu-txt").find(".biao").find("span").html();
-                        // 获取菜品价格
-                        var caiprice = $(this).parents(".menu-txt").find(".caiprice").html();
-                        // alert(caiprice);return;
-                        //ajax更改cookie
-                        //判断 份数是不是 1
-                        if (caipinfenshu == 1) {
-                            //执行添加
-                             $.ajax({
-                                type:'POST',
-                                dataType: 'json',
-                                async:false,
-                                url:'<?php echo U("Home/Index/ajaxaddlinshijj");?>',
-                                data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu,"caipname":caipname,"caiprice":caiprice},
-                                success: function (result) {
-                                    // if (result == 2) {
-                                    //     alert("操作失败");
-                                    // }
-                                }
-                            })
-                        }else{
-                            // 执行修改
-                             $.ajax({
-                                type:'POST',
-                                dataType: 'json',
-                                async:false,
-                                url:'<?php echo U("Home/Index/ajaxeditfoodshuliang");?>',
-                                data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu,"caipname":caipname,"caiprice":caiprice},
-                                success: function (result) {
-                                    // if (result == 2) {
-                                    //     alert("操作失败");
-                                    // }
-                                }
-                            })
-                        }
-                    });
-                    //减的效果 yxy 优化
-                    $(document).on("click",".minus",function(){
-                        var n = $(this).next().text();
-                        var num = parseInt(n) - 1;
-                        $(this).next().text(num);//减1
-                        var danjia = $(this).nextAll(".price").text();//获取单价
-                        var a = $("#totalpriceshow").html();//获取当前所选总价
-                        $("#totalpriceshow").html((a * 1 - danjia * 1).toFixed(2));//计算当前所选总价
-                        var nm = $("#totalcountshow").html();//获取数量
-                        $("#totalcountshow").html(nm * 1 - 1);
-                        //如果数量小于或等于0则隐藏减号和数量
-                        if (num <= 0) {
-                            $(this).next().css("display", "none");
-                            $(this).css("display", "none");
-                            jss();//改变按钮样式
-                            // return
-                        }
-                        /**
-                         *  yxy改变数据库-减号
-                         */
-                        // 获取门店id -shopid
-                        var shopid = $("#shopid").html();
-                        // 获取菜品类型id
-                        var foodtypeid = $(this).parent().parent().find('.caipinleix').html();
-                        // 获取菜品id
-                        var caipinid = $(this).parent().parent().find('.caipinid').html();
-                        // 获取菜品份数
-                        var caipinfenshu = $(this).parent().find(".caipinfenshu").html();
-                         // 获取菜品名称
-                        var caipname = $(this).parents(".menu-txt").find(".biao").find("span").html();
-                        // 获取菜品价格
-                        var caiprice = $(this).parents(".menu-txt").find(".caiprice").html();
-                        // alert(caipinfenshu);
-                        //ajax更改 COOkie 
-                        //判断 份数 是否是0
-                        if (caipinfenshu == 0) {
-                            //执行删除
-                            $.ajax({
-                                type:'POST',
-                                dataType: 'json',
-                                async:false,
-                                url:'<?php echo U("Home/Index/ajaxdellinshijj");?>',
-                                data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu,"caipname":caipname,"caiprice":caiprice},
-                                success: function (result) {
-                                    // alert(result);
-                                }
-                            })
-                        }else{
-                            //执行修改
-                              $.ajax({
-                                type:'POST',
-                                dataType: 'json',
-                                async:false,
-                                url:'<?php echo U("Home/Index/ajaxeditfoodshuliang");?>',
-                                data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu,"caipname":caipname,"caiprice":caiprice},
-                                success: function (result) {
-                                    // if (result == 2) {
-                                    //     alert("操作失败");
-                                    // }
-                                }
-                            })
-                        }
-                    });
-                    // 下一步
-                    $(document).on("click","#btnselect",function(){
-                        //判断有无菜品
-                        var zfens = $(this).parent().parent().find("#totalcountshow").html();
-                        if (zfens == 0) {
-                        }else{
-                            //提交表单
-                            // $("#dateshangjia").submit();
-                        }
-                    });
-                    //购物车 确定跳转页面
-                    $("#que").click(function(){
-
-                        //获取总人数
-                        var m = $("#totalpriceshow,#totalpriceshow2").html();
-                        //获取总就餐人数
-                        var num = $("#number").val();
-                        if (num >0 && m >0) {
-                            $("#dateshangjia").submit();
-                        }
-                    });
-                    function jss() {
-                        var m = $("#totalpriceshow,#totalpriceshow2").html();
-                        if (m > 0) {
-                            $(".right").find("a").removeClass("disable");
-                        } else {
-                            $(".right").find("a").addClass("disable");
-                        }
-                    };
-                                    //选项卡
-                                    $(".con>div").hide();
-                                    $(".con>div:eq(0)").show();
-                                    $(".left-menu li").click(function(){
-                                        $(this).addClass("active").siblings().removeClass("active");
-                                        var n = $(".left-menu li").index(this);
-                                        $(".left-menu li").index(this);
-                                        $(".con>div").hide();
-                                        $(".con>div:eq("+n+")").show();
-                                    });
-                                });
-            </script>
+            <!-- <script type="text/javascript" src="/kuaidian/Public/home/js/jquery.js"></script> -->
+            
             </li>
             <li class="item">
             <div class="address">
@@ -607,6 +394,238 @@
 </div>
 <script src="/kuaidian/Public/home/js/jquery.js"></script>
 <script src="/kuaidian/Public/home/js/tab.js"></script>
+<script type="text/javascript">
+                $(function () {
+                    //小购物车加功能
+                    $(document).on("click",".add2",function(){
+                        //页面样式
+                        $(this).prevAll().css("display", "inline-block");
+                        var n = $(this).prev().text();
+                        var num = parseInt(n) + 1;
+                        if (num == 0) { return; }
+                        $(this).prev().text(num);
+                        jss();//<span style='font-family: Arial, Helvetica, sans-serif;'></span>   改变按钮样式
+                        //触发主页面菜品的加减
+                        //获取小购物车菜品id
+                        var foodid_xiaogwc = $(this).parent().parent().parent().find(".foodidxiaogouwuc").html();
+                        $.each($(".caipinid"),function(){
+                            //主页面菜品id
+                            var foodid_zhuyemcp = $(this).html();//主页面菜品id
+                            // 判断主页面菜品id = 购物车菜品id
+                            if (foodid_xiaogwc == foodid_zhuyemcp) {
+                                $(this).parent().find(".add").click();//改变主页面菜品份数
+                            }
+                        })
+                    });
+                    //小购物车 减的功能
+                    $(document).on("click",".minus2",function(){
+                        var n = $(this).next().text();
+                        var num = parseInt(n) - 1;
+                        $(this).next().text(num);//减1
+                        //如果数量小于或等于0则隐藏减号和数量
+                        if (num <= 0) {
+                            //删除本行
+                            $(this).parents(".nnei").remove();
+                        }
+                        //触发主页面菜品的加减
+                        //获取小购物车菜品id
+                        var foodid_xiaogwc = $(this).parent().parent().parent().find(".foodidxiaogouwuc").html();
+                        $.each($(".caipinid"),function(){
+                            //主页面菜品id
+                            var foodid_zhuyemcp = $(this).html();//主页面菜品id
+                            // 判断主页面菜品id = 购物车菜品id
+                            if (foodid_xiaogwc == foodid_zhuyemcp) {
+                                $(this).parent().find(".minus").click();//改变主页面菜品份数
+                            }
+                        })
+                    });
+                    //加的效果
+                    // yxy 优化
+                    $(document).on("click",".add",function(){
+                        $(this).prevAll().css("display", "inline-block");
+                        var n = $(this).prev().text();
+                        var num = parseInt(n) + 1;
+                        if (num == 0) { return; }
+                        $(this).prev().text(num);
+                        var danjia = $(this).next().text();//获取单价
+                        var a = $("#totalpriceshow").html();//获取当前所选总价
+                        $("#totalpriceshow").html((a * 1 + danjia * 1).toFixed(2));//计算当前所选总价
+                        var nm = $("#totalcountshow").html();//获取数量
+                        // alert(nm);
+                        $("#totalcountshow").html(nm*1+1);
+                        jss();//<span style='font-family: Arial, Helvetica, sans-serif;'></span>   改变按钮样式
+                        /**
+                         *  yxy改变数据库-增加
+                         */
+                        // 获取门店id -shopid
+                        var shopid = $("#shopid").html();
+                        // 获取菜品类型id
+                        var foodtypeid = $(this).parent().parent().find('.caipinleix').html();
+                        // 获取菜品id
+                        var caipinid = $(this).parent().parent().find('.caipinid').html();
+                        // 获取菜品份数
+                        var caipinfenshu = $(this).parent().find(".caipinfenshu").html();
+                        // 获取菜品名称
+                        var caipname = $(this).parents(".menu-txt").find(".biao").find("span").html();
+                        // 获取菜品价格
+                        var caiprice = $(this).parents(".menu-txt").find(".caiprice").html();
+                        // alert(caiprice);return;
+                        //ajax更改cookie
+                        //判断 份数是不是 1
+                        if (caipinfenshu == 1) {
+                            //执行添加
+                             $.ajax({
+                                type:'POST',
+                                dataType: 'json',
+                                async:false,
+                                url:'<?php echo U("Home/Index/ajaxaddlinshijj");?>',
+                                data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu,"caipname":caipname,"caiprice":caiprice},
+                                success: function (result) {
+                                    // if (result == 2) {
+                                    //     alert("操作失败");
+                                    // }
+                                }
+                            })
+                        }else{
+                            // 执行修改
+                             $.ajax({
+                                type:'POST',
+                                dataType: 'json',
+                                async:false,
+                                url:'<?php echo U("Home/Index/ajaxeditfoodshuliang");?>',
+                                data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu,"caipname":caipname,"caiprice":caiprice},
+                                success: function (result) {
+                                    // if (result == 2) {
+                                    //     alert("操作失败");
+                                    // }
+                                }
+                            })
+                        }
+                    });
+                    //减的效果 yxy 优化
+                    $(document).on("click",".minus",function(){
+                        var n = $(this).next().text();
+                        var num = parseInt(n) - 1;
+                        $(this).next().text(num);//减1
+                        var danjia = $(this).nextAll(".price").text();//获取单价
+                        var a = $("#totalpriceshow").html();//获取当前所选总价
+                        $("#totalpriceshow").html((a * 1 - danjia * 1).toFixed(2));//计算当前所选总价
+                        var nm = $("#totalcountshow").html();//获取数量
+                        $("#totalcountshow").html(nm * 1 - 1);
+                        //如果数量小于或等于0则隐藏减号和数量
+                        if (num <= 0) {
+                            $(this).next().css("display", "none");
+                            $(this).css("display", "none");
+                            jss();//改变按钮样式
+                            // return
+                        }
+                        /**
+                         *  yxy改变数据库-减号
+                         */
+                        // 获取门店id -shopid
+                        var shopid = $("#shopid").html();
+                        // 获取菜品类型id
+                        var foodtypeid = $(this).parent().parent().find('.caipinleix').html();
+                        // 获取菜品id
+                        var caipinid = $(this).parent().parent().find('.caipinid').html();
+                        // 获取菜品份数
+                        var caipinfenshu = $(this).parent().find(".caipinfenshu").html();
+                         // 获取菜品名称
+                        var caipname = $(this).parents(".menu-txt").find(".biao").find("span").html();
+                        // 获取菜品价格
+                        var caiprice = $(this).parents(".menu-txt").find(".caiprice").html();
+                        // alert(caipinfenshu);
+                        //ajax更改 COOkie 
+                        //判断 份数 是否是0
+                        if (caipinfenshu == 0) {
+                            //执行删除
+                            $.ajax({
+                                type:'POST',
+                                dataType: 'json',
+                                async:false,
+                                url:'<?php echo U("Home/Index/ajaxdellinshijj");?>',
+                                data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu,"caipname":caipname,"caiprice":caiprice},
+                                success: function (result) {
+                                    // alert(result);
+                                }
+                            })
+                        }else{
+                            //执行修改
+                              $.ajax({
+                                type:'POST',
+                                dataType: 'json',
+                                async:false,
+                                url:'<?php echo U("Home/Index/ajaxeditfoodshuliang");?>',
+                                data:{"shopid":shopid,"foodtypeid":foodtypeid,"caipinid":caipinid,"caipinfenshu":caipinfenshu,"caipname":caipname,"caiprice":caiprice},
+                                success: function (result) {
+                                    // if (result == 2) {
+                                    //     alert("操作失败");
+                                    // }
+                                }
+                            })
+                        }
+                    });
+                    // 下一步
+                    $(document).on("click","#btnselect",function(){
+                        //判断有无菜品
+                        var zfens = $(this).parent().parent().find("#totalcountshow").html();
+                        if (zfens == 0) {
+                        }else{
+                            //提交表单
+                            // $("#dateshangjia").submit();
+                        }
+                    });
+                    //购物车 确定跳转页面
+                    $("#que").click(function(){
+
+                        //获取总人数
+                        var m = $("#totalpriceshow,#totalpriceshow2").html();
+                        //获取总就餐人数
+                        var num = $("#number").val();
+                        if (num >0 && m >0) {
+                            $("#dateshangjia").submit();
+                        }
+                    });
+                    function jss() {
+                        //控制下一步
+                        var m = $("#totalpriceshow,#totalpriceshow2").html();
+                        if (m > 0) {
+                            //改变购物车 状态
+                            $(".right").find("a").removeClass("disable");
+                            $("#totalpriceshow").css("color","#ffae00");
+                            $("#cartN").css("color","#ffae00");
+                        } else {
+                            $(".right").find("a").addClass("disable");
+
+                            $("#totalpriceshow").css("color","#fff");
+                            $("#cartN").css("color","#fff");
+                        }
+                        //控制小购物车的样式
+                        var zongnum = $("#totalcountshow").html();
+                        // alert(zongnum);
+                        // 判断为 0 和 1
+                        if (zongnum == 1 || zongnum == undefined) {
+                            //购物车亮
+                            var str = '<img src="/kuaidian/Public/home/img/gouwuche2.png" alt=""><div class="ii"><span id="totalcountshow">1</span></div>';
+                            $(".gou").html(str);
+                        }else if(zongnum == 0){
+                            //购物车 暗
+                            var str = '<img src="/kuaidian/Public/home/img/gouwuche.png" alt="">';
+                            $(".gou").html(str);
+                        }else{}
+                    };
+                                    //选项卡
+                                    $(".con>div").hide();
+                                    $(".con>div:eq(0)").show();
+                                    $(".left-menu li").click(function(){
+                                        $(this).addClass("active").siblings().removeClass("active");
+                                        var n = $(".left-menu li").index(this);
+                                        $(".left-menu li").index(this);
+                                        $(".con>div").hide();
+                                        $(".con>div:eq("+n+")").show();
+                                    });
+                                });
+            </script>
 <!--购物车遮罩层-->
 <script type="text/javascript">
         //情空购物车
@@ -660,11 +679,7 @@
                 success: function (result) {
                     var str = "";
                     $.each(result,function(index,item){
-<<<<<<< HEAD
                         str += '<div class="nnei"><div class="neirong"><span class="foodidxiaogouwuc" style="display:none;">'+item.foodid+'</span><div class="neirong2"><div class="mmingzi"><span>'+item.caipname+'</span></div><div class="left2"><span id="cartN2">￥ <span id="totalpriceshow2">'+item.caiprice+'</span></span></div><div class="btn2"><button class="minus2" style="display:inline-block"><strong><img src="/kuaidian/Public/home/img/jianhao.png" alt=""></strong></button> <i style="display:inline-block">'+item.foodnum+'</i> <button class="add2"><strong><img src="/kuaidian/Public/home/img/jiahao.png" alt=""></strong></button> <i class="price2">18.5</i></div></div></div></div>';
-=======
-                        str += '<div class="nnei"><div class="neirong"><span class="foodidxiaogouwuc" style="display:none;">'+item.foodid+'</span><div class="neirong2"><div class="mmingzi"><span>'+item.name+'</span></div><div class="left2"><span id="cartN2">￥ <span id="totalpriceshow2">'+item.shou_price+'</span></span></div><div class="btn2"><button class="minus2" style="display:inline-block"><strong><img src="/-/Public/home/img/jianhao.png" alt=""></strong></button> <i style="display:inline-block">'+item.num+'</i> <button class="add2"><strong><img src="/-/Public/home/img/jiahao.png" alt=""></strong></button> <i class="price2">18.5</i></div></div></div></div>';
->>>>>>> 0bbfd306213111d78c7acdede20a603183f4684d
                     });
                     $(".ajaxaddgsfood").html(str);
                     // console.log(result);
