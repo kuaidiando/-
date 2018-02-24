@@ -1212,6 +1212,7 @@ INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
 >>>>>>> 7b782118b443a4b2dfc734d4dd0e527c84756052
 ERR: 无法加载模块:Public
 
+<<<<<<< HEAD
 [ 2018-02-23T17:27:19+08:00 ] 192.168.0.105 /kuaidian/Public/home/images/beijing.jpg
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
@@ -1294,5 +1295,17 @@ ERR: 无法加载模块:Public
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+=======
+[ 2018-02-23T17:20:34+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-23T17:20:35+08:00 ] ::1 /-/Public/home/images/person.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+>>>>>>> 0bbfd306213111d78c7acdede20a603183f4684d
 ERR: 无法加载模块:Public
 

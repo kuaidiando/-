@@ -187,7 +187,11 @@
                     <a id="btnselect" class="xhlbtn " href="javascript:void(0)">下一步</a>
                 </div>
             </div><?php endif; ?>
+<<<<<<< HEAD
             <script type="text/javascript" src="/kuaidian/Public/home/js/jquery.js"></script>
+=======
+            <script type="text/javascript" src="/-/Public/home/js/jquery.js"></script>
+>>>>>>> 0bbfd306213111d78c7acdede20a603183f4684d
             <script type="text/javascript">
                 $(function () {
                     //小购物车加功能
@@ -656,7 +660,11 @@
                 success: function (result) {
                     var str = "";
                     $.each(result,function(index,item){
+<<<<<<< HEAD
                         str += '<div class="nnei"><div class="neirong"><span class="foodidxiaogouwuc" style="display:none;">'+item.foodid+'</span><div class="neirong2"><div class="mmingzi"><span>'+item.caipname+'</span></div><div class="left2"><span id="cartN2">￥ <span id="totalpriceshow2">'+item.caiprice+'</span></span></div><div class="btn2"><button class="minus2" style="display:inline-block"><strong><img src="/kuaidian/Public/home/img/jianhao.png" alt=""></strong></button> <i style="display:inline-block">'+item.foodnum+'</i> <button class="add2"><strong><img src="/kuaidian/Public/home/img/jiahao.png" alt=""></strong></button> <i class="price2">18.5</i></div></div></div></div>';
+=======
+                        str += '<div class="nnei"><div class="neirong"><span class="foodidxiaogouwuc" style="display:none;">'+item.foodid+'</span><div class="neirong2"><div class="mmingzi"><span>'+item.name+'</span></div><div class="left2"><span id="cartN2">￥ <span id="totalpriceshow2">'+item.shou_price+'</span></span></div><div class="btn2"><button class="minus2" style="display:inline-block"><strong><img src="/-/Public/home/img/jianhao.png" alt=""></strong></button> <i style="display:inline-block">'+item.num+'</i> <button class="add2"><strong><img src="/-/Public/home/img/jiahao.png" alt=""></strong></button> <i class="price2">18.5</i></div></div></div></div>';
+>>>>>>> 0bbfd306213111d78c7acdede20a603183f4684d
                     });
                     $(".ajaxaddgsfood").html(str);
                     // console.log(result);

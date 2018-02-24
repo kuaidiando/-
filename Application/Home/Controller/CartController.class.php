@@ -20,7 +20,7 @@ class CartController extends Controller {
     public function save_cart()
     {
         $info = array();
-        // dump($_POST);exit;
+        // dump($_POST);
         if(I('shopid')){
             $shop_id = I('shopid');
         }else{
@@ -46,49 +46,71 @@ class CartController extends Controller {
             'userid'=>$user_id,
             'shopid'=>$shop_id,
             );
-        $cart_y = M('cart')->where(array('user_id'=>$user_id,'store_id'=>$shop_id))->delete();
+        // $cart_y = M('cart')->where(array('user_id'=>$user_id,'store_id'=>$shop_id))->delete();
         //获取商品临时表里的数据
-        $cart = M('cart');
+        // $cart = M('cart');
+        // 
+        $user_id = \user_helper::get_user_id();
+        $shopname = uri('shop',array('id'=>$shop_id),'mingch');
+        $total_price = 0.00;
+        $end_cart_info = array();
         if($info){
             foreach($info as $infok=>$infov){
                 if($shop_id == $infov['shopid']){
-                     $filter = array(
-                        'user_id'  => $user_id,
-                        'goods_id' => $infov['foodid'],
-                        'status'   => 1,
-                        'store_id' => $shop_id,
-                    );
-                    $cart_info = uri('cart',$filter);
-                    if(!$cart_info){
-                        $filter['goods_num'] = $infov['foodnum'];
-                        $filter['goods_type'] = $infov['foodtypeid'];
-                        $filter['add_time']  = date('Y-m-d H:i:s',time());
-                        $filter['store_id']  = $shop_id;
-                        $result = $cart->add($filter);
-                        if (!$result) {
-                      
-                        $this->error("index/detail","保存失败请重试");
-                        }
-                    }else{
-                        $info = array(
-                            'goods_num' => $infov['foodnum'] + $cart_info['goods_num'],
-                            'update_time'=> date('Y-m-d H:i:s',time()),
-                        );
 
-                        $result = $cart->where(array('id'=>$cart_info['id']))->save($info);
-                        if (!$result) {
+            $end_cart_info[$infok]['name'] = uri('food',array('id'=>$infov['foodid']),'mingch');
+            $end_cart_info[$infok]['price'] = uri('food',array('id'=>$infov['foodid']),'jiage_youhui');
+            $end_cart_info[$infok]['goods_num'] = $infov['foodnum'];
+            $total_price += $infov['foodnum'] * uri('food',array('id'=>$infov['foodid']),'jiage_youhui');
+
+                    //  $filter = array(
+                    //     'user_id'  => $user_id,
+                    //     'goods_id' => $infov['foodid'],
+                    //     'status'   => 1,
+                    //     'store_id' => $shop_id,
+                    // );
+                    // $cart_info = uri('cart',$filter);
+                    // if(!$cart_info){
+                    //     $filter['goods_num'] = $infov['foodnum'];
+                    //     $filter['goods_type'] = $infov['foodtypeid'];
+                    //     $filter['add_time']  = date('Y-m-d H:i:s',time());
+                    //     $filter['store_id']  = $shop_id;
+                    //     $result = $cart->add($filter);
+                    //     if (!$result) {
+                      
+                    //     $this->error("index/detail","保存失败请重试");
+                    //     }
+                    // }else{
+                    //     $info = array(
+                    //         'goods_num' => $infov['foodnum'] + $cart_info['goods_num'],
+                    //         'update_time'=> date('Y-m-d H:i:s',time()),
+                    //     );
+
+                    //     $result = $cart->where(array('id'=>$cart_info['id']))->save($info);
+                    //     if (!$result) {
                           
-                            $this->error('index/detail','保存失败请重试');
-                        }
-                    }    
+                    //         $this->error('index/detail','保存失败请重试');
+                    //     }
+                    // }    
                 }
                
 
             }
-            // M('linshijj')->where($where)->delete();
+                $repast_price = uri('shop',array('id'=>$shop_id),'repast_price');
+                $total_price += $repast_price*$seat;
+                // dump($seat);
+                // dump($repast_price);
+                // dump($total_price);exit;
+                $this->assign('total_price',$total_price);
+                $this->assign('repast_price',$repast_price);
+                $this->assign('shopid',$shop_id);
+                $this->assign('seat',$seat);
+                $this->assign('end_cart_info',$end_cart_info);
+                $this->assign('shopname',$shopname);
+                $this->display('cart/diandanye');
         }
       
-        $this->redirect('cart/diandan_info?store_id='.$shop_id);
+        // $this->redirect('cart/diandan_info?store_id='.$shop_id);
        
     }
 
@@ -128,7 +150,7 @@ class CartController extends Controller {
      public function del_cart(){
         $store_id = I('shopid');
         $user_id = \user_helper::get_user_id();
-        M('cart')->where(array('store_id'=>$store_id,'user_id'=>$user_id,'status'=>1))->save(array('status'=>0));
+        // M('cart')->where(array('store_id'=>$store_id,'user_id'=>$user_id,'status'=>1))->save(array('status'=>0));
 
         setcookie("food_num",serialize($food_num),time()-10,"/");
         $this->ajaxReturn(array('data'=>true,'code'=>200,'msg'=>''));

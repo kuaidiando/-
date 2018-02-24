@@ -36,45 +36,62 @@ class OrderController extends Controller {
             $order_id = 0;
             $order_id = M('order')->add($order_filter);
             if($order_id){
-                $order_goods_info = M('cart')->where(array('store_id'=>$_POST['store_id'],'user_id'=>$this->user_id,'status'=>1))->select();
-                foreach($order_goods_info as $goods_k=>$goods_v){
-                    $order_fu = array();
-                    $order_fu['order_id'] = $order_id;
-                    $order_fu['goods_id'] = $goods_v['goods_id'];
-                    $order_fu['goods_num'] = $goods_v['goods_num'];
-                    $order_fu['store_id'] = $goods_v['store_id'];
-                    $order_fu['goods_price'] = uri('food',array('id'=>$goods_v['goods_id']),'jiage_youhui');
-                    $order_fu_id = M('order_fu')->add($order_fu);
-                    if(!$order_fu_id){
-                        M('order')->where(array('id'=>$order_id))->delete();
-                        $this->error('订单添加失败');
+                $info = unserialize(stripslashes($_COOKIE['food_num']));
+                foreach($info as $goods_k=>$goods_v){
+                    if($_POST['store_id'] == $goods_v['shopid']){
+                        $order_fu = array();
+                        $order_fu['order_id'] = $order_id;
+                        $order_fu['goods_id'] = $goods_v['foodid'];
+                        $order_fu['goods_num'] = $goods_v['foodnum'];
+                        $order_fu['store_id'] = $goods_v['shopid'];
+                        $order_fu['goods_price'] = uri('food',array('id'=>$goods_v['foodid']),'jiage_youhui');
+                        $order_fu_id = M('order_fu')->add($order_fu);
+                        if(!$order_fu_id){
+                            M('order')->where(array('id'=>$order_id))->delete();
+                            $this->error('订单添加失败');
+                        }  
                     }
-
                 }
-                // if(count($order_goods_info) == M('order_fu')->where(array('order_id'=>$order_id))->count()){
-                //     // M('cart')->where(array('store_id'=>$_POST['store_id'],'user_id'=>$this->user_id,'status'=>1))->save(array('status'=>0));
+                // $order_goods_info = M('cart')->where(array('store_id'=>$_POST['store_id'],'user_id'=>$this->user_id,'status'=>1))->select();
+                // foreach($order_goods_info as $goods_k=>$goods_v){
+                //     $order_fu = array();
+                //     $order_fu['order_id'] = $order_id;
+                //     $order_fu['goods_id'] = $goods_v['goods_id'];
+                //     $order_fu['goods_num'] = $goods_v['goods_num'];
+                //     $order_fu['store_id'] = $goods_v['store_id'];
+                //     $order_fu['goods_price'] = uri('food',array('id'=>$goods_v['goods_id']),'jiage_youhui');
+                //     $order_fu_id = M('order_fu')->add($order_fu);
+                //     if(!$order_fu_id){
+                //         M('order')->where(array('id'=>$order_id))->delete();
+                //         $this->error('订单添加失败');
+                //     }
+
                 // }
+        
             $_SESSION['order_id'] = $order_id;
                 
             }
         
         }else{
             $order_id = $_SESSION['order_id'];
-            // dump($order_id);exit;
             $res = M('order')->where(array('id'=>$order_id))->save($_POST);
-            // dump($res);exit;
             if($res){
-                $order_goods_info = M('cart')->where(array('store_id'=>$_POST['store_id'],'user_id'=>$this->user_id,'status'=>1))->select();
-                // dump($order_goods_info);exit;
-                foreach($order_goods_info as $goods_k=>$goods_v){
-                    $order_fu = array();
-                    $order_fu['order_id'] = $order_id;
-                    $order_fu['goods_id'] = $goods_v['goods_id'];
-                    $order_fu['goods_num'] = $goods_v['goods_num'];
-                    $order_fu['store_id'] = $goods_v['store_id'];
-                    $order_fu['goods_price'] = uri('food',array('id'=>$goods_v['goods_id']),'jiage_youhui');
-                    // $order_fu_id = M('order_fu')->add($order_fu);
-                    if(uri('order_fu',array('order_id'=>$order_id,'goods_id'=>$order_fu['goods_id'],'goods_num'))){
+                $info = unserialize(stripslashes($_COOKIE['food_num']));
+                foreach($info as $goods_k=>$goods_v){
+                    if($_POST['store_id'] == $goods_v['shopid']){
+                        $order_fu = array();
+                        $order_fu['order_id'] = $order_id;
+                        $order_fu['goods_id'] = $goods_v['foodid'];
+                        $order_fu['goods_num'] = $goods_v['foodnum'];
+                        $order_fu['store_id'] = $goods_v['shopid'];
+                        $order_fu['goods_price'] = uri('food',array('id'=>$goods_v['foodid']),'jiage_youhui');
+                        $order_fu_id = M('order_fu')->add($order_fu);
+                        // if(!$order_fu_id){
+
+                        //     // M('order')->where(array('id'=>$order_id))->delete();
+                        //     // $this->error('订单添加失败');
+                        // }  
+                        if(uri('order_fu',array('order_id'=>$order_id,'goods_id'=>$order_fu['goods_id'],'goods_num'))){
                         if(uri('order_fu',array('order_id'=>$order_id,'goods_id'=>$order_fu['goods_id']),'goods_num') == $order_fu['goods_num']){
                             continue;
 
@@ -87,14 +104,42 @@ class OrderController extends Controller {
                                 $this->error('cart/save_cart?shopid='.$_POST['store_id'],'订单添加失败');
                             } 
                         }
-                        // dump(uri('order_fu',array('order_id'=>$order_id,'goods_id'=>$order_fu['goods_id'],'id')));exit;
 
                     }else{
                         M('order_fu')->add($order_fu);
                     }
-
-
+                    }
                 }
+
+
+                // $order_goods_info = M('cart')->where(array('store_id'=>$_POST['store_id'],'user_id'=>$this->user_id,'status'=>1))->select();
+                // foreach($order_goods_info as $goods_k=>$goods_v){
+                //     $order_fu = array();
+                //     $order_fu['order_id'] = $order_id;
+                //     $order_fu['goods_id'] = $goods_v['goods_id'];
+                //     $order_fu['goods_num'] = $goods_v['goods_num'];
+                //     $order_fu['store_id'] = $goods_v['store_id'];
+                //     $order_fu['goods_price'] = uri('food',array('id'=>$goods_v['goods_id']),'jiage_youhui');
+                //     if(uri('order_fu',array('order_id'=>$order_id,'goods_id'=>$order_fu['goods_id'],'goods_num'))){
+                //         if(uri('order_fu',array('order_id'=>$order_id,'goods_id'=>$order_fu['goods_id']),'goods_num') == $order_fu['goods_num']){
+                //             continue;
+
+                //         }else{
+                //             $order_fu_id = M('order_fu')->where(array('order_id'=>$order_id,'goods_id'=>$order_fu['goods_id']))->save($order_fu);
+                         
+                //             if(!$order_fu_id){
+                //                 echo '修改数量失败';exit;
+                //                 M('order')->where(array('id'=>$order_id))->delete();
+                //                 $this->error('cart/save_cart?shopid='.$_POST['store_id'],'订单添加失败');
+                //             } 
+                //         }
+
+                //     }else{
+                //         M('order_fu')->add($order_fu);
+                //     }
+
+
+                // }
             }
         }
         
@@ -205,7 +250,7 @@ class OrderController extends Controller {
                         );
                     M('money')->add($money_data);
 
-                    M('cart')->where(array('store_id'=>$store_id,'user_id'=>$this->user_id,'status'=>1))->save(array('status'=>0));
+                    // M('cart')->where(array('store_id'=>$store_id,'user_id'=>$this->user_id,'status'=>1))->save(array('status'=>0));
 
                     setcookie("food_num",serialize($food_num),time()-10,"/");
                     $_SESSION['order_id'] = '';
