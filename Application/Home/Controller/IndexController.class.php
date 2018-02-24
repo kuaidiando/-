@@ -251,25 +251,25 @@ class IndexController extends Controller {
         $user = M("food");
          // 获取cookie的值
         $food_num = unserialize(stripslashes($_COOKIE['food_num']));
-        /**
-         * 购物车商品
-         */
-        $gsfood = array();
-        // dump($food_num); 
-        foreach ($food_num as $gsk => $gsv) {
-            // dump($gsv);die;
-            $gswhere['id'] = $gsv['foodid'];
-            // dump($gswhere);die;
-            $gsres = $user->where($gswhere)->find();
-            $gsfood[$gsk]['foodid'] = $gsres['id'];//菜品id
-            $gsfood[$gsk]['name'] = $gsres['mingch'];//名称
-            $gsfood[$gsk]['shou_price'] = $gsres['jiage_youhui'];//售价
-            $gsfood[$gsk]['num'] = $gsv['foodnum'];//数量
-            // dump($gsres); die;
-        }
+        // /**
+        //  * 购物车商品
+        //  */
+        // $gsfood = array();
+        // // dump($food_num); 
+        // foreach ($food_num as $gsk => $gsv) {
+        //     // dump($gsv);die;
+        //     $gswhere['id'] = $gsv['foodid'];
+        //     // dump($gswhere);die;
+        //     $gsres = $user->where($gswhere)->find();
+        //     $gsfood[$gsk]['foodid'] = $gsres['shopid'];//菜品id
+        //     $gsfood[$gsk]['name'] = $gsres['mingch'];//名称
+        //     $gsfood[$gsk]['shou_price'] = $gsres['jiage_youhui'];//售价
+        //     $gsfood[$gsk]['num'] = $gsv['foodnum'];//数量
+        //     // dump($gsres); die;
+        // }
         // dump($gsfood);die;
         // $this->assign("gsfood",$gsfood);//购物车商品
-        $this->ajaxReturn($gsfood);
+        $this->ajaxReturn($food_num);
     }
     //ajax add 菜品份数
     public function ajaxaddlinshijj(){
@@ -279,6 +279,8 @@ class IndexController extends Controller {
         $foodtypeid = I('post.foodtypeid');// 菜品类型id
         $foodid = I('post.caipinid');// 菜品id
         $foodnum = I('post.caipinfenshu');// 菜品份数
+        $caipname = I('post.caipname');// 菜品名称
+        $caiprice = I('post.caiprice');// 菜品售价
         // addcart($shopid,$foodid,$foodnum);
         $food_num = unserialize(stripslashes($_COOKIE['food_num'])); 
         // dump($food_num);die;
@@ -292,6 +294,8 @@ class IndexController extends Controller {
             $food_num[$max_array_keyid]['foodtypeid'] = $foodtypeid;// 菜品类型id 
             $food_num[$max_array_keyid]['foodid'] = $foodid; // 菜品id
             $food_num[$max_array_keyid]['foodnum'] = $foodnum; // 菜品份数
+            $food_num[$max_array_keyid]['caipname'] = $caipname; // 菜品名称
+            $food_num[$max_array_keyid]['caiprice'] = $caiprice; // 菜品售价
             setcookie("food_num",serialize($food_num),time()+3600,"/"); 
         }else{
             // 添加
@@ -299,6 +303,8 @@ class IndexController extends Controller {
             $cart_info[0]['foodtypeid'] = $foodtypeid; // 菜品类型id
             $cart_info[0]['foodid'] = $foodid; // 菜品id
             $cart_info[0]['foodnum'] = $foodnum; // 菜品份数
+            $cart_info[0]['caipname'] = $caipname; // 菜品名称
+            $cart_info[0]['caiprice'] = $caiprice; // 菜品名称
             setcookie("food_num",serialize($cart_info),time()+3600,"/"); 
         }
         

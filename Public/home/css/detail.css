@@ -645,15 +645,19 @@
     border-bottom: 1.2px solid #dedede;
     margin-left: 3%;
 }
+.yis{
+    width: 156px;
+    margin-top: -100%;
+}
 .tu{
     width: 22%;
     height: 156px;
     float: left;
     margin-top: 23px;
-    background: url("../images/person.jpg") 130% no-repeat;
 }
 .tu img{
     width: 156px;
+    height: 156px;
     vertical-align: middle;
 }
 .youbian{
