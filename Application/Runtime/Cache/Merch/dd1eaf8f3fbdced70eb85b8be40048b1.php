@@ -316,29 +316,30 @@
     </script>
     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-        var remind = 1;
+        // var remind = 0;
         var mp3 = $("#mp3")[0];
-        var play= 0;
+        // var play= 0;
         var store_id = $('#store_id').val();
+        $('.nm').hide();
         // alert(store_id);
        
-        if(sessionStorage.num){
-            $(".remind").text(sessionStorage.num);
-        }
+        // if(sessionStorage.num){
+        //     $(".remind").text(sessionStorage.num);
+        // }
 
-        $.ajax({
-            type:'post',
-            url:"<?php echo U('Merch/Order/sendOrderNotice');?>",
-            dataType: 'json',
-            data:{store_id:store_id},
-            success:function (data) {
-                sessionStorage.num = data;
-                $(".remind").text(data);
-                remind = data;play=data;
-                remind<=0?$(".remind").hide():$(".remind").show();
+        // $.ajax({
+        //     type:'post',
+        //     url:"<?php echo U('Merch/Order/sendOrderNotice');?>",
+        //     dataType: 'json',
+        //     data:{store_id:store_id},
+        //     success:function (data) {
+        //         sessionStorage.num = data;
+        //         $(".remind").text(data);
+        //         remind = data;play=data;
+        //         remind<=0?$(".remind").hide():$(".remind").show();
 
-            }
-        })
+        //     }
+        // })
 
 
         setInterval(function () {
@@ -348,15 +349,26 @@
                 dataType: 'json',
                 data:{store_id:store_id},              
                 success:function (data) {
-                    remind = data;
-                    sessionStorage.num = data;
-                    if(play==remind){
-                        remind<=0?$(".remind").hide():$(".remind").show()
-                    }else{
-                        $(".remind").show().text(remind);
+                    if(data > 0){
+                        $('.nm').show();
+                        $('.remind').text(data);
                         mp3.play();
-                        play=remind;
+                        // play=remind;                      
+                    }else{
+                        $('.nm').hide();
+
                     }
+                    // remind = data;
+                    // sessionStorage.num = data;
+                    // if(play==remind){
+                    //     remind<=0?$(".nm").hide():$(".nm").show()
+                    // }else{
+                    //     $(".nm").show();
+                    //     $('.remind').text(remind);
+                    //     mp3.play();
+                    //     play=remind;
+                    // } 
+
                 }
             })
         },10000)      
