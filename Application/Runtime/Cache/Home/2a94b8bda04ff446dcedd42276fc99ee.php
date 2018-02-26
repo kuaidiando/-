@@ -192,20 +192,12 @@
                             <div class="center">
                                 <div class="xing">
                                 <!-- 实心星数量 -->
-<<<<<<< HEAD
-                                <?php $__FOR_START_2078600719__=0;$__FOR_END_2078600719__=$vores["shixinxing"];for($i=$__FOR_START_2078600719__;$i < $__FOR_END_2078600719__;$i+=1){ ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
-=======
-                                <?php $__FOR_START_5587__=0;$__FOR_END_5587__=$vores["shixinxing"];for($i=$__FOR_START_5587__;$i < $__FOR_END_5587__;$i+=1){ ?><img src="/-/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
->>>>>>> 739761ed984cc2e29762d2432ea6b7fcee40d586
+                                <?php $__FOR_START_382737703__=0;$__FOR_END_382737703__=$vores["shixinxing"];for($i=$__FOR_START_382737703__;$i < $__FOR_END_382737703__;$i+=1){ ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
                                 <!-- 判断半个 星星 -->
                         <?php if($vores["bangexing"] == 1): ?><img src="/kuaidian/Public/home/img/ban.png" style="width:13%;" alt="">
                         <?php else: endif; ?>
                                 <!-- 空心星数量 -->
-<<<<<<< HEAD
-                                <?php $__FOR_START_2137626179__=0;$__FOR_END_2137626179__=$vores["kongxinxing"];for($i=$__FOR_START_2137626179__;$i < $__FOR_END_2137626179__;$i+=1){ ?><img src="/kuaidian/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
-=======
-                                <?php $__FOR_START_17680__=0;$__FOR_END_17680__=$vores["kongxinxing"];for($i=$__FOR_START_17680__;$i < $__FOR_END_17680__;$i+=1){ ?><img src="/-/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
->>>>>>> 739761ed984cc2e29762d2432ea6b7fcee40d586
+                                <?php $__FOR_START_2050941186__=0;$__FOR_END_2050941186__=$vores["kongxinxing"];for($i=$__FOR_START_2050941186__;$i < $__FOR_END_2050941186__;$i+=1){ ?><img src="/kuaidian/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
                                     
                                 </div>
 
@@ -308,11 +300,7 @@
     <a href="<?php echo U('Home/Index/index');?>">
         <div id="foot">
             <div id="ttu">
-<<<<<<< HEAD
                 <img src="/kuaidian/Public/home/img/shangjia2.png" alt="">
-=======
-                <img src="/-/Public/home/img/shangjia2.png" alt="">
->>>>>>> 739761ed984cc2e29762d2432ea6b7fcee40d586
             </div>
 
             <div id="shou">
@@ -325,7 +313,7 @@
     <a href="<?php echo U('Home/Order/order_info');?> ">
         <div id="foot2">
             <div id="ttu2">
-                <img src="/-/Public/home/img/diangdan.png" alt="">
+                <img src="/kuaidian/Public/home/img/diangdan.png" alt="">
             </div>
 
             <div id="shou2">
@@ -337,11 +325,7 @@
     <a href="<?php echo U('Home/Person/index');?>">
         <div id="foot3" onclick="location.href='person.html'">
             <div id="ttu3">
-<<<<<<< HEAD
                <img src="/kuaidian/Public/home/img/geren.png" alt="">
-=======
-               <img src="/-/Public/home/img/geren.png" alt="">
->>>>>>> 739761ed984cc2e29762d2432ea6b7fcee40d586
             </div>
 
             <div id="shou3">

@@ -144,7 +144,7 @@
             </div>
         </div>
 
-        <div class="ll2">
+        <div class="ll2" >
 
             <div class="she" id="shopguanli">
                 <div class="sshe">
@@ -176,7 +176,7 @@
             </div>
 
 
-            <div class="she3">
+            <div class="she3" id="staff_anage">
                 <div class="sshe">
                     <div class="shetu3">
                         <img src="/kuaidian/Public/merch/images/yuangong.png" alt="">
@@ -259,12 +259,8 @@
 
         <div class="foot">
 
-<<<<<<< HEAD
         <audio id="mp3" src="/kuaidian/Public/aut/8868.wav"> </audio>
-=======
-        <audio id="mp3" src="/-/Public/aut/8868.wav"> </audio>
         <input type="hidden" id="store_id" name="store_id" value="<?php echo ($res[0][id]); ?>">
->>>>>>> 739761ed984cc2e29762d2432ea6b7fcee40d586
             <div class="ftu">
                 <img src="/kuaidian/Public/merch/images/diangdan.png" alt="">
             </div>
@@ -291,6 +287,7 @@
     </div>
 </body>
     <script type="text/javascript">
+        //商品管理
         $("#shopguanli").click(function(){
             var jinbenxx = $(".jinbenxx").val();//基本信息
             var renzhengxx = $(".renzhengxx").val();//认证信息
@@ -306,6 +303,33 @@
             }else{
                 if (renzhengxx== 1) {
                     window.location.href = "<?php echo U('Merch/Foodhoutai/index',array('shopid'=>$res[0][id]));?>";
+                }else{
+                     var con = confirm("认证信息未完善");
+                        // 点击确定页面跳转
+                        if (con) {
+                            $(".tiaozrenzheng").click();//跳转认证信息
+                        }else{
+                            // alert("页面不跳转");
+                        }
+                }
+            }
+        });
+        //员工管理
+         $("#staff_anage").click(function(){
+            var jinbenxx = $(".jinbenxx").val();//基本信息
+            var renzhengxx = $(".renzhengxx").val();//认证信息
+            //判断基本信息状态
+            if (jinbenxx == 0) {
+                var con = confirm("基本信息未完善");
+                // 点击确定页面跳转
+                if (con) {
+                    $(".tiaozhuanmend").click();//跳转基本信息
+                }else{
+                    // alert("页面不跳转");
+                }
+            }else{
+                if (renzhengxx== 1) {
+                    window.location.href = "<?php echo U('Merch/Staff/index',array('shopid'=>$res[0][id]));?>";
                 }else{
                      var con = confirm("认证信息未完善");
                         // 点击确定页面跳转
@@ -353,14 +377,18 @@
                 data:{store_id:store_id},              
                 success:function (data) {
                     remind = data;
-                    sessionStorage.num = data;
-                    if(play==remind){
-                        remind<=0?$(".remind").hide():$(".remind").show()
-                    }else{
-                        $(".remind").show().text(remind);
-                        mp3.play();
-                        play=remind;
-                    }
+                    // alert(data);
+                    // if(data > 0){
+                        sessionStorage.num = data;
+                        if(play==remind){
+                            remind<=0?$(".remind").hide():$(".remind").show()
+                        }else{
+                            $(".remind").show().text(remind);
+                            mp3.play();
+                            play=remind;
+                        } 
+                    // }
+
                 }
             })
         },10000)      

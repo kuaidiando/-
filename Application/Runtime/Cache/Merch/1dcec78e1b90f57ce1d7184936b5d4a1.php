@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>订单详情</title>
-    <link rel="stylesheet" href="/-/Public/merch/css/text.css">
-    <link rel="stylesheet" href="/-/Public/merch/css/base.css">
-    <link rel="stylesheet" href="/-/Public/merch/css/dingdanxiangqing.css">
-    <script src="/-/Public/merch/js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/dingdanxiangqing.css">
+    <script src="/kuaidian/Public/merch/js/jquery-1.12.4.min.js"></script>
 </head>
 <body style="font-size: 12px">
     <div class="header">
@@ -64,7 +64,7 @@
                         <div class="tu">
                             <div class="ttu">
                                 <a href="tel:13716172720">
-                                    <img src="/-/Public/merch/images/phone.png" alt="">
+                                    <img src="/kuaidian/Public/merch/images/phone.png" alt="">
                                 </a>
                             </div>
                         </div>
@@ -186,8 +186,8 @@
                             </ul>
                         </div>
                     </div>
-                    <script src="/-/Public/merch/js/jquery-1.12.4.min.js"></script>
-                    <script src="/-/Public/merch/js/jquery.slimscroll.min.js"></script>
+                    <script src="/kuaidian/Public/merch/js/jquery-1.12.4.min.js"></script>
+                    <script src="/kuaidian/Public/merch/js/jquery.slimscroll.min.js"></script>
                     <script type="text/javascript">
                         $(function(){
                             // nav收缩展开
@@ -306,7 +306,7 @@
     <div class="footer">
         <div class="foot" onclick="location.href='index.html'">
             <div class="ftu">
-                <img src="/-/Public/merch/images/dingdan2.png" alt="">
+                <img src="/kuaidian/Public/merch/images/dingdan2.png" alt="">
             </div>
             <div class="de">
                 <span>门店订单</span>
@@ -316,7 +316,7 @@
 
         <div class="foot2" onclick="location.href='index.html'">
             <div class="ftu2">
-                <img src="/-/Public/merch/images/dian2.png" alt="">
+                <img src="/kuaidian/Public/merch/images/dian2.png" alt="">
             </div>
             <div class="de2">
                 <span>我的门店</span>

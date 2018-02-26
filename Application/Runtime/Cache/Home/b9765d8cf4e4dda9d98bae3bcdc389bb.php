@@ -7,21 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <title>轮播图</title>
-<<<<<<< HEAD
     <script src="/kuaidian/Public/home/js/jquery-1.12.4.js"></script>
     <script src="/kuaidian/Public/home/js/bootstrap.min.js"></script>
     <link href="/kuaidian/Public/home/css/bootstrap.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="/kuaidian/Public/home/js/html5shiv.min.js"></script>
     <script src="/kuaidian/Public/home/js/respond.min.js"></script>
-=======
-    <script src="/-/Public/home/js/jquery-1.12.4.js"></script>
-    <script src="/-/Public/home/js/bootstrap.min.js"></script>
-    <link href="/-/Public/home/css/bootstrap.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="/-/Public/home/js/html5shiv.min.js"></script>
-    <script src="/-/Public/home/js/respond.min.js"></script>
->>>>>>> 739761ed984cc2e29762d2432ea6b7fcee40d586
     <![endif]-->
     <style>
         .m_imgBox{
@@ -44,31 +35,19 @@
     <div class="carousel-inner" role="listbox">
         <div class="item active">
             <a href="#" class="m_imgBox">
-<<<<<<< HEAD
                 <img src="/kuaidian/Public/<?php echo ($event["0"]); ?>" alt="">
-=======
-                <img src="/-/Public/<?php echo ($event["0"]); ?>" alt="">
->>>>>>> 739761ed984cc2e29762d2432ea6b7fcee40d586
             </a>
         </div>
 
         <div class="item">
             <a href="#" class="m_imgBox">
-<<<<<<< HEAD
                 <img src="/kuaidian/Public/<?php echo ($event["1"]); ?>" alt="">
-=======
-                <img src="/-/Public/<?php echo ($event["1"]); ?>" alt="">
->>>>>>> 739761ed984cc2e29762d2432ea6b7fcee40d586
             </a>
         </div>
 
         <div class="item">
             <a href="#" class="m_imgBox">
-<<<<<<< HEAD
                 <img src="/kuaidian/Public/<?php echo ($event["2"]); ?>" alt="">
-=======
-                <img src="/-/Public/<?php echo ($event["2"]); ?>" alt="">
->>>>>>> 739761ed984cc2e29762d2432ea6b7fcee40d586
             </a>
         </div>
     </div>
