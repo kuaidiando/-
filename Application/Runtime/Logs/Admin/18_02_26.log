@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [ 2018-02-26T10:04:38+08:00 ] ::1 /kuaidian/index.php/Admin/shop/index.html?id=1
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
@@ -489,4 +490,15 @@ INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+=======
+[ 2018-02-26T09:38:45+08:00 ] 192.168.0.100 /-/index.php/Admin/Ajax/shengdoshi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `city` WHERE `provincecode` = '130000'  [ RunTime:0.0156s ]
+>>>>>>> 739761ed984cc2e29762d2432ea6b7fcee40d586
 

@@ -259,13 +259,18 @@
 
         <div class="foot">
 
+<<<<<<< HEAD
         <audio id="mp3" src="/kuaidian/Public/aut/8868.wav"> </audio>
+=======
+        <audio id="mp3" src="/-/Public/aut/8868.wav"> </audio>
+        <input type="hidden" id="store_id" name="store_id" value="<?php echo ($res[0][id]); ?>">
+>>>>>>> 739761ed984cc2e29762d2432ea6b7fcee40d586
             <div class="ftu">
                 <img src="/kuaidian/Public/merch/images/diangdan.png" alt="">
             </div>
             <div class="quan">
                 <div class="nm">
-                    <span class="remind">6</span>
+                    <span class="remind">0</span>
                 </div>
             </div>
 
@@ -315,42 +320,50 @@
     </script>
     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-        // var remind = 1;
-        // var mp3 = $("#mp3")[0];
-        // var play= 0;
+        var remind = 1;
+        var mp3 = $("#mp3")[0];
+        var play= 0;
+        var store_id = $('#store_id').val();
+        // alert(store_id);
        
-        // if(sessionStorage.num){
-        //     $(".remind").text(sessionStorage.num);
-        // }
+        if(sessionStorage.num){
+            $(".remind").text(sessionStorage.num);
+        }
 
-        // $.ajax({
-        //     url:"/sendOrderNotice",
-        //     success:function (data) {
-        //         sessionStorage.num = data;
-        //         $(".remind").text(data);
-        //         remind = data;play=data;
-        //         remind<=0?$(".remind").hide():$(".remind").show();
+        $.ajax({
+            type:'post',
+            url:"<?php echo U('Merch/Order/sendOrderNotice');?>",
+            dataType: 'json',
+            data:{store_id:store_id},
+            success:function (data) {
+                sessionStorage.num = data;
+                $(".remind").text(data);
+                remind = data;play=data;
+                remind<=0?$(".remind").hide():$(".remind").show();
 
-        //     }
-        // })
+            }
+        })
 
 
-        // setInterval(function () {
-        //     $.ajax({
-        //         url:"/sendOrderNotice",
-        //         success:function (data) {
-        //             remind = data;
-        //             sessionStorage.num = data;
-        //             if(play==remind){
-        //                 remind<=0?$(".remind").hide():$(".remind").show()
-        //             }else{
-        //                 $(".remind").show().text(remind);
-        //                 mp3.play();
-        //                 play=remind;
-        //             }
-        //         }
-        //     })
-        // },10000)      
+        setInterval(function () {
+            $.ajax({
+                type:'post',
+                url:"<?php echo U('Merch/Order/sendOrderNotice');?>",
+                dataType: 'json',
+                data:{store_id:store_id},              
+                success:function (data) {
+                    remind = data;
+                    sessionStorage.num = data;
+                    if(play==remind){
+                        remind<=0?$(".remind").hide():$(".remind").show()
+                    }else{
+                        $(".remind").show().text(remind);
+                        mp3.play();
+                        play=remind;
+                    }
+                }
+            })
+        },10000)      
 
     </script>
 </html>

@@ -262,12 +262,13 @@
         <div class="foot">
 
         <audio id="mp3" src="__PUBLIC__/aut/8868.wav"> </audio>
+        <input type="hidden" id="store_id" name="store_id" value="{$res[0][id]}">
             <div class="ftu">
                 <img src="__PUBLIC__/merch/images/diangdan.png" alt="">
             </div>
             <div class="quan">
                 <div class="nm">
-                    <span class="remind">6</span>
+                    <span class="remind">0</span>
                 </div>
             </div>
 
@@ -317,42 +318,54 @@
     </script>
     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-        // var remind = 1;
-        // var mp3 = $("#mp3")[0];
-        // var play= 0;
+        var remind = 1;
+        var mp3 = $("#mp3")[0];
+        var play= 0;
+        var store_id = $('#store_id').val();
+        // alert(store_id);
        
-        // if(sessionStorage.num){
-        //     $(".remind").text(sessionStorage.num);
-        // }
+        if(sessionStorage.num){
+            $(".remind").text(sessionStorage.num);
+        }
 
-        // $.ajax({
-        //     url:"/sendOrderNotice",
-        //     success:function (data) {
-        //         sessionStorage.num = data;
-        //         $(".remind").text(data);
-        //         remind = data;play=data;
-        //         remind<=0?$(".remind").hide():$(".remind").show();
+        $.ajax({
+            type:'post',
+            url:"{:U('Merch/Order/sendOrderNotice')}",
+            dataType: 'json',
+            data:{store_id:store_id},
+            success:function (data) {
+                sessionStorage.num = data;
+                $(".remind").text(data);
+                remind = data;play=data;
+                remind<=0?$(".remind").hide():$(".remind").show();
 
-        //     }
-        // })
+            }
+        })
 
 
-        // setInterval(function () {
-        //     $.ajax({
-        //         url:"/sendOrderNotice",
-        //         success:function (data) {
-        //             remind = data;
-        //             sessionStorage.num = data;
-        //             if(play==remind){
-        //                 remind<=0?$(".remind").hide():$(".remind").show()
-        //             }else{
-        //                 $(".remind").show().text(remind);
-        //                 mp3.play();
-        //                 play=remind;
-        //             }
-        //         }
-        //     })
-        // },10000)      
+        setInterval(function () {
+            $.ajax({
+                type:'post',
+                url:"{:U('Merch/Order/sendOrderNotice')}",
+                dataType: 'json',
+                data:{store_id:store_id},              
+                success:function (data) {
+                    remind = data;
+                    alert(data);
+                    // if(data > 0){
+                        sessionStorage.num = data;
+                        if(play==remind){
+                            remind<=0?$(".remind").hide():$(".remind").show()
+                        }else{
+                            $(".remind").show().text(remind);
+                            mp3.play();
+                            play=remind;
+                        } 
+                    // }
+
+                }
+            })
+        },10000)      
 
     </script>
 </html>

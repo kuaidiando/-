@@ -276,6 +276,7 @@ INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
 >>>>>>> 2c758dd8d3a51df1945c779f432c00938d75f0a3
 ERR: 无法加载模块:Public
 
+<<<<<<< HEAD
 [ 2018-02-24T16:55:12+08:00 ] 192.168.0.107 /kuaidian/Public/home/css/bootstrap.css.map
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
@@ -496,5 +497,35 @@ ERR: 无法加载模块:Public
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+=======
+[ 2018-02-24T17:09:18+08:00 ] 192.168.0.111 /-/Public//img/2018-02-24/5a91285f37c8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-24T17:12:36+08:00 ] 192.168.0.101 /-/index.php/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+ERR: 无法加载模块:Register
+
+[ 2018-02-24T17:12:41+08:00 ] 192.168.0.101 /-/index.php/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+ERR: 无法加载模块:Register
+
+[ 2018-02-24T17:22:27+08:00 ] ::1 /-/Public//img/2018-02-24/5a91285f37c8b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-24T17:22:30+08:00 ] ::1 /-/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+>>>>>>> 739761ed984cc2e29762d2432ea6b7fcee40d586
 ERR: 无法加载模块:Public
 

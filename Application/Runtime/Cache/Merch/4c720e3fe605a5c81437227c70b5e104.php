@@ -2,9 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
-    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
-    <link rel="stylesheet" href="/kuaidian/Public/merch/css/register.css">
-    <script type="text/javascript" src="/kuaidian/Public/merch/js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="/-/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/-/Public/merch/css/register.css">
+    <script type="text/javascript" src="/-/Public/merch/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript">
         $(function () {
             //获取短信验证码
@@ -50,7 +50,7 @@
 <body style="font-size: 12px">
 
 <div class="logo">
-    <img src="/kuaidian/Public/merch/images/logo2.png" alt="">
+    <img src="/-/Public/merch/images/logo2.png" alt="">
 </div>
 
 <div class="zhuce">
@@ -61,7 +61,7 @@
 
     <div class="phone">
         <div class="tu">
-            <img src="/kuaidian/Public/merch/images/dian.png" alt="">
+            <img src="/-/Public/merch/images/dian.png" alt="">
         </div>
 
         <div class="text">
@@ -72,7 +72,7 @@
 
     <div class="dizhi">
         <label class="ditu">
-            <img src="/kuaidian/Public/merch/images/dizhi.png" alt="">
+            <img src="/-/Public/merch/images/dizhi.png" alt="">
         </label>
 
         <div class="text8">
@@ -103,7 +103,7 @@
 
     <div class="phone">
         <label class="tu">
-            <img src="/kuaidian/Public/merch/images/geren2.png" alt="">
+            <img src="/-/Public/merch/images/geren2.png" alt="">
         </label>
 
         <div class="text">
@@ -114,7 +114,7 @@
 
     <div class="mima">
         <label class="tu2">
-            <img src="/kuaidian/Public/merch/images/mima.png" alt="">
+            <img src="/-/Public/merch/images/mima.png" alt="">
         </label>
 
         <div class="text2">
