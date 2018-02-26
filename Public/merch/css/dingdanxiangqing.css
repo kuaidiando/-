@@ -21,6 +21,7 @@
     font-size: 36px;
     background-color: #099898;
     padding-left: 20px;
+    color: #fff;
 }
 .you{
     width: 15%;
@@ -64,6 +65,12 @@
     display:none;
 }
 /*内容*/
+.bao{
+    width: 100%;
+    height: 1410px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
 .xin{
     width: 100%;
     height: 72px;
@@ -203,6 +210,7 @@
 
 
 /* navMenu */
+
 .pp{
     width: 95%;
     height: 84px;
@@ -226,6 +234,52 @@
     text-align: right;
 }
 .yy span{
+    font-size: 33.6px;
+    color: #097f7e;
+}
+
+
+
+.pp2{
+    width: 95%;
+    height: 84px;
+    margin-left: 2.5%;
+}
+.zz2{
+    width: 25%;
+    height: 84px;
+    float: left;
+    line-height: 84px;
+}
+.zz2 span{
+    font-size: 43.2px;
+    color: #888;
+}
+.ycc{
+    width: 35%;
+    height: 84px;
+    float: left;
+    line-height: 84px;
+}
+.ycc img{
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-top: 25px;
+}
+.ycc span{
+    font-size:33.6px;
+    color: #10aeff;
+    margin-left: 10px;
+}
+.yy2{
+    width: 39%;
+    height: 84px;
+    float: left;
+    line-height: 84px;
+    text-align: right;
+}
+.yy2 span{
     font-size: 33.6px;
     color: #097f7e;
 }
@@ -253,7 +307,7 @@
     margin-left: 2.5%;
 }
 .cai{
-    width: 60%;
+    width: 75%;
     height: 60px;
     line-height: 60px;
     float: left;
@@ -263,7 +317,7 @@
     color: #353535;
 }
 .ll{
-    width: 20%;
+    width: 15%;
     height: 60px;
     line-height: 60px;
 
@@ -274,7 +328,7 @@
     color: #888;
 }
 .qian2{
-    width: 19%;
+    width: 9%;
     height: 60px;
     line-height: 60px;
     float: left;
@@ -284,6 +338,62 @@
     font-size:40px;
     color: #353535;
 }
+
+
+.cai2{
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
+.cai2 span{
+    font-size: 33.6px;
+    color: #353535;
+}
+.ywc{
+    width: 25%;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
+.ywc span{
+    font-size: 33.6px;
+    color: #10aeff;
+}
+
+.zhiz{
+    width: 25%;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
+.zhiz span{
+    font-size: 33.6px;
+    color:red;
+}
+.ll2{
+    width: 15%;
+    height: 60px;
+    line-height: 60px;
+
+    float: left;
+}
+.ll2 span{
+    font-size: 33.6px;
+    color: #888;
+}
+.qian3{
+    width: 9%;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    text-align: right;
+}
+.qian3 span{
+    font-size:40px;
+    color: #353535;
+}
+
 .xiao{
     width: 95%;
     height: 96px;
@@ -415,6 +525,44 @@
 }
 
 
+.ttui{
+    width: 100%;
+}
+.td{
+    width: 95%;
+    min-height:60px;
+    margin-left: 2.5%;
+    border-bottom: 2px dashed #EAEAEA;
+}
+
+
+.bz2{
+    width: 70%;
+    height: 96px;
+    margin-left: 2.5%;
+    border-bottom: 2px dashed #EAEAEA;
+}
+.bb2{
+    width: 17%;
+    height: 96px;
+    line-height: 96px;
+    float: left;
+}
+.bb2 span{
+    font-size: 36px;
+}
+.int2{
+    width: 83%;
+    height: 96px;
+    line-height: 96px;
+    float: left;
+}
+.int2 span{
+    font-size: 36px;
+    color: #888;
+}
+
+
 .xd{
     width: 95%;
     height: 144px;
@@ -458,18 +606,18 @@
 .qr{
     width: 80%;
     height: 90px;
-    border: 3px solid #ffae00;
+    border: 3px solid #EAEAEA;
     margin-top: 27px;
     margin-left: 20%;
     border-radius: 7.2px;
-    line-height: 100px;
+    line-height: 90px;
     text-align: center;
-    background-color: #ffae00;
+    background-color: #EAEAEA;
 }
-.qr button{
+.qr span{
     font-size: 33.6px;
-    color: #fff;
-    background-color: #ffae00;
+    color: #888;
+    background-color: #EAEAEA;
 }
 
 
@@ -539,3 +687,16 @@
     font-size: 25px;
     color: #888888;
 }
+
+.yy{
+    width: 45%;
+    height: 144px;
+    float: left;
+}
+.yy img{
+    width: 200px;
+    height: 200px;
+    margin-top: -75px;
+}
+
+

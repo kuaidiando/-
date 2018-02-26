@@ -57,7 +57,7 @@
     </div>
 
     <div id="footer" onclick="location.href='zhiwei.html'">
-        <span>添加员工</span>
+        <button>添加员工</button>
     </div>
 </body>
 </html>

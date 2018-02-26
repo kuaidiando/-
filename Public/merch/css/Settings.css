@@ -1,0 +1,104 @@
+.head{
+    width: 100%;
+    height: 110px;
+    background-color: #097f7e;
+    line-height: 110px;
+    text-align: center;
+}
+.head span{
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+}
+.box{
+    width: 100%;
+    height: 132px;
+    background-color: white;
+    margin-top: 12px;
+
+}
+.box2{
+    width: 100%;
+    height: 132px;
+    background-color: white;
+}
+
+.he2{
+    width: 95%;
+    height: 132px;
+    margin-left: 5%;
+    border-bottom: 1.2px solid #DEDEDE;
+}
+.he{
+    width: 95%;
+    height: 132px;
+    margin-left: 5%;
+    border-bottom: 1.2px solid #DEDEDE;
+}
+
+.zi{
+    width: 78%;
+    height: 132px;
+    line-height: 132px;
+    float: left;
+}
+.zi span{
+    font-size: 38.4px;
+    font-weight: bolder;
+    color: #353535;
+}
+.qu{
+    width: 12%;
+    height: 132px;
+    line-height: 132px;
+    float: left;
+}
+.qu span{
+    font-size: 33.6px;
+    color: #888888;
+}
+.jian{
+    width: 10%;
+    height: 132px;
+    line-height: 132px;
+    text-align: center;
+    float: left;
+}
+.jian img{
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+}
+
+.box3{
+    width: 100%;
+    height: 132px;
+    background-color: white;
+}
+.he3{
+    width: 95%;
+    height: 132px;
+    margin-left: 5%;
+    border-bottom: 1.2px solid #DEDEDE;
+}
+.zi3{
+    width: 17%;
+    height: 132px;
+    line-height: 132px;
+    float: left;
+}
+.zi3 span{
+    font-size: 38.4px;
+    font-weight: bolder;
+    color: #353535;
+}
+.bang{
+    width: 61%;
+    height: 132px;
+    line-height: 132px;
+    float: left;
+}
+.bang span{
+    font-size: 35px;
+    color: #888888;
+}

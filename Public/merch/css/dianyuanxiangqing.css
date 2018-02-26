@@ -1,0 +1,149 @@
+body{
+    background-color: #FCF8F5;
+}
+.header{
+    width: 100%;
+    height: 480px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+.name{
+    width: 90%;
+    height: 120px;
+    margin-left: 5%;
+    border-bottom: 1.2px solid #DEDEDE;
+}
+.ming{
+    width: 20%;
+    height: 100px;
+    margin-top: 10px;
+    border-right: 1.2px solid #DEDEDE;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+}
+.ming span{
+    font-size: 33.6px;
+}
+.zi{
+    width: 80%;
+    height: 120px;
+    line-height: 120px;
+    float: left;
+}
+.zi span{
+    font-size: 33.6px;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+
+
+
+.phone{
+    width: 90%;
+    height: 120px;
+    margin-left: 5%;
+    border-bottom: 1.2px solid #DEDEDE;
+}
+.dian{
+    width: 20%;
+    height: 100px;
+    margin-top: 10px;
+    border-right: 1.2px solid #DEDEDE;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+}
+.dian span{
+    font-size: 33.6px;
+}
+.hao{
+    width: 80%;
+    height: 120px;
+    line-height: 120px;
+    float: left;
+}
+.hao span{
+    font-size: 33.6px;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+
+
+
+.id{
+    width: 90%;
+    height: 120px;
+    margin-left: 5%;
+    border-bottom: 1.2px solid #DEDEDE;
+}
+.gong{
+    width: 20%;
+    height: 100px;
+    margin-top: 10px;
+    border-right: 1.2px solid #DEDEDE;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+}
+.gong span{
+    font-size: 33.6px;
+}
+.hao2{
+    width: 80%;
+    height: 120px;
+    line-height: 120px;
+    float: left;
+}
+.hao2 span{
+    font-size: 33.6px;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+
+
+.zhi{
+    width: 90%;
+    height: 120px;
+    margin-left: 5%;
+}
+.wei{
+    width: 20%;
+    height: 100px;
+    margin-top: 10px;
+    border-right: 1.2px solid #DEDEDE;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+}
+.wei span{
+    font-size: 33.6px;
+}
+.qq{
+    width: 80%;
+    height: 120px;
+    line-height: 120px;
+    float: left;
+}
+.qq span{
+    font-size: 33.6px;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+.footer{
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    background-color: #097f7e;
+    position: fixed;
+    bottom: 0;
+}
+.footer span{
+    font-size: 43.2px;
+    color: #fff;
+}
