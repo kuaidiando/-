@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>快点—智慧餐厅</title>
-    <link rel="icon" href="/-/Public/home/img/logo1.png">
-    <link rel="stylesheet" href="/-/Public/home/css/index.css">
-    <link rel="stylesheet" href="/-/Public/home/css/base-index.css">
-    <link rel="stylesheet" href="/-/Public/home/css/base2.css">
-    <script src="/-/Public/home/js/flexible.js"></script>
-    <script src="/-/Public/home/js/jquery-1.12.4.js"></script>
+    <link rel="icon" href="/kuaidian/Public/home/img/logo1.png">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/index.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/base-index.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/base2.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/sousuo.css">
+    <script src="/kuaidian/Public/home/js/flexible.js"></script>
+    <script src="/kuaidian/Public/home/js/jquery-1.12.4.js"></script>
     <script>
         $(function(){
             $(window).scroll(function() {
@@ -47,7 +48,7 @@
                 </div>
                 
                 <div class="xl">
-                    <img src="/-/Public/home/img/jiantou2.png" alt="">
+                    <img src="/kuaidian/Public/home/img/jiantou2.png" alt="">
                 </div>
             </div>
 
@@ -55,7 +56,7 @@
             <div class="lookup">
                 <div class="look">
                     <div class="sou">
-                        <img src="/-/Public/home/img/loogup.png" alt="">
+                        <img src="/kuaidian/Public/home/img/loogup.png" alt="">
                     </div>
 
                     <div class="tet">
@@ -67,7 +68,7 @@
 
             <div class="person">
                 <div class="tx">
-                    <img src="/-/Public/<?php echo ($user_photo); ?>" alt="">
+                    <img src="/kuaidian/Public/<?php echo ($user_photo); ?>" alt="">
                 </div>
             </div>
         </div>
@@ -80,74 +81,93 @@
 
 
     <!--中间分类-->
-    <section class="nav">
-        <dl class="retrie">
-            <dt>
-                <a id="area" href="javascript:;">全部</a>
-                <a id="wage" href="javascript:;">附近</a>
-                <a id="zhi" href="javascript:;">智能</a>
-            </dt>
-            <dd class="area">
-                <ul class="slide downlist">
-                    <?php if(is_array($resmdlx)): foreach($resmdlx as $key=>$vomdlx): ?><li><a href="#"><?php echo ($vomdlx["mingch"]); ?></a></li><?php endforeach; endif; ?>
+    <div class="kong2" style="width: 100%;height: 120px;">
+        <section class="nav">
+            <div class="screening">
+                <ul>
+                    <li class="Sort">
+                        <div class="ss">
+                            <span>全部</span>
+                        </div>
+
+                        <div class="san">
+                            <img src="/kuaidian/Public/home/img/sanjiao.png" alt="">
+                        </div>
+                    </li>
+                    
+                    <li class="Regional">
+                        <div class="ss">
+                            <span>附近</span>
+                        </div>
+
+                        <div class="san">
+                            <img src="/kuaidian/Public/home/img/sanjiao.png" alt="">
+                        </div>
+                    </li>
+                    
+                    <li class="Brand">
+                        <div class="ss">
+                            <span>智能排序</span>
+                        </div>
+
+                        <div class="san">
+                            <img src="/kuaidian/Public/home/img/sanjiao.png" alt="">
+                        </div>
+                    </li>
                 </ul>
-            </dd>
-            <dd class="wage">
-                <ul class="slide downlist">
-                    <li><a href="#">600m</a></li>
-                    <li><a href="#">700m</a></li>
-                    <li><a href="#">800m</a></li>
-                    <li><a href="#">900m</a></li>
-                    <li><a href="#">1000m</a></li>
-                    <li><a href="#">1100m</a></li>
-                    <li><a href="#">1200m</a></li>
-                    <li><a href="#">1300m</a></li>
-                    <li><a href="#">1400m</a></li>
-                    <li><a href="#">1500m</a></li>
-                    <li><a href="#">1600m</a></li>
-                    <li><a href="#">6666m</a></li>
+            </div>
+
+            <div class="Sort-eject Sort-height">
+                <ul class="Sort-Sort" id="Sort-Sort">
+                    <li onclick="Sorts(this)">火锅</li>
+                    <li onclick="Sorts(this)">烤鱼</li>
+                    <li onclick="Sorts(this)">烤肉</li>
+                    <li onclick="Sorts(this)">川菜</li>
+                    <li onclick="Sorts(this)">东北菜</li>
+                    <li onclick="Sorts(this)">甜点</li>
                 </ul>
-            </dd>
-            <dd class="zhi">
-                <ul class="slide downlist">
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
+            </div>
+
+            <div class="grade-eject">
+                <ul class="grade-w" id="gradew">
+                    <li onclick="grade1(this)">裕华区</li>
+                    <li onclick="grade1(this)">长安区</li>
+                    <li onclick="grade1(this)">桥西区</li>
+                    <li onclick="grade1(this)">新华区</li>
+                    <li onclick="grade1(this)">鹿泉区</li>
+                    <li onclick="grade1(this)">栾城区</li>
+                    <li onclick="grade1(this)">开发区</li>
+                    <li onclick="grade1(this)">藁城区</li>
+                    <li onclick="grade1(this)">正定新区</li>
                 </ul>
-            </dd>
-        </dl>
-    </section>
-    <script type="text/javascript" src="/-/Public/home/js/jquery.js"></script>
-    <script type="text/javascript">
-        $(function(){
-            $('.retrie dt a').click(function(){
-                var $t=$(this);
-                if($t.hasClass('up')){
-                    $(".retrie dt a").removeClass('up');
-                    $('.downlist').hide();
-                    $('.mask').hide();
-                }else{
-                    $(".retrie dt a").removeClass('up');
-                    $('.downlist').hide();
-                    $t.addClass('up');
-                    $('.downlist').eq($(".retrie dt a").index($(this)[0])).show();
-                    $('.mask').show();
-                }
-            });
-            $(".area ul li a:contains('"+$('#area').text()+"')").addClass('selected');
-            $(".wage ul li a:contains('"+$('#wage').text()+"')").addClass('selected');
-            $(".zhi ul li a:contains('"+$('#zhi').text()+"')").addClass('selected');
-        });
-    </script>
+                <ul class="grade-t" id="gradet">
+                    <li onclick="gradet(this)">全河北</li>
+                    <li onclick="gradet(this)">石家庄</li>
+                    <li onclick="gradet(this)">唐山</li>
+                    <li onclick="gradet(this)">秦皇岛</li>
+                    <li onclick="gradet(this)">邢台</li>
+                    <li onclick="gradet(this)">保定</li>
+                    <li onclick="gradet(this)">张家口</li>
+                    <li onclick="gradet(this)">承德</li>
+                    <li onclick="gradet(this)">沧州</li>
+                    <li onclick="gradet(this)">廊坊</li>
+                    <li onclick="gradet(this)">衡水</li>
+                </ul>
+            </div>
+
+            <div class="Category-eject">
+                <ul class="Category-w" id="Categorytw">
+                    <li onclick="Categorytw(this)"></li>
+                    <li onclick="Categorytw(this)"></li>
+                    <li onclick="Categorytw(this)"></li>
+                    <li onclick="Categorytw(this)"></li>
+                    <li onclick="Categorytw(this)"></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="/kuaidian/Public/home/js/jquery-1.12.4.min.js"></script>
+    <script src="/kuaidian/Public/home/js/demo.js"></script>
 
 
 
@@ -158,7 +178,7 @@
                 <div class="hz">
                     <div class="top">
                         <div class="tu">
-                            <img src="/-/Public/<?php echo ($vores["logo"]); ?>" alt="">
+                            <img src="/kuaidian/Public/<?php echo ($vores["logo"]); ?>" alt="">
                         </div>
 
                         <div class="you">
@@ -172,20 +192,12 @@
                             <div class="center">
                                 <div class="xing">
                                 <!-- 实心星数量 -->
-<<<<<<< HEAD
-                                <?php $__FOR_START_1004993288__=0;$__FOR_END_1004993288__=$vores["shixinxing"];for($i=$__FOR_START_1004993288__;$i < $__FOR_END_1004993288__;$i+=1){ ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
-=======
-                                <?php $__FOR_START_10062__=0;$__FOR_END_10062__=$vores["shixinxing"];for($i=$__FOR_START_10062__;$i < $__FOR_END_10062__;$i+=1){ ?><img src="/-/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
->>>>>>> 2c758dd8d3a51df1945c779f432c00938d75f0a3
+                                <?php $__FOR_START_2078600719__=0;$__FOR_END_2078600719__=$vores["shixinxing"];for($i=$__FOR_START_2078600719__;$i < $__FOR_END_2078600719__;$i+=1){ ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
                                 <!-- 判断半个 星星 -->
-                        <?php if($vores["bangexing"] == 1): ?><img src="/-/Public/home/img/ban.png" style="width:13%;" alt="">
+                        <?php if($vores["bangexing"] == 1): ?><img src="/kuaidian/Public/home/img/ban.png" style="width:13%;" alt="">
                         <?php else: endif; ?>
                                 <!-- 空心星数量 -->
-<<<<<<< HEAD
-                                <?php $__FOR_START_651077896__=0;$__FOR_END_651077896__=$vores["kongxinxing"];for($i=$__FOR_START_651077896__;$i < $__FOR_END_651077896__;$i+=1){ ?><img src="/kuaidian/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
-=======
-                                <?php $__FOR_START_12399__=0;$__FOR_END_12399__=$vores["kongxinxing"];for($i=$__FOR_START_12399__;$i < $__FOR_END_12399__;$i+=1){ ?><img src="/-/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
->>>>>>> 2c758dd8d3a51df1945c779f432c00938d75f0a3
+                                <?php $__FOR_START_2137626179__=0;$__FOR_END_2137626179__=$vores["kongxinxing"];for($i=$__FOR_START_2137626179__;$i < $__FOR_END_2137626179__;$i+=1){ ?><img src="/kuaidian/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
                                     
                                 </div>
 
@@ -215,11 +227,11 @@
                                 </div>
 
                                 <div class="quan">
-                                    <img src="/-/Public/home/img/quan2.png" alt="">
+                                    <img src="/kuaidian/Public/home/img/quan2.png" alt="">
                                 </div>
 
                                 <div class="dian">
-                                    <img src="/-/Public/home/img/dian.png" alt="">
+                                    <img src="/kuaidian/Public/home/img/dian.png" alt="">
                                 </div>
                             </div>
 
@@ -233,7 +245,7 @@
 
                     <div class="bot">
                         <div class="tui">
-                            <img src="/-/Public/home/img/tuiguang.png" alt="">
+                            <img src="/kuaidian/Public/home/img/tuiguang.png" alt="">
                         </div>
 
                         <div class="jia">
@@ -251,12 +263,12 @@
 
                     <div class="xia2">
                         <div class="zzuo">
-                            <img src="/-/Public/home/img/jinri.png" alt="">
+                            <img src="/kuaidian/Public/home/img/jinri.png" alt="">
                         </div>
 
                         <div class="yyou">
                             <div class="xuan">
-                                <img src="/-/Public/home/img/dingzuo.png" alt="">
+                                <img src="/kuaidian/Public/home/img/dingzuo.png" alt="">
                             </div>
 
                             <div class="ke">
@@ -264,7 +276,8 @@
                             </div>
 
                             <div class="renshu">
-                                <span><?php echo (zuoweishu($vores["id"])); ?></span>
+                                <!-- <span><?php echo (zuoweishu($vores["id"])); ?></span> -->
+                                <span><?php echo ($vores["id"]); ?></span>
                             </div>
 
                             <div class="zhuo">
@@ -287,11 +300,7 @@
     <a href="<?php echo U('Home/Index/index');?>">
         <div id="foot">
             <div id="ttu">
-<<<<<<< HEAD
                 <img src="/kuaidian/Public/home/img/shangjia2.png" alt="">
-=======
-                <img src="/-/Public/home/img/shangjia2.png" alt="">
->>>>>>> 2c758dd8d3a51df1945c779f432c00938d75f0a3
             </div>
 
             <div id="shou">
@@ -316,11 +325,7 @@
     <a href="<?php echo U('Home/Person/index');?>">
         <div id="foot3" onclick="location.href='person.html'">
             <div id="ttu3">
-<<<<<<< HEAD
                <img src="/kuaidian/Public/home/img/geren.png" alt="">
-=======
-               <img src="/-/Public/home/img/geren.png" alt="">
->>>>>>> 2c758dd8d3a51df1945c779f432c00938d75f0a3
             </div>
 
             <div id="shou3">
