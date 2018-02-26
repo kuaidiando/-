@@ -156,13 +156,8 @@
             <!-- 总份数为0下一步为灰色 切不能点击下一步 -->
             <?php if($zfsjg['zfshu'] == 0): ?><div class="footer">
                 <div class="gou" onclick="toshare()">
-<<<<<<< HEAD
-                    <img src="/kuaidian/Public/home/img/gouwuche.png" alt="">
-                    <div class="ii" style="display: none;">
-=======
                     <img src="/-/Public/home/img/gouwuche.png" alt="">
-                    <div class="ii">
->>>>>>> 2c758dd8d3a51df1945c779f432c00938d75f0a3
+                    <div class="ii" style="display: none;">
                         <span id="totalcountshow">0</span>
                     </div>
                 </div>
@@ -179,11 +174,7 @@
             <?php else: ?>
             <div class="footer">
                 <div class="gou" onclick="toshare()">
-<<<<<<< HEAD
-                    <img src="/kuaidian/Public/home/img/gouwuche2.png" alt="">
-=======
-                    <img src="/-/Public/home/img/gouwuche.png" alt="">
->>>>>>> 2c758dd8d3a51df1945c779f432c00938d75f0a3
+                    <img src="/-/Public/home/img/gouwuche2.png" alt="">
                     <div class="ii">
                         <span id="totalcountshow"><?php echo ($zfsjg['zfshu']); ?></span>
                     </div>
@@ -198,15 +189,14 @@
                     <a id="btnselect" class="xhlbtn " href="javascript:void(0)">下一步</a>
                 </div>
             </div><?php endif; ?>
-<<<<<<< HEAD
-            <!-- <script type="text/javascript" src="/kuaidian/Public/home/js/jquery.js"></script> -->
+            <!-- <script type="text/javascript" src="/-/Public/home/js/jquery.js"></script> -->
             
             </li>
             <li class="item">
             <div class="address">
                 <div class="dizhi">
                     <div class="tt">
-                        <img src="/kuaidian/Public/home/img/dizhi.png" alt="">
+                        <img src="/-/Public/home/img/dizhi.png" alt="">
                     </div>
                     <div class="zz">
                         <span>
@@ -216,14 +206,14 @@
                 </div>
                 <div class="phone">
                     <div class="iphone">
-                        <a href="tel:<?php echo ($resspdan["0"]["tel"]); ?>"><img src="/kuaidian/Public/home/img/phone.png" alt=""></a>
+                        <a href="tel:<?php echo ($resspdan["0"]["tel"]); ?>"><img src="/-/Public/home/img/phone.png" alt=""></a>
                     </div>
                 </div>
             </div>
             <!--微众代言-->
             <div class="hezi2">
                 <div class="you6">
-                    <img src="/kuaidian/Public/home/img/tui2.png" alt="">
+                    <img src="/-/Public/home/img/tui2.png" alt="">
                 </div>
                 <div class="zhongjian">
                     <div class="daiyan2">
@@ -242,20 +232,20 @@
                     </div>
                 </div>
                 <div class="tu3">
-                    <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+                    <img src="/-/Public/home/img/youjiantou.png" alt="">
                 </div>
             </div>
             <!--优惠-->
             <div class="youhui">
                 <div class="quan">
                     <div class="quan3">
-                        <img src="/kuaidian/Public/home/img/quan2.png" alt="">
+                        <img src="/-/Public/home/img/quan2.png" alt="">
                     </div>
                     <span>优惠券</span>
                 </div>
                 <div class="xia2">
                     <div class="q1">
-                        <img src="/kuaidian/Public/<?php echo ($resspdan["0"]["logo"]); ?>" alt="">
+                        <img src="/-/Public/<?php echo ($resspdan["0"]["logo"]); ?>" alt="">
                     </div>
                     <div class="youhe">
                         <div class="jin">
@@ -297,7 +287,7 @@
                 </div>
                 <div class="he4">
                     <div class="tt1">
-                        <img src="/kuaidian/Public/home/img/tan.png" alt="">
+                        <img src="/-/Public/home/img/tan.png" alt="">
                     </div>
                     <div class="zz1">
                         <span>商家未在线时无法接受下单,请联系商家</span>
@@ -309,7 +299,7 @@
                 <div class="dian">
                     <div class="ww">
                         <a href="#">
-                        <img src="/kuaidian/Public/home/img/dian.png" alt="">
+                        <img src="/-/Public/home/img/dian.png" alt="">
                         </a>
                     </div>
                     <div class="zai">
@@ -322,7 +312,7 @@
                 <div class="ding">
                     <div class="aa">
                         <a href="#">
-                        <img src="/kuaidian/Public/home/img/ding.png" alt="">
+                        <img src="/-/Public/home/img/ding.png" alt="">
                         </a>
                     </div>
                     <div class="zhi">
@@ -334,7 +324,7 @@
                 <div class="fu">
                     <div class="vv">
                         <a href="#">
-                        <img src="/kuaidian/Public/home/img/fu.png" alt="">
+                        <img src="/-/Public/home/img/fu.png" alt="">
                         </a>
                     </div>
                     <div class="gai2">
@@ -361,7 +351,7 @@
                 <span>已选商品</span>
             </div>
             <div class="qingtu">
-                <img src="/kuaidian/Public/home/img/qingkong.png" alt="">
+                <img src="/-/Public/home/img/qingkong.png" alt="">
             </div>
             <div class="qing">
                 <span>清空</span>
@@ -383,13 +373,13 @@
         </div>
         <div class="zhong">
             <div id="subtraction" onclick="subtraction()">
-                <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
+                <img src="/-/Public/home/img/jianhao.png" alt="">
             </div>
             <div class="tet">
                 <input type="text" value="0" id="number" onblur="number()">
             </div>
             <div id="add" onclick="add()">
-                <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
+                <img src="/-/Public/home/img/jiahao.png" alt="">
             </div>
         </div>
         <div class="bot">
@@ -402,13 +392,9 @@
         </div>
     </ul>
 </div>
-<script src="/kuaidian/Public/home/js/jquery.js"></script>
-<script src="/kuaidian/Public/home/js/tab.js"></script>
+<script src="/-/Public/home/js/jquery.js"></script>
+<script src="/-/Public/home/js/tab.js"></script>
 <script type="text/javascript">
-=======
-            <script type="text/javascript" src="/-/Public/home/js/jquery.js"></script>
-            <script type="text/javascript">
->>>>>>> 2c758dd8d3a51df1945c779f432c00938d75f0a3
                 $(function () {
                     //小购物车加功能
                     $(document).on("click",".add2",function(){
@@ -620,11 +606,11 @@
                         // 判断为 0 和 1
                         if (zongnum == 1 || zongnum == undefined) {
                             //购物车亮
-                            var str = '<img src="/kuaidian/Public/home/img/gouwuche2.png" alt=""><div class="ii"><span id="totalcountshow">1</span></div>';
+                            var str = '<img src="/-/Public/home/img/gouwuche2.png" alt=""><div class="ii"><span id="totalcountshow">1</span></div>';
                             $(".gou").html(str);
                         }else if(zongnum == 0){
                             //购物车 暗
-                            var str = '<img src="/kuaidian/Public/home/img/gouwuche.png" alt="">';
+                            var str = '<img src="/-/Public/home/img/gouwuche.png" alt="">';
                             $(".gou").html(str);
                         }else{}
                     };
@@ -640,212 +626,6 @@
                                     });
                                 });
             </script>
-<<<<<<< HEAD
-=======
-            </li>
-            <li class="item">
-            <div class="address">
-                <div class="dizhi">
-                    <div class="tt">
-                        <img src="/-/Public/home/img/dizhi.png" alt="">
-                    </div>
-                    <div class="zz">
-                        <span>
-                                    <?php echo ($resspdan["0"]["jutidizhi"]); ?>
-                        </span>
-                    </div>
-                </div>
-                <div class="phone">
-                    <div class="iphone">
-                        <a href="tel:<?php echo ($resspdan["0"]["tel"]); ?>"><img src="/-/Public/home/img/phone.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <!--微众代言-->
-            <div class="hezi2">
-                <div class="you6">
-                    <img src="/-/Public/home/img/tui2.png" alt="">
-                </div>
-                <div class="zhongjian">
-                    <div class="daiyan2">
-                        <span>微众代言</span>
-                    </div>
-                    <div class="wenzi">
-                        <span>老陕北抿节&nbsp;邀您推广赚佣金</span>
-                    </div>
-                </div>
-                <div class="you8">
-                    <div class="shou">
-                        <span>收入比例</span>
-                    </div>
-                    <div class="red2">
-                        <span><?php echo ($resspdan["0"]["zuigaolij"]); ?>%</span>
-                    </div>
-                </div>
-                <div class="tu3">
-                    <img src="/-/Public/home/img/youjiantou.png" alt="">
-                </div>
-            </div>
-            <!--优惠-->
-            <div class="youhui">
-                <div class="quan">
-                    <div class="quan3">
-                        <img src="/-/Public/home/img/quan2.png" alt="">
-                    </div>
-                    <span>优惠券</span>
-                </div>
-                <div class="xia2">
-                    <div class="q1">
-                        <img src="/-/Public/<?php echo ($resspdan["0"]["logo"]); ?>" alt="">
-                    </div>
-                    <div class="youhe">
-                        <div class="jin">
-                            <span>仅需52元的单人自助餐/单人自</span>
-                        </div>
-                        <div class="qian">
-                            <div class="qian1">
-                                <span>￥52.0</span>
-                            </div>
-                            <div class="qian2">
-                                <del>
-                                                ￥98.0
-                                </del>
-                            </div>
-                            <div class="yi">
-                                <span>已使用2678</span>
-                            </div>
-                        </div>
-                        <div class="dixia">
-                            <span>(无需在线支付,出示即可使用)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--信息-->
-            <div class="xin">
-                <div class="he1">
-                    <span>商家信息</span>
-                </div>
-                <div class="he2">
-                    <span>营业时间：<?php echo ($resspdan["0"]["time_kai"]); ?>-<?php echo ($resspdan["0"]["time_zhong"]); ?></span>
-                </div>
-                <div class="he3">
-                    <span>实时状态：
-                    <?php if($resspdan[0][line_type] == 1): ?>在线
-                    <?php else: ?>
-                                        未在线<?php endif; ?>
-                    </span>
-                </div>
-                <div class="he4">
-                    <div class="tt1">
-                        <img src="/-/Public/home/img/tan.png" alt="">
-                    </div>
-                    <div class="zz1">
-                        <span>商家未在线时无法接受下单,请联系商家</span>
-                    </div>
-                </div>
-            </div>
-            <!--底部-->
-            <div class="dibu">
-                <div class="dian">
-                    <div class="ww">
-                        <a href="#">
-                        <img src="/-/Public/home/img/dian.png" alt="">
-                        </a>
-                    </div>
-                    <div class="zai">
-                        <a href="#">
-                        <span>在线点菜下单,立减活动,最高立减50%</span>
-                        </a>
-                    </div>
-                </div>
-                <?php if($resspdan[0][zuoweishu] == 0): else: ?>
-                <div class="ding">
-                    <div class="aa">
-                        <a href="#">
-                        <img src="/-/Public/home/img/ding.png" alt="">
-                        </a>
-                    </div>
-                    <div class="zhi">
-                        <a href="#">
-                        <span>支持在线预订座位</span>
-                        </a>
-                    </div>
-                </div><?php endif; ?>
-                <div class="fu">
-                    <div class="vv">
-                        <a href="#">
-                        <img src="/-/Public/home/img/fu.png" alt="">
-                        </a>
-                    </div>
-                    <div class="gai2">
-                        <a href="#">
-                        <span>该商家支持在线支付,微信支付等</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            </li>
-            <li class="item">
-                        点评
-            </li>
-        </ul>
-    </div>
-</div>
-<!--购物车遮罩层-->
-<div class="am-share">
-    <ul class="am-share-sns">
-        <div class="gg">
-            <div class="gang">
-            </div>
-            <div class="yx">
-                <span>已选商品</span>
-            </div>
-            <div class="qingtu">
-                <img src="/-/Public/home/img/qingkong.png" alt="">
-            </div>
-            <div class="qing">
-                <span>清空</span>
-            </div>
-        </div>
-        <!-- 购物车商品 js添加 -->
-        <div class="ajaxaddgsfood">
-            
-        </div>
-    </ul>
-    <div class="kong">
-    </div>
-</div>
-<!--选择就餐人数遮罩层-->
-<div class="am-share2">
-    <ul class="am-share-sns2">
-        <div class="jiucan">
-            <span>请选择就餐人数</span>
-        </div>
-        <div class="zhong">
-            <div id="subtraction" onclick="subtraction()">
-                <img src="/-/Public/home/img/jianhao.png" alt="">
-            </div>
-            <div class="tet">
-                <input type="text" value="0" id="number" onblur="number()">
-            </div>
-            <div id="add" onclick="add()">
-                <img src="/-/Public/home/img/jiahao.png" alt="">
-            </div>
-        </div>
-        <div class="bot">
-            <div id="qu">
-                <span id="guan">取消</span>
-            </div>
-            <div id="que">
-                <span style="color: #fff;">确定</span>
-            </div>
-        </div>
-    </ul>
-</div>
-<script src="/-/Public/home/js/jquery.js"></script>
-<script src="/-/Public/home/js/tab.js"></script>
->>>>>>> 2c758dd8d3a51df1945c779f432c00938d75f0a3
 <!--购物车遮罩层-->
 <script type="text/javascript">
         //情空购物车
@@ -899,11 +679,7 @@
                 success: function (result) {
                     var str = "";
                     $.each(result,function(index,item){
-<<<<<<< HEAD
-                        str += '<div class="nnei"><div class="neirong"><span class="foodidxiaogouwuc" style="display:none;">'+item.foodid+'</span><div class="neirong2"><div class="mmingzi"><span>'+item.caipname+'</span></div><div class="left2"><span id="cartN2">￥ <span id="totalpriceshow2">'+item.caiprice+'</span></span></div><div class="btn2"><button class="minus2" style="display:inline-block"><strong><img src="/kuaidian/Public/home/img/jianhao.png" alt=""></strong></button> <i style="display:inline-block">'+item.foodnum+'</i> <button class="add2"><strong><img src="/kuaidian/Public/home/img/jiahao.png" alt=""></strong></button> <i class="price2">18.5</i></div></div></div></div>';
-=======
                         str += '<div class="nnei"><div class="neirong"><span class="foodidxiaogouwuc" style="display:none;">'+item.foodid+'</span><div class="neirong2"><div class="mmingzi"><span>'+item.caipname+'</span></div><div class="left2"><span id="cartN2">￥ <span id="totalpriceshow2">'+item.caiprice+'</span></span></div><div class="btn2"><button class="minus2" style="display:inline-block"><strong><img src="/-/Public/home/img/jianhao.png" alt=""></strong></button> <i style="display:inline-block">'+item.foodnum+'</i> <button class="add2"><strong><img src="/-/Public/home/img/jiahao.png" alt=""></strong></button> <i class="price2">18.5</i></div></div></div></div>';
->>>>>>> 2c758dd8d3a51df1945c779f432c00938d75f0a3
                     });
                     $(".ajaxaddgsfood").html(str);
                     // console.log(result);
