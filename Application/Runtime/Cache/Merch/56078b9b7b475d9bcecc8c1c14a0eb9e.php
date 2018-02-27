@@ -163,7 +163,7 @@
         <div class="ddi">
             <div class="dis">
                 <div class="jia">
-                    <span>价格</span>
+                    <span>原价</span>
                 </div>
 
                 <div class="fu">
@@ -177,7 +177,7 @@
 
             <div class="diz">
                 <div class="yuan">
-                    <span>原价</span>
+                    <span>售价</span>
                 </div>
 
                 <div class="yj">

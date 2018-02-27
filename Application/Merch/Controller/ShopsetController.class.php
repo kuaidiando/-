@@ -10,6 +10,7 @@ use Think\Controller;
 class ShopsetController extends Controller {
 	//设置首页
     public function index(){
+        // dump(session("shopid"));
     	$shopid = I("get.shopid");
     	$user = M('shop');
     	$where['id'] = $shopid;

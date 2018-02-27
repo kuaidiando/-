@@ -57,7 +57,7 @@
                         <span>已认证</span>
                     </div>
                 <?php else: ?>
-                     <div class="rza">
+                     <div class="rz">
                         <span>未认证</span>
                     </div><?php endif; ?>
         </div>

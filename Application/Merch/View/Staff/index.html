@@ -16,16 +16,20 @@
         </div>
 
         <div class="wei">
-            <span>1位</span>
+            <span>{$num}位</span>
         </div>
     </div>
 
-    <div class="yg" onclick="location.href='dianyuanxiangqing.html'">
+    <div class="yg" >
+        <foreach name="res" item="vores">
+
+        <a href="{:U('Merch/Staff/ygxiangqing',array('staffid'=>$vores[id]))}">
         <div class="yuan">
             <div class="zuo">
                 <div class="name">
                     <div class="ming">
-                        <span>小程程</span>
+                        <span>{$vores.name}</span>
+                        <span style="color: #097f7e;">&nbsp;&nbsp;工号：{$vores.code}</span>
                     </div>
 
                     <div class="zhuang">
@@ -34,14 +38,20 @@
                         </div>
 
                         <div class="ss">
-                            <span>上班</span>
+                            <span>
+                                <if condition="$vores.typezhuangtai eq 2">
+                                    上班
+                                <else />
+                                    下班
+                                </if>
+                            </span>
                         </div>
                     </div>
                 </div>
 
                 <div class="zhi">
                     <div class="kuang">
-                        <span>大厨</span>
+                        <span>{$vores.typehou}</span>
                     </div>
                 </div>
             </div>
@@ -49,15 +59,24 @@
             <div class="you">
                 <a href="tel:13716172720">
                     <div class="phone">
-                        <img src="__PUBLIC__/home/img/phone.png" alt="">
+                    <a href="tel:{$vores.tel}"> <img src="__PUBLIC__/home/img/phone.png" alt=""></a> 
+                       
                     </div>
                 </a>
             </div>
         </div>
+        </a>
+        </foreach>
     </div>
 
-    <div id="footer" onclick="location.href='zhiwei.html'">
+    <div id="footer">
         <button>添加员工</button>
     </div>
 </body>
+<script type="text/javascript">
+    
+    $("#footer").click(function(){
+        window.location.href = "{:U('Merch/Staff/addyuangong',array('shopid'=>1))}";
+    });
+</script>
 </html>

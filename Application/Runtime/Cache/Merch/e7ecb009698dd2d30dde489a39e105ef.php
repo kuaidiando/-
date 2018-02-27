@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>门店设置</title>
-    <link rel="stylesheet" href="/-/Public/merch/css/text.css">
-    <link rel="stylesheet" href="/-/Public/merch/css/base.css">
-    <link rel="stylesheet" href="/-/Public/merch/css/Settings.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/Settings.css">
+    <script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
 </head>
 <body style="font-size: 12px">
     <div class="head">
@@ -27,7 +28,7 @@
                 </div>
 
                 <div class="jian">
-                    <img src="/-/Public/merch/images/youjiantou.png" alt="">
+                    <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
                 </div>
             </div>
         </div>
@@ -44,7 +45,7 @@
             </div>
 
             <div class="jian">
-                <img src="/-/Public/merch/images/youjiantou.png" alt="">
+                <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
             </div>
         </div>
     </div>
@@ -64,7 +65,7 @@
             </div>
 
             <div class="jian">
-                <img src="/-/Public/merch/images/youjiantou.png" alt="">
+                <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
             </div>
         </div>
     </div>
@@ -80,10 +81,37 @@
             </div>
 
             <div class="jian">
-                <img src="/-/Public/merch/images/youjiantou.png" alt="">
+                <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
             </div>
         </div>
     </div>
-
+<div class="foot" style="width: 100%;
+    height: 110px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    border-top: 1.2px #dedede solid;
+    line-height: 110px;
+    text-align: center;">
+        <span id="delsession" style="font-size: 40px;
+    color: red;">退出登录</span>
+    </div>
 </body>
+<script type="text/javascript">
+    $("#delsession").click(function(){
+        $.ajax({
+            type:'POST',
+            dataType: 'json',
+            url:'<?php echo U("Merch/Login/delsession");?>',
+            data:{},
+            success: function (result) {
+                if (result.code == 200) {
+                    window.location.href = "<?php echo U('Merch/Login/index');?>";
+                }else{
+                    alert(result.msg);
+                }
+            }
+        })
+    });
+</script>
 </html>

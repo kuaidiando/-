@@ -125,9 +125,9 @@
                                 <input type="text" class="foodid" style="display: none;" value="<?php echo ($vofoodxq["id"]); ?>">
                                 <!-- 隐藏状态 -->
                                 <input type="text" class="foodzhuangt" style="display: none;" value="<?php echo ($vofoodxq["zhuangt"]); ?>">
-                            	<?php if($vofoodxq["zhuangt"] == 1): ?><span class="typejia">上架</span>
+                            	<?php if($vofoodxq["zhuangt"] == 1): ?><span class="typejia">下架</span>
                                 <?php else: ?>
-                                	<span class="typejia">下架</span><?php endif; ?>
+                                	<span class="typejia">上架</span><?php endif; ?>
                             </div>
                         </div>
                     </div>

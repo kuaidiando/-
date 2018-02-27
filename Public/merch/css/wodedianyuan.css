@@ -46,7 +46,7 @@ body{
     float: left;
 }
 .name{
-    width: 50%;
+    width: 70%;
     height: 100px;
     line-height: 100px;
     float: left;
@@ -88,14 +88,14 @@ body{
 }
 
 .zhi{
-    width: 50%;
+    width: 30%;
     height: 100px;
     float: left;
 }
 .kuang{
-    width: 30%;
+    width: 45%;
     height: 60px;
-    margin-left: 60%;
+    margin-left: 30%;
     margin-top: 20px;
     border: 1.2px solid #097f7e;
     line-height: 60px;

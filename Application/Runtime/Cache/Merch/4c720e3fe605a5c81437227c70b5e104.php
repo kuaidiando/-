@@ -2,9 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
-    <link rel="stylesheet" href="/-/Public/merch/css/base.css">
-    <link rel="stylesheet" href="/-/Public/merch/css/register.css">
-    <script type="text/javascript" src="/-/Public/merch/js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/register.css">
+    <script type="text/javascript" src="/kuaidian/Public/merch/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript">
         $(function () {
             //获取短信验证码
@@ -50,7 +50,7 @@
 <body style="font-size: 12px">
 
 <div class="logo">
-    <img src="/-/Public/merch/images/logo2.png" alt="">
+    <img src="/kuaidian/Public/merch/images/logo2.png" alt="">
 </div>
 
 <div class="zhuce">
@@ -61,7 +61,7 @@
 
     <div class="phone">
         <div class="tu">
-            <img src="/-/Public/merch/images/dian.png" alt="">
+            <img src="/kuaidian/Public/merch/images/dian.png" alt="">
         </div>
 
         <div class="text">
@@ -72,7 +72,7 @@
 
     <div class="dizhi">
         <label class="ditu">
-            <img src="/-/Public/merch/images/dizhi.png" alt="">
+            <img src="/kuaidian/Public/merch/images/dizhi.png" alt="">
         </label>
 
         <div class="text8">
@@ -103,7 +103,7 @@
 
     <div class="phone">
         <label class="tu">
-            <img src="/-/Public/merch/images/geren2.png" alt="">
+            <img src="/kuaidian/Public/merch/images/geren2.png" alt="">
         </label>
 
         <div class="text">
@@ -114,7 +114,7 @@
 
     <div class="mima">
         <label class="tu2">
-            <img src="/-/Public/merch/images/mima.png" alt="">
+            <img src="/kuaidian/Public/merch/images/mima.png" alt="">
         </label>
 
         <div class="text2">
@@ -140,7 +140,7 @@
 
     <div class="hetong">
         <div class="fu">
-            <input type="checkbox">
+            <input type="checkbox" class="tongyixieyi">
         </div>
 
        <div class="yi">
@@ -153,8 +153,8 @@
             </span>
         </div>
     </div>
-
-    <div class="footer">
+<!-- 097f7e -->
+    <div class="footer" style="background-color: #888;">
         <a href="#">
             <span id="zhu">立即注册</span>
         </a>
@@ -164,6 +164,14 @@
 </div>
 
 <script type="text/javascript">
+    //是否点击 同意
+    $(".fu").click(function(){
+        if($(".tongyixieyi").is(":checked")){
+            $(".footer").css("background-color","#097f7e");
+        }else{
+            $(".footer").css("background-color","#888");
+        }
+    });
     //注册
     $("#zhu").click(function(){
         // 获取数据
@@ -195,6 +203,7 @@
         var codesheng = $(this).val();//获取省对应code
         // alert(codesheng);
         var str = '';//城市对应区域
+        $("#selsheng").css("color","#000");
         $.ajax({
             type:'post',
             dataType: 'json',
@@ -202,6 +211,7 @@
             data:{codesheng:codesheng},
             success: function (dd) {
                 // console.log(dd);
+                var str = '<option value="00000000">选择市</option>';
                 // 获取区域名称
                 $.each(dd,function(index,item){
                     str += '<option value="'+item.code+'">'+item.name+'</option>'; 
@@ -209,7 +219,8 @@
                 //赋值区域 市
                 $(".depcsjlshi").html(str);
                 // 清空区
-                $(".depcsjlxian").html("");
+                $(".depcsjlxian").html('<option value="00000000">选择区</option>');
+                
             }
         })
     });
@@ -217,6 +228,7 @@
     $(".depcsjlshi").change(function(){
         var codesheng = $(this).val();//获取市对应code
         var str = '';//城市对应区域
+        $(".depcsjlshi").css("color","#000");
         $.ajax({
             type:'post',
             dataType: 'json',
@@ -229,9 +241,13 @@
                 })
                 //赋值区域
                 $(".depcsjlxian").html(str);
+                 
             }
         })
     });
+    $(".depcsjlxian").change(function(){
+        $(".depcsjlxian").css("color","#000");
+    })
     //验证信息
     var tel = document.getElementById("tel");
     var mi = document.getElementById("mi");
