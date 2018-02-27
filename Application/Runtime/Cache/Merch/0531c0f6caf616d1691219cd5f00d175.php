@@ -16,16 +16,18 @@
         </div>
 
         <div class="wei">
-            <span>1位</span>
+            <span><?php echo ($num); ?>位</span>
         </div>
     </div>
 
-    <div class="yg" onclick="location.href='dianyuanxiangqing.html'">
+    <div class="yg" >
+        <?php if(is_array($res)): foreach($res as $key=>$vores): ?><a href="<?php echo U('Merch/Staff/ygxiangqing',array('staffid'=>$vores[id]));?>">
         <div class="yuan">
             <div class="zuo">
                 <div class="name">
                     <div class="ming">
-                        <span>小程程</span>
+                        <span><?php echo ($vores["name"]); ?></span>
+                        <span style="color: #097f7e;">&nbsp;&nbsp;工号：<?php echo ($vores["code"]); ?></span>
                     </div>
 
                     <div class="zhuang">
@@ -34,14 +36,18 @@
                         </div>
 
                         <div class="ss">
-                            <span>上班</span>
+                            <span>
+                                <?php if($vores["typezhuangtai"] == 2): ?>上班
+                                <?php else: ?>
+                                    下班<?php endif; ?>
+                            </span>
                         </div>
                     </div>
                 </div>
 
                 <div class="zhi">
                     <div class="kuang">
-                        <span>大厨</span>
+                        <span><?php echo ($vores["typehou"]); ?></span>
                     </div>
                 </div>
             </div>
@@ -49,15 +55,23 @@
             <div class="you">
                 <a href="tel:13716172720">
                     <div class="phone">
-                        <img src="/-/Public/home/img/phone.png" alt="">
+                    <a href="tel:<?php echo ($vores["tel"]); ?>"> <img src="/-/Public/home/img/phone.png" alt=""></a> 
+                       
                     </div>
                 </a>
             </div>
         </div>
+        </a><?php endforeach; endif; ?>
     </div>
 
-    <div id="footer" onclick="location.href='zhiwei.html'">
+    <div id="footer">
         <button>添加员工</button>
     </div>
 </body>
+<script type="text/javascript">
+    
+    $("#footer").click(function(){
+        window.location.href = "<?php echo U('Merch/Staff/addyuangong',array('shopid'=>1));?>";
+    });
+</script>
 </html>

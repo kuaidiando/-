@@ -99,13 +99,27 @@ body{
 .foot{
     width: 90%;
     height: 120px;
-    background-color: #097f7e;
+    background-color: #888;
     text-align: center;
     line-height: 120px;
     margin-top: 48px;
     margin-left: 5%;
 }
 .foot span{
+    font-size: 43.2px;
+    font-weight: normal;
+    color: white;
+}
+.footyuangong{
+    width: 90%;
+    height: 120px;
+    background-color: #888;
+    text-align: center;
+    line-height: 120px;
+    margin-top: 48px;
+    margin-left: 5%;
+}
+.footyuangong span{
     font-size: 43.2px;
     font-weight: normal;
     color: white;
@@ -155,4 +169,46 @@ body{
     font-size: 30px;
     margin-top: 18px;
     color:red;
+}
+#sp5{
+    float: left;
+    width: 40%;
+    height: 84px;
+    line-height: 84px;
+    font-size: 30px;
+    margin-top: 18px;
+    color:red;
+}
+#sp6{
+    float: left;
+    width: 40%;
+    height: 84px;
+    line-height: 84px;
+    font-size: 30px;
+    margin-top: 18px;
+    color:red;
+}
+
+
+
+
+/**tabs**/
+.tabPanel ul{
+    height:80px;
+}
+.tabPanel ul li{
+    float:left;
+    font-size:43.2px;
+    height:80px;
+    line-height:80px;
+    width:50%;
+    text-align:center;
+    cursor:pointer;
+}
+.tabPanel .hit{
+    cursor:pointer;
+    color:#097f7e;
+}
+.pane{
+    display:none;
 }

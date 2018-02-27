@@ -10,8 +10,36 @@ use Think\Controller;
 class LoginController extends Controller {
 	//商家登录首页
     public function index(){
-    	
+    	//判断是否登录
+        $shopid = session("shopid"); 
+        // session(null);
+         // $_SESSION['shopid'] = 45;
+        if ($shopid) {
+            $this->redirect("Merch/Index/index");
+        }
+        $staffid = session("staffid"); 
+        if ($staffid) {
+            $this->redirect("Merch/Staff/yuangongindex");
+        }
         $this->display();
+    }
+    //清空session
+    public function delsession(){
+        unset($_SESSION['shopid']);
+        $shopid = session("shopid");
+        if ($shopid) {
+            $data = array(
+                'data' => false,
+                'code' => 201,
+                'msg' => "退出失败"
+            );
+        }
+        $data = array(
+            'data' =>true,
+            'code' => 200,
+            'msg' => "退出成功"
+        );
+        $this->ajaxReturn($data);
     }
     //注册页面
     public function register(){
@@ -69,9 +97,9 @@ class LoginController extends Controller {
     }
     //执行登录
     public function dologin(){
-    	$tel = I("post.tel");//手机号
-    	$pass = I("post.pass");//密码
-    	$filter = array(
+        $tel = I("post.tel");//手机号
+        $pass = I("post.pass");//密码
+        $filter = array(
                 'tel' => $tel
         );
 
@@ -95,6 +123,45 @@ class LoginController extends Controller {
         }
         // $_SESSION[$user_info['tel']] = true;
         $_SESSION['shopid'] = $user_info['id'];
+
+       
+
+        $data = array(
+                'data' => true,
+                'code' => 200,
+                'msg'  => '',
+        );
+
+        $this->ajaxReturn($data);
+    }
+    //执行登录 员工
+    public function dologinyuangong(){
+        $tel = I("post.tel2");//手机号
+        $pass = I("post.pass2");//密码
+        $filter = array(
+                'code' => $tel
+        );
+        // $this->ajaxReturn(123);
+        $user_info = uri('staff', $filter);
+        if (!$user_info) {
+            $data = array(
+                    'data' => false,
+                    'code' => 305,
+                    'msg'  => '该员工不存在',
+            );
+
+            $this->ajaxReturn($data);
+        } else {
+            if ($user_info['password'] != md5($pass)) {
+                $this->ajaxReturn(array(
+                    'data' => false,
+                    'code' => 306,
+                    'msg' => '密码错误'
+                ));
+            }
+        }
+        // $_SESSION[$user_info['tel']] = true;
+        $_SESSION['staffid'] = $user_info['id'];
 
        
 
