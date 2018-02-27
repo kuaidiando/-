@@ -146,9 +146,9 @@
             </div>
         </div>
 
-        <div class="ll2" id="shopguanli">
+        <div class="ll2" >
 
-            <div class="she">
+            <div class="she" id="shopguanli">
                 <div class="sshe">
                     <div class="shetu">
                         <img src="__PUBLIC__/merch/images/shangpin.png" alt="">
@@ -178,7 +178,7 @@
             </div>
 
 
-            <div class="she3">
+            <div class="she3" id="staff_anage">
                 <div class="sshe">
                     <div class="shetu3">
                         <img src="__PUBLIC__/merch/images/yuangong.png" alt="">
@@ -289,6 +289,7 @@
     </div>
 </body>
     <script type="text/javascript">
+        //商品管理
         $("#shopguanli").click(function(){
             var jinbenxx = $(".jinbenxx").val();//基本信息
             var renzhengxx = $(".renzhengxx").val();//认证信息
@@ -304,6 +305,33 @@
             }else{
                 if (renzhengxx== 1) {
                     window.location.href = "{:U('Merch/Foodhoutai/index',array('shopid'=>$res[0][id]))}";
+                }else{
+                     var con = confirm("认证信息未完善");
+                        // 点击确定页面跳转
+                        if (con) {
+                            $(".tiaozrenzheng").click();//跳转认证信息
+                        }else{
+                            // alert("页面不跳转");
+                        }
+                }
+            }
+        });
+        //员工管理
+         $("#staff_anage").click(function(){
+            var jinbenxx = $(".jinbenxx").val();//基本信息
+            var renzhengxx = $(".renzhengxx").val();//认证信息
+            //判断基本信息状态
+            if (jinbenxx == 0) {
+                var con = confirm("基本信息未完善");
+                // 点击确定页面跳转
+                if (con) {
+                    $(".tiaozhuanmend").click();//跳转基本信息
+                }else{
+                    // alert("页面不跳转");
+                }
+            }else{
+                if (renzhengxx== 1) {
+                    window.location.href = "{:U('Merch/Staff/index',array('shopid'=>$res[0][id]))}";
                 }else{
                      var con = confirm("认证信息未完善");
                         // 点击确定页面跳转
@@ -370,6 +398,7 @@
                     //     mp3.play();
                     //     play=remind;
                     // } 
+
 
                 }
             })

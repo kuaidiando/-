@@ -21,11 +21,12 @@ ul.tabs li a {
     outline: none;
 }
 ul.tabs li a:hover {
-    border-left: 5px solid #097f7e;
+    /*border-left:3px solid #097f7e;*/
 }
 html ul.tabs li.active, html ul.tabs li.active a:hover  {
     background: #fff;
     color: #000;
+    border-left:3px solid #097f7e;
 }
 .tab_container {
     float: left;

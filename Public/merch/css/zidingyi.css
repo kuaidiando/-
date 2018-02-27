@@ -180,7 +180,7 @@
     border-bottom:1.2px solid #DEDEDE;
 }
 .jia{
-    width: 17%;
+    width: 10%;
     height: 120px;
     line-height: 120px;
     float: left;
@@ -190,7 +190,7 @@
     font-weight: bolder;
 }
 .tian{
-    width: 80%;
+    width: 87%;
     height: 120px;
     line-height: 120px;
     float: left;
@@ -251,15 +251,11 @@
     text-align: right;
 }
 .rr{
-    margin-right: 50px;
     width: 180px;
     height: 100px;
     font-size: 33.6px;
+    margin-right: 50px;
 }
-
-
-
-
 
 .footer{
      width: 100%;
@@ -328,7 +324,7 @@
     color: #fff;
 }
 .foot3{
-    width: 100%;
+    width: 50%;
     height: 100px;
     line-height: 100px;
     text-align: center;
@@ -347,7 +343,6 @@
     left: 0%;
     width: 100%;
     height: 100%;
-    background-color: black;
     z-index:1001;
     -moz-opacity: 0.6;
     opacity:.60;

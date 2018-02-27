@@ -1,8 +1,4374 @@
+<<<<<<< HEAD
+[ 2018-02-26T09:30:06+08:00 ] ::1 /kuaidian/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T09:42:53+08:00 ] ::1 /kuaidian/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T09:48:17+08:00 ] ::1 /kuaidian/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T09:48:18+08:00 ] ::1 /kuaidian/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T09:54:33+08:00 ] ::1 /kuaidian/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T09:54:36+08:00 ] ::1 /kuaidian/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+=======
 [ 2018-02-26T09:36:08+08:00 ] 192.168.0.100 /-/index.php/register.html
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
 ERR: 无法加载模块:Register
+>>>>>>> 739761ed984cc2e29762d2432ea6b7fcee40d586
+
+[ 2018-02-26T10:25:22+08:00 ] ::1 /kuaidian/Public/home/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:27:41+08:00 ] ::1 /kuaidian/Public/merch/css/wodedianyuan.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:27:43+08:00 ] ::1 /kuaidian/Public/merch/css/wodedianyuan.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:27:44+08:00 ] ::1 /kuaidian/Public/merch/css/wodedianyuan.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:27:45+08:00 ] ::1 /kuaidian/Public/merch/css/wodedianyuan.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:27:45+08:00 ] ::1 /kuaidian/Public/merch/css/wodedianyuan.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:26+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:34+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:35+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002582s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:36+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000853s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:51+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002691s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T10:56:52+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:46+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:46+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:46+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:46+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:46+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:46+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:46+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:46+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:46+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:46+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:46+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:46+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:46+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:46+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:46+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000731s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:47+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:01:48+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:15+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:15+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:15+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:15+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:15+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:15+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:15+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:15+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:15+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000337s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:16+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:04:17+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:07+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:08+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:09+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:10+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+ERR: 无法加载模块:Public
+
+018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:28+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:29+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001632s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:06:30+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:17+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:17+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:18+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:19+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/images/yonghu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:20+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/css/text.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/images/qiehuan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/images/shezhi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/images/zuowei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/images/shangpin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/images/fentang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/images/yuangong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/images/youjiantou.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/images/dian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/images/xitong.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/images/caiwu.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/images/sheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/images/diangdan.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/images/yingxiao.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2018-02-26T11:07:22+08:00 ] ::1 /kuaidian/Public/merch/images/renzheng.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
 
 [ 2018-02-26T11:20:32+08:00 ] 192.168.0.111 /-/Public/merch/images/yiwancheng.png
 INFO: [ app_init ] --START--

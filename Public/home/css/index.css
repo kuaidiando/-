@@ -20,7 +20,7 @@
 .cs span{
     font-size: 35px;
     font-weight: bolder;
-    color: white;
+    color: white; 
 }
 .xl{
     width: 30%;
@@ -191,7 +191,7 @@
     color: #888888;
 }
 .qian{
-    width: 4%;
+    width: 7%;
     height: 56px;
     line-height: 60px;
     float: left;

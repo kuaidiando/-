@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
-    <link rel="stylesheet" href="/-/Public/merch/css/base.css">
-    <link rel="stylesheet" href="/-/Public/merch/css/text.css">
-    <link rel="stylesheet" href="/-/Public/merch/css/login.css">
-    <script type="text/javascript" src="/-/Public/merch/js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/login.css">
+    <script type="text/javascript" src="/kuaidian/Public/merch/js/jquery-1.12.4.min.js"></script>
     <title>登录</title>
 </head>
 <body style="font-size: 12px">
 
     <div class="kong">
-        <img src="/-/Public/merch/images/logo2.png" alt="">
+        <img src="/kuaidian/Public/merch/images/logo2.png" alt="">
     </div>
 
     <div class="denglu">
@@ -21,7 +21,7 @@
 
     <div class="phone">
         <div class="lu">
-            <img src="/-/Public/merch/images/geren2.png" alt="">
+            <img src="/kuaidian/Public/merch/images/geren2.png" alt="">
         </div>
 
         <div class="text">
@@ -32,7 +32,7 @@
 
     <div class="mima">
         <div class="tu2">
-            <img src="/-/Public/merch/images/mima.png" alt="">
+            <img src="/kuaidian/Public/merch/images/mima.png" alt="">
         </div>
 
         <div class="text2">

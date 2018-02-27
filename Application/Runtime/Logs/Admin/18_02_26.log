@@ -1,3 +1,496 @@
+<<<<<<< HEAD
+[ 2018-02-26T10:04:38+08:00 ] ::1 /kuaidian/index.php/Admin/shop/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `shop`  [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 91 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 173 行.
+NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 176 行.
+NOTIC: [8] Undefined variable: info D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 257 行.
+SQL: SELECT `name` FROM `city` WHERE `code` = '130100'  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0060s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sale` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 44 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130100'  [ RunTime:0.0009s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 45 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130200'  [ RunTime:0.0011s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 47 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130100'  [ RunTime:0.0008s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 0  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\kuaidian\Application\Common\Common\function.php 第 128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 48 LIMIT 1   [ RunTime:0.0013s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2018-02-26T10:04:40+08:00 ] ::1 /kuaidian/index.php/Admin/shop/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `shop`  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 91 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 173 行.
+NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 176 行.
+NOTIC: [8] Undefined variable: info D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 257 行.
+SQL: SELECT `name` FROM `city` WHERE `code` = '130100'  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0057s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sale` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 44 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130100'  [ RunTime:0.0014s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 45 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130200'  [ RunTime:0.0015s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 47 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130100'  [ RunTime:0.0019s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 0  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\kuaidian\Application\Common\Common\function.php 第 128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 48 LIMIT 1   [ RunTime:0.0008s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2018-02-26T10:04:58+08:00 ] ::1 /kuaidian/index.php/Admin/Food/index/menid/45/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 45  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 173 行.
+NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 176 行.
+NOTIC: [8] Undefined variable: info D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 257 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0057s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 36  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0054s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0056s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 45  [ RunTime:0.0013s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2018-02-26T10:04:59+08:00 ] ::1 /kuaidian/index.php/Admin/Food/index/menid/45/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 45  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 173 行.
+NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 176 行.
+NOTIC: [8] Undefined variable: info D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 257 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0051s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 36  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0052s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0065s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 45  [ RunTime:0.0007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2018-02-26T10:05:12+08:00 ] ::1 /kuaidian/index.php/Admin/Food/edit/id/110.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `food_type`  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `cpdanwei`  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `food` WHERE `id` = 110  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '110'  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 2  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 3  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2018-02-26T10:05:29+08:00 ] ::1 /kuaidian/index.php/Admin/Food/index/menid/45/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 45  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 173 行.
+NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 176 行.
+NOTIC: [8] Undefined variable: info D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 257 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0051s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 36  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0050s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0059s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 45  [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2018-02-26T10:07:12+08:00 ] ::1 /kuaidian/index.php/Admin/Food/edit/id/110.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `food_type`  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `cpdanwei`  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `food` WHERE `id` = 110  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '110'  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 2  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 3  [ RunTime:0.0019s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2018-02-26T10:07:20+08:00 ] ::1 /kuaidian/index.php/Admin/Food/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0060s ]
+NOTIC: [2] finfo_file(): Empty filename or path D:\xampp\htdocs\kuaidian\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+NOTIC: [8] Undefined index: fenliang D:\xampp\htdocs\kuaidian\Application\Admin\Controller\FoodController.class.php 第 162 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Admin\Controller\FoodController.class.php 第 162 行.
+NOTIC: [8] Undefined variable: flid D:\xampp\htdocs\kuaidian\Application\Admin\Controller\FoodController.class.php 第 167 行.
+SQL: UPDATE `food` SET `mingch`='测试',`jiage`='30.0',`jiage_youhui`='25',`zhuangt`='1',`food_type`='36',`dwid`='4',`shicai`='',`kougan`='',`guige`='2',`id`='110',`flid`='',`kwid`='' WHERE `id` = 110 [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0056s ]
+SQL: DELETE FROM `cpfljiage` WHERE `cpcode` = '110' [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: fenliang D:\xampp\htdocs\kuaidian\Application\Admin\Controller\FoodController.class.php 第 193 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Admin\Controller\FoodController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2018-02-26T10:07:21+08:00 ] ::1 /kuaidian/index.php/Admin/Food/edit/id/110.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `food_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `cpdanwei`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `food` WHERE `id` = 110  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '110'  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 2  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 3  [ RunTime:0.0013s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2018-02-26T10:07:21+08:00 ] ::1 /kuaidian/index.php/Admin/Food/index/menid/45/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 45  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 173 行.
+NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 176 行.
+NOTIC: [8] Undefined variable: info D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 257 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0062s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 36  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0049s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0069s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 45  [ RunTime:0.0018s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2018-02-26T10:07:41+08:00 ] ::1 /kuaidian/index.php/Admin/Food/edit/id/110.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0341s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `food_type`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cpdanwei`  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `food` WHERE `id` = 110  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '110'  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 2  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 3  [ RunTime:0.0021s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000688s ]
+
+[ 2018-02-26T10:07:46+08:00 ] ::1 /kuaidian/index.php/Admin/Food/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0058s ]
+NOTIC: [2] finfo_file(): Empty filename or path D:\xampp\htdocs\kuaidian\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+NOTIC: [8] Undefined index: fenliang D:\xampp\htdocs\kuaidian\Application\Admin\Controller\FoodController.class.php 第 162 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Admin\Controller\FoodController.class.php 第 162 行.
+NOTIC: [8] Undefined variable: flid D:\xampp\htdocs\kuaidian\Application\Admin\Controller\FoodController.class.php 第 167 行.
+SQL: UPDATE `food` SET `mingch`='测试',`jiage`='35',`jiage_youhui`='25.0',`zhuangt`='1',`food_type`='36',`dwid`='4',`shicai`='',`kougan`='',`guige`='2',`id`='110',`flid`='',`kwid`='' WHERE `id` = 110 [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0050s ]
+SQL: DELETE FROM `cpfljiage` WHERE `cpcode` = '110' [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: fenliang D:\xampp\htdocs\kuaidian\Application\Admin\Controller\FoodController.class.php 第 193 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Admin\Controller\FoodController.class.php 第 193 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2018-02-26T10:07:48+08:00 ] ::1 /kuaidian/index.php/Admin/Food/edit/id/110.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `food_type`  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `cpdanwei`  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `food` WHERE `id` = 110  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cpfljiage` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `cpfljiage` WHERE `cpcode` = '110'  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 1  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 2  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cpfenliang` WHERE `id` = 3  [ RunTime:0.0009s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+=======
 [ 2018-02-26T09:38:45+08:00 ] 192.168.0.100 /-/index.php/Admin/Ajax/shengdoshi.html
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
@@ -7,4 +500,131 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
 SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0126s ]
 SQL: SELECT * FROM `city` WHERE `provincecode` = '130000'  [ RunTime:0.0156s ]
+>>>>>>> 739761ed984cc2e29762d2432ea6b7fcee40d586
+
+[ 2018-02-26T10:16:21+08:00 ] ::1 /kuaidian/index.php/Admin/Food/index/menid/45/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 45  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 173 行.
+NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 176 行.
+NOTIC: [8] Undefined variable: info D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 257 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0060s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 36  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0055s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0069s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 45  [ RunTime:0.0014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2018-02-26T10:16:22+08:00 ] ::1 /kuaidian/index.php/Admin/Food/index/menid/45/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 45  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 173 行.
+NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 176 行.
+NOTIC: [8] Undefined variable: info D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 257 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0057s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 36  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0055s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 45  [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2018-02-26T10:16:26+08:00 ] ::1 /kuaidian/index.php/Admin/Food/index/menid/45/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `food` WHERE `dep_shop` = 45  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 91 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 173 行.
+NOTIC: [8] Undefined variable: active D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 176 行.
+NOTIC: [8] Undefined variable: info D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Admin\366640149ae8cbe094b01f770667186d.php 第 257 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0058s ]
+SQL: SELECT `mingch` FROM `food_type` WHERE `id` = 36  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0048s ]
+SQL: SELECT `mingch` FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `cpfenliang` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0062s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 45  [ RunTime:0.0021s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
 

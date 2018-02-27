@@ -18,9 +18,10 @@ class IndexController extends Controller {
         //门店列表
     	$user = M('shop');
     	$where['shop.zhuangt'] =  1;//是否上架 1--上架 2 --否
+        $where['shop.depcsjlshi'] = 130100;//石家庄市
     	$res = $user->where($where)
                 ->join('shop_type on shop.type_shop = shop_type.id')
-                ->field("shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij")->select();
+                ->field("shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij,shop.depcsjlshi")->select();
                 // dump($res);die;
         // 拼接星星数量
         foreach ($res as $kres => $vres) {

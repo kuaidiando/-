@@ -134,16 +134,13 @@
 .foot{
     width: 100%;
     height: 110px;
+    background-color: #097f7e;
     position: fixed;
     bottom: 0;
-
-}
-.foot button{
-    width: 100%;
-    height: 110px;
-    font-size: 40px;
-    color: #ffffff;
     line-height: 110px;
     text-align: center;
-    background-color: #097f7e;
+}
+.foot span{
+    font-size: 40px;
+    color: #ffffff;
 }

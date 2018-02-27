@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="__PUBLIC__/home/css/index.css">
     <link rel="stylesheet" href="__PUBLIC__/home/css/base-index.css">
     <link rel="stylesheet" href="__PUBLIC__/home/css/base2.css">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/sousuo.css">
     <script src="__PUBLIC__/home/js/flexible.js"></script>
     <script src="__PUBLIC__/home/js/jquery-1.12.4.js"></script>
     <script>
@@ -80,76 +81,93 @@
 
 
     <!--中间分类-->
-    <section class="nav">
-        <dl class="retrie">
-            <dt>
-                <a id="area" href="javascript:;">全部</a>
-                <a id="wage" href="javascript:;">附近</a>
-                <a id="zhi" href="javascript:;">智能</a>
-            </dt>
-            <dd class="area">
-                <ul class="slide downlist">
-                    <foreach name="resmdlx" item="vomdlx">
-                    <li><a href="#">{$vomdlx.mingch}</a></li>
-                    </foreach>
+    <div class="kong2" style="width: 100%;height: 120px;">
+        <section class="nav">
+            <div class="screening">
+                <ul>
+                    <li class="Sort">
+                        <div class="ss">
+                            <span>全部</span>
+                        </div>
+
+                        <div class="san">
+                            <img src="__PUBLIC__/home/img/sanjiao.png" alt="">
+                        </div>
+                    </li>
+                    
+                    <li class="Regional">
+                        <div class="ss">
+                            <span>附近</span>
+                        </div>
+
+                        <div class="san">
+                            <img src="__PUBLIC__/home/img/sanjiao.png" alt="">
+                        </div>
+                    </li>
+                    
+                    <li class="Brand">
+                        <div class="ss">
+                            <span>智能排序</span>
+                        </div>
+
+                        <div class="san">
+                            <img src="__PUBLIC__/home/img/sanjiao.png" alt="">
+                        </div>
+                    </li>
                 </ul>
-            </dd>
-            <dd class="wage">
-                <ul class="slide downlist">
-                    <li><a href="#">600m</a></li>
-                    <li><a href="#">700m</a></li>
-                    <li><a href="#">800m</a></li>
-                    <li><a href="#">900m</a></li>
-                    <li><a href="#">1000m</a></li>
-                    <li><a href="#">1100m</a></li>
-                    <li><a href="#">1200m</a></li>
-                    <li><a href="#">1300m</a></li>
-                    <li><a href="#">1400m</a></li>
-                    <li><a href="#">1500m</a></li>
-                    <li><a href="#">1600m</a></li>
-                    <li><a href="#">6666m</a></li>
+            </div>
+
+            <div class="Sort-eject Sort-height">
+                <ul class="Sort-Sort" id="Sort-Sort">
+                    <li onclick="Sorts(this)">火锅</li>
+                    <li onclick="Sorts(this)">烤鱼</li>
+                    <li onclick="Sorts(this)">烤肉</li>
+                    <li onclick="Sorts(this)">川菜</li>
+                    <li onclick="Sorts(this)">东北菜</li>
+                    <li onclick="Sorts(this)">甜点</li>
                 </ul>
-            </dd>
-            <dd class="zhi">
-                <ul class="slide downlist">
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
-                    <li><a href="#">。。。</a></li>
+            </div>
+
+            <div class="grade-eject">
+                <ul class="grade-w" id="gradew">
+                    <li onclick="grade1(this)">裕华区</li>
+                    <li onclick="grade1(this)">长安区</li>
+                    <li onclick="grade1(this)">桥西区</li>
+                    <li onclick="grade1(this)">新华区</li>
+                    <li onclick="grade1(this)">鹿泉区</li>
+                    <li onclick="grade1(this)">栾城区</li>
+                    <li onclick="grade1(this)">开发区</li>
+                    <li onclick="grade1(this)">藁城区</li>
+                    <li onclick="grade1(this)">正定新区</li>
                 </ul>
-            </dd>
-        </dl>
-    </section>
-    <script type="text/javascript" src="__PUBLIC__/home/js/jquery.js"></script>
-    <script type="text/javascript">
-        $(function(){
-            $('.retrie dt a').click(function(){
-                var $t=$(this);
-                if($t.hasClass('up')){
-                    $(".retrie dt a").removeClass('up');
-                    $('.downlist').hide();
-                    $('.mask').hide();
-                }else{
-                    $(".retrie dt a").removeClass('up');
-                    $('.downlist').hide();
-                    $t.addClass('up');
-                    $('.downlist').eq($(".retrie dt a").index($(this)[0])).show();
-                    $('.mask').show();
-                }
-            });
-            $(".area ul li a:contains('"+$('#area').text()+"')").addClass('selected');
-            $(".wage ul li a:contains('"+$('#wage').text()+"')").addClass('selected');
-            $(".zhi ul li a:contains('"+$('#zhi').text()+"')").addClass('selected');
-        });
-    </script>
+                <ul class="grade-t" id="gradet">
+                    <li onclick="gradet(this)">全河北</li>
+                    <li onclick="gradet(this)">石家庄</li>
+                    <li onclick="gradet(this)">唐山</li>
+                    <li onclick="gradet(this)">秦皇岛</li>
+                    <li onclick="gradet(this)">邢台</li>
+                    <li onclick="gradet(this)">保定</li>
+                    <li onclick="gradet(this)">张家口</li>
+                    <li onclick="gradet(this)">承德</li>
+                    <li onclick="gradet(this)">沧州</li>
+                    <li onclick="gradet(this)">廊坊</li>
+                    <li onclick="gradet(this)">衡水</li>
+                </ul>
+            </div>
+
+            <div class="Category-eject">
+                <ul class="Category-w" id="Categorytw">
+                    <li onclick="Categorytw(this)"></li>
+                    <li onclick="Categorytw(this)"></li>
+                    <li onclick="Categorytw(this)"></li>
+                    <li onclick="Categorytw(this)"></li>
+                    <li onclick="Categorytw(this)"></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="__PUBLIC__/home/js/jquery-1.12.4.min.js"></script>
+    <script src="__PUBLIC__/home/js/demo.js"></script>
 
 
 
@@ -268,7 +286,8 @@
                             </div>
 
                             <div class="renshu">
-                                <span>{$vores.id|zuoweishu=###}</span>
+                                <!-- <span>{$vores.id|zuoweishu=###}</span> -->
+                                <span>{$vores.id}</span>
                             </div>
 
                             <div class="zhuo">
