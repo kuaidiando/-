@@ -1610,3 +1610,1608 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000978s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
 
+[ 2018-02-27T18:14:26+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001225s ]
+
+[ 2018-02-27T18:14:36+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0118s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001195s ]
+
+[ 2018-02-27T18:14:46+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001288s ]
+
+[ 2018-02-27T18:14:56+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001333s ]
+
+[ 2018-02-27T18:15:06+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0111s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001073s ]
+
+[ 2018-02-27T18:15:16+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0125s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001171s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001342s ]
+
+[ 2018-02-27T18:15:19+08:00 ] ::1 /-/index.php/Merch/Order/index/store_id/48.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002272s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `store_id` = 48 AND `order_status` = 10 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `order` WHERE `store_id` = 48 AND `order_status` = 10  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `money` [ RunTime:0.0054s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 127 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `lj` FROM `money` WHERE `order_id` = 127 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0063s ]
+SQL: SELECT `repast_price` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `order_fu` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `order_fu` WHERE `order_id` = 127  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0047s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 111 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 127 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 128 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `lj` FROM `money` WHERE `order_id` = 128 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `repast_price` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `order_fu` WHERE `order_id` = 128  [ RunTime:0.0011s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 128 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `order` WHERE `store_id` = 48 AND `order_status` = 11 AND ( `use_time` >= '2018-02-27 00:00:00' AND `use_time` < '2018-02-28 00:00:00'  )  [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `store_id` = 48 AND `order_status` = 12 AND ( `use_time` >= '2018-02-27 00:00:00' AND `use_time` < '2018-02-28 00:00:00'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `order` WHERE `store_id` = 48 AND `order_status` = 12 AND ( `use_time` >= '2018-02-27 00:00:00' AND `use_time` < '2018-02-28 00:00:00'  )  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `store_id` = 48 AND `order_status` = 20 AND ( `use_time` >= '2018-02-27 00:00:00' AND `use_time` < '2018-02-28 00:00:00'  ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `order` WHERE `store_id` = 48 AND `order_status` = 20 AND ( `use_time` >= '2018-02-27 00:00:00' AND `use_time` < '2018-02-28 00:00:00'  )  [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `store_id` = 48 AND `order_status` = 5 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `order` WHERE `store_id` = 48 AND `order_status` = 5 ORDER BY id desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: wc_total_price E:\wamp64\www\-\Application\Merch\Controller\OrderController.class.php ç¬¬ 139 è¡Œ.
+NOTIC: [8] Undefined variable: qx_total_price E:\wamp64\www\-\Application\Merch\Controller\OrderController.class.php ç¬¬ 140 è¡Œ.
+NOTIC: [8] Undefined variable: no_total_price E:\wamp64\www\-\Application\Merch\Controller\OrderController.class.php ç¬¬ 141 è¡Œ.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000506s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000694s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001435s ]
+
+[ 2018-02-27T18:15:29+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000124s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0103s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001202s ]
+
+[ 2018-02-27T18:15:34+08:00 ] ::1 /-/index.php/Merch/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001427s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 48  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0078s ]
+SQL: SELECT `id` FROM `order` WHERE `order_status` IN ('10','15') AND `store_id` = 48  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `money` [ RunTime:0.0062s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 127 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 128 LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000368s ]
+NOTIC: [8] Use of undefined constant logo - assumed 'logo' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 29 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 34 è¡Œ.
+NOTIC: [8] Use of undefined constant mingch - assumed 'mingch' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 50 è¡Œ.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 56 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 93 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 258 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 263 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 305 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 332 è¡Œ.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2018-02-27T18:15:39+08:00 ] ::1 /-/index.php/Merch/Shopset/index/shopid/48.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 48  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Use of undefined constant jinbenxxtype - assumed 'jinbenxxtype' E:\wamp64\www\-\Application\Runtime\Cache\Merch\e7ecb009698dd2d30dde489a39e105ef.php ç¬¬ 24 è¡Œ.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2018-02-27T18:15:47+08:00 ] ::1 /-/index.php/Merch/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001177s ]
+
+[ 2018-02-27T18:15:58+08:00 ] ::1 /-/index.php/Merch/Login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001368s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `shop` WHERE `tel` = '15915915915' LIMIT 1   [ RunTime:0.0029s ]
+
+[ 2018-02-27T18:15:58+08:00 ] ::1 /-/index.php/Merch/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 45  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0084s ]
+SQL: SELECT `id` FROM `order` WHERE `order_status` IN ('10','15') AND `store_id` = 45  [ RunTime:0.0024s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Merch\Controller\IndexController.class.php ç¬¬ 43 è¡Œ.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+NOTIC: [8] Use of undefined constant logo - assumed 'logo' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 29 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 34 è¡Œ.
+NOTIC: [8] Use of undefined constant mingch - assumed 'mingch' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 50 è¡Œ.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 56 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 93 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 258 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 263 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 305 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 332 è¡Œ.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001578s ]
+
+[ 2018-02-27T18:16:00+08:00 ] ::1 /-/index.php/Merch/Staff/index/shopid/45.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001247s ]
+
+[ 2018-02-27T18:16:04+08:00 ] ::1 /-/index.php/Merch/Staff/index/shopid/zhiwei.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000969s ]
+
+[ 2018-02-27T18:16:06+08:00 ] ::1 /-/index.php/Merch/Staff/index/shopid/zhiwei.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001416s ]
+
+[ 2018-02-27T18:16:06+08:00 ] ::1 /-/index.php/Merch/Staff/index/shopid/zhiwei.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001213s ]
+
+[ 2018-02-27T18:16:07+08:00 ] ::1 /-/index.php/Merch/Staff/index/shopid/zhiwei.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001598s ]
+
+[ 2018-02-27T18:16:08+08:00 ] ::1 /-/index.php/Merch/Staff/index/shopid/zhiwei.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001388s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000395s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009663s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2018-02-27T18:16:08+08:00 ] ::1 /-/index.php/Merch/Staff/index/shopid/zhiwei.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001229s ]
+
+[ 2018-02-27T18:16:08+08:00 ] ::1 /-/index.php/Merch/Staff/index/shopid/zhiwei.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001248s ]
+
+[ 2018-02-27T18:16:08+08:00 ] ::1 /-/index.php/Merch/Staff/index/shopid/zhiwei.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008796s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001467s ]
+
+[ 2018-02-27T18:16:36+08:00 ] ::1 /-/index.php/Merch/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 45  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0066s ]
+SQL: SELECT `id` FROM `order` WHERE `order_status` IN ('10','15') AND `store_id` = 45  [ RunTime:0.0019s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Merch\Controller\IndexController.class.php ç¬¬ 43 è¡Œ.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Use of undefined constant logo - assumed 'logo' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 29 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 34 è¡Œ.
+NOTIC: [8] Use of undefined constant mingch - assumed 'mingch' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 50 è¡Œ.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 56 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 93 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 258 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 263 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 305 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 332 è¡Œ.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001384s ]
+
+[ 2018-02-27T18:16:46+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001322s ]
+
+[ 2018-02-27T18:16:57+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001946s ]
+
+[ 2018-02-27T18:17:04+08:00 ] ::1 /-/index.php/Merch/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 45  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0165s ]
+SQL: SELECT `id` FROM `order` WHERE `order_status` IN ('10','15') AND `store_id` = 45  [ RunTime:0.0019s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Merch\Controller\IndexController.class.php ç¬¬ 43 è¡Œ.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000385s ]
+NOTIC: [8] Use of undefined constant logo - assumed 'logo' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 29 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 34 è¡Œ.
+NOTIC: [8] Use of undefined constant mingch - assumed 'mingch' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 50 è¡Œ.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 56 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 93 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 258 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 263 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 305 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 332 è¡Œ.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001215s ]
+
+[ 2018-02-27T18:17:14+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001580s ]
+
+[ 2018-02-27T18:17:20+08:00 ] ::1 /-/index.php/Merch/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001423s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 45  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0064s ]
+SQL: SELECT `id` FROM `order` WHERE `order_status` IN ('10','15') AND `store_id` = 45  [ RunTime:0.0012s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Merch\Controller\IndexController.class.php ç¬¬ 43 è¡Œ.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000435s ]
+NOTIC: [8] Use of undefined constant logo - assumed 'logo' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 29 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 34 è¡Œ.
+NOTIC: [8] Use of undefined constant mingch - assumed 'mingch' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 50 è¡Œ.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 56 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 93 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 258 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 263 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 305 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 332 è¡Œ.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2018-02-27T18:17:26+08:00 ] ::1 /-/index.php/Merch/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2018-02-27T18:17:40+08:00 ] ::1 /-/index.php/Merch/Login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `shop` WHERE `tel` = '13331385580' LIMIT 1   [ RunTime:0.0031s ]
+
+[ 2018-02-27T18:17:40+08:00 ] ::1 /-/index.php/Merch/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 48  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0079s ]
+SQL: SELECT `id` FROM `order` WHERE `order_status` IN ('10','15') AND `store_id` = 48  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `money` [ RunTime:0.0068s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 127 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 128 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000452s ]
+NOTIC: [8] Use of undefined constant logo - assumed 'logo' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 29 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 34 è¡Œ.
+NOTIC: [8] Use of undefined constant mingch - assumed 'mingch' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 50 è¡Œ.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 56 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 93 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 258 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 263 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 305 è¡Œ.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php ç¬¬ 332 è¡Œ.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2018-02-27T18:17:51+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001262s ]
+
+[ 2018-02-27T18:17:52+08:00 ] ::1 /-/index.php/Merch/Order/index/store_id/48.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `store_id` = 48 AND `order_status` = 10 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `order` WHERE `store_id` = 48 AND `order_status` = 10  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `money` [ RunTime:0.0052s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 127 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `lj` FROM `money` WHERE `order_id` = 127 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0081s ]
+SQL: SELECT `repast_price` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `order_fu` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `order_fu` WHERE `order_id` = 127  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0071s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 111 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 127 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 128 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `lj` FROM `money` WHERE `order_id` = 128 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT `repast_price` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `order_fu` WHERE `order_id` = 128  [ RunTime:0.0016s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 128 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `order` WHERE `store_id` = 48 AND `order_status` = 11 AND ( `use_time` >= '2018-02-27 00:00:00' AND `use_time` < '2018-02-28 00:00:00'  )  [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `store_id` = 48 AND `order_status` = 12 AND ( `use_time` >= '2018-02-27 00:00:00' AND `use_time` < '2018-02-28 00:00:00'  ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `order` WHERE `store_id` = 48 AND `order_status` = 12 AND ( `use_time` >= '2018-02-27 00:00:00' AND `use_time` < '2018-02-28 00:00:00'  )  [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `store_id` = 48 AND `order_status` = 20 AND ( `use_time` >= '2018-02-27 00:00:00' AND `use_time` < '2018-02-28 00:00:00'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `order` WHERE `store_id` = 48 AND `order_status` = 20 AND ( `use_time` >= '2018-02-27 00:00:00' AND `use_time` < '2018-02-28 00:00:00'  )  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `store_id` = 48 AND `order_status` = 5 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `order` WHERE `store_id` = 48 AND `order_status` = 5 ORDER BY id desc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: wc_total_price E:\wamp64\www\-\Application\Merch\Controller\OrderController.class.php ç¬¬ 139 è¡Œ.
+NOTIC: [8] Undefined variable: qx_total_price E:\wamp64\www\-\Application\Merch\Controller\OrderController.class.php ç¬¬ 140 è¡Œ.
+NOTIC: [8] Undefined variable: no_total_price E:\wamp64\www\-\Application\Merch\Controller\OrderController.class.php ç¬¬ 141 è¡Œ.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000470s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000648s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2018-02-27T18:18:00+08:00 ] ::1 /-/index.php/Merch/Order/qr_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0073s ]
+SQL: UPDATE `order` SET `order_status`='11' WHERE `id` = 127 [ RunTime:0.0014s ]
+
+[ 2018-02-27T18:18:00+08:00 ] ::1 /-/index.php/Merch/Order/index/store_id/48.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `store_id` = 48 AND `order_status` = 10 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `order` WHERE `store_id` = 48 AND `order_status` = 10  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `money` [ RunTime:0.0049s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 128 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `lj` FROM `money` WHERE `order_id` = 128 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0066s ]
+SQL: SELECT `repast_price` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `order_fu` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `order_fu` WHERE `order_id` = 128  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0061s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 128 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `order` WHERE `store_id` = 48 AND `order_status` = 11 AND ( `use_time` >= '2018-02-27 00:00:00' AND `use_time` < '2018-02-28 00:00:00'  )  [ RunTime:0.0029s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 127 LIMIT 1   [ RunTime:0.0057s ]
+SQL: SELECT `lj` FROM `money` WHERE `order_id` = 127 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `repast_price` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `order_fu` WHERE `order_id` = 127  [ RunTime:0.0017s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 111 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 127 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `store_id` = 48 AND `order_status` = 12 AND ( `use_time` >= '2018-02-27 00:00:00' AND `use_time` < '2018-02-28 00:00:00'  ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `order` WHERE `store_id` = 48 AND `order_status` = 12 AND ( `use_time` >= '2018-02-27 00:00:00' AND `use_time` < '2018-02-28 00:00:00'  )  [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `store_id` = 48 AND `order_status` = 20 AND ( `use_time` >= '2018-02-27 00:00:00' AND `use_time` < '2018-02-28 00:00:00'  ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `order` WHERE `store_id` = 48 AND `order_status` = 20 AND ( `use_time` >= '2018-02-27 00:00:00' AND `use_time` < '2018-02-28 00:00:00'  )  [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `store_id` = 48 AND `order_status` = 5 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `order` WHERE `store_id` = 48 AND `order_status` = 5 ORDER BY id desc  [ RunTime:0.0033s ]
+NOTIC: [8] Undefined variable: wc_total_price E:\wamp64\www\-\Application\Merch\Controller\OrderController.class.php ç¬¬ 139 è¡Œ.
+NOTIC: [8] Undefined variable: qx_total_price E:\wamp64\www\-\Application\Merch\Controller\OrderController.class.php ç¬¬ 140 è¡Œ.
+NOTIC: [8] Undefined variable: no_total_price E:\wamp64\www\-\Application\Merch\Controller\OrderController.class.php ç¬¬ 141 è¡Œ.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000478s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000665s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001558s ]
+
+[ 2018-02-27T18:18:11+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2018-02-27T18:18:21+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2018-02-27T18:18:31+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001371s ]
+
+[ 2018-02-27T18:18:41+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001324s ]
+
+[ 2018-02-27T18:18:51+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001262s ]
+
+[ 2018-02-27T18:19:01+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001239s ]
+
+[ 2018-02-27T18:19:11+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001226s ]
+
+[ 2018-02-27T18:19:21+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001401s ]
+
+[ 2018-02-27T18:19:31+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0233s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001366s ]
+
+[ 2018-02-27T18:19:41+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002048s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0235s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001340s ]
+
+[ 2018-02-27T18:19:51+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001679s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001458s ]
+
+[ 2018-02-27T18:20:01+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002944s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0702s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001318s ]
+
+[ 2018-02-27T18:20:11+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001591s ]
+
+[ 2018-02-27T18:20:21+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003468s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001447s ]
+
+[ 2018-02-27T18:20:31+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001809s ]
+
+[ 2018-02-27T18:20:41+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001268s ]
+
+[ 2018-02-27T18:20:51+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001935s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001210s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001386s ]
+
+[ 2018-02-27T18:21:01+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001429s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001410s ]
+
+[ 2018-02-27T18:21:11+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001215s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001361s ]
+
+[ 2018-02-27T18:21:21+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001349s ]
+
+[ 2018-02-27T18:21:31+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001556s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001548s ]
+
+[ 2018-02-27T18:21:41+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001164s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001336s ]
+
+[ 2018-02-27T18:21:51+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001349s ]
+
+[ 2018-02-27T18:22:01+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001333s ]
+
+[ 2018-02-27T18:22:11+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001639s ]
+
+[ 2018-02-27T18:22:21+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001245s ]
+
+[ 2018-02-27T18:22:31+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001252s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001561s ]
+
+[ 2018-02-27T18:22:41+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2018-02-27T18:22:51+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0142s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001416s ]
+
+[ 2018-02-27T18:23:01+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001255s ]
+
+[ 2018-02-27T18:23:11+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001374s ]
+
+[ 2018-02-27T18:23:21+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001238s ]
+
+[ 2018-02-27T18:23:31+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001336s ]
+
+[ 2018-02-27T18:23:41+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0102s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001687s ]
+
+[ 2018-02-27T18:23:51+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001491s ]
+
+[ 2018-02-27T18:24:01+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001213s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001356s ]
+
+[ 2018-02-27T18:24:11+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001401s ]
+
+[ 2018-02-27T18:24:21+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0155s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001604s ]
+
+[ 2018-02-27T18:24:31+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0382s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001632s ]
+
+[ 2018-02-27T18:24:41+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001448s ]
+
+[ 2018-02-27T18:24:51+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001404s ]
+
+[ 2018-02-27T18:25:01+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0101s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001405s ]
+
+[ 2018-02-27T18:25:11+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001963s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0101s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001395s ]
+
+[ 2018-02-27T18:25:21+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0122s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001401s ]
+
+[ 2018-02-27T18:25:31+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001612s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001196s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001383s ]
+
+[ 2018-02-27T18:25:41+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001197s ]
+
+[ 2018-02-27T18:25:51+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001578s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001194s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001373s ]
+
+[ 2018-02-27T18:26:01+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0125s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001434s ]
+
+[ 2018-02-27T18:26:11+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0115s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001388s ]
+
+[ 2018-02-27T18:26:21+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0142s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001537s ]
+
+[ 2018-02-27T18:26:31+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001809s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0098s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001502s ]
+
+[ 2018-02-27T18:26:41+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0127s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001713s ]
+
+[ 2018-02-27T18:26:51+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001418s ]
+
+[ 2018-02-27T18:27:01+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0118s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001314s ]
+
+[ 2018-02-27T18:27:11+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001213s ]
+
+[ 2018-02-27T18:27:21+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002217s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001613s ]
+
+[ 2018-02-27T18:27:31+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001463s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001778s ]
+
+[ 2018-02-27T18:27:41+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001412s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 48 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2018-02-27T18:28:12+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+
+[ 2018-02-27T18:28:15+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2018-02-27T18:28:16+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2018-02-27T18:28:22+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2018-02-27T18:28:32+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2018-02-27T18:28:42+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001884s ]
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2018-02-27T18:28:52+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2018-02-27T18:29:02+08:00 ] ::1 /-/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
