@@ -428,6 +428,7 @@ class OrderController extends Controller {
 
 
     }
+
     //去提交订单
     public function sub_mit(){
         $store_id = I('store_id');

@@ -86,7 +86,6 @@
     margin-left:2.5%;
     background-color: #fff;
     border-radius: 10px;
-    margin-top: 20px;
 }
 .top{
     width: 100%;
@@ -476,7 +475,7 @@
     font-weight: bolder;
 }
 .zai{
-    width: 30%;
+    width: 40%;
     height: 96px;
     line-height: 96px;
     float: left;
@@ -487,7 +486,7 @@
     font-weight: normal;
 }
 .kk{
-    width: 29%;
+    width: 19%;
     height: 96px;
     line-height: 96px;
     text-align: right;
@@ -531,7 +530,9 @@
 }
 .td{
     width: 95%;
+    min-height:60px;
     margin-left: 2.5%;
+    border-bottom: 2px dashed #EAEAEA;
 }
 
 
@@ -586,12 +587,12 @@
     border-radius: 7.2px;
     line-height: 90px;
     text-align: center;
-    background-color: #ffae00;
+    background-color: #EAEAEA;
 }
 .qr span{
     font-size: 33.6px;
-    color: #fff;
-
+    color: #888;
+    background-color: #EAEAEA;
 }
 
 
@@ -611,7 +612,7 @@
     height: 110px;
     float: left;
 }
-/*.ftu{
+.ftu{
     width: 100%;
     height: 70px;
     line-height: 70px;
@@ -621,38 +622,6 @@
     width: 65px;
     height: 65px;
     vertical-align: middle;
-}*/
-.ftu{
-    width: 57%;
-    height: 70px;
-    line-height: 70px;
-    text-align: right;
-    float: left;
-}
-.ftu img{
-    width: 65px;
-    height: 65px;
-    vertical-align: middle;
-}
-.quan{
-    width:43%;
-    height: 70px;
-    float: left;
-}
-.nm{
-    width: 35px;
-    height: 35px;
-    background-color: red;
-    border-radius: 50%;
-    line-height: 33px;
-    text-align: center;
-}
-.nm span{
-    color: #fff;
-    font-size: 28px;
-}
-.xs{
-    display:none;
 }
 .de{
     width: 100%;

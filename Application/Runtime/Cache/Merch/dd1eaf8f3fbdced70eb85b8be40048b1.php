@@ -255,7 +255,7 @@
     </div>
 
     <div class="footer">
-    <a href="<?php echo U('Merch/Order/index');?>">
+    <a href="<?php echo U('Merch/Order/index',array('store_id'=>$res[0][id]));?>">
 
         <div class="foot">
 
