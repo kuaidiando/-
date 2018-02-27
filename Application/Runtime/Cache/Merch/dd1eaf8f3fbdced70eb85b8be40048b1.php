@@ -377,7 +377,6 @@
                 dataType: 'json',
                 data:{store_id:store_id},              
                 success:function (data) {
-<<<<<<< HEAD
                     if(data > 0){
                         $('.nm').show();
                         $('.remind').text(data);
@@ -397,20 +396,7 @@
                     //     mp3.play();
                     //     play=remind;
                     // } 
-=======
-                    remind = data;
-                    // alert(data);
-                    // if(data > 0){
-                        sessionStorage.num = data;
-                        if(play==remind){
-                            remind<=0?$(".remind").hide():$(".remind").show()
-                        }else{
-                            $(".remind").show().text(remind);
-                            mp3.play();
-                            play=remind;
-                        } 
-                    // }
->>>>>>> 6c5551308dd101a3883c5dd0f3c9e48b3c449793
+
 
                 }
             })
