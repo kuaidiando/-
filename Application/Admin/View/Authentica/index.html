@@ -1,0 +1,131 @@
+<include file="Layout/headerys"/>
+</head>
+<body>
+<article class="page-container">
+    <form class="form form-horizontal" id="form-article-add" action="{:U('Admin/Authentica/edit')}" method="post" enctype="multipart/form-data">
+    
+          <!-- 基本信息 -->
+        <div style="margin-top: 2%;width: 87%;margin-left: 4%;background-color: #F7F7F7;">
+             <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="margin-left: -3%;"><b>认证信息</b></label>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;"><span class="c-red">*</span>门店名称：</label>
+                <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 50%;">{$data.0.mingch}</label>
+                
+            </div>
+
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">是否三证合一：</label>
+                <div class="formControls col-xs-8 col-sm-9" style="width: 62%;">
+                    是
+                </div>
+            </div>
+
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">营业执照照片：</label>
+                <div class="formControls col-xs-8 col-sm-9" style="width: 62%;">
+                    <img style="width: 30%;"src="__PUBLIC__{$data.0.ren_yingyelogo}" alt="图片加载中。。。">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">营业执照号码：</label>
+               
+                <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 50%;">{$data.0.ren_yingyehaoma}</label>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">营业执照有效期：</label>
+                <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 50%;">{$data.0.ren_cyxukeriqi}</label>
+                <!-- 判断该字段是否过期 -->
+                <if condition="$data[0][type_shijianshifouguoqi] eq 2">
+                    <span style="color: red;"><b>营业执照过期</b></span>
+                </if>
+            </div>
+
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">餐饮服务许可证照片：</label>
+                <div class="formControls col-xs-8 col-sm-9" style="width: 62%;">
+                    <img style="width: 30%;"src="__PUBLIC__{$data.0.ren_cyxukelogo}" alt="图片加载中。。。">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">餐饮服务许可证号码：</label>
+                <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 50%;">{$data.0.ren_cyxukezhenghaom}</label>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">餐饮服务许可证有效日期：</label>
+                 <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 50%;">{$data.0.ren_cyxukeriqi}</label>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">门店详细地址：</label>
+                <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 50%;">{$data.0.jutidizhi}</label>
+            </div>
+            <br>
+        </div>
+        <!-- 法人信息 -->
+        <div style="margin-top: 2%;width: 87%;margin-left: 4%;background-color: #F7F7F7;">
+             <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="margin-left: -3%;"><b>法人信息</b></label>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">联系人：</label>
+
+                <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 50%;">{$data.0.faren_lianxiren}</label>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">联系电话：</label>
+
+                <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 50%;">{$data.0.faren_tel}</label>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">身份证（正面/反面）：</label>
+                <div class="formControls col-xs-8 col-sm-9" style="width: 62%;">
+                    <img style="width: 30%;"src="__PUBLIC__{$data.0.faren_sfzzheng}" alt="图片加载中。。。">&nbsp;&nbsp;
+                    <img style="width: 30%;"src="__PUBLIC__{$data.0.faren_sfzfan}" alt="图片加载中。。。">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">身份证有效期：</label>
+                <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 50%;">{$data.0.faren_sfzyouq}</label>
+            </div>
+            <br>
+        </div>
+        <!-- 财务信息 -->
+        <div style="margin-top: 2%;width: 87%;margin-left: 4%;background-color: #F7F7F7;">
+             <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="margin-left: -3%;"><b>财务信息</b></label>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">联系人：</label>
+
+                <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 50%;">{$data.0.caiwu_lianxiren}</label>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">联系电话：</label>
+
+                <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 50%;">{$data.0.caiwu_tel}</label>
+            </div>
+            
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">身份证（正面/反面）：</label>
+                <div class="formControls col-xs-8 col-sm-9" style="width: 62%;">
+                    <img style="width: 30%;"src="__PUBLIC__{$data.0.caiwu_sfzzhegn}" alt="图片加载中。。。">&nbsp;&nbsp;
+                    <img style="width: 30%;"src="__PUBLIC__{$data.0.caiwu_sfzfan}" alt="图片加载中。。。">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2" style="width: 30%;">身份证有效期：</label>
+                <label class="form-label col-xs-4 col-sm-2" style="text-align: left;width: 50%;">{$data.0.caiwu_sfzyouq}</label>
+            </div>
+            <br>
+        </div> 
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                <!-- <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 认证</button> --><!-- 
+                <button onClick="article_save();" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button>
+                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button> -->
+            </div>
+        </div>
+    </form>
+</article>
+<include file="Layout/footer"/>

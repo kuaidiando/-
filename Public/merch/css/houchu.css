@@ -1,0 +1,268 @@
+body{
+    background-color: #FCF8F5;
+}
+.fen{
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+.fl{
+    width: 90%;
+    height: 120px;
+    margin-left: 5%;
+}
+.xuan{
+    width: 20%;
+    height: 120px;
+    line-height: 120px;
+    float: left;
+}
+.xuan span{
+    font-size: 33.6px;
+}
+.xz{
+    width: 70%;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    float: left;
+}
+.xz span{
+    font-size: 33.6px;
+}
+.tu{
+    width: 10%;
+    height: 120px;
+    line-height: 120px;
+    text-align: right;
+    float: left;
+}
+.tu img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+.header{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.name{
+    width: 90%;
+    height: 120px;
+    margin-left: 5%;
+    border-bottom: 1.2px solid #DEDEDE;
+}
+.ming{
+    width: 20%;
+    height: 100px;
+    margin-top: 10px;
+    border-right: 1.2px solid #DEDEDE;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+}
+.ming span{
+    font-size: 33.6px;
+}
+.zi{
+    width: 80%;
+    height: 120px;
+    line-height: 120px;
+    float: left;
+}
+.zi span{
+    font-size: 33.6px;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+
+
+
+.phone{
+    width: 90%;
+    height: 120px;
+    margin-left: 5%;
+    border-bottom: 1.2px solid #DEDEDE;
+}
+.dian{
+    width: 20%;
+    height: 100px;
+    margin-top: 10px;
+    border-right: 1.2px solid #DEDEDE;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+}
+.dian span{
+    font-size: 33.6px;
+}
+.hao{
+    width: 80%;
+    height: 120px;
+    line-height: 120px;
+    float: left;
+}
+.hao span{
+    font-size: 33.6px;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+
+
+.mi{
+    width: 90%;
+    height: 120px;
+    margin-left: 5%;
+    border-bottom: 1.2px solid #DEDEDE;
+}
+.ma{
+    width: 20%;
+    height: 100px;
+    margin-top: 10px;
+    border-right: 1.2px solid #DEDEDE;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+}
+.ma span{
+    font-size: 33.6px;
+}
+.text2{
+    width: 80%;
+    height: 120px;
+    float: left;
+}
+.text2 input{
+    width: 60%;
+    height: 84px;
+    font-size: 35px;
+    margin-top: 18px;
+    float: left;
+    padding-left: 50px;
+}
+#sp2{
+    float: left;
+    width: 40%;
+    height: 84px;
+    line-height: 84px;
+    font-size: 30px;
+    margin-top: 18px;
+    color:red;
+}
+
+
+.footer{
+    width: 100%;
+    height: 120px;
+    line-height: 140px;
+    text-align: center;
+    background-color: #097f7e;
+    position: fixed;
+    bottom: 0;
+}
+.footer button{
+    font-size: 43.2px;
+    color: #fff;
+    background-color: #097f7e;
+}
+
+
+
+/*多选下拉菜单*/
+.leib{
+    width: 100%;
+}
+.lb li{
+    width: 100%;
+    height: 80px;
+    font-size: 43.2px;
+    text-align: center;
+    line-height: 80px;
+}
+.lb li input{
+    width: 35px;
+    height: 35px;
+}
+
+
+.label{
+    position: relative;
+}
+.input{
+    display:none;
+}
+
+
+
+
+
+
+.footer3{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    margin-top: 24px;
+    line-height: 100px;
+    text-align: center;
+}
+.fot3{
+    width: 50%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    float: left;
+    border-right: 1.2px solid #DEDEDE;
+    background-color: #097f7e;
+}
+.fot3 span a{
+    font-size: 33.6px;
+    color: #fff;
+}
+.foot3{
+    width: 50%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    float: left;
+    background-color: #097f7e;
+}
+.foot3 span{
+    font-size: 33.6px;
+    color: #fff;
+}
+
+.black_overlay{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index:1001;
+    -moz-opacity: 0.6;
+    opacity:.60;
+    filter: alpha(opacity=60);
+}
+.white_content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index:1002;
+    overflow: auto;
+}

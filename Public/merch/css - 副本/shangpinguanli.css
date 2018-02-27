@@ -1,0 +1,266 @@
+.container {
+    width: 100%;
+    height: 1600px;
+}
+ul.tabs {
+    float: left;
+    height: 1600px;
+    width: 20%;
+}
+ul.tabs li {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 33.6px;
+}
+ul.tabs li a {
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    outline: none;
+}
+ul.tabs li a:hover {
+    background: #ccc;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover  {
+    background: #fff;
+    color: #000;
+}
+.tab_container {
+    float: left;
+    width: 80%;
+    height: 1600px;
+    background: #fff;
+    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.tab_content {
+    width: 100%;
+    height: 100%;
+}
+.dan{
+    width: 100%;
+    height: 60px;
+    background-color: #DEDEDE;
+    position: fixed;
+    top:0;
+    z-index: 5;
+}
+.ddan{
+    width: 90%;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 5%;
+}
+.dan span{
+    font-size: 30px;
+}
+.he{
+    width: 100%;
+    height:318px;
+    border-bottom: 1.2px solid #DEDEDE;
+}
+.hhe{
+    width: 95%;
+    height: 318px;
+    margin-left: 5%;
+}
+.top{
+    width: 100%;
+    height: 198px;
+}
+.tu {
+    width: 25%;
+    height: 156px;
+    margin-top: 5%;
+    float: left;
+}
+.tu img{
+    width: 156px;
+    height: 156px;
+    vertical-align: middle;
+}
+.you{
+    width: 75%;
+    height: 156px;
+    margin-top: 5%;
+    float: left;
+}
+.name{
+    width: 100%;
+    height: 52px;
+}
+.name span{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.kou{
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+}
+.kou span{
+    font-size: 33.6px;
+    color: #888888;
+}
+.xia {
+    width: 100%;
+    height: 52px;
+}
+.qian{
+    width: 25%;
+    height: 52px;
+    line-height: 60px;
+    float: left;
+}
+.qian span{
+    font-size: 40px;
+    color: red;
+}
+.yuan{
+    width: 45%;
+    height: 52px;
+    line-height: 72px;
+    float: left;
+}
+.yuan del{
+    font-size: 30px;
+    color: #888888;
+}
+.yue{
+    width: 15%;
+    height: 52px;
+    line-height: 60px;
+    float: left;
+}
+.yue span{
+    font-size: 40px;
+    color: #353535;
+}
+.shu{
+    width: 15%;
+    height: 52px;
+    line-height: 65px;
+    float: left;
+}
+.shu span{
+    font-size: 40px;
+    color: #353535;
+}
+.bot{
+    width: 100%;
+    height: 120px;
+}
+.bz{
+    width:50%;
+    height: 120px;
+    float: left;
+}
+.xiao{
+    width:90%;
+    height: 90px;
+    border: 1.2px solid #097f7e;
+    margin-top:15px;
+    line-height: 90px;
+    text-align: center;
+    float: left;
+}
+.xiao span{
+    font-size: 35px;
+    color: #097f7e;
+}
+
+
+.footer{
+    width: 100%;
+    height: 120px;
+    border-top:2.4px solid #DEDEDE;
+    position: fixed;
+    bottom: 0;
+}
+.foot{
+    width: 20%;
+    height: 120px;
+    background-color: #097f7e;
+    float: left;
+}
+.ztu{
+    width: 25%;
+    height: 120px;
+    line-height: 120px;
+    text-align: right;
+    float: left;
+}
+.ztu img{
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+.fen{
+    width: 70%;
+    height: 120px;
+    margin-left: 5%;
+    line-height: 120px;
+    float: left;
+}
+.fen span{
+    font-size: 30px;
+    color: #fff;
+}
+.foot2{
+    width: 80%;
+    height: 120px;
+    background-color: #fff;
+    float: left;
+}
+.xian{
+    width: 50%;
+    height: 100px;
+    margin-top: 10px;
+    border-right: 1.2px solid #DEDEDE;
+    float: left;
+}
+.can{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+.can {
+    font-size: 35px;
+    color: #097f7e;
+}
+.yy{
+    width: 50%;
+    height: 120px;
+    float: left;
+}
+.xtu{
+    width: 35%;
+    height: 120px;
+    line-height: 120px;
+    text-align: right;
+    float: left;
+}
+.xtu img{
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+.xin {
+    width: 60%;
+    height: 120px;
+    margin-left: 5%;
+    float: left;
+    line-height: 120px;
+}
+.xin span{
+    color: #097f7e;
+    font-size: 35px;
+}
+.kong{
+    width: 100%;
+    height:100px;
+}

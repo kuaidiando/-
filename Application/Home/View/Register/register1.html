@@ -1,0 +1,152 @@
+<html lang="en" data-dpr="1" style="font-size: 42.4px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/register.css"/>
+    <script type="text/javascript" src="__PUBLIC__/home/js/jquery.js"></script>
+    <title>注册</title>
+</head>
+<body style="font-size: 12px">
+<form action="" method="post"  autocomplete= "off">
+    <div class="header">
+        <span>注册</span>
+    </div>
+
+    <div class="zhuce">
+        <span>新用户注册</span>
+    </div>
+
+    <div class="phone">
+        <div class="tu">
+            <img src="__PUBLIC__/home/img/geren2.png" alt="">
+        </div>
+
+        <div class="text">
+            <input type="text" id="tel" name="tel" placeholder="请输入您的手机号" style="width:40%" autocomplete="off" value="">
+            <span id="aa" style="display:none"><input type="text"  placeholder="手机格式不对" style="width:50%;height:84px;background-color: rgb(250,255,189);border:1px;";></span>
+        </div>
+    </div> 
+
+    <div class="mima">
+        <div class="tu2">
+            <img src="__PUBLIC__/home/img/mima.png" alt="">
+        </div>
+
+        <div class="text2">
+            <input type="password" id = "password" style="width:40%"placeholder="密码长度为6-20位" autocomplete="off">
+            <span id="pp" style="display:none"><input type="text"  placeholder="密码长度为6-20位" style="width:50%;height:84px;background-color: rgb(250,255,189);border:1px;";></span>
+        </div>
+    </div>
+
+    <div class="shu">
+        <div class="yan">
+            <input type="text" id="yzm" placeholder="请输入短信验证码">
+        </div>
+
+        <div class="send">
+            <a href="#">
+                <span id="code">发送验证码</span>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="hetong">
+        <input type="checkbox" name="agree" value="" id = "is_agree">
+        <span class="yi">我已阅读并同意</span>
+        <span class="xieyi">
+            <a href="#">
+                《用户注册协议》
+            </a>
+        </span>
+    </div>
+
+    <div class="footer">
+        <a href="#">
+            <span id="reg">立即注册</span>
+        </a>
+    </div>
+</form>
+</body>
+<script type="text/javascript">
+    // $("#tel").blur(function(){
+    //     // alert('2344');return false;
+    //     if(!$(this).val().match(/^(((13[0-9]{1})|159|153)+\d{8})$/) || $(this).val() == ''){
+    //         $("#aa").css("display","inline");
+    //     }else{
+    //         $("#aa").css("display","none");
+    //     }
+    // })
+    // $("#password").blur(function(){
+    //     // alert('2141');return false;
+    //     if($(this).val().length < 6 || $(this).val().length >=20 || $(this).val()=='' ){
+    //     $("#pp").css("display","inline");
+    //     }else{
+    //     $("#pp").css("display","none");
+
+    //     }
+
+    // })
+    $("#code").click(function(){
+        var tel;
+        var tel = document.getElementById('tel').value;
+        $.ajax({
+            type:'post',
+            dataType: 'json',
+            url:'{:U("Home/User/send_code")}',
+            data:{tel:tel,type:'register'},
+            success: function (result) {
+                if(result.code == 205){
+                    alert('今日验证次数超限，请明日再试');   
+                }else if(result.code == 206){
+                    alert('请稍后再试');
+                }else if(result.code == 200){
+                    return true;
+                }
+               
+                //赋值区域
+                // $("#selshi").html(str);
+            }
+
+        })
+    });
+    $("#reg").click(function(){
+        var is_agree;
+        var is_agree = $("#is_agree")
+        if(is_agree.is(':checked')){
+            var tel = $("#tel").val();
+            var password = $("#password").val();
+            var yzm = $("#yzm").val();
+            $.ajax({
+                type:'post',
+                dataType: 'json',
+                url:'{:U("Home/Register/register")}',
+                data:{tel:tel,password:password,yzm:yzm},
+                success: function (result) {
+                    if(result.code == 311){
+                        alert("该会员已存在，无需重复注册");   
+                    }else if(result.code == 200){
+                        $(location).attr('href', '{:U("Home/Login/index")}');
+                    }else if(result.code == 300){
+                        alert(result.msg);
+                    }else if (result.code == 304){
+                        alert(result.msg);
+                    }else if(result.code == 311){
+                        alert(result.msg);
+                    }else if(result.code == 302){
+                        alert(result.msg);
+                    }else if(result.code == 306){
+                        alert(result.msg);
+                    }
+                   
+                }
+
+            })
+        }else{
+            alert("请阅读并同意用户协议");
+        }
+    });
+</script>
+</html>

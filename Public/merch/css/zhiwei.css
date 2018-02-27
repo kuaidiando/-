@@ -1,0 +1,85 @@
+body{
+    background-color: #FCF8F5;
+}
+#top{
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+.tu{
+    width: 25%;
+    height: 400px;
+    line-height: 400px;
+    float: left;
+}
+.tu img{
+    width: 180px;
+    height: 180px;
+    margin-left: 95px;
+    vertical-align: middle;
+}
+.you{
+    width: 75%;
+    height: 400px;
+    float: left;
+}
+.qian{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    line-height: 300px;
+}
+.qian span{
+    font-size: 33.6px;
+}
+.aa{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+.aa span{
+    font-size: 33.6px;
+}
+
+
+#bot{
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+.tu2{
+    width: 25%;
+    height: 400px;
+    line-height: 400px;
+    float: left;
+}
+.tu2 img{
+    width: 180px;
+    height: 180px;
+    margin-left: 95px;
+    vertical-align: middle;
+}
+.you2{
+    width: 75%;
+    height: 400px;
+    float: left;
+}
+.hou{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    line-height: 300px;
+}
+.hou span{
+    font-size: 33.6px;
+}
+.bb{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+.bb span{
+    font-size: 33.6px;
+}

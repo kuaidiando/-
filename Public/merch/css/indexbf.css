@@ -1,0 +1,533 @@
+.header{
+    width: 100%;
+    height: 396px;
+    background-color: #097f7e;
+}
+.top{
+    width: 100%;
+    height: 240px;
+}
+.zuo{
+    width: 25%;
+    height: 192px;
+    float: left;
+    margin-top: 24px;
+}
+.tu{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-top: 24px;
+}
+.tu img{
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+}
+.qie{
+    width: 100%;
+    height: 132px;
+    text-align: center;
+    line-height: 40px;
+}
+.qie span{
+    font-size: 33.6px;
+    color:white;
+    font-weight: normal;
+}
+
+
+
+
+
+
+.zhong{
+    width: 50%;
+    height: 240px;
+    float: left;
+    line-height: 240px;
+}
+.tu2{
+    width:100%;
+    height: 192px;
+    text-align: center;
+}
+.tu2 img{
+    width: 192px;
+    height: 192px;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 3.6px solid white;
+}
+
+
+.you{
+    width: 25%;
+    height: 192px;
+    float: left;
+    margin-top: 24px;
+}
+.tu3{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-top: 24px;
+}
+.tu3 img{
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+}
+.er{
+    width: 100%;
+    height: 132px;
+    text-align: center;
+    line-height: 40px;
+}
+.er span{
+    font-size: 33.6px;
+    color:white;
+    font-weight: normal;
+}
+
+
+
+.center{
+    width: 100%;
+    height: 72px;
+}
+.name{
+    width: 100%;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+}
+.name span{
+    font-size:43.2px;
+    font-weight: bolder;
+    color: white;
+}
+
+
+.bot{
+    width: 100%;
+    height: 72px;
+}
+.rz{
+    width:14%;
+    height: 48px;
+    margin-left: 43%;
+    background-color: #ffae00;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 7.2px;
+    margin-top: 12px;
+}
+.rz span{
+    font-size: 33.6px;
+    font-weight: bolder;
+    color: white;
+}
+.rza{
+    width:14%;
+    height: 48px;
+    margin-left: 43%;
+    background-color: red;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 7.2px;
+    margin-top: 12px;
+}
+.rza span{
+    font-size: 33.6px;
+    font-weight: bolder;
+    color: white;
+}
+
+
+
+.dan{
+    width: 100%;
+    height: 168px;
+    background-color: #097f7e;
+    border-top: 1px solid white;
+}
+.danz{
+    width: 50%;
+}
+.ddan{
+    width: 100%;
+    height: 132px;
+    border-right: 1.2px solid white;
+    margin-top: 18px;
+    float: left;
+}
+.top2{
+    width: 100%;
+    height: 84px;
+    text-align: center;
+    line-height: 84px;
+}
+.top2 span{
+    font-size: 57.6px;
+    font-weight: bolder;
+    color: #ffae00;
+}
+
+.xia{
+    width: 100%;
+    height: 48px;
+}
+.xia{
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+.xia span{
+    font-size: 33.6px;
+    color: white;
+}
+
+.dany{
+    width: 50%;
+    float: left;
+}
+.shu{
+    width: 100%;
+    height: 132px;
+    margin-top: 18px;
+}
+.zi{
+    width: 100%;
+    height: 84px;
+    line-height: 84px;
+    text-align: center;
+}
+.zi span{
+    font-size: 57.6px;
+    font-weight: bolder;
+    color: #ffae00;
+}
+.liang{
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+.liang span{
+    font-size: 33.6px;
+    color: white;
+}
+
+
+
+
+
+.qq{
+    width: 100%;
+    height: 264px;
+    background-color: white;
+    margin-top: 12px;
+}
+.renz{
+    width: 100%;
+    height: 132px;
+    border-bottom: 1.2px solid #DEDEDE;
+}
+.rentu{
+    width: 11%;
+    height: 132px;
+    line-height: 132px;
+    text-align: center;
+    float: left;
+}
+.rentu img{
+    width: 72px;
+    height: 72px;
+    vertical-align: middle;
+}
+.ziti{
+    width: 45%;
+    height: 132px;
+    line-height: 132px;
+    float: left;
+}
+.ziti span{
+    font-size: 38.4px;
+    font-weight: bolder;
+    color: #353535;
+}
+.time{
+    width: 35%;
+    height: 132px;
+    line-height: 132px;
+    text-align: right;
+    float: left;
+}
+.time span{
+    font-size: 33.6px;
+    font-weight: normal;
+    color: #353535;
+}
+.jian{
+    width: 9%;
+    height: 132px;
+    line-height: 132px;
+    text-align: center;
+    float: left;
+}
+.jian img{
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+}
+
+.qian{
+    width: 100%;
+    height: 132px;
+}
+.qiantu{
+    width: 11%;
+    height: 132px;
+    line-height: 132px;
+    text-align: center;
+    float: left;
+}
+.qiantu img{
+    width: 72px;
+    height: 72px;
+    vertical-align: middle;
+}
+.ke{
+    width: 35%;
+    height: 132px;
+    line-height: 132px;
+    float: left;
+}
+.ke span{
+    font-size: 38.4px;
+    font-weight: bolder;
+    color: #353535;
+}
+.zong{
+    width: 45%;
+    height: 132px;
+    line-height: 132px;
+    text-align: right;
+    float: left;
+}
+.zong span{
+    font-size: 38.4px;
+    font-weight: bolder;
+}
+
+.men{
+    width: 100%;
+    height: 288px;
+    background-color: white;
+    margin-top: 12px;
+}
+.xian{
+    width: 40%;
+    height: 48px;
+    float: left;
+}
+.xxian{
+    width: 90%;
+    height: 48px;
+    margin-left: 5%;
+    border-bottom: 1.2px solid #DEDEDE;
+}
+.dian{
+    width: 100%;
+    height: 96px;
+    line-height: 96px;
+}
+.md{
+    width: 20%;
+    height: 96px;
+    line-height: 96px;
+    text-align: center;
+    float: left;
+}
+.md span{
+    font-size: 33.6px;
+    color: #888888;
+}
+.ll{
+    width: 96%;
+    height: 168px;
+    margin-left: 2%;
+}
+.ll2{
+    width: 100%;
+    height: 192px;
+    border-bottom: 1.2px solid #DEDEDE;
+    background-color: white;
+}
+.sshe{
+    width: 100%;
+    height: 168px;
+}
+.she{
+    width: 25%;
+    height: 168px;
+    margin-top: 12px;
+    border-right: 1.2px solid #DEDEDE;
+    float: left;
+}
+.shetu{
+    width: 100%;
+    height: 84px;
+    margin-top: 16.8px;
+    text-align: center;
+}
+.shetu img{
+    width: 84px;
+    height: 84px;
+    vertical-align: middle;
+}
+.wenzi{
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 9.6px;
+}
+.wenzi span{
+    font-size: 33.6px;
+    color: #353535;
+}
+
+
+
+
+.she2{
+    width: 25%;
+    height: 168px;
+    margin-top: 12px;
+    border-right: 1.2px solid #DEDEDE;
+    float: left;
+}
+.shetu2{
+    width: 100%;
+    height: 84px;
+    margin-top: 16.8px;
+    text-align: center;
+}
+.shetu2 img{
+    width: 84px;
+    height: 84px;
+    vertical-align: middle;
+}
+.wenzi2{
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 9.6px;
+}
+.wenzi2 span{
+    font-size: 33.6px;
+    color: #353535;
+}
+
+
+
+.she3{
+    width: 25%;
+    height: 168px;
+    margin-top: 12px;
+    border-right: 1.2px solid #DEDEDE;
+    float: left;
+}
+.shetu3{
+    width: 100%;
+    height: 84px;
+    margin-top: 16.8px;
+    text-align: center;
+}
+.shetu3 img{
+    width: 84px;
+    height: 84px;
+    vertical-align: middle;
+}
+.wenzi3{
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 9.6px;
+}
+.wenzi3 span{
+    font-size: 33.6px;
+    color: #353535;
+}
+
+
+.she4{
+    width: 25%;
+    height: 168px;
+    float: left;
+}
+.shetu4{
+    width: 100%;
+    height: 84px;
+    margin-top: 16.8px;
+    text-align: center;
+}
+.shetu4 img{
+    width: 84px;
+    height: 84px;
+    vertical-align: middle;
+}
+.wenzi4{
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 9.6px;
+}
+.wenzi4 span{
+    font-size: 33.6px;
+    color: #353535;
+}
+
+.footer{
+    width: 100%;
+    height: 110px;
+    border-top: 1.2px solid #DEDEDE;
+    background-color: #F7F6FB;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right:0;
+}
+.foot{
+    width: 50%;
+    height: 110px;
+    float: left;
+}
+.ftu{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+.ftu img{
+    width: 65px;
+    height: 65px;
+    vertical-align: middle;
+}
+.dd{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.dd span{
+    font-size: 25px;
+    color: #888888;
+}
+

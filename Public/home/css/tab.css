@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: #EBEBEB;
+}
+/*tab栏*/
+.tab {
+    width: 100%;
+    height: 100%;
+}
+.tab-title {
+    height: 120px;
+    font-size: 0;
+    border-bottom: 1.2px solid #DEDEDE;
+    background-color: white;
+}
+.tab-title .item {
+    display: inline-block;
+    width: 50%;
+    height:120px;
+    line-height:120px;
+    text-align: center;
+    color: #888888;
+    font-size: 40px;
+}
+.tab-title .item-cur {
+    color:black;
+    border-bottom:4.8px solid #ffae00;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.tab-cont {
+    position: relative;
+    background-color:#EBEBEB;
+    width:100%;
+    height: 1622px;
+    overflow: hidden;
+}
+.tab-cont__wrap {
+    position: absolute;
+    width: 100%;
+    height:100%;
+}
+.tab-cont .item {
+    width: 100%;
+    height:100%;
+    color: #fff;
+}

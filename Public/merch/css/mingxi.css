@@ -1,0 +1,11 @@
+.head {
+    width: 100%;
+    height: 110px;
+    background-color: #097f7e;
+    line-height: 110px;
+    text-align: center;
+}
+.head span {
+    font-size: 38.4px;
+    color: #ffffff;
+}

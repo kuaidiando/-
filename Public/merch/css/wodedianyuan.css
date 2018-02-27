@@ -1,0 +1,141 @@
+body{
+    background-color: #FCF8F5;
+}
+.head{
+    width: 90%;
+    height: 80px;
+    margin-left: 5%;
+}
+.ren{
+    width: 90%;
+    height: 80px;
+    line-height: 80px;
+    text-align: right;
+    float: left;
+}
+.ren span{
+    font-size: 33.6px;
+    color: #000;
+}
+.wei{
+    width: 10%;
+    height: 80px;
+    line-height: 80px;
+    float: left;
+}
+.wei span{
+    font-size: 33.6px;
+    color: #097f7e;
+}
+
+.yg{
+    width: 100%;
+    height: 130px;
+    background-color: #fff;
+}
+.yuan{
+    width: 95%;
+    height: 130px;
+    margin-left: 2.5%;
+}
+.zuo{
+    width: 85%;
+    height: 100px;
+    border-right: 1.2px solid #DEDEDE;
+    margin-top: 15px;
+    float: left;
+}
+.name{
+    width: 70%;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+}
+.ming{
+    width: 90%;
+    height: 60px;
+    margin-left: 10%;
+    line-height: 60px;
+}
+.ming span{
+    font-size: 35px;
+    font-weight: bolder;
+}
+.zhuang{
+    width: 90%;
+    height: 40px;
+    margin-left: 10%;
+}
+.tai{
+    width: 26%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+}
+.tai span{
+    font-size: 30px;
+    color: #555;
+}
+.ss{
+    width: 74%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+}
+.ss span{
+    font-size: 30px;
+    color: #555;
+}
+
+.zhi{
+    width: 30%;
+    height: 100px;
+    float: left;
+}
+.kuang{
+    width: 45%;
+    height: 60px;
+    margin-left: 30%;
+    margin-top: 20px;
+    border: 1.2px solid #097f7e;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 7.2px;
+}
+.kuang span{
+    font-size:25px;
+    color: #097f7e;
+}
+.you{
+    width: 15%;
+    height: 120px;
+    float: left;
+}
+.phone{
+    width: 85%;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 15%;
+    line-height: 100px;
+    text-align: center;
+}
+.phone img{
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+}
+
+#footer{
+    width: 100%;
+    height: 120px;
+    background-color: #097f7e;
+    line-height: 140px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+#footer button{
+    font-size: 43.2px;
+    color: #fff;
+    background-color: #097f7e;
+}

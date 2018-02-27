@@ -1,0 +1,106 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en" style="font-size: 42.4px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no">
+    <title>添加前厅店员</title>
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/qianting.css">
+    <script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
+</head>
+<body style="font-size: 12px">
+    <div class="header">
+        <div class="name">
+            <div class="ming">
+                <span>姓名</span>
+            </div>
+
+            <div class="text2">
+                <span><input type="text" id="name" placeholder="姓名"></span>
+            </div>
+        </div>
+
+        <div class="phone">
+            <div class="dian">
+                <span>电话</span>
+            </div>
+
+            <div class="text2">
+                <span><input type="text" id="tel" placeholder="电话"></span>
+            </div>
+        </div>
+        <div class="phone">
+            <div class="dian">
+                <span>微信</span>
+            </div>
+
+            <div class="text2">
+                <span><input type="text" id="weixinhao" placeholder="微信"></span>
+            </div>
+        </div>
+
+        <div class="mi">
+            <div class="ma">
+                <span>设置密码</span>
+            </div>
+
+            <div class="text2">
+                <input id="mi" type="password" placeholder="请您输入密码">
+                <span id="sp2"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button>添加前厅人员</button>
+    </div>
+</body>
+    <script type="text/javascript">
+    $(".footer").click(function(){
+        var name = $("#name").val();
+        var tel = $("#tel").val();
+        var weixinhao = $("#weixinhao").val();
+        var submit = $("#mi").val();
+        var typeting = 1;
+        var typehou = '前厅';
+        if (name && tel && weixinhao && submit) {
+            $.ajax({
+                type:'POST',
+                dataType: 'json',
+                async:false,
+                url:'<?php echo U("Merch/Staff/ajaxaddqianting");?>',
+                data:{"name":name,"tel":tel,"weixinhao":weixinhao,"typeting":typeting,"typehou":typehou,"submit":submit},
+                success: function (result) {
+                    if (result.code == 200) {
+                        var gonghao = "您的工号是 ("+result.msg+") 请用工号登录";
+                        alert(gonghao);
+                         window.location.href = "<?php echo U('Merch/Staff/index');?>";
+                    }else{
+                        var msg = result.msg;
+                        alert(msg);
+                    }
+                    // console.log(result);
+                }
+            })
+        }else{
+            alert("请完善信息");
+        }
+            
+    });
+    var mi = document.getElementById("mi");
+
+    yanZheng(mi,/^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,18}$/);
+
+    function yanZheng(tel, reg) {
+        mi.onblur = function () {
+            var sp2 = document.getElementById("sp2");
+            if (reg.test(this.value)) {
+                sp2.innerText = "";
+            } else {
+                sp2.innerText = "密码不正确";
+            }
+        };
+    }
+</script>
+</html>

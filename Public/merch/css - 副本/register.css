@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: #eaeaea;
+}
+.header{
+    width: 100%;
+    height: 120px;
+    background-color: #097f7e;
+    text-align: center;
+    line-height: 120px;
+}
+.header span{
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+}
+.zhuce{
+    width: 100%;
+    height: 96px;
+    margin-top: 12px;
+    text-align: center;
+    line-height: 96px;
+}
+.zhuce span{
+    font-size: 43.2px;
+    color: #353535;
+    font-weight: normal;
+}
+.phone{
+    width: 90%;
+    height: 120px;
+    background-color: white;
+    margin-left: 5%;
+    margin-top: 12px;
+}
+.tu{
+    width: 120px;
+    height: 84px;
+    float: left;
+    border-right: 2.4px solid #888888;
+    margin-top: 18px;
+    text-align: center;
+    line-height: 84px;
+}
+.tu img{
+    width: 72px;
+    vertical-align: middle;
+}
+.text{
+    width: 82%;
+    height: 120px;
+    float: left;
+    margin-left: 36px;
+}
+.text input{
+    width: 60%;
+    height: 84px;
+    font-size: 35px;
+    margin-top: 18px;
+    float: left;
+}
+#ts{
+    float: left;
+    width: 40%;
+    height: 84px;
+    line-height: 84px;
+    font-size: 30px;
+    margin-top: 18px;
+    color:red;
+}
+
+#ts2{
+    float: left;
+    width: 40%;
+    height: 84px;
+    line-height: 84px;
+    font-size: 30px;
+    margin-top: 18px;
+    color:red;
+}
+
+#ts3{
+    float: left;
+    width: 33%;
+    height: 84px;
+    line-height: 84px;
+    font-size: 30px;
+    margin-top: 18px;
+    color:red;
+}
+
+
+
+.mima{
+    width: 90%;
+    height: 120px;
+    background-color: white;
+    margin-left: 5%;
+    margin-top: 12px;
+}
+.tu2{
+    width: 120px;
+    height: 84px;
+    float: left;
+    border-right: 2.4px solid #888888;
+    margin-top: 18px;
+    text-align: center;
+    line-height: 84px;
+}
+.tu2 img{
+    width: 72px;
+    vertical-align: middle;
+}
+.text2{
+    width: 82%;
+    height: 120px;
+    float: left;
+    margin-left: 36px;
+    text-align: center;
+}
+.text2 input{
+    width: 60%;
+    height: 84px;
+    font-size: 35px;
+    margin-top: 18px;
+    float: left;
+}
+
+.shu{
+    width: 90%;
+    height: 120px;
+    margin-top: 12px;
+    margin-left: 5%;
+}
+
+.yan{
+    width: 73.5%;
+    height: 120px;
+    float: left;
+    background-color: white;
+    text-align: center;
+}
+.yan input{
+    width: 42%;
+    height: 72px;
+    font-size: 33.6px;
+    background-color: white;
+    margin-left: 25%;
+    margin-top: 24px;
+    float: left;
+}
+
+.send{
+    width: 25%;
+    height: 120px;
+    border: 4.8px solid #097f7e;
+    background-color: white;
+    float: left;
+    margin-left: 1.5%;
+    text-align: center;
+    line-height: 120px;
+    font-size: 36px;
+    color: #888888;
+}
+.send span{
+    color:#097f7e;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.hetong{
+    width: 90%;
+    height:76.8px;
+    margin-left: 8.5%;
+    margin-top: 12px;
+    line-height: 76.8px;
+}
+input{
+    width: 30px;
+    height: 30px;
+    margin-top: -13px;
+}
+.yi{
+    font-size: 28.8px;
+    font-weight: normal;
+    color: #888888;
+}
+.hetong img{
+    width: 48px;
+    height: 48px;
+}
+.xieyi{
+    font-size: 30px;
+}
+
+
+
+
+.footer{
+    width: 90%;
+    height: 120px;
+    background-color: #097f7e;
+    text-align: center;
+    line-height: 120px;
+    margin-top: 48px;
+    margin-left: 5%;
+}
+.footer span{
+    font-size: 43.2px;
+    font-weight: normal;
+    color: white;
+}
+
+
+form .send1{
+    color:#888888;
+    border:4.8px solid #097f7e;
+    font-size: 43.2px;
+    font-weight: normal;
+}
+
+.logo{
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    margin-top:80px;
+}
+.logo img{
+    width: 312px;
+    height: 120px;
+    vertical-align: middle;
+}
+
+
+
+
+
