@@ -463,7 +463,7 @@ class OrderController extends Controller {
 
         $jc_id = M('order_jc')->add(array('store_id'=>$store_id,'order_id'=>$order_id,'jc_code'=>$jc_code,'seat'=>$seat));
         if($jc_id){
-            M('order')->where(array('id'=>$order_id))->save(array('is_use'=>1,'order_status'=>10,'use_time'=>date('Y-m-d H:i:s',time()),'table_no'=>$jc_code));
+            M('order')->where(array('id'=>$order_id))->save(array('is_use'=>1,'order_status'=>10,'use_time'=>date('Y-m-d H:i:s',time()),'table_no'=>$jc_code,'zhuo_hao'=>$seat));
             $data=array(
                 'data'=>$end_jc_code,
                 'code'=>200,

@@ -20,9 +20,9 @@
     </div>
 
     <div class="phone">
-        <label class="tu">
-            <img src="__PUBLIC__/home/img/geren2.png" alt="">
-        </label>
+        <div class="tu">
+            <img src="__PUBLIC__/home/img/geren3.png" alt="">
+        </div>
 
         <div class="text">
             <input type="text" id="tel" maxlength="11" placeholder="请输入您的手机号" >
@@ -31,9 +31,9 @@
     </div>
 
     <div class="mima">
-        <label class="tu2">
-            <img src="__PUBLIC__/home/img/mima.png" alt="">
-        </label>
+        <div class="tu2">
+            <img src="__PUBLIC__/home/img/mima1.png" alt="">
+        </div>
 
         <div class="text2">
             <input type="password" id="mi" placeholder="请设置您的密码">
@@ -67,7 +67,9 @@
     </div> -->
     <div class="hetong">
         <div class="fu">
-            <input type="checkbox" id="is_agree">
+            <!-- <input type="checkbox" id="is_agree"> -->
+            <input id="is_agree" type="checkbox" value="" >
+            <label for="is_agree"></label>
         </div>
 
         <div class="yi">
@@ -149,7 +151,7 @@
                 data:{tel:tel,password:password,yzm:yzm},
                 success: function (result) {
                     if(result.code == 200){
-                        $(location).attr('href', '{:U("Home/Login/index")}');  
+                        $(location).attr('href', '{:U("Home/Index/index")}');  
                     }else{
                         alert(result.msg);
                     }
