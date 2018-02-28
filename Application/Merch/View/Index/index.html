@@ -261,7 +261,14 @@
 
         <div class="foot">
 
-        <audio id="mp3" src="__PUBLIC__/aut/8868.wav"> </audio>
+        <!-- <audio id="mp3" src="__PUBLIC__/aut/8868.wav">
+
+        </audio> -->
+        <audio controls="controls" id="mp3" loop="loop" style="display: none">
+            <source src="__PUBLIC__/aut/8868.wav" type="audio/ogg" />
+            <!-- <source src="./assets/sound/music.ogg" type="audio/ogg" /> -->
+        </audio>
+
         <input type="hidden" id="store_id" name="store_id" value="{$res[0][id]}">
             <div class="ftu">
                 <img src="__PUBLIC__/merch/images/diangdan.png" alt="">

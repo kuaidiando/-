@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" data-dpr="1" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>我的</title>
-    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/text.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/person.css">
+    <link rel="stylesheet" href="/-/Public/home/css/base.css">
+    <link rel="stylesheet" href="/-/Public/home/css/text.css">
+    <link rel="stylesheet" href="/-/Public/home/css/person.css">
 </head>
 <body style="font-size: 12px">
 <div class="header">
@@ -18,42 +18,35 @@
         <div class="person">
             <a href="#">
                 <!-- <img src="images/person.jpg" alt=""> -->
-                <if condition="$user_info.photo eq 'NULL'">
-                <img src="__PUBLIC__/{$user_info.photo}" alt="">
-                <else />
-                <img src="__PUBLIC__/{$user_info.photo}" alt="">
-                </if>  
+                <?php if($user_info["photo"] == 'NULL'): ?><img src="/-/Public/<?php echo ($user_info["photo"]); ?>" alt="">
+                <?php else: ?>
+                <img src="/-/Public/<?php echo ($user_info["photo"]); ?>" alt=""><?php endif; ?>  
             </a>
         </div>
 
         <div class="shezhi">
             <a href="#">
-                <img src="__PUBLIC__/home/img/shezhi.png" alt="">
+                <img src="/-/Public/home/img/shezhi.png" alt="">
             </a>
         </div>
     </div>
 
     <div class="mingzi">
-    <if condition="$uid gt 0">
-        <div class="name">
-                <span>{$user_info.nick_name}</span>
+    <?php if($uid > 0): ?><div class="name">
+                <span><?php echo ($user_info["nick_name"]); ?></span>
         </div>
 
-    <else />
-        <a href="{:U('Home/Login/index')}">
+    <?php else: ?>
+        <a href="<?php echo U('Home/Login/index');?>">
             <div class="name">
                     <span>注册/登录</span>
             </div>
 
-        </a>
-
-    </if>
+        </a><?php endif; ?>
         <div class="phone">
-        <if condition="$uid lt 1">
-            <span></span>
-        <else />    
-            <span>{$user_info.tel}</span>
-        </if>    
+        <?php if($uid < 1): ?><span></span>
+        <?php else: ?>    
+            <span><?php echo ($user_info["tel"]); ?></span><?php endif; ?>    
         </div>
     </div>
 </div>
@@ -62,11 +55,9 @@
     <div class="pp">
         <div class="zuo">
             <div class="qian">
-            <if condition="$user_info.money lt 1">
-                <span>￥0.00</span>
-            <else />
-                <span>￥{$user_info.money}</span>
-            </if>
+            <?php if($user_info["money"] < 1): ?><span>￥0.00</span>
+            <?php else: ?>
+                <span>￥<?php echo ($user_info["money"]); ?></span><?php endif; ?>
             </div>
 
             <div class="zhang">
@@ -76,11 +67,9 @@
 
         <div class="right">
             <div class="qian2">
-            <if condition="$user_info.toal_income lt 1">
-                <span>￥0.00</span>
-            <else />
-                <span>￥{$user_info.total_income}</span>
-            </if>
+            <?php if($user_info["toal_income"] < 1): ?><span>￥0.00</span>
+            <?php else: ?>
+                <span>￥<?php echo ($user_info["total_income"]); ?></span><?php endif; ?>
             </div>
 
             <div class="ru">
@@ -91,14 +80,12 @@
 </div>
 
 <!-- <a href="mydingdan.html"> -->
-<if condition="$uid lt 1">
-<a href="{:U('Home/Login/index')}">
-<else />
-<a href="{:U('Home/Order/order_info')}">
-</if>
+<?php if($uid < 1): ?><a href="<?php echo U('Home/Login/index');?>">
+<?php else: ?>
+<a href="<?php echo U('Home/Order/order_info');?>"><?php endif; ?>
     <div class="all">
         <div class="tu">
-            <img src="__PUBLIC__/home/img/dinagdan.png" alt="">
+            <img src="/-/Public/home/img/dinagdan.png" alt="">
         </div>
 
         <div class="quan">
@@ -106,21 +93,19 @@
         </div>
 
         <div class="you">
-                <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
+                <img src="/-/Public/home/img/youjiantou.png" alt="">
             <!-- </a> -->
         </div>
     </div>
 </a>
 
 <div class="di">
-    <if condition="$uid lt 1">
-    <a href="{:U('Home/Login/index')}">
-    <else />
-    <a href="#">
-    </if>
+    <?php if($uid < 1): ?><a href="<?php echo U('Home/Login/index');?>">
+    <?php else: ?>
+    <a href="#"><?php endif; ?>
         <div class="qq">
             <div class="tu2">
-                <img src="__PUBLIC__/home/img/dianping.png" alt="">
+                <img src="/-/Public/home/img/dianping.png" alt="">
             </div>
 
             <div class="wo">
@@ -128,18 +113,16 @@
             </div>
 
             <div class="you2">
-                <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
+                <img src="/-/Public/home/img/youjiantou.png" alt="">
             </div>
         </div>
     </a>
-    <if condition="$uid lt 1">
-    <a href="{:U('Home/Login/index')}">
-    <else />
-    <a href="#">
-    </if>
+    <?php if($uid < 1): ?><a href="<?php echo U('Home/Login/index');?>">
+    <?php else: ?>
+    <a href="#"><?php endif; ?>
         <div class="qq2">
             <div class="tu3">
-                <img src="__PUBLIC__/home/img/xin.png" alt="">
+                <img src="/-/Public/home/img/xin.png" alt="">
             </div>
 
             <div class="shou">
@@ -147,18 +130,16 @@
             </div>
 
             <div class="you3">
-                <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
+                <img src="/-/Public/home/img/youjiantou.png" alt="">
             </div>
         </div>
     </a>
-    <if condition="$uid lt 1">
-    <a href="{:U('Home/Login/index')}">
-    <else />
-    <a href="#">
-    </if>
+    <?php if($uid < 1): ?><a href="<?php echo U('Home/Login/index');?>">
+    <?php else: ?>
+    <a href="#"><?php endif; ?>
         <div class="qq3">
             <div class="tu4">
-                <img src="__PUBLIC__/home/img/tui.png" alt="">
+                <img src="/-/Public/home/img/tui.png" alt="">
             </div>
 
             <div class="tui1">
@@ -167,16 +148,16 @@
             </div>
 
             <div class="you4">
-                <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
+                <img src="/-/Public/home/img/youjiantou.png" alt="">
             </div>
         </div>
     </a>
 </div>
 
-<a href="{:U('Merch/Login/index')}">
+<a href="<?php echo U('Merch/Login/index');?>">
     <div class="all">
         <div class="tu">
-            <img src="__PUBLIC__/home/img/woshi.png" alt="">
+            <img src="/-/Public/home/img/woshi.png" alt="">
         </div>
 
         <div class="quan">
@@ -184,16 +165,15 @@
         </div>
 
         <div class="you">
-            <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
+            <img src="/-/Public/home/img/youjiantou.png" alt="">
         </div>
     </div>
 </a>
 <!-- 退出 -->
-<if condition="$uid gt 0">
-<a href="{:U('Home/Person/tc')}">
+<?php if($uid > 0): ?><a href="<?php echo U('Home/Person/tc');?>">
     <div class="all" id="tc">
         <!-- <div class="tu">
-            <img src="__PUBLIC__/home/img/woshi.png" alt="">
+            <img src="/-/Public/home/img/woshi.png" alt="">
         </div> -->
 
         <div>
@@ -201,14 +181,13 @@
         </div>
     </div>
 </a>
-<else />
-</if>
+<?php else: endif; ?>
 <!--底部-->
 <!-- <div class="foott">
-    <a href="{:U('Home/Index/index')}">
+    <a href="<?php echo U('Home/Index/index');?>">
         <div class="foot">
             <div class="tupian6">
-                <img src="__PUBLIC__/home/img/shangjia.png" alt="">
+                <img src="/-/Public/home/img/shangjia.png" alt="">
             </div>
 
             <div class="shouye">
@@ -217,10 +196,10 @@
         </div>
     </a>
 
-    <a href="{:U('Home/Order/order_info')}">
+    <a href="<?php echo U('Home/Order/order_info');?>">
         <div class="foot">
             <div class="tupian6">
-                <img src="__PUBLIC__/home/img/diangdan.png" alt="">
+                <img src="/-/Public/home/img/diangdan.png" alt="">
             </div>
 
             <div class="shouye">
@@ -231,7 +210,7 @@
 
     <div class="foot">
         <div class="tupian6">
-            <img src="__PUBLIC__/home/img/geren.png" alt="">
+            <img src="/-/Public/home/img/geren.png" alt="">
         </div>
 
         <div class="shouye">
@@ -241,10 +220,10 @@
 
 </div> -->
 <div class="foott">
-    <a href="{:U('Home/Index/index')}">
+    <a href="<?php echo U('Home/Index/index');?>">
         <div id="foot">
             <div id="ttu">
-                <img src="__PUBLIC__/home/img/shangjia.png" alt="">
+                <img src="/-/Public/home/img/shangjia.png" alt="">
             </div>
 
             <div id="shou">
@@ -254,10 +233,10 @@
     </a>
 
 
-    <a href="{:U('Home/Order/order_info')} ">
+    <a href="<?php echo U('Home/Order/order_info');?> ">
         <div id="foot2">
             <div id="ttu2">
-                <img src="__PUBLIC__/home/img/diangdan.png" alt="">
+                <img src="/-/Public/home/img/diangdan.png" alt="">
             </div>
 
             <div id="shou2">
@@ -266,10 +245,10 @@
         </div>
     </a>
 
-    <a href="{:U('Home/Person/index')}">
+    <a href="<?php echo U('Home/Person/index');?>">
         <div id="foot3" onclick="location.href='person.html'">
             <div id="ttu3">
-               <img src="__PUBLIC__/home/img/geren3.png" alt="">
+               <img src="/-/Public/home/img/geren3.png" alt="">
             </div>
 
             <div id="shou3">

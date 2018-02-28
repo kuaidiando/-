@@ -20,7 +20,7 @@ class CartController extends Controller {
     public function save_cart()
     {
         $info = array();
-        // dump($_POST);
+        // dump($_POST);exit;
         if(I('shopid')){
             $shop_id = I('shopid');
         }else{

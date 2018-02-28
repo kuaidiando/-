@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" data-dpr="1" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/text.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/resetting.css">
+    <link rel="stylesheet" href="/-/Public/home/css/base.css">
+    <link rel="stylesheet" href="/-/Public/home/css/text.css">
+    <link rel="stylesheet" href="/-/Public/home/css/resetting.css">
     <title>重置密码</title>
 
     <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
-    <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="/-/Public/home/js/jquery-1.12.4.js"></script>
 
     <script type="text/javascript">
         $(function  () {
@@ -21,7 +21,7 @@
                 $.ajax({
                     type:'post',
                     dataType: 'json',
-                    url:'{:U("Home/User/send_code")}',
+                    url:'<?php echo U("Home/User/send_code");?>',
                     data:{tel:tel,type:'repass'},
                     success: function (result) {
                         if(result.code == 205){
@@ -65,7 +65,7 @@
 
     <div class="phone">
         <div class="tu">
-            <img src="__PUBLIC__/home/img/geren3.png" alt="">
+            <img src="/-/Public/home/img/geren3.png" alt="">
         </div>
 
         <div class="text">
@@ -78,7 +78,7 @@
         <div class="center">
             <div class="duan">
                 <div class="xin">
-                    <img src="__PUBLIC__/home/img/duanxin1.png" alt="">
+                    <img src="/-/Public/home/img/duanxin1.png" alt="">
                 </div>
 
                 <div class="tet">
@@ -97,7 +97,7 @@
 
     <div class="mima">
         <div class="tu2">
-            <img src="__PUBLIC__/home/img/mima1.png" alt="">
+            <img src="/-/Public/home/img/mima1.png" alt="">
         </div>
 
         <div class="text2">
@@ -165,12 +165,12 @@
             $.ajax({
                 type:'post',
                 dataType: 'json',
-                url:'{:U("Home/Login/forget_password")}',
+                url:'<?php echo U("Home/Login/forget_password");?>',
                 data:{tel:tel,password:password,yzm:yzm},
                 success: function (result) {
                     // alert(result.msg);return false;
                     if(result.code == 200){
-                        $(location).attr('href', '{:U("Home/Login/index")}');
+                        $(location).attr('href', '<?php echo U("Home/Login/index");?>');
                     }else{
                         alert(result);
                     }

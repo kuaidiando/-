@@ -24,6 +24,7 @@ class OrderController extends Controller {
       $order_info = $order->where($where)->select();
       foreach($order_info as $order_k=>$order_v){
         $order_info[$order_k]['jch'] = substr($order_v['table_no'],8);
+        $order_info[$order_k]['tel'] = uri('user',array('id'=>$order_v['user_id']),'tel');
         $order_info[$order_k]['sf'] = uri('money',array('order_id'=>$order_v['id']),"sf");
         $order_info[$order_k]['lj'] = uri('money',array('order_id'=>$order_v['id']),"lj");
         $order_info[$order_k]['repast_price'] = uri('shop',array('id'=>$order_v['store_id']),'repast_price');
@@ -45,6 +46,8 @@ class OrderController extends Controller {
       // echo $order->getLastSql();exit;
       foreach($jx_info as $jx_k=>$jx_v){
         $jx_info[$jx_k]['jch'] = substr($jx_v['table_no'],8);
+        $jx_info[$jx_k]['tel'] = uri('user',array('id'=>$jx_v['user_id']),'tel');
+
         $jx_info[$jx_k]['sf'] = uri('money',array('order_id'=>$jx_v['id']),"sf");
         $jx_info[$jx_k]['lj'] = uri('money',array('order_id'=>$jx_v['id']),"lj");
         $jx_info[$jx_k]['repast_price'] = uri('shop',array('id'=>$jx_v['store_id']),'repast_price');
@@ -57,6 +60,7 @@ class OrderController extends Controller {
 
 
       }
+      // dump($jx_info);exit;
       //厨师制作完成订单
       $where_wc = array(
         'store_id'=>$store_id,
@@ -67,6 +71,8 @@ class OrderController extends Controller {
       $wc_order = $order->where($where_wc)->select();
       foreach($wc_order as $wc_k=>$wc_v){
         $wc_order[$wc_k]['jch'] = substr($wc_v['table_no'],8);
+        $wc_order[$wc_k]['tel'] = uri('user',array('id'=>$wc_v['user_id']),'tel');
+
         $wc_order[$wc_k]['sf'] = uri('money',array('order_id'=>$wc_v['id']),"sf");
         $wc_order[$wc_k]['lj'] = uri('money',array('order_id'=>$wc_v['id']),"lj");
         $wc_order[$wc_k]['repast_price'] = uri('shop',array('id'=>$wc_v['store_id']),'repast_price');
@@ -91,6 +97,8 @@ class OrderController extends Controller {
       $qx_info = $order->where($where_qx)->select();
       foreach($qx_info as $qx_k=>$qx_v){
         $qx_info[$qx_k]['jch'] = substr($qx_v['table_no'],8);
+        $qx_info[$qx_k]['tel'] = uri('user',array('id'=>$qx_v['user_id']),'tel');
+
         $qx_info[$qx_k]['sf'] = uri('money',array('order_id'=>$qx_v['id']),"sf");
         $qx_info[$qx_k]['lj'] = uri('money',array('order_id'=>$qx_v['id']),"lj");
         $qx_info[$qx_k]['repast_price'] = uri('shop',array('id'=>$qx_v['store_id']),'repast_price');
@@ -115,6 +123,8 @@ class OrderController extends Controller {
       $no_info = $order->where($where_no)->order('id desc')->select();
       foreach($no_info as $no_k=>$no_v){
         $no_info[$no_k]['jch'] = substr($no_v['table_no'],8);
+        $no_info[$no_k]['tel'] = uri('user',array('id'=>$no_v['user_id']),'tel');
+
         $no_info[$no_k]['sf'] = uri('money',array('order_id'=>$no_v['id']),"sf");
         $no_info[$no_k]['lj'] = uri('money',array('order_id'=>$no_v['id']),"lj");
         $no_info[$no_k]['repast_price'] = uri('shop',array('id'=>$no_v['store_id']),'repast_price');

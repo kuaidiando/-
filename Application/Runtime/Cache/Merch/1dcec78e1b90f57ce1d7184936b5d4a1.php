@@ -59,12 +59,12 @@
                              </div>
 
                              <div class="tel">
-                                 <span>13800000000</span>
+                                 <span><?php echo ($info["tel"]); ?></span>
                              </div>
 
                              <div class="tu">
                                  <div class="ttu">
-                                     <a href="tel:13716172720">
+                                     <a href="tel:<?php echo ($info["tel"]); ?>">
                                          <img src="/-/Public/merch/images/phone.png" alt="">
                                      </a>
                                  </div>
@@ -256,12 +256,12 @@
                            </div>
 
                            <div class="tel">
-                               <span>13800000000</span>
+                               <span><?php echo ($jx_one["tel"]); ?></span>
                            </div>
 
                            <div class="tu">
                                <div class="ttu">
-                                   <a href="tel:13716172720">
+                                   <a href="tel:<?php echo ($jx_one["tel"]); ?>">
                                        <img src="/-/Public/merch/images/phone.png" alt="">
                                    </a>
                                </div>
@@ -452,12 +452,12 @@
                           </div>
 
                           <div class="tel">
-                              <span>13800000000</span>
+                              <span><?php echo ($wc_one["tel"]); ?></span>
                           </div>
 
                           <div class="tu">
                               <div class="ttu">
-                                  <a href="tel:13716172720">
+                                  <a href="tel:<?php echo ($wc_one["tel"]); ?>">
                                       <img src="/-/Public/merch/images/phone.png" alt="">
                                   </a>
                               </div>
@@ -639,12 +639,12 @@
                             </div>
 
                             <div class="tel">
-                                <span>13800000000</span>
+                                <span><?php echo ($qx_one["tel"]); ?></span>
                             </div>
 
                             <div class="tu">
                                 <div class="ttu">
-                                    <a href="tel:13716172720">
+                                    <a href="tel:<?php echo ($qx_one["tel"]); ?>">
                                         <img src="/-/Public/merch/images/phone.png" alt="">
                                     </a>
                                 </div>
@@ -826,12 +826,12 @@
                             </div>
 
                             <div class="tel">
-                                <span>13800000000</span>
+                                <span><?php echo ($no_one["tel"]); ?></span>
                             </div>
 
                             <div class="tu">
                                 <div class="ttu">
-                                    <a href="tel:13716172720">
+                                    <a href="tel:<?php echo ($no_one["tel"]); ?>">
                                         <img src="/-/Public/merch/images/phone.png" alt="">
                                     </a>
                                 </div>
@@ -994,7 +994,7 @@
 
     <div class="footer">
         <div class="foot" >
-        <audio id="mp3" src="/-/Public/aut/8868.wav"> </audio>
+        <audio id="mp3" src="/-/Public/aut/8868.mp3" class="media-audio" autoplay preload loop="loop"> </audio>
         <input type="hidden" id="store_id" name="store_id" value="<?php echo ($store_id); ?>">
             <div class="ftu">
                 <img src="/-/Public/merch/images/dingdan2.png" alt="">
@@ -1010,7 +1010,7 @@
         </div>
 
 
-        <div class="foot2" onclick="location.href='index.html'">
+        <div class="foot2">
             <div class="ftu2">
                 <img src="/-/Public/merch/images/dian2.png" alt="">
             </div>
@@ -1068,7 +1068,7 @@
     // console.log(a);
     // return false;
     var order_id = $(this).attr('id');
-    var conf = confirm("您确定要取消吗?取消后购买金额将转入您的余额");
+    var conf = confirm("您确定要取消吗?取消后购买金额将转入用户的余额");
     var par = $(this).parents('.he');
     if(conf){
       $.ajax({
@@ -1114,22 +1114,27 @@
 
   })
   function qrd(order_id){
-    $.ajax({
-      type:'POST',
-      dataType: 'json',
-      url:'<?php echo U("Merch/Order/qr_order");?>',
-      data:{order_id:order_id},
-      success: function (result) {
-          if(result.code == 200){
-              window.location.reload();
-          }else{
-              alert(result.msg);
-          }
-      }
-    })  
+    var conff = confirm('确认提交吗?');
+    if(conff){
+      $.ajax({
+        type:'POST',
+        dataType: 'json',
+        url:'<?php echo U("Merch/Order/qr_order");?>',
+        data:{order_id:order_id},
+        success: function (result) {
+            if(result.code == 200){
+                alert('确认后此单转移到进行中');
+                window.location.reload();
+            }else{
+                alert(result.msg);
+            }
+        }
+      })       
+    }
+ 
   }
 </script>
-
+<!-- <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> -->
 <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
         // var remind = 0;
@@ -1158,20 +1163,42 @@
         //     }
         // })
 
+      // function al(){
+      //   alert('123';)
+      // }
+        function audioAutoPlay(id){  
+          var audio = document.getElementById(id), 
+              play = function(){  
+                  audio.play();  
+                  document.removeEventListener("touchstart",play, false);  
+              };  
+
+          audio.play();  
+          document.addEventListener("WeixinJSBridgeReady", function () {  
+              play();  
+          }, false);  
+          document.addEventListener('YixinJSBridgeReady', function() {  
+              play();  
+          }, false);  
+          document.addEventListener("touchstart",play, false);  
+      }
+// audioAutoPlay('mp3');  
 
         setInterval(function () {
             $.ajax({
                 type:'post',
                 url:"<?php echo U('Merch/Order/sendOrderNotice');?>",
                 dataType: 'json',
-                data:{store_id:store_id},              
+                data:{store_id:store_id}, 
+                 // async: false,             
                 success:function (data) {
                     if(data > 0){
-                      // alert(data);
+                      
                         $('.nm').show();
                         $('.remind').text(data);
-                        mp3.play();
-                        // play=remind;                      
+
+                        audioAutoPlay('mp3')
+
                     }else{
                         $('.nm').hide();
 

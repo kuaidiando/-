@@ -179,7 +179,7 @@
     line-height:80px;
 }
 .fu{
-    width: 5%;
+    width: 8%;
     height: 80px;
     line-height: 80px;
     float: left;
@@ -190,22 +190,22 @@
     margin-top: 25px;
 }
 .yi{
-    width: 25%;
+    width: 30%;
     height: 80px;
     line-height: 80px;
     float: left;
 }
 .yi span{
-    font-size: 28.8px;
+    font-size: 36px;
 }
 .xieyi{
-    width: 70%;
+    width: 62%;
     height: 80px;
     line-height: 80px;
     float: left;
 }
 .xieyi span{
-    font-size: 28.8px;
+    font-size: 36px;
     color: #ffae00;
 }
 
@@ -235,7 +235,45 @@ form .send1{
     font-weight: normal;
 }
 
+.fu {
+    position: relative;
+    line-height: 40px;
+}
 
+input[type="checkbox"] {
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+}
+
+label {
+    position: absolute;
+    left: 20%;
+    top: 18px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #888;
+}
+
+/*设置选中的input的样式*/
+/* + 是兄弟选择器,获取选中后的label元素*/
+input:checked+label {
+    border: 4px solid #ffae00;
+}
+
+input:checked+label::after {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 25px;
+    top: 4px;
+    left: 12px;
+    border: 4px solid #ffae00;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+}
 
 
 

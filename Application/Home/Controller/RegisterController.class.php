@@ -99,6 +99,8 @@ class RegisterController extends Controller {
                     'msg' => '该会员已存在，无需重复注册'
                 ));
         }
+        $_SESSION['userid'] = $result;
+
         $data = array(
                 'data' => true,
                 'code' => 200,
