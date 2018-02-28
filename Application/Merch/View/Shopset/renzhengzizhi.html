@@ -197,7 +197,6 @@
     </script>
 </head>
 <body style="font-size: 12px">
-<body style="font-size: 12px">
 <form class="form form-horizontal" id="formadd" action="{:U('Merch/Shopset/addgaojixx')}" method="post" enctype="multipart/form-data">
 <div class="head">
     <span>认证资质</span>
@@ -266,7 +265,7 @@
 
     <div class="zhao">
         <div class="tet">
-            <input type="text" style="width: 41%;" placeholder="营业执照照片">
+            <input type="" style="width: 41%;" placeholder="营业执照照片">
                 <!-- 图片上传 -->
                 <input type="file" name="ren_yingyelogo" style="position:absolute;opacity:0;width: 60%" onchange="previewImage(this)" />
         </div>
@@ -331,7 +330,7 @@
 
     <div class="zhao">
         <div class="tet">
-            <input type="text" style="width: 41%;" placeholder="许可证照片">
+            <input type="" style="width: 41%;" placeholder="许可证照片">
                 <!-- 图片上传 -->
                 <input type="file" name="ren_cyxukelogo" style="position:absolute;opacity:0;width: 60%" onchange="previewImage1(this)" />
         </div>
@@ -396,7 +395,7 @@
 
     <div class="zhao">
         <div class="tet">
-            <input type="text" style="width: 41%;" placeholder="身份证照片">
+            <input type="" style="width: 41%;" placeholder="身份证照片">
                 <!-- 图片上传 -->
                 <input type="file" name="faren_sfzzheng" style="position:absolute;opacity:0;width: 60%" onchange="previewImage2(this)" />
         </div>
@@ -415,7 +414,7 @@
 <div class="kong2"></div>
 
 <div class="foot">
-    <button>确认提交</button>
+    <span id="submitadd">确认提交</span>
     <!-- <span id="submitadd">确认提交</span> -->
 </div>
 </form>
@@ -423,7 +422,28 @@
      <script type="text/javascript">
         // 提交表单
         $(document).on("click","#submitadd",function(){
-            $("#formadd").submit();
+            var ren_yingyezhizmingch = $("input[name='ren_yingyezhizmingch']").val();
+            var ren_yingyezhizjingyingz = $("input[name='ren_yingyezhizjingyingz']").val();
+            var ren_yingyehaoma = $("input[name='ren_yingyehaoma']").val();
+            var ren_jingyingdizhi = $("input[name='ren_jingyingdizhi']").val();
+            var ren_jingyingfanwei = $("input[name='ren_jingyingfanwei']").val();
+            var ren_yingyelogo = $("input[name='ren_yingyelogo']").val();
+            var ren_cyxukezhenghaom = $("input[name='ren_cyxukezhenghaom']").val();
+            var ren_fuwuxukezhengfaren = $("input[name='ren_fuwuxukezhengfaren']").val();
+            var ren_fuwuxukezhengdizhi = $("input[name='ren_fuwuxukezhengdizhi']").val();
+            var ren_cyxukelogo = $("input[name='ren_cyxukelogo']").val();
+            var faren_lianxiren = $("input[name='faren_lianxiren']").val();
+            var faren_tel = $("input[name='faren_tel']").val();
+            var faren_sfzzhengjianhao = $("input[name='faren_sfzzhengjianhao']").val();
+            var faren_sfzyouq = $("input[name='faren_sfzyouq']").val();
+            var faren_sfzzheng = $("input[name='faren_sfzzheng']").val();
+            if (ren_yingyezhizmingch && ren_yingyezhizjingyingz && ren_yingyehaoma && ren_jingyingdizhi && ren_jingyingfanwei && ren_yingyelogo && ren_cyxukezhenghaom && ren_fuwuxukezhengfaren && ren_fuwuxukezhengdizhi && ren_cyxukelogo && faren_lianxiren && faren_tel && faren_sfzzhengjianhao &&
+                faren_sfzyouq && faren_sfzzheng) {
+
+                $("#formadd").submit();
+            }else{
+                alert("请完善信息");
+            }
         });
     </script>
 </html>

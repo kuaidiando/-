@@ -35,9 +35,13 @@ class IndexController extends Controller {
     private function order_total_info($shopid){
         $store_id = $shopid;
         $order = M('order');
-        $where['order_status'] = array('in','10,15'); 
+        $where['order_status'] = array('in','10,15,11,12'); 
         $where['store_id'] = $store_id;
+        $where['use_time'] = array(array('egt',date('Y-m-d 00:00:00')),array('lt',date('Y-m-d 00:00:00',time()+3600*24)),'and');
+        
+
         $order_ids = $order->where($where)->getField('id',true);
+        
         $order_total_price = 0;
         $num =0;
         foreach($order_ids as $k=>$v){

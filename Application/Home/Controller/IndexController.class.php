@@ -12,7 +12,8 @@ class IndexController extends Controller {
         
         //头像
         $user_id = \user_helper::get_user_id();
-        $user_photo = uri("user",array('id'=>1,"del_status"=>0),"photo");
+        $user_photo = uri("user",array('id'=>3,"del_status"=>0),"photo");
+        // dump($user_photo);die;
         $this->assign('user_photo',$user_photo);
 
         //门店列表
@@ -56,9 +57,12 @@ class IndexController extends Controller {
             $res[$kres]['kongxinxing'] = $kongxinxing;//空心星星
             $res[$kres]['bangexing'] = $bangexing;//半个心星星
         }
-        
-        $this->assign('res',$res);
+        //获取桌位号
+        // foreach ($res as $key => $value) {
+        //     dump($value['id']);
+        // }
         // dump($res);die;
+        $this->assign('res',$res);
         
         // 门店类别
         $usermdlx = M('shop_type');
@@ -66,6 +70,9 @@ class IndexController extends Controller {
         $this->assign("resmdlx",$resmdlx);
         $this->display();
     }
+    // private function zuoweihao(){
+    //     $user = M();
+    // }
     //轮播图
     public function banner(){
         $event = M('event')->where(array('status'=>1))->getField('pic',true);

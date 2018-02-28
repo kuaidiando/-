@@ -138,7 +138,7 @@
                     <div class="dan">
                         <select class="rr" name="food_type">
                             <foreach name="resfoodtype" item="voresfoodtype">
-                                <option value="{$voresfoodtype.id}" <if condition="$voresfoodtype['id'] eq $resfood[0]['food_type']">selected="selected"</if> >{$voresfoodtype.mingch}</option>
+                                <option value="{$voresfoodtype.id}" <if condition="$voresfoodtype['id'] eq $foodtypeid">selected="selected"</if> >{$voresfoodtype.mingch}</option>
                             </foreach>
                         </select>
                     </div>

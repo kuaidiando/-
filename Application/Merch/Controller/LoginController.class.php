@@ -58,40 +58,57 @@ class LoginController extends Controller {
         $selsheng = I("post.selsheng");//城市级联 --省
         $depcsjlshi = I("post.depcsjlshi");//城市级联 --市
         $depcsjlxian =I("post.depcsjlxian");//城市级联 --区
-    	$user_info = $this->checkreg($tel);
-        if(!$user_info){
-            $info = array(
-            		'mingch'  => $name,
-                    'tel'       => $tel,
-                    'password'  => md5($pass),
-            		'ressheng'  => $selsheng,
-            		'depcsjlshi'  => $depcsjlshi,
-            		'depcsjlxian'  => $depcsjlxian,
-                    // 'add_time'  => date('Y-m-d H:i:s')
+        //获取验证码
+        $resyzm = uri("mobile_code",array('tel'=>$tel,"status"=>0),"code");
+        // $this->ajaxReturn($resyzm);
+        $data = array(
+                    'data' => true,
+                    'code' => 200,
+                    'msg'  => '',
             );
+        if ($resyzm == $yanzheng) {
+            $user_info = $this->checkreg($tel);
+            if(!$user_info){
+                $info = array(
+                        'mingch'  => $name,
+                        'tel'       => $tel,
+                        'password'  => md5($pass),
+                        'depcsjlsheng'  => $selsheng,
+                        'depcsjlshi'  => $depcsjlshi,
+                        'depcsjlxian'  => $depcsjlxian,
+                        // 'add_time'  => date('Y-m-d H:i:s')
+                );
 
-            $result = $user->add($info);
-            if(!$result){
-                $data = array(
-                            'data' => false,
-                            'code' => 304,
-                            'msg'  => '注册用户失败',
-                            );
+                $result = $user->add($info);
 
-                $this->ajaxReturn($data);
+                if(!$result){
+                    $data = array(
+                                'data' => false,
+                                'code' => 304,
+                                'msg'  => '注册用户失败',
+                                );
+
+                    $this->ajaxReturn($data);
+                }
+                //修改验证码 状态
+                $whereyzm['tel'] = $tel;
+                $datayzm['status'] = 1;
+                M('mobile_code')->where($whereyzm)->save($datayzm);
+            }else{
+                    $this->ajaxReturn(array(
+                        'data' => false,
+                        'code' => 311,
+                        'msg' => '该会员已存在，无需重复注册'
+                    ));
             }
         }else{
-                $this->ajaxReturn(array(
-                    'data' => false,
-                    'code' => 311,
-                    'msg' => '该会员已存在，无需重复注册'
-                ));
+            $data = array(
+                    'data' => true,
+                    'code' => 201,
+                    'msg'  => '验证码不正确',
+            );
         }
-        $data = array(
-                'data' => true,
-                'code' => 200,
-                'msg'  => '',
-        );
+        
 
         $this->ajaxReturn($data);
     }
@@ -162,9 +179,9 @@ class LoginController extends Controller {
         }
         // $_SESSION[$user_info['tel']] = true;
         $_SESSION['staffid'] = $user_info['id'];
-
-       
-
+        $where['code'] = $tel;
+        $data['typezhuangtai'] = 2;
+        M('staff')->where($where)->save($data);
         $data = array(
                 'data' => true,
                 'code' => 200,
