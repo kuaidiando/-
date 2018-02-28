@@ -13720,3 +13720,861 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001665s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001699s ]
 
+[ 2018-02-28T18:11:34+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2018-02-28T18:11:44+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0104s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2018-02-28T18:11:54+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-02-28T18:12:04+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001251s ]
+
+[ 2018-02-28T18:12:14+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2018-02-28T18:12:24+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2018-02-28T18:12:34+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2018-02-28T18:12:44+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2018-02-28T18:12:54+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2018-02-28T18:13:04+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000740s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2018-02-28T18:13:14+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2018-02-28T18:13:24+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2018-02-28T18:13:34+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001138s ]
+
+[ 2018-02-28T18:13:44+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000825s ]
+
+[ 2018-02-28T18:13:54+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2018-02-28T18:14:04+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2018-02-28T18:14:14+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001455s ]
+
+[ 2018-02-28T18:14:24+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000879s ]
+
+[ 2018-02-28T18:14:34+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2018-02-28T18:14:44+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2018-02-28T18:14:54+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000830s ]
+
+[ 2018-02-28T18:15:04+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2018-02-28T18:15:14+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000931s ]
+
+[ 2018-02-28T18:15:24+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2018-02-28T18:15:34+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2018-02-28T18:15:44+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000808s ]
+
+[ 2018-02-28T18:15:54+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2018-02-28T18:16:04+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2018-02-28T18:16:14+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001582s ]
+
+[ 2018-02-28T18:16:24+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001215s ]
+
+[ 2018-02-28T18:16:34+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2018-02-28T18:16:44+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2018-02-28T18:16:54+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2018-02-28T18:17:04+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2018-02-28T18:17:14+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2018-02-28T18:17:24+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2018-02-28T18:17:34+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001551s ]
+
+[ 2018-02-28T18:17:44+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2018-02-28T18:17:54+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2018-02-28T18:18:04+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2018-02-28T18:18:14+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2018-02-28T18:18:24+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002460s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2018-02-28T18:18:34+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001489s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001229s ]
+
+[ 2018-02-28T18:18:44+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2018-02-28T18:18:54+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000929s ]
+
+[ 2018-02-28T18:19:04+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2018-02-28T18:19:14+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2018-02-28T18:19:24+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2018-02-28T18:19:34+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000900s ]
+
+[ 2018-02-28T18:19:44+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000917s ]
+
+[ 2018-02-28T18:19:54+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2018-02-28T18:20:04+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2018-02-28T18:20:14+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2018-02-28T18:20:24+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000985s ]
+
+[ 2018-02-28T18:20:34+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2018-02-28T18:20:44+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001206s ]
+
+[ 2018-02-28T18:20:54+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000824s ]
+
+[ 2018-02-28T18:21:04+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000881s ]
+
+[ 2018-02-28T18:21:14+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2018-02-28T18:21:24+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2018-02-28T18:21:34+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000824s ]
+
+[ 2018-02-28T18:21:44+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2018-02-28T18:21:54+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2018-02-28T18:22:04+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2018-02-28T18:22:14+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2018-02-28T18:22:24+08:00 ] 192.168.0.107 /kuaidian/index.php/Merch/Order/sendOrderNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `order_status` = 10 AND `store_id` = 45 LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
