@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>自定义添加商品</title>
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/text.css">
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/zidingyi.css">
-    <script type="text/javascript" src="__PUBLIC__/merch/js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/zidingyi.css">
+    <script type="text/javascript" src="/kuaidian/Public/merch/js/jquery-1.12.4.min.js"></script>
     <!-- 图片上传 -->
      <style type="text/css">
      /*图片一*/
@@ -84,7 +84,7 @@
     </script>
 </head>
 <body style="font-size: 12px">
-<form  action="{:U('Merch/Foodhoutai/doaddfood')}" id="zhixingxiugai" method="post" enctype="multipart/form-data">
+<form  action="<?php echo U('Merch/Foodhoutai/doaddfood');?>" id="zhixingxiugai" method="post" enctype="multipart/form-data">
     <div class="header">
         <div class="head">
             <div class="top" style="margin-top: 5px;">
@@ -92,7 +92,7 @@
                     <!-- 隐藏跳转页面数据 -->
                     <input style="display: none;" class="typeid" type="text" name="typeid" value="">
                     <!-- 隐藏门店id -->
-                    <input style="display: none;" type="text" name="dep_shop" value="{$shopid}">
+                    <input style="display: none;" type="text" name="dep_shop" value="<?php echo ($shopid); ?>">
                     <input style="display: none;" type="text" name="zhuangt" value="1">
                     <span>商品名称</span>
                 </div>
@@ -102,7 +102,7 @@
                 </div>
 
                 <div class="zi">
-                    <input type="text" name="mingch" value="{$resfood.0.mingch}" placeholder="30字以内">
+                    <input type="text" name="mingch" value="<?php echo ($resfood["0"]["mingch"]); ?>" placeholder="30字以内">
                 </div>
             </div>
 
@@ -121,7 +121,7 @@
                 <input type="file" name="logo" style="position:absolute;opacity:0;width: 20%;height: 8%;" onchange="previewImage(this)" />
                     <div class="you">
                        <div class="tupian" id="preview">
-                            <img id="imghead" border=0 src="__PUBLIC__/img/xinagji.png"  alt="">
+                            <img id="imghead" border=0 src="/kuaidian/Public/img/xinagji.png"  alt="">
                        </div>
                     </div>
                 </div>
@@ -137,14 +137,12 @@
                     
                     <div class="dan">
                         <select class="rr" name="food_type">
-                            <foreach name="resfoodtype" item="voresfoodtype">
-                                <option value="{$voresfoodtype.id}" <if condition="$voresfoodtype['id'] eq $foodtypeid">selected="selected"</if> >{$voresfoodtype.mingch}</option>
-                            </foreach>
+                            <?php if(is_array($resfoodtype)): foreach($resfoodtype as $key=>$voresfoodtype): ?><option value="<?php echo ($voresfoodtype["id"]); ?>" <?php if($voresfoodtype['id'] == $foodtypeid): ?>selected="selected"<?php endif; ?> ><?php echo ($voresfoodtype["mingch"]); ?></option><?php endforeach; endif; ?>
                         </select>
                     </div>
                     
                     <div class="jian">
-                        <img src="__PUBLIC__/merch/images/youjiantou.png" alt="">
+                        <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
                     </div>
                 </div>
             </div>
@@ -160,7 +158,7 @@
                 </div>
                 
                 <div class="jian">
-                    <img src="__PUBLIC__/merch/images/youjiantou.png" alt="">
+                    <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
                 </div>
             </div>
             <div id="light" class="white_content">
@@ -198,7 +196,7 @@
                 </div>
 
                 <div class="tian">
-                    <input type="text" name="jiage_youhui" value="{$resfood.0.jiage}" placeholder="请填写价格">
+                    <input type="text" name="jiage_youhui" value="<?php echo ($resfood["0"]["jiage"]); ?>" placeholder="请填写价格">
                 </div>
             </div>
 
@@ -208,7 +206,7 @@
                 </div>
 
                 <div class="yj">
-                    <input type="text" name="jiage" value="{$resfood.0.jiage_youhui}" placeholder="请填写原价">
+                    <input type="text" name="jiage" value="<?php echo ($resfood["0"]["jiage_youhui"]); ?>" placeholder="请填写原价">
                 </div>
             </div>
 
@@ -219,9 +217,7 @@
 
                 <div class="xuan">
                     <select class="rr" name="dwid">
-                            <foreach name="resdanw" item="voresdanw">
-                                <option value="{$voresdanw.id}" <if condition="$voresdanw['id'] eq $resfood[0]['dwid']">selected="selected"</if> >{$voresdanw.mingch}</option>
-                            </foreach>
+                            <?php if(is_array($resdanw)): foreach($resdanw as $key=>$voresdanw): ?><option value="<?php echo ($voresdanw["id"]); ?>" <?php if($voresdanw['id'] == $resfood[0]['dwid']): ?>selected="selected"<?php endif; ?> ><?php echo ($voresdanw["mingch"]); ?></option><?php endforeach; endif; ?>
                         </select>
                 </div>
             </div>

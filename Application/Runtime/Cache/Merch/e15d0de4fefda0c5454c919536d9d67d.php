@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>认证</title>
-    <link rel="stylesheet" href="/-/Public/merch/css/renzhneg.css">
-    <link rel="stylesheet" href="/-/Public/merch/css/base.css">
-    <link rel="stylesheet" href="/-/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/renzhneg.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/text.css">
 </head>
 <body style="font-size: 12px">
     <div class="head">
@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="jian">
-                    <img src="/-/Public/merch/images/youjiantou.png" alt="">
+                    <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@
             </div>
 
             <div class="jian">
-                <img src="/-/Public/merch/images/youjiantou.png" alt="">
+                <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
             </div>
         </div>
     </div>

@@ -1,0 +1,70 @@
+[ 2018-02-28T15:15:20+08:00 ] ::1 /kuaidian/index.php/Admin/Ajax/shengdoshi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `city` WHERE `provincecode` = '110000'  [ RunTime:0.0117s ]
+
+[ 2018-02-28T15:15:22+08:00 ] ::1 /kuaidian/index.php/Admin/Ajax/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `area` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `area` WHERE `citycode` = '110100'  [ RunTime:0.0215s ]
+
+[ 2018-02-28T15:17:23+08:00 ] ::1 /kuaidian/index.php/Admin/Ajax/shengdoshi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `city` WHERE `provincecode` = '110000'  [ RunTime:0.0011s ]
+
+[ 2018-02-28T15:17:25+08:00 ] ::1 /kuaidian/index.php/Admin/Ajax/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+SQL: SHOW COLUMNS FROM `area` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `area` WHERE `citycode` = '110100'  [ RunTime:0.0021s ]
+
+[ 2018-02-28T16:18:01+08:00 ] 192.168.0.103 /kuaidian/index.php/Admin/Ajax/shengdoshi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `city` WHERE `provincecode` = '140000'  [ RunTime:0.0014s ]
+
+[ 2018-02-28T16:18:04+08:00 ] 192.168.0.103 /kuaidian/index.php/Admin/Ajax/shengdoshi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `city` WHERE `provincecode` = '130000'  [ RunTime:0.0017s ]
+
+[ 2018-02-28T16:18:06+08:00 ] 192.168.0.103 /kuaidian/index.php/Admin/Ajax/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `area` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `area` WHERE `citycode` = '130100'  [ RunTime:0.0021s ]
+

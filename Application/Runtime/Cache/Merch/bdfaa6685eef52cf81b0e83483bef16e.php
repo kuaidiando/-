@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>认证资质</title>
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/text.css">
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/zizhi.css">
-    <script type="text/javascript" src="__PUBLIC__/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/zizhi.css">
+    <script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
     <!-- 图片上传 -->
      <style type="text/css">
      /*图片一*/
@@ -197,11 +197,11 @@
     </script>
 </head>
 <body style="font-size: 12px">
-<form class="form form-horizontal" id="formadd" action="{:U('Merch/Shopset/addgaojixx')}" method="post" enctype="multipart/form-data">
+<form class="form form-horizontal" id="formadd" action="<?php echo U('Merch/Shopset/addgaojixx');?>" method="post" enctype="multipart/form-data">
 <div class="head">
     <span>认证资质</span>
     <!-- 门店id -->
-        <input type="text" name="shopid" value="{$shopid}" style="display:none;">
+        <input type="text" name="shopid" value="<?php echo ($shopid); ?>" style="display:none;">
         <!-- 隐藏基本信息状态 -->
         <input type="text" name="zhuangt" style="display: none;" value="1">
 </div>
@@ -215,7 +215,7 @@
 
     <div class="name">
         <div class="ming">
-            <input type="text" name="ren_yingyezhizmingch" value="{$res.0.ren_yingyezhizmingch}" placeholder="名称">
+            <input type="text" name="ren_yingyezhizmingch" value="<?php echo ($res["0"]["ren_yingyezhizmingch"]); ?>" placeholder="名称">
         </div>
 
         <div class="fu">
@@ -225,7 +225,7 @@
 
     <div class="name2">
         <div class="ming">
-            <input type="text" name="ren_yingyezhizjingyingz" value="{$res.0.ren_yingyezhizjingyingz}" placeholder="法定代表人/经营者">
+            <input type="text" name="ren_yingyezhizjingyingz" value="<?php echo ($res["0"]["ren_yingyezhizjingyingz"]); ?>" placeholder="法定代表人/经营者">
         </div>
 
         <div class="fu">
@@ -235,7 +235,7 @@
 
     <div class="name2">
         <div class="ming">
-            <input type="text" name="ren_yingyehaoma" value="{$res.0.ren_yingyehaoma}" placeholder="营业执照注册号">
+            <input type="text" name="ren_yingyehaoma" value="<?php echo ($res["0"]["ren_yingyehaoma"]); ?>" placeholder="营业执照注册号">
         </div>
 
         <div class="fu">
@@ -245,7 +245,7 @@
 
     <div class="name2">
         <div class="ming">
-            <input type="text" name="ren_jingyingdizhi" value="{$res.0.ren_jingyingdizhi}" placeholder="经营地址">
+            <input type="text" name="ren_jingyingdizhi" value="<?php echo ($res["0"]["ren_jingyingdizhi"]); ?>" placeholder="经营地址">
         </div>
 
         <div class="fu">
@@ -255,7 +255,7 @@
 
     <div class="name2">
         <div class="ming">
-            <input type="text" name="ren_jingyingfanwei" value="{$res.0.ren_jingyingfanwei}" placeholder="经营范围">
+            <input type="text" name="ren_jingyingfanwei" value="<?php echo ($res["0"]["ren_jingyingfanwei"]); ?>" placeholder="经营范围">
         </div>
 
         <div class="fu">
@@ -271,7 +271,7 @@
         </div>
 
         <div class="tu" id="preview">
-            <img id="imghead" border=0 src="__PUBLIC__{$res.0.ren_yingyelogo}" alt="">
+            <img id="imghead" border=0 src="/kuaidian/Public<?php echo ($res["0"]["ren_yingyelogo"]); ?>" alt="">
         </div>
 
         <div class="fu2">
@@ -290,7 +290,7 @@
 
     <div class="name">
         <div class="ming">
-            <input type="text" name="ren_cyxukezhenghaom" value="{$res.0.ren_cyxukezhenghaom}" placeholder="请填写许可证编号">
+            <input type="text" name="ren_cyxukezhenghaom" value="<?php echo ($res["0"]["ren_cyxukezhenghaom"]); ?>" placeholder="请填写许可证编号">
         </div>
 
         <div class="fu">
@@ -300,7 +300,7 @@
 
     <div class="name2">
         <div class="ming">
-            <input type="text" name="ren_fuwuxukezhengfaren" value="{$res.0.ren_fuwuxukezhengfaren}"  placeholder="请填写法定代表人">
+            <input type="text" name="ren_fuwuxukezhengfaren" value="<?php echo ($res["0"]["ren_fuwuxukezhengfaren"]); ?>"  placeholder="请填写法定代表人">
         </div>
 
         <div class="fu">
@@ -310,7 +310,7 @@
 
     <div class="name2">
         <div class="ming">
-            <input type="text" name="ren_fuwuxukezhenggongsi" value="{$res.0.ren_fuwuxukezhenggongsi}" placeholder="请填写公司名称">
+            <input type="text" name="ren_fuwuxukezhenggongsi" value="<?php echo ($res["0"]["ren_fuwuxukezhenggongsi"]); ?>" placeholder="请填写公司名称">
         </div>
 
         <div class="fu">
@@ -320,7 +320,7 @@
 
     <div class="name2">
         <div class="ming">
-            <input type="text" name="ren_fuwuxukezhengdizhi" value="{$res.0.ren_fuwuxukezhengdizhi}" placeholder="请填写许可证件地址">
+            <input type="text" name="ren_fuwuxukezhengdizhi" value="<?php echo ($res["0"]["ren_fuwuxukezhengdizhi"]); ?>" placeholder="请填写许可证件地址">
         </div>
 
         <div class="fu">
@@ -336,7 +336,7 @@
         </div>
 
         <div class="tu" id="preview1">
-            <img id="imghead1" border=0 src="__PUBLIC__{$res.0.ren_cyxukelogo}" alt="">
+            <img id="imghead1" border=0 src="/kuaidian/Public<?php echo ($res["0"]["ren_cyxukelogo"]); ?>" alt="">
         </div>
 
         <div class="fu2">
@@ -355,7 +355,7 @@
 
     <div class="name">
         <div class="ming">
-            <input type="text" name="faren_lianxiren" value="{$res.0.faren_lianxiren}"  placeholder="请填联系人">
+            <input type="text" name="faren_lianxiren" value="<?php echo ($res["0"]["faren_lianxiren"]); ?>"  placeholder="请填联系人">
         </div>
 
         <div class="fu">
@@ -365,7 +365,7 @@
 
     <div class="name2">
         <div class="ming">
-            <input type="text" name="faren_tel" value="{$res.0.faren_tel}"  placeholder="请填写联系电话">
+            <input type="text" name="faren_tel" value="<?php echo ($res["0"]["faren_tel"]); ?>"  placeholder="请填写联系电话">
         </div>
 
         <div class="fu">
@@ -375,7 +375,7 @@
 
     <div class="name2">
         <div class="ming">
-            <input type="text" name="faren_sfzzhengjianhao" value="{$res.0.faren_sfzzhengjianhao}" placeholder="请填写身份证证件号">
+            <input type="text" name="faren_sfzzhengjianhao" value="<?php echo ($res["0"]["faren_sfzzhengjianhao"]); ?>" placeholder="请填写身份证证件号">
         </div>
 
         <div class="fu">
@@ -385,7 +385,7 @@
 
     <div class="name2">
         <div class="ming">
-            <input type="text" name="faren_sfzyouq" value="{$res.0.faren_sfzyouq}"  placeholder="请填写身份证有效期限">
+            <input type="text" name="faren_sfzyouq" value="<?php echo ($res["0"]["faren_sfzyouq"]); ?>"  placeholder="请填写身份证有效期限">
         </div>
 
         <div class="fu">
@@ -401,7 +401,7 @@
         </div>
 
         <div class="tu" id="preview2">
-            <img id="imghead2" border=0 src="__PUBLIC__{$res.0.faren_sfzzheng}" alt="">
+            <img id="imghead2" border=0 src="/kuaidian/Public<?php echo ($res["0"]["faren_sfzzheng"]); ?>" alt="">
         </div>
 
         <div class="fu2">

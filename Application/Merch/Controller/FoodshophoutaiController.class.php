@@ -40,7 +40,7 @@ class FoodshophoutaiController extends Controller {
             $con = $userfood->where($whereco)->count();//每个分类有几个菜品
             $resft[$k]['foodcount'] = $con;
         }
-        // dump($resft);
+        // dump($resft);die;
         // die;
         $this->assign("resft",$resft);//菜品类别
         $this->assign("shopid",$shopid);//门店id

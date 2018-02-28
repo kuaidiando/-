@@ -203,7 +203,7 @@
             var zhi = $(this).val();
             if (zhi) {
                 // alert(123);
-                $(".foot").css("background-color","#ffae00");
+                $(".foot").css("background-color","#097f7e");
             }else{
                 // alert(456);
                 $(".foot").css("background-color","#888");
@@ -215,7 +215,7 @@
             var zhi = $(this).val();
             if (zhi) {
                 // alert(123);
-                $(".footyuangong").css("background-color","#ffae00");
+                $(".footyuangong").css("background-color","#097f7e");
             }else{
                 // alert(456);
                 $(".footyuangong").css("background-color","#888");

@@ -155,7 +155,17 @@ class FoodhoutaiController extends Controller {
     //添加菜品
     public function addfood(){
         $shopid = I("shopid");
-        // dump($shopid);die;
+        //获取菜品类型id
+        $foodtypeid = I("foodtypeid");
+        if ($foodtypeid) {
+            // echo 123;
+        }else{
+            $userft = M('food_type');
+            $whereft['dep_type'] = $shopid;
+            $resft = $userft->where($whereft)->select();
+            $foodtypeid = $resft[0]['id'];
+        }
+        // dump($foodtypeid);die;
          /**
          * 获取菜品类别
          */
@@ -168,6 +178,7 @@ class FoodhoutaiController extends Controller {
         $userdanw = M("cpdanwei");
         $resdanw = $userdanw->select();
         // dump($resfood);die;
+        $this->assign("foodtypeid",$foodtypeid);//菜品类别信息
         $this->assign("resfoodtype",$resfoodtype);//菜品类别信息
         $this->assign("resdanw",$resdanw);//单位信息
         $this->assign("shopid",$shopid);//门店id

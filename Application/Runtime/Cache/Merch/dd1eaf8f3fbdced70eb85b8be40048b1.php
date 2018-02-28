@@ -57,7 +57,7 @@
                         <span>已认证</span>
                     </div>
                 <?php else: ?>
-                     <div class="rz">
+                     <div class="rz" style="background-color: #888;">
                         <span>未认证</span>
                     </div><?php endif; ?>
         </div>
@@ -110,7 +110,7 @@
             </div>
         </a>
 
-        <a href="tixian.html">
+        <a href="<?php echo U('Merch/Enchashment/index');?>">
             <div class="qian">
                 <div class="qiantu">
                     <img src="/kuaidian/Public/merch/images/caiwu.png" alt="">
@@ -380,7 +380,7 @@
                     if(data > 0){
                         $('.nm').show();
                         $('.remind').text(data);
-                        mp3.play();
+                        // mp3.play();
                         // play=remind;                      
                     }else{
                         $('.nm').hide();

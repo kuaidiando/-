@@ -1,10 +1,10 @@
-<html lang="en" data-dpr="1" style="font-size: 42.4px;">
+<?php if (!defined('THINK_PATH')) exit();?><html lang="en" data-dpr="1" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/register.css">
-    <script type="text/javascript" src="__PUBLIC__/merch/js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/register.css">
+    <script type="text/javascript" src="/kuaidian/Public/merch/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript">
         $(function () {
             //获取短信验证码
@@ -33,7 +33,7 @@
                     $.ajax({
                         type:'POST',
                         dataType: 'json',
-                        url:'{:U("Merch/Login/yanZheng")}',
+                        url:'<?php echo U("Merch/Login/yanZheng");?>',
                         data:{"tel":tel},
                         success: function (result) {
                             // alert(result);
@@ -91,7 +91,7 @@
 <body style="font-size: 12px">
 
 <div class="logo">
-    <img src="__PUBLIC__/merch/images/logo2.png" alt="">
+    <img src="/kuaidian/Public/merch/images/logo2.png" alt="">
 </div>
 
 <div class="zhuce">
@@ -102,7 +102,7 @@
 
     <div class="phone">
         <div class="tu">
-            <img src="__PUBLIC__/merch/images/dian.png" alt="">
+            <img src="/kuaidian/Public/merch/images/dian.png" alt="">
         </div>
 
         <div class="text">
@@ -113,7 +113,7 @@
 
     <div class="dizhi">
         <div class="ditu">
-            <img src="__PUBLIC__/merch/images/dizhi.png" alt="">
+            <img src="/kuaidian/Public/merch/images/dizhi.png" alt="">
         </div>
 
         <div class="text8">
@@ -126,9 +126,7 @@
             <select name="depcsjlsheng"  class="select" id="selsheng">
 
                 <option value="">选择省</option>
-                <foreach name="ressheng" item="vocssheng" >
-                    <option value="{$vocssheng.code}">{$vocssheng.name}</option>
-                </foreach>
+                <?php if(is_array($ressheng)): foreach($ressheng as $key=>$vocssheng): ?><option value="<?php echo ($vocssheng["code"]); ?>"><?php echo ($vocssheng["name"]); ?></option><?php endforeach; endif; ?>
             </select>
             <select name="depcsjlshi" class="depcsjlshi">
                 <option value="volvo">选择市</option>
@@ -146,7 +144,7 @@
 
     <div class="phone">
         <div class="tu">
-            <img src="__PUBLIC__/merch/images/geren2.png" alt="">
+            <img src="/kuaidian/Public/merch/images/geren2.png" alt="">
         </div>
 
         <div class="text">
@@ -157,7 +155,7 @@
 
     <div class="mima">
         <div class="tu2">
-            <img src="__PUBLIC__/merch/images/mima.png" alt="">
+            <img src="/kuaidian/Public/merch/images/mima.png" alt="">
         </div>
 
         <div class="text2">
@@ -233,16 +231,16 @@
          $.ajax({
             type:'POST',
             dataType: 'json',
-            url:'{:U("Merch/Login/doregister")}',
+            url:'<?php echo U("Merch/Login/doregister");?>',
             data:{"name":name,"tel":tel,"pass":pass,"yanzheng":yanzheng,"selsheng":selsheng,"depcsjlshi":depcsjlshi,"depcsjlxian":depcsjlxian},
             success: function (result) {
                 //判断注册
-                if(result.code == 200){
-                    window.location.href = "{:U('Merch/Login/index')}";
-                }else{
-                    alert(result.msg);
-                };
-                // console.log(result);
+                // if(result.code == 200){
+                //     window.location.href = "<?php echo U('Merch/Login/index');?>";
+                // }else{
+                //     alert(result.msg);
+                // };
+                console.log(result);
             }
         })
     });
@@ -255,7 +253,7 @@
         $.ajax({
             type:'post',
             dataType: 'json',
-            url:'{:U("Admin/Ajax/shengdoshi")}',
+            url:'<?php echo U("Admin/Ajax/shengdoshi");?>',
             data:{codesheng:codesheng},
             success: function (dd) {
                 // console.log(dd);
@@ -280,7 +278,7 @@
         $.ajax({
             type:'post',
             dataType: 'json',
-            url:'{:U("Admin/Ajax/index")}',
+            url:'<?php echo U("Admin/Ajax/index");?>',
             data:{codesheng:codesheng},
             success: function (dd) {
                 // 获取区域名称
