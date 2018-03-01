@@ -56,11 +56,10 @@ class IndexController extends Controller {
             $res[$kres]['shixinxing'] = $shixinxing;//实心星星
             $res[$kres]['kongxinxing'] = $kongxinxing;//空心星星
             $res[$kres]['bangexing'] = $bangexing;//半个心星星
+            // 拼接座位号
+            $zuoweishu = $this->zuoweihao($vres['id']);
+            $res[$kres]['zuoweishu'] = $zuoweishu;//座位数
         }
-        //获取桌位号
-        // foreach ($res as $key => $value) {
-        //     dump($value['id']);
-        // }
         // dump($res);die;
         $this->assign('res',$res);
         
@@ -70,9 +69,12 @@ class IndexController extends Controller {
         $this->assign("resmdlx",$resmdlx);
         $this->display();
     }
-    // private function zuoweihao(){
-    //     $user = M();
-    // }
+    //获取桌位号
+    private function zuoweihao($shopid){
+        $where['dep_shop'] = $shopid;
+        $reszw = M('seat')->where($where)->count();
+        return $reszw;
+    }
     //轮播图
     public function banner(){
         $event = M('event')->where(array('status'=>1))->getField('pic',true);
@@ -457,5 +459,11 @@ class IndexController extends Controller {
         $data['msg'] = "对接成功";
         dump($data);die;
         $this->ajaxReturn($data);
+    }
+    //商家状态
+    public function ajaxzaixianzhuangt(){
+        $shopid = I('post.shopid');
+        $zhuangt = uri('shop',array('id'=>$shopid),'line_type');
+        $this->ajaxReturn($zhuangt);
     }
 }

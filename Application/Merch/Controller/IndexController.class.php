@@ -13,7 +13,7 @@ class IndexController extends Controller {
     	 * 商家基本信息
     	 * @var [type]
     	 */
-    	$shopid = session("shopid");
+    	$shopid = session("merchshopid");
     	$user = M('shop');
     	$where['id'] = $shopid;
     	$res = $user->where($where)->select();
@@ -35,7 +35,8 @@ class IndexController extends Controller {
     private function order_total_info($shopid){
         $store_id = $shopid;
         $order = M('order');
-        $where['order_status'] = array('in','10,15,11,12'); 
+        // $where['order_status'] = array('in','10,15,11,12'); 
+        $where['order_status'] = 12; 
         $where['store_id'] = $store_id;
         $where['use_time'] = array(array('egt',date('Y-m-d 00:00:00')),array('lt',date('Y-m-d 00:00:00',time()+3600*24)),'and');
         
