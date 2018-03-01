@@ -4,10 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="user-scalable=no">
 <title>商家</title>
+<<<<<<< HEAD
 <link rel="icon" href="/-/Public/home/img/logo1.png">
 <link rel="stylesheet" href="/-/Public/home/css/base.css">
 <link rel="stylesheet" href="/-/Public/home/css/text.css">
 <link rel="stylesheet" href="/-/Public/home/css/detail.css">
+=======
+<link rel="icon" href="/kuaidian/Public/home/img/logo1.png">
+<link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
+<link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
+<link rel="stylesheet" href="/kuaidian/Public/home/css/detail.css">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
 </head>
 <body style="font-size: 12px">
 <form action="<?php echo U('Home/Cart/save_cart');?>" id="dateshangjia" style="display: none;" method="post">
@@ -19,7 +26,11 @@
     <div class="shangjia">
         <div class="top">
             <div class="shang">
+<<<<<<< HEAD
                 <img src="/-/Public/<?php echo ($resspdan["0"]["logo"]); ?>" alt="">
+=======
+                <img src="/kuaidian/Public/<?php echo ($resspdan["0"]["logo"]); ?>" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
             </div>
             <div class="you">
                 <div class="name">
@@ -27,6 +38,7 @@
                     <!-- 商家id -->
                     <span id="shopid" style="display: none;"><?php echo ($resspdan["0"]["id"]); ?></span>
                     </span>
+<<<<<<< HEAD
                     <img src="/-/Public/home/img/baixin.png" alt="" id="xin" onClick="change_pic()">
                 </div>
                 <div class="evaluate">
@@ -40,13 +52,32 @@
                 </div>
                 <div class="tui">
                     <img src="/-/Public/home/img/tui.png" alt="">
+=======
+                    <img src="/kuaidian/Public/home/img/baixin.png" alt="" id="xin" onClick="change_pic()">
+                </div>
+                <div class="evaluate">
+                    <!-- 遍历实心星星 -->
+                    <?php if(is_array($xingxingshul)): foreach($xingxingshul as $key=>$voxingxingshul): ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:5%;" alt=""><?php endforeach; endif; ?>
+                    <!-- 判断半个 星星 -->
+                    <?php if($bangexing == 1): ?><img src="/kuaidian/Public/home/img/ban.png" style="width:5%;" alt="">
+                    <?php else: endif; ?>
+                    <!-- 遍历空心星星 -->
+                    <?php if(is_array($kongxinshuliang)): foreach($kongxinshuliang as $key=>$vokongxinshuliang): ?><img src="/kuaidian/Public/home/img/wu.png" style="width:5%;" alt=""><?php endforeach; endif; ?>
+                </div>
+                <div class="tui">
+                    <img src="/kuaidian/Public/home/img/tui.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                     <span class="gai">该商家已开通"微众代言",代言可获得</span>
                     <span class="red"><?php echo ($resspdan["0"]["zuigaolij"]); ?>%</span>
                 </div>
             </div>
         </div>
         <div class="bottom">
+<<<<<<< HEAD
             <img src="/-/Public/home/img/yin.png" alt="">
+=======
+            <img src="/kuaidian/Public/home/img/yin.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
             <span>欢迎光临,用餐高峰期请提前下单,谢谢</span>
             <a href="../predetermine.html"><input type="button" value="订座/请客"></a>
         </div>
@@ -87,10 +118,17 @@
                                 <span style="display: none;" class="caipinleix"><?php echo ($vozuizhongfood["id"]); ?></span>
                                 <span style="display: none;" class="caipinid"><?php echo ($vofoodxq["id"]); ?></span>
                                 <div class="tu">
+<<<<<<< HEAD
                                     <img src="/-/Public<?php echo ($vofoodxq["logo"]); ?>" alt="">
                                     <!-- 判断是否上架 -->
                                         <?php if($vofoodxq[zhuangt] == 1): else: ?>
                                             <img class="yis" src="/-/Public/home/img/yishou.png" alt=""><?php endif; ?>
+=======
+                                    <img src="/kuaidian/Public<?php echo ($vofoodxq["logo"]); ?>" alt="">
+                                    <!-- 判断是否上架 -->
+                                        <?php if($vofoodxq[zhuangt] == 1): else: ?>
+                                            <img class="yis" src="/kuaidian/Public/home/img/yishou.png" alt=""><?php endif; ?>
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                 </div>
                                 <div class="youbian">
                                     <div class="biao">
@@ -124,25 +162,41 @@
                                 <?php if($vofoodxq[zhuangt] == 1): ?><!-- 判断是否有数量 -->
                                 <?php if($vofoodxq["foodnum"] == null): ?><button class="minus">
                                         <strong>
+<<<<<<< HEAD
                                         <img src="/-/Public/home/img/jianhao.png" alt="">
+=======
+                                        <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                         </strong>
                                         </button>
                                         <i class="caipinfenshu">0</i>
                                         <button class="add">
                                         <strong>
+<<<<<<< HEAD
                                         <img src="/-/Public/home/img/jiahao.png" alt="">
+=======
+                                        <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                         </strong>
                                         </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i>
                                     <?php else: ?>
                                         <button class="minus" style="display: inline-block;">
                                         <strong>
+<<<<<<< HEAD
                                         <img src="/-/Public/home/img/jianhao.png" alt="">
+=======
+                                        <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                         </strong>
                                         </button>
                                         <i style="display: inline-block;" class="caipinfenshu"><?php echo ($vofoodxq["foodnum"]); ?></i>
                                         <button class="add">
                                         <strong>
+<<<<<<< HEAD
                                         <img src="/-/Public/home/img/jiahao.png" alt="">
+=======
+                                        <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                         </strong>
                                         </button><i class="price"><?php echo ($vofoodxq["shoujia"]); ?></i><?php endif; ?>
                                 <?php else: endif; ?>
@@ -156,7 +210,11 @@
             <!-- 总份数为0下一步为灰色 切不能点击下一步 -->
             <?php if($zfsjg['zfshu'] == 0): ?><div class="footer">
                 <div class="gou" onclick="toshare()">
+<<<<<<< HEAD
                     <img src="/-/Public/home/img/gouwuche.png" alt="">
+=======
+                    <img src="/kuaidian/Public/home/img/gouwuche.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                     <div class="ii" style="display: none;">
                         <span id="totalcountshow">0</span>
                     </div>
@@ -174,7 +232,11 @@
             <?php else: ?>
             <div class="footer">
                 <div class="gou" onclick="toshare()">
+<<<<<<< HEAD
                     <img src="/-/Public/home/img/gouwuche2.png" alt="">
+=======
+                    <img src="/kuaidian/Public/home/img/gouwuche2.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                     <div class="ii">
                         <span id="totalcountshow"><?php echo ($zfsjg['zfshu']); ?></span>
                     </div>
@@ -189,14 +251,22 @@
                     <a id="btnselect" class="xhlbtn " href="javascript:void(0)">下一步</a>
                 </div>
             </div><?php endif; ?>
+<<<<<<< HEAD
             <!-- <script type="text/javascript" src="/-/Public/home/js/jquery.js"></script> -->
+=======
+            <!-- <script type="text/javascript" src="/kuaidian/Public/home/js/jquery.js"></script> -->
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
             
             </li>
             <li class="item">
             <div class="address">
                 <div class="dizhi">
                     <div class="tt">
+<<<<<<< HEAD
                         <img src="/-/Public/home/img/dizhi.png" alt="">
+=======
+                        <img src="/kuaidian/Public/home/img/dizhi.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                     </div>
                     <div class="zz">
                         <span>
@@ -206,14 +276,22 @@
                 </div>
                 <div class="phone">
                     <div class="iphone">
+<<<<<<< HEAD
                         <a href="tel:<?php echo ($resspdan["0"]["tel"]); ?>"><img src="/-/Public/home/img/phone.png" alt=""></a>
+=======
+                        <a href="tel:<?php echo ($resspdan["0"]["tel"]); ?>"><img src="/kuaidian/Public/home/img/phone.png" alt=""></a>
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                     </div>
                 </div>
             </div>
             <!--微众代言-->
             <div class="hezi2">
                 <div class="you6">
+<<<<<<< HEAD
                     <img src="/-/Public/home/img/tui2.png" alt="">
+=======
+                    <img src="/kuaidian/Public/home/img/tui2.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                 </div>
                 <div class="zhongjian">
                     <div class="daiyan2">
@@ -232,20 +310,32 @@
                     </div>
                 </div>
                 <div class="tu3">
+<<<<<<< HEAD
                     <img src="/-/Public/home/img/youjiantou.png" alt="">
+=======
+                    <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                 </div>
             </div>
             <!--优惠-->
             <div class="youhui">
                 <div class="quan">
                     <div class="quan3">
+<<<<<<< HEAD
                         <img src="/-/Public/home/img/quan2.png" alt="">
+=======
+                        <img src="/kuaidian/Public/home/img/quan2.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                     </div>
                     <span>优惠券</span>
                 </div>
                 <div class="xia2">
                     <div class="q1">
+<<<<<<< HEAD
                         <img src="/-/Public/<?php echo ($resspdan["0"]["logo"]); ?>" alt="">
+=======
+                        <img src="/kuaidian/Public/<?php echo ($resspdan["0"]["logo"]); ?>" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                     </div>
                     <div class="youhe">
                         <div class="jin">
@@ -279,15 +369,26 @@
                     <span>营业时间：<?php echo ($resspdan["0"]["time_kai"]); ?>-<?php echo ($resspdan["0"]["time_zhong"]); ?></span>
                 </div>
                 <div class="he3">
+<<<<<<< HEAD
                     <span>实时状态：
                     <?php if($resspdan[0][line_type] == 1): ?>在线
                     <?php else: ?>
                                         未在线<?php endif; ?>
+=======
+                    <span class="shishizhuangt">实时状态：
+                    <?php if($resspdan[0][line_type] == 1): ?>在线
+                    <?php else: ?>
+                                        <span style="color: red;">未在线</span><?php endif; ?>
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                     </span>
                 </div>
                 <div class="he4">
                     <div class="tt1">
+<<<<<<< HEAD
                         <img src="/-/Public/home/img/tan.png" alt="">
+=======
+                        <img src="/kuaidian/Public/home/img/tan.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                     </div>
                     <div class="zz1">
                         <span>商家未在线时无法接受下单,请联系商家</span>
@@ -299,7 +400,11 @@
                 <div class="dian">
                     <div class="ww">
                         <a href="#">
+<<<<<<< HEAD
                         <img src="/-/Public/home/img/dian.png" alt="">
+=======
+                        <img src="/kuaidian/Public/home/img/dian.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                         </a>
                     </div>
                     <div class="zai">
@@ -312,7 +417,11 @@
                 <div class="ding">
                     <div class="aa">
                         <a href="#">
+<<<<<<< HEAD
                         <img src="/-/Public/home/img/ding.png" alt="">
+=======
+                        <img src="/kuaidian/Public/home/img/ding.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                         </a>
                     </div>
                     <div class="zhi">
@@ -324,7 +433,11 @@
                 <div class="fu">
                     <div class="vv">
                         <a href="#">
+<<<<<<< HEAD
                         <img src="/-/Public/home/img/fu.png" alt="">
+=======
+                        <img src="/kuaidian/Public/home/img/fu.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                         </a>
                     </div>
                     <div class="gai2">
@@ -351,7 +464,11 @@
                 <span>已选商品</span>
             </div>
             <div class="qingtu">
+<<<<<<< HEAD
                 <img src="/-/Public/home/img/qingkong.png" alt="">
+=======
+                <img src="/kuaidian/Public/home/img/qingkong.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
             </div>
             <div class="qing">
                 <span>清空</span>
@@ -373,13 +490,21 @@
         </div>
         <div class="zhong">
             <div id="subtraction" onclick="subtraction()">
+<<<<<<< HEAD
                 <img src="/-/Public/home/img/jianhao.png" alt="">
+=======
+                <img src="/kuaidian/Public/home/img/jianhao.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
             </div>
             <div class="tet">
                 <input type="text" value="0" id="number" onblur="number()">
             </div>
             <div id="add" onclick="add()">
+<<<<<<< HEAD
                 <img src="/-/Public/home/img/jiahao.png" alt="">
+=======
+                <img src="/kuaidian/Public/home/img/jiahao.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
             </div>
         </div>
         <div class="bot">
@@ -392,8 +517,13 @@
         </div>
     </ul>
 </div>
+<<<<<<< HEAD
 <script src="/-/Public/home/js/jquery.js"></script>
 <script src="/-/Public/home/js/tab.js"></script>
+=======
+<script src="/kuaidian/Public/home/js/jquery.js"></script>
+<script src="/kuaidian/Public/home/js/tab.js"></script>
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
 <script type="text/javascript">
                 $(function () {
                     //小购物车加功能
@@ -606,11 +736,19 @@
                         // 判断为 0 和 1
                         if (zongnum == 1 || zongnum == undefined) {
                             //购物车亮
+<<<<<<< HEAD
                             var str = '<img src="/-/Public/home/img/gouwuche2.png" alt=""><div class="ii"><span id="totalcountshow">1</span></div>';
                             $(".gou").html(str);
                         }else if(zongnum == 0){
                             //购物车 暗
                             var str = '<img src="/-/Public/home/img/gouwuche.png" alt="">';
+=======
+                            var str = '<img src="/kuaidian/Public/home/img/gouwuche2.png" alt=""><div class="ii"><span id="totalcountshow">1</span></div>';
+                            $(".gou").html(str);
+                        }else if(zongnum == 0){
+                            //购物车 暗
+                            var str = '<img src="/kuaidian/Public/home/img/gouwuche.png" alt="">';
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                             $(".gou").html(str);
                         }else{}
                     };
@@ -679,7 +817,11 @@
                 success: function (result) {
                     var str = "";
                     $.each(result,function(index,item){
+<<<<<<< HEAD
                         str += '<div class="nnei"><div class="neirong"><span class="foodidxiaogouwuc" style="display:none;">'+item.foodid+'</span><div class="neirong2"><div class="mmingzi"><span>'+item.caipname+'</span></div><div class="left2"><span id="cartN2">￥ <span id="totalpriceshow2">'+item.caiprice+'</span></span></div><div class="btn2"><button class="minus2" style="display:inline-block"><strong><img src="/-/Public/home/img/jianhao.png" alt=""></strong></button> <i style="display:inline-block">'+item.foodnum+'</i> <button class="add2"><strong><img src="/-/Public/home/img/jiahao.png" alt=""></strong></button> <i class="price2">18.5</i></div></div></div></div>';
+=======
+                        str += '<div class="nnei"><div class="neirong"><span class="foodidxiaogouwuc" style="display:none;">'+item.foodid+'</span><div class="neirong2"><div class="mmingzi"><span>'+item.caipname+'</span></div><div class="left2"><span id="cartN2">￥ <span id="totalpriceshow2">'+item.caiprice+'</span></span></div><div class="btn2"><button class="minus2" style="display:inline-block"><strong><img src="/kuaidian/Public/home/img/jianhao.png" alt=""></strong></button> <i style="display:inline-block">'+item.foodnum+'</i> <button class="add2"><strong><img src="/kuaidian/Public/home/img/jiahao.png" alt=""></strong></button> <i class="price2">18.5</i></div></div></div></div>';
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                     });
                     $(".ajaxaddgsfood").html(str);
                     // console.log(result);
@@ -794,12 +936,64 @@
     </script>
 
     <script type="text/javascript">
+<<<<<<< HEAD
         function change_pic(){
             var imgObj = document.getElementById("xin");
             if(imgObj.getAttribute("src",2)=="/-/Public/home/img/baixin.png"){
                 imgObj.src="/-/Public/home/img/hxin.png";
             }else{
                 imgObj.src="/-/Public/home/img/baixin.png";
+=======
+        //页面加载提示
+        $(document).ready(function(){
+            var shopid = $("#shopid").html();
+            
+             //ajax 铺取数据
+             $.ajax({
+                type:'POST',
+                dataType: 'json',
+                async:false,
+                url:'<?php echo U("Home/Index/ajaxzaixianzhuangt");?>',
+                data:{"shopid":shopid},
+                success: function (result) {
+                    if (result != 1) {
+                        alert("当前商家未在线\n请联系商家接收订单");  
+                    }
+                }
+            })
+        })
+        //在线状态
+        setInterval(function(){
+            // 获取门店id -shopid
+            var shopid = $("#shopid").html();
+            
+             //ajax 铺取数据
+             $.ajax({
+                type:'POST',
+                dataType: 'json',
+                async:false,
+                url:'<?php echo U("Home/Index/ajaxzaixianzhuangt");?>',
+                data:{"shopid":shopid},
+                success: function (result) {
+                    if (result == 1) {
+                        var str = '实时状态：在线';
+                    }else{
+                        var str = '实时状态：<span style="color: red;">未在线</span>';
+                    }
+                    //赋值
+                    $(".shishizhuangt").html(str);
+                   // alert(result);
+                    // console.log(result);
+                }
+            })
+        },1000);
+        function change_pic(){
+            var imgObj = document.getElementById("xin");
+            if(imgObj.getAttribute("src",2)=="/kuaidian/Public/home/img/baixin.png"){
+                imgObj.src="/kuaidian/Public/home/img/hxin.png";
+            }else{
+                imgObj.src="/kuaidian/Public/home/img/baixin.png";
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
             }
         };
     </script>

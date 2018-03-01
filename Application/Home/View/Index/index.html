@@ -179,7 +179,7 @@
                 <div class="hz">
                     <div class="top">
                         <div class="tu">
-                            <img src="__PUBLIC__/{$vores.logo}" alt="">
+                            <img src="__PUBLIC__{$vores.logo}" alt="">
                         </div>
 
                         <div class="you">
@@ -270,32 +270,33 @@
                             <span>%</span>
                         </div>
                     </div>
+                    <if condition="$vores.zuoweishu eq 0">
+                    
+                    <else />
+                        <div class="xia2">
+                            <div class="zzuo">
+                                <img src="__PUBLIC__/home/img/jinri.png" alt="">
+                            </div>
 
-                    <div class="xia2">
-                        <div class="zzuo">
-                            <img src="__PUBLIC__/home/img/jinri.png" alt="">
+                            <div class="yyou">
+                                <div class="xuan">
+                                    <img src="__PUBLIC__/home/img/dingzuo.png" alt="">
+                                </div>
+
+                                <div class="ke">
+                                    <span>今日可订座</span>
+                                </div>
+
+                                <div class="renshu">
+                                    <span>{$vores.zuoweishu}</span>
+                                </div>
+
+                                <div class="zhuo">
+                                    <span>桌</span>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="yyou">
-                            <div class="xuan">
-                                <img src="__PUBLIC__/home/img/dingzuo.png" alt="">
-                            </div>
-
-                            <div class="ke">
-                                <span>今日可订座</span>
-                            </div>
-
-                            <div class="renshu">
-                                <!-- <span>{$vores.id|zuoweishu=###}</span> -->
-                                <span>{$vores.id}</span>
-                            </div>
-
-                            <div class="zhuo">
-                                <span>桌</span>
-                            </div>
-                        </div>
-                    </div>
-
+                    </if>
                 </div>
             </div>
         </div>

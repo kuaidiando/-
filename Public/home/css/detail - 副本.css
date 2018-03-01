@@ -121,60 +121,57 @@
 .address{
     margin-top: 9.6px;
     width: 100%;
-    height: 150px;
+    height: 144px;
     border-top: 1.2px solid #DEDEDE;
     border-bottom: 1.2px solid #DEDEDE;
     background-color: white;
 }
 .dizhi{
     width: 80%;
-    height: 150px;
+    height: 144px;
     float: left;
 }
 .tt{
     width: 11%;
-    height: 150px;
+    height: 144px;
     float: left;
-    line-height: 150px;
-    text-align: center;
 }
-.tt img{
-    width: 60px;
-    height: 60px;
-   vertical-align: middle;
+.dizhi img{
+    width: 52.8px;
+    height: 52.8px;
+    margin-left: 19.2px;
+    margin-top: 45.6px;
 }
 .zz{
     width: 83%;
-    height:150px;
-    /*margin-top: 40px;*/
+    height:91.2px;
     float: left;
-    line-height: 40px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+    margin-top: 26.4px;
+    line-height: 91.2px;
 }
 .zz span{
     font-size: 33.6px;
+    letter-spacing: 1px;
+    line-height:43.2px;
     color: #353535;
 }
 .phone{
     width: 20%;
-    height: 150px;
+    height: 144px;
     float: left;
 
 }
 .iphone{
     width: 100%;
-    height: 120px;
-    margin-top: 15px;
+    height: 91.2px;
+    margin-top: 26.4px;
     border-left: 2px solid #353535;
     text-align: center;
-    line-height: 120px;
 }
 .iphone img{
     width: 60px;
     height: 60px;
-    vertical-align: middle;
+    margin-top: 15.6px;
 }
 .hezi2{
     width: 100%;
@@ -443,6 +440,7 @@
 
 .dibu{
     width: 100%;
+    /*height: 252px;*/
     border-top: 1.2px solid #DEDEDE;
     border-bottom: 1.2px solid #DEDEDE;
     background-color: white;
@@ -648,6 +646,10 @@
     border-bottom: 1.2px solid #dedede;
     margin-left: 3%;
 }
+.yis{
+    width: 156px;
+    margin-top: -100%;
+}
 .tu{
     width: 22%;
     height: 156px;
@@ -656,11 +658,8 @@
 }
 .tu img{
     width: 156px;
+    height: 156px;
     vertical-align: middle;
-}
-.yis{
-    width: 156px;
-    margin-top: -170px;
 }
 .youbian{
     width: 50%;
@@ -704,8 +703,11 @@
     font-weight: bolder;
     color: #ffae00;
 }
+
+
+
 .qqian{
-    width: 55%;
+    width: 50%;
     height: 60px;
     line-height: 78px;
     float: left;
@@ -731,7 +733,7 @@
     width: 19%;
     height: 60px;
     float: left;
-    line-height: 85px;
+    line-height: 98px;
 }
 .yuanjia del{
     font-size: 30px;
@@ -873,13 +875,13 @@
     vertical-align: middle;
     width: 130px;
     height:130px;
-    margin-top: -35px;
+    margin-top: -30px;
     margin-left: 35px;
     float: left;
 }
 .ii{
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     background-color: red;
     border-radius: 50%;
     float: left;
@@ -888,8 +890,9 @@
 }
 .ii span{
     float: left;
-    margin-top: -43px;
-    margin-left: 9px;
+    margin-top: -38px;
+    margin-left: 11px;
+    font-size:25px;
 }
 .footer .left{
     float:left;
@@ -1227,7 +1230,7 @@
 }
 .tet input{
     width: 75%;
-    margin-left: 25%;
+    margin-left: 33%;
     height: 200px;
     font-size: 45px;
 }
@@ -1270,4 +1273,16 @@
 #que span{
     font-size: 43.2px;
     font-weight: bolder;
+}
+
+
+
+
+#totalpriceshow{
+    color: #ffae00;
+    font-weight: block;
+}
+#cartN{
+    color: #ffae00;
+    font-weight: block;
 }

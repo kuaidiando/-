@@ -86,7 +86,8 @@ class ShopController extends BasicController
             $mdidda = $user->Max('id');//获取表中最大id
             $whereerweima['id'] = $mdidda;
             http://pan.baidu.com/share/qrcode?w=130&h=130&url=http://61.148.212.3:2345/kuaidian/index.php/Home/Index/detail?shopid=1
-            $dataerweim['erweima'] = "http://pan.baidu.com/share/qrcode?w=130&h=130&url=http://61.148.212.3:2345/kuaidian/index.php/Home/Index/detail?shopid".$mdidda;
+            $dataerweim['erweima'] = "http://pan.baidu.com/share/qrcode?w=130&h=130&url=http://mk.365kdian.com/index.php/Home/Index/detail/shopid/".$mdidda;
+            // $dataerweim['erweima'] = "http://pan.baidu.com/share/qrcode?w=130&h=130&url=http://192.168.0.107/kuaidian/index.php/Home/Index/detail/shopid/".$mdidda;
             $user->where($whereerweima)->save($dataerweim);
 			$res == true ? $this->success('添加成功') : $this->error('添加失败');
     		// $this->display();

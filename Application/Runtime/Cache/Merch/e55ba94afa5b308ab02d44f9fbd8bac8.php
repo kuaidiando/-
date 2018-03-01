@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
+<<<<<<< HEAD
     <link rel="stylesheet" href="/-/Public/merch/css/base.css">
     <link rel="stylesheet" href="/-/Public/merch/css/text.css">
     <link rel="stylesheet" href="/-/Public/merch/css/login.css">
     <title>登录</title>
     <script type="text/javascript" src="/-/Public/merch/js/jquery-1.12.4.min.js"></script>
+=======
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/login.css">
+    <title>登录</title>
+    <script type="text/javascript" src="/kuaidian/Public/merch/js/jquery-1.12.4.min.js"></script>
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
     <script type="text/javascript">
         $(function(){
             $('.tabPanel ul li').click(function(){
@@ -21,7 +29,11 @@
 
 
     <div class="kong">
+<<<<<<< HEAD
         <img src="/-/Public/merch/images/logo2.png" alt="">
+=======
+        <img src="/kuaidian/Public/merch/images/logo2.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
     </div>
 
 
@@ -35,7 +47,11 @@
                 <div class="pane" style="display:block;">
                     <div class="phone">
                         <div class="lu">
+<<<<<<< HEAD
                             <img src="/-/Public/merch/images/geren2.png" alt="">
+=======
+                            <img src="/kuaidian/Public/merch/images/geren2.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                         </div>
 
                         <div class="text">
@@ -46,7 +62,11 @@
 
                     <div class="mima">
                         <div class="tu2">
+<<<<<<< HEAD
                             <img src="/-/Public/merch/images/mima.png" alt="">
+=======
+                            <img src="/kuaidian/Public/merch/images/mima.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                         </div>
 
                         <div class="text2">
@@ -79,7 +99,11 @@
                 <div class="pane">
                     <div class="phone">
                         <div class="lu">
+<<<<<<< HEAD
                             <img src="/-/Public/merch/images/geren2.png" alt="">
+=======
+                            <img src="/kuaidian/Public/merch/images/geren2.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                         </div>
 
                         <div class="text">
@@ -90,7 +114,11 @@
 
                     <div class="mima">
                         <div class="tu2">
+<<<<<<< HEAD
                             <img src="/-/Public/merch/images/mima.png" alt="">
+=======
+                            <img src="/kuaidian/Public/merch/images/mima.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                         </div>
 
                         <div class="text2">

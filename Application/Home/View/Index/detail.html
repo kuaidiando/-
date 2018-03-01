@@ -304,11 +304,11 @@
                     <span>营业时间：{$resspdan.0.time_kai}-{$resspdan.0.time_zhong}</span>
                 </div>
                 <div class="he3">
-                    <span>实时状态：
+                    <span class="shishizhuangt">实时状态：
                     <if condition="$resspdan[0][line_type] eq 1">
                                         在线
                     <else/>
-                                        未在线
+                                        <span style="color: red;">未在线</span>
                     </if>
                     </span>
                 </div>
@@ -823,6 +823,49 @@
     </script>
 
     <script type="text/javascript">
+        //页面加载提示
+        $(document).ready(function(){
+            var shopid = $("#shopid").html();
+            
+             //ajax 铺取数据
+             $.ajax({
+                type:'POST',
+                dataType: 'json',
+                async:false,
+                url:'{:U("Home/Index/ajaxzaixianzhuangt")}',
+                data:{"shopid":shopid},
+                success: function (result) {
+                    if (result != 1) {
+                        alert("当前商家未在线\n请联系商家接收订单");  
+                    }
+                }
+            })
+        })
+        //在线状态
+        setInterval(function(){
+            // 获取门店id -shopid
+            var shopid = $("#shopid").html();
+            
+             //ajax 铺取数据
+             $.ajax({
+                type:'POST',
+                dataType: 'json',
+                async:false,
+                url:'{:U("Home/Index/ajaxzaixianzhuangt")}',
+                data:{"shopid":shopid},
+                success: function (result) {
+                    if (result == 1) {
+                        var str = '实时状态：在线';
+                    }else{
+                        var str = '实时状态：<span style="color: red;">未在线</span>';
+                    }
+                    //赋值
+                    $(".shishizhuangt").html(str);
+                   // alert(result);
+                    // console.log(result);
+                }
+            })
+        },1000);
         function change_pic(){
             var imgObj = document.getElementById("xin");
             if(imgObj.getAttribute("src",2)=="__PUBLIC__/home/img/baixin.png"){

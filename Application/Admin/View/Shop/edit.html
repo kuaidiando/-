@@ -157,6 +157,12 @@
                 <input type="text" class="input-text" value="{$data.0.jutidizhi}" placeholder="" id="" name="jutidizhi">
             </div>
         </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">佣金百分比：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="{$data.0.zuigaolij}" placeholder="" id="zuigaolij" name="zuigaolij">
+            </div>
+        </div>
         <!-- 隐藏id充当条件 -->
        <input type="hidden" value="{$data.0.id}" name='id'>
         <div class="row cl">
@@ -169,6 +175,17 @@
 </article>
 
 <script type="text/javascript">
+    // 佣金比例
+    $(document).on('input',"#zuigaolij",function(){
+        var bili = $(this).val();
+        if (bili) {
+            if (bili < 3) {
+                alert("佣金比例 最小为3%");
+                $("#zuigaolij").val(3);
+            }
+        }
+        
+    });
     // 城市级联 省--》市
     $(document).on('click','#selsheng',function(){
         var codesheng = $(this).val();//获取省对应code

@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>提现</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="/-/Public/merch/css/base.css">
     <link rel="stylesheet" href="/-/Public/merch/css/text.css">
     <link rel="stylesheet" href="/-/Public/merch/css/tixian.css">
     <script type="text/javascript" src="/-/Public/jquery/jquery.js"></script>
+=======
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/tixian.css">
+    <script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
 </head>
 <body style="font-size: 12px">
     <div class="head">
@@ -34,7 +41,11 @@
         <div class="center">
             <div class="hezi">
                 <div class="tu">
+<<<<<<< HEAD
                     <img src="/-/Public/merch/images/qian.png" alt="">
+=======
+                    <img src="/kuaidian/Public/merch/images/qian.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                 </div>
 
                 <div class="cha">
@@ -42,7 +53,11 @@
                 </div>
 
                 <div class="jian">
+<<<<<<< HEAD
                     <img src="/-/Public/merch/images/youjiantou.png" alt="">
+=======
+                    <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                 </div>
             </div>
         </div>
@@ -51,7 +66,11 @@
         <a href="<?php echo U('Merch/Enchashment/zhuanghuguanli');?>">
             <div class="hezi">
                 <div class="tu">
+<<<<<<< HEAD
                     <img src="/-/Public/merch/images/yinhang.png" alt="">
+=======
+                    <img src="/kuaidian/Public/merch/images/yinhang.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                 </div>
 
                 <div class="cha2">
@@ -63,7 +82,11 @@
                 </div>
 
                 <div class="jian">
+<<<<<<< HEAD
                     <img src="/-/Public/merch/images/youjiantou.png" alt="">
+=======
+                    <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                 </div>
             </div>
         </a>
@@ -86,7 +109,11 @@
             </div>
             
             <div class="jian6">
+<<<<<<< HEAD
                 <img src="/-/Public/merch/images/youjiantou.png" alt="">
+=======
+                <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
             </div>
         </div>
 
@@ -134,7 +161,11 @@
             </div>
 
             <div class="jian3">
+<<<<<<< HEAD
                 <img src="/-/Public/merch/images/youjiantou.png" alt="">
+=======
+                <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
             </div>
         </div>
     </div>
@@ -150,7 +181,11 @@
             </div>
 
             <div class="jian3">
+<<<<<<< HEAD
                 <img src="/-/Public/merch/images/youjiantou.png" alt="">
+=======
+                <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
             </div>
         </div>
     </div>
@@ -166,7 +201,11 @@
             </div>
 
             <div class="jian3">
+<<<<<<< HEAD
                 <img src="/-/Public/merch/images/youjiantou.png" alt="">
+=======
+                <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
             </div>
         </div>
     </div>
@@ -182,7 +221,11 @@
             </div>
 
             <div class="jian3">
+<<<<<<< HEAD
                 <img src="/-/Public/merch/images/youjiantou.png" alt="">
+=======
+                <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
             </div>
         </div>
     </div>
@@ -198,7 +241,11 @@
             </div>
 
             <div class="jian3">
+<<<<<<< HEAD
                 <img src="/-/Public/merch/images/youjiantou.png" alt="">
+=======
+                <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
             </div>
         </div>
     </div>
@@ -214,7 +261,11 @@
             </div>
 
             <div class="jian3">
+<<<<<<< HEAD
                 <img src="/-/Public/merch/images/youjiantou.png" alt="">
+=======
+                <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
             </div>
         </div>
     </div>

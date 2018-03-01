@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>我的订单</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="/-/Public/home/css/base.css">
     <link rel="stylesheet" href="/-/Public/home/css/text.css">
     <link rel="stylesheet" href="/-/Public/home/css/my%20dingdan.css">
+=======
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/my%20dingdan.css">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
 </head>
 <body style="font-size: 12px">
 <div class="tab" js-tab="1">
@@ -23,14 +29,24 @@
                         <li><a href="#">待支付</a></li>
                         <li><a href="#">待使用</a></li>
                         <li><a href="#">已使用</a></li>
+<<<<<<< HEAD
                         <!-- <li><a href="#">待评价</a></li> -->
+=======
+                        <li><a href="#">待评价</a></li>
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                         <li><a href="#">退款单</a></li>
                     </ul>
                     <!-- / tabs -->
                     <div class="tab_content">
                         <div class="tabs_item">
                             <?php if(is_array($order_res)): foreach($order_res as $key=>$res): ?><!-- <a href="dingdanxiangqing.html"> -->
+<<<<<<< HEAD
 
+=======
+                            <?php if($res["order_status"] == 1): ?><a href="<?php echo U('Home/Order/pay_again', array('order_id' => $res['id']));?>" style="text-decoration:none">
+                            <?php else: ?>
+                                <a href="<?php echo U('Home/Order/dingdanxiangqing', array('order_id' => $res['id']));?>" style="text-decoration:none"><?php endif; ?>
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
 
                                     <div class="hezi">
                                         <div class="name">
@@ -39,6 +55,7 @@
                                             </div>
 
                                             <div class="qu">
+<<<<<<< HEAD
                                             <?php if($res["order_status"] == 1 || $res["order_status"] == 5): ?><span class="qqx" data-id="<?php echo ($res["id"]); ?>">取消订单</span>
                                             <?php elseif($res["order_status"] == 12): ?> 
                                             <div class="wenben">
@@ -57,6 +74,22 @@
                                         <div class="hezi2">
                                             <div class="tu">
                                                 <img src="/-/Public<?php echo ($res["logo"]); ?>" alt="">
+=======
+                                           <!--  <?php if($res["order_status"] == 1 || $res["order_status"] == 5): ?><span>取消订单</span>
+                                            <?php elseif($res["order_status"] == 10): ?>    
+                                                <span>去使用</span>
+                                            <?php elseif($res["order_status"] == 15): ?>
+                                                <span>去评价</span>
+                                            <?php else: ?>
+                                                <span></span><?php endif; ?>      -->
+                                            <span></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="hezi2">
+                                            <div class="tu">
+                                                <img src="/kuaidian/Public<?php echo ($res["logo"]); ?>" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                             </div>
 
                                             <div class="hao">
@@ -85,32 +118,53 @@
                                                 <?php elseif($res["order_status"] == 5): ?>
                                                     <span>待使用</span>
                                                     <?php elseif($res["order_status"] == 10): ?>
+<<<<<<< HEAD
                                                     <span>已使用</span>
                                                     <?php elseif($res["order_status"] == 12): ?>
                                                     <span>已完成</span>                                                    
+=======
+                                                    <span>待评价</span>
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                                     <?php elseif($res["order_status"] == 15): ?>
                                                     <span>已完成</span>
                                                     <?php elseif($res["order_status"] == 20): ?>
                                                     <span>退款单</span>
                                                     <?php else: ?>
+<<<<<<< HEAD
                                                     <span>已使用</span><?php endif; ?>
                                                 </div>
 
                                                 <div class="jian">
                                                     <img src="/-/Public/home/img/youjiantou.png" alt="">
+=======
+                                                    <span>未知</span><?php endif; ?>
+                                                </div>
+
+                                                <div class="jian">
+                                                    <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                                 </div>
 
                                             </div>
                                             <!-- </a>     -->
 
                                         </div>
+<<<<<<< HEAD
                                     </a>
 
                                     </div><?php endforeach; endif; ?> 
+=======
+                                    </div>
+                                </a><?php endforeach; endif; ?> 
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                         </div>   
 
                         <div class="tabs_item hezi3">
                             <?php if(is_array($order_n)): foreach($order_n as $key=>$resn): ?><!-- <a href="dingdanxiangqing.html"> -->
+<<<<<<< HEAD
+=======
+                                <a href="<?php echo U('Home/Order/pay_again', array('order_id' => $res['id']));?>" style="text-decoration:none">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                     <div class="hezi">
                                         <div class="name">
                                             <div class="dian">
@@ -118,6 +172,7 @@
                                             </div>
 
                                             <div class="qu">
+<<<<<<< HEAD
                                                 <span class="qqx" data-id="<?php echo ($resn["id"]); ?>">取消订单</span>
                                             </div>
                                         </div>
@@ -126,6 +181,15 @@
                                         <div class="hezi2">
                                             <div class="tu">
                                                 <img src="/-/Public<?php echo ($resn["logo"]); ?>" alt="">
+=======
+                                                <!-- <span>取消订单</span> -->
+                                            </div>
+                                        </div>
+
+                                        <div class="hezi2">
+                                            <div class="tu">
+                                                <img src="/kuaidian/Public<?php echo ($resn["logo"]); ?>" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                             </div>
 
                                             <div class="hao">
@@ -155,11 +219,16 @@
                                                 </div>
 
                                                 <div class="jian">
+<<<<<<< HEAD
                                                     <img src="/-/Public/home/img/youjiantou.png" alt="">
+=======
+                                                    <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                                 </div>
                                             </div>
                                             </a>
                                         </div>
+<<<<<<< HEAD
                                     </a>
 
                                     </div><?php endforeach; endif; ?>    
@@ -167,6 +236,15 @@
 
                         <div class="tabs_item hezi3">
                             <?php if(is_array($order_s)): foreach($order_s as $key=>$ress): ?><!-- <a href="dingdanxiangqing.html"> -->
+=======
+                                    </div>
+                                </a><?php endforeach; endif; ?>    
+                        </div>
+
+                        <div class="tabs_item hezi3">
+                            <?php if(is_array($order_s)): foreach($order_s as $key=>$ress): ?><a href="<?php echo U('Home/Order/dingdanxiangqing', array('order_id' => $ress['id']));?>" style="text-decoration:none">
+                                <!-- <a href="dingdanxiangqing.html"> -->
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                     <div class="hezi">
                                         <div class="name">
                                             <div class="dian">
@@ -174,6 +252,7 @@
                                             </div>
 
                                             <div class="qu">
+<<<<<<< HEAD
                                                 <span class="qqx" data-id="<?php echo ($ress["id"]); ?>">取消订单</span>
                                                 <span></span>
                                             </div>
@@ -183,6 +262,16 @@
                                         <div class="hezi2">
                                             <div class="tu">
                                                 <img src="/-/Public<?php echo ($ress["logo"]); ?>" alt="">
+=======
+                                                <!-- <span>取消订单</span> -->
+                                                <span></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="hezi2">
+                                            <div class="tu">
+                                                <img src="/kuaidian/Public<?php echo ($ress["logo"]); ?>" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                             </div>
 
                                             <div class="hao">
@@ -223,11 +312,16 @@
                                                 </div>
 
                                                 <div class="jian">
+<<<<<<< HEAD
                                                     <img src="/-/Public/home/img/youjiantou.png" alt="">
+=======
+                                                    <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                                 </div>
                                             </div>
                                             <!-- </a> -->
                                         </div>
+<<<<<<< HEAD
                                     </a>
 
                                     </div><?php endforeach; endif; ?>  
@@ -235,6 +329,15 @@
 
                         <div class="tabs_item hezi3">
                            <?php if(is_array($order_u)): foreach($order_u as $key=>$resu): ?><!-- <a href="dingdanxiangqing.html"> -->
+=======
+                                    </div>
+                                </a><?php endforeach; endif; ?>  
+                        </div>
+
+                        <div class="tabs_item hezi3">
+                           <?php if(is_array($order_u)): foreach($order_u as $key=>$resu): ?><a href="<?php echo U('Home/Order/dingdanxiangqing', array('order_id' => $resu['id']));?>" style="text-decoration:none">
+                                <!-- <a href="dingdanxiangqing.html"> -->
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                     <div class="hezi">
                                         <div class="name">
                                             <div class="dian">
@@ -242,19 +345,30 @@
                                             </div>
 
                                             <div class="qu">
+<<<<<<< HEAD
                                             <?php if($resu["order_status"] == 12 ): ?><div class="wenben">
                                                 <span>去点评</span>
                                                 
                                             </div>
+=======
+                                            <?php if($resu["order_status"] == 10 ): ?><span></span>
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                             <?php else: ?>
                                                 <span></span><?php endif; ?>
                                             </div>
                                         </div>
+<<<<<<< HEAD
                                         <a href="<?php echo U('Home/Order/dingdanxiangqing', array('order_id' => $resu['id']));?>" style="text-decoration:none">
 
                                         <div class="hezi2">
                                             <div class="tu">
                                                 <img src="/-/Public<?php echo ($resu["logo"]); ?>" alt="">
+=======
+
+                                        <div class="hezi2">
+                                            <div class="tu">
+                                                <img src="/kuaidian/Public<?php echo ($resu["logo"]); ?>" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                             </div>
 
                                             <div class="hao">
@@ -279,6 +393,7 @@
 
                                             <div class="dai">
                                                 <div class="yong">
+<<<<<<< HEAD
                                                 <?php if($resu["order_status"] == 10 ): ?><span>待商家确认</span>
                                                 <?php elseif($resu["order_status"] == 11 ): ?>
                                                     <span>制作中</span>
@@ -291,10 +406,25 @@
 
                                                 <div class="jian">
                                                     <img src="/-/Public/home/img/youjiantou.png" alt="">
+=======
+                                              <!--   <?php if($resu["order_status"] == 10 ): ?><span>待评价</span>
+                                                <?php elseif($resu["order_status"] == 15 ): ?>
+                                                    <span>已完成</span>
+                                                <?php elseif($resu["order_status"] == 20 ): ?>
+                                                    <span>已取消</span>
+                                                <?php else: ?>
+                                                    <span></span><?php endif; ?> -->
+                                                    <span>已使用</span>
+                                                </div>
+
+                                                <div class="jian">
+                                                    <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                                 </div>
                                             </div>
                                             <!-- </a> -->
                                         </div>
+<<<<<<< HEAD
                                         </a>
 
                                     </div><?php endforeach; endif; ?> 
@@ -302,6 +432,15 @@
 <!-- 
                         <div class="tabs_item hezi3">
                             <?php if(is_array($order_p)): foreach($order_p as $key=>$resp): ?><a href="<?php echo U('Home/Order/dingdanxiangqing', array('order_id' => $resp['id']));?>" style="text-decoration:none">
+=======
+                                    </div>
+                                </a><?php endforeach; endif; ?> 
+                        </div>
+
+                        <div class="tabs_item hezi3">
+                            <?php if(is_array($order_p)): foreach($order_p as $key=>$resp): ?><a href="<?php echo U('Home/Order/dingdanxiangqing', array('order_id' => $resp['id']));?>" style="text-decoration:none">
+                                <!-- <a href="dingdanxiangqing.html"> -->
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                     <div class="hezi">
                                         <div class="name">
                                             <div class="dian">
@@ -309,13 +448,21 @@
                                             </div>
 
                                             <div class="qu">
+<<<<<<< HEAD
+=======
+                                                <!-- <span>去评价</span> -->
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                                 <span></span>
                                             </div>
                                         </div>
 
                                         <div class="hezi2">
                                             <div class="tu">
+<<<<<<< HEAD
                                                 <img src="/-/Public<?php echo ($resp["logo"]); ?>" alt="">
+=======
+                                                <img src="/kuaidian/Public<?php echo ($resp["logo"]); ?>" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                             </div>
 
                                             <div class="hao">
@@ -340,22 +487,42 @@
 
                                             <div class="dai">
                                                 <div class="yong">
+<<<<<<< HEAD
                                                
+=======
+                                                <!--     <?php if($resp["is_use"] == 1 ): ?><span>已使用</span>
+                                                    <?php else: ?>
+                                                    <span>未使用</span><?php endif; ?> -->
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                                     <span>待评价</span>
                                                     
                                                 </div>
 
                                                 <div class="jian">
+<<<<<<< HEAD
                                                     <img src="/-/Public/home/img/youjiantou.png" alt="">
                                                 </div>
                                             </div>
+=======
+                                                    <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- </a> -->
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                         </div>
                                     </div>
                                 </a><?php endforeach; endif; ?> 
                         </div>
+<<<<<<< HEAD
  -->
                         <div class="tabs_item hezi3">
                             <?php if(is_array($order_x)): foreach($order_x as $key=>$resx): ?><!-- <a href="dingdanxiangqing.html"> -->
+=======
+
+                        <div class="tabs_item hezi3">
+                            <?php if(is_array($order_x)): foreach($order_x as $key=>$resx): ?><a href="<?php echo U('Home/Order/dingdanxiangqing', array('order_id' => $resx['id']));?>" style="text-decoration:none">
+                                <!-- <a href="dingdanxiangqing.html"> -->
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                     <div class="hezi">
                                         <div class="name">
                                             <div class="dian">
@@ -366,11 +533,18 @@
                                                 <span></span>
                                             </div>
                                         </div>
+<<<<<<< HEAD
                                         <a href="<?php echo U('Home/Order/dingdanxiangqing', array('order_id' => $resx['id']));?>" style="text-decoration:none">
 
                                         <div class="hezi2">
                                             <div class="tu">
                                                 <img src="/-/Public<?php echo ($resx["logo"]); ?>" alt="">
+=======
+
+                                        <div class="hezi2">
+                                            <div class="tu">
+                                                <img src="/kuaidian/Public<?php echo ($resx["logo"]); ?>" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                             </div>
 
                                             <div class="hao">
@@ -405,19 +579,32 @@
                                                 </div>
 
                                                 <div class="jian">
+<<<<<<< HEAD
                                                     <img src="/-/Public/home/img/youjiantou.png" alt="">
+=======
+                                                    <img src="/kuaidian/Public/home/img/youjiantou.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                                                 </div>
                                             </div>
                                             <!-- </a> -->
                                         </div>
+<<<<<<< HEAD
                                         </a>
 
                                     </div><?php endforeach; endif; ?>
+=======
+                                    </div>
+                                </a><?php endforeach; endif; ?>
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                         </div>
                     </div>
 
                 </div>
+<<<<<<< HEAD
                 <script src='/-/Public/home/js/jquery.js'></script>
+=======
+                <script src='/kuaidian/Public/home/js/jquery.js'></script>
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
                 <script>
                     $(document).ready(function() {
 
@@ -450,9 +637,14 @@
 </div>
 
 
+<<<<<<< HEAD
 <script src="/-/Public/home/js/jquery-1.12.4.min.js"></script>
 <script src="/-/Public/home/js/jquery-1.12.4.js"></script>
 <script src="/-/Public/home/js/tab.js"></script>
+=======
+<script src="/kuaidian/Public/home/js/jquery-1.12.4.min.js"></script>
+<script src="/kuaidian/Public/home/js/tab.js"></script>
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
 <script>
     $(function () {
 
@@ -488,7 +680,11 @@
 
     <div id="foot">
         <div id="ttu">
+<<<<<<< HEAD
             <img src="/-/Public/home/img/shangjia.png" alt="">
+=======
+            <img src="/kuaidian/Public/home/img/shangjia.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
         </div>
 
         <div id="shou">
@@ -500,7 +696,11 @@
     <a href="<?php echo U('Home/Order/order_info');?> ">
 
         <div id="ttu2">
+<<<<<<< HEAD
             <img src="/-/Public/home/img/dingdan3.png" alt="">
+=======
+            <img src="/kuaidian/Public/home/img/dingdan3.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
         </div>
 
         <div id="shou2">
@@ -512,7 +712,11 @@
     <a href="<?php echo U('Home/Person/index');?>">
 
         <div id="ttu3">
+<<<<<<< HEAD
             <img src="/-/Public/home/img/geren.png" alt="">
+=======
+            <img src="/kuaidian/Public/home/img/geren.png" alt="">
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
         </div>
 
         <div id="shou3">
@@ -522,6 +726,7 @@
     </div>
 </div>
 </body>
+<<<<<<< HEAD
 <script>
     $('.qqx').click(function(){
         var id = $(this).attr('data-id');
@@ -551,4 +756,6 @@
     })
 
 </script>
+=======
+>>>>>>> a773c09cb81c19af5caef62d4c594306911d4dc7
 </html>

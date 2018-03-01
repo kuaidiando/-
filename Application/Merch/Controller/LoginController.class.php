@@ -11,7 +11,7 @@ class LoginController extends Controller {
 	//商家登录首页
     public function index(){
     	//判断是否登录
-        $shopid = session("shopid"); 
+        $shopid = session("merchshopid"); 
         // session(null);
          // $_SESSION['shopid'] = 45;
         if ($shopid) {
@@ -23,10 +23,14 @@ class LoginController extends Controller {
         }
         $this->display();
     }
-    //清空session
+    //清空session 执行退出
     public function delsession(){
-        unset($_SESSION['shopid']);
-        $shopid = session("shopid");
+        $merchshopid = session("merchshopid");
+        $wherezx['id'] = $merchshopid;
+        $datazx['line_type'] = 2;
+        M('shop')->where($wherezx)->save($datazx);
+        unset($_SESSION['merchshopid']);
+        $shopid = session("merchshopid");
         if ($shopid) {
             $data = array(
                 'data' => false,
@@ -139,10 +143,13 @@ class LoginController extends Controller {
             }
         }
         // $_SESSION[$user_info['tel']] = true;
-        $_SESSION['shopid'] = $user_info['id'];
+        $_SESSION['merchshopid'] = $user_info['id'];
 
        
-
+         //改变在线状态
+        $wherezx['tel'] = $tel;
+        $datazx['line_type'] = 1;
+        M('shop')->where($wherezx)->save($datazx);
         $data = array(
                 'data' => true,
                 'code' => 200,
@@ -178,10 +185,12 @@ class LoginController extends Controller {
             }
         }
         // $_SESSION[$user_info['tel']] = true;
+        // 改变员工状态
         $_SESSION['staffid'] = $user_info['id'];
         $where['code'] = $tel;
         $data['typezhuangtai'] = 2;
         M('staff')->where($where)->save($data);
+       
         $data = array(
                 'data' => true,
                 'code' => 200,

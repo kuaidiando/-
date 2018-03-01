@@ -10,7 +10,7 @@ use Think\Controller;
 class StaffController extends Controller {
 	//设置首页
     public function index(){
-        $shopid = session("shopid");
+        $shopid = session("merchshopid");
         $user = M('Staff');
         $where['shopid'] = $shopid;
         $zongnum = $user->where($where)->count();
@@ -36,7 +36,7 @@ class StaffController extends Controller {
     //增加后厨员工
     public function addhoutai(){
         $user = M('food_type');
-        $shopid = session("shopid");
+        $shopid = session("merchshopid");
         $where['dep_type'] = $shopid;
         $res = $user->where($where)->select();
         // dump($res);die;
@@ -56,7 +56,7 @@ class StaffController extends Controller {
 
     //ajax 执行添加员工
     public function ajaxaddqianting(){
-        $shopid = session("shopid");
+        $shopid = session("merchshopid");
         //获取随机数
         $suijishu = yang_randomkeys(6);
         //判断随机数是否重复
