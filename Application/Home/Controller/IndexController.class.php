@@ -60,9 +60,13 @@ class IndexController extends Controller {
             $zuoweishu = $this->zuoweihao($vres['id']);
             $res[$kres]['zuoweishu'] = $zuoweishu;//座位数
         }
+
         // dump($res);die;
         $this->assign('res',$res);
-        
+        $event = M('event')->where(array('status'=>1))->getField('pic',true);
+        // dump($event);die;
+        $this->assign('event',$event);
+        // $this->display();
         // 门店类别
         $usermdlx = M('shop_type');
         $resmdlx = $usermdlx->where(array('zhuangt'=>1))->field('mingch')->select();
@@ -76,12 +80,12 @@ class IndexController extends Controller {
         return $reszw;
     }
     //轮播图
-    public function banner(){
-        $event = M('event')->where(array('status'=>1))->getField('pic',true);
-        // dump($event);die;
-        $this->assign('event',$event);
-        $this->display();
-    }
+    // public function banner(){
+    //     $event = M('event')->where(array('status'=>1))->getField('pic',true);
+    //     // dump($event);die;
+    //     $this->assign('event',$event);
+    //     $this->display();
+    // }
     
     // 菜品列表
     public function detail(){

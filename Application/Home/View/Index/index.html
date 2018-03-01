@@ -7,6 +7,8 @@
     <title>快点—智慧餐厅</title>
     <link rel="icon" href="__PUBLIC__/home/img/logo1.png">
     <link rel="stylesheet" href="__PUBLIC__/home/css/index.css">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/swiper.min.css">
+
     <link rel="stylesheet" href="__PUBLIC__/home/css/base-index.css">
     <link rel="stylesheet" href="__PUBLIC__/home/css/base2.css">
     <link rel="stylesheet" href="__PUBLIC__/home/css/sousuo.css">
@@ -33,7 +35,33 @@
             _position: absolute;
             _top: expression(eval(document.documentElement.scrollTop));
         }
+        body{
+            margin: 0 !important;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
 
+        }
+        .swiper-slide {
+            text-align: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-slide img{
+            width: 100%;
+            height: 350px;
+        }
     </style>
 </head>
 <div style="font-size: 12px">
@@ -75,10 +103,68 @@
     </header>
 
     <!--轮播图-->
-    <div class="banner">
+   <!--  <div class="banner">
         <iframe name="toppage" width=100% height=100% marginwidth=0 marginheight=0 frameborder="no" border="0" src="{:U('Home/Index/banner')}" ></iframe>
-    </div>
+    </div> -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <foreach name="event" item="one">
 
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="__PUBLIC__/{$one}" alt="">
+                </a>
+            </div>
+            </foreach>
+
+         <!--    <div class="swiper-slide">
+                <a href="#">
+                    <img src="images/6.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="images/7.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="images/10%20(1).jpg" alt="">
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="images/10%20(2).jpg" alt="">
+                </a>
+            </div> -->
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="__PUBLIC__/home/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script type="text/javascript">
+        var swiper = new Swiper('.swiper-container', {
+            // spaceBetween: 30,//图片之间的距离
+            loop:true,//自动播放
+            centeredSlides: true,
+            speed:1300,
+            autoplay: {
+                delay: 3000,//多少秒切换
+                disableOnInteraction: false,//手滚动离开之后依然可以自然滚动
+            },
+            // pagination: {
+            //     el: '.swiper-pagination',
+            //     clickable: true,
+            // },
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+        });
+    </script>
 
     <!--中间分类-->
     <div class="kong2" style="width: 100%;height: 120px;">
