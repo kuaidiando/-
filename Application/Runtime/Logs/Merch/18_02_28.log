@@ -1,0 +1,85 @@
+[ 2018-02-28T18:22:09+08:00 ] ::1 /-/index.php/Merch/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001536s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `shop` WHERE `id` = null  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0079s ]
+SQL: SELECT `id` FROM `order` WHERE `order_status` IN ('10','15','11','12') AND `store_id` = null AND ( `use_time` >= '2018-02-28 00:00:00' AND `use_time` < '2018-03-01 00:00:00'  )  [ RunTime:0.0028s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Merch\Controller\IndexController.class.php 第 47 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000456s ]
+NOTIC: [8] Use of undefined constant logo - assumed 'logo' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 29 行.
+NOTIC: [8] Undefined offset: 0 E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 29 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 34 行.
+NOTIC: [8] Use of undefined constant mingch - assumed 'mingch' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 50 行.
+NOTIC: [8] Undefined offset: 0 E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 50 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 56 行.
+NOTIC: [8] Undefined offset: 0 E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 56 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 93 行.
+NOTIC: [8] Undefined offset: 0 E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 93 行.
+NOTIC: [8] Undefined offset: 0 E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 158 行.
+NOTIC: [8] Undefined offset: 0 E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 160 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 258 行.
+NOTIC: [8] Undefined offset: 0 E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 258 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 270 行.
+NOTIC: [8] Undefined offset: 0 E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 270 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 312 行.
+NOTIC: [8] Undefined offset: 0 E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 312 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 339 行.
+NOTIC: [8] Undefined offset: 0 E:\wamp64\www\-\Application\Runtime\Cache\Merch\dd1eaf8f3fbdced70eb85b8be40048b1.php 第 339 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001806s ]
+
+[ 2018-02-28T18:22:14+08:00 ] ::1 /-/index.php/Merch/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002074s ]
+
+[ 2018-02-28T18:22:28+08:00 ] ::1 /-/index.php/Merch/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001422s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012378s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001217s ]
+

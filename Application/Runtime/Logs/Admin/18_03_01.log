@@ -1,0 +1,443 @@
+[ 2018-03-01T14:33:05+08:00 ] ::1 /-/index.php/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001562s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Undefined variable: id E:\wamp64\www\-\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 20 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2018-03-01T14:33:14+08:00 ] ::1 /-/index.php/Admin/Index/dodenglu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `user` WHERE `tel` = '111111' AND `status` = 1 LIMIT 1   [ RunTime:0.0031s ]
+
+[ 2018-03-01T14:33:15+08:00 ] ::1 /-/index.php/Admin/Index/zhuye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0126s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\502c830712a0e1f9d91cc268e293cf60.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001366s ]
+
+[ 2018-03-01T14:33:51+08:00 ] ::1 /-/index.php/Admin/shop/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `shop`  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 91 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 173 行.
+NOTIC: [8] Undefined variable: active E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 176 行.
+NOTIC: [8] Undefined variable: info E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 257 行.
+SQL: SELECT `name` FROM `city` WHERE `code` = '130100'  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0101s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 0  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp64\www\-\Application\Common\Common\function.php 第 128 行.
+SQL: SHOW COLUMNS FROM `sale` [ RunTime:0.0112s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 64 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '0'  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp64\www\-\Application\Common\Common\function.php 第 109 行.
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 65 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130100'  [ RunTime:0.0019s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 62 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130100'  [ RunTime:0.0020s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 63 LIMIT 1   [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001734s ]
+
+[ 2018-03-01T14:33:59+08:00 ] ::1 /-/index.php/Admin/Shop/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `province`  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `city`  [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `shop_type`  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `time_business` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `time_business` ORDER BY paix asc  [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: reschengs E:\wamp64\www\-\Application\Admin\Controller\ShopController.class.php 第 108 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000396s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002102s ]
+
+[ 2018-03-01T14:37:50+08:00 ] ::1 /-/index.php/Admin/shop/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `shop`  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000418s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 91 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 173 行.
+NOTIC: [8] Undefined variable: active E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 176 行.
+NOTIC: [8] Undefined variable: info E:\wamp64\www\-\Application\Runtime\Cache\Admin\52fa67f14c08742f6c521ab8140bab06.php 第 257 行.
+SQL: SELECT `name` FROM `city` WHERE `code` = '130100'  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0074s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 0  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp64\www\-\Application\Common\Common\function.php 第 128 行.
+SQL: SHOW COLUMNS FROM `sale` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 64 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '0'  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp64\www\-\Application\Common\Common\function.php 第 109 行.
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 65 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130100'  [ RunTime:0.0013s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 62 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `city` WHERE `code` = '130100'  [ RunTime:0.0011s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sale` WHERE `dep_type` = 63 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001487s ]
+
+[ 2018-03-01T16:22:02+08:00 ] ::1 /-/index.php/Admin/order/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `order` ORDER BY id desc  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `money` [ RunTime:0.0068s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 136 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 135 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 134 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 133 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 132 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 131 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 130 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 129 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 128 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 127 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 126 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000443s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seattype - assumed 'Seattype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Foodtype - assumed 'Foodtype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Use of undefined constant Code - assumed 'Code' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 122 行.
+NOTIC: [8] Use of undefined constant Event - assumed 'Event' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 131 行.
+NOTIC: [8] Use of undefined constant Config - assumed 'Config' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 131 行.
+NOTIC: [8] Use of undefined constant Order - assumed 'Order' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 140 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 173 行.
+NOTIC: [8] Undefined variable: active E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001589s ]
+
+[ 2018-03-01T16:22:05+08:00 ] ::1 /-/index.php/Admin/Order/order_xq/id/136.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `order` WHERE `id` = 136 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0083s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `order_jc` [ RunTime:0.0062s ]
+SQL: SELECT `seat` FROM `order_jc` WHERE `order_id` = 136 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `order_fu` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `order_fu` WHERE `order_id` = 136  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0052s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 120 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `money` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `money` WHERE `order_id` = 136 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001105s ]
+
+[ 2018-03-01T16:22:11+08:00 ] ::1 /-/index.php/Admin/order/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `order` ORDER BY id desc  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0149s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `money` [ RunTime:0.0117s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 136 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 135 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 134 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 133 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 132 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 131 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 130 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 129 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 128 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 127 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 126 LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seattype - assumed 'Seattype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Foodtype - assumed 'Foodtype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Use of undefined constant Code - assumed 'Code' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 122 行.
+NOTIC: [8] Use of undefined constant Event - assumed 'Event' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 131 行.
+NOTIC: [8] Use of undefined constant Config - assumed 'Config' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 131 行.
+NOTIC: [8] Use of undefined constant Order - assumed 'Order' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 140 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 173 行.
+NOTIC: [8] Undefined variable: active E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001220s ]
+
+[ 2018-03-01T16:22:26+08:00 ] ::1 /-/index.php/Admin/Order/order_xq/id/136.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001466s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `order` WHERE `id` = 136 LIMIT 1   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0158s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `order_jc` [ RunTime:0.0126s ]
+SQL: SELECT `seat` FROM `order_jc` WHERE `order_id` = 136 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `order_fu` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `order_fu` WHERE `order_id` = 136  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0069s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 120 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `money` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `money` WHERE `order_id` = 136 LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000383s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001123s ]
+
+[ 2018-03-01T16:22:29+08:00 ] ::1 /-/index.php/Admin/order/index.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `city` ORDER BY paix desc  [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `order` ORDER BY id desc  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0075s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `money` [ RunTime:0.0051s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 136 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 135 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 134 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 133 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 132 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 131 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 130 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 129 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 128 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 48 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 127 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `sf` FROM `money` WHERE `order_id` = 126 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000447s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 83 行.
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Shoptype - assumed 'Shoptype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Danwei - assumed 'Danwei' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seat - assumed 'Seat' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Sale - assumed 'Sale' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Food - assumed 'Food' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Seattype - assumed 'Seattype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant Foodtype - assumed 'Foodtype' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 91 行.
+NOTIC: [8] Use of undefined constant User - assumed 'User' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 113 行.
+NOTIC: [8] Use of undefined constant Code - assumed 'Code' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 122 行.
+NOTIC: [8] Use of undefined constant Event - assumed 'Event' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 131 行.
+NOTIC: [8] Use of undefined constant Config - assumed 'Config' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 131 行.
+NOTIC: [8] Use of undefined constant Order - assumed 'Order' E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 140 行.
+NOTIC: [2] array_pop() expects parameter 1 to be array, null given E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 173 行.
+NOTIC: [8] Undefined variable: active E:\wamp64\www\-\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001693s ]
+

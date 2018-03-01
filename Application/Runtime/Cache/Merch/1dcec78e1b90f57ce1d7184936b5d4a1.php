@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>订单详情</title>
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/text.css">
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/dingdanxiangqing.css">
-    <script src="__PUBLIC__/merch/js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="/-/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/-/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/-/Public/merch/css/dingdanxiangqing.css">
+    <script src="/-/Public/merch/js/jquery-1.12.4.min.js"></script>
 </head>
 <body style="font-size: 12px;">
     <div class="header">
@@ -34,10 +34,9 @@
            <div class="bao">
                <div class="pane" style="display:block;">
                   <div class="xin">
-                      <span>新订单&nbsp;{$count}&nbsp;单,总额&nbsp;{$total_price}&nbsp;元</span>
+                      <span>新订单&nbsp;<?php echo ($count); ?>&nbsp;单,总额&nbsp;<?php echo ($total_price); ?>&nbsp;元</span>
                   </div>
-                  <foreach name="order_info" item="info">
-                    <div class="he">
+                  <?php if(is_array($order_info)): foreach($order_info as $key=>$info): ?><div class="he">
                          <div class="top">
                              <div class="jiu">
                                  <div class="can">
@@ -45,28 +44,28 @@
                                  </div>
 
                                  <div class="hh">
-                                     <span>{$info.jch}</span>
+                                     <span><?php echo ($info["jch"]); ?></span>
                                  </div>
                              </div>
 
                              <div class="hao">
-                                 <span>订单号:{$info.order_code}</span>
+                                 <span>订单号:<?php echo ($info["order_code"]); ?></span>
                              </div>
                          </div>
 
                          <div class="name">
                              <div class="sex">
-                                 <span>{$info.buyer_name}</span>
+                                 <span><?php echo ($info["buyer_name"]); ?></span>
                              </div>
 
                              <div class="tel">
-                                 <span>{$info.tel}</span>
+                                 <span><?php echo ($info["tel"]); ?></span>
                              </div>
 
                              <div class="tu">
                                  <div class="ttu">
-                                     <a href="tel:{$info.tel}">
-                                         <img src="__PUBLIC__/merch/images/phone.png" alt="">
+                                     <a href="tel:<?php echo ($info["tel"]); ?>">
+                                         <img src="/-/Public/merch/images/phone.png" alt="">
                                      </a>
                                  </div>
                              </div>
@@ -77,7 +76,7 @@
                                  </div>
 
                                  <div class="hha">
-                                     <span>{$info.zhuo_hao}</span>
+                                     <span><?php echo ($info["zhuo_hao"]); ?></span>
                                  </div>
                              </div>
                          </div>
@@ -102,25 +101,23 @@
                                              </div>
                                          </a>
                                          <ul class="sub-menu">
-                                            <foreach name="info.goods_info" item="goods_info">
-                                              <li>
+                                            <?php if(is_array($info["goods_info"])): foreach($info["goods_info"] as $key=>$goods_info): ?><li>
                                                   <a href="javascript:;">
                                                       <div class="hee">
                                                           <div class="cai">
-                                                               <span>{$goods_info.goods_name}</span>
+                                                               <span><?php echo ($goods_info["goods_name"]); ?></span>
                                                           </div>
 
                                                           <div class="ll">
-                                                               <span>X{$goods_info.goods_num}</span>
+                                                               <span>X<?php echo ($goods_info["goods_num"]); ?></span>
                                                           </div>
 
                                                           <div class="qian2">
-                                                               <span>{$goods_info.goods_price}</span>
+                                                               <span><?php echo ($goods_info["goods_price"]); ?></span>
                                                           </div>
                                                       </div>
                                                   </a>
-                                              </li>
-                                            </foreach>
+                                              </li><?php endforeach; endif; ?>
                                                <li>
                                                   <a href="javascript:;">
                                                       <div class="hee">
@@ -129,11 +126,11 @@
                                                           </div>
 
                                                           <div class="ll">
-                                                               <span>X{$info.seat}</span>
+                                                               <span>X<?php echo ($info["seat"]); ?></span>
                                                           </div>
 
                                                           <div class="qian2">
-                                                               <span>{$info.repast_price}</span>
+                                                               <span><?php echo ($info["repast_price"]); ?></span>
                                                           </div>
                                                       </div>
                                                   </a>
@@ -150,7 +147,7 @@
                              </div>
 
                              <div class="qqian">
-                                 <span>￥{$info.total_price}</span>
+                                 <span>￥<?php echo ($info["total_price"]); ?></span>
                              </div>
                          </div>
 
@@ -161,7 +158,7 @@
                                  </div>
 
                                  <div class="jj">
-                                     <span>-￥<span>{$info.lj}</span></span>
+                                     <span>-￥<span><?php echo ($info["lj"]); ?></span></span>
                                  </div>
                              </div>
 
@@ -186,7 +183,7 @@
                              </div>
 
                              <div class="kk">
-                                 <span>￥&nbsp;{$info.sf}</span>
+                                 <span>￥&nbsp;<?php echo ($info["sf"]); ?></span>
                              </div>
                          </div>
 
@@ -203,31 +200,30 @@
                              </div>
 
                              <div class="int">
-                                 <span>{$info.order_remark}</span>
+                                 <span><?php echo ($info["order_remark"]); ?></span>
                              </div>
                          </div>
 
 
                          <div class="xd">
                              <div class="dd">
-                                 <span>下单:{$info.use_time}</span>
+                                 <span>下单:<?php echo ($info["use_time"]); ?></span>
                              </div>
 
                              <div class="q">
-                                 <div class="qx" id="{$info.id}" >
+                                 <div class="qx" id="<?php echo ($info["id"]); ?>" >
                                      <button >取消订单</button>
                                  </div>
                              </div>
 
                              <div class="ren">
-                                 <div class="qr" onclick="qrd({$info.id})">
+                                 <div class="qr" onclick="qrd(<?php echo ($info["id"]); ?>)">
                                      <span>确认</span>
                                  </div>
                              </div>
                          </div>
 
-                    </div>
-                  </foreach>
+                    </div><?php endforeach; endif; ?>
                   <!-- <div class="kong" style="width: 100%;height: 144px;"></div> -->
                </div>
            </div>
@@ -237,8 +233,7 @@
               <!--      <div class="xin">
                        <span>新订单&nbsp;5&nbsp;单,总额&nbsp;1810.1&nbsp;元</span>
                    </div> -->
-                <foreach name = "jx_info" item = "jx_one">
-                   <div class="he">
+                <?php if(is_array($jx_info)): foreach($jx_info as $key=>$jx_one): ?><div class="he">
                        <div class="top">
                            <div class="jiu">
                                <div class="can">
@@ -246,28 +241,28 @@
                                </div>
 
                                <div class="hh">
-                                   <span>{$jx_one.jch}</span>
+                                   <span><?php echo ($jx_one["jch"]); ?></span>
                                </div>
                            </div>
 
                            <div class="hao">
-                               <span>订单号:{$jx_one.order_code}</span>
+                               <span>订单号:<?php echo ($jx_one["order_code"]); ?></span>
                            </div>
                        </div>
 
                        <div class="name">
                            <div class="sex">
-                               <span>{$jx_one.buyer_name}</span>
+                               <span><?php echo ($jx_one["buyer_name"]); ?></span>
                            </div>
 
                            <div class="tel">
-                               <span>{$jx_one.tel}</span>
+                               <span><?php echo ($jx_one["tel"]); ?></span>
                            </div>
 
                            <div class="tu">
                                <div class="ttu">
-                                   <a href="tel:{$jx_one.tel}">
-                                       <img src="__PUBLIC__/merch/images/phone.png" alt="">
+                                   <a href="tel:<?php echo ($jx_one["tel"]); ?>">
+                                       <img src="/-/Public/merch/images/phone.png" alt="">
                                    </a>
                                </div>
                            </div>
@@ -278,7 +273,7 @@
                                </div>
 
                                <div class="hha">
-                                   <span>{$jx_one.zhuo_hao}</span>
+                                   <span><?php echo ($jx_one["zhuo_hao"]); ?></span>
                                </div>
                            </div>
                        </div>
@@ -294,7 +289,7 @@
                                               </div>
 
                                               <div class="ycc">
-                                                  <!-- <img src="__PUBLIC__/merch/images/tishi.png" alt=""> -->
+                                                  <!-- <img src="/-/Public/merch/images/tishi.png" alt=""> -->
                                                   <!-- <span>已分堂制作</span> -->
                                                   <span></span>
                                               </div>
@@ -305,12 +300,11 @@
                                             </div>
                                        </a>
                                        <ul class="sub-menu">
-                                          <foreach name="jx_one.goods_info" item="jx_one_goods">
-                                           <li>
+                                          <?php if(is_array($jx_one["goods_info"])): foreach($jx_one["goods_info"] as $key=>$jx_one_goods): ?><li>
                                                <a href="javascript:;">
                                                    <div class="hee">
                                                        <div class="cai2">
-                                                           <span>{$jx_one_goods.goods_name}</span>
+                                                           <span><?php echo ($jx_one_goods["goods_name"]); ?></span>
                                                        </div>
 
                                                        <div class="ywc">
@@ -319,16 +313,15 @@
                                                        </div>
 
                                                        <div class="ll2">
-                                                           <span>X{$jx_one_goods.goods_num}</span>
+                                                           <span>X<?php echo ($jx_one_goods["goods_num"]); ?></span>
                                                        </div>
 
                                                        <div class="qian3">
-                                                           <span>{$jx_one_goods.goods_price}</span>
+                                                           <span><?php echo ($jx_one_goods["goods_price"]); ?></span>
                                                        </div>
                                                    </div>
                                                </a>
-                                           </li>
-                                        </foreach>  
+                                           </li><?php endforeach; endif; ?>  
                                          <li>
                                                   <a href="javascript:;">
                                                       <div class="hee">
@@ -337,11 +330,11 @@
                                                           </div>
 
                                                           <div class="ll">
-                                                               <span>X{$jx_one.seat}</span>
+                                                               <span>X<?php echo ($jx_one["seat"]); ?></span>
                                                           </div>
 
                                                           <div class="qian2">
-                                                               <span>{$jx_one.repast_price}</span>
+                                                               <span><?php echo ($jx_one["repast_price"]); ?></span>
                                                           </div>
                                                       </div>
                                                   </a>
@@ -358,7 +351,7 @@
                            </div>
 
                            <div class="qqian">
-                               <span>￥{$jx_one.total_price}</span>
+                               <span>￥<?php echo ($jx_one["total_price"]); ?></span>
                            </div>
                        </div>
 
@@ -369,7 +362,7 @@
                                </div>
 
                                <div class="jj">
-                                   <span>-￥{$jx_one.lj}</span>
+                                   <span>-￥<?php echo ($jx_one["lj"]); ?></span>
                                </div>
                            </div>
 
@@ -394,7 +387,7 @@
                            </div>
 
                            <div class="kk">
-                               <span>￥{$jx_one.sf}</span>
+                               <span>￥<?php echo ($jx_one["sf"]); ?></span>
                            </div>
                        </div>
 
@@ -404,30 +397,29 @@
                            </div>
 
                            <div class="int">
-                               <span>{$jx_one.order_remark}</span>
+                               <span><?php echo ($jx_one["order_remark"]); ?></span>
                            </div>
                        </div>
 
                        <div class="xd">
                            <div class="dd">
-                               <span>下单{$jx_one.use_time}</span>
+                               <span>下单<?php echo ($jx_one["use_time"]); ?></span>
                            </div>
 
                            <div class="q">
-                               <div class="qx" id="{$jx_one.id}">
+                               <div class="qx" id="<?php echo ($jx_one["id"]); ?>">
                                    <button>取消订单</button>
                                </div>
                            </div>
 
                            <div class="ren">
-                               <div class="qr wc" id="{$jx_one.id}">
+                               <div class="qr wc" id="<?php echo ($jx_one["id"]); ?>">
                                    <span>完成</span>
                                </div>
                            </div>
                        </div>
 
-                   </div>
-                </foreach>
+                   </div><?php endforeach; endif; ?>
                </div>
             </div>
 
@@ -435,10 +427,9 @@
             <div class="pane">
                <div class="bao">
                   <div class="xin">
-                      <span>已完成{$wc_count}单,总额{$wc_total_price}元</span>
+                      <span>已完成<?php echo ($wc_count); ?>单,总额<?php echo ($wc_total_price); ?>元</span>
                   </div>
-                <foreach name="wc_order" item="wc_one">
-                  <div class="he">
+                <?php if(is_array($wc_order)): foreach($wc_order as $key=>$wc_one): ?><div class="he">
                       <div class="top">
                           <div class="jiu">
                               <div class="can">
@@ -446,28 +437,28 @@
                               </div>
 
                               <div class="hh">
-                                  <span>{$wc_one.jch}</span>
+                                  <span><?php echo ($wc_one["jch"]); ?></span>
                               </div>
                           </div>
 
                           <div class="hao">
-                              <span>订单号:{$wc_one.order_code}</span>
+                              <span>订单号:<?php echo ($wc_one["order_code"]); ?></span>
                           </div>
                       </div>
 
                       <div class="name">
                           <div class="sex">
-                              <span>{$wc_one.buyer_name}</span>
+                              <span><?php echo ($wc_one["buyer_name"]); ?></span>
                           </div>
 
                           <div class="tel">
-                              <span>{$wc_one.tel}</span>
+                              <span><?php echo ($wc_one["tel"]); ?></span>
                           </div>
 
                           <div class="tu">
                               <div class="ttu">
-                                  <a href="tel:{$wc_one.tel}">
-                                      <img src="__PUBLIC__/merch/images/phone.png" alt="">
+                                  <a href="tel:<?php echo ($wc_one["tel"]); ?>">
+                                      <img src="/-/Public/merch/images/phone.png" alt="">
                                   </a>
                               </div>
                           </div>
@@ -478,7 +469,7 @@
                               </div>
 
                               <div class="hha">
-                                  <span>{$wc_one.zhuo_hao}</span>
+                                  <span><?php echo ($wc_one["zhuo_hao"]); ?></span>
                               </div>
                           </div>
                       </div>
@@ -494,7 +485,7 @@
                                               </div>
 
                                               <div class="ycc">
-                                                  <img src="__PUBLIC__/merch/images/tishi.png" alt="">
+                                                  <img src="/-/Public/merch/images/tishi.png" alt="">
                                                   <span>已分堂制作</span>
                                               </div>
 
@@ -504,12 +495,11 @@
                                           </div>
                                       </a>
                                       <ul class="sub-menu">
-                                        <foreach name="wc_one.goods_info" item="wc_goods">
-                                          <li>
+                                        <?php if(is_array($wc_one["goods_info"])): foreach($wc_one["goods_info"] as $key=>$wc_goods): ?><li>
                                               <a href="javascript:;">
                                                   <div class="hee">
                                                       <div class="cai2">
-                                                          <span>{$wc_goods.goods_name}</span>
+                                                          <span><?php echo ($wc_goods["goods_name"]); ?></span>
                                                       </div>
 
                                                       <div class="ywc">
@@ -517,16 +507,15 @@
                                                       </div>
 
                                                       <div class="ll2">
-                                                          <span>X{$wc_goods.goods_num}</span>
+                                                          <span>X<?php echo ($wc_goods["goods_num"]); ?></span>
                                                       </div>
 
                                                       <div class="qian3">
-                                                          <span>{$wc_goods.goods_price}</span>
+                                                          <span><?php echo ($wc_goods["goods_price"]); ?></span>
                                                       </div>
                                                   </div>
                                               </a>
-                                          </li>
-                                        </foreach> 
+                                          </li><?php endforeach; endif; ?> 
                                           <li>
                                               <a href="javascript:;">
                                                   <div class="hee">
@@ -535,11 +524,11 @@
                                                       </div>
 
                                                       <div class="ll">
-                                                           <span>X{$wc_one.seat}</span>
+                                                           <span>X<?php echo ($wc_one["seat"]); ?></span>
                                                       </div>
 
                                                       <div class="qian2">
-                                                           <span>{$wc_one.repast_price}</span>
+                                                           <span><?php echo ($wc_one["repast_price"]); ?></span>
                                                       </div>
                                                   </div>
                                               </a>
@@ -556,7 +545,7 @@
                           </div>
 
                           <div class="qqian">
-                              <span>￥{$wc_one.total_price}</span>
+                              <span>￥<?php echo ($wc_one["total_price"]); ?></span>
                           </div>
                       </div>
 
@@ -567,7 +556,7 @@
                               </div>
 
                               <div class="jj">
-                                  <span>-￥{$wc_one.lj}</span>
+                                  <span>-￥<?php echo ($wc_one["lj"]); ?></span>
                               </div>
                           </div>
 
@@ -592,7 +581,7 @@
                           </div>
 
                           <div class="kk">
-                              <span>￥{$wc_one.sf}</span>
+                              <span>￥<?php echo ($wc_one["sf"]); ?></span>
                           </div>
                       </div>
 
@@ -602,23 +591,22 @@
                           </div>
 
                           <div class="int">
-                              <span>{$wc_one.order_remark}</span>
+                              <span><?php echo ($wc_one["order_remark"]); ?></span>
                           </div>
                       </div>
 
                       <div class="xd">
                           <div class="dd">
-                              <span>下单:{$wc_one.use_time}</span>
+                              <span>下单:<?php echo ($wc_one["use_time"]); ?></span>
                           </div>
 
                           <div class="yy">
-                              <img src="__PUBLIC__/merch/images/yiwancheng.png" alt="">
+                              <img src="/-/Public/merch/images/yiwancheng.png" alt="">
                           </div>
 
                       </div>
 
-                  </div>
-                </foreach>
+                  </div><?php endforeach; endif; ?>
                   <!-- <div class="kong" style="width: 100%;height: 144px;"></div> -->
                </div>
             </div>
@@ -626,10 +614,9 @@
             <div class="pane">
                 <div class="bao">
                     <div class="xin">
-                        <span>已取消{$qx_count}单,总额{$qx_total_price}元</span>
+                        <span>已取消<?php echo ($qx_count); ?>单,总额<?php echo ($qx_total_price); ?>元</span>
                     </div>
-                  <foreach name="qx_info" item="qx_one">
-                    <div class="he">
+                  <?php if(is_array($qx_info)): foreach($qx_info as $key=>$qx_one): ?><div class="he">
                         <div class="top">
                             <div class="jiu">
                                 <div class="can">
@@ -637,28 +624,28 @@
                                 </div>
 
                                 <div class="hh">
-                                    <span>{$qx_one.jch}</span>
+                                    <span><?php echo ($qx_one["jch"]); ?></span>
                                 </div>
                             </div>
 
                             <div class="hao">
-                                <span>订单号:{$qx_one.order_code}</span>
+                                <span>订单号:<?php echo ($qx_one["order_code"]); ?></span>
                             </div>
                         </div>
 
                         <div class="name">
                             <div class="sex">
-                                <span>{$qx_one.buyer_name}</span>
+                                <span><?php echo ($qx_one["buyer_name"]); ?></span>
                             </div>
 
                             <div class="tel">
-                                <span>{$qx_one.tel}</span>
+                                <span><?php echo ($qx_one["tel"]); ?></span>
                             </div>
 
                             <div class="tu">
                                 <div class="ttu">
-                                    <a href="tel:{$qx_one.tel}">
-                                        <img src="__PUBLIC__/merch/images/phone.png" alt="">
+                                    <a href="tel:<?php echo ($qx_one["tel"]); ?>">
+                                        <img src="/-/Public/merch/images/phone.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -669,7 +656,7 @@
                                 </div>
 
                                 <div class="hha">
-                                    <span>{$qx_one.zhuo_hao}</span>
+                                    <span><?php echo ($qx_one["zhuo_hao"]); ?></span>
                                 </div>
                             </div>
                         </div>
@@ -685,7 +672,7 @@
                                                 </div>
 
                                                 <div class="ycc">
-                                                    <img src="__PUBLIC__/merch/images/tishi.png" alt="">
+                                                    <img src="/-/Public/merch/images/tishi.png" alt="">
                                                     <span>已分堂制作</span>
                                                 </div>
 
@@ -695,12 +682,11 @@
                                             </div>
                                         </a>
                                         <ul class="sub-menu">
-                                          <foreach name="qx_one.goods_info" item="qx_goods">
-                                            <li>
+                                          <?php if(is_array($qx_one["goods_info"])): foreach($qx_one["goods_info"] as $key=>$qx_goods): ?><li>
                                                 <a href="javascript:;">
                                                     <div class="hee">
                                                         <div class="cai2">
-                                                            <span>{$qx_goods.goods_name}</span>
+                                                            <span><?php echo ($qx_goods["goods_name"]); ?></span>
                                                         </div>
 
                                                         <div class="ywc">
@@ -708,17 +694,15 @@
                                                         </div>
 
                                                         <div class="ll2">
-                                                            <span>X{$qx_goods.goods_num}</span>
+                                                            <span>X<?php echo ($qx_goods["goods_num"]); ?></span>
                                                         </div>
 
                                                         <div class="qian3">
-                                                            <span>{$qx_goods.goods_price}</span>
+                                                            <span><?php echo ($qx_goods["goods_price"]); ?></span>
                                                         </div>
                                                     </div>
                                                 </a>
-                                            </li>
-
-                                          </foreach>  
+                                            </li><?php endforeach; endif; ?>  
                                           <li>
                                               <a href="javascript:;">
                                                   <div class="hee">
@@ -727,11 +711,11 @@
                                                       </div>
 
                                                       <div class="ll">
-                                                           <span>X{$qx_one.seat}</span>
+                                                           <span>X<?php echo ($qx_one["seat"]); ?></span>
                                                       </div>
 
                                                       <div class="qian2">
-                                                           <span>{$qx_one.repast_price}</span>
+                                                           <span><?php echo ($qx_one["repast_price"]); ?></span>
                                                       </div>
                                                   </div>
                                               </a>
@@ -748,7 +732,7 @@
                             </div>
 
                             <div class="qqian">
-                                <span>￥{$qx_one.total_price}</span>
+                                <span>￥<?php echo ($qx_one["total_price"]); ?></span>
                             </div>
                         </div>
 
@@ -759,7 +743,7 @@
                                 </div>
 
                                 <div class="jj">
-                                    <span>-￥{$qx_one.lj}</span>
+                                    <span>-￥<?php echo ($qx_one["lj"]); ?></span>
                                 </div>
                             </div>
 
@@ -784,7 +768,7 @@
                             </div>
 
                             <div class="kk">
-                                <span>￥{$qx_one.sf}</span>
+                                <span>￥<?php echo ($qx_one["sf"]); ?></span>
                             </div>
                         </div>
 
@@ -794,23 +778,22 @@
                             </div>
 
                             <div class="int">
-                                <span>{$qx_one.order_remark}</span>
+                                <span><?php echo ($qx_one["order_remark"]); ?></span>
                             </div>
                         </div>
 
                         <div class="xd">
                             <div class="dd">
-                                <span>下单:{$qx_one.use_time}</span>
+                                <span>下单:<?php echo ($qx_one["use_time"]); ?></span>
                             </div>
 
                             <div class="yy">
-                                <img src="__PUBLIC__/merch/images/tuidan.png" alt="">
+                                <img src="/-/Public/merch/images/tuidan.png" alt="">
                             </div>
 
                         </div>
 
-                    </div>
-                  </foreach>
+                    </div><?php endforeach; endif; ?>
                     <div class="kong" style="width: 100%;height: 144px;"></div>
                 </div>
             </div>
@@ -818,10 +801,9 @@
             <div class="pane">
                 <div class="bao">
                     <div class="xin">
-                        <span>未使用{$no_count}单,总额{$no_total_price}元</span>
+                        <span>未使用<?php echo ($no_count); ?>单,总额<?php echo ($no_total_price); ?>元</span>
                     </div>
-                  <foreach name="no_info" item="no_one">
-                    <div class="he">
+                  <?php if(is_array($no_info)): foreach($no_info as $key=>$no_one): ?><div class="he">
                         <div class="top">
                             <div class="jiu">
                                 <div class="can">
@@ -829,28 +811,28 @@
                                 </div>
 
                                 <div class="hh">
-                                    <span>{$no_one.jch}</span>
+                                    <span><?php echo ($no_one["jch"]); ?></span>
                                 </div>
                             </div>
 
                             <div class="hao">
-                                <span>订单号:{$no_one.order_code}</span>
+                                <span>订单号:<?php echo ($no_one["order_code"]); ?></span>
                             </div>
                         </div>
 
                         <div class="name">
                             <div class="sex">
-                                <span>{$no_one.buyer_name}</span>
+                                <span><?php echo ($no_one["buyer_name"]); ?></span>
                             </div>
 
                             <div class="tel">
-                                <span>{$no_one.tel}</span>
+                                <span><?php echo ($no_one["tel"]); ?></span>
                             </div>
 
                             <div class="tu">
                                 <div class="ttu">
-                                    <a href="tel:{$no_one.tel}">
-                                        <img src="__PUBLIC__/merch/images/phone.png" alt="">
+                                    <a href="tel:<?php echo ($no_one["tel"]); ?>">
+                                        <img src="/-/Public/merch/images/phone.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -861,7 +843,7 @@
                                 </div>
 
                                 <div class="hha">
-                                    <span>{$no_one.zhuo_hao}</span>
+                                    <span><?php echo ($no_one["zhuo_hao"]); ?></span>
                                 </div>
                             </div>
                         </div>
@@ -886,25 +868,23 @@
                                             </div>
                                         </a>
                                         <ul class="sub-menu">
-                                          <foreach name="no_one.goods_info" item="no_goods">
-                                            <li>
+                                          <?php if(is_array($no_one["goods_info"])): foreach($no_one["goods_info"] as $key=>$no_goods): ?><li>
                                                 <a href="javascript:;">
                                                     <div class="hee">
                                                         <div class="cai">
-                                                            <span>{$no_goods.goods_name}</span>
+                                                            <span><?php echo ($no_goods["goods_name"]); ?></span>
                                                         </div>
 
                                                         <div class="ll">
-                                                            <span>X{$no_goods.goods_num}</span>
+                                                            <span>X<?php echo ($no_goods["goods_num"]); ?></span>
                                                         </div>
 
                                                         <div class="qian2">
-                                                            <span>{$no_goods.goods_price}</span>
+                                                            <span><?php echo ($no_goods["goods_price"]); ?></span>
                                                         </div>
                                                     </div>
                                                 </a>
-                                            </li>
-                                         </foreach>  
+                                            </li><?php endforeach; endif; ?>  
 
                                           <li>
                                               <a href="javascript:;">
@@ -914,11 +894,11 @@
                                                       </div>
 
                                                       <div class="ll">
-                                                           <span>X{$no_one.seat}</span>
+                                                           <span>X<?php echo ($no_one["seat"]); ?></span>
                                                       </div>
 
                                                       <div class="qian2">
-                                                           <span>{$no_one.repast_price}</span>
+                                                           <span><?php echo ($no_one["repast_price"]); ?></span>
                                                       </div>
                                                   </div>
                                               </a>
@@ -935,7 +915,7 @@
                             </div>
 
                             <div class="qqian">
-                                <span>￥{$no_one.total_price}</span>
+                                <span>￥<?php echo ($no_one["total_price"]); ?></span>
                             </div>
                         </div>
 
@@ -946,7 +926,7 @@
                                 </div>
 
                                 <div class="jj">
-                                    <span>-￥{$no_one.lj}</span>
+                                    <span>-￥<?php echo ($no_one["lj"]); ?></span>
                                 </div>
                             </div>
 
@@ -971,7 +951,7 @@
                             </div>
 
                             <div class="kk">
-                                <span>￥{$no_one.sf}</span>
+                                <span>￥<?php echo ($no_one["sf"]); ?></span>
                             </div>
                         </div>
 
@@ -981,18 +961,18 @@
                             </div>
 
                             <div class="int">
-                                <span>{$no_one.order_remark}</span>
+                                <span><?php echo ($no_one["order_remark"]); ?></span>
                             </div>
                         </div>
 
 
                         <div class="xd">
                             <div class="dd">
-                                <span>支付:{$no_one.pay_time}</span>
+                                <span>支付:<?php echo ($no_one["pay_time"]); ?></span>
                             </div>
 
                             <div class="q">
-                                <div class="qx" id="{$no_one.id}">
+                                <div class="qx" id="<?php echo ($no_one["id"]); ?>">
                                     <button>取消订单</button>
                                 </div>
                             </div>
@@ -1004,8 +984,7 @@
                             </div>
                         </div>
 
-                    </div>
-                  </foreach>
+                    </div><?php endforeach; endif; ?>
                     <div class="kong" style="width: 100%;height: 144px;"></div>
                 </div>
             </div>
@@ -1015,10 +994,10 @@
 
     <div class="footer">
         <div class="foot" >
-        <audio id="mp3" src="__PUBLIC__/aut/8868.mp3"> </audio>
-        <input type="hidden" id="store_id" name="store_id" value="{$store_id}">
+        <audio id="mp3" src="/-/Public/aut/8868.mp3"> </audio>
+        <input type="hidden" id="store_id" name="store_id" value="<?php echo ($store_id); ?>">
             <div class="ftu">
-                <img src="__PUBLIC__/merch/images/dingdan2.png" alt="">
+                <img src="/-/Public/merch/images/dingdan2.png" alt="">
             </div>
             <div class="quan">
                 <div class="nm">
@@ -1033,7 +1012,7 @@
 
         <div class="foot2">
             <div class="ftu2">
-                <img src="__PUBLIC__/merch/images/dian2.png" alt="">
+                <img src="/-/Public/merch/images/dian2.png" alt="">
             </div>
             <div class="de2">
                 <span>我的门店</span>
@@ -1053,9 +1032,9 @@
 </script>
 
 
-<script src="__PUBLIC__/merch/js/jquery-1.12.4.min.js"></script>
-<script src="__PUBLIC__/merch/js/jquery-1.12.4.js"></script>
-<script src="__PUBLIC__/merch/js/jquery.slimscroll.min.js"></script>
+<script src="/-/Public/merch/js/jquery-1.12.4.min.js"></script>
+<script src="/-/Public/merch/js/jquery-1.12.4.js"></script>
+<script src="/-/Public/merch/js/jquery.slimscroll.min.js"></script>
 <script type="text/javascript">
     $(function(){
         // nav收缩展开
@@ -1095,7 +1074,7 @@
       $.ajax({
         type:'POST',
         dataType: 'json',
-        url:'{:U("Merch/Order/qx_order")}',
+        url:'<?php echo U("Merch/Order/qx_order");?>',
         data:{order_id:order_id},
         success: function (result) {
             if(result.code == 200){
@@ -1122,7 +1101,7 @@
         $.ajax({
           type:'POST',
           dataType: 'json',
-          url:'{:U("Merch/Order/wc_order")}',
+          url:'<?php echo U("Merch/Order/wc_order");?>',
           data:{order_id:wc_order_id},
           success: function (result) {
               if(result.code == 200){
@@ -1140,7 +1119,7 @@
       $.ajax({
         type:'POST',
         dataType: 'json',
-        url:'{:U("Merch/Order/qr_order")}',
+        url:'<?php echo U("Merch/Order/qr_order");?>',
         data:{order_id:order_id},
         success: function (result) {
             if(result.code == 200){
@@ -1172,7 +1151,7 @@
 
         // $.ajax({
         //     type:'post',
-        //     url:"{:U('Merch/Order/sendOrderNotice')}",
+        //     url:"<?php echo U('Merch/Order/sendOrderNotice');?>",
         //     dataType: 'json',
         //     data:{store_id:store_id},
         //     success:function (data) {
@@ -1208,7 +1187,7 @@
         setInterval(function () {
             $.ajax({
                 type:'post',
-                url:"{:U('Merch/Order/sendOrderNotice')}",
+                url:"<?php echo U('Merch/Order/sendOrderNotice');?>",
                 dataType: 'json',
                 data:{store_id:store_id}, 
                  // async: false,             

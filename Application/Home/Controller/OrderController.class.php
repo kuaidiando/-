@@ -350,7 +350,12 @@ class OrderController extends Controller {
         $this->assign('order_s',$order_s);
 
         //已使用
-        $order_u = M('order')->where(array('user_id'=>$this->user_id,'is_use'=>1))->select();
+        $where_use = array(
+            'user_id' => $this->user_id,
+            // 'is_use' => 1,
+            'order_status' => array('in','10,11,12'),
+            );
+        $order_u = M('order')->where($where_use)->select();
         foreach($order_u as $key_u=>$value_u){
             $order_u[$key_u]['shopname'] = uri('shop',array('id'=>$value['store_id']),'mingch');
             $order_u[$key_u]['logo'] = uri('shop',array('id'=>$value['store_id']),'logo');
@@ -359,13 +364,13 @@ class OrderController extends Controller {
         $this->assign('order_u',$order_u);
 
         //待评价
-        $order_p = M('order')->where(array('user_id'=>$this->user_id,'order_status'=>10))->select();
-        foreach($order_p as $key_p=>$value_p){
-            $order_p[$key_p]['shopname'] = uri('shop',array('id'=>$value['store_id']),'mingch');
-            $order_p[$key_p]['logo'] = uri('shop',array('id'=>$value['store_id']),'logo');
+        // $order_p = M('order')->where(array('user_id'=>$this->user_id,'order_status'=>10))->select();
+        // foreach($order_p as $key_p=>$value_p){
+        //     $order_p[$key_p]['shopname'] = uri('shop',array('id'=>$value['store_id']),'mingch');
+        //     $order_p[$key_p]['logo'] = uri('shop',array('id'=>$value['store_id']),'logo');
 
-        }
-        $this->assign('order_p',$order_p);
+        // }
+        // $this->assign('order_p',$order_p);
         //取消单
         $order_x = M('order')->where(array('user_id'=>$this->user_id,'order_status'=>20))->select();
         foreach($order_x as $key_x=>$value_x){
@@ -429,6 +434,18 @@ class OrderController extends Controller {
 
     }
 
+    //用户去取消订单
+    public function qqx_order(){
+        $order_id = I('id');
+        $res = M('order')->where(array('id'=>$order_id))->save(array('order_status'=>20));
+        if($res){
+            $this->ajaxReturn(array('data'=>true,'code'=>200,'msg'=>'取消成功'));
+
+        }else{
+            $this->ajaxReturn(array('data'=>false,'code'=>201,'msg'=>'取消失败'));
+
+        }
+    }
     //去提交订单
     public function sub_mit(){
         $store_id = I('store_id');
