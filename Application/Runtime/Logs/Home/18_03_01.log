@@ -6332,3 +6332,3106 @@ INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
 SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0064s ]
 SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
 
+[ 2018-03-01T17:42:59+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0075s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T17:43:00+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0070s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:43:01+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0077s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-03-01T17:43:02+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T17:43:03+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0061s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T17:43:04+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0064s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-03-01T17:43:05+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0071s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:43:06+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:43:07+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0071s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T17:43:08+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0059s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-03-01T17:43:09+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0066s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T17:43:10+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0056s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T17:43:11+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0064s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T17:43:12+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0075s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2018-03-01T17:43:13+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T17:43:14+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0055s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T17:43:15+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0081s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2018-03-01T17:43:16+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0074s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T17:43:17+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0057s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T17:43:18+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0086s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2018-03-01T17:43:19+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0061s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2018-03-01T17:43:20+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0066s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T17:43:21+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0071s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T17:43:22+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0053s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T17:43:23+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0070s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2018-03-01T17:43:24+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0066s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2018-03-01T17:43:25+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0073s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T17:43:26+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0055s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-03-01T17:43:27+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0060s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T17:43:28+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0060s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T17:43:29+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0069s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0026s ]
+
+[ 2018-03-01T17:43:30+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0057s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-03-01T17:43:31+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0058s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-03-01T17:43:32+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0064s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-03-01T17:43:33+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0060s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T17:43:34+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0066s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T17:43:35+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0064s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T17:43:36+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0057s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T17:43:38+08:00 ] ::1 /kuaidian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kuaidian\Application\Common\Helper\user_helper.php 第 47 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0073s ]
+SQL: SELECT `photo` FROM `user` WHERE `id` = 3 AND `del_status` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0087s ]
+SQL: SELECT shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij,shop.depcsjlshi FROM `shop` INNER JOIN shop_type on shop.type_shop = shop_type.id  WHERE shop.zhuangt = 1 AND shop.depcsjlshi = 130100  [ RunTime:0.0023s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 64 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 44 行.
+NOTIC: [2] A non-numeric value encountered D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 62 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 44 行.
+NOTIC: [2] A non-numeric value encountered D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 63 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0065s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `zhuangt` = 1  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001178s ]
+
+[ 2018-03-01T17:43:38+08:00 ] ::1 /kuaidian/index.php/Home/Index/banner.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0065s ]
+SQL: SELECT `pic` FROM `event` WHERE `status` = 1  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001359s ]
+
+[ 2018-03-01T17:43:39+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/64.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 64  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 64 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 123 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 64 ORDER BY paix desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0049s ]
+SQL: SELECT food.id,food.zhuangt,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = '64' ORDER BY food.id asc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: food_num D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 189 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined index: foodnum D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 224 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 92 行.
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant yuanjia - assumed 'yuanjia' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 117 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 124 行.
+NOTIC: [8] Undefined index: foodnum D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 125 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 283 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000887s ]
+
+[ 2018-03-01T17:43:39+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T17:43:41+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2018-03-01T17:43:43+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0059s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2018-03-01T17:43:43+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0066s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:43:45+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0061s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-03-01T17:43:46+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0092s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:43:46+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0075s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0022s ]
+
+[ 2018-03-01T17:43:48+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0065s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:43:49+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0061s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T17:43:50+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0059s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:43:51+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0062s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T17:43:52+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0074s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T17:43:53+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0087s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:43:54+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0065s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T17:43:54+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001462s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0064s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-03-01T17:43:56+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0078s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2018-03-01T17:43:57+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0065s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T17:43:58+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0091s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:43:59+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0055s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T17:44:00+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0058s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T17:44:01+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0064s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T17:44:01+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0061s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T17:44:03+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0078s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T17:44:04+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0062s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T17:44:04+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0061s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:44:06+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0073s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0035s ]
+
+[ 2018-03-01T17:44:07+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0071s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2018-03-01T17:44:08+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0070s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-03-01T17:44:09+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0051s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-03-01T17:44:10+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0056s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T17:44:11+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0071s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0029s ]
+
+[ 2018-03-01T17:44:11+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T17:44:13+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0077s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-03-01T17:44:14+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T17:44:14+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0057s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:44:16+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0070s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T17:44:17+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0056s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-03-01T17:44:17+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0058s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T17:44:19+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0062s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T17:44:19+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T17:44:20+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0060s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2018-03-01T17:44:22+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0059s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T17:44:23+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0081s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-03-01T17:47:22+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002042s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0069s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-03-01T17:47:22+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0080s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-03-01T17:47:22+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0081s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2018-03-01T17:47:23+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0075s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0023s ]
+
+[ 2018-03-01T17:47:24+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0056s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T17:47:26+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T17:47:27+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:47:28+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0096s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0023s ]
+
+[ 2018-03-01T17:47:29+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0082s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:47:30+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0073s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T17:47:31+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0066s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T17:47:31+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0078s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T17:47:32+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0060s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:47:34+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0069s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T17:47:34+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0073s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-03-01T17:47:36+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0061s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:47:37+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0065s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-03-01T17:47:38+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0103s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:47:38+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0062s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T17:47:40+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0066s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-03-01T17:47:40+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0060s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2018-03-01T17:47:42+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0059s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-03-01T17:47:43+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0058s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-03-01T17:47:44+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0059s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:47:44+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0078s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2018-03-01T17:47:45+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-03-01T17:47:47+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0083s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T17:47:47+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0094s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2018-03-01T17:47:49+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0076s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2018-03-01T17:47:50+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0049s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-03-01T17:47:51+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0080s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:47:52+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0065s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:47:52+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0066s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T17:47:54+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:47:54+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0058s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T17:47:55+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0069s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T17:47:57+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0065s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-03-01T17:47:58+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0062s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-03-01T17:47:59+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0065s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T17:48:00+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0072s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-03-01T17:48:00+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0062s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T17:48:02+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0065s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0053s ]
+
+[ 2018-03-01T17:48:03+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0085s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:48:04+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T17:48:04+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0073s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:48:06+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0064s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T17:48:07+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0060s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2018-03-01T17:48:08+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0063s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T17:48:09+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0071s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0026s ]
+
+[ 2018-03-01T17:48:10+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T17:48:11+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0071s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2018-03-01T17:48:11+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0072s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T17:48:13+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0061s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-03-01T17:48:14+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0074s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T17:48:15+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0072s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-03-01T17:48:16+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0066s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:48:17+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0079s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T17:48:17+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0074s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0023s ]
+
+[ 2018-03-01T17:48:18+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0062s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T17:48:19+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0078s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:48:21+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0092s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:48:22+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0090s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T17:48:23+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0086s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2018-03-01T17:48:24+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001876s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0071s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T17:48:24+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0058s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T17:48:26+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0066s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:48:27+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0063s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T17:48:27+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0071s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T17:48:29+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0083s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2018-03-01T17:48:30+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0074s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T17:48:31+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0063s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T17:48:31+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0063s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T17:48:33+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0072s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:48:34+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0058s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-03-01T17:48:34+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0060s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T17:48:36+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0073s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:48:36+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0062s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:48:38+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0071s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-03-01T17:48:39+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0079s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-03-01T17:48:39+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0075s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T17:48:40+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0065s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T17:48:42+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0120s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0043s ]
+
+[ 2018-03-01T17:48:43+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0056s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T17:48:44+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T17:48:45+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0060s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:48:46+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0076s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T17:48:49+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0073s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2018-03-01T17:48:56+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0075s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:49:01+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0058s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T17:49:08+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0088s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:49:17+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0143s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:49:23+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2018-03-01T17:49:30+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0094s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T17:49:36+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0064s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T17:49:42+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0164s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T17:49:48+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0072s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-03-01T17:49:54+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0064s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2018-03-01T17:49:56+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0106s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0025s ]
+
+[ 2018-03-01T17:49:57+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2018-03-01T17:49:58+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0065s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-03-01T17:49:59+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0062s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-03-01T17:50:01+08:00 ] ::1 /kuaidian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kuaidian\Application\Common\Helper\user_helper.php 第 47 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0058s ]
+SQL: SELECT `photo` FROM `user` WHERE `id` = 3 AND `del_status` = 0 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0063s ]
+SQL: SELECT shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij,shop.depcsjlshi FROM `shop` INNER JOIN shop_type on shop.type_shop = shop_type.id  WHERE shop.zhuangt = 1 AND shop.depcsjlshi = 130100  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 64 LIMIT 1   [ RunTime:0.0022s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 44 行.
+NOTIC: [2] A non-numeric value encountered D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 62 LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 44 行.
+NOTIC: [2] A non-numeric value encountered D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 63 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0054s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `zhuangt` = 1  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2018-03-01T17:50:02+08:00 ] ::1 /kuaidian/index.php/Home/Index/banner.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001683s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0055s ]
+SQL: SELECT `pic` FROM `event` WHERE `status` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2018-03-01T17:50:09+08:00 ] ::1 /kuaidian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kuaidian\Application\Common\Helper\user_helper.php 第 47 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0100s ]
+SQL: SELECT `photo` FROM `user` WHERE `id` = 3 AND `del_status` = 0 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0062s ]
+SQL: SELECT shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij,shop.depcsjlshi FROM `shop` INNER JOIN shop_type on shop.type_shop = shop_type.id  WHERE shop.zhuangt = 1 AND shop.depcsjlshi = 130100  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 64 LIMIT 1   [ RunTime:0.0024s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 44 行.
+NOTIC: [2] A non-numeric value encountered D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 62 LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 44 行.
+NOTIC: [2] A non-numeric value encountered D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 63 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0066s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `zhuangt` = 1  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001651s ]
+
+[ 2018-03-01T17:50:10+08:00 ] ::1 /kuaidian/index.php/Home/Index/banner.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0085s ]
+SQL: SELECT `pic` FROM `event` WHERE `status` = 1  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2018-03-01T17:50:11+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/64.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 64  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 64 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 123 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 64 ORDER BY paix desc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0065s ]
+SQL: SELECT food.id,food.zhuangt,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = '64' ORDER BY food.id asc  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: food_num D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 189 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined index: foodnum D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 224 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 92 行.
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0015s ]
+NOTIC: [8] Use of undefined constant yuanjia - assumed 'yuanjia' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 117 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 124 行.
+NOTIC: [8] Undefined index: foodnum D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 125 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 283 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2018-03-01T17:50:11+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0066s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T17:50:14+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0085s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-03-01T17:57:33+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/64.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-01T18:06:26+08:00 ] ::1 /kuaidian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kuaidian\Application\Common\Helper\user_helper.php 第 47 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2018-03-01T18:06:47+08:00 ] ::1 /kuaidian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kuaidian\Application\Common\Helper\user_helper.php 第 47 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0064s ]
+SQL: SELECT `photo` FROM `user` WHERE `id` = 3 AND `del_status` = 0 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0076s ]
+SQL: SELECT shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij,shop.depcsjlshi FROM `shop` INNER JOIN shop_type on shop.type_shop = shop_type.id  WHERE shop.zhuangt = 1 AND shop.depcsjlshi = 130100  [ RunTime:0.0021s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 64 LIMIT 1   [ RunTime:0.0031s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 44 行.
+NOTIC: [2] A non-numeric value encountered D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 62 LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 44 行.
+NOTIC: [2] A non-numeric value encountered D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 63 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0049s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `zhuangt` = 1  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001013s ]
+
+[ 2018-03-01T18:06:47+08:00 ] ::1 /kuaidian/index.php/Home/Index/banner.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0093s ]
+SQL: SELECT `pic` FROM `event` WHERE `status` = 1  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2018-03-01T18:07:50+08:00 ] ::1 /kuaidian/index.php/Home/Index/detail/shopid/64.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 64  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 64 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 123 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 64 ORDER BY paix desc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0050s ]
+SQL: SELECT food.id,food.zhuangt,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = '64' ORDER BY food.id asc  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: food_num D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 189 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined index: foodnum D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 224 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 92 行.
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0011s ]
+NOTIC: [8] Use of undefined constant yuanjia - assumed 'yuanjia' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 117 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 124 行.
+NOTIC: [8] Undefined index: foodnum D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 125 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 283 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' D:\xampp\htdocs\kuaidian\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2018-03-01T18:07:50+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0085s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T18:07:53+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0060s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T18:07:54+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0063s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T18:07:55+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0070s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T18:07:56+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T18:07:57+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0072s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T18:07:58+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0097s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T18:07:59+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0085s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T18:08:00+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0066s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2018-03-01T18:08:01+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-03-01T18:08:02+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T18:08:03+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0061s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T18:08:04+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0070s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-03-01T18:08:05+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T18:08:06+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0023s ]
+
+[ 2018-03-01T18:08:07+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0066s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T18:08:08+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0079s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2018-03-01T18:08:09+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0058s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T18:08:10+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0063s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T18:08:11+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0081s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T18:08:12+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0090s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T18:08:13+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0084s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2018-03-01T18:08:14+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0054s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-03-01T18:08:15+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0062s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0027s ]
+
+[ 2018-03-01T18:08:16+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0120s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2018-03-01T18:08:17+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0069s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2018-03-01T18:08:18+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T18:08:19+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0078s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0033s ]
+
+[ 2018-03-01T18:08:20+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2018-03-01T18:08:21+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0055s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T18:08:22+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0063s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T18:08:23+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0060s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T18:08:24+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0095s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T18:08:25+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0065s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-03-01T18:08:26+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0072s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2018-03-01T18:08:27+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0057s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T18:08:28+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0074s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-03-01T18:08:29+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0088s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2018-03-01T18:08:30+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0059s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-03-01T18:08:31+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0075s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-03-01T18:08:32+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0078s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-03-01T18:08:33+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0086s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T18:08:34+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0060s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-03-01T18:08:35+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0059s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T18:08:36+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T18:08:37+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0058s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2018-03-01T18:08:38+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0075s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T18:08:39+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0058s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-03-01T18:08:40+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0066s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T18:08:41+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0059s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-03-01T18:08:42+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0071s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T18:08:43+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2018-03-01T18:08:44+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0091s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2018-03-01T18:08:45+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0076s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2018-03-01T18:08:46+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0058s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T18:08:47+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0058s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-03-01T18:08:48+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0073s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0024s ]
+
+[ 2018-03-01T18:08:49+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0058s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-03-01T18:08:50+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0081s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T18:08:51+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T18:08:52+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0056s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-03-01T18:08:53+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0063s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T18:08:54+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0072s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0023s ]
+
+[ 2018-03-01T18:08:55+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T18:08:56+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0055s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-03-01T18:08:57+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0056s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T18:08:58+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0068s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0025s ]
+
+[ 2018-03-01T18:08:59+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0061s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2018-03-01T18:09:00+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0075s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T18:09:01+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0085s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2018-03-01T18:09:08+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0071s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T18:09:16+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0063s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T18:09:24+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0079s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T18:09:31+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0076s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T18:09:37+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0067s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T18:09:42+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0069s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0023s ]
+
+[ 2018-03-01T18:09:50+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0073s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-03-01T18:09:56+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0081s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-01T18:10:02+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0074s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-03-01T18:10:08+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0066s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-03-01T18:10:13+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0076s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-01T18:10:18+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0065s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-03-01T18:10:25+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0080s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0023s ]
+
+[ 2018-03-01T18:10:30+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0057s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-03-01T18:10:36+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0059s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-01T18:10:41+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0064s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-03-01T18:10:46+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0077s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-03-01T18:10:54+08:00 ] ::1 /kuaidian/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0060s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
