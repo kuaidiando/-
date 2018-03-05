@@ -1,0 +1,60 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=T9Upu0sWr9Grt4EknLsa9DbU9emQlRYj"></script>  
+	<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script> 
+	<title>单击获取点击的经纬度</title>
+</head>
+<body>
+	<div id="allmap"></div>
+</body>
+</html>
+<script type="text/javascript">   
+	//获取 城市 名
+ //   var map = new BMap.Map("allmap");  
+	// var longitude, latitude;  
+	// navigator.geolocation.getCurrentPosition(function (position) {  
+	//     longitude = position.coords.longitude;  
+	//     latitude = position.coords.latitude;  
+	// });  
+	// setTimeout(function () {  
+	//     var gpsPoint = new BMap.Point(longitude, latitude);  
+	//     BMap.Convertor.translate(gpsPoint, 0, function (point) {  
+	//         var geoc = new BMap.Geocoder();  
+	//         geoc.getLocation(point, function (rs) {  
+	//             var addComp = rs.addressComponents;  
+	//             alert(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);  
+	//         });  
+	//     });  
+	// }, 3000);   
+	
+	//定位
+	var dizhi = "石家庄 长安区";
+	// alert(dizhi);
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");            
+	map.centerAndZoom(dizhi,15);           
+	//单击获取点击的经纬度
+	map.addEventListener("click",function(e){
+         // // clearAll();  //清除地图上存在的标注
+            var point = new BMap.Point(e.point.lng, e.point.lat);
+            map.centerAndZoom(point);
+             marker = new BMap.Marker(point);  // 创建新的标注
+            map.addOverlay(marker);    //将标注添加到地图上
+         //    
+         //    
+        var allOverlay = map.getOverlays();
+        for (var i = 0; i < allOverlay.length -1; i++){
+        	// alert(allOverlay[i].map.gf.lng);
+            if(allOverlay[i].map.gf.lng != e.point.lng){
+                map.removeOverlay(allOverlay[i]);
+                // return false;
+            }
+        }
+	});
+</script>
+

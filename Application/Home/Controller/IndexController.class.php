@@ -39,9 +39,15 @@ class IndexController extends Controller {
         $where['shop.depcsjlshi'] = 130100;//石家庄市
     	$res = $user->where($where)
                 ->join('shop_type on shop.type_shop = shop_type.id')
-                ->field("shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij,shop.depcsjlshi")->select();
+                ->field("shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij,shop.depcsjlshi,shop.baidu_lng,shop.baidu_lat")->select();
                 // dump($res);die;
         // 拼接星星数量
+        // $aa = 1817.17;
+        // $bb = cvrmkm($aa);
+        // dump($bb);
+        // // 起点坐标
+        // $longitude1 = 114.548983;
+        // $latitude1 = 38.043896;
         foreach ($res as $kres => $vres) {
              /**
              * 转换星星
@@ -73,13 +79,34 @@ class IndexController extends Controller {
             $res[$kres]['shixinxing'] = $shixinxing;//实心星星
             $res[$kres]['kongxinxing'] = $kongxinxing;//空心星星
             $res[$kres]['bangexing'] = $bangexing;//半个心星星
-            // 拼接座位号
+            /**
+             * 拼接座位号
+             * @var [type]
+             */
             $zuoweishu = $this->zuoweihao($vres['id']);
             $res[$kres]['zuoweishu'] = $zuoweishu;//座位数
+            /**
+             * 获取距离数
+             */
+            // 终点坐标
+            // $longitude2 = $vres['baidu_lng'];
+            // $latitude2 = $vres['baidu_lat'];
+            // //获得距离
+            // $distance = getDistance($longitude1, $latitude1, $longitude2, $latitude2, 1);
+            // //转化为 km
+            // echo $distance.'m'."<br>";
         }
-
+         
+        // // 终点坐标
+        // $longitude2 = 114.568639;
+        // $latitude2 = 38.049136;
+        
+        // $distance = getDistance($longitude1, $latitude1, $longitude2, $latitude2, 1);
+        // $distance2 = getDistance($longitude1, $latitude1, $longitude2, $latitude2, 2);
+        // echo $distance.'m';
+        // echo $distance2.'公里';
         // dump($res);die;
-        $this->assign('res',$res);
+        $this->assign('res',$res);//菜品信息
         $event = M('event')->where(array('status'=>1))->getField('pic',true);
         // dump($event);die;
         $this->assign('event',$event);

@@ -35,7 +35,10 @@ class EventController extends Controller {
         $this->display("detail");
     }
  
-   
+   public function aa(){
+    
+        $this->display();
+   }
 
   
    
