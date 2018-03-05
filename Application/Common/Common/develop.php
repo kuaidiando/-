@@ -163,8 +163,10 @@ function check_weixin_auth($return_url, $scope="snsapi_userinfo")
     
     $return_url = base64_encode($return_url);
     session('weixin_return_url', $return_url);
-    redirect(U("home/openapi/weixin/index/auth", "scope={$scope}"));
+    redirect(U("home/weichat/auth", "scope={$scope}"));
     return false;
+    // 
+    
 }
 
 //获取前台提交来的json数据
@@ -211,3 +213,15 @@ function random_hash($length = 4)
     }
     return $hash;
 }
+
+
+//是否微信端
+function is_weixin()
+{
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+    if(stripos($user_agent, 'MicroMessenger') !== false) {
+        return true;
+    }
+    return false;
+}
+

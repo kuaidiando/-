@@ -14,15 +14,10 @@ class IndexController extends Controller {
     
     public function _initialize()
     {
-        // $_SESSION['openid'] = '';exit;
-      
-        if(is_weixin()){
-            if(!$_SESSION['openid']){
+        // echo SITE_URL;exit;
+        redirect("Weichat/index");
 
-                $this->redirect('Auth/index');
-            }
-        }
-
+     
     }
 	//门店列表展示
     public function index(){
