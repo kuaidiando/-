@@ -23,7 +23,7 @@
                         <li><a href="#">待支付</a></li>
                         <li><a href="#">待使用</a></li>
                         <li><a href="#">已使用</a></li>
-                        <li><a href="#">待评价</a></li>
+                        <!-- <li><a href="#">待评价</a></li> -->
                         <li><a href="#">退款单</a></li>
                     </ul>
                     <!-- / tabs -->
@@ -32,11 +32,7 @@
                             <foreach name="order_res" item="res">
 
                                 <!-- <a href="dingdanxiangqing.html"> -->
-                            <if condition="$res.order_status eq 1">
-                                <a href="{:U('Home/Order/pay_again', array('order_id' => $res['id']))}" style="text-decoration:none">
-                            <else />
-                                <a href="{:U('Home/Order/dingdanxiangqing', array('order_id' => $res['id']))}" style="text-decoration:none">                          
-                            </if>
+
 
                                     <div class="hezi">
                                         <div class="name">
@@ -45,19 +41,25 @@
                                             </div>
 
                                             <div class="qu">
-                                           <!--  <if condition="$res.order_status eq 1 || $res.order_status eq 5">
-                                                <span>取消订单</span>
-                                            <elseif condition="$res.order_status eq 10"/>    
-                                                <span>去使用</span>
-                                            <elseif condition="$res.order_status eq 15"/>
-                                                <span>去评价</span>
+                                            <if condition="$res.order_status eq 1 || $res.order_status eq 5">
+                                                <span class="qqx" data-id="{$res.id}">取消订单</span>
+                                            <elseif condition="$res.order_status eq 12"/> 
+                                            <div class="wenben">
+                                                <span>去点评</span>
+                                            </div>   
+                                   <!--          <elseif condition="$res.order_status eq 15"/>
+                                                <span>去评价</span> -->
                                             <else />
                                                 <span></span>   
-                                            </if>      -->
-                                            <span></span>
+                                            </if>     
+                                            <!-- <span></span> -->
                                             </div>
                                         </div>
-
+                                    <if condition="$res.order_status eq 1">
+                                        <a href="{:U('Home/Order/pay_again', array('order_id' => $res['id']))}" style="text-decoration:none">
+                                    <else />
+                                        <a href="{:U('Home/Order/dingdanxiangqing', array('order_id' => $res['id']))}" style="text-decoration:none">                          
+                                    </if>
                                         <div class="hezi2">
                                             <div class="tu">
                                                 <img src="__PUBLIC__{$res.logo}" alt="">
@@ -90,13 +92,15 @@
                                                 <elseif condition="$res.order_status eq 5"/>
                                                     <span>待使用</span>
                                                     <elseif condition="$res.order_status eq 10"/>
-                                                    <span>待评价</span>
+                                                    <span>已使用</span>
+                                                    <elseif condition="$res.order_status eq 12"/>
+                                                    <span>已完成</span>                                                    
                                                     <elseif condition="$res.order_status eq 15"/>
                                                     <span>已完成</span>
                                                     <elseif condition="$res.order_status eq 20"/>
                                                     <span>退款单</span>
                                                     <else />
-                                                    <span>未知</span>
+                                                    <span>已使用</span>
                                                 </if>
                                                 </div>
 
@@ -108,8 +112,9 @@
                                             <!-- </a>     -->
 
                                         </div>
+                                    </a>
+
                                     </div>
-                                </a>
                             </foreach> 
                         </div>   
 
@@ -117,7 +122,6 @@
                             <foreach name="order_n" item="resn">
 
                                 <!-- <a href="dingdanxiangqing.html"> -->
-                                <a href="{:U('Home/Order/pay_again', array('order_id' => $res['id']))}" style="text-decoration:none">
                                     <div class="hezi">
                                         <div class="name">
                                             <div class="dian">
@@ -125,9 +129,10 @@
                                             </div>
 
                                             <div class="qu">
-                                                <!-- <span>取消订单</span> -->
+                                                <span class="qqx" data-id="{$resn.id}">取消订单</span>
                                             </div>
                                         </div>
+                                    <a href="{:U('Home/Order/pay_again', array('order_id' => $res['id']))}" style="text-decoration:none">
 
                                         <div class="hezi2">
                                             <div class="tu">
@@ -166,14 +171,14 @@
                                             </div>
                                             </a>
                                         </div>
+                                    </a>
+
                                     </div>
-                                </a>
                             </foreach>    
                         </div>
 
                         <div class="tabs_item hezi3">
                             <foreach name="order_s" item="ress">
-                                <a href="{:U('Home/Order/dingdanxiangqing', array('order_id' => $ress['id']))}" style="text-decoration:none">
                                 <!-- <a href="dingdanxiangqing.html"> -->
                                     <div class="hezi">
                                         <div class="name">
@@ -182,10 +187,11 @@
                                             </div>
 
                                             <div class="qu">
-                                                <!-- <span>取消订单</span> -->
+                                                <span class="qqx" data-id="{$ress.id}">取消订单</span>
                                                 <span></span>
                                             </div>
                                         </div>
+                                    <a href="{:U('Home/Order/dingdanxiangqing', array('order_id' => $ress['id']))}" style="text-decoration:none">
 
                                         <div class="hezi2">
                                             <div class="tu">
@@ -237,14 +243,14 @@
                                             </div>
                                             <!-- </a> -->
                                         </div>
+                                    </a>
+
                                     </div>
-                                </a>
                             </foreach>  
                         </div>
 
                         <div class="tabs_item hezi3">
                            <foreach name="order_u" item="resu">
-                                    <a href="{:U('Home/Order/dingdanxiangqing', array('order_id' => $resu['id']))}" style="text-decoration:none">
                                 <!-- <a href="dingdanxiangqing.html"> -->
                                     <div class="hezi">
                                         <div class="name">
@@ -253,13 +259,17 @@
                                             </div>
 
                                             <div class="qu">
-                                            <if condition="$resu.order_status eq 10 ">
-                                                <span></span>
+                                            <if condition="$resu.order_status eq 12 ">
+                                            <div class="wenben">
+                                                <span>去点评</span>
+                                                
+                                            </div>
                                             <else />
                                                 <span></span>
                                             </if>
                                             </div>
                                         </div>
+                                        <a href="{:U('Home/Order/dingdanxiangqing', array('order_id' => $resu['id']))}" style="text-decoration:none">
 
                                         <div class="hezi2">
                                             <div class="tu">
@@ -288,16 +298,16 @@
 
                                             <div class="dai">
                                                 <div class="yong">
-                                              <!--   <if condition="$resu.order_status eq 10 ">
-                                                    <span>待评价</span>
-                                                <elseif condition="$resu.order_status eq 15 "/>
+                                                <if condition="$resu.order_status eq 10 ">
+                                                    <span>待商家确认</span>
+                                                <elseif condition="$resu.order_status eq 11 "/>
+                                                    <span>制作中</span>
+                                                <elseif condition="$resu.order_status eq 12 "/>
                                                     <span>已完成</span>
-                                                <elseif condition="$resu.order_status eq 20 "/>
-                                                    <span>已取消</span>
                                                 <else/>
                                                     <span></span>
-                                                </if> -->
-                                                    <span>已使用</span>
+                                                </if>
+                                                    <!-- <span>已使用</span> -->
                                                 </div>
 
                                                 <div class="jian">
@@ -306,15 +316,15 @@
                                             </div>
                                             <!-- </a> -->
                                         </div>
+                                        </a>
+
                                     </div>
-                                </a>
                             </foreach> 
                         </div>
-
+<!-- 
                         <div class="tabs_item hezi3">
                             <foreach name="order_p" item="resp">
                                 <a href="{:U('Home/Order/dingdanxiangqing', array('order_id' => $resp['id']))}" style="text-decoration:none">
-                                <!-- <a href="dingdanxiangqing.html"> -->
                                     <div class="hezi">
                                         <div class="name">
                                             <div class="dian">
@@ -322,7 +332,6 @@
                                             </div>
 
                                             <div class="qu">
-                                                <!-- <span>去评价</span> -->
                                                 <span></span>
                                             </div>
                                         </div>
@@ -354,11 +363,7 @@
 
                                             <div class="dai">
                                                 <div class="yong">
-                                                <!--     <if condition="$resp.is_use eq 1 ">
-                                                    <span>已使用</span>
-                                                    <else />
-                                                    <span>未使用</span>
-                                                    </if> -->
+                                               
                                                     <span>待评价</span>
                                                     
                                                 </div>
@@ -367,16 +372,14 @@
                                                     <img src="__PUBLIC__/home/img/youjiantou.png" alt="">
                                                 </div>
                                             </div>
-                                            <!-- </a> -->
                                         </div>
                                     </div>
                                 </a>
                             </foreach> 
                         </div>
-
+ -->
                         <div class="tabs_item hezi3">
                             <foreach name="order_x" item="resx">
-                                <a href="{:U('Home/Order/dingdanxiangqing', array('order_id' => $resx['id']))}" style="text-decoration:none">
                                 <!-- <a href="dingdanxiangqing.html"> -->
                                     <div class="hezi">
                                         <div class="name">
@@ -388,6 +391,7 @@
                                                 <span></span>
                                             </div>
                                         </div>
+                                        <a href="{:U('Home/Order/dingdanxiangqing', array('order_id' => $resx['id']))}" style="text-decoration:none">
 
                                         <div class="hezi2">
                                             <div class="tu">
@@ -431,8 +435,9 @@
                                             </div>
                                             <!-- </a> -->
                                         </div>
+                                        </a>
+
                                     </div>
-                                </a>
                             </foreach>
                         </div>
                     </div>
@@ -472,6 +477,7 @@
 
 
 <script src="__PUBLIC__/home/js/jquery-1.12.4.min.js"></script>
+<script src="__PUBLIC__/home/js/jquery-1.12.4.js"></script>
 <script src="__PUBLIC__/home/js/tab.js"></script>
 <script>
     $(function () {
@@ -542,4 +548,33 @@
     </div>
 </div>
 </body>
+<script>
+    $('.qqx').click(function(){
+        var id = $(this).attr('data-id');
+        $.ajax({
+            type:'post',
+            dataType: 'json',
+            url:'{:U("Home/Order/qqx_order")}',
+            data:{ id:id },
+            success: function (result) {
+                if(result.code == 200){
+                    // $('.hao').removeClass('cj').addClass('jc1');
+                    // $('.shuzi span').html(result.data);
+                    // $('#xd').remove();
+                    // $('.foot').removeClass('foot').addClass('qtj').children().eq(0).html('已完成');
+                    // $('#use').html('已使用');
+                    // $('#wenben').remove();
+                    window.location.reload();
+
+                }else{
+                    alert(result.msg);
+
+                }
+            }
+        })
+        // alert(id);
+
+    })
+
+</script>
 </html>

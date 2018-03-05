@@ -7,6 +7,8 @@
     <title>快点—智慧餐厅</title>
     <link rel="icon" href="__PUBLIC__/home/img/logo1.png">
     <link rel="stylesheet" href="__PUBLIC__/home/css/index.css">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/swiper.min.css">
+
     <link rel="stylesheet" href="__PUBLIC__/home/css/base-index.css">
     <link rel="stylesheet" href="__PUBLIC__/home/css/base2.css">
     <link rel="stylesheet" href="__PUBLIC__/home/css/sousuo.css">
@@ -33,7 +35,33 @@
             _position: absolute;
             _top: expression(eval(document.documentElement.scrollTop));
         }
+        body{
+            margin: 0 !important;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
 
+        }
+        .swiper-slide {
+            text-align: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-slide img{
+            width: 100%;
+            height: 350px;
+        }
     </style>
 </head>
 <div style="font-size: 12px">
@@ -73,12 +101,33 @@
             </div>
         </div>
     </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <foreach name="event" item="one">
 
-    <!--轮播图-->
-    <div class="banner">
-        <iframe name="toppage" width=100% height=100% marginwidth=0 marginheight=0 frameborder="no" border="0" src="{:U('Home/Index/banner')}" ></iframe>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="__PUBLIC__/{$one}" alt="">
+                </a>
+            </div>
+            </foreach>
+        </div>
     </div>
-
+    <!-- Swiper JS -->
+    <script src="__PUBLIC__/home/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script type="text/javascript">
+        var swiper = new Swiper('.swiper-container', {
+            // spaceBetween: 30,//图片之间的距离
+            loop:true,//自动播放
+            centeredSlides: true,
+            speed:1300,
+            autoplay: {
+                delay: 3000,//多少秒切换
+                disableOnInteraction: false,//手滚动离开之后依然可以自然滚动
+            },
+        });
+    </script>
 
     <!--中间分类-->
     <div class="kong2" style="width: 100%;height: 120px;">
@@ -169,10 +218,11 @@
     <script src="__PUBLIC__/home/js/jquery-1.12.4.min.js"></script>
     <script src="__PUBLIC__/home/js/demo.js"></script>
 
-
-
+    
+    <div class="jsbdapi">
     <!--中间商品部分-->
     <foreach name="res" item="vores" key="k">
+
     <a href="{:U('Home/Index/detail',array('shopid'=>$vores[id]))}">
         <div class="shangpin">
             <div class="hezi">
@@ -303,6 +353,8 @@
     </a>
     </foreach>
 
+    </div>
+
 
 
 
@@ -346,5 +398,35 @@
         </div>
     </a>
 </div>
+<div id="allmap" style="display: none;"></div>
+<!-- 百度地图定位 -->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=T9Upu0sWr9Grt4EknLsa9DbU9emQlRYj"></script>
+<script type="text/javascript">
+    //获取坐标
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(116.331398,39.897445);
+    // map.centerAndZoom(point,12);
+
+    var geolocation = new BMap.Geolocation();
+    geolocation.getCurrentPosition(function(r){
+        if(this.getStatus() == BMAP_STATUS_SUCCESS){
+            var mk = new BMap.Marker(r.point);
+            map.addOverlay(mk);
+            map.panTo(r.point);
+            x = r.point.lng;
+            y = r.point.lat;
+            /**
+             *  jq 添加距离
+             */
+            alert(x);
+            alert(y);
+        }
+        else {
+            alert('failed'+this.getStatus());
+        }        
+    },{enableHighAccuracy: true})
+</script>
+
 </body>
 </html>

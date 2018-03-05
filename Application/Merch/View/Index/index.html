@@ -261,13 +261,10 @@
 
         <div class="foot">
 
-        <!-- <audio id="mp3" src="__PUBLIC__/aut/8868.wav">
+        <audio id="mp3" src="__PUBLIC__/aut/8868.mp3">
 
-        </audio> -->
-        <audio controls="controls" id="mp3" loop="loop" style="display: none">
-            <source src="__PUBLIC__/aut/8868.wav" type="audio/ogg" />
-            <!-- <source src="./assets/sound/music.ogg" type="audio/ogg" /> -->
         </audio>
+     
 
         <input type="hidden" id="store_id" name="store_id" value="{$res[0][id]}">
             <div class="ftu">
@@ -389,8 +386,8 @@
                     if(data > 0){
                         $('.nm').show();
                         $('.remind').text(data);
-                        // mp3.play();
-                        // play=remind;                      
+                        mp3.play();
+                        play=remind;                      
                     }else{
                         $('.nm').hide();
 

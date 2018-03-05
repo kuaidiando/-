@@ -193,4 +193,21 @@ function createNum($num){
             return $f.$i;  
         }  
     }  
+
 }  
+
+/**
+ * 随机产生A-Z, a-z, 0-9的字符串
+ * @param int $length 随机数的长度
+ * @return string
+ */
+function random_hash($length = 4)
+{
+    $salt = array_merge(range('A', 'Z'), range('a', 'z'), range(0, 9));
+    $count = count($salt);
+    $hash = '';
+    for ($i = 0; $i < $length; $i++) {
+        $hash .= $salt[mt_rand(0, $count-1)];
+    }
+    return $hash;
+}

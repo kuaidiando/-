@@ -184,7 +184,7 @@ class OrderController extends Controller {
         $sf = 0.00;
         $ye = 0.00;
         $order_id = I('post.order_id');
-        $user_id = uri('order',array('order_id'=>$order_id),'user_id');
+        $user_id = uri('order',array('id'=>$order_id),'user_id');
         // $order_status = uri('order',array('id'=>$order_id),'order_status');
         // if($order_status == 5){
             $sf = uri('money',array('order_id'=>$order_id),'sf');

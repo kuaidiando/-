@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.12.4.js"></script>
+</head>
+<body>
+<p id="demo">点击这个按钮，获得您的坐标：</p>
+<button onclick="getLocation()">试一下</button>
+<script>
+
+//页面加载事件114.53642538.037525http://api.map.baidu.com/geocoder?address=石家庄市中山路与体育大街交口&output=html&src=yourCompanyName|yourAppName
+$(document).ready(function(){
+
+var x=document.getElementById("demo");
+	if (navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(showPosition);
+    }else{x.innerHTML="Geolocation is not supported by this browser.";}
+});
+//获取经纬度
+function showPosition(position)
+  {
+  var Latitude = position.coords.latitude; 
+  var Longitude = position.coords.longitude;
+  alert("经度是"+Longitude+"维度是"+Latitude);	
+  }
+</script>
+</body>
+</html>
