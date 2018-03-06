@@ -212,8 +212,13 @@
             </div>
         </section>
     </div>
+<<<<<<< HEAD
+    <script src="/-/Public/home/js/jquery-1.12.4.min.js"></script>
+    <script src="/-/Public/home/js/demo.js"></script>
+=======
     <script src="/kuaidian/Public/home/js/jquery-1.12.4.min.js"></script>
     <script src="/kuaidian/Public/home/js/demo.js"></script>
+>>>>>>> b94aa3581232bb3ed3246aa79da204217e1bec18
 
     
     <div class="jsbdapi">
@@ -238,12 +243,20 @@
                             <div class="center">
                                 <div class="xing">
                                 <!-- 实心星数量 -->
+<<<<<<< HEAD
+                                <?php $__FOR_START_11558__=0;$__FOR_END_11558__=$vores["shixinxing"];for($i=$__FOR_START_11558__;$i < $__FOR_END_11558__;$i+=1){ ?><img src="/-/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
+=======
                                 <?php $__FOR_START_1142493388__=0;$__FOR_END_1142493388__=$vores["shixinxing"];for($i=$__FOR_START_1142493388__;$i < $__FOR_END_1142493388__;$i+=1){ ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
+>>>>>>> b94aa3581232bb3ed3246aa79da204217e1bec18
                                 <!-- 判断半个 星星 -->
                         <?php if($vores["bangexing"] == 1): ?><img src="/kuaidian/Public/home/img/ban.png" style="width:13%;" alt="">
                         <?php else: endif; ?>
                                 <!-- 空心星数量 -->
+<<<<<<< HEAD
+                                <?php $__FOR_START_32103__=0;$__FOR_END_32103__=$vores["kongxinxing"];for($i=$__FOR_START_32103__;$i < $__FOR_END_32103__;$i+=1){ ?><img src="/-/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
+=======
                                 <?php $__FOR_START_1005296679__=0;$__FOR_END_1005296679__=$vores["kongxinxing"];for($i=$__FOR_START_1005296679__;$i < $__FOR_END_1005296679__;$i+=1){ ?><img src="/kuaidian/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
+>>>>>>> b94aa3581232bb3ed3246aa79da204217e1bec18
                                     
                                 </div>
 
@@ -396,6 +409,15 @@
             var mk = new BMap.Marker(r.point);
             map.addOverlay(mk);
             map.panTo(r.point);
+<<<<<<< HEAD
+            x = r.point.lng;
+            y = r.point.lat;
+            /**
+             *  jq 添加距离
+             */
+            alert(x);
+            alert(y);
+=======
             var x = r.point.lng;
             var y = r.point.lat;
             // alert(x);
@@ -419,6 +441,7 @@
                 }
             })
 
+>>>>>>> b94aa3581232bb3ed3246aa79da204217e1bec18
         }
         else {
             alert('failed'+this.getStatus());

@@ -167,6 +167,7 @@ class WeichatController extends Controller {
                     echo '数据有误';
                     return false;
                 }
+                $_SESSION['openid'] = $request_info['openid'];
 
             } else {
 

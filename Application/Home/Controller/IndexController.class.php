@@ -15,11 +15,11 @@ class IndexController extends Controller {
     public function _initialize()
     {
         // $_SESSION['openid'] = '';exit;
-      
+      // dump($_SESSION['openid']);exit;
         if(is_weixin()){
             if(!$_SESSION['openid']){
 
-                $this->redirect('Auth/index');
+                redirect(U('Home/Auth/index'));
             }
         }
 

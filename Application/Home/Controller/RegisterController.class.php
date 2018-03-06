@@ -16,6 +16,7 @@ class RegisterController extends Controller {
 
     public function __call($action = '', $params = array())
     {
+        // dump($_SESSION);exit;
         $this->display('register');
     }
 
@@ -27,6 +28,7 @@ class RegisterController extends Controller {
         $password   = I('password', '', 'trim');
         $status     = I('status','','trim');
         $code    = I('yzm','','trim');
+        $openid = $_SESSION['openid'];
 
         $user = M("user");
         if (isset($this->get_data['tel']) && $this->get_data['tel']) {
@@ -80,9 +82,11 @@ class RegisterController extends Controller {
                     // 'update_ip'     => get_client_ip(),
                     'status'    => $status,
                     'is_agree'  => 1,
+                    'openid' => $openid,
             );
 
             $result = $user->add($info);
+
             if(!$result){
                 $data = array(
                             'data' => false,
@@ -92,6 +96,7 @@ class RegisterController extends Controller {
 
                 $this->ajaxReturn($data);
             }
+            M('weixin_user')->where(array('openid'=>$openid))->save(array('user_id'=>$result));
         }else{
                 $this->ajaxReturn(array(
                     'data' => false,
@@ -227,6 +232,7 @@ class RegisterController extends Controller {
                     'is_reg'     => 1,
                     'add_time'   => date('Y-m-d H:i:s'),
                     'status'     => $status,
+                    'openid'     => $_SESSION['openid'],
                     // 'update_ip'     => get_client_ip(),
                     // 'update_time'   => date('Y-m-d H:i:s'),
             );
@@ -241,7 +247,8 @@ class RegisterController extends Controller {
 
                 $this->ajaxReturn($data);
             }
-
+            M('weixin_user')->where(array('openid'=>$_SESSION['openid']))->save(array('user_id'=>$result));
+            $_SESSION['userid'] = $result;
             $user_info = uri('user', array('tel'=>$mobile));
         } else {
             $this->ajaxReturn(array(
