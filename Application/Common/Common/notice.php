@@ -42,7 +42,7 @@
 	 * @param Decimal $longitude2 终点经度 
 	 * @param Decimal $latitude2 终点纬度
 	 * @param Int   $unit    单位 1:米 2:公里
-	 * @param Int   $decimal  精度 保留小数位数
+	 * @param Int   $decimal  精度 保留小数位数031103626583
 	 * @return Decimal
 	 */
 	function getDistance($longitude1, $latitude1, $longitude2, $latitude2, $unit=2, $decimal=2){
@@ -69,7 +69,19 @@
 	  return round($distance, $decimal);
 	 
 	}
+	/**
+	 * 米数转化
+	 * @param  [type] $danwei [description]
+	 * @return [type]         [description]
+	 */
 	function cvrmkm($danwei){
-		return $danwei;
+		if ($danwei < 1000) {
+			$danwei = $danwei;
+			$houdanwei = "m";
+		}else{
+			$danwei = $danwei/1000;
+			$houdanwei = "km";
+		}
+		return round($danwei,2).$houdanwei;
 	}
 ?>

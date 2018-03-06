@@ -28,10 +28,9 @@ class IndexController extends Controller {
     public function index(){
         
         //头像
-        $user_id = \user_helper::get_user_id();
-        $user_photo = uri("user",array('id'=>3,"del_status"=>0),"photo");
-        // dump($user_photo);die;
-        $this->assign('user_photo',$user_photo);
+        $openid = $_SESSION['openid'];
+        $photo = M('weixin_user')->where(array('openid'=>$openid))->getField('photo');
+        $this->assign('photo',$photo);
 
         //门店列表
     	$user = M('shop');
@@ -42,12 +41,10 @@ class IndexController extends Controller {
                 ->field("shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij,shop.depcsjlshi,shop.baidu_lng,shop.baidu_lat")->select();
                 // dump($res);die;
         // 拼接星星数量
-        // $aa = 1817.17;
-        // $bb = cvrmkm($aa);
-        // dump($bb);
+        
         // // 起点坐标
-        // $longitude1 = 114.548983;
-        // $latitude1 = 38.043896;
+        $longitude1 = 114.548983;
+        $latitude1 = 38.043896;
         foreach ($res as $kres => $vres) {
              /**
              * 转换星星
@@ -89,22 +86,17 @@ class IndexController extends Controller {
              * 获取距离数
              */
             // 终点坐标
-            // $longitude2 = $vres['baidu_lng'];
-            // $latitude2 = $vres['baidu_lat'];
-            // //获得距离
-            // $distance = getDistance($longitude1, $latitude1, $longitude2, $latitude2, 1);
-            // //转化为 km
-            // echo $distance.'m'."<br>";
+            $longitude2 = $vres['baidu_lng'];
+            $latitude2 = $vres['baidu_lat'];
+            //获得距离
+            $distance = getDistance($longitude1, $latitude1, $longitude2, $latitude2, 1);
+            //转化为 km
+            $dodistance = cvrmkm($distance);
+            //拼会原数组
+            $res[$kres]['juli'] = $dodistance;//距离--单位
+            // echo $dodistance;
+            // echo "<br>";
         }
-         
-        // // 终点坐标
-        // $longitude2 = 114.568639;
-        // $latitude2 = 38.049136;
-        
-        // $distance = getDistance($longitude1, $latitude1, $longitude2, $latitude2, 1);
-        // $distance2 = getDistance($longitude1, $latitude1, $longitude2, $latitude2, 2);
-        // echo $distance.'m';
-        // echo $distance2.'公里';
         // dump($res);die;
         $this->assign('res',$res);//菜品信息
         $event = M('event')->where(array('status'=>1))->getField('pic',true);
@@ -116,6 +108,40 @@ class IndexController extends Controller {
         $resmdlx = $usermdlx->where(array('zhuangt'=>1))->field('mingch')->select();
         $this->assign("resmdlx",$resmdlx);
         $this->display();
+    }
+    //ajax 获取菜品信息
+    public function ajaxfoodjuli(){
+         //门店列表
+        $user = M('shop');
+        $where['shop.zhuangt'] =  1;//是否上架 1--上架 2 --否
+        $where['shop.depcsjlshi'] = 130100;//石家庄市
+        $res = $user->where($where)
+                ->join('shop_type on shop.type_shop = shop_type.id')
+                ->field("shop.id,shop.baidu_lng,shop.baidu_lat")->select();
+                // dump($res);die;
+        // 拼接星星数量
+        
+        // // 起点坐标
+        $longitude1 = I("post.lng");
+        $latitude1 = I("post.lat");
+        foreach ($res as $kres => $vres) {
+            
+            /**
+             * 获取距离数
+             */
+            // 终点坐标
+            $longitude2 = $vres['baidu_lng'];
+            $latitude2 = $vres['baidu_lat'];
+            //获得距离
+            $distance = getDistance($longitude1, $latitude1, $longitude2, $latitude2, 1);
+            //转化为 km
+            $dodistance = cvrmkm($distance);
+            //拼会原数组
+            $res[$kres]['juli'] = $dodistance;//距离--单位
+            // echo $dodistance;
+            // echo "<br>";
+        }
+        $this->ajaxReturn($res);
     }
     //获取桌位号
     private function zuoweihao($shopid){

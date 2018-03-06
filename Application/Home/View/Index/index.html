@@ -96,7 +96,7 @@
 
             <div class="person">
                 <div class="tx">
-                    <img src="__PUBLIC__/{$user_photo}" alt="">
+                    <img src="__PUBLIC__/{$photo}" alt="">
                 </div>
             </div>
         </div>
@@ -265,7 +265,7 @@
 
 
                                 <div class="juli">
-                                    <span>666m</span>
+                                    <span class="{$vores.id}">666m</span>
                                 </div>
                             </div>
 
@@ -414,13 +414,29 @@
             var mk = new BMap.Marker(r.point);
             map.addOverlay(mk);
             map.panTo(r.point);
-            x = r.point.lng;
-            y = r.point.lat;
+            var x = r.point.lng;
+            var y = r.point.lat;
+            // alert(x);
             /**
              *  jq 添加距离
              */
-            alert(x);
-            alert(y);
+            $.ajax({
+                type:"post",
+                dataType:'json',
+                async:false,
+                url:'{:U("home/index/ajaxfoodjuli")}',
+                data:{"lng":x,"lat":y},
+                success:function(dd){
+                    console.log(dd);
+                    $.each(dd,function(index,item){
+                        var juliid = item.id;
+                        // alert(juliid);
+                        $("."+juliid+"").html(item.juli);
+                    });
+                    // $(".jsbdapi").html(str);
+                }
+            })
+
         }
         else {
             alert('failed'+this.getStatus());
