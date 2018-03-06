@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="__PUBLIC__/home/css/base-index.css">
     <link rel="stylesheet" href="__PUBLIC__/home/css/base2.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/sousuo.css">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/fenlei.css">
     <script src="__PUBLIC__/home/js/flexible.js"></script>
     <script src="__PUBLIC__/home/js/jquery-1.12.4.js"></script>
     <script>
@@ -88,7 +88,7 @@
                     </div>
 
                     <div class="tet">
-                        <input type="text" placeholder="搜索商品或商家">
+                        <input type="text" id="sousuocite" placeholder="搜索商品或商家">
                     </div>
                 </div>
             </div>
@@ -416,26 +416,29 @@
             map.panTo(r.point);
             var x = r.point.lng;
             var y = r.point.lat;
-            // alert(x);
-            /**
+            if(x && y){
+                /**
              *  jq 添加距离
              */
-            $.ajax({
-                type:"post",
-                dataType:'json',
-                async:false,
-                url:'{:U("home/index/ajaxfoodjuli")}',
-                data:{"lng":x,"lat":y},
-                success:function(dd){
-                    console.log(dd);
-                    $.each(dd,function(index,item){
-                        var juliid = item.id;
-                        // alert(juliid);
-                        $("."+juliid+"").html(item.juli);
-                    });
-                    // $(".jsbdapi").html(str);
-                }
-            })
+                $.ajax({
+                    type:"post",
+                    dataType:'json',
+                    async:false,
+                    url:'{:U("home/index/ajaxfoodjuli")}',
+                    data:{"lng":x,"lat":y},
+                    success:function(dd){
+                        // console.log(dd);
+                        $.each(dd,function(index,item){
+                            var juliid = item.id;
+                            $(".juli > ."+juliid+"").html(item.juli);
+                        });
+                    }
+                })
+            }else{
+                alert("无法定位您的位置");
+            }
+            // alert(x);
+            
 
         }
         else {
@@ -443,6 +446,19 @@
         }        
     },{enableHighAccuracy: true})
 </script>
+<!-- 城市选择 -->
+<script type="text/javascript">
 
+// <!-- 城市选择 -->
+    $(".cs").click(function(){
+        var url = '{:U("Home/Index/cityxuanze")}';
+        window.location.replace(url);
+    });
+    //搜索商家
+    $("#sousuocite").focus(function(){
+        var url = '{:U("Home/Index/citysousuo")}';
+        window.location.replace(url);
+    });
+</script>
 </body>
 </html>
