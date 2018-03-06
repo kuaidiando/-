@@ -321,6 +321,10 @@ class OrderController extends Controller {
     }
     //订单列表
     public function order_info(){
+        $user_id = \user_helper::get_user_id();
+        if(!$user_id){
+            $this->redirect('Login/index');
+        }
         //全部订单
         $order_res = M('order')->where(array('user_id'=>$this->user_id))->select();
         foreach($order_res as $key=>$value){

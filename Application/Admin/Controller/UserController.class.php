@@ -33,6 +33,12 @@ class UserController extends BasicController {
       );
       $user_num = $user->where($where)->count();
       $user_info = $user->where($where)->select();
+      foreach($user_info as $k=>$v){
+        $user_info[$k]['photo'] = uri('weixin_user',array('user_id'=>$v['id']),'photo');
+        $user_info[$k]['sex'] = uri('weixin_user',array('user_id'=>$v['id']),'sex');
+        $user_info[$k]['province'] = uri('weixin_user',array('user_id'=>$v['id']),'province');
+        $user_info[$k]['city'] = uri('weixin_user',array('user_id'=>$v['id']),'city');
+      }
       // dump($user_info);exit;
       $this->assign('user_info',$user_info);
       $this->assign('user_num',$user_num);
