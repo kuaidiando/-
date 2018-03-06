@@ -18,9 +18,9 @@
         <div class="person">
             <a href="#">
                 <!-- <img src="images/person.jpg" alt=""> -->
-                <?php if($user_info["photo"] == 'NULL'): ?><img src="/-/Public/<?php echo ($user_info["photo"]); ?>" alt="">
+                <?php if($user_info["photo"] == 'NULL'): ?><img src="<?php echo ($user_info["photo"]); ?>" alt="">
                 <?php else: ?>
-                <img src="/-/Public/<?php echo ($user_info["photo"]); ?>" alt=""><?php endif; ?>  
+                <img src="<?php echo ($user_info["photo"]); ?>" alt=""><?php endif; ?>  
             </a>
         </div>
 
@@ -39,7 +39,7 @@
     <?php else: ?>
         <a href="<?php echo U('Home/Login/index');?>">
             <div class="name">
-                    <span>注册/登录</span>
+                    <span>登录/注册</span>
             </div>
 
         </a><?php endif; ?>
@@ -171,14 +171,12 @@
 </a>
 <!-- 退出 -->
 <?php if($uid > 0): ?><a href="<?php echo U('Home/Person/tc');?>">
-    <div class="all" id="tc">
+    <div class="tc" id="tc">
         <!-- <div class="tu">
             <img src="/-/Public/home/img/woshi.png" alt="">
         </div> -->
 
-        <div>
-            <span style="width:100%;font-size:40.8px;text-align:center;display:block;color:red;">退&nbsp;出</span>
-        </div>
+        <span>退出登录</span>
     </div>
 </a>
 <?php else: endif; ?>

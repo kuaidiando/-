@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>快点—智慧餐厅</title>
-    <link rel="icon" href="/kuaidian/Public/home/img/logo1.png">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/index.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/swiper.min.css">
+    <link rel="icon" href="/-/Public/home/img/logo1.png">
+    <link rel="stylesheet" href="/-/Public/home/css/index.css">
+    <link rel="stylesheet" href="/-/Public/home/css/swiper.min.css">
 
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/base-index.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/base2.css">
-    <link rel="stylesheet" href="/kuaidian/Public/home/css/sousuo.css">
-    <script src="/kuaidian/Public/home/js/flexible.js"></script>
-    <script src="/kuaidian/Public/home/js/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="/-/Public/home/css/base-index.css">
+    <link rel="stylesheet" href="/-/Public/home/css/base2.css">
+    <link rel="stylesheet" href="/-/Public/home/css/sousuo.css">
+    <script src="/-/Public/home/js/flexible.js"></script>
+    <script src="/-/Public/home/js/jquery-1.12.4.js"></script>
     <script>
         $(function(){
             $(window).scroll(function() {
@@ -76,7 +76,7 @@
                 </div>
                 
                 <div class="xl">
-                    <img src="/kuaidian/Public/home/img/jiantou2.png" alt="">
+                    <img src="/-/Public/home/img/jiantou2.png" alt="">
                 </div>
             </div>
 
@@ -84,7 +84,7 @@
             <div class="lookup">
                 <div class="look">
                     <div class="sou">
-                        <img src="/kuaidian/Public/home/img/loogup.png" alt="">
+                        <img src="/-/Public/home/img/loogup.png" alt="">
                     </div>
 
                     <div class="tet">
@@ -96,7 +96,7 @@
 
             <div class="person">
                 <div class="tx">
-                    <img src="/kuaidian/Public/<?php echo ($photo); ?>" alt="">
+                    <img src="/-/Public/<?php echo ($photo); ?>" alt="">
                 </div>
             </div>
         </div>
@@ -105,13 +105,13 @@
         <div class="swiper-wrapper">
             <?php if(is_array($event)): foreach($event as $key=>$one): ?><div class="swiper-slide">
                 <a href="#">
-                    <img src="/kuaidian/Public/<?php echo ($one); ?>" alt="">
+                    <img src="/-/Public/<?php echo ($one); ?>" alt="">
                 </a>
             </div><?php endforeach; endif; ?>
         </div>
     </div>
     <!-- Swiper JS -->
-    <script src="/kuaidian/Public/home/js/swiper.min.js"></script>
+    <script src="/-/Public/home/js/swiper.min.js"></script>
     <!-- Initialize Swiper -->
     <script type="text/javascript">
         var swiper = new Swiper('.swiper-container', {
@@ -137,7 +137,7 @@
                         </div>
 
                         <div class="san">
-                            <img src="/kuaidian/Public/home/img/sanjiao.png" alt="">
+                            <img src="/-/Public/home/img/sanjiao.png" alt="">
                         </div>
                     </li>
                     
@@ -147,7 +147,7 @@
                         </div>
 
                         <div class="san">
-                            <img src="/kuaidian/Public/home/img/sanjiao.png" alt="">
+                            <img src="/-/Public/home/img/sanjiao.png" alt="">
                         </div>
                     </li>
                     
@@ -157,7 +157,7 @@
                         </div>
 
                         <div class="san">
-                            <img src="/kuaidian/Public/home/img/sanjiao.png" alt="">
+                            <img src="/-/Public/home/img/sanjiao.png" alt="">
                         </div>
                     </li>
                 </ul>
@@ -212,13 +212,8 @@
             </div>
         </section>
     </div>
-<<<<<<< HEAD
     <script src="/-/Public/home/js/jquery-1.12.4.min.js"></script>
     <script src="/-/Public/home/js/demo.js"></script>
-=======
-    <script src="/kuaidian/Public/home/js/jquery-1.12.4.min.js"></script>
-    <script src="/kuaidian/Public/home/js/demo.js"></script>
->>>>>>> b94aa3581232bb3ed3246aa79da204217e1bec18
 
     
     <div class="jsbdapi">
@@ -229,7 +224,7 @@
                 <div class="hz">
                     <div class="top">
                         <div class="tu">
-                            <img src="/kuaidian/Public<?php echo ($vores["logo"]); ?>" alt="">
+                            <img src="/-/Public<?php echo ($vores["logo"]); ?>" alt="">
                         </div>
 
                         <div class="you">
@@ -243,20 +238,12 @@
                             <div class="center">
                                 <div class="xing">
                                 <!-- 实心星数量 -->
-<<<<<<< HEAD
-                                <?php $__FOR_START_11558__=0;$__FOR_END_11558__=$vores["shixinxing"];for($i=$__FOR_START_11558__;$i < $__FOR_END_11558__;$i+=1){ ?><img src="/-/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
-=======
-                                <?php $__FOR_START_1142493388__=0;$__FOR_END_1142493388__=$vores["shixinxing"];for($i=$__FOR_START_1142493388__;$i < $__FOR_END_1142493388__;$i+=1){ ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
->>>>>>> b94aa3581232bb3ed3246aa79da204217e1bec18
+                                <?php $__FOR_START_23597__=0;$__FOR_END_23597__=$vores["shixinxing"];for($i=$__FOR_START_23597__;$i < $__FOR_END_23597__;$i+=1){ ?><img src="/-/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
                                 <!-- 判断半个 星星 -->
-                        <?php if($vores["bangexing"] == 1): ?><img src="/kuaidian/Public/home/img/ban.png" style="width:13%;" alt="">
+                        <?php if($vores["bangexing"] == 1): ?><img src="/-/Public/home/img/ban.png" style="width:13%;" alt="">
                         <?php else: endif; ?>
                                 <!-- 空心星数量 -->
-<<<<<<< HEAD
-                                <?php $__FOR_START_32103__=0;$__FOR_END_32103__=$vores["kongxinxing"];for($i=$__FOR_START_32103__;$i < $__FOR_END_32103__;$i+=1){ ?><img src="/-/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
-=======
-                                <?php $__FOR_START_1005296679__=0;$__FOR_END_1005296679__=$vores["kongxinxing"];for($i=$__FOR_START_1005296679__;$i < $__FOR_END_1005296679__;$i+=1){ ?><img src="/kuaidian/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
->>>>>>> b94aa3581232bb3ed3246aa79da204217e1bec18
+                                <?php $__FOR_START_9570__=0;$__FOR_END_9570__=$vores["kongxinxing"];for($i=$__FOR_START_9570__;$i < $__FOR_END_9570__;$i+=1){ ?><img src="/-/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
                                     
                                 </div>
 
@@ -286,11 +273,11 @@
                                 </div>
 
                                 <div class="quan">
-                                    <img src="/kuaidian/Public/home/img/quan2.png" alt="">
+                                    <img src="/-/Public/home/img/quan2.png" alt="">
                                 </div>
 
                                 <div class="dian">
-                                    <img src="/kuaidian/Public/home/img/dian.png" alt="">
+                                    <img src="/-/Public/home/img/dian.png" alt="">
                                 </div>
                             </div>
 
@@ -304,7 +291,7 @@
 
                     <div class="bot">
                         <div class="tui">
-                            <img src="/kuaidian/Public/home/img/tuiguang.png" alt="">
+                            <img src="/-/Public/home/img/tuiguang.png" alt="">
                         </div>
 
                         <div class="jia">
@@ -322,12 +309,12 @@
                     <?php if($vores["zuoweishu"] == 0): else: ?>
                         <div class="xia2">
                             <div class="zzuo">
-                                <img src="/kuaidian/Public/home/img/jinri.png" alt="">
+                                <img src="/-/Public/home/img/jinri.png" alt="">
                             </div>
 
                             <div class="yyou">
                                 <div class="xuan">
-                                    <img src="/kuaidian/Public/home/img/dingzuo.png" alt="">
+                                    <img src="/-/Public/home/img/dingzuo.png" alt="">
                                 </div>
 
                                 <div class="ke">
@@ -359,7 +346,7 @@
     <a href="<?php echo U('Home/Index/index');?>">
         <div id="foot">
             <div id="ttu">
-                <img src="/kuaidian/Public/home/img/shangjia2.png" alt="">
+                <img src="/-/Public/home/img/shangjia2.png" alt="">
             </div>
 
             <div id="shou">
@@ -372,7 +359,7 @@
     <a href="<?php echo U('Home/Order/order_info');?> ">
         <div id="foot2">
             <div id="ttu2">
-                <img src="/kuaidian/Public/home/img/diangdan.png" alt="">
+                <img src="/-/Public/home/img/diangdan.png" alt="">
             </div>
 
             <div id="shou2">
@@ -384,7 +371,7 @@
     <a href="<?php echo U('Home/Person/index');?>">
         <div id="foot3" onclick="location.href='person.html'">
             <div id="ttu3">
-               <img src="/kuaidian/Public/home/img/geren.png" alt="">
+               <img src="/-/Public/home/img/geren.png" alt="">
             </div>
 
             <div id="shou3">
@@ -409,15 +396,6 @@
             var mk = new BMap.Marker(r.point);
             map.addOverlay(mk);
             map.panTo(r.point);
-<<<<<<< HEAD
-            x = r.point.lng;
-            y = r.point.lat;
-            /**
-             *  jq 添加距离
-             */
-            alert(x);
-            alert(y);
-=======
             var x = r.point.lng;
             var y = r.point.lat;
             // alert(x);
@@ -441,7 +419,6 @@
                 }
             })
 
->>>>>>> b94aa3581232bb3ed3246aa79da204217e1bec18
         }
         else {
             alert('failed'+this.getStatus());
