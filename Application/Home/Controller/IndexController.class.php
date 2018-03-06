@@ -143,6 +143,14 @@ class IndexController extends Controller {
         }
         $this->ajaxReturn($res);
     }
+    //选择城市
+    public function cityxuanze(){
+        $this->display();
+    }
+    //搜索城市
+    public function citysousuo(){
+        $this->display();
+    }
     //获取桌位号
     private function zuoweihao($shopid){
         $where['dep_shop'] = $shopid;
