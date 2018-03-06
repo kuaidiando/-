@@ -2663,3 +2663,31 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
 ERR: 非法操作:home
 
+[ 2018-03-06T11:42:22+08:00 ] 192.168.0.109 /kuaidian/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+NOTIC: [8] Undefined index: openid D:\xampp\htdocs\kuaidian\Application\Home\Controller\IndexController.class.php 第 20 行.
+
+[ 2018-03-06T11:42:22+08:00 ] 192.168.0.109 /kuaidian/index.php/Home/Auth/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+NOTIC: [8] Undefined index: return_url D:\xampp\htdocs\kuaidian\Application\Home\Controller\AuthController.class.php 第 10 行.
+NOTIC: [8] Use of undefined constant SITE_URL - assumed 'SITE_URL' D:\xampp\htdocs\kuaidian\Application\Home\Controller\AuthController.class.php 第 21 行.
+
+[ 2018-03-06T11:42:22+08:00 ] 192.168.0.109 /kuaidian/index.php/Home/Auth/home/weichat/auth
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+ERR: 非法操作:home
+
