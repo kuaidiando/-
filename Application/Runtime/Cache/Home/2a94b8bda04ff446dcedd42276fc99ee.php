@@ -101,11 +101,6 @@
             </div>
         </div>
     </header>
-
-    <!--轮播图-->
-   <!--  <div class="banner">
-        <iframe name="toppage" width=100% height=100% marginwidth=0 marginheight=0 frameborder="no" border="0" src="<?php echo U('Home/Index/banner');?>" ></iframe>
-    </div> -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <?php if(is_array($event)): foreach($event as $key=>$one): ?><div class="swiper-slide">
@@ -113,30 +108,6 @@
                     <img src="/-/Public/<?php echo ($one); ?>" alt="">
                 </a>
             </div><?php endforeach; endif; ?>
-
-         <!--    <div class="swiper-slide">
-                <a href="#">
-                    <img src="images/6.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="swiper-slide">
-                <a href="#">
-                    <img src="images/7.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="swiper-slide">
-                <a href="#">
-                    <img src="images/10%20(1).jpg" alt="">
-                </a>
-            </div>
-
-            <div class="swiper-slide">
-                <a href="#">
-                    <img src="images/10%20(2).jpg" alt="">
-                </a>
-            </div> -->
         </div>
     </div>
     <!-- Swiper JS -->
@@ -152,14 +123,6 @@
                 delay: 3000,//多少秒切换
                 disableOnInteraction: false,//手滚动离开之后依然可以自然滚动
             },
-            // pagination: {
-            //     el: '.swiper-pagination',
-            //     clickable: true,
-            // },
-            // navigation: {
-            //     nextEl: '.swiper-button-next',
-            //     prevEl: '.swiper-button-prev',
-            // },
         });
     </script>
 
@@ -252,8 +215,8 @@
     <script src="/-/Public/home/js/jquery-1.12.4.min.js"></script>
     <script src="/-/Public/home/js/demo.js"></script>
 
-
-
+    
+    <div class="jsbdapi">
     <!--中间商品部分-->
     <?php if(is_array($res)): foreach($res as $k=>$vores): ?><a href="<?php echo U('Home/Index/detail',array('shopid'=>$vores[id]));?>">
         <div class="shangpin">
@@ -275,12 +238,12 @@
                             <div class="center">
                                 <div class="xing">
                                 <!-- 实心星数量 -->
-                                <?php $__FOR_START_12505__=0;$__FOR_END_12505__=$vores["shixinxing"];for($i=$__FOR_START_12505__;$i < $__FOR_END_12505__;$i+=1){ ?><img src="/-/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
+                                <?php $__FOR_START_11558__=0;$__FOR_END_11558__=$vores["shixinxing"];for($i=$__FOR_START_11558__;$i < $__FOR_END_11558__;$i+=1){ ?><img src="/-/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
                                 <!-- 判断半个 星星 -->
                         <?php if($vores["bangexing"] == 1): ?><img src="/-/Public/home/img/ban.png" style="width:13%;" alt="">
                         <?php else: endif; ?>
                                 <!-- 空心星数量 -->
-                                <?php $__FOR_START_6814__=0;$__FOR_END_6814__=$vores["kongxinxing"];for($i=$__FOR_START_6814__;$i < $__FOR_END_6814__;$i+=1){ ?><img src="/-/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
+                                <?php $__FOR_START_32103__=0;$__FOR_END_32103__=$vores["kongxinxing"];for($i=$__FOR_START_32103__;$i < $__FOR_END_32103__;$i+=1){ ?><img src="/-/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
                                     
                                 </div>
 
@@ -372,6 +335,8 @@
         </div>
     </a><?php endforeach; endif; ?>
 
+    </div>
+
 
 
 
@@ -415,5 +380,35 @@
         </div>
     </a>
 </div>
+<div id="allmap" style="display: none;"></div>
+<!-- 百度地图定位 -->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=T9Upu0sWr9Grt4EknLsa9DbU9emQlRYj"></script>
+<script type="text/javascript">
+    //获取坐标
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(116.331398,39.897445);
+    // map.centerAndZoom(point,12);
+
+    var geolocation = new BMap.Geolocation();
+    geolocation.getCurrentPosition(function(r){
+        if(this.getStatus() == BMAP_STATUS_SUCCESS){
+            var mk = new BMap.Marker(r.point);
+            map.addOverlay(mk);
+            map.panTo(r.point);
+            x = r.point.lng;
+            y = r.point.lat;
+            /**
+             *  jq 添加距离
+             */
+            alert(x);
+            alert(y);
+        }
+        else {
+            alert('failed'+this.getStatus());
+        }        
+    },{enableHighAccuracy: true})
+</script>
+
 </body>
 </html>

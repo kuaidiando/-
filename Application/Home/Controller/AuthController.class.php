@@ -31,7 +31,7 @@ class AuthController extends Controller {
             session('weixin_return_url', $return_url);
             // // dump($return_url);exit;
             // $a = U("Home/weichat/auth", "scope=snsapi_userinfo");
-            redirect("home/weichat/auth");
+            redirect(U("Home/Weichat/auth"));
             // redirect($a);
             return false;
         }

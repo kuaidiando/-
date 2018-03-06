@@ -25,10 +25,14 @@ class PersonController extends Controller {
     public function index(){
         // dump($_SESSION);exit;
         // $_SESSION = '';exit;
+        $openid = $_SESSION['openid'];
         $per = M('user');
         $uid = \user_helper::get_user_id();
         $user_info = $per->where(array('id'=>$uid))->find();
         $user_info['tel'] = substr_replace($user_info['tel'], '****', 3, 4);
+        $user_info['photo'] = M('weixin_user')->where(array('openid'=>$openid))->getField('photo');
+        $user_info['nick_name'] = M('weixin_user')->where(array('openid'=>$openid))->getField('nickname');
+
         $this->assign('user_info',$user_info);
         $this->assign('uid',$uid);
         $this->display("person");
