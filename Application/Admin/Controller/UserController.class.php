@@ -37,6 +37,7 @@ class UserController extends BasicController {
         $user_info[$k]['photo'] = uri('weixin_user',array('user_id'=>$v['id']),'photo');
         $user_info[$k]['sex'] = uri('weixin_user',array('user_id'=>$v['id']),'sex');
         $user_info[$k]['province'] = uri('weixin_user',array('user_id'=>$v['id']),'province');
+        $user_info[$k]['nickname'] = uri('weixin_user',array('user_id'=>$v['id']),'nickname');
         $user_info[$k]['city'] = uri('weixin_user',array('user_id'=>$v['id']),'city');
       }
       // dump($user_info);exit;

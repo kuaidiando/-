@@ -48,6 +48,7 @@ class WeichatController extends Controller {
         $state      = random_hash(6);
         $_SESSION['weixin_oauth2_state'] = $state;
         $callback = urlencode($this->callback);
+        
         // echo $callback;exit;
         // if (!$this->user_id) {
         //     redirect($return_url);

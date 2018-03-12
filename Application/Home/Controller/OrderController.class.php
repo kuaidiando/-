@@ -238,7 +238,7 @@ class OrderController extends Controller {
                 // M('order')->where()
                 $money_change = M('user')->where(array('id'=>$this->user_id))->save($filter);
                 if($money_change){
-                    M('order')->where(array('id'=>$order_id))->save(array('order_status'=>5,'pay_time'=>date('Y-m-d H:i:s'),time()));
+                    M('order')->where(array('id'=>$order_id))->save(array('order_status'=>5,'pay_time'=>date('Y-m-d H:i:s',time()),'sf'=>$sf));
                     $money_data = array();
                     $money_data = array(
                         'order_id'   =>$order_id,

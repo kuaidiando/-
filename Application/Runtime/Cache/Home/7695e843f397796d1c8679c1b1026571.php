@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" data-dpr="1" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>支付订单</title>
-    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/zhifuye.css">
-    <script src="__PUBLIC__/home/js/jquery-1.12.4.js"></script>
-    <script src="__PUBLIC__/home/js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="/-/Public/home/css/base.css">
+    <link rel="stylesheet" href="/-/Public/home/css/zhifuye.css">
+    <script src="/-/Public/home/js/jquery-1.12.4.js"></script>
+    <script src="/-/Public/home/js/jquery-1.12.4.min.js"></script>
 
 
 
@@ -71,7 +71,7 @@
             </div>
 
             <div class="name">
-                <span>{$shopname}</span>
+                <span><?php echo ($shopname); ?></span>
             </div>
         </div>
 
@@ -81,7 +81,7 @@
             </div>
 
             <div class="hao">
-                <span>{$order_code}</span>
+                <span><?php echo ($order_code); ?></span>
             </div>
         </div>
     </div>
@@ -99,14 +99,14 @@
             </div>
 
             <div class="qian">
-                <span>￥&nbsp;{$total_price}</span>
+                <span>￥&nbsp;<?php echo ($total_price); ?></span>
             </div>
         </div>
 
         <div class="sui">
             <div class="li">
                 <div class="tu">
-                    <img src="__PUBLIC__/home/img/jian.png" alt="">
+                    <img src="/-/Public/home/img/jian.png" alt="">
                 </div>
 
                 <div class="jian">
@@ -114,7 +114,7 @@
                 </div>
 
                 <div class="jqian">
-                    <span>-￥&nbsp;{$lj}</span>
+                    <span>-￥&nbsp;<?php echo ($lj); ?></span>
                 </div>
             </div>
         </div>
@@ -125,18 +125,17 @@
             </div>
 
             <div class="fuqian">
-                <span>￥{$sf}</span>
+                <span>￥<?php echo ($sf); ?></span>
             </div>
         </div>
     </div>
 </div>
-<!-- <form action="{:U('Home/Order/to_pay')}" name="myform" method="post" id="uform"> -->
-<form>
+<form action="<?php echo U('Home/Order/to_pay');?>" name="myform" method="post">
     <div class="bot">
         <div class="bot2">
             <div class="wei">
                 <div class="tu2">
-                    <img src="__PUBLIC__/home/img/weixin.png" alt="">
+                    <img src="/-/Public/home/img/weixin.png" alt="">
                 </div>
 
                 <div class="xin">
@@ -156,7 +155,7 @@
 
             <div class="yu">
                 <div class="tu2">
-                    <img src="__PUBLIC__/home/img/yu.png" alt="">
+                    <img src="/-/Public/home/img/yu.png" alt="">
                 </div>
 
                 <div class="yue">
@@ -164,7 +163,7 @@
                 </div>
 
                 <div class="yuqian">
-                    <span>￥&nbsp;{$money}</span>
+                    <span>￥&nbsp;<?php echo ($money); ?></span>
                 </div>
 
                 <div class="fuxuan2">
@@ -180,12 +179,12 @@
 
     <div class="footer">
         <button id="zhifu">
-            去支付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;￥{$sf}
-            <input type="hidden" name="sf" value="{$sf}">
-            <input type="hidden" name="lj" value="{$lj}">
-            <input type="hidden" name="order_id" value="{$order_id}">
-            <input type="hidden" name="total_price" value="{$total_price}">
-            <input type="hidden" name="store_id" value="{$store_id}">
+            去支付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;￥<?php echo ($sf); ?>
+            <input type="hidden" name="sf" value="<?php echo ($sf); ?>">
+            <input type="hidden" name="lj" value="<?php echo ($lj); ?>">
+            <input type="hidden" name="order_id" value="<?php echo ($order_id); ?>">
+            <input type="hidden" name="total_price" value="<?php echo ($total_price); ?>">
+            <input type="hidden" name="store_id" value="<?php echo ($store_id); ?>">
 
         </button>
     </div>
@@ -197,37 +196,17 @@
 function jsApiCall()  
 {  
     WeixinJSBridge.invoke(  
-    
-        'getBrandWCPayRequest',
-        // <?php echo $jsApiParameters;?> 
-        {$jsApiParameters}
-       //  {
-       //     "appId":"wx30248bc4475fd353",     //公众号名称，由商户传入     
-       //     "timeStamp":"1299142601",         //时间戳，自1970年以来的秒数     
-       //     "nonceStr":"e61463f8efa94090b1f366cccfbbb444", //随机串     
-       //     "package":"prepay_id=u802345jgfjsdfgsdg888",     
-       //     "signType":"MD5",         //微信签名方式：     
-       //     "paySign":"70EA570631E4BB79628FBCA90534C63FF7FADD89", //微信签名 
-       //     "total_fee":'2',
-       //     "order_id" :{$order_id}
-
-       // },
-
+        'getBrandWCPayRequest',  
+        <?php echo $jsApiParameters; ?> 
         function(res){  
-
-            // alert(res);
-            // return false;
-            console.log(res);
-            return false;
-            // WeixinJSBridge.log(res.err_msg);  
-            // alert(res.err_code+res.err_desc+res.err_msg);  
+            WeixinJSBridge.log(res.err_msg);  
+            alert(res.err_code+res.err_desc+res.err_msg);  
         }  
     );  
 }  
   
 function callpay()  
 {  
-        // alert(111);
    
     
     if (typeof WeixinJSBridge == "undefined"){  
@@ -238,23 +217,14 @@ function callpay()
             document.attachEvent('onWeixinJSBridgeReady', jsApiCall);  
         }  
     }else{  
-        // alert(123);
         jsApiCall();  
     }  
 }  
 
 $("#zhifu").click(function(){
-    // alert(123);
-    // return false;
- var zfzt = $('input[name="item"]:checked').val();
- // alert(zfzt);exit;
- if(zfzt == 1){
-    callpay();
+ var zfzt = $('input[name="item"]:checked').val();;
+    alert(zfzt);
     return false;
- }else{
-    $('#uform').submit();
- }
-    
 })
 </script> 
-</html>                                                 
+</html>

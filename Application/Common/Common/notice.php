@@ -82,6 +82,6 @@
 			$danwei = $danwei/1000;
 			$houdanwei = "km";
 		}
-		return round($danwei,2).$houdanwei;
+		return round($danwei,1).$houdanwei;
 	}
 ?>

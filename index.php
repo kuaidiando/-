@@ -19,6 +19,7 @@ define('APP_DEBUG',True);
 
 // 定义应用目录
 define('APP_PATH','./Application/');
+define('SITE_URL','https://mk.365kdian.com');
 // ini_set ( 'session.cookie_lifetime', 3600 );
 // ini_set ( 'session.gc_maxlifetime', 3600 );
 // 引入ThinkPHP入口文件

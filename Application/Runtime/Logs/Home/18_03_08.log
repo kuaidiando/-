@@ -1,0 +1,1456 @@
+[ 2018-03-08T15:48:36+08:00 ] ::1 /-/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+NOTIC: [8] Undefined index: openid E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 31 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'aa'@'192.168.0.111' (using password: NO)
+
+[ 2018-03-08T15:49:12+08:00 ] ::1 /-/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+NOTIC: [8] Undefined index: openid E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 31 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'aa'@'192.168.0.111' (using password: NO)
+
+[ 2018-03-08T15:49:13+08:00 ] ::1 /-/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+NOTIC: [8] Undefined index: openid E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 31 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'aa'@'192.168.0.111' (using password: NO)
+
+[ 2018-03-08T15:50:48+08:00 ] ::1 /-/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+NOTIC: [8] Undefined index: openid E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 31 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'aa'@'192.168.0.111' (using password: NO)
+
+[ 2018-03-08T15:54:38+08:00 ] ::1 /-/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+NOTIC: [8] Undefined index: openid E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.0075s ]
+SQL: SELECT `photo` FROM `weixin_user` WHERE `openid` = null LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0071s ]
+SQL: SELECT shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij,shop.depcsjlshi,shop.baidu_lng,shop.baidu_lat FROM `shop` INNER JOIN shop_type on shop.type_shop = shop_type.id  WHERE shop.zhuangt = 1 AND shop.depcsjlshi = 130100  [ RunTime:0.0024s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 64 LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 64 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 62 LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 64 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 63 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0068s ]
+SQL: SELECT `pic` FROM `event` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0061s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `zhuangt` = 1  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005604s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005856s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009440s ]
+
+[ 2018-03-08T15:54:44+08:00 ] ::1 /-/index.php/home/index/ajaxfoodjuli.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0144s ]
+SQL: SELECT shop.id,shop.baidu_lng,shop.baidu_lat FROM `shop` INNER JOIN shop_type on shop.type_shop = shop_type.id  WHERE shop.zhuangt = 1 AND shop.depcsjlshi = 130100  [ RunTime:0.0028s ]
+
+[ 2018-03-08T16:57:46+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/64.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001508s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 64  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 64 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 205 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 64 ORDER BY paix desc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0066s ]
+SQL: SELECT food.id,food.zhuangt,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = '64' ORDER BY food.id asc  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: food_num E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 276 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 276 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 306 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 306 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000381s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000561s ]
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 92 行.
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant yuanjia - assumed 'yuanjia' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 117 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 124 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 125 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 92 行.
+SQL: SELECT * FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0013s ]
+NOTIC: [8] Use of undefined constant yuanjia - assumed 'yuanjia' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 117 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 124 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 125 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 283 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001130s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001348s ]
+
+[ 2018-03-08T16:57:46+08:00 ] ::1 /-/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0096s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-08T16:57:47+08:00 ] ::1 /-/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001827s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0075s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2018-03-08T16:57:48+08:00 ] ::1 /-/index.php/Home/Index/ajaxaddlinshijj.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+NOTIC: [8] Undefined index: food_num E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 377 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001242s ]
+
+[ 2018-03-08T16:57:48+08:00 ] ::1 /-/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0101s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0028s ]
+
+[ 2018-03-08T16:57:49+08:00 ] ::1 /-/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0090s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2018-03-08T16:57:50+08:00 ] ::1 /-/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0121s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2018-03-08T16:57:51+08:00 ] ::1 /-/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001519s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0103s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-03-08T16:57:52+08:00 ] ::1 /-/index.php/Home/Cart/save_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+NOTIC: [8] Undefined index: userid E:\wamp64\www\-\Application\Common\Helper\user_helper.php 第 47 行.
+
+[ 2018-03-08T16:57:52+08:00 ] ::1 /-/index.php/Home/Login/index/is_cart/1/shopid/64/seat/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2018-03-08T16:57:59+08:00 ] ::1 /-/index.php/Home/Login/save_login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `user` WHERE `tel` = '13331385580' LIMIT 1   [ RunTime:0.0275s ]
+
+[ 2018-03-08T16:57:59+08:00 ] ::1 /-/index.php/Home/Cart/save_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0075s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0063s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `repast_price` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0088s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000296s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000748s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002723s ]
+
+[ 2018-03-08T16:58:04+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+NOTIC: [8] Undefined index: order_id E:\wamp64\www\-\Application\Home\Controller\OrderController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0077s ]
+SQL: INSERT INTO `order` (`buyer_name`,`order_remark`,`total_price`,`store_id`,`seat`,`user_id`,`order_code`,`add_time`) VALUES ('王','','62','64','2','16','1803081658044528','2018-03-08 16:58:04') [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0057s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `order_fu` [ RunTime:0.0110s ]
+SQL: INSERT INTO `order_fu` (`order_id`,`goods_id`,`goods_num`,`store_id`,`goods_price`) VALUES ('138','131','1','64','60.0') [ RunTime:0.0016s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0072s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0099s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001309s ]
+
+[ 2018-03-08T16:58:08+08:00 ] ::1 /-/index.php/Home/Order/to_pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001759s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001146s ]
+
+[ 2018-03-08T17:05:34+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0082s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0017s ]
+SQL: UPDATE `order` SET `buyer_name`='王',`order_remark`='',`total_price`='62',`store_id`='64',`seat`='2' WHERE `id` = 138 [ RunTime:0.0017s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0093s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0077s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000399s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001158s ]
+
+[ 2018-03-08T17:05:39+08:00 ] ::1 /-/index.php/Home/Order/to_pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001141s ]
+
+[ 2018-03-08T17:06:00+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0148s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `order` SET `buyer_name`='王',`order_remark`='',`total_price`='62',`store_id`='64',`seat`='2' WHERE `id` = 138 [ RunTime:0.0016s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0104s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0099s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000328s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001427s ]
+
+[ 2018-03-08T17:06:11+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0136s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `order` SET `buyer_name`='王',`order_remark`='',`total_price`='62',`store_id`='64',`seat`='2' WHERE `id` = 138 [ RunTime:0.0017s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0145s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0073s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000449s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001649s ]
+
+[ 2018-03-08T17:36:35+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001614s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0065s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `order` SET `buyer_name`='王',`order_remark`='',`total_price`='62',`store_id`='64',`seat`='2' WHERE `id` = 138 [ RunTime:0.0010s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0079s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0072s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001295s ]
+
+[ 2018-03-08T17:36:41+08:00 ] ::1 /-/index.php/Home/Order/to_pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0015s ]
+SQL: UPDATE `user` SET `money`='5450.08' WHERE `id` = 16 [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0070s ]
+SQL: UPDATE `order` SET `order_status`='5',`pay_time`='2018-03-08 17:36:41',`sf`='60.14' WHERE `id` = 138 [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `money` [ RunTime:0.0059s ]
+SQL: INSERT INTO `money` (`order_id`,`total_price`,`sf`,`pay_type`,`lj`,`pay_time`) VALUES ('138','62.00','60.14','2','1.86','2018-03-08 17:36:41') [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: food_num E:\wamp64\www\-\Application\Home\Controller\OrderController.class.php 第 255 行.
+
+[ 2018-03-08T17:36:41+08:00 ] ::1 /-/index.php/Home/order/dingdanxiangqing/store_id/64/order_id/138.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0076s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `order_status` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `is_use` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `seat` FROM `order` WHERE `id` = 138 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `order_fu` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `order_fu` WHERE `order_id` = 138  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0057s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `order_jc` [ RunTime:0.0068s ]
+SQL: SELECT `jc_code` FROM `order_jc` WHERE `order_id` = 138 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `money` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `money` WHERE `order_id` = 138 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0100s ]
+SQL: SELECT `repast_price` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001532s ]
+
+[ 2018-03-08T17:38:02+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001546s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0080s ]
+SQL: INSERT INTO `order` (`buyer_name`,`order_remark`,`total_price`,`store_id`,`seat`,`user_id`,`order_code`,`add_time`) VALUES ('王','','62','64','2','16','1803081738028738','2018-03-08 17:38:02') [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: food_num E:\wamp64\www\-\Application\Home\Controller\OrderController.class.php 第 39 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Home\Controller\OrderController.class.php 第 40 行.
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0082s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0067s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000396s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001088s ]
+
+[ 2018-03-08T17:38:05+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0106s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0019s ]
+SQL: UPDATE `order` SET `buyer_name`='王',`order_remark`='',`total_price`='62',`store_id`='64',`seat`='2' WHERE `id` = 139 [ RunTime:0.0024s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0093s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001239s ]
+
+[ 2018-03-08T17:38:08+08:00 ] ::1 /-/index.php/Home/Order/to_pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2018-03-08T17:39:49+08:00 ] ::1 /-/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+NOTIC: [8] Undefined index: openid E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.0098s ]
+SQL: SELECT `photo` FROM `weixin_user` WHERE `openid` = null LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0080s ]
+SQL: SELECT shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij,shop.depcsjlshi,shop.baidu_lng,shop.baidu_lat FROM `shop` INNER JOIN shop_type on shop.type_shop = shop_type.id  WHERE shop.zhuangt = 1 AND shop.depcsjlshi = 130100  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 64 LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 64 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 62 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 64 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 63 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0069s ]
+SQL: SELECT `pic` FROM `event` WHERE `status` = 1  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0082s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `zhuangt` = 1  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000376s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000974s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001148s ]
+
+[ 2018-03-08T17:39:52+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/64.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 64  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 64 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 205 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 64 ORDER BY paix desc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0072s ]
+SQL: SELECT food.id,food.zhuangt,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = '64' ORDER BY food.id asc  [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: food_num E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 276 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 276 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 306 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 306 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000389s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000615s ]
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 92 行.
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0023s ]
+NOTIC: [8] Use of undefined constant yuanjia - assumed 'yuanjia' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 117 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 124 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 125 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 92 行.
+SQL: SELECT * FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0017s ]
+NOTIC: [8] Use of undefined constant yuanjia - assumed 'yuanjia' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 117 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 124 行.
+NOTIC: [8] Undefined index: foodnum E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 125 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 283 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001353s ]
+
+[ 2018-03-08T17:39:52+08:00 ] ::1 /-/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0172s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0025s ]
+
+[ 2018-03-08T17:39:53+08:00 ] ::1 /-/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0149s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0025s ]
+
+[ 2018-03-08T17:39:53+08:00 ] ::1 /-/index.php/Home/Index/ajaxaddlinshijj.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+NOTIC: [8] Undefined index: food_num E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 377 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2018-03-08T17:39:54+08:00 ] ::1 /-/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0083s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0025s ]
+
+[ 2018-03-08T17:39:55+08:00 ] ::1 /-/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0089s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2018-03-08T17:39:56+08:00 ] ::1 /-/index.php/Home/Cart/save_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0162s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0101s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 132 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 132 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 132 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `repast_price` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001489s ]
+
+[ 2018-03-08T17:39:56+08:00 ] ::1 /-/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0093s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-03-08T17:40:00+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001527s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0157s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `order` SET `buyer_name`='wang ',`order_remark`='',`total_price`='13',`store_id`='64',`seat`='3' WHERE `id` = 139 [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0134s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 132 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `order_fu` [ RunTime:0.0068s ]
+SQL: INSERT INTO `order_fu` (`order_id`,`goods_id`,`goods_num`,`store_id`,`goods_price`) VALUES ('139','132','1','64','10.0') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_fu` WHERE `order_id` = 139 AND `goods_id` = 132 AND (  goods_num ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `goods_num` FROM `order_fu` WHERE `order_id` = 139 AND `goods_id` = 132 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0095s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0067s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001160s ]
+
+[ 2018-03-08T17:40:02+08:00 ] ::1 /-/index.php/Home/Order/to_pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001384s ]
+
+[ 2018-03-08T17:42:04+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0144s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `order` SET `buyer_name`='wang ',`order_remark`='',`total_price`='13',`store_id`='64',`seat`='3' WHERE `id` = 139 [ RunTime:0.0012s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0103s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0080s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2018-03-08T17:42:05+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0066s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `order` SET `buyer_name`='wang ',`order_remark`='',`total_price`='13',`store_id`='64',`seat`='3' WHERE `id` = 139 [ RunTime:0.0010s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0086s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0061s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000389s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001342s ]
+
+[ 2018-03-08T17:42:05+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0198s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0023s ]
+SQL: UPDATE `order` SET `buyer_name`='wang ',`order_remark`='',`total_price`='13',`store_id`='64',`seat`='3' WHERE `id` = 139 [ RunTime:0.0027s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0088s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0086s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000382s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001188s ]
+
+[ 2018-03-08T17:42:07+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0155s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0022s ]
+SQL: UPDATE `order` SET `buyer_name`='wang ',`order_remark`='',`total_price`='13',`store_id`='64',`seat`='3' WHERE `id` = 139 [ RunTime:0.0023s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0115s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0089s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001215s ]
+
+[ 2018-03-08T17:42:09+08:00 ] ::1 /-/index.php/Home/Order/to_pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+
+[ 2018-03-08T17:42:45+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0154s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0031s ]
+SQL: UPDATE `order` SET `buyer_name`='wang ',`order_remark`='',`total_price`='13',`store_id`='64',`seat`='3' WHERE `id` = 139 [ RunTime:0.0024s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0093s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0096s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000583s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001672s ]
+
+[ 2018-03-08T17:42:47+08:00 ] ::1 /-/index.php/Home/Order/to_pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001347s ]
+
+[ 2018-03-08T17:44:12+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0087s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0015s ]
+SQL: UPDATE `order` SET `buyer_name`='wang ',`order_remark`='',`total_price`='13',`store_id`='64',`seat`='3' WHERE `id` = 139 [ RunTime:0.0012s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0105s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0092s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001328s ]
+
+[ 2018-03-08T17:44:15+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0083s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0022s ]
+SQL: UPDATE `order` SET `buyer_name`='wang ',`order_remark`='',`total_price`='13',`store_id`='64',`seat`='3' WHERE `id` = 139 [ RunTime:0.0020s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0096s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0100s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001166s ]
+
+[ 2018-03-08T17:44:17+08:00 ] ::1 /-/index.php/Home/Order/to_pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001561s ]
+
+[ 2018-03-08T17:45:18+08:00 ] ::1 /-/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+NOTIC: [8] Undefined index: openid E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.0134s ]
+SQL: SELECT `photo` FROM `weixin_user` WHERE `openid` = null LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0133s ]
+SQL: SELECT shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij,shop.depcsjlshi,shop.baidu_lng,shop.baidu_lat FROM `shop` INNER JOIN shop_type on shop.type_shop = shop_type.id  WHERE shop.zhuangt = 1 AND shop.depcsjlshi = 130100  [ RunTime:0.0076s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0143s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 64 LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 64 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 62 LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 64 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 63 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0084s ]
+SQL: SELECT `pic` FROM `event` WHERE `status` = 1  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0069s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `zhuangt` = 1  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000384s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000694s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003048s ]
+
+[ 2018-03-08T17:45:22+08:00 ] ::1 /-/index.php/Home/Index/detail/shopid/64.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 64  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0147s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 64 AND `zhuangt` = 1 LIMIT 1   [ RunTime:0.0068s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 205 行.
+SQL: SHOW COLUMNS FROM `food_type` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `food_type` WHERE `dep_type` = 64 ORDER BY paix desc  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0088s ]
+SQL: SELECT food.id,food.zhuangt,food.mingch as cpmingch,food.food_type,food_type.mingch,food.kwid as kouwei,food.logo,food.jiage as yuanjia,food.jiage_youhui as shoujia,cpdanwei.mingch as danweimc,food.dwid FROM `food` left join food_type ON food_type.id = food.food_type left join cpdanwei ON cpdanwei.id = food.dwid  WHERE food.dep_shop = '64' ORDER BY food.id asc  [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000397s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000580s ]
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 92 行.
+SQL: SHOW COLUMNS FROM `cpdanwei` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0012s ]
+NOTIC: [8] Use of undefined constant yuanjia - assumed 'yuanjia' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 117 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 124 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 92 行.
+SQL: SELECT * FROM `cpdanwei` WHERE `id` = 4  [ RunTime:0.0011s ]
+NOTIC: [8] Use of undefined constant yuanjia - assumed 'yuanjia' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 117 行.
+NOTIC: [8] Use of undefined constant zhuangt - assumed 'zhuangt' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 124 行.
+NOTIC: [8] Use of undefined constant line_type - assumed 'line_type' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 283 行.
+NOTIC: [8] Use of undefined constant zuoweishu - assumed 'zuoweishu' E:\wamp64\www\-\Application\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001174s ]
+
+[ 2018-03-08T17:45:23+08:00 ] ::1 /-/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0163s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0025s ]
+
+[ 2018-03-08T17:45:24+08:00 ] ::1 /-/index.php/Home/Index/ajaxaddlinshijj.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001120s ]
+
+[ 2018-03-08T17:45:24+08:00 ] ::1 /-/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0148s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2018-03-08T17:45:24+08:00 ] ::1 /-/index.php/Home/Index/ajaxeditfoodshuliang.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001758s ]
+
+[ 2018-03-08T17:45:25+08:00 ] ::1 /-/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0089s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-03-08T17:45:26+08:00 ] ::1 /-/index.php/Home/Index/ajaxzaixianzhuangt.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0116s ]
+SQL: SELECT `line_type` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0023s ]
+
+[ 2018-03-08T17:45:26+08:00 ] ::1 /-/index.php/Home/Cart/save_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0092s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0074s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 132 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 132 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 132 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `mingch` FROM `food` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `repast_price` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001121s ]
+
+[ 2018-03-08T17:45:34+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0122s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0016s ]
+SQL: UPDATE `order` SET `buyer_name`='程',`order_remark`='',`total_price`='132',`store_id`='64',`seat`='2' WHERE `id` = 139 [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `food` [ RunTime:0.0077s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 132 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `order_fu` [ RunTime:0.0075s ]
+SQL: INSERT INTO `order_fu` (`order_id`,`goods_id`,`goods_num`,`store_id`,`goods_price`) VALUES ('139','132','1','64','10.0') [ RunTime:0.0012s ]
+SQL: SELECT * FROM `order_fu` WHERE `order_id` = 139 AND `goods_id` = 132 AND (  goods_num ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `goods_num` FROM `order_fu` WHERE `order_id` = 139 AND `goods_id` = 132 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `jiage_youhui` FROM `food` WHERE `id` = 131 LIMIT 1   [ RunTime:0.0014s ]
+SQL: INSERT INTO `order_fu` (`order_id`,`goods_id`,`goods_num`,`store_id`,`goods_price`) VALUES ('139','131','2','64','60.0') [ RunTime:0.0009s ]
+SQL: SELECT * FROM `order_fu` WHERE `order_id` = 139 AND `goods_id` = 131 AND (  goods_num ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `goods_num` FROM `order_fu` WHERE `order_id` = 139 AND `goods_id` = 131 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0063s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0066s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001242s ]
+
+[ 2018-03-08T17:45:36+08:00 ] ::1 /-/index.php/Home/Order/to_pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001360s ]
+
+[ 2018-03-08T17:46:22+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0082s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `order` SET `buyer_name`='程',`order_remark`='',`total_price`='132',`store_id`='64',`seat`='2' WHERE `id` = 139 [ RunTime:0.0013s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0072s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0061s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000635s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001981s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011659s ]
+
+[ 2018-03-08T17:46:31+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0086s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `order` SET `buyer_name`='程',`order_remark`='',`total_price`='132',`store_id`='64',`seat`='2' WHERE `id` = 139 [ RunTime:0.0020s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0102s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0088s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2018-03-08T17:46:53+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0094s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0021s ]
+SQL: UPDATE `order` SET `buyer_name`='程',`order_remark`='',`total_price`='132',`store_id`='64',`seat`='2' WHERE `id` = 139 [ RunTime:0.0020s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0085s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0094s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001671s ]
+
+[ 2018-03-08T17:47:04+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0093s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0018s ]
+SQL: UPDATE `order` SET `buyer_name`='程',`order_remark`='',`total_price`='132',`store_id`='64',`seat`='2' WHERE `id` = 139 [ RunTime:0.0019s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0102s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0084s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001311s ]
+
+[ 2018-03-08T17:49:22+08:00 ] ::1 /-/index.php/Home/Order/save_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0091s ]
+SQL: SELECT `store_id` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0025s ]
+SQL: UPDATE `order` SET `buyer_name`='程',`order_remark`='',`total_price`='132',`store_id`='64',`seat`='2' WHERE `id` = 139 [ RunTime:0.0035s ]
+SQL: SELECT `order_code` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0092s ]
+SQL: SELECT `mingch` FROM `shop` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0071s ]
+SQL: SELECT `money` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `total_price` FROM `order` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Undefined variable: jsApiParameters E:\wamp64\www\-\Application\Runtime\Cache\Home\7695e843f397796d1c8679c1b1026571.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001372s ]
+
+[ 2018-03-08T18:37:52+08:00 ] ::1 /-/index.php?m=Home&a=Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+NOTIC: [8] Undefined index: openid E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `weixin_user` [ RunTime:0.0134s ]
+SQL: SELECT `photo` FROM `weixin_user` WHERE `openid` = null LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0146s ]
+SQL: SELECT shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij,shop.depcsjlshi,shop.baidu_lng,shop.baidu_lat FROM `shop` INNER JOIN shop_type on shop.type_shop = shop_type.id  WHERE shop.zhuangt = 1 AND shop.depcsjlshi = 130100  [ RunTime:0.0029s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `seat` [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 64 LIMIT 1   [ RunTime:0.0022s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 64 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 62 LIMIT 1   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp64\www\-\Application\Home\Controller\IndexController.class.php 第 64 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `seat` WHERE `dep_shop` = 63 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `event` [ RunTime:0.0078s ]
+SQL: SELECT `pic` FROM `event` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `shop_type` [ RunTime:0.0058s ]
+SQL: SELECT `mingch` FROM `shop_type` WHERE `zhuangt` = 1  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000455s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\5f5878b563bbd0551b6c84d71156b7e9.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\5f5878b563bbd0551b6c84d71156b7e9.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\wamp64\www\-\Application\Runtime\Cache\Home\5f5878b563bbd0551b6c84d71156b7e9.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001104s ]
+
+[ 2018-03-08T18:37:52+08:00 ] ::1 /-/index.php/home/index/ajaxfoodjuli.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0077s ]
+SQL: SELECT shop.id,shop.baidu_lng,shop.baidu_lat FROM `shop` INNER JOIN shop_type on shop.type_shop = shop_type.id  WHERE shop.zhuangt = 1 AND shop.depcsjlshi = 130100  [ RunTime:0.0022s ]
+

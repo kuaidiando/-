@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>快点—智慧餐厅</title>
-    <link rel="icon" href="/Public/home/img/logo1.png">
-    <link rel="stylesheet" href="/Public/home/css/index.css">
-    <link rel="stylesheet" href="/Public/home/css/swiper.min.css">
+    <link rel="icon" href="/-/Public/home/img/logo1.png">
+    <link rel="stylesheet" href="/-/Public/home/css/index.css">
+    <link rel="stylesheet" href="/-/Public/home/css/swiper.min.css">
 
-    <link rel="stylesheet" href="/Public/home/css/base-index.css">
-    <link rel="stylesheet" href="/Public/home/css/base2.css">
-    <link rel="stylesheet" href="/Public/home/css/fenlei.css">
-    <script src="/Public/home/js/flexible.js"></script>
-    <script src="/Public/home/js/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="/-/Public/home/css/base-index.css">
+    <link rel="stylesheet" href="/-/Public/home/css/base2.css">
+    <link rel="stylesheet" href="/-/Public/home/css/fenlei.css">
+    <script src="/-/Public/home/js/flexible.js"></script>
+    <script src="/-/Public/home/js/jquery-1.12.4.js"></script>
     <script>
         $(function(){
             $(window).scroll(function() {
@@ -76,7 +76,7 @@
                 </div>
                 
                 <div class="xl">
-                    <img src="/Public/home/img/jiantou2.png" alt="">
+                    <img src="/-/Public/home/img/jiantou2.png" alt="">
                 </div>
             </div>
 
@@ -84,7 +84,7 @@
             <div class="lookup">
                 <div class="look">
                     <div class="sou">
-                        <img src="/Public/home/img/loogup.png" alt="">
+                        <img src="/-/Public/home/img/loogup.png" alt="">
                     </div>
 
                     <div class="tet">
@@ -93,25 +93,27 @@
                 </div>
             </div>
 
-
-            <div class="person">
+            <a href="<?php echo U('Home/Person/index');?>">
+             <div class="person">
                 <div class="tx">
-                    <img src="/Public/<?php echo ($photo); ?>" alt="">
+                    <img src="<?php echo ($photo); ?>" alt="">
                 </div>
-            </div>
+            </div>               
+            </a>
+
         </div>
     </header>
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <?php if(is_array($event)): foreach($event as $key=>$one): ?><div class="swiper-slide">
                 <a href="#">
-                    <img src="/Public/<?php echo ($one); ?>" alt="">
+                    <img src="/-/Public/<?php echo ($one); ?>" alt="">
                 </a>
             </div><?php endforeach; endif; ?>
         </div>
     </div>
     <!-- Swiper JS -->
-    <script src="/Public/home/js/swiper.min.js"></script>
+    <script src="/-/Public/home/js/swiper.min.js"></script>
     <!-- Initialize Swiper -->
     <script type="text/javascript">
         var swiper = new Swiper('.swiper-container', {
@@ -137,7 +139,7 @@
                         </div>
 
                         <div class="san">
-                            <img src="/Public/home/img/sanjiao.png" alt="">
+                            <img src="/-/Public/home/img/sanjiao.png" alt="">
                         </div>
                     </li>
                     
@@ -147,7 +149,7 @@
                         </div>
 
                         <div class="san">
-                            <img src="/Public/home/img/sanjiao.png" alt="">
+                            <img src="/-/Public/home/img/sanjiao.png" alt="">
                         </div>
                     </li>
                     
@@ -157,7 +159,7 @@
                         </div>
 
                         <div class="san">
-                            <img src="/Public/home/img/sanjiao.png" alt="">
+                            <img src="/-/Public/home/img/sanjiao.png" alt="">
                         </div>
                     </li>
                 </ul>
@@ -212,8 +214,8 @@
             </div>
         </section>
     </div>
-    <script src="/Public/home/js/jquery-1.12.4.min.js"></script>
-    <script src="/Public/home/js/demo.js"></script>
+    <script src="/-/Public/home/js/jquery-1.12.4.min.js"></script>
+    <script src="/-/Public/home/js/demo.js"></script>
 
     
     <div class="jsbdapi">
@@ -224,7 +226,7 @@
                 <div class="hz">
                     <div class="top">
                         <div class="tu">
-                            <img src="/Public<?php echo ($vores["logo"]); ?>" alt="">
+                            <img src="/-/Public<?php echo ($vores["logo"]); ?>" alt="">
                         </div>
 
                         <div class="you">
@@ -238,12 +240,12 @@
                             <div class="center">
                                 <div class="xing">
                                 <!-- 实心星数量 -->
-                                <?php $__FOR_START_816318560__=0;$__FOR_END_816318560__=$vores["shixinxing"];for($i=$__FOR_START_816318560__;$i < $__FOR_END_816318560__;$i+=1){ ?><img src="/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
+                                <?php $__FOR_START_9095__=0;$__FOR_END_9095__=$vores["shixinxing"];for($i=$__FOR_START_9095__;$i < $__FOR_END_9095__;$i+=1){ ?><img src="/-/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
                                 <!-- 判断半个 星星 -->
-                        <?php if($vores["bangexing"] == 1): ?><img src="/Public/home/img/ban.png" style="width:13%;" alt="">
+                        <?php if($vores["bangexing"] == 1): ?><img src="/-/Public/home/img/ban.png" style="width:13%;" alt="">
                         <?php else: endif; ?>
                                 <!-- 空心星数量 -->
-                                <?php $__FOR_START_1838887294__=0;$__FOR_END_1838887294__=$vores["kongxinxing"];for($i=$__FOR_START_1838887294__;$i < $__FOR_END_1838887294__;$i+=1){ ?><img src="/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
+                                <?php $__FOR_START_29364__=0;$__FOR_END_29364__=$vores["kongxinxing"];for($i=$__FOR_START_29364__;$i < $__FOR_END_29364__;$i+=1){ ?><img src="/-/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
                                     
                                 </div>
 
@@ -273,11 +275,11 @@
                                 </div>
 
                                 <div class="quan">
-                                    <img src="/Public/home/img/quan2.png" alt="">
+                                    <img src="/-/Public/home/img/quan2.png" alt="">
                                 </div>
 
                                 <div class="dian">
-                                    <img src="/Public/home/img/dian.png" alt="">
+                                    <img src="/-/Public/home/img/dian.png" alt="">
                                 </div>
                             </div>
 
@@ -291,7 +293,7 @@
 
                     <div class="bot">
                         <div class="tui">
-                            <img src="/Public/home/img/tuiguang.png" alt="">
+                            <img src="/-/Public/home/img/tuiguang.png" alt="">
                         </div>
 
                         <div class="jia">
@@ -309,12 +311,12 @@
                     <?php if($vores["zuoweishu"] == 0): else: ?>
                         <div class="xia2">
                             <div class="zzuo">
-                                <img src="/Public/home/img/jinri.png" alt="">
+                                <img src="/-/Public/home/img/jinri.png" alt="">
                             </div>
 
                             <div class="yyou">
                                 <div class="xuan">
-                                    <img src="/Public/home/img/dingzuo.png" alt="">
+                                    <img src="/-/Public/home/img/dingzuo.png" alt="">
                                 </div>
 
                                 <div class="ke">
@@ -346,7 +348,7 @@
     <a href="<?php echo U('Home/Index/index');?>">
         <div id="foot">
             <div id="ttu">
-                <img src="/Public/home/img/shangjia2.png" alt="">
+                <img src="/-/Public/home/img/shangjia2.png" alt="">
             </div>
 
             <div id="shou">
@@ -359,7 +361,7 @@
     <a href="<?php echo U('Home/Order/order_info');?> ">
         <div id="foot2">
             <div id="ttu2">
-                <img src="/Public/home/img/diangdan.png" alt="">
+                <img src="/-/Public/home/img/diangdan.png" alt="">
             </div>
 
             <div id="shou2">
@@ -371,7 +373,7 @@
     <a href="<?php echo U('Home/Person/index');?>">
         <div id="foot3" onclick="location.href='person.html'">
             <div id="ttu3">
-               <img src="/Public/home/img/geren.png" alt="">
+               <img src="/-/Public/home/img/geren.png" alt="">
             </div>
 
             <div id="shou3">

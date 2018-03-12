@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="__PUBLIC__/home/css/zhifuye.css">
     <script src="__PUBLIC__/home/js/jquery-1.12.4.js"></script>
     <script src="__PUBLIC__/home/js/jquery-1.12.4.min.js"></script>
-
-
-
     <style>
         .qq {
             position: relative;
@@ -131,7 +128,7 @@
     </div>
 </div>
 <!-- <form action="{:U('Home/Order/to_pay')}" name="myform" method="post" id="uform"> -->
-<form>
+<!-- <form> -->
     <div class="bot">
         <div class="bot2">
             <div class="wei">
@@ -179,82 +176,51 @@
     </div>
 
     <div class="footer">
-        <button id="zhifu">
+        <button onclick="onBridgeReady()">
             去支付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;￥{$sf}
-            <input type="hidden" name="sf" value="{$sf}">
+            <!-- <input type="hidden" name="sf" value="{$sf}">
             <input type="hidden" name="lj" value="{$lj}">
             <input type="hidden" name="order_id" value="{$order_id}">
             <input type="hidden" name="total_price" value="{$total_price}">
-            <input type="hidden" name="store_id" value="{$store_id}">
-
+            <input type="hidden" name="store_id" value="{$store_id}"> -->
         </button>
     </div>
-</form>
+<!-- </form> -->
 
 </body>
 <script type="text/javascript">  
-//调用微信JS api 支付  
-function jsApiCall()  
-{  
-    WeixinJSBridge.invoke(  
-    
-        'getBrandWCPayRequest',
-        // <?php echo $jsApiParameters;?> 
-        {$jsApiParameters}
+//调用微信JS api 支付   
+function onBridgeReady(){
+   WeixinJSBridge.invoke(
+       'getBrandWCPayRequest',
+       <?php echo $jsApiParameters;?>
        //  {
        //     "appId":"wx30248bc4475fd353",     //公众号名称，由商户传入     
-       //     "timeStamp":"1299142601",         //时间戳，自1970年以来的秒数     
+       //     "timeStamp":"1395712654",         //时间戳，自1970年以来的秒数     
        //     "nonceStr":"e61463f8efa94090b1f366cccfbbb444", //随机串     
        //     "package":"prepay_id=u802345jgfjsdfgsdg888",     
        //     "signType":"MD5",         //微信签名方式：     
-       //     "paySign":"70EA570631E4BB79628FBCA90534C63FF7FADD89", //微信签名 
-       //     "total_fee":'2',
-       //     "order_id" :{$order_id}
-
+       //     "paySign":"70EA570631E4BB79628FBCA90534C63FF7FADD89" //微信签名 
        // },
+       function(res){     
+           if(res.err_msg == "get_brand_wcpay_request:ok" ) {}     // 使用以上方式判断前端返回,微信团队郑重提示：res.err_msg将在用户支付成功后返回    ok，但并不保证它绝对可靠。 
+       }
+   ); 
+}
 
-        function(res){  
+//浏览器兼容问题
+if (typeof WeixinJSBridge == "undefined"){
+   if( document.addEventListener ){
+       document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+   }else if (document.attachEvent){
+       document.attachEvent('WeixinJSBridgeReady', onBridgeReady); 
+       document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+   }
+}else{
+   onBridgeReady();
+} 
 
-            // alert(res);
-            // return false;
-            console.log(res);
-            return false;
-            // WeixinJSBridge.log(res.err_msg);  
-            // alert(res.err_code+res.err_desc+res.err_msg);  
-        }  
-    );  
-}  
+
   
-function callpay()  
-{  
-        // alert(111);
-   
-    
-    if (typeof WeixinJSBridge == "undefined"){  
-        if( document.addEventListener ){  
-            document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);  
-        }else if (document.attachEvent){  
-            document.attachEvent('WeixinJSBridgeReady', jsApiCall);   
-            document.attachEvent('onWeixinJSBridgeReady', jsApiCall);  
-        }  
-    }else{  
-        // alert(123);
-        jsApiCall();  
-    }  
-}  
-
-$("#zhifu").click(function(){
-    // alert(123);
-    // return false;
- var zfzt = $('input[name="item"]:checked').val();
- // alert(zfzt);exit;
- if(zfzt == 1){
-    callpay();
-    return false;
- }else{
-    $('#uform').submit();
- }
-    
-})
 </script> 
 </html>                                                 
