@@ -62,7 +62,7 @@
 <div class="tab" js-tab="1">
     <div class="tab-title">
         <a href="javascript:;" class="item item-cur">点餐</a>
-        <a href="javascript:;" class="item">商家</a>
+        <a href="javascript:;" class="item"><span id="wushopdianji">商家</span></a>
         <a href="javascript:;" class="item">评价</a>
     </div>
     <div class="tab-cont">
@@ -840,6 +840,11 @@
                     }
                 }
             })
+            //跳转商家详情
+            var caipinid = $(".caipinid").html();
+            if (caipinid) {}else{
+                $("#wushopdianji").click();
+            }
         })
         //在线状态
         setInterval(function(){

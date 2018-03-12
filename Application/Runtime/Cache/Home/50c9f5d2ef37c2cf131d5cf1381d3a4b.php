@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
+<<<<<<< HEAD
     <link rel="stylesheet" href="/-/Public/home/css/base.css">
     <link rel="stylesheet" href="/-/Public/home/css/text.css">
     <link rel="stylesheet" href="/-/Public/home/css/login.css">
     <script type="text/javascript" src="/-/Public/home/js/jquery-1.12.4.js"></script>
+=======
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/login.css">
+    <script type="text/javascript" src="/kuaidian/Public/home/js/jquery-1.12.4.js"></script>
+>>>>>>> 768b650835f4b76f83f4aaac54120aeae612073b
 
     <title>登录</title>
 </head>
@@ -22,7 +29,11 @@
 
     <div class="phone">
         <div class="lu">
+<<<<<<< HEAD
             <img src="/-/Public/home/img/geren3.png" alt="">
+=======
+            <img src="/kuaidian/Public/home/img/geren3.png" alt="">
+>>>>>>> 768b650835f4b76f83f4aaac54120aeae612073b
         </div>
 
         <div class="text">
@@ -36,7 +47,11 @@
 
     <div class="mima">
         <div class="tu2">
+<<<<<<< HEAD
             <img src="/-/Public/home/img/mima1.png" alt="">
+=======
+            <img src="/kuaidian/Public/home/img/mima1.png" alt="">
+>>>>>>> 768b650835f4b76f83f4aaac54120aeae612073b
         </div>
 
         <div class="text2">
@@ -45,7 +60,11 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <div class="foot">
+=======
+    <div class="foot" style="background-color: #888;">
+>>>>>>> 768b650835f4b76f83f4aaac54120aeae612073b
         <a href="#">
             <span id="login">立即登录</span>
         </a>
@@ -67,6 +86,21 @@
 
 
     <script type="text/javascript">
+<<<<<<< HEAD
+=======
+        $("#mi").keyup(function(){
+            var zhi = $(this).val();
+            if (zhi) {
+                // alert(123);
+                $(".foot").css("background-color","#ffae00");
+            }else{
+                // alert(456);
+                $(".foot").css("background-color","#888");
+            }
+            // alert(zhi);
+            
+        });
+>>>>>>> 768b650835f4b76f83f4aaac54120aeae612073b
         var tel = document.getElementById("tel");
         var mi = document.getElementById("mi");
 

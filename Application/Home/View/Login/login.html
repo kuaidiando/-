@@ -45,7 +45,7 @@
         </div>
     </div>
 
-    <div class="foot">
+    <div class="foot" style="background-color: #888;">
         <a href="#">
             <span id="login">立即登录</span>
         </a>
@@ -67,6 +67,18 @@
 
 
     <script type="text/javascript">
+        $("#mi").keyup(function(){
+            var zhi = $(this).val();
+            if (zhi) {
+                // alert(123);
+                $(".foot").css("background-color","#ffae00");
+            }else{
+                // alert(456);
+                $(".foot").css("background-color","#888");
+            }
+            // alert(zhi);
+            
+        });
         var tel = document.getElementById("tel");
         var mi = document.getElementById("mi");
 
