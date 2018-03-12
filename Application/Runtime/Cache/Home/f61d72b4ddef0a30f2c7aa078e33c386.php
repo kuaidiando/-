@@ -1,10 +1,10 @@
-<html lang="en" data-dpr="1" style="font-size: 42.4px;">
+<?php if (!defined('THINK_PATH')) exit();?><html lang="en" data-dpr="1" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/register.css">
-    <script type="text/javascript" src="__PUBLIC__/home/js/jquery.js"></script>
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/register.css">
+    <script type="text/javascript" src="/kuaidian/Public/home/js/jquery.js"></script>
 
 
     <title>注册</title>
@@ -21,7 +21,7 @@
 
     <div class="phone">
         <div class="tu">
-            <img src="__PUBLIC__/home/img/geren3.png" alt="">
+            <img src="/kuaidian/Public/home/img/geren3.png" alt="">
         </div>
 
         <div class="text">
@@ -32,7 +32,7 @@
 
     <div class="mima">
         <div class="tu2">
-            <img src="__PUBLIC__/home/img/mima1.png" alt="">
+            <img src="/kuaidian/Public/home/img/mima1.png" alt="">
         </div>
 
         <div class="text2">
@@ -115,7 +115,7 @@
                    $.ajax({
                     type:'post',
                     dataType: 'json',
-                    url:'{:U("Home/User/send_code")}',
+                    url:'<?php echo U("Home/User/send_code");?>',
                     data:{tel:tel,type:'register'},
                     success: function (result) {
                         if(result.code == 205){
@@ -160,11 +160,11 @@
             $.ajax({
                 type:'post',
                 dataType: 'json',
-                url:'{:U("Home/Register/register")}',
+                url:'<?php echo U("Home/Register/register");?>',
                 data:{tel:tel,password:password,yzm:yzm},
                 success: function (result) {
                     if(result.code == 200){
-                        $(location).attr('href', '{:U("Home/Index/index")}');  
+                        $(location).attr('href', '<?php echo U("Home/Index/index");?>');  
                     }else{
                         alert(result.msg);
                     }

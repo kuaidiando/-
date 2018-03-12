@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" data-dpr="1" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/text.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/login.css">
-    <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/login.css">
+    <script type="text/javascript" src="/kuaidian/Public/home/js/jquery-1.12.4.js"></script>
 
     <title>登录</title>
 </head>
@@ -22,21 +22,21 @@
 
     <div class="phone">
         <div class="lu">
-            <img src="__PUBLIC__/home/img/geren3.png" alt="">
+            <img src="/kuaidian/Public/home/img/geren3.png" alt="">
         </div>
 
         <div class="text">
             <input id="tel" type="tel" placeholder="请输入您的手机号">
-            <input type="hidden" id="is_cart" name="is_cart" value="{$is_cart}">
-            <input type="hidden" id="shop" name="shop" value="{$shopid}">
-            <input type="hidden" id="seat" name="seat" value="{$seat}">
+            <input type="hidden" id="is_cart" name="is_cart" value="<?php echo ($is_cart); ?>">
+            <input type="hidden" id="shop" name="shop" value="<?php echo ($shopid); ?>">
+            <input type="hidden" id="seat" name="seat" value="<?php echo ($seat); ?>">
             <span id="sp"></span>
         </div>
     </div>
 
     <div class="mima">
         <div class="tu2">
-            <img src="__PUBLIC__/home/img/mima1.png" alt="">
+            <img src="/kuaidian/Public/home/img/mima1.png" alt="">
         </div>
 
         <div class="text2">
@@ -53,13 +53,13 @@
 
     <div class="footer">
         <div class="wang">
-            <a href='{:U("Home/Login/resetting")}'>
+            <a href='<?php echo U("Home/Login/resetting");?>'>
                 <span>忘记密码</span>
             </a>
         </div>
 
         <div class="yong">
-            <a href='{:U("Home/Register/index")}'>
+            <a href='<?php echo U("Home/Register/index");?>'>
                 <span>用户注册</span>
             </a>
         </div>
@@ -126,13 +126,13 @@
         $.ajax({
             type:'post',
             dataType: 'json',
-            url:'{:U("Home/Login/save_login")}',
+            url:'<?php echo U("Home/Login/save_login");?>',
             data:{tel:tel,password:password,is_cart:is_cart,shop:shop,seat:seat},
             success: function (result) {
                 if(result.code == 200){
-                    $(location).attr('href', '{:U("Home/Index/index")}');
+                    $(location).attr('href', '<?php echo U("Home/Index/index");?>');
                 }else if(result.code == 300){
-                     $(location).attr('href', '{:U("Home/Cart/save_cart")}');
+                     $(location).attr('href', '<?php echo U("Home/Cart/save_cart");?>');
                 }else{
                     alert(result.msg);
                 }

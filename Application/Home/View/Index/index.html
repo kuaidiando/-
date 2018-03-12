@@ -400,52 +400,132 @@
 </div>
 <div id="allmap" style="display: none;"></div>
 <!-- 百度地图定位 -->
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=T9Upu0sWr9Grt4EknLsa9DbU9emQlRYj"></script>
-<script type="text/javascript">
-    //获取坐标
-    // 百度地图API功能
-    var map = new BMap.Map("allmap");
-    var point = new BMap.Point(116.331398,39.897445);
-    // map.centerAndZoom(point,12);
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=T9Upu0sWr9Grt4EknLsa9DbU9emQlRYj"></script>
+<!-- 微信定位 -->
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+   wx.config({
+    debug: false,
+    appId: '<?php echo $signPackage["appId"];?>',
+    timestamp: <?php echo $signPackage["timestamp"];?>,
+    nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+    signature: '<?php echo $signPackage["signature"];?>',
+    jsApiList: [
+        // 所有要调用的 API 都要加到这个列表中
+        'checkJsApi',
+        'openLocation',
+        'getLocation'
+      ]
+});
+wx.ready(function () {
+  wx.checkJsApi({
+    jsApiList: [
+        'getLocation'
+    ],
+    success: function (res) {
+        // alert(JSON.stringify(res));
+        // alert(JSON.stringify(res.checkResult.getLocation));
+        if (res.checkResult.getLocation == false) {
+            alert('你的微信版本太低，不支持微信JS接口，请升级到最新的微信版本！');
+            return;
+        }
+    }
+});
+  wx.getLocation({
+    success: function (res) {
+        var latitude = res.latitude; // 纬度，浮点数，范围为90 ~ -90
+        var longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
+        var speed = res.speed; // 速度，以米/每秒计
+        var accuracy = res.accuracy; // 位置精度
+        y = res.latitude; // 纬度，浮点数，范围为90 ~ -90
+        x = res.longitude; // 经度，浮点数，范围为180 ~ -180。
+        // alert(JSON.stringify(res));
+        /**
+         * 转化为百度坐标
+         * @type {BMap}
+         */
+        var ggPoint = new BMap.Point(x,y);
 
-    var geolocation = new BMap.Geolocation();
-    geolocation.getCurrentPosition(function(r){
-        if(this.getStatus() == BMAP_STATUS_SUCCESS){
-            var mk = new BMap.Marker(r.point);
-            map.addOverlay(mk);
-            map.panTo(r.point);
-            var x = r.point.lng;
-            var y = r.point.lat;
-            if(x && y){
-                /**
-             *  jq 添加距离
-             */
-                $.ajax({
+        //地图初始化
+        var bm = new BMap.Map("allmap");
+        // bm.centerAndZoom(ggPoint, 15);
+        // bm.addControl(new BMap.NavigationControl());
+
+        // //添加gps marker和label
+        // var markergg = new BMap.Marker(ggPoint);
+        // bm.addOverlay(markergg); //添加GPS marker
+        // var labelgg = new BMap.Label("未转换的GPS坐标（错误）",{offset:new BMap.Size(20,-10)});
+        // markergg.setLabel(labelgg); //添加GPS label
+
+        //坐标转换完之后的回调函数
+        translateCallback = function (data){
+          if(data.status === 0) {
+            // var marker = new BMap.Marker(data.points[0]);
+            // bm.addOverlay(marker);
+            // var label = new BMap.Label("转换后的百度坐标（正确）",{offset:new BMap.Size(20,-10)});
+            // console.log(data);
+             var zy = data.points['0'].lat;
+             var zx = data.points['0'].lng;
+             // alert(zx);
+             // alert(zy);
+             // 加载菜品 距离信息
+              $.ajax({
                     type:"post",
                     dataType:'json',
                     async:false,
                     url:'{:U("home/index/ajaxfoodjuli")}',
-                    data:{"lng":x,"lat":y},
+                    data:{"lng":zx,"lat":zy},
                     success:function(dd){
-                        // console.log(dd);
+                        console.log(dd);
+                        var str = '';
                         $.each(dd,function(index,item){
-                            var juliid = item.id;
-                            $(".juli > ."+juliid+"").html(item.juli);
+                            //实心星星数量
+                            var shixinxing = '';
+                            var idd = item.id;
+                            for ( var i=0; i<item.shixinxing; i++){
+                                 shixinxing +='<img src="__PUBLIC__/home/img/quanstart.png" style="width:13%;" alt="">';
+                            }
+                            //半个星星数量
+                            var bangexing = '';
+                            if (bangexing == 1) {
+                                var bangexing = '<img src="__PUBLIC__/home/img/ban.png" style="width:13%;" alt="">';
+                            }
+                            //实心星星数量
+                            var kongxinxing = '';
+                            for ( var i=0; i<item.kongxinxing; i++){
+                                 kongxinxing +='<img src="__PUBLIC__/home/img/wu.png" style="width:13%;" alt="">';
+                            }
+                            //座位数
+                            if (item.zuoweishu == 0) {
+                                var zuoweishu = '';
+                            }else{
+                                var zuoweishu = '<div class="xia2"><div class="zzuo"><img src="__PUBLIC__/home/img/jinri.png" alt=""></div><div class="yyou"><div class="xuan"><img src="__PUBLIC__/home/img/dingzuo.png" alt=""></div><div class="ke"><span>今日可订座</span></div><div class="renshu"><span>'+item.zuoweishu+'</span></div><div class="zhuo"><span>桌</span></div></div></div>';
+                            }
+                            //菜品内容
+                            str += '<a href="http://mk.365kdian.com/index.php/Home/Index/detail/shopid/'+item.id+'"><div class="shangpin"><div class="hezi"><div class="hz"><div class="top"><div class="tu"><img src="__PUBLIC__'+item.logo+'" alt=""></div><div class="you"><div class="top1"><div class="name"><span>'+item.mingch+'</span></div></div><div class="center"><div class="xing">'+shixinxing+bangexing+kongxinxing+'</div><div class="juli"><span>'+item.juli+'</span></div></div><div class="ttop"><div class="lei"><span>'+item.lbname+'</span></div><div class="fuhao"><span>￥</span></div><div class="qian"><span>'+item.maney+'</span></div><div class="wei"><span>/位</span></div><div class="quan"><img src="__PUBLIC__/home/img/quan2.png" alt=""></div><div class="dian"><img src="__PUBLIC__/home/img/dian.png" alt=""></div></div></div></div></div><div class="xia"><div class="bot"><div class="tui"><img src="__PUBLIC__/home/img/tuiguang.png" alt=""></div><div class="jia"><span>已发起微众代言</span></div><div class="red"><span>'+item.zuigaolij+'</span></div><div class="bai"><span>%</span></div></div>'+zuoweishu+'</div></div></div></a>';
                         });
+                        $(".jsbdapi").html(str);
                     }
                 })
-            }else{
-                alert("无法定位您的位置");
-            }
-            // alert(x);
-            
-
+            // marker.setLabel(label); //添加百度label
+            // bm.setCenter(data.points[0]);
+          }
         }
-        else {
-            alert('failed'+this.getStatus());
-        }        
-    },{enableHighAccuracy: true})
-</script>
+
+        setTimeout(function(){
+            var convertor = new BMap.Convertor();
+            var pointArr = [];
+            pointArr.push(ggPoint);
+            convertor.translate(pointArr, 1, 5, translateCallback)
+        }, 1000);
+    },
+    cancel: function (res) {
+        alert('用户拒绝授权获取地理位置');
+    }
+});
+
+});
+  </script>
 <!-- 城市选择 -->
 <script type="text/javascript">
 

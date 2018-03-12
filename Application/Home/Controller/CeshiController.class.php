@@ -12,15 +12,16 @@ class CeshiController extends Controller {
     //     dump('1645');exit;
     // }
     
-    public function _initialize()
-    {
-       echo "aa";
-
-    }
+   
 	//门店列表展示
     public function index(){
-        
-       
+    	//微信定位
+    	import("Org.Util.Jssdk");
+        $jssdk  = new \Org\Util\Jssdk("wx30248bc4475fd353", "8545a863d7110282be8cd0014ed4cfc6");
+        $signPackage = $jssdk->GetSignPackage();
+        //dump($signPackage);die;
+        $this->assign("signPackage",$signPackage);
         $this->display();
     }
+
 }

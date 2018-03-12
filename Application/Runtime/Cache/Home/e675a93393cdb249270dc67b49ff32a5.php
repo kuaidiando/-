@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>搜索</title>
-    <link rel="stylesheet" href="/Public/home/css/base.css">
-    <link rel="stylesheet" href="/Public/home/css/text.css">
-    <link rel="stylesheet" href="/Public/home/css/sousuo.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/sousuo.css">
     <!--<script type="text/javascript" src="js/my.js"></script>-->
 </head>
 <body style="font-size: 12px">
     <div class="header">
         <div class="head">
             <div class="look">
-                <img src="/Public/home/img/loogup.png" alt="">
+                <img src="/kuaidian/Public/home/img/loogup.png" alt="">
             </div>
 
             <div class="int">
@@ -77,7 +77,7 @@
            </div>
 
            <div id="sc">
-               <img src="/Public/home/img/qingkong.png" alt="">
+               <img src="/kuaidian/Public/home/img/qingkong.png" alt="">
            </div>
        </div>
         <div class="name">
@@ -121,7 +121,7 @@
     </div>
 </body>
 
-<script type="text/javascript" src="/Public/home/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/home/js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript">
     var sc = document.getElementById('sc');
     var li = document.getElementById('li');

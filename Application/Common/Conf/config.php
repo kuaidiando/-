@@ -21,4 +21,5 @@ return array(
 //加载配置函数
 'LOAD_EXT_FILE'	=> "validate,develop,notice",
 'URL_MODEL'             =>  1,
+
 );

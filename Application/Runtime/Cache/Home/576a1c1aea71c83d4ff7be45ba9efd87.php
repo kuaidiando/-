@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>城市选择</title>
-    <link rel="stylesheet" href="/Public/home/css/base.css">
-    <link rel="stylesheet" href="/Public/home/css/text.css">
-    <link rel="stylesheet" href="/Public/home/css/city.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/city.css">
 </head>
 <body style="font-size: 12px">
 <!--搜索城市-->
@@ -572,7 +572,7 @@
 </body>
 
 <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-    <script src="/Public/home/js/jquery-1.12.4.js"></script>
+    <script src="/kuaidian/Public/home/js/jquery-1.12.4.js"></script>
 <script type="text/javascript">
     $(function () {
         //加载城市事件
