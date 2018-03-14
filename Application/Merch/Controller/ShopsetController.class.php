@@ -21,6 +21,16 @@ class ShopsetController extends Controller {
     	// dump($shopid);
         $this->display();
     }
+    //ajax 查询附近商家
+    public function ajaxfjsj(){
+        $x = I("post.x");
+        $y = I("post.y");
+        $url = "http://api.map.baidu.com/geocoder/v2/?location=$y,$x&output=json&pois=1&ak=T9Upu0sWr9Grt4EknLsa9DbU9emQlRYj";
+        $res = file_get_contents($url);
+
+        $res = json_decode($res);
+        $this->ajaxReturn($res);
+    }
     //基本信息
     public function jibenxx(){
     	$shopid = I("get.shopid");

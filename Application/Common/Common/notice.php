@@ -75,6 +75,7 @@
 	 * @return [type]         [description]
 	 */
 	function cvrmkm($danwei){
+		$danwei = $danwei * 1000;
 		if ($danwei < 1000) {
 			$danwei = $danwei;
 			$houdanwei = "m";

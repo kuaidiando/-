@@ -1,19 +1,19 @@
-
+<?php if (!defined('THINK_PATH')) exit();?>
 <!DOCTYPE html>
 <html lang="en" data-dpr="1" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>快点—智慧餐厅</title>
-    <link rel="icon" href="__PUBLIC__/home/img/logo1.png">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/index.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/swiper.min.css">
+    <link rel="icon" href="/kuaidian/Public/home/img/logo1.png">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/index.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/swiper.min.css">
 
-    <link rel="stylesheet" href="__PUBLIC__/home/css/base-index.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/base2.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/fenlei.css">
-    <script src="__PUBLIC__/home/js/flexible.js"></script>
-    <script src="__PUBLIC__/home/js/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/base-index.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/base2.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/fenlei.css">
+    <script src="/kuaidian/Public/home/js/flexible.js"></script>
+    <script src="/kuaidian/Public/home/js/jquery-1.12.4.js"></script>
     <script>
         $(function(){
             $(window).scroll(function() {
@@ -76,7 +76,7 @@
                 </div>
                 
                 <div class="xl">
-                    <img src="__PUBLIC__/home/img/jiantou2.png" alt="">
+                    <img src="/kuaidian/Public/home/img/jiantou2.png" alt="">
                 </div>
             </div>
 
@@ -84,7 +84,7 @@
             <div class="lookup">
                 <div class="look">
                     <div class="sou">
-                        <img src="__PUBLIC__/home/img/loogup.png" alt="">
+                        <img src="/kuaidian/Public/home/img/loogup.png" alt="">
                     </div>
 
                     <div class="tet">
@@ -93,10 +93,10 @@
                 </div>
             </div>
 
-            <a href="{:U('Home/Person/index')}">
+            <a href="<?php echo U('Home/Person/index');?>">
              <div class="person">
                 <div class="tx">
-                    <img src="{$photo}" alt="">
+                    <img src="<?php echo ($photo); ?>" alt="">
                 </div>
             </div>               
             </a>
@@ -105,18 +105,15 @@
     </header>
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <foreach name="event" item="one">
-
-            <div class="swiper-slide">
+            <?php if(is_array($event)): foreach($event as $key=>$one): ?><div class="swiper-slide">
                 <a href="#">
-                    <img src="__PUBLIC__/{$one}" alt="">
+                    <img src="/kuaidian/Public/<?php echo ($one); ?>" alt="">
                 </a>
-            </div>
-            </foreach>
+            </div><?php endforeach; endif; ?>
         </div>
     </div>
     <!-- Swiper JS -->
-    <script src="__PUBLIC__/home/js/swiper.min.js"></script>
+    <script src="/kuaidian/Public/home/js/swiper.min.js"></script>
     <!-- Initialize Swiper -->
     <script type="text/javascript">
         var swiper = new Swiper('.swiper-container', {
@@ -142,7 +139,7 @@
                         </div>
 
                         <div class="san">
-                            <img src="__PUBLIC__/home/img/sanjiao.png" alt="">
+                            <img src="/kuaidian/Public/home/img/sanjiao.png" alt="">
                         </div>
                     </li>
                     
@@ -152,7 +149,7 @@
                         </div>
 
                         <div class="san">
-                            <img src="__PUBLIC__/home/img/sanjiao.png" alt="">
+                            <img src="/kuaidian/Public/home/img/sanjiao.png" alt="">
                         </div>
                     </li>
                     
@@ -162,7 +159,7 @@
                         </div>
 
                         <div class="san">
-                            <img src="__PUBLIC__/home/img/sanjiao.png" alt="">
+                            <img src="/kuaidian/Public/home/img/sanjiao.png" alt="">
                         </div>
                     </li>
                 </ul>
@@ -217,27 +214,25 @@
             </div>
         </section>
     </div>
-    <script src="__PUBLIC__/home/js/jquery-1.12.4.min.js"></script>
-    <script src="__PUBLIC__/home/js/demo.js"></script>
+    <script src="/kuaidian/Public/home/js/jquery-1.12.4.min.js"></script>
+    <script src="/kuaidian/Public/home/js/demo.js"></script>
 
     
     <div class="jsbdapi">
     <!--中间商品部分-->
-    <foreach name="res" item="vores" key="k">
-
-    <a href="{:U('Home/Index/detail',array('shopid'=>$vores[id]))}">
+    <?php if(is_array($res)): foreach($res as $k=>$vores): ?><a href="<?php echo U('Home/Index/detail',array('shopid'=>$vores[id]));?>">
         <div class="shangpin">
             <div class="hezi">
                 <div class="hz">
                     <div class="top">
                         <div class="tu">
-                            <img src="__PUBLIC__{$vores.logo}" alt="">
+                            <img src="/kuaidian/Public<?php echo ($vores["logo"]); ?>" alt="">
                         </div>
 
                         <div class="you">
                             <div class="top1">
                                 <div class="name">
-                                    <span>{$vores.mingch}</span>
+                                    <span><?php echo ($vores["mingch"]); ?></span>
                                 </div>
                             </div>
 
@@ -245,21 +240,12 @@
                             <div class="center">
                                 <div class="xing">
                                 <!-- 实心星数量 -->
-                                <for start="0" end="$vores.shixinxing">
-                                    <img src="__PUBLIC__/home/img/quanstart.png" style="width:13%;" alt="">
-                                
-                                </for>
+                                <?php $__FOR_START_654731250__=0;$__FOR_END_654731250__=$vores["shixinxing"];for($i=$__FOR_START_654731250__;$i < $__FOR_END_654731250__;$i+=1){ ?><img src="/kuaidian/Public/home/img/quanstart.png" style="width:13%;" alt=""><?php } ?>
                                 <!-- 判断半个 星星 -->
-                        <if condition="$vores.bangexing eq 1">
-                            <img src="__PUBLIC__/home/img/ban.png" style="width:13%;" alt="">
-                        <else />
-                            
-                        </if>
+                        <?php if($vores["bangexing"] == 1): ?><img src="/kuaidian/Public/home/img/ban.png" style="width:13%;" alt="">
+                        <?php else: endif; ?>
                                 <!-- 空心星数量 -->
-                                <for start="0" end="$vores.kongxinxing">
-                                    <img src="__PUBLIC__/home/img/wu.png" style="width:13%;" alt="">
-                                
-                                </for>
+                                <?php $__FOR_START_1078046803__=0;$__FOR_END_1078046803__=$vores["kongxinxing"];for($i=$__FOR_START_1078046803__;$i < $__FOR_END_1078046803__;$i+=1){ ?><img src="/kuaidian/Public/home/img/wu.png" style="width:13%;" alt=""><?php } ?>
                                     
                                 </div>
 
@@ -267,13 +253,13 @@
 
 
                                 <div class="juli">
-                                    <span class="{$vores.id}"></span>
+                                    <span class="<?php echo ($vores["id"]); ?>"></span>
                                 </div>
                             </div>
 
                             <div class="ttop">
                                 <div class="lei">
-                                    <span>{$vores.lbname}</span>
+                                    <span><?php echo ($vores["lbname"]); ?></span>
                                 </div>
 
                                 <div class="fuhao">
@@ -281,7 +267,7 @@
                                 </div>
 
                                 <div class="qian">
-                                    <span>{$vores.maney}</span>
+                                    <span><?php echo ($vores["maney"]); ?></span>
                                 </div>
 
                                 <div class="wei">
@@ -289,11 +275,11 @@
                                 </div>
 
                                 <div class="quan">
-                                    <img src="__PUBLIC__/home/img/quan2.png" alt="">
+                                    <img src="/kuaidian/Public/home/img/quan2.png" alt="">
                                 </div>
 
                                 <div class="dian">
-                                    <img src="__PUBLIC__/home/img/dian.png" alt="">
+                                    <img src="/kuaidian/Public/home/img/dian.png" alt="">
                                 </div>
                             </div>
 
@@ -307,7 +293,7 @@
 
                     <div class="bot">
                         <div class="tui">
-                            <img src="__PUBLIC__/home/img/tuiguang.png" alt="">
+                            <img src="/kuaidian/Public/home/img/tuiguang.png" alt="">
                         </div>
 
                         <div class="jia">
@@ -315,24 +301,22 @@
                         </div>
 
                         <div class="red">
-                            <span>{$vores.zuigaolij}</span>
+                            <span><?php echo ($vores["zuigaolij"]); ?></span>
                         </div>
 
                         <div class="bai">
                             <span>%</span>
                         </div>
                     </div>
-                    <if condition="$vores.zuoweishu eq 0">
-                    
-                    <else />
+                    <?php if($vores["zuoweishu"] == 0): else: ?>
                         <div class="xia2">
                             <div class="zzuo">
-                                <img src="__PUBLIC__/home/img/jinri.png" alt="">
+                                <img src="/kuaidian/Public/home/img/jinri.png" alt="">
                             </div>
 
                             <div class="yyou">
                                 <div class="xuan">
-                                    <img src="__PUBLIC__/home/img/dingzuo.png" alt="">
+                                    <img src="/kuaidian/Public/home/img/dingzuo.png" alt="">
                                 </div>
 
                                 <div class="ke">
@@ -340,20 +324,18 @@
                                 </div>
 
                                 <div class="renshu">
-                                    <span>{$vores.zuoweishu}</span>
+                                    <span><?php echo ($vores["zuoweishu"]); ?></span>
                                 </div>
 
                                 <div class="zhuo">
                                     <span>桌</span>
                                 </div>
                             </div>
-                        </div>
-                    </if>
+                        </div><?php endif; ?>
                 </div>
             </div>
         </div>
-    </a>
-    </foreach>
+    </a><?php endforeach; endif; ?>
     </div>
 
 
@@ -366,10 +348,10 @@
 
     <!--底部-->
 <div class="foott">
-    <a href="{:U('Home/Index/index')}">
+    <a href="<?php echo U('Home/Index/index');?>">
         <div id="foot">
             <div id="ttu">
-                <img src="__PUBLIC__/home/img/shangjia2.png" alt="">
+                <img src="/kuaidian/Public/home/img/shangjia2.png" alt="">
             </div>
 
             <div id="shou">
@@ -379,10 +361,10 @@
     </a>
 
 
-    <a href="{:U('Home/Order/order_info')} ">
+    <a href="<?php echo U('Home/Order/order_info');?> ">
         <div id="foot2">
             <div id="ttu2">
-                <img src="__PUBLIC__/home/img/diangdan.png" alt="">
+                <img src="/kuaidian/Public/home/img/diangdan.png" alt="">
             </div>
 
             <div id="shou2">
@@ -391,10 +373,10 @@
         </div>
     </a>
 
-    <a href="{:U('Home/Person/index')}">
+    <a href="<?php echo U('Home/Person/index');?>">
         <div id="foot3" onclick="location.href='person.html'">
             <div id="ttu3">
-               <img src="__PUBLIC__/home/img/geren.png" alt="">
+               <img src="/kuaidian/Public/home/img/geren.png" alt="">
             </div>
 
             <div id="shou3">
@@ -478,7 +460,7 @@ wx.ready(function () {
                     type:"post",
                     dataType:'json',
                     async:false,
-                    url:'{:U("home/index/ajaxfoodjuli")}',
+                    url:'<?php echo U("home/index/ajaxfoodjuli");?>',
                     data:{"lng":zx,"lat":zy},
                     success:function(dd){
                         console.log(dd);
@@ -488,26 +470,26 @@ wx.ready(function () {
                             var shixinxing = '';
                             var idd = item.id;
                             for ( var i=0; i<item.shixinxing; i++){
-                                 shixinxing +='<img src="__PUBLIC__/home/img/quanstart.png" style="width:13%;" alt="">';
+                                 shixinxing +='<img src="/kuaidian/Public/home/img/quanstart.png" style="width:13%;" alt="">';
                             }
                             //半个星星数量
                             var bangexing = '';
                             if (bangexing == 1) {
-                                var bangexing = '<img src="__PUBLIC__/home/img/ban.png" style="width:13%;" alt="">';
+                                var bangexing = '<img src="/kuaidian/Public/home/img/ban.png" style="width:13%;" alt="">';
                             }
                             //实心星星数量
                             var kongxinxing = '';
                             for ( var i=0; i<item.kongxinxing; i++){
-                                 kongxinxing +='<img src="__PUBLIC__/home/img/wu.png" style="width:13%;" alt="">';
+                                 kongxinxing +='<img src="/kuaidian/Public/home/img/wu.png" style="width:13%;" alt="">';
                             }
                             //座位数
                             if (item.zuoweishu == 0) {
                                 var zuoweishu = '';
                             }else{
-                                var zuoweishu = '<div class="xia2"><div class="zzuo"><img src="__PUBLIC__/home/img/jinri.png" alt=""></div><div class="yyou"><div class="xuan"><img src="__PUBLIC__/home/img/dingzuo.png" alt=""></div><div class="ke"><span>今日可订座</span></div><div class="renshu"><span>'+item.zuoweishu+'</span></div><div class="zhuo"><span>桌</span></div></div></div>';
+                                var zuoweishu = '<div class="xia2"><div class="zzuo"><img src="/kuaidian/Public/home/img/jinri.png" alt=""></div><div class="yyou"><div class="xuan"><img src="/kuaidian/Public/home/img/dingzuo.png" alt=""></div><div class="ke"><span>今日可订座</span></div><div class="renshu"><span>'+item.zuoweishu+'</span></div><div class="zhuo"><span>桌</span></div></div></div>';
                             }
                             //菜品内容
-                            str += '<a href="http://mk.365kdian.com/index.php/Home/Index/detail/shopid/'+item.id+'"><div class="shangpin"><div class="hezi"><div class="hz"><div class="top"><div class="tu"><img src="__PUBLIC__'+item.logo+'" alt=""></div><div class="you"><div class="top1"><div class="name"><span>'+item.mingch+'</span></div></div><div class="center"><div class="xing">'+shixinxing+bangexing+kongxinxing+'</div><div class="juli"><span>'+item.juli+'</span></div></div><div class="ttop"><div class="lei"><span>'+item.lbname+'</span></div><div class="fuhao"><span>￥</span></div><div class="qian"><span>'+item.maney+'</span></div><div class="wei"><span>/位</span></div><div class="quan"><img src="__PUBLIC__/home/img/quan2.png" alt=""></div><div class="dian"><img src="__PUBLIC__/home/img/dian.png" alt=""></div></div></div></div></div><div class="xia"><div class="bot"><div class="tui"><img src="__PUBLIC__/home/img/tuiguang.png" alt=""></div><div class="jia"><span>已发起微众代言</span></div><div class="red"><span>'+item.zuigaolij+'</span></div><div class="bai"><span>%</span></div></div>'+zuoweishu+'</div></div></div></a>';
+                            str += '<a href="http://mk.365kdian.com/index.php/Home/Index/detail/shopid/'+item.id+'"><div class="shangpin"><div class="hezi"><div class="hz"><div class="top"><div class="tu"><img src="/kuaidian/Public'+item.logo+'" alt=""></div><div class="you"><div class="top1"><div class="name"><span>'+item.mingch+'</span></div></div><div class="center"><div class="xing">'+shixinxing+bangexing+kongxinxing+'</div><div class="juli"><span>'+item.juli+'</span></div></div><div class="ttop"><div class="lei"><span>'+item.lbname+'</span></div><div class="fuhao"><span>￥</span></div><div class="qian"><span>'+item.maney+'</span></div><div class="wei"><span>/位</span></div><div class="quan"><img src="/kuaidian/Public/home/img/quan2.png" alt=""></div><div class="dian"><img src="/kuaidian/Public/home/img/dian.png" alt=""></div></div></div></div></div><div class="xia"><div class="bot"><div class="tui"><img src="/kuaidian/Public/home/img/tuiguang.png" alt=""></div><div class="jia"><span>已发起微众代言</span></div><div class="red"><span>'+item.zuigaolij+'</span></div><div class="bai"><span>%</span></div></div>'+zuoweishu+'</div></div></div></a>';
                         });
                         $(".jsbdapi").html(str);
                     }
@@ -536,12 +518,12 @@ wx.ready(function () {
 
 // <!-- 城市选择 -->
     $(".cs").click(function(){
-        var url = '{:U("Home/Index/cityxuanze")}';
+        var url = '<?php echo U("Home/Index/cityxuanze");?>';
         window.location.replace(url);
     });
     //搜索商家
     $("#sousuocite").focus(function(){
-        var url = '{:U("Home/Index/citysousuo")}';
+        var url = '<?php echo U("Home/Index/citysousuo");?>';
         window.location.replace(url);
     });
 </script>

@@ -1,9 +1,9 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<?php if (!defined('THINK_PATH')) exit();?><html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>根据地址查询经纬度</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <script src="__PUBLIC__/home/js/jquery-1.12.4.js"></script>
+    <script src="/kuaidian/Public/home/js/jquery-1.12.4.js"></script>
     <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=T9Upu0sWr9Grt4EknLsa9DbU9emQlRYj"></script>
 </head>
 <body >

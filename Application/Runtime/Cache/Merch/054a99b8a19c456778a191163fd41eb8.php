@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>认证资质</title>
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/text.css">
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/xinxi.css">
-    <script type="text/javascript" src="__PUBLIC__/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/xinxi.css">
+    <script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
     <!-- 图片上传 -->
      <style type="text/css">
         #preview{
@@ -73,10 +73,10 @@
     </script>
 </head>
 <body style="font-size: 12px">
-<form class="form form-horizontal" id="formadd" action="{:U('Merch/Shopset/addjibenxx')}" method="post" enctype="multipart/form-data">
+<form class="form form-horizontal" id="formadd" action="<?php echo U('Merch/Shopset/addjibenxx');?>" method="post" enctype="multipart/form-data">
     <div class="head">
         <!-- 门店id -->
-        <input type="text" name="shopid" value="{$shopid}" style="display:none;">
+        <input type="text" name="shopid" value="<?php echo ($shopid); ?>" style="display:none;">
         <!-- 隐藏基本信息状态 -->
         <input type="text" name="jinbenxxtype" style="display: none;" value="1">
         <span>基本信息</span>
@@ -98,7 +98,7 @@
             </div>
             
             <div class="tu" id="preview" style="margin-left: 13%;">
-                <img id="imghead" border=0 src="__PUBLIC__/{$res.0.logo}" />
+                <img id="imghead" border=0 src="/kuaidian/Public/<?php echo ($res["0"]["logo"]); ?>" />
             </div>
 
             <div class="fu2">
@@ -108,7 +108,7 @@
 
         <div class="name2">
             <div class="ming">
-                <input type="text" name="mingch" class="mingch" value="{$res.0.mingch}" placeholder="商家名称">
+                <input type="text" name="mingch" class="mingch" value="<?php echo ($res["0"]["mingch"]); ?>" placeholder="商家名称">
                
 
             </div>
@@ -120,7 +120,7 @@
 
         <div class="name">
             <div class="ming">
-                <input type="tel" name="tel" class="tel" value="{$res.0.tel}" placeholder="餐厅服务电话">
+                <input type="tel" name="tel" class="tel" value="<?php echo ($res["0"]["tel"]); ?>" placeholder="餐厅服务电话">
             </div>
 
             <div class="fu">
@@ -140,7 +140,7 @@
 
         <div class="name2">
             <div class="ming" onclick="one()">
-                <input type="text" name="jutidizhi" class="jutidizhi" value="{$res.0.jutidizhi}"  placeholder="具体地址">
+                <input type="text" name="jutidizhi" class="jutidizhi" value="<?php echo ($res["0"]["jutidizhi"]); ?>"  placeholder="具体地址">
             </div>
 
             <div class="fu">
@@ -152,23 +152,15 @@
             <div class="ming">
                  <select style="margin-left: 2%;" name="time_kai">
                     <option value="">开始时间</option>
-                    <foreach name="restime" item="vorestime">
-                        <if condition="$vorestime.name eq $res[0][time_kai]">
-                            <option value="{$vorestime.name}" selected="selected">{$vorestime.name}</option>
-                        <else />
-                            <option value="{$vorestime.name}">{$vorestime.name}</option>
-                        </if>
-                    </foreach>
+                    <?php if(is_array($restime)): foreach($restime as $key=>$vorestime): if($vorestime["name"] == $res[0][time_kai]): ?><option value="<?php echo ($vorestime["name"]); ?>" selected="selected"><?php echo ($vorestime["name"]); ?></option>
+                        <?php else: ?>
+                            <option value="<?php echo ($vorestime["name"]); ?>"><?php echo ($vorestime["name"]); ?></option><?php endif; endforeach; endif; ?>
                 </select>
                 <select name="time_zhong">
                     <option value="">结束时间</option>
-                     <foreach name="restime" item="vorestime">
-                        <if condition="$vorestime.name eq $res[0][time_zhong]">
-                            <option value="{$vorestime.name}" selected="selected">{$vorestime.name}</option>
-                        <else />
-                            <option value="{$vorestime.name}">{$vorestime.name}</option>
-                        </if>
-                    </foreach>
+                     <?php if(is_array($restime)): foreach($restime as $key=>$vorestime): if($vorestime["name"] == $res[0][time_zhong]): ?><option value="<?php echo ($vorestime["name"]); ?>" selected="selected"><?php echo ($vorestime["name"]); ?></option>
+                        <?php else: ?>
+                            <option value="<?php echo ($vorestime["name"]); ?>"><?php echo ($vorestime["name"]); ?></option><?php endif; endforeach; endif; ?>
                 </select>
             </div>
 
@@ -181,14 +173,10 @@
         <div class="ming">
             <input type="text" placeholder="菜品类型" style="width: 48%;">
             <select name="type_shop">
-                     <foreach name="resfoodtype" item="voresfoodtype">
-                        <if condition="$voresfoodtype.id eq $res[0][type_shop]">
-                            <option value="{$voresfoodtype.id}" selected="selected">{$voresfoodtype.mingch}
-                        <else />
-                            <option value="{$voresfoodtype.id}">{$voresfoodtype.mingch}
-                        </if>
-                        </option>
-                    </foreach>
+                     <?php if(is_array($resfoodtype)): foreach($resfoodtype as $key=>$voresfoodtype): if($voresfoodtype["id"] == $res[0][type_shop]): ?><option value="<?php echo ($voresfoodtype["id"]); ?>" selected="selected"><?php echo ($voresfoodtype["mingch"]); ?>
+                        <?php else: ?>
+                            <option value="<?php echo ($voresfoodtype["id"]); ?>"><?php echo ($voresfoodtype["mingch"]); endif; ?>
+                        </option><?php endforeach; endif; ?>
                 </select>
         </div>
 
@@ -199,7 +187,7 @@
 
         <div class="name2">
             <div class="ming">
-                <input name="maney" type="tel" class="maney" value="{$res.0.maney}" placeholder="人均消费">
+                <input name="maney" type="tel" class="maney" value="<?php echo ($res["0"]["maney"]); ?>" placeholder="人均消费">
             </div>
 
             <div class="fu">
@@ -240,7 +228,7 @@
                 <span>河北省石家庄市长安区建明南路1</span>
             </div>
             <div style="margin-top: -10%;margin-left: 90%;display: none;">
-                <img style="width: 80%;" src="__PUBLIC__/home/img/dizhi.png">
+                <img style="width: 80%;" src="/kuaidian/Public/home/img/dizhi.png">
             </div>
         </div> -->
     </div>
@@ -263,7 +251,7 @@
 </form>
 </body>
 <!-- 地图 -->
-    <script src="__PUBLIC__/home/js/jquery-1.12.4.js"></script>
+    <script src="/kuaidian/Public/home/js/jquery-1.12.4.js"></script>
     <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=T9Upu0sWr9Grt4EknLsa9DbU9emQlRYj"></script>
 <script type="text/javascript">
     function one(){
@@ -306,13 +294,13 @@
         $.ajax({
             type:'post',
             dataType: 'json',
-            url:'{:U("Merch/Shopset/ajaxfjsj")}',
+            url:'<?php echo U("Merch/Shopset/ajaxfjsj");?>',
             data:{"x":x,"y":y},
             success: function (dd) {
                 console.log(dd);
                 var str = "";
                 $.each(dd.result.pois,function(index,item){
-                    str += '<div class="ddi"><div class="da"><span>'+item.name+'</span></div><div class="xiao"><span>'+item.addr+'</span><span class="sjdjlng">'+item.point.x+'</span><span class="sjdjlat">'+item.point.y+'</span></div><div style="margin-top: -10%;margin-left: 90%;display: none;" class="shangjiatu"><img style="width: 80%;" src="__PUBLIC__/home/img/dizhi.png"></div></div>'
+                    str += '<div class="ddi"><div class="da"><span>'+item.name+'</span></div><div class="xiao"><span>'+item.addr+'</span><span class="sjdjlng">'+item.point.x+'</span><span class="sjdjlat">'+item.point.y+'</span></div><div style="margin-top: -10%;margin-left: 90%;display: none;" class="shangjiatu"><img style="width: 80%;" src="/kuaidian/Public/home/img/dizhi.png"></div></div>'
                     // console.log(item.point);经纬度
                 });
                 $(".dl").html(str);
