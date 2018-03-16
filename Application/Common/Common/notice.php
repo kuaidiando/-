@@ -138,4 +138,29 @@
 		  
 		return $arrUsers;
 	}
+	/**
+	 * *
+	 * @param  [type] $model  [数据库表名]
+	 * @param  [type] $filter [过滤条件]
+	 * @param  [type] $field [取多少条]
+	 * @return [type]         [description]
+	 */
+	function selwh($model,$filter,$field = null){
+		if(!$filter){
+	        return ;
+	    }
+		if($filter && is_numeric($filter)){
+	        $filter  = array("id" => $filter);
+	    }else if($filter && is_array($filter)){
+	        $filter = $filter;
+	    }else{
+	        return ;
+	    }
+	    if(!$field){
+	        $info = M($model)->where($filter)->select();
+	    }else{
+	        $info = M($model)->where($filter)->limit($field)->select();
+	    }
+	    return $info;
+	}
 ?>

@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>城市选择</title>
-    <link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/text.css">
-    <link rel="stylesheet" href="__PUBLIC__/home/css/city.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/home/css/city.css">
 </head>
 <body style="font-size: 12px">
 <!--搜索城市-->
@@ -35,11 +35,9 @@
 
     <div class="css">
         <div class="cs">
-            <foreach name="rmcs" item="vormcs">
-                <div class="kuang">
-                    <span>{$vormcs.name}</span>
-                </div>
-            </foreach>
+            <?php if(is_array($rmcs)): foreach($rmcs as $key=>$vormcs): ?><div class="kuang">
+                    <span><?php echo ($vormcs["name"]); ?></span>
+                </div><?php endforeach; endif; ?>
         </div>
     </div>
 </div>
@@ -95,23 +93,19 @@
             <p data-id="150200">包头市</p>
             <p data-id="150800">巴彦淖尔市</p>
         </div> -->
-        <foreach name="pinyincs" item="vopinyincs" key="k">
-            <div class="city-list">
-                <span class="city-letter" id="{$vopinyincs.zimu}">{$vopinyincs.zimu}</span>
-                <foreach name="pinyincs[$k]['cszm']" item="vocszm">
-                    <p data-id="220800">
-                        <span class="csmingchengdianji">{$vocszm.name}</span>
-                        <span class="csid"><a href="{:U('Home/Index/index',array('csmc'=>$vocszm['name']))}" style="display: none;"></a></span>
-                    </p>
-                </foreach>
-            </div>
-        </foreach>
+        <?php if(is_array($pinyincs)): foreach($pinyincs as $k=>$vopinyincs): ?><div class="city-list">
+                <span class="city-letter" id="<?php echo ($vopinyincs["zimu"]); ?>"><?php echo ($vopinyincs["zimu"]); ?></span>
+                <?php if(is_array($pinyincs[$k]['cszm'])): foreach($pinyincs[$k]['cszm'] as $key=>$vocszm): ?><p data-id="220800">
+                        <span class="csmingchengdianji"><?php echo ($vocszm["name"]); ?></span>
+                        <span class="csid"><a href="<?php echo U('Home/Index/index',array('csmc'=>$vocszm['name']));?>" style="display: none;"></a></span>
+                    </p><?php endforeach; endif; ?>
+            </div><?php endforeach; endif; ?>
     </div>
 </div>
 </body>
 <div id="allmap" style="display: none;"></div>
 <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-    <script src="__PUBLIC__/home/js/jquery-1.12.4.js"></script>
+    <script src="/kuaidian/Public/home/js/jquery-1.12.4.js"></script>
     <!-- 百度地图api -->
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=T9Upu0sWr9Grt4EknLsa9DbU9emQlRYj"></script>
 <script type="text/javascript">
@@ -124,7 +118,7 @@
             alert(csmc);
             var url = $(this).parent().find(".csid a").attr("href");
             // alert(url);
-            // var url = '{:U("Home/Index/index")}';
+            // var url = '<?php echo U("Home/Index/index");?>';
             window.location.replace(url);
         });
         //点击索引查询城市

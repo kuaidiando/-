@@ -258,7 +258,7 @@ $(document).ready(function(){
                 })
                 str += '</select></span>';
                 //赋值区域 市
-                $("#jlshixianshi").html(str);
+                $("#selshi").html(str);
                 // 清空区
                 $("#jlquxianshi").html("");
             }
@@ -267,6 +267,7 @@ $(document).ready(function(){
     // 城市级联 市--》县/区
     $(document).on('click','#selshi',function(){
         var codesheng = $(this).val();//获取市对应code
+        // alert(codesheng);
         var str = '<span class="select-box"><select name="depcsjlxian"  class="select" id="selqu">';//城市对应区域
         $.ajax({
             type:'post',

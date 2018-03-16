@@ -309,10 +309,10 @@
             url:'{:U("Merch/Shopset/ajaxfjsj")}',
             data:{"x":x,"y":y},
             success: function (dd) {
-                console.log(dd);
+                // console.log(dd);
                 var str = "";
                 $.each(dd.result.pois,function(index,item){
-                    str += '<div class="ddi"><div class="da"><span>'+item.name+'</span></div><div class="xiao"><span>'+item.addr+'</span><span class="sjdjlng">'+item.point.x+'</span><span class="sjdjlat">'+item.point.y+'</span></div><div style="margin-top: -10%;margin-left: 90%;display: none;" class="shangjiatu"><img style="width: 80%;" src="__PUBLIC__/home/img/dizhi.png"></div></div>'
+                    str += '<div class="ddi"><div class="da"><span>'+item.name+'</span></div><div class="xiao"><span>'+item.addr+'</span><span class="sjdjlng" style="display:none;">'+item.point.x+'</span><span class="sjdjlat" style="display:none;">'+item.point.y+'</span></div><div style="margin-top: -10%;margin-left: 90%;display: none;" class="shangjiatu"><img style="width: 80%;" src="__PUBLIC__/home/img/dizhi.png"></div></div>'
                     // console.log(item.point);经纬度
                 });
                 $(".dl").html(str);

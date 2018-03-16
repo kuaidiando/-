@@ -167,144 +167,405 @@ $(document).ready(function(){
     });
 </script><header class="navbar-wrapper"></header>
 <div class="dislpayArrow hidden-xs">
-    <a class="pngfix" href="javascript:;" onclick="displaynavbar(this)"></a>
+	<a class="pngfix" href="javascript:;" onclick="displaynavbar(this)"></a>
 </div>
 <section class="Hui-article-box">
 <div id="iframe_box" class="Hui-article">
-    <div class="show_iframe">
-    <li style="display: none;"><a class="shopin" name="<?php echo U('Admin/Index/zhuye');?>"><span id="clickzhuye">主页</span></a></li>
-        <div style="display:none" class="loading">
-        </div>
-        <!-- 主题内容 -->
-        <div>
-            <div class="page-container">
-        <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-            <a href="javascript:;" onclick="admin_add('添加门店','<?php echo U('Admin/Shop/add');?>','800px','500px')"
-               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加门店</a></span>
-            <span class="r">共有数据：<strong><?php echo ($info["count"]); ?></strong> 条</span> </div>
-        <div class="mt-20">
-        <table class="table table-border table-bordered table-bg table-hover table-responsive">
-            <thead>
-                <tr class="text-c">
-                    <th width="30">编号</th>
-                    <th width="80">名称</th>
-                    <th width="30" style="width:10%;">LOGO</th>
-                    <th width="80">所属城市</th>
-                    <th width="60">门店类别</th>
-                    <th width="40">星数量</th>
-                    <th width="60">优惠卷</th>
-                    <th width="60">认证状态</th>
-                    <th width="120">操作</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php if(is_array($resshop)): foreach($resshop as $key=>$vo): ?><tr class="text-c">
-                            <td><?php echo ($vo["id"]); ?></td>
-                            <td><?php echo ($vo["mingch"]); ?></td>
-                            <td><img style="width: 30%;"src="/kuaidian/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
-                            <td><?php echo (depchengshi($vo["depcsjlshi"])); ?></td>
-                            <td><?php echo (shoptype($vo["type_shop"])); ?></td>
-                            <td><?php echo ($vo["xingsl"]); ?></td>
-                            <td class="td-status">
-                                <?php if($vo["juan"] == 1 ): ?><span class="label label-success radius">
-                                        <a href="<?php echo U('Admin/Sale/index',array('menid' => $vo['id'],'type'=>1));?>" style="text-decoration: none;color:#fff;">有<?php echo (youhuishul($vo["id"])); ?>
-                                        </a>
-                                    </span> 
-                                    <?php else: ?> 
-                                    <span class="label label-danger radius">
-                                         <a href="<?php echo U('Admin/Sale/index',array('menid' => $vo['id'],'type'=>2));?>" style="text-decoration: none;color:#fff;">添加<?php echo (youhuishul($vo["id"])); ?>
-                                        </a>
-                                    </span><?php endif; ?>
-                            </td>
-                            <td class="td-status">
-                                <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">
-                                        <a  href="javascript:;"
-                                   onclick="admin_add('认证','<?php echo U('Admin/Authentica/index', array('mdid' => $vo['id']));?>'
-                                   ,'800px','500px')" style="text-decoration: none;color:#fff;">已通过</a>
-                                    </span>
-                                    <?php elseif($vo["zhuangt"] == 2): ?>
-                                    <div style="background-color:#ffae00;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;"><b>待审核</b></div>
-                                    <?php elseif($vo["zhuangt"] == 3): ?>
-                                    <span class="label label-danger radius">驳回中</span>
-                                    <?php elseif($vo["zhuangt"] == 4): ?>
-                                    <div style="background-color:#1160BA;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;"><b>未认证</b></div>
-                                    <?php elseif($vo["zhuangt"] == 5): ?>
-                                    <div style="background-color:#B300FF;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;">
-                                        <a  href="javascript:;"
-                                   onclick="admin_add('认证','<?php echo U('Admin/Authentica/index', array('mdid' => $vo['id']));?>'
-                                   ,'800px','500px')" style="text-decoration: none;color:#fff;"><b>已过期</b></a></div><?php endif; ?>
-                            </td>
-                            <td class="td-manage" style="text-align: center;">
-                                
-                                <a  href="javascript:;"
-                                   onclick="admin_add('编辑','<?php echo U('Admin/Shop/editerweim', array('id' => $vo['id']));?>'
-                                   ,'800px','500px')">
-                                    &nbsp;&nbsp;二维码&nbsp;&nbsp;
-                                </a>
-                                <a href="<?php echo U('Admin/Seat/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
-                                   
-                                    &nbsp;&nbsp;座位列表&nbsp;&nbsp;
-                                </a>
-                                <!-- <a href="<?php echo U('Admin/Seattype/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
-                                   
-                                   &nbsp;&nbsp;座位类别&nbsp;&nbsp;
-                                </a> -->
-                                 <a  href="javascript:;"
-                                   onclick="admin_add('编辑','<?php echo U('Admin/Shop/edit', array('id' => $vo['id']));?>'
-                                   ,'800px','500px')">
-                                    <i class="Hui-iconfont">&#xe6df;</i>
-                                </a>
-                                <br>
-                                <a href="<?php echo U('Admin/Food/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
-                                   
-                                    &nbsp;&nbsp;&nbsp;菜品管理&nbsp;&nbsp;
-                                </a>
-                                <a href="<?php echo U('Admin/Foodtype/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
-                                   
-                                    &nbsp;菜品类别
-                                </a>&nbsp;&nbsp;
-                                <!-- <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('详情','<?php echo U('Admin/Shop/xiangqing', array('id' => $vo['id']));?>'
-                                   ,'800','500')">
-                                    <i class="Hui-iconfont">&#xe627;</i>
-                                </a>&nbsp;&nbsp;&nbsp; -->
-                               
-                                <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
-                            </td>
-                        </tr><?php endforeach; endif; ?>
-                
-            </tbody>
-        </table>
-        </div>
-    </div>
-        </div>
-    </div>
+	<div class="show_iframe">
+		<div style="display:none" class="loading">
+		</div>
+		<!-- 主题内容 -->
+		<div>
+			<link rel="icon" type="image/png" href="/kuaidian/Public/xin/assets/i/favicon.png">
+			<link rel="apple-touch-icon-precomposed" href="/kuaidian/Public/xin/assets/i/app-icon72x72@2x.png">
+			<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+			<link rel="stylesheet" href="/kuaidian/Public/xin/assets/css/amazeui.min.css"/>
+			<link rel="stylesheet" href="/kuaidian/Public/xin/assets/css/admin.css">
+			<div class="admin-index">
+				<dl data-am-scrollspy="{animation: 'slide-right', delay: 100}">
+					<dt class="qs"><i class="am-icon-users"></i></dt>
+					<dd>455</dd>
+					<dd class="f12">团队数量</dd>
+				</dl>
+				<dl data-am-scrollspy="{animation: 'slide-right', delay: 300}">
+					<dt class="cs"><i class="am-icon-area-chart"></i></dt>
+					<dd>455</dd>
+					<dd class="f12">今日收入</dd>
+				</dl>
+				<dl data-am-scrollspy="{animation: 'slide-right', delay: 600}">
+					<dt class="hs"><i class="am-icon-shopping-cart"></i></dt>
+					<dd>455</dd>
+					<dd class="f12">商品数量</dd>
+				</dl>
+				<dl data-am-scrollspy="{animation: 'slide-right', delay: 900}">
+					<dt class="ls"><i class="am-icon-cny"></i></dt>
+					<dd>455</dd>
+					<dd class="f12">全部收入</dd>
+				</dl>
+			</div>
+			<div class="admin-biaoge">
+				<div class="xinxitj">
+					信息概况
+				</div>
+				<table class="am-table">
+				<thead>
+				<tr>
+					<th>
+						团队统计
+					</th>
+					<th>
+						全部会员
+					</th>
+					<th>
+						全部未激活
+					</th>
+					<th>
+						今日新增
+					</th>
+					<th>
+						今日未激活
+					</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>
+						普卡
+					</td>
+					<td>
+						普卡
+					</td>
+					<td>
+						<a href="#">4534</a>
+					</td>
+					<td>
+						+20
+					</td>
+					<td>
+						 4534
+					</td>
+				</tr>
+				<tr>
+					<td>
+						普卡
+					</td>
+					<td>
+						普卡
+					</td>
+					<td>
+						<a href="#">4534</a>
+					</td>
+					<td>
+						+20
+					</td>
+					<td>
+						 4534
+					</td>
+				</tr>
+				</tbody>
+				</table>
+				<table class="am-table">
+				<thead>
+				<tr>
+					<th>
+						团队统计
+					</th>
+					<th>
+						全部会员
+					</th>
+					<th>
+						全部未激活
+					</th>
+					<th>
+						今日新增
+					</th>
+					<th>
+						今日未激活
+					</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>
+						普卡
+					</td>
+					<td>
+						普卡
+					</td>
+					<td>
+						4534
+					</td>
+					<td>
+						+50
+					</td>
+					<td>
+						 4534
+					</td>
+				</tr>
+				</tbody>
+				</table>
+				<table class="am-table">
+				<thead>
+				<tr>
+					<th>
+						资金统计
+					</th>
+					<th>
+						账户总收入
+					</th>
+					<th>
+						账户总支出
+					</th>
+					<th>
+						账户余额
+					</th>
+					<th>
+						今日收入
+					</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>
+						普卡
+					</td>
+					<td>
+						普卡
+					</td>
+					<td>
+						4534
+					</td>
+					<td>
+						+20
+					</td>
+					<td>
+						 4534
+					</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+			<div class="shuju">
+				<div class="shujuone">
+					<dl>
+						<dt>全盘收入：  1356666</dt>
+						<dt>全盘支出：   5646465.98</dt>
+						<dt>全盘利润：  546464</dt>
+					</dl>
+					<ul>
+						<h2>26.83%</h2>
+						<li>全盘拨出</li>
+					</ul>
+				</div>
+				<div class="shujutow">
+					<dl>
+						<dt>全盘收入：  1356666</dt>
+						<dt>全盘支出：   5646465.98</dt>
+						<dt>全盘利润：  546464</dt>
+					</dl>
+					<ul>
+						<h2>26.83%</h2>
+						<li>全盘拨出</li>
+					</ul>
+				</div>
+				<div class="slideTxtBox">
+					<div class="hd">
+						<ul>
+							<li>其他信息</li>
+							<li>工作进度表</li>
+						</ul>
+					</div>
+					<div class="bd">
+						<ul>
+							<table width="100%" class="am-table">
+							<tbody>
+							<tr>
+								<td width="7%" align="center">
+									1
+								</td>
+								<td width="83%">
+									工作进度名称
+								</td>
+								<td width="10%" align="center">
+									<a href="#">10%</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center">
+									1
+								</td>
+								<td>
+									工作进度名称
+								</td>
+								<td align="center">
+									<a href="#">10%</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center">
+									1
+								</td>
+								<td>
+									工作进度名称
+								</td>
+								<td align="center">
+									<a href="#">10%</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center">
+									1
+								</td>
+								<td>
+									工作进度名称
+								</td>
+								<td align="center">
+									<a href="#">10%</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center">
+									1
+								</td>
+								<td>
+									工作进度名称
+								</td>
+								<td align="center">
+									<a href="#">10%</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center">
+									1
+								</td>
+								<td>
+									工作进度名称
+								</td>
+								<td align="center">
+									<a href="#">10%</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center">
+									1
+								</td>
+								<td>
+									工作进度名称
+								</td>
+								<td align="center">
+									<a href="#">10%</a>
+								</td>
+							</tr>
+							</tbody>
+							</table>
+						</ul>
+						<ul>
+							<table class="am-table">
+							<tbody>
+							<tr>
+								<td>
+									普卡
+								</td>
+								<td>
+									普卡
+								</td>
+								<td>
+									<a href="#">4534</a>
+								</td>
+								<td>
+									+20
+								</td>
+								<td>
+									 4534
+								</td>
+							</tr>
+							<tr>
+								<td>
+									银卡
+								</td>
+								<td>
+									银卡
+								</td>
+								<td>
+									4534
+								</td>
+								<td>
+									+2
+								</td>
+								<td>
+									 4534
+								</td>
+							</tr>
+							<tr>
+								<td>
+									金卡
+								</td>
+								<td>
+									金卡
+								</td>
+								<td>
+									4534
+								</td>
+								<td>
+									+10
+								</td>
+								<td>
+									 4534
+								</td>
+							</tr>
+							<tr>
+								<td>
+									钻卡
+								</td>
+								<td>
+									钻卡
+								</td>
+								<td>
+									4534
+								</td>
+								<td>
+									+50
+								</td>
+								<td>
+									 4534
+								</td>
+							</tr>
+							<tr>
+								<td>
+									合计
+								</td>
+								<td>
+									合计
+								</td>
+								<td>
+									4534
+								</td>
+								<td>
+									+50
+								</td>
+								<td>
+									 4534
+								</td>
+							</tr>
+							</tbody>
+							</table>
+						</ul>
+					</div>
+				</div>
+				<script type="text/javascript">jQuery(".slideTxtBox").slide();</script>
+			</div>
+		</div>
+	</div>
 </div>
 </section>
-<script type="text/javascript">
-        /*删除*/
-        $(document).on("click", '.h-text-sc', function () {
-            var op_obj = $(this).parents("tr");
-            var id = $(this).attr('id');
-            // alert(id);
-            layer.confirm('确认要删除吗？',function(){
-                $.ajax({
-                    type:'POST',
-                    dataType: 'json',
-                    url:'<?php echo U("Admin/Shop/delete");?>',
-                    data:{id:id},
-                    success: function (result) {
-                        if (result.status) {
-                            op_obj.remove();
-                            layer.msg(result.msg,{icon:1,time:1000});
-                        } else {
-                            layer.msg(result.msg,{icon:0,time:2000});
-                        }
-                    }
-                })
-            });
-        });
-    </script>
+<!-- <script type="text/javascript">
+	$(document).on("change","#choose",function(){
+		// $('iframe').attr('src',"<?php echo U('Admin/Index/welcome');?>");
+		$(".yincangzhuye").click();
+		// console.log(aa);
+		// alert(aa);
+	});
+</script> -->
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>

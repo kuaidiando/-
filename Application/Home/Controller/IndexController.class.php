@@ -26,7 +26,9 @@ class IndexController extends Controller {
     }
 	//门店列表展示
     public function index(){
-        
+        //获取城市名称
+        $csmc = I('get.');
+        // dump($csmc);
         //头像
         $openid = $_SESSION['openid'];
         $photo = M('weixin_user')->where(array('openid'=>$openid))->getField('photo');
@@ -37,75 +39,7 @@ class IndexController extends Controller {
         $signPackage = $jssdk->GetSignPackage();
         //dump($signPackage);die;
         $this->assign("signPackage",$signPackage);
-        // 普通 经纬度
-         //门店列表
-        // $user = M('shop');
-        // $where['shop.zhuangt'] =  1;//是否上架 1--上架 2 --否
-        // $where['shop.depcsjlshi'] = 130100;//石家庄市
-        // $res = $user->where($where)
-        //         ->join('shop_type on shop.type_shop = shop_type.id')
-        //         ->field("shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname,shop.zuigaolij,shop.depcsjlshi,shop.baidu_lng,shop.baidu_lat")->select();
-        // echo $user->getLastsql();die;
-        // mysql 获取 经纬度
-//         $latitude1 = 38.043896;
-//         $longitude1 = 114.548983;
-//         $sql = "select shop.id,shop.mingch,shop.maney,shop.logo,shop.xingsl,shop.juan,shop_type.mingch as lbname
-// ,shop.zuigaolij,shop.depcsjlshi
-// , ACOS(SIN( $latitude1 * 3.141592654 / 180) 
-// * SIN(shop.baidu_lat * 3.141592654 / 180) 
-// + COS( $latitude1 * 3.141592654 / 180) 
-// * COS(shop.baidu_lat * 3.141592654 / 180) 
-// * COS($longitude1 * 3.141592654 / 180 
-// - shop.baidu_lng * 3.141592654 / 180)) 
-// * 6378.14 as juli from shop 
-// INNER JOIN shop_type on shop.type_shop = shop_type.id 
-// WHERE shop.zhuangt = 1 AND shop.depcsjlshi = 130100
-// order by juli asc";
-
-//        $res = M()->query($sql);
-//        foreach ($res as $kres => $vres) {
-//              /**
-//              * 转换星星
-//              * 
-//              */
-//             $a = $vres['xingsl'];;//星星评分
-//             $shixinxing = 0; //实心星星
-//             $kongxinxing = 0; //空心星星
-//             $bangexing = 0; // 半个星星
-//             //判断数字是否是整数
-//             if (is_int($a)) {
-//                 $shixinxing = $a;//赋值实心星
-//                 $kongxinxing = 5-$a;//赋值空心星
-//             }else{
-//                 //解决小数点
-//                 $y=explode(".",$a);
-//                 if ($y[1] == 0) {
-//                     $shixinxing = $a;//赋值实心星
-//                     $kongxinxing = 5-$a;//赋值空心星
-//                 }else{
-//                     $zhengshubufen = $y[0];//整数部分
-//                     $shixinxing = $zhengshubufen;//赋值实心星
-//                     $bangexing = 1;//赋值半个
-//                     $kongxinxing = 5-1-$shixinxing;//赋值空心星
-//                 }
-                    
-//             }
-//              // 将实心星数组拼接回原来的数组
-//             $res[$kres]['shixinxing'] = $shixinxing;//实心星星
-//             $res[$kres]['kongxinxing'] = $kongxinxing;//空心星星
-//             $res[$kres]['bangexing'] = $bangexing;//半个心星星
-//             /**
-//              * 拼接座位号
-//              * @var [type]
-//              */
-//             $zuoweishu = $this->zuoweihao($vres['id']);
-//             $res[$kres]['zuoweishu'] = $zuoweishu;//座位数
-
-//             //转化为 km
-//             $res[$kres]['juli'] = cvrmkm($vres['juli']);
-//         }
-//        dump($res);die;
-        // $this->assign('res',$res);//菜品信息
+        
         $event = M('event')->where(array('status'=>1))->getField('pic',true);
         // dump($event);die;
         $this->assign('event',$event);
@@ -180,7 +114,29 @@ order by juli asc";
     }
     //选择城市
     public function cityxuanze(){
+        //热门城市
+        $rmcs = M('hoscity')->order('paix')->select();
+        //按字母排序城市
+        $pinyincs = array();
+        
+        //循环 大写英文字母
+        $key = 65;
+        for ($i=1; $i <= 26; $i++) { 
+            $zimu = chr($key);//获取每个大写字母
+            //获取字母对应的城市
+            $pinyina = selwh('firstpinyin',array("firstPinyin"=>$zimu));
+            //拼接原数组
+            $pinyincs[$i]['zimu'] = $zimu;
+            $pinyincs[$i]['cszm'] = $pinyina;
+            $key++;
+        }
+            // dump($pinyincs);die;
+        $this->assign("rmcs",$rmcs);//热门城市
+        $this->assign("pinyincs",$pinyincs);//按字母排序城市
         $this->display();
+    }
+    private function aa(){
+
     }
     //搜索城市
     public function citysousuo(){
