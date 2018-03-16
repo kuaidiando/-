@@ -23,5 +23,17 @@ class CeshiController extends Controller {
         $this->assign("signPackage",$signPackage);
         $this->display();
     }
+    public function latlngdw(){
+    	$this->display();
+    }
+    public function aa(){
+    	$this->display();
+    }
+    public function ajax(){
+    	$url = "http://api.map.baidu.com/geocoder/v2/?location=38.046932,114.443498&output=json&pois=1&ak=T9Upu0sWr9Grt4EknLsa9DbU9emQlRYj";
+    	$res = file_get_contents($url);
 
+    	$res = json_decode($res);
+    	$this->ajaxReturn($res);
+    }
 }

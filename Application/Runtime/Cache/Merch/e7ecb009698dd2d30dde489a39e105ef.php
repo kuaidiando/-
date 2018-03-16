@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>门店设置</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="/-/Public/merch/css/text.css">
     <link rel="stylesheet" href="/-/Public/merch/css/base.css">
     <link rel="stylesheet" href="/-/Public/merch/css/Settings.css">
     <script type="text/javascript" src="/-/Public/jquery/jquery.js"></script>
+=======
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/Settings.css">
+    <script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
 </head>
 <body style="font-size: 12px">
     <div class="head">
@@ -28,7 +35,11 @@
                 </div>
 
                 <div class="jian">
+<<<<<<< HEAD
                     <img src="/-/Public/merch/images/youjiantou.png" alt="">
+=======
+                    <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
                 </div>
             </div>
         </div>
@@ -45,7 +56,11 @@
             </div>
 
             <div class="jian">
+<<<<<<< HEAD
                 <img src="/-/Public/merch/images/youjiantou.png" alt="">
+=======
+                <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
             </div>
         </div>
     </div>
@@ -65,7 +80,11 @@
             </div>
 
             <div class="jian">
+<<<<<<< HEAD
                 <img src="/-/Public/merch/images/youjiantou.png" alt="">
+=======
+                <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
             </div>
         </div>
     </div>
@@ -81,7 +100,11 @@
             </div>
 
             <div class="jian">
+<<<<<<< HEAD
                 <img src="/-/Public/merch/images/youjiantou.png" alt="">
+=======
+                <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
             </div>
         </div>
     </div>

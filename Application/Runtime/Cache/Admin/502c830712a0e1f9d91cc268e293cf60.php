@@ -6,7 +6,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <meta http-equiv="Cache-Control" content="no-siteapp"/>
+<<<<<<< HEAD
 <script type="text/javascript" src="/-/Public/jquery/jquery.js"></script>
+=======
+<script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
 <script type="text/javascript">
 $(document).ready(function(){
  $("dd").hide();
@@ -21,6 +25,7 @@ $(document).ready(function(){
 });
 });
 </script>
+<<<<<<< HEAD
 <!-- <script type="text/javascript" src="/-/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
  -->
 <link rel="stylesheet" type="text/css" href="/-/Public/admin/static/h-ui/css/H-ui.min.css"/>
@@ -32,6 +37,19 @@ $(document).ready(function(){
 <!-- <link rel="stylesheet" type="text/css" href="/-/Public/css/hidTable.css"/> -->
 <!-- 分页效果 -->
 <!-- <link href="/-/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
+=======
+<!-- <script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.cookie/jquery.cookie.js"></script>
+ -->
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui/css/H-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/H-ui.admin.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/lib/icheck/icheck.css"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
+<link rel="stylesheet" type="text/css" href="/kuaidian/Public/admin/static/h-ui.admin/css/style.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/kuaidian/Public/css/hidTable.css"/> -->
+<!-- 分页效果 -->
+<!-- <link href="/kuaidian/Public/css/mypage.css" rel="stylesheet" type="text/css"/> -->
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
 <title>快点</title>
 <style type="text/css">
     .tu{
@@ -50,7 +68,11 @@ $(document).ready(function(){
    
     <div class="container-fluid cl">
         <!-- <div class="tu"> -->
+<<<<<<< HEAD
         <!-- <img src="/-/Public/img/logo.png"> -->
+=======
+        <!-- <img src="/kuaidian/Public/img/logo.png"> -->
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
         <!-- </div> -->
             <a class="logo navbar-logo f-l mr-10 hidden-xs" href="<?php echo U('Admin/Index/zhuye');?>">首页</a>
             <a class="logo navbar-logo f-l mr-10 hidden-xs" style="text-decoration: none; " ><span class="shopin" name="<?php echo U('Admin/shop/index');?>">商户管理</span></a>
@@ -128,7 +150,11 @@ $(document).ready(function(){
             </ul>
             </dd>
         </dl>
+<<<<<<< HEAD
     <?php elseif(CONTROLLER_NAME == Event || CONTROLLER_NAME == Config || CONTROLLER_NAME == Yingxiao): ?>
+=======
+    <?php elseif(CONTROLLER_NAME == Event || CONTROLLER_NAME == Config): ?>
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
         <dl>
             <dt><a href="#">轮播图管理</a></dt>
             <dd>
@@ -137,6 +163,7 @@ $(document).ready(function(){
             </ul>
             </dd>
         </dl>
+<<<<<<< HEAD
         <dl>
             <dt><a href="#">活动管理</a></dt>
             <dd>
@@ -146,6 +173,8 @@ $(document).ready(function(){
             </ul>
             </dd>
         </dl>
+=======
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
     <?php elseif(CONTROLLER_NAME == Order): ?>
         <dl>
             <dt><a href="#">订单管理</a></dt>
@@ -154,6 +183,7 @@ $(document).ready(function(){
                 <li><a class="shopin" name="<?php echo U('Admin/Order/index');?>">订单列表</a></li>
             </ul>
             </dd>
+<<<<<<< HEAD
         </dl>
     <?php elseif(CONTROLLER_NAME == Money): ?>
         <dl>
@@ -163,6 +193,8 @@ $(document).ready(function(){
                 <li><a class="shopin" name="<?php echo U('Admin/Money/index');?>">平台营收</a></li>
             </ul>
             </dd>
+=======
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
         </dl><?php endif; ?>
    
 </div>
@@ -179,8 +211,14 @@ $(document).ready(function(){
     });
     // 城市切换
     $(document).on("change","#choose",function(){
+<<<<<<< HEAD
         // $("#clickzhuye").click();
         // alert(aa);
+=======
+        // alert(123);
+        $("#clickzhuye").click();
+        alert(aa);
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
     });
 </script><header class="navbar-wrapper"></header>
 <div class="dislpayArrow hidden-xs">
@@ -193,11 +231,19 @@ $(document).ready(function(){
 		</div>
 		<!-- 主题内容 -->
 		<div>
+<<<<<<< HEAD
 			<link rel="icon" type="image/png" href="/-/Public/xin/assets/i/favicon.png">
 			<link rel="apple-touch-icon-precomposed" href="/-/Public/xin/assets/i/app-icon72x72@2x.png">
 			<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
 			<link rel="stylesheet" href="/-/Public/xin/assets/css/amazeui.min.css"/>
 			<link rel="stylesheet" href="/-/Public/xin/assets/css/admin.css">
+=======
+			<link rel="icon" type="image/png" href="/kuaidian/Public/xin/assets/i/favicon.png">
+			<link rel="apple-touch-icon-precomposed" href="/kuaidian/Public/xin/assets/i/app-icon72x72@2x.png">
+			<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+			<link rel="stylesheet" href="/kuaidian/Public/xin/assets/css/amazeui.min.css"/>
+			<link rel="stylesheet" href="/kuaidian/Public/xin/assets/css/admin.css">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
 			<div class="admin-index">
 				<dl data-am-scrollspy="{animation: 'slide-right', delay: 100}">
 					<dt class="qs"><i class="am-icon-users"></i></dt>
@@ -575,13 +621,18 @@ $(document).ready(function(){
 	</div>
 </div>
 </section>
+<<<<<<< HEAD
 <script type="text/javascript">
+=======
+<!-- <script type="text/javascript">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
 	$(document).on("change","#choose",function(){
 		// $('iframe').attr('src',"<?php echo U('Admin/Index/welcome');?>");
 		$(".yincangzhuye").click();
 		// console.log(aa);
 		// alert(aa);
 	});
+<<<<<<< HEAD
 </script>
 <script type="text/javascript" src="/-/Public/admin/lib/layer/2.1/layer.js"></script>
 <script type="text/javascript" src="/-/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
@@ -591,6 +642,17 @@ $(document).ready(function(){
 <script type="text/javascript" src="/-/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
 <script type="text/javascript" src="/-/Public/admin/static/h-ui/js/H-ui.js"></script>
 <script type="text/javascript" src="/-/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+=======
+</script> -->
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.form/jquery.form.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/kuaidian/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
 <script type="text/javascript">
     $("#menu_nav .menu_id").click(function () {
         var id = $(this).attr('data-id');

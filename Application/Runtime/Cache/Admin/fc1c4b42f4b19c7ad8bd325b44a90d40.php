@@ -48,48 +48,72 @@ $(document).ready(function(){
         #l-map{height:300px;width:100%;}
         #r-result{width:100%;}
     </style>
+    <style>
+        input::-webkit-input-placeholder{
+            color:#333;
+        }
+        input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+            color:#333;
+        }
+        input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+            color:#333;
+        }
+        input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+            color:#333;
+        }
+    </style>
 </head>
 <body>
 
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=T9Upu0sWr9Grt4EknLsa9DbU9emQlRYj"></script>
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=T9Upu0sWr9Grt4EknLsa9DbU9emQlRYj"></script>
 <article class="page-container">
-    <form class="form form-horizontal" id="form-article-add" action="<?php echo U('Admin/Shop/add');?>" method="post" enctype="multipart/form-data">
+     <form class="form form-horizontal" id="form-admin-add" action="<?php echo U('Admin/Shop/edit');?>" method="post" enctype="multipart/form-data">
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="mingch">
+                <input type="text" class="input-text" value="<?php echo ($data["0"]["mingch"]); ?>"  name="mingch">
             </div>
         </div>
-
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">LOGO：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>LOGO：</label>
             <div class="formControls col-xs-8 col-sm-9">
+                <img style="width: 10%;" src="/kuaidian/Public<?php echo ($data["0"]["logo"]); ?>" alt="图片加载中。。。">
                 <div class="uploader-thum-container">
                     <input type="file" name="logo">
                 </div>
             </div>
         </div>
         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span id="scerweim">二维码：</span></label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <img src="<?php echo ($data["0"]["erweima"]); ?>" alt="二维码生成中。。。" >
+            </div>
+        </div>
+        <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">手机号：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder=""  name="tel">
+                <input type="text" class="input-text" value="<?php echo ($data["0"]["tel"]); ?>" placeholder="" id="" name="tel">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">人均消费：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="maney">
+                <input type="text" class="input-text" value="<?php echo ($data["0"]["maney"]); ?>" placeholder="" id="" name="maney">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">营业时间：</label>
-            <div class="formControls col-xs-8 col-sm-9" >
+            <div class="formControls col-xs-8 col-sm-9">
                 <select name="time_kai" class="select" style="width: 25%;" id="">
-                    <?php if(is_array($restime)): foreach($restime as $key=>$votime): ?><option value="<?php echo ($votime["id"]); ?>"><?php echo ($votime["name"]); ?></option><?php endforeach; endif; ?>
+                <!-- 单条信息城市 -->
+                <?php if(is_array($data)): foreach($data as $key=>$vosscs): ?><!-- 所有时间 -->
+                    <?php if(is_array($restime)): foreach($restime as $key=>$votime): ?><option value="<?php echo ($votime["name"]); ?>" <?php if($votime['id'] == $vosscs['time_kai']): ?>selected="selected"<?php endif; ?> ><?php echo ($votime["name"]); ?></option><?php endforeach; endif; endforeach; endif; ?>
                 </select>
                 &nbsp;&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;&nbsp;
                 <select name="time_zhong" class="select" style="width: 25%;" id="">
-                    <?php if(is_array($restime)): foreach($restime as $key=>$votime): ?><option value="<?php echo ($votime["id"]); ?>"><?php echo ($votime["name"]); ?></option><?php endforeach; endif; ?>
+                    <!-- 单条信息城市 -->
+                <?php if(is_array($data)): foreach($data as $key=>$vosscs): ?><!-- 所有时间 -->
+                    <?php if(is_array($restime)): foreach($restime as $key=>$votime): ?><option value="<?php echo ($votime["name"]); ?>" <?php if($votime['id'] == $vosscs['time_zhong']): ?>selected="selected"<?php endif; ?> ><?php echo ($votime["name"]); ?></option><?php endforeach; endif; endforeach; endif; ?>
                 </select>
             </div>
         </div>
@@ -98,48 +122,60 @@ $(document).ready(function(){
             <!-- 省 -->
             <div class="formControls col-xs-8 col-sm-9" style="width: 25%;">
                 <span class="select-box">
-                <select name="depcsjlsheng"  class="select" id="selsheng">
-                    <?php if(is_array($ressheng)): foreach($ressheng as $key=>$vocssheng): ?><option value="<?php echo ($vocssheng["code"]); ?>"><?php echo ($vocssheng["name"]); ?></option><?php endforeach; endif; ?>
+                <select name="depcsjlsheng" class="select"  id="selsheng">
+                <!-- 单条信息城市 -->
+                <?php if(is_array($data)): foreach($data as $key=>$vosscs): ?><!-- 所有城市  市 -->
+                    <?php if(is_array($ressheng)): foreach($ressheng as $key=>$vocssheng): ?><option value="<?php echo ($vocssheng["code"]); ?>" <?php if($vocssheng['code'] == $vosscs['depcsjlsheng']): ?>selected="selected"<?php endif; ?> ><?php echo ($vocssheng["name"]); ?></option><?php endforeach; endif; endforeach; endif; ?>
                 </select>
                 </span>
             </div>
             <!-- 市 -->
-            <div class="formControls col-xs-8 col-sm-9" id="jlshixianshi" style="width: 25%;">
-                <!-- <span class="select-box">
-                <select name="depcsjlshi"  class="select" id="selshi">
-                        <option value=""></option>
+            <div class="formControls col-xs-8 col-sm-9" style="width: 25%;">
+                <span class="select-box">
+                <select name="depcsjlshi" class="select"  id="selshi">
+                <!-- 单条信息城市 -->
+                        <option value="<?php echo ($data["0"]["depcsjlshi"]); ?>"><?php echo (depchengshi($data["0"]["depcsjlshi"])); ?></option>
                 </select>
-                </span> -->
+                </span>
             </div>
-            <!-- 县区 -->
+                <!-- 区 （县） -->
             <div class="formControls col-xs-8 col-sm-9" id="jlquxianshi" style="width: 25%;">
-                <!-- <span class="select-box">
-                <select name="depcsjlxian"  class="select" id="selqu">
-                    <option ></option>
+                <span class="select-box">
+                <select name="depcsjlxian" class="select"  id="selqu">
+                <!-- 单条信息城市 -->
+                        <option value="<?php echo ($data["0"]["depcsjlxian"]); ?>"><?php echo (depjilianxian($data["0"]["depcsjlxian"])); ?></option>
                 </select>
-                </span> -->
+                </span>
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>是否发布：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                是&nbsp;&nbsp;<input type="radio"  value="1" name="zhuangt" checked="checked">
-                否&nbsp;&nbsp;<input type="radio"  value="2" name="zhuangt">
+                 <?php if(is_array($data)): foreach($data as $key=>$vo): if($vo["zhuangt"] == 1 ): ?>是&nbsp;&nbsp;<input type="radio"  value="1" name="zhuangt" checked="checked">
+                    否&nbsp;&nbsp;<input type="radio"  value="2" name="zhuangt">
+                    <?php else: ?> 
+                    是&nbsp;&nbsp;<input type="radio"  value="1" name="zhuangt">
+                    否&nbsp;&nbsp;<input type="radio"  value="2" name="zhuangt" checked="checked"><?php endif; endforeach; endif; ?>
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>是否在线：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                是&nbsp;&nbsp;<input type="radio"  value="1" name="line_type" checked="checked">
-                否&nbsp;&nbsp;<input type="radio"  value="2" name="line_type">
+                 <?php if(is_array($data)): foreach($data as $key=>$vo): if($vo["line_type"] == 1 ): ?>是&nbsp;&nbsp;<input type="radio"  value="1" name="line_type" checked="checked">
+                    否&nbsp;&nbsp;<input type="radio"  value="2" name="line_type">
+                    <?php else: ?> 
+                    是&nbsp;&nbsp;<input type="radio"  value="1" name="line_type">
+                    否&nbsp;&nbsp;<input type="radio"  value="2" name="line_type" checked="checked"><?php endif; endforeach; endif; ?>
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>门店类别：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>类别：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <span class="select-box">
                 <select name="type_shop" class="select">
-                    <?php if(is_array($rescaipinlb)): foreach($rescaipinlb as $key=>$volb): ?><option value="<?php echo ($volb["id"]); ?>" ><?php echo ($volb["mingch"]); ?></option><?php endforeach; endif; ?>
+                <!-- 单条信息 -->
+                <?php if(is_array($data)): foreach($data as $key=>$void): ?><!-- 所有信息 -->
+                    <?php if(is_array($rescaipinlb)): foreach($rescaipinlb as $key=>$volb): ?><option value="<?php echo ($volb["id"]); ?>"<?php if($volb['id'] == $void['type_shop']): ?>selected="selected"<?php endif; ?>><?php echo ($volb["mingch"]); ?></option><?php endforeach; endif; endforeach; endif; ?>
                 </select>
                 </span>
             </div>
@@ -148,51 +184,51 @@ $(document).ready(function(){
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">星图表数量：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="" name="xingsl">
+                <input type="text" class="input-text" value="<?php echo ($data["0"]["xingsl"]); ?>" placeholder="" id="" name="xingsl">
             </div>
         </div>
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">佣金百分比：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="3" placeholder="" id="zuigaolij" name="zuigaolij">
-            </div>
-        </div>
-
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">详细地址：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="suggestId" name="jutidizhi">
+                <input type="text" class="input-text" value="<?php echo ($data["0"]["jutidizhi"]); ?>" placeholder="<?php echo ($data["0"]["jutidizhi"]); ?>" placeholder="" id="suggestId" name="jutidizhi">
             </div>
         </div>
-        <div class="row cl">
+         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">经度：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" name="baidu_lng" id="baidu_lng">
+                <input type="text" class="input-text" value="<?php echo ($data["0"]["baidu_lng"]); ?>" placeholder="" name="baidu_lng" id="baidu_lng">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">维度：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" name="baidu_lat" id="baidu_lat">
+                <input type="text" class="input-text" value="<?php echo ($data["0"]["baidu_lat"]); ?>" placeholder="" name="baidu_lat" id="baidu_lat">
             </div>
         </div>
         <!-- 百度地图 -->
          <div id="l-map" style="margin-left: 17.5%;margin-top: 20px;width: 74%;"></div>
-
-    <div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:none;"></div>
-        <!-- 百度地图经度 -->
-        <!-- <input type="text" value=""  name="baidu_lng" id="baidu_lng"> -->
-        <!-- 百度地图维度 -->
-        <!-- <input type="text" value="" name="baidu_lat" id="baidu_lat"> -->
-
+         <div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:none;"></div>
         <div class="row cl">
-            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
-                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 添加</button>
+            <label class="form-label col-xs-4 col-sm-2">佣金百分比：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="<?php echo ($data["0"]["zuigaolij"]); ?>" placeholder="" id="zuigaolij" name="zuigaolij">
+            </div>
+        </div>
+        <!-- 隐藏id充当条件 -->
+       <input type="hidden" value="<?php echo ($data["0"]["id"]); ?>" name='id'>
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 修改</button>
+                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
             </div>
         </div>
     </form>
 </article>
 <script type="text/javascript">
+    //页面加载事件
+    $(document).ready(function(){
+        $("#suggestId").val(123);
+    });
     // 佣金比例
     $(document).on('input',"#zuigaolij",function(){
         var bili = $(this).val();
@@ -222,7 +258,7 @@ $(document).ready(function(){
                 })
                 str += '</select></span>';
                 //赋值区域 市
-                $("#jlshixianshi").html(str);
+                $("#selshi").html(str);
                 // 清空区
                 $("#jlquxianshi").html("");
             }
@@ -231,6 +267,7 @@ $(document).ready(function(){
     // 城市级联 市--》县/区
     $(document).on('click','#selshi',function(){
         var codesheng = $(this).val();//获取市对应code
+        // alert(codesheng);
         var str = '<span class="select-box"><select name="depcsjlxian"  class="select" id="selqu">';//城市对应区域
         $.ajax({
             type:'post',

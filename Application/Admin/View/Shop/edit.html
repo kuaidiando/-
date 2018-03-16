@@ -1,8 +1,30 @@
 <include file="Layout/headerys"/>
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        #l-map{height:300px;width:100%;}
+        #r-result{width:100%;}
+    </style>
+    <style>
+        input::-webkit-input-placeholder{
+            color:#333;
+        }
+        input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+            color:#333;
+        }
+        input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+            color:#333;
+        }
+        input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+            color:#333;
+        }
+    </style>
 </head>
 <body>
+
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=T9Upu0sWr9Grt4EknLsa9DbU9emQlRYj"></script>
 <article class="page-container">
-    <form class="form form-horizontal" id="form-admin-add" action="{:U('Admin/Shop/edit')}" method="post" enctype="multipart/form-data">
+     <form class="form form-horizontal" id="form-admin-add" action="{:U('Admin/Shop/edit')}" method="post" enctype="multipart/form-data">
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
@@ -154,9 +176,24 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">详细地址：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="{$data.0.jutidizhi}" placeholder="" id="" name="jutidizhi">
+                <input type="text" class="input-text" value="{$data.0.jutidizhi}" placeholder="{$data.0.jutidizhi}" placeholder="" id="suggestId" name="jutidizhi">
             </div>
         </div>
+         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">经度：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="{$data.0.baidu_lng}" placeholder="" name="baidu_lng" id="baidu_lng">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">维度：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="{$data.0.baidu_lat}" placeholder="" name="baidu_lat" id="baidu_lat">
+            </div>
+        </div>
+        <!-- 百度地图 -->
+         <div id="l-map" style="margin-left: 17.5%;margin-top: 20px;width: 74%;"></div>
+         <div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:none;"></div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">佣金百分比：</label>
             <div class="formControls col-xs-8 col-sm-9">
@@ -173,8 +210,11 @@
         </div>
     </form>
 </article>
-
 <script type="text/javascript">
+    //页面加载事件
+    $(document).ready(function(){
+        $("#suggestId").val(123);
+    });
     // 佣金比例
     $(document).on('input',"#zuigaolij",function(){
         var bili = $(this).val();
@@ -188,8 +228,9 @@
     });
     // 城市级联 省--》市
     $(document).on('click','#selsheng',function(){
+        // alert(123);
         var codesheng = $(this).val();//获取省对应code
-        var str = '';//城市对应区域
+        var str = '<span class="select-box"><select name="depcsjlshi"  class="select" id="selshi">';//城市对应区域
         $.ajax({
             type:'post',
             dataType: 'json',
@@ -201,7 +242,8 @@
                 $.each(dd,function(index,item){
                     str += '<option value="'+item.code+'">'+item.name+'</option>'; 
                 })
-                //赋值区域
+                str += '</select></span>';
+                //赋值区域 市
                 $("#selshi").html(str);
                 // 清空区
                 $("#jlquxianshi").html("");
@@ -211,6 +253,7 @@
     // 城市级联 市--》县/区
     $(document).on('click','#selshi',function(){
         var codesheng = $(this).val();//获取市对应code
+        // alert(codesheng);
         var str = '<span class="select-box"><select name="depcsjlxian"  class="select" id="selqu">';//城市对应区域
         $.ajax({
             type:'post',
@@ -229,4 +272,104 @@
         })
     });
 </script>
+    <!-- // 百度地图API功能 -->
+    <!-- 搜索 -->
+<script type="text/javascript">
+
+    // 百度地图API功能
+    // 定位
+    function G(id) {
+        return document.getElementById(id);
+    }
+
+    var map = new BMap.Map("l-map");
+    map.enableScrollWheelZoom(true); //启用地图滚轮放大缩小
+    map.centerAndZoom("石家庄",15);                   // 初始化地图,设置城市和地图级别。
+    /**
+     * 点击效果
+     * @param  {[type]} e){                     x [description]
+     * @return {[type]}      [description]
+     */
+    map.addEventListener("onclick",function(e){
+        x = e.point.lng;
+        y = e.point.lat;
+       
+        var xiugai = confirm("经度修改为："+x + "\n维度修改为：" +y);
+        if (xiugai) {
+            //赋值经纬度
+            $("#baidu_lng").val(x);
+            $("#baidu_lat").val(y);
+            //添加标注
+            var point = new BMap.Point(e.point.lng, e.point.lat); //将标注点转化成地图上的点
+            var marker = new BMap.Marker(point); //将点转化成标注点
+            map.addOverlay(marker);  //将标注点添加到地图上
+            //清除其他标注
+            var allOverlay = map.getOverlays();
+            for (var i = 0; i < allOverlay.length -1; i++){
+                // alert(allOverlay[i].map.gf.lng);
+                if(allOverlay[i].map.gf.lng != x){
+                    map.removeOverlay(allOverlay[i]);
+                    // return false;
+                }
+            }
+        }
+        // alert(e.point.lng + "," + e.point.lat);
+    });
+    /**
+     * 搜索效果
+     * @type {BMap}
+     */
+    var ac = new BMap.Autocomplete(    //建立一个自动完成的对象
+        {"input" : "suggestId"
+        ,"location" : map
+    });
+
+    ac.addEventListener("onhighlight", function(e) {  //鼠标放在下拉列表上的事件
+    var str = "";
+        var _value = e.fromitem.value;
+        var value = "";
+        if (e.fromitem.index > -1) {
+            value = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+        }    
+        str = "FromItem<br />index = " + e.fromitem.index + "<br />value = " + value;
+        
+        value = "";
+        if (e.toitem.index > -1) {
+            _value = e.toitem.value;
+            value = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+        }    
+        str += "<br />ToItem<br />index = " + e.toitem.index + "<br />value = " + value;
+        G("searchResultPanel").innerHTML = str;
+    });
+
+    var myValue;
+    ac.addEventListener("onconfirm", function(e) {    //鼠标点击下拉列表后的事件
+        // console.log(e);
+    var _value = e.item.value;
+        myValue = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+        G("searchResultPanel").innerHTML ="onconfirm<br />index = " + e.item.index + "<br />myValue = " + myValue;
+        // console.log(_value);
+        setPlace();
+    });
+
+    function setPlace(){
+        map.clearOverlays();    //清除地图上所有覆盖物
+        function myFun(){
+            var pp = local.getResults().getPoi(0).point;    //获取第一个智能搜索的结果
+            //赋值经纬度
+            $("#baidu_lng").val(pp.lng);
+            $("#baidu_lat").val(pp.lat);
+            // alert(pp.lng);//经度
+            // alert(pp.lat);//维度
+            map.centerAndZoom(pp, 18);
+            map.addOverlay(new BMap.Marker(pp));    //添加标注
+        }
+        var local = new BMap.LocalSearch(map, { //智能搜索
+          onSearchComplete: myFun
+        });
+        local.search(myValue);
+    }
+    
+</script>
+
 <include file="Layout/footer"/>

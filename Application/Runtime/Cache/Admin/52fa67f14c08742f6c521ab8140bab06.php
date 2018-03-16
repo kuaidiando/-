@@ -179,9 +179,11 @@ $(document).ready(function(){
     });
     // 城市切换
     $(document).on("change","#choose",function(){
-        // $("#clickzhuye").click();
-        // alert(aa);
+        // alert(123);
+        $("#clickzhuye").click();
+        alert(aa);
     });
+<<<<<<< HEAD
 </script>
 </head>
 <body>
@@ -257,6 +259,8 @@ $(document).ready(function(){
         });
         layer.full(index);
     }
+=======
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
 </script><header class="navbar-wrapper"></header>
 <div class="dislpayArrow hidden-xs">
     <a class="pngfix" href="javascript:;" onclick="displaynavbar(this)"></a>
@@ -264,6 +268,7 @@ $(document).ready(function(){
 <section class="Hui-article-box">
 <div id="iframe_box" class="Hui-article">
     <div class="show_iframe">
+    <li style="display: none;"><a class="shopin" name="<?php echo U('Admin/Index/zhuye');?>"><span id="clickzhuye">主页</span></a></li>
         <div style="display:none" class="loading">
         </div>
         <!-- 主题内容 -->

@@ -139,8 +139,8 @@
         </div> -->
 
         <div class="name2">
-            <div class="ming">
-                <input type="text" name="jutidizhi" class="jutidizhi" value="{$res.0.jutidizhi}" placeholder="具体地址">
+            <div class="ming" onclick="one()">
+                <input type="text" name="jutidizhi" class="jutidizhi" value="{$res.0.jutidizhi}"  placeholder="具体地址">
             </div>
 
             <div class="fu">
@@ -208,7 +208,51 @@
         </div>
 
     </div>
+    <!-- 地图开 -->
+    <div id="light" class="white_content" >
+    <div class="int">
+        <div class="tt">
+            <input type="text" id="text_" placeholder="请输入您的城市">
+        </div>
 
+        <div class="cha">
+            <div class="cz">
+                <span onclick="searchByStationName();">查找</span>
+            </div>
+        </div>
+        查询结果(经度)：<input id="result_lng" name="baidu_lng" type="text" />
+        查询结果(纬度)：<input id="result_lat" name="baidu_lat" type="text" />
+    </div>
+
+    <div class="dt" id="container" ></div>
+    <div class="sj"></div>
+    <div class="dl" >
+        <!-- <div class="dili">
+            <span>鑫水园</span>
+        </div> -->
+
+        <!-- <div class="ddi">
+            <div class="da">
+                <span>绿色家园</span>
+            </div>
+
+            <div class="xiao">
+                <span>河北省石家庄市长安区建明南路1</span>
+            </div>
+            <div style="margin-top: -10%;margin-left: 90%;display: none;">
+                <img style="width: 80%;" src="__PUBLIC__/home/img/dizhi.png">
+            </div>
+        </div> -->
+    </div>
+    <div class="qu" onclick="two()">
+        <span>
+            确定
+        </span>
+    </div>
+</div>
+
+<div id="fade" class="black_overlay"></div>
+    <!-- 地图尾 -->
     <div class="kong"></div>
 
     <div class="kong2"></div>
@@ -218,6 +262,112 @@
     </div>
 </form>
 </body>
+<!-- 地图 -->
+    <script src="__PUBLIC__/home/js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=T9Upu0sWr9Grt4EknLsa9DbU9emQlRYj"></script>
+<script type="text/javascript">
+    function one(){
+        document.getElementById('light').style.display='block';
+        document.getElementById('fade').style.display='block'
+    };
+    function two(){
+        document.getElementById('light').style.display='none';
+        document.getElementById('fade').style.display='none';
+        var dtdizhi = $("#text_").val();
+        // alert(dtdizhi);
+        $(".jutidizhi").val(dtdizhi);
+        return false;
+    };
+</script>
+<!-- 附近商家 -->
+<script type="text/javascript">
+    //点击商家
+    $(document).on("click",".ddi",function(){
+        $(".shangjiatu").css("display","none");
+        $(this).find(".shangjiatu").css("display","block");
+        var sjdjlng = $(this).find(".sjdjlng").html();
+        var sjdjlat = $(this).find(".sjdjlat").html();
+        //赋值
+        $("#result_lng").val(sjdjlng);
+        $("#result_lat").val(sjdjlat);
+        // alert(sjdjlat);
+    });
+    var map = new BMap.Map("container");
+    map.centerAndZoom("石家庄", 20);
+    /**
+     * 点击效果
+     * @param  {[type]} e){                     x [description]
+     * @return {[type]}      [description]
+     */
+    map.addEventListener("onclick",function(e){
+        x = e.point.lng;
+        y = e.point.lat;
+        // ajax 查询附近商家
+        $.ajax({
+            type:'post',
+            dataType: 'json',
+            url:'{:U("Merch/Shopset/ajaxfjsj")}',
+            data:{"x":x,"y":y},
+            success: function (dd) {
+                // console.log(dd);
+                var str = "";
+                $.each(dd.result.pois,function(index,item){
+                    str += '<div class="ddi"><div class="da"><span>'+item.name+'</span></div><div class="xiao"><span>'+item.addr+'</span><span class="sjdjlng" style="display:none;">'+item.point.x+'</span><span class="sjdjlat" style="display:none;">'+item.point.y+'</span></div><div style="margin-top: -10%;margin-left: 90%;display: none;" class="shangjiatu"><img style="width: 80%;" src="__PUBLIC__/home/img/dizhi.png"></div></div>'
+                    // console.log(item.point);经纬度
+                });
+                $(".dl").html(str);
+                // console.log(dd.result.pois.poiType);
+                // console.log(dd.result.pois.point);
+            }
+        })
+        var xiugai = confirm("经度修改为："+x + "\n维度修改为：" +y);
+        if (xiugai) {
+            //赋值经纬度
+            document.getElementById("result_lng").value = x;
+        document.getElementById("result_lat").value = y;
+            //添加标注
+            var point = new BMap.Point(e.point.lng, e.point.lat); //将标注点转化成地图上的点
+            var marker = new BMap.Marker(point); //将点转化成标注点
+            map.addOverlay(marker);  //将标注点添加到地图上
+            //清除其他标注
+            var allOverlay = map.getOverlays();
+            for (var i = 0; i < allOverlay.length -1; i++){
+                // alert(allOverlay[i].map.gf.lng);
+                if(allOverlay[i].map.gf.lng != x){
+                    map.removeOverlay(allOverlay[i]);
+                    // return false;
+                }
+            }
+        }
+        // alert(e.point.lng + "," + e.point.lat);
+    });
+    map.enableScrollWheelZoom();    //启用滚轮放大缩小，默认禁用
+    map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+
+    map.addControl(new BMap.NavigationControl());  //添加默认缩放平移控件
+    map.addControl(new BMap.OverviewMapControl()); //添加默认缩略地图控件
+    map.addControl(new BMap.OverviewMapControl({ isOpen: true, anchor: BMAP_ANCHOR_BOTTOM_RIGHT }));   //右下角，打开
+
+    var localSearch = new BMap.LocalSearch(map);
+    localSearch.enableAutoViewport(); //允许自动调节窗体大小
+function searchByStationName() {
+    map.clearOverlays();//清空原来的标注
+    var keyword = document.getElementById("text_").value;
+    localSearch.setSearchCompleteCallback(function (searchResult) {
+        var poi = searchResult.getPoi(0);
+        document.getElementById("result_lng").value = poi.point.lng;
+        document.getElementById("result_lat").value = poi.point.lat;
+        map.centerAndZoom(poi.point, 20);
+        var marker = new BMap.Marker(new BMap.Point(poi.point.lng, poi.point.lat));  // 创建标注，为要查询的地方对应的经纬度
+        map.addOverlay(marker);
+        var content = document.getElementById("text_").value + "<br/><br/>经度：" + poi.point.lng + "<br/>纬度：" + poi.point.lat;
+        var infoWindow = new BMap.InfoWindow("<p style='font-size:14px;'>" + content + "</p>");
+        marker.addEventListener("click", function () { this.openInfoWindow(infoWindow); });
+        // marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+    });
+    localSearch.search(keyword);
+} 
+</script>
     <script type="text/javascript">
         // 提交表单
         $("#submitadd").click(function(){

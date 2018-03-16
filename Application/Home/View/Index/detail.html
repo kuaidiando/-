@@ -54,7 +54,7 @@
         <div class="bottom">
             <img src="__PUBLIC__/home/img/yin.png" alt="">
             <span>欢迎光临,用餐高峰期请提前下单,谢谢</span>
-            <a href="../predetermine.html"><input type="button" value="订座/请客"></a>
+            <a href="#" onclick="gongnwei()"><input type="button" value="订座/请客"></a>
         </div>
     </div>
 </div>
@@ -118,16 +118,15 @@
                                         <span>￥</span>
                                     </div>
                                     <div class="qqian">
-                                        <span>
+                                        <div>
                                         <span class="caiprice">{$vofoodxq.shoujia}</span>
-                                        <span style="margin-left:2%;font-size: 50%;color: #888 ;font-weight:300;">/{$vofoodxq.dwid|fooddwzhuanhuan=###}</span>
                                                             &nbsp;&nbsp;
-                                        </span>
+                                        </div>
                                     </div>
-                                    <!--  <div class="danwei">
-                                    <span>/份</span>
+                                     <div class="danwei">
+                                    <span>/{$vofoodxq.dwid|fooddwzhuanhuan=###}</span>
                                 </div>
-                                 -->
+                                
                                 <div class="yuanjia">
                                     <if condition="$vofoodxq[yuanjia] gt 0">
                                         <del>￥{$vofoodxq.yuanjia}</del>
@@ -657,6 +656,9 @@
             </script>
 <!--购物车遮罩层-->
 <script type="text/javascript">
+        function gongnwei(){
+            alert("该功能开发中");
+        }
         //情空购物车
         $(".qing").click(function () {
             //样式

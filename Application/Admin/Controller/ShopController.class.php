@@ -38,6 +38,7 @@ class ShopController extends BasicController
         // // echo $this->mod->getLastSql();
         // $this->assign('info', array('list' => $res,'count' => $count, 'page' => $page->show()));
         $id = I('get.id');
+        dump($id);
         if ($id == 1) {
             $user = M('shop');
             $resmend = $user ->select();

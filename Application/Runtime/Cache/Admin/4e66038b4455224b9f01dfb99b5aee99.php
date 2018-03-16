@@ -251,67 +251,57 @@ $(document).ready(function(){
         <!-- 主题内容 -->
         <div>
             <div class="page-container">
-        <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-            <a href="javascript:;" onclick="admin_add('添加菜品','<?php echo U('Admin/Food/add',array('id'=>"$id"));?>','800px','500px')"
-               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加菜品</a></span>
-            <span class="r">共有数据：<strong><?php echo ($info["count"]); ?></strong> 条</span> </div>
+        <div class="cl pd-5 bg-1 bk-gray mt-20"> <!-- <span class="l">
+            <a href="javascript:;" onclick="admin_add('添加门店','<?php echo U('Admin/Shop/add');?>','800px','500px')"
+               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加门店</a></span>
+            <span class="r">共有数据：<strong><?php echo ($info["count"]); ?></strong> 条</span> --> 商家入驻申请</div>
         <div class="mt-20">
         <table class="table table-border table-bordered table-bg table-hover table-responsive">
             <thead>
                 <tr class="text-c">
                     <th width="30">编号</th>
-                    <th width="100">名称</th>
-                    <th width="60" style="width: 8%">LOGO</th>
-                    <!-- <th width="60">原价</th> -->
-                    <th width="60">售价</th>
-                    <th width="60">菜品类别</th>
-                    <th width="60">菜品单位</th>
-                    <th width="120">规格</th>
-                   <!--  <th width="60">食材</th>
-                    <th width="60">口感</th> -->
-                    <th width="120">门店</th>
-                    <th width="60">发布状态</th>
+                    <th width="80">名称</th>
+                    <th width="80">所属城市</th>
+                    <th width="80">联系人</th>
+                    <th width="80">联系人电话</th>
+                    <th width="80">认证时间</th>
+                    <th width="60">认证状态</th>
                     <th width="120">操作</th>
                 </tr>
             </thead>
             <tbody>
-                <?php if(is_array($data)): foreach($data as $key=>$vo): ?><tr class="text-c">
+                <?php if(is_array($resshop)): foreach($resshop as $key=>$vo): ?><tr class="text-c">
                             <td><?php echo ($vo["id"]); ?></td>
                             <td><?php echo ($vo["mingch"]); ?></td>
-                            <td><img style="width: 50%;"src="/kuaidian/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
-                            <!-- <td>￥<?php echo ($vo["jiage"]); ?></td> -->
-                            <td>￥<?php echo ($vo["jiage_youhui"]); ?></td>
-                            <td><?php echo (foodtype($vo["food_type"])); ?></td>
-                            <td><?php echo (caipindanwei($vo["dwid"])); ?></td>
-                            <td>
-                                <div style="text-align: center;">
-                                    <?php if($vo["guige"] == 2 ): ?>无
-                                        <?php else: endif; ?>
-                                    <span style="vertical-align:-1px;"><?php echo (fenliangdo($vo["flid"])); ?></span>
-                                    <span style="vertical-align:-1px;"><?php echo (kouweido($vo["kwid"])); ?></span>
-                                    <a style="margin-right: 10%;" href="javascript:;"
-                                       onclick="admin_add('编辑规格','<?php echo U('Admin/Food/editfenliang', array('id' => $vo['id'],'flid'=>$vo['flid'],'kwid'=>$vo['kwid']));?>'
-                                       ,'800px','500px')">
-                                        <span style="vertical-align:baseline;color: red;"><b><i class="Hui-iconfont">&#xe667;</i></b></span>
-                                    </a>
-                                </div>
-                            </td>
-                           <!--  <td><?php echo ($vo["shicai"]); ?></td>
-                            <td><?php echo ($vo["kougan"]); ?></td> -->
-                            <td><?php echo (shopnamedo($vo["dep_shop"])); ?></td>
-                            <td class="td-status">
-                                <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">已发布</span>
-                                    <?php else: ?> 
-                                    <span class="label label-danger radius">未发布</span><?php endif; ?>
+                            <td><?php echo (depchengshi($vo["depcsjlshi"])); ?></td>
+                            <td><?php echo ($vo["lianxiren"]); ?></td>
+                            <td><?php echo ($vo["tel"]); ?></td>
+                            <td><?php echo ($vo["time_ruzhu"]); ?></td>
+                            <td class="td-status" style="text-align: center;">
+                                <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">
+                                        <a  href="javascript:;"
+                                   onclick="admin_add('认证','<?php echo U('Admin/Authentica/index', array('mdid' => $vo['id']));?>'
+                                   ,'800px','500px')" style="text-decoration: none;color:#fff;">已通过</a>
+                                    </span>
+                                    <?php elseif($vo["zhuangt"] == 2): ?>
+                                    <div style="background-color:#ffae00;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;"><b>待审核</b></div>
+                                    <?php elseif($vo["zhuangt"] == 3): ?>
+                                    <span class="label label-danger radius">驳回中</span>
+                                    <?php elseif($vo["zhuangt"] == 4): ?>
+                                    <div style="background-color:#1160BA;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;"><b>未认证</b></div>
+                                    <?php elseif($vo["zhuangt"] == 5): ?>
+                                    <div style="background-color:#B300FF;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;">
+                                        <a  href="javascript:;"
+                                   onclick="admin_add('认证','<?php echo U('Admin/Authentica/index', array('mdid' => $vo['id']));?>'
+                                   ,'800px','500px')" style="text-decoration: none;color:#fff;"><b>已过期</b></a></div><?php endif; ?>
                             </td>
                             <td class="td-manage" style="text-align: center;">
-                               
-                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Food/edit', array('id' => $vo['id'],'flid'=>$vo['flid'],'kwid'=>$vo['kwid']));?>'
+                                
+                                <a  href="javascript:;"
+                                   onclick="admin_add('查看商家入驻申请','<?php echo U('Admin/Shop/editruzhu', array('id' => $vo['id']));?>'
                                    ,'800px','500px')">
-                                    <i class="Hui-iconfont">&#xe6df;</i>
-                                </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
+                                    查看
+                                </a>
                             </td>
                         </tr><?php endforeach; endif; ?>
                 
@@ -333,7 +323,7 @@ $(document).ready(function(){
                 $.ajax({
                     type:'POST',
                     dataType: 'json',
-                    url:'<?php echo U("Admin/Food/delete");?>',
+                    url:'<?php echo U("Admin/Shop/delete");?>',
                     data:{id:id},
                     success: function (result) {
                         if (result.status) {

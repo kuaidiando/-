@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>商家首页</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="/-/Public/merch/css/index.css">
     <link rel="stylesheet" href="/-/Public/merch/css/text.css">
     <link rel="stylesheet" href="/-/Public/merch/css/base.css">
     <script type="text/javascript" src="/-/Public/jquery/jquery.js"></script>
+=======
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/index.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/kuaidian/Public/merch/css/base.css">
+    <script type="text/javascript" src="/kuaidian/Public/jquery/jquery.js"></script>
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
 </head>
 <body style="font-size: 12px">
     <div class="header">
@@ -15,7 +22,11 @@
 
             <div class="zuo">
                 <div class="tu">
+<<<<<<< HEAD
                     <img src="/-/Public/merch/images/qiehuan.png" alt="">
+=======
+                    <img src="/kuaidian/Public/merch/images/qiehuan.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
                 </div>
 
                 <div class="qie">
@@ -26,7 +37,11 @@
             <a href="register.html">
                 <div class="zhong">
                     <div class="tu2">
+<<<<<<< HEAD
                         <img src="/-/Public/<?php echo ($res[0][logo]); ?>" alt="">
+=======
+                        <img src="/kuaidian/Public/<?php echo ($res[0][logo]); ?>" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
                     </div>
                 </div>
             </a>
@@ -34,7 +49,11 @@
             <a href="<?php echo U('Merch/Shopset/index',array('shopid'=>$res[0][id]));?>">
                 <div class="you">
                     <div class="tu3">
+<<<<<<< HEAD
                         <img src="/-/Public/merch/images/shezhi.png" alt="">
+=======
+                        <img src="/kuaidian/Public/merch/images/shezhi.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
                     </div>
 
                     <div class="er">
@@ -93,7 +112,11 @@
         <a href="<?php echo U('Merch/Shopset/renzhengxx',array('shopid'=>$res[0][id]));?>">
             <div class="renz">
                 <div class="rentu">
+<<<<<<< HEAD
                     <img src="/-/Public/merch/images/renzheng.png" alt="">
+=======
+                    <img src="/kuaidian/Public/merch/images/renzheng.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
                 </div>
 
                 <div class="ziti">
@@ -105,7 +128,11 @@
                 </div>
 
                 <div class="jian">
+<<<<<<< HEAD
                     <img src="/-/Public/merch/images/youjiantou.png" alt="">
+=======
+                    <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
                 </div>
             </div>
         </a>
@@ -113,7 +140,11 @@
         <a href="<?php echo U('Merch/Enchashment/index');?>">
             <div class="qian">
                 <div class="qiantu">
+<<<<<<< HEAD
                     <img src="/-/Public/merch/images/caiwu.png" alt="">
+=======
+                    <img src="/kuaidian/Public/merch/images/caiwu.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
                 </div>
 
                 <div class="ke">
@@ -125,7 +156,11 @@
                 </div>
 
                 <div class="jian">
+<<<<<<< HEAD
                     <img src="/-/Public/merch/images/youjiantou.png" alt="">
+=======
+                    <img src="/kuaidian/Public/merch/images/youjiantou.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
                 </div>
             </div>
         </a>
@@ -149,7 +184,11 @@
             <div class="she" id="shopguanli">
                 <div class="sshe">
                     <div class="shetu">
+<<<<<<< HEAD
                         <img src="/-/Public/merch/images/shangpin.png" alt="">
+=======
+                        <img src="/kuaidian/Public/merch/images/shangpin.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
                     </div>
 
                     <div class="wenzi">
@@ -166,7 +205,11 @@
             <div class="she2">
                <div class="sshe">
                    <div class="shetu2">
+<<<<<<< HEAD
                        <img src="/-/Public/merch/images/zuowei.png" alt="">
+=======
+                       <img src="/kuaidian/Public/merch/images/zuowei.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
                    </div>
 
                    <div class="wenzi2">
@@ -179,7 +222,11 @@
             <div class="she3" id="staff_anage">
                 <div class="sshe">
                     <div class="shetu3">
+<<<<<<< HEAD
                         <img src="/-/Public/merch/images/yuangong.png" alt="">
+=======
+                        <img src="/kuaidian/Public/merch/images/yuangong.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
                     </div>
 
                     <div class="wenzi3">
@@ -191,7 +238,11 @@
             <div class="she3">
                 <div class="sshe">
                     <div class="shetu3">
+<<<<<<< HEAD
                         <img src="/-/Public/merch/images/fentang.png" alt="">
+=======
+                        <img src="/kuaidian/Public/merch/images/fentang.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
                     </div>
 
                     <div class="wenzi3">
@@ -205,7 +256,11 @@
             <div class="she">
                 <div class="sshe">
                     <div class="shetu">
+<<<<<<< HEAD
                         <img src="/-/Public/merch/images/yonghu.png" alt="">
+=======
+                        <img src="/kuaidian/Public/merch/images/yonghu.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
                     </div>
 
                     <div class="wenzi">
@@ -218,7 +273,11 @@
             <div class="she2">
                 <div class="sshe">
                     <div class="shetu2">
+<<<<<<< HEAD
                         <img src="/-/Public/merch/images/yingxiao.png" alt="">
+=======
+                        <img src="/kuaidian/Public/merch/images/yingxiao.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
                     </div>
 
                     <div class="wenzi2">
@@ -231,7 +290,11 @@
             <div class="she3">
                 <div class="sshe">
                     <div class="shetu3">
+<<<<<<< HEAD
                         <img src="/-/Public/merch/images/xitong.png" alt="">
+=======
+                        <img src="/kuaidian/Public/merch/images/xitong.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
                     </div>
 
                     <div class="wenzi3">
@@ -243,7 +306,11 @@
             <div class="she3">
                 <div class="sshe">
                     <div class="shetu3">
+<<<<<<< HEAD
                         <img src="/-/Public/merch/images/sheng.png" alt="">
+=======
+                        <img src="/kuaidian/Public/merch/images/sheng.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
                     </div>
 
                     <div class="wenzi3">
@@ -259,14 +326,22 @@
 
         <div class="foot">
 
+<<<<<<< HEAD
         <audio id="mp3" src="/-/Public/aut/8868.mp3">
+=======
+        <audio id="mp3" src="/kuaidian/Public/aut/8868.mp3">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
 
         </audio>
      
 
         <input type="hidden" id="store_id" name="store_id" value="<?php echo ($res[0][id]); ?>">
             <div class="ftu">
+<<<<<<< HEAD
                 <img src="/-/Public/merch/images/diangdan.png" alt="">
+=======
+                <img src="/kuaidian/Public/merch/images/diangdan.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
             </div>
             <div class="quan">
                 <div class="nm">
@@ -282,7 +357,11 @@
 
         <div class="foot2">
             <div class="ftu2">
+<<<<<<< HEAD
                 <img src="/-/Public/merch/images/dian.png" alt="">
+=======
+                <img src="/kuaidian/Public/merch/images/dian.png" alt="">
+>>>>>>> 7da2a08c324a8696551fbe1cee4058db79e80886
             </div>
             <div class="dd2">
                 <span>我的门店</span>
