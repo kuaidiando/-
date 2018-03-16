@@ -128,7 +128,7 @@ $(document).ready(function(){
             </ul>
             </dd>
         </dl>
-    <?php elseif(CONTROLLER_NAME == Event || CONTROLLER_NAME == Config): ?>
+    <?php elseif(CONTROLLER_NAME == Event || CONTROLLER_NAME == Config || CONTROLLER_NAME == Yingxiao): ?>
         <dl>
             <dt><a href="#">轮播图管理</a></dt>
             <dd>
@@ -141,8 +141,8 @@ $(document).ready(function(){
             <dt><a href="#">活动管理</a></dt>
             <dd>
             <ul>
-                <li><a class="shopin" name="<?php echo U('Admin/Order/index');?>">微众营销</a></li>
-                <li><a class="shopin" name="<?php echo U('Admin/Order/index');?>">分享立减</a></li>
+                <li><a class="shopin" name="<?php echo U('Admin/Yingxiao/index');?>">微众营销</a></li>
+                <li><a class="shopin" name="<?php echo U('Admin/Yingxiao/fenxiang');?>">分享立减</a></li>
             </ul>
             </dd>
         </dl>
@@ -269,98 +269,83 @@ $(document).ready(function(){
         <!-- 主题内容 -->
         <div>
             <div class="page-container">
-        <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-            <a href="javascript:;" onclick="admin_add('添加门店','<?php echo U('Admin/Shop/add');?>','800px','500px')"
-               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加门店</a></span>
-            <span class="r">共有数据：<strong><?php echo ($info["count"]); ?></strong> 条</span> </div>
+        <div class="cl pd-5 bg-1 bk-gray mt-20"> 
+            <span class="l">短信列表
+            <!-- <a href="javascript:;" onclick="admin_add('添加轮播图','<?php echo U('Admin/Event/add');?>','800','500')"
+               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加轮播图</a> -->
+           </span>
+            <span class="r">共有数据：<strong><?php echo ($num); ?></strong> 条</span> </div>
         <div class="mt-20">
         <table class="table table-border table-bordered table-bg table-hover table-responsive">
             <thead>
                 <tr class="text-c">
                     <th width="30">编号</th>
-                    <th width="80">名称</th>
-                    <th width="30" style="width:10%;">LOGO</th>
-                    <th width="80">所属城市</th>
-                    <th width="60">门店类别</th>
-                    <th width="40">星数量</th>
-                    <th width="60">优惠卷</th>
-                    <th width="60">认证状态</th>
+                    <th width="80">发送类型</th>
+                    <th width="80">接收人</th>
+                    <th width="60">验证码</th>
+
+                    <th width="80">创建时间</th>
+                    <th width="80">发送时间</th>
+                    <th width="80">发送状态</th>
+                    <th width="80">验证状态</th>
                     <th width="120">操作</th>
                 </tr>
             </thead>
+            <!-- 弹出层代码 -->
+            <div id="modal-demo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content radius">
+                        <div class="modal-header">
+                            <h3 class="modal-title">短信内容是：</h3>
+                            <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+                        </div>
+                        <div class="modal-body">
+                            <?php echo ($one_code["content"]); ?>
+                        </div>
+                        <div class="modal-footer">
+                           <!--  <button class="btn btn-primary">确定</button> -->
+                            <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <tbody>
-                <?php if(is_array($resshop)): foreach($resshop as $key=>$vo): ?><tr class="text-c">
-                            <td><?php echo ($vo["id"]); ?></td>
-                            <td><?php echo ($vo["mingch"]); ?></td>
-                            <td><img style="width: 30%;"src="/-/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
-                            <td><?php echo (depchengshi($vo["depcsjlshi"])); ?></td>
-                            <td><?php echo (shoptype($vo["type_shop"])); ?></td>
-                            <td><?php echo ($vo["xingsl"]); ?></td>
-                            <td class="td-status">
-                                <?php if($vo["juan"] == 1 ): ?><span class="label label-success radius">
-                                        <a href="<?php echo U('Admin/Sale/index',array('menid' => $vo['id'],'type'=>1));?>" style="text-decoration: none;color:#fff;">有<?php echo (youhuishul($vo["id"])); ?>
-                                        </a>
-                                    </span> 
-                                    <?php else: ?> 
-                                    <span class="label label-danger radius">
-                                         <a href="<?php echo U('Admin/Sale/index',array('menid' => $vo['id'],'type'=>2));?>" style="text-decoration: none;color:#fff;">添加<?php echo (youhuishul($vo["id"])); ?>
-                                        </a>
-                                    </span><?php endif; ?>
-                            </td>
-                            <td class="td-status">
-                                <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">
-                                        <a  href="javascript:;"
-                                   onclick="admin_add('认证','<?php echo U('Admin/Authentica/index', array('mdid' => $vo['id']));?>'
-                                   ,'800px','500px')" style="text-decoration: none;color:#fff;">已通过</a>
-                                    </span>
-                                    <?php elseif($vo["zhuangt"] == 2): ?>
-                                    <div style="background-color:#ffae00;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;"><b>待审核</b></div>
-                                    <?php elseif($vo["zhuangt"] == 3): ?>
-                                    <span class="label label-danger radius">驳回中</span>
-                                    <?php elseif($vo["zhuangt"] == 4): ?>
-                                    <div style="background-color:#1160BA;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;"><b>未认证</b></div>
-                                    <?php elseif($vo["zhuangt"] == 5): ?>
-                                    <div style="background-color:#B300FF;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;">
-                                        <a  href="javascript:;"
-                                   onclick="admin_add('认证','<?php echo U('Admin/Authentica/index', array('mdid' => $vo['id']));?>'
-                                   ,'800px','500px')" style="text-decoration: none;color:#fff;"><b>已过期</b></a></div><?php endif; ?>
-                            </td>
+                <?php if(is_array($codes)): foreach($codes as $key=>$one_code): ?><tr class="text-c">
+                            <td><?php echo ($one_code["id"]); ?></td>
+                            <?php if($one_code["type"] == register): ?><td>注册</td>
+                            <?php elseif($one_code["type"] == repass): ?>
+                            <td>重置密码</td>
+                            <?php else: ?>
+                            <td>未知</td><?php endif; ?>
+                            <td><?php echo ($one_code["tel"]); ?></td>
+                           <!--  <td><button class="btn radius btn-primary size-L" onClick="modaldemo('<?php echo ($one_code["content"]); ?>')">查看</button></td> -->
+                            <td><?php echo ($one_code["code"]); ?></td>
+                            <td><?php echo ($one_code["add_time"]); ?></td>
+                            <td><?php echo ($one_code["update_time"]); ?></td>
+
+                            <?php if($one_code["status"] == 1): ?><td>发送失败</td>
+                            <?php elseif($one_code["status"] == 5): ?>
+                            <td>已发送</td>
+                            <?php elseif($one_code["status"] == 10): ?>
+
+                            <td>已收到</td><?php endif; ?>
+                            <!-- <td><?php echo ($one_info["status"]); ?></td> -->
+                            <?php if($one_code["yz_status"] == 0): ?><td>未验证</td>
+                            <?php elseif($one_code["yz_status"] == 1): ?>
+                            <td>已验证</td><?php endif; ?>
+
+                            
+                           
                             <td class="td-manage" style="text-align: center;">
-                                
-                                <a  href="javascript:;"
-                                   onclick="admin_add('编辑','<?php echo U('Admin/Shop/editerweim', array('id' => $vo['id']));?>'
-                                   ,'800px','500px')">
-                                    &nbsp;&nbsp;二维码&nbsp;&nbsp;
-                                </a>
-                                <a href="<?php echo U('Admin/Seat/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
-                                   
-                                    &nbsp;&nbsp;座位列表&nbsp;&nbsp;
-                                </a>
-                                <!-- <a href="<?php echo U('Admin/Seattype/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
-                                   
-                                   &nbsp;&nbsp;座位类别&nbsp;&nbsp;
-                                </a> -->
-                                 <a  href="javascript:;"
-                                   onclick="admin_add('编辑','<?php echo U('Admin/Shop/edit', array('id' => $vo['id']));?>'
+                             
+                                <!-- <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
+                                   onclick="admin_add('编辑详情','<?php echo U('Admin/User/edit', array('id' => $one_info["id"]));?>'
                                    ,'800px','500px')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
-                                </a>
-                                <br>
-                                <a href="<?php echo U('Admin/Food/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
-                                   
-                                    &nbsp;&nbsp;&nbsp;菜品管理&nbsp;&nbsp;
-                                </a>
-                                <a href="<?php echo U('Admin/Foodtype/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
-                                   
-                                    &nbsp;菜品类别
-                                </a>&nbsp;&nbsp;
-                                <!-- <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('详情','<?php echo U('Admin/Shop/xiangqing', array('id' => $vo['id']));?>'
-                                   ,'800','500')">
-                                    <i class="Hui-iconfont">&#xe627;</i>
-                                </a>&nbsp;&nbsp;&nbsp; -->
-                               
-                                <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
+                                </a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+                                <a class="h-text-sc" id="<?php echo ($one_code["sms_id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
                             </td>
                         </tr><?php endforeach; endif; ?>
                 
@@ -373,23 +358,28 @@ $(document).ready(function(){
 </div>
 </section>
 <script type="text/javascript">
+        // function modaldemo(res){
+        //     $("#modal-demo").modal("show")
+        //     $(".modal-body").html(res);
+        // }
         /*删除*/
         $(document).on("click", '.h-text-sc', function () {
             var op_obj = $(this).parents("tr");
             var id = $(this).attr('id');
-            // alert(id);
             layer.confirm('确认要删除吗？',function(){
                 $.ajax({
-                    type:'POST',
+                    type:'GET',
                     dataType: 'json',
-                    url:'<?php echo U("Admin/Shop/delete");?>',
+                    url:'<?php echo U("Admin/Code/del");?>',
                     data:{id:id},
                     success: function (result) {
                         if (result.status) {
-                            op_obj.remove();
                             layer.msg(result.msg,{icon:1,time:1000});
                         } else {
+                            op_obj.remove();
+
                             layer.msg(result.msg,{icon:0,time:2000});
+
                         }
                     }
                 })

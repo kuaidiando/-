@@ -131,12 +131,21 @@ $(document).ready(function(){
             </ul>
             </dd>
         </dl>
-    <elseif condition="CONTROLLER_NAME eq Event || CONTROLLER_NAME eq Config" />
+    <elseif condition="CONTROLLER_NAME eq Event || CONTROLLER_NAME eq Config || CONTROLLER_NAME eq Yingxiao" />
         <dl>
             <dt><a href="#">轮播图管理</a></dt>
             <dd>
             <ul>
                 <li><a class="shopin" name="{:U('Admin/Event/index')}">轮播图列表</a></li>
+            </ul>
+            </dd>
+        </dl>
+        <dl>
+            <dt><a href="#">活动管理</a></dt>
+            <dd>
+            <ul>
+                <li><a class="shopin" name="{:U('Admin/Yingxiao/index')}">微众营销</a></li>
+                <li><a class="shopin" name="{:U('Admin/Yingxiao/fenxiang')}">分享立减</a></li>
             </ul>
             </dd>
         </dl>
@@ -146,6 +155,15 @@ $(document).ready(function(){
             <dd>
             <ul>
                 <li><a class="shopin" name="{:U('Admin/Order/index')}">订单列表</a></li>
+            </ul>
+            </dd>
+        </dl>
+    <elseif condition="CONTROLLER_NAME eq Money" />
+        <dl>
+            <dt><a href="#">报表</a></dt>
+            <dd>
+            <ul>
+                <li><a class="shopin" name="{:U('Admin/Money/index')}">平台营收</a></li>
             </ul>
             </dd>
         </dl>

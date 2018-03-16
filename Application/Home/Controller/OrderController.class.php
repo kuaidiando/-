@@ -16,10 +16,10 @@ class OrderController extends Controller {
        $this->user_id = \user_helper::get_user_id();
     }
 
-    public function index(){
-        $_SESSION = '';
-        // $this->display('order_info');
-    }
+    // public function index(){
+    //     $_SESSION = '';
+    //     // $this->display('order_info');
+    // }
     //提交订单
     public function save_order(){
         $order_filter = array();
@@ -85,25 +85,21 @@ class OrderController extends Controller {
                         $order_fu['goods_num'] = $goods_v['foodnum'];
                         $order_fu['store_id'] = $goods_v['shopid'];
                         $order_fu['goods_price'] = uri('food',array('id'=>$goods_v['foodid']),'jiage_youhui');
-                        $order_fu_id = M('order_fu')->add($order_fu);
-                        // if(!$order_fu_id){
-
-                        //     // M('order')->where(array('id'=>$order_id))->delete();
-                        //     // $this->error('订单添加失败');
-                        // }  
+                        // $order_fu_id = M('order_fu')->add($order_fu);
+                       
                         if(uri('order_fu',array('order_id'=>$order_id,'goods_id'=>$order_fu['goods_id'],'goods_num'))){
-                        if(uri('order_fu',array('order_id'=>$order_id,'goods_id'=>$order_fu['goods_id']),'goods_num') == $order_fu['goods_num']){
-                            continue;
+                            if(uri('order_fu',array('order_id'=>$order_id,'goods_id'=>$order_fu['goods_id']),'goods_num') == $order_fu['goods_num']){
+                                continue;
 
-                        }else{
-                            $order_fu_id = M('order_fu')->where(array('order_id'=>$order_id,'goods_id'=>$order_fu['goods_id']))->save($order_fu);
-                         
-                            if(!$order_fu_id){
-                                echo '修改数量失败';exit;
-                                M('order')->where(array('id'=>$order_id))->delete();
-                                $this->error('cart/save_cart?shopid='.$_POST['store_id'],'订单添加失败');
-                            } 
-                        }
+                            }else{
+                                $order_fu_id = M('order_fu')->where(array('order_id'=>$order_id,'goods_id'=>$order_fu['goods_id']))->save($order_fu);
+                             
+                                if(!$order_fu_id){
+                                    echo '修改数量失败';exit;
+                                    M('order')->where(array('id'=>$order_id))->delete();
+                                    $this->error('cart/save_cart?shopid='.$_POST['store_id'],'订单添加失败');
+                                } 
+                            }
 
                     }else{
                         M('order_fu')->add($order_fu);
@@ -150,7 +146,8 @@ class OrderController extends Controller {
         $shopname = uri('shop',array('id'=>$_POST['store_id']),'mingch');
         $money = uri('user',array('id'=>$this->user_id),'money');
         $total_price = uri('order',array('id'=>$order_id),'total_price');
-        $lj = $total_price * 0.03;
+
+        $lj = round($total_price * 0.03,2);
         $sf = $total_price - $lj;
         $this->assign('order_id',$order_id);
         $this->assign('money',$money);
@@ -172,7 +169,7 @@ class OrderController extends Controller {
         $shopname = uri('shop',array('id'=>$order_info['store_id']),'mingch');
         $order_code = $order_info['order_code'];
         $total_price=$order_info['total_price'];
-        $lj = $total_price * 0.03;
+        $lj = round($total_price * 0.03,2);
         $sf = $total_price - $lj;
         $money = uri('user',array('id'=>$this->user_id),'money');
         $this->assign('order_id',$order_id);
@@ -197,7 +194,7 @@ class OrderController extends Controller {
         $shopname = uri('shop',array('id'=>$store_id),'mingch');
         $money = uri('user',array('id'=>$user_id),'money');
         $total_price = uri('order',array('id'=>$order_id),'total_price');
-        $lj = $total_price * 0.03;
+        $lj = round($total_price * 0.03,2);
         $sf = $total_price - $lj;
         $this->assign('order_id',$order_id);
         $this->assign('money',$money);
@@ -220,6 +217,8 @@ class OrderController extends Controller {
         $lj = I('post.lj');
         $sf = I('post.sf');
         $order_id = I('order_id');
+        $log_name= APP_PATH."/lq_url.log";//log文件路径
+
         // $order_in = uri('order',array('id'=>$order_id));
         // $total_price = $order_in['total_price'];
         // $store_id = $order_in['store_id'];
@@ -252,8 +251,10 @@ class OrderController extends Controller {
 
                     // M('cart')->where(array('store_id'=>$store_id,'user_id'=>$this->user_id,'status'=>1))->save(array('status'=>0));
 
-                    setcookie("food_num",serialize($food_num),time()-10,"/");
+                    // setcookie("food_num",serialize($food_num),time()-10,"/");
+                    setcookie("food_num","",time()-10,"/");
                     $_SESSION['order_id'] = '';
+                    // $this->log_result($log_name,'156456');
   
                 }else{
                     $this->error('支付失败');
@@ -502,6 +503,14 @@ class OrderController extends Controller {
     }
 
 
-
+    // 打印log
+    public function log_result($file,$word)
+    {
+        $fp = fopen($file,"a");
+        flock($fp, LOCK_EX) ;
+        fwrite($fp,"执行日期：".strftime("%Y-%m-%d-%H：%M：%S",time())."\n".$word."\n\n");
+        flock($fp, LOCK_UN);
+        fclose($fp);
+    }
 
 }

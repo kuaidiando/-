@@ -158,7 +158,7 @@ class order_helper
         //     }
         //     $total_price += sprintf('%.2f',$total_price + $v['total_price'] - $v['fullcut_price']);
         // }
-        $sf = $total_price*0.03;
+        $sf = $total_price * 0.97;
         return $sf;
     }
 

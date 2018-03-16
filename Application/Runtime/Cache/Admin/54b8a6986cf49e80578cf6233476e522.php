@@ -128,7 +128,7 @@ $(document).ready(function(){
             </ul>
             </dd>
         </dl>
-    <?php elseif(CONTROLLER_NAME == Event || CONTROLLER_NAME == Config): ?>
+    <?php elseif(CONTROLLER_NAME == Event || CONTROLLER_NAME == Config || CONTROLLER_NAME == Yingxiao): ?>
         <dl>
             <dt><a href="#">轮播图管理</a></dt>
             <dd>
@@ -141,8 +141,8 @@ $(document).ready(function(){
             <dt><a href="#">活动管理</a></dt>
             <dd>
             <ul>
-                <li><a class="shopin" name="<?php echo U('Admin/Order/index');?>">微众营销</a></li>
-                <li><a class="shopin" name="<?php echo U('Admin/Order/index');?>">分享立减</a></li>
+                <li><a class="shopin" name="<?php echo U('Admin/Yingxiao/index');?>">微众营销</a></li>
+                <li><a class="shopin" name="<?php echo U('Admin/Yingxiao/fenxiang');?>">分享立减</a></li>
             </ul>
             </dd>
         </dl>
@@ -270,96 +270,38 @@ $(document).ready(function(){
         <div>
             <div class="page-container">
         <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
-            <a href="javascript:;" onclick="admin_add('添加门店','<?php echo U('Admin/Shop/add');?>','800px','500px')"
-               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加门店</a></span>
-            <span class="r">共有数据：<strong><?php echo ($info["count"]); ?></strong> 条</span> </div>
+            <a href="javascript:;" onclick="admin_add('添加轮播图','<?php echo U('Admin/Event/add');?>','800px','500px')"
+               class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加轮播图</a></span>
+            <span class="r">共有数据：<strong><?php echo ($num); ?></strong> 条</span> </div>
         <div class="mt-20">
         <table class="table table-border table-bordered table-bg table-hover table-responsive">
             <thead>
                 <tr class="text-c">
                     <th width="30">编号</th>
                     <th width="80">名称</th>
-                    <th width="30" style="width:10%;">LOGO</th>
-                    <th width="80">所属城市</th>
-                    <th width="60">门店类别</th>
-                    <th width="40">星数量</th>
-                    <th width="60">优惠卷</th>
-                    <th width="60">认证状态</th>
+                    <th width="60">照片</th>
+                    <th width="80">图片状态</th>
                     <th width="120">操作</th>
                 </tr>
             </thead>
             <tbody>
-                <?php if(is_array($resshop)): foreach($resshop as $key=>$vo): ?><tr class="text-c">
+                <?php if(is_array($event)): foreach($event as $key=>$vo): ?><tr class="text-c">
                             <td><?php echo ($vo["id"]); ?></td>
-                            <td><?php echo ($vo["mingch"]); ?></td>
-                            <td><img style="width: 30%;"src="/-/Public<?php echo ($vo["logo"]); ?>" alt="图片加载中。。。"></td>
-                            <td><?php echo (depchengshi($vo["depcsjlshi"])); ?></td>
-                            <td><?php echo (shoptype($vo["type_shop"])); ?></td>
-                            <td><?php echo ($vo["xingsl"]); ?></td>
+                            <td><?php echo ($vo["ename"]); ?></td>
+                            <td><img width = "100" height = "50" src="/-/Public<?php echo ($vo["pic"]); ?>" alt="图片加载中。。。"></td>
+                            
                             <td class="td-status">
-                                <?php if($vo["juan"] == 1 ): ?><span class="label label-success radius">
-                                        <a href="<?php echo U('Admin/Sale/index',array('menid' => $vo['id'],'type'=>1));?>" style="text-decoration: none;color:#fff;">有<?php echo (youhuishul($vo["id"])); ?>
-                                        </a>
-                                    </span> 
+                                <?php if($vo["status"] == 1 ): ?><span class="label label-success radius">在使用</span>
                                     <?php else: ?> 
-                                    <span class="label label-danger radius">
-                                         <a href="<?php echo U('Admin/Sale/index',array('menid' => $vo['id'],'type'=>2));?>" style="text-decoration: none;color:#fff;">添加<?php echo (youhuishul($vo["id"])); ?>
-                                        </a>
-                                    </span><?php endif; ?>
-                            </td>
-                            <td class="td-status">
-                                <?php if($vo["zhuangt"] == 1 ): ?><span class="label label-success radius">
-                                        <a  href="javascript:;"
-                                   onclick="admin_add('认证','<?php echo U('Admin/Authentica/index', array('mdid' => $vo['id']));?>'
-                                   ,'800px','500px')" style="text-decoration: none;color:#fff;">已通过</a>
-                                    </span>
-                                    <?php elseif($vo["zhuangt"] == 2): ?>
-                                    <div style="background-color:#ffae00;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;"><b>待审核</b></div>
-                                    <?php elseif($vo["zhuangt"] == 3): ?>
-                                    <span class="label label-danger radius">驳回中</span>
-                                    <?php elseif($vo["zhuangt"] == 4): ?>
-                                    <div style="background-color:#1160BA;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;"><b>未认证</b></div>
-                                    <?php elseif($vo["zhuangt"] == 5): ?>
-                                    <div style="background-color:#B300FF;color:#fff;width: 47px;margin-left: 35%;border-radius: 10%;">
-                                        <a  href="javascript:;"
-                                   onclick="admin_add('认证','<?php echo U('Admin/Authentica/index', array('mdid' => $vo['id']));?>'
-                                   ,'800px','500px')" style="text-decoration: none;color:#fff;"><b>已过期</b></a></div><?php endif; ?>
+                                    <span class="label label-danger radius">未使用</span><?php endif; ?>
                             </td>
                             <td class="td-manage" style="text-align: center;">
-                                
-                                <a  href="javascript:;"
-                                   onclick="admin_add('编辑','<?php echo U('Admin/Shop/editerweim', array('id' => $vo['id']));?>'
-                                   ,'800px','500px')">
-                                    &nbsp;&nbsp;二维码&nbsp;&nbsp;
-                                </a>
-                                <a href="<?php echo U('Admin/Seat/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
-                                   
-                                    &nbsp;&nbsp;座位列表&nbsp;&nbsp;
-                                </a>
-                                <!-- <a href="<?php echo U('Admin/Seattype/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
-                                   
-                                   &nbsp;&nbsp;座位类别&nbsp;&nbsp;
-                                </a> -->
-                                 <a  href="javascript:;"
-                                   onclick="admin_add('编辑','<?php echo U('Admin/Shop/edit', array('id' => $vo['id']));?>'
+                             
+                                <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
+                                   onclick="admin_add('编辑详情','<?php echo U('Admin/Event/edit', array('id' => $vo['id']));?>'
                                    ,'800px','500px')">
                                     <i class="Hui-iconfont">&#xe6df;</i>
-                                </a>
-                                <br>
-                                <a href="<?php echo U('Admin/Food/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
-                                   
-                                    &nbsp;&nbsp;&nbsp;菜品管理&nbsp;&nbsp;
-                                </a>
-                                <a href="<?php echo U('Admin/Foodtype/index',array('menid' => $vo['id'],'id' => $chengshiid));?>" style="text-decoration: none;">
-                                   
-                                    &nbsp;菜品类别
-                                </a>&nbsp;&nbsp;
-                                <!-- <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('详情','<?php echo U('Admin/Shop/xiangqing', array('id' => $vo['id']));?>'
-                                   ,'800','500')">
-                                    <i class="Hui-iconfont">&#xe627;</i>
-                                </a>&nbsp;&nbsp;&nbsp; -->
-                               
+                                </a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a class="h-text-sc" id="<?php echo ($vo["id"]); ?>"><i class="Hui-iconfont">&#xe6e2;</i></a>
                             </td>
                         </tr><?php endforeach; endif; ?>
@@ -377,19 +319,21 @@ $(document).ready(function(){
         $(document).on("click", '.h-text-sc', function () {
             var op_obj = $(this).parents("tr");
             var id = $(this).attr('id');
-            // alert(id);
+            // alert(id);exit;
             layer.confirm('确认要删除吗？',function(){
                 $.ajax({
-                    type:'POST',
+                    type:'GET',
                     dataType: 'json',
-                    url:'<?php echo U("Admin/Shop/delete");?>',
+                    url:'<?php echo U("Admin/Event/del");?>',
                     data:{id:id},
                     success: function (result) {
                         if (result.status) {
-                            op_obj.remove();
                             layer.msg(result.msg,{icon:1,time:1000});
                         } else {
+                            op_obj.remove();
+
                             layer.msg(result.msg,{icon:0,time:2000});
+
                         }
                     }
                 })

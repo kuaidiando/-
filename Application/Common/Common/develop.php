@@ -225,3 +225,11 @@ function is_weixin()
     return false;
 }
 
+/** 
+ *获取优惠 
+ **/
+function get_lj($total_price,$zk,$jl){
+    $lj_price = $total_price * $zk;
+    $lj = $lj_price * $jl;
+    return round($lj,2);
+}

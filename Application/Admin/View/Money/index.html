@@ -22,54 +22,37 @@
             <thead>
                 <tr class="text-c">
                     <th width="30">编号</th>
-                    <th width="80">商家名称</th>
                     <th width="80">订单号</th>
-                    <th width="80">会员名称</th>
-                    <th width="40">菜单</th>
-                    <th width="60">订座</th>
-                    <th width="40">订单总额</th>
-                    <th width="40">实付金额</th>
-                    <th width="120">订单时间</th>
-                    <th width="50">订单状态</th>
-                    <th width="80">操作</th>
+                    <th width="80">商户名称</th>
+                    <th width="80">订单金额</th>
+                    <th width="40">在线支付</th>
+                    <th width="60">商户获利</th>
+                    <th width="40">平台获利</th>
+                    <th width="40">业务员所得佣金</th>
+                    <th width="120">支付时间</th>
+                    <!-- <th width="50">订单状态</th> -->
+                    <!-- <th width="80">操作</th> -->
                 </tr>
             </thead>
             <tbody>
-                <foreach name="order_info" item="one_order_info" >
+                <foreach name="money_info" item="one_money_info" >
                         <tr class="text-c">
-                            <td>{$one_order_info.id}</td>
-                            <td>{$one_order_info.shop_name}</td>
-                            <td>{$one_order_info.order_code}</td>
-                            <td>{$one_order_info.buyer_name}</td>
-                            <td>
-                            <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
-                                   onclick="admin_add('订单菜品','{:U('Admin/Order/goods_info', array('id' => $one_order_info['id']))}'
-                                   ,'800px','500px')">
-                                    <i class="Hui-iconfont">&#xe6df;</i>
-                                查看</a>
-                            </td>
-                            <if condition="$one_order_info.is_dz eq 1">
-                            <td>已订座</td>
-                            <elseif condition="$one_order_info.is_dz eq 0"/>
-                            <td>未订座</td>
-                            <else />
-                            <td>未知</td>
-                            </if>
-                            <td>{$one_order_info.total_price}</td>
-                            <td>{$one_order_info.sf}</td>
-                            <td>
-                                <div>预点时间:{$one_order_info.pay_time}</div>
-                                <if condition="$one_order_info.use_time eq '0000-00-00 00:00:00'">
-                                <div></div>
-                                <else />
-                                <div style="color:red">下单时间:{$one_order_info.use_time}</div>
-                                </if>
-                            </td>
+                            <td>{$one_money_info.id}</td>
+                            <td>{$one_money_info.order_code}</td>
+                            <td>{$one_money_info.shopname}</td>
+                            <td>{$one_money_info.total_price}</td>
+                            <td>{$one_money_info.sf}</td>
+                          
+                            <td>{$one_money_info.sf}</td>
+                            <td>无</td>
+                            <td>无</td>
+                            <td>{$one_money_info.pay_time}</td>
+                          
 
 
-                            <if condition="$one_order_info.order_status eq 1">
+                           <!--  <if condition="$one_money_info.order_status eq 1">
                             <td>
-                                <if condition="$one_order_info.add_time lt date('Y-m-d H:i:s',time()-60*15)">
+                                <if condition="$one_money_info.add_time lt date('Y-m-d H:i:s',time()-60*15)">
                                     <span class="label label-danger radius">
                                         <a href="#" style="text-decoration: none;color:#fff;">支付超时
                                         </a>  
@@ -81,7 +64,7 @@
                                     </span>
                                 </if>                           
                                 </td>
-                            <elseif condition="$one_order_info.order_status eq 5"/>
+                            <elseif condition="$one_money_info.order_status eq 5"/>
                             <td>
                                 <span class="label label-success radius">
                                          <a href="#" style="text-decoration: none;color:#ffae00;">已支付
@@ -89,7 +72,7 @@
                                 </span>                          
                                                             
                             </td>
-                            <elseif condition="$one_order_info.order_status eq 10"/>
+                            <elseif condition="$one_money_info.order_status eq 10"/>
                             <td>
                                 <span class="label label-success radius">
                                          <a href="#" style="text-decoration: none;color:#1160BA;">待评价
@@ -97,7 +80,7 @@
                                 </span>                          
                                                             
                             </td>
-                            <elseif condition="$one_order_info.order_status eq 15"/>
+                            <elseif condition="$one_money_info.order_status eq 15"/>
                             <td>
                                 <span class="label label-success radius">
                                          <a href="#" style="text-decoration: none;color:#fff;">已完成
@@ -105,7 +88,7 @@
                                 </span>                          
                                                             
                             </td>
-                            <elseif condition="$one_order_info.order_status eq 20"/>
+                            <elseif condition="$one_money_info.order_status eq 20"/>
                             <td>
                                 <span class="label label-success radius">
                                          <a href="#" style="text-decoration: none;color:#B300FF;">已退款
@@ -115,19 +98,19 @@
                             </td>
                             <else />
                             <td>未知</td>
-                            </if>
+                            </if> -->
 
                            
-                            <td class="td-manage" style="text-align: center;">
+                          <!--   <td class="td-manage" style="text-align: center;">
                                 <a style="margin-left: -8%;margin-right: 10%;" href="javascript:;"
                                        onclick="admin_add('订单详情','{:U('Admin/Order/order_xq', array('id' => $one_order_info['id']))}'
                                        ,'800px','500px')">
                                         <i class="Hui-iconfont">&#xe6df;</i>
                                     查看订单</a>
-                                    <a class="h-text-sc" id="{$one_order_info.id}"><i class="Hui-iconfont">&#xe6e2;</i></a>
+                                    <a class="h-text-sc" id="{$one_money_info.id}"><i class="Hui-iconfont">&#xe6e2;</i></a>
                               
 
-                            </td>
+                            </td> -->
                         </tr>
                 </foreach>
                 

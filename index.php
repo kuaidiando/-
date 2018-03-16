@@ -18,6 +18,7 @@ if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 define('APP_DEBUG',True);
 
 // 定义应用目录
+define('ROOT_PATH', dirname(__FILE__));
 define('APP_PATH','./Application/');
 define('SITE_URL','https://mk.365kdian.com');
 // ini_set ( 'session.cookie_lifetime', 3600 );

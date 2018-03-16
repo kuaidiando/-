@@ -12,20 +12,19 @@ class WxJsAPIController extends Controller{
 
     public function jsApiCall()
     {   
-
         //使用jsapi接口
         $jsApi = new \JsApi_pub();
         
 
         $openid = $_SESSION['openid'];
         $order_id = I('id','');
-       $order_info = M('order')->where(array('id'=>$order_id))->find();
+        $order_info = M('order')->where(array('id'=>$order_id))->find();
         // $order_info = uri('order', array('id' => $order_id));
         $order_code = $order_info['order_code'];
         $total_fee = \order_helper::get_order_total_price($order_id);
-        $total_fee = $total_fee * 100;
+        $total_fee = round($total_fee,2)*100;
         $body = "订单编号{$order_code}";
-        $total_fee = 20;
+        // $total_fee = 15;
         $out_trade_no = $order_code;
        
 
@@ -33,7 +32,6 @@ class WxJsAPIController extends Controller{
         //使用统一支付接口
         $unifiedOrder = new \UnifiedOrder_pub();
 
-            /*此处做数据库的查询  这里操作数据库把产品信息显示出来*/
 
             /*此处做数据库的查询  这里操作数据库把产品信息显示出来*/
 
@@ -45,7 +43,6 @@ class WxJsAPIController extends Controller{
         //noncestr已填,商户无需重复填写
         //spbill_create_ip已填,商户无需重复填写
         //sign已填,商户无需重复填写
-        //
 
         $NOTIFY_URL="https://mk.365kdian.com/index.php/Home/WxJsAPI/notify";
 
@@ -78,6 +75,8 @@ class WxJsAPIController extends Controller{
         $jsApiParameters = $jsApi->getParameters();
 
         $WEB_HOST='https://mk.365kdian.com';//填写的话 如 http://nicaicai.imwork.net 最后面不用加 /
+        setcookie("food_num","",time()-10,"/");
+
         $this->assign('HOSTS',$WEB_HOST);
         $this->assign('order_id',$order_id);
         $this->assign('jsApiParameters',$jsApiParameters);
@@ -111,46 +110,7 @@ class WxJsAPIController extends Controller{
 
              
                      //订单号
-                // $order_code         = $notify->data['out_trade_no'];
-                // //微信交易号
-                // $transaction_id   = $notify->data['transaction_id'];
                 
-                // //openid
-                // $openid   = $notify->data['openid'];
-                
-                // //交易金额，单位分
-                // $price            = $notify->data['total_fee'];
-                
-                // //交易完成时间
-                // $finish_time      = $notify->data['time_end'];
-                // $finish_time      = date('Y-m-d H:i:s', strtotime($finish_time));
-                // $price = $price/100;
-                // M('order')->where(array('order_code'=>$order_code))->save(array('order_status'=>5,'pay_time'=>date('Y-m-d H:i:s',time()),'sf'=>$price));
-                // $money_data = array();
-                // $money_data = array(
-                //     'order_id'   =>$notify->data['order_id'],
-                //     'total_price'=>$price,
-                //     'sf'         =>$price*0.97,
-                //     'pay_type'   =>2,
-                //     'lj'         =>$price*0.03,
-                //     'pay_time'   =>date('Y-m-d H:i:s',time()),
-                //     );
-                // M('money')->add($money_data);
-
-                // // M('cart')->where(array('store_id'=>$store_id,'user_id'=>$this->user_id,'status'=>1))->save(array('status'=>0));
-
-                // setcookie("food_num",serialize($food_num),time()-10,"/");
-                // $_SESSION['order_id'] = '';
-                 //将日志信息记录到wxpay_log表里
-            //     $log_data = array(
-            //         'order_id' => $order_id,
-            //         'openid'   => $openid,
-            //         'price'    => $price,
-            //         'transaction_id' => $transaction_id,
-            //         'pay_time' => $finish_time,
-            //         'data'     => serialize($notify->data),
-            //     );
-            // M('wxpay_log')->add($log_data);
         }
         $returnXml = $notify->returnXml();
         echo $returnXml;
@@ -159,7 +119,7 @@ class WxJsAPIController extends Controller{
         
         //以log文件形式记录回调信息
          // $log_ = new Log_();
-        $log_name= __ROOT__."/Public/notify_url.log";//log文件路径
+        $log_name= APP_PATH."/notify_url.log";//log文件路径
         
         
         if($notify->checkSign() == TRUE)
@@ -168,13 +128,13 @@ class WxJsAPIController extends Controller{
 
 
                 //此处应该更新一下订单状态，商户自行增删操作
-                log_result($log_name,"【通信出错】:\n".$xml."\n");
+                $this->log_result($log_name,"【通信出错】:\n".$xml."\n");
             }
             elseif($notify->data["result_code"] == "FAIL"){
         
 
                 //此处应该更新一下订单状态，商户自行增删操作
-                log_result($log_name,"【业务出错】:\n".$xml."\n");
+                $this->log_result($log_name,"【业务出错】:\n".$xml."\n");
             }
             else{ 
 
@@ -187,10 +147,60 @@ class WxJsAPIController extends Controller{
 			    /*更新订单状态这里写数据库的操作*/
 			   
 				/*更新订单状态这里写数据库的操作*/
+                $order_code = $notify->data['out_trade_no'];
+                $order_id = uri('order',array('order_code'=>$order_code),'id');
+                //微信交易号
+                $transaction_id   = $notify->data['transaction_id'];
+                
+                //openid
+                $openid   = $notify->data['openid'];
+                
+                //交易金额，单位分
+                $price            = $notify->data['total_fee'];
+                
+                //交易完成时间
+                $finish_time      = $notify->data['time_end'];
+                $finish_time      = date('Y-m-d H:i:s', strtotime($finish_time));
+                $price = $price/100;
+                if(uri('order',array('id'=>$order_id),'order_status') == 1){
+                    M('order')->where(array('id'=>$order_id))->save(array('order_status'=>5,'pay_time'=>date('Y-m-d H:i:s',time()),'sf'=>$price));
+
+                }
+                $money_data = array();
+                if(!uri('money', array(' order_id' => $order_id))){
+                    $total_price = uri('order',array('id'=>$order_id),'total_price');
+                    $money_data = array(
+                        'order_id'   =>$order_id,
+                        'total_price'=>$total_price,
+                        'sf'         =>$price,
+                        'pay_type'   =>1,
+                        'lj'         =>$total_price - $price,
+                        'pay_time'   =>date('Y-m-d H:i:s',time()),
+                        );
+                    M('money')->add($money_data);                   
+                }
+
+
+                // M('cart')->where(array('store_id'=>$store_id,'user_id'=>$this->user_id,'status'=>1))->save(array('status'=>0));
+
+                $_SESSION['order_id'] = '';
+                 // 将日志信息记录到wxpay_log表里
+                if(!uri('wxpay_log', array(' order_id' => $order_id))){
+                    $log_data = array(
+                        'order_id' => $order_id,
+                        'openid'   => $openid,
+                        'price'    => $price,
+                        'transaction_id' => $transaction_id,
+                        'pay_time' => $finish_time,
+                        'data'     => serialize($notify->data),
+                    );
+                    M('wxpay_log')->add($log_data);
+                }
 
 
                 //此处应该更新一下订单状态，商户自行增删操作
-                log_result($log_name,"【支付成功】:\n".$xml."\n");
+                //
+                $this->log_result($log_name,"【支付成功】:\n".$xml."\n");
 
             }
         

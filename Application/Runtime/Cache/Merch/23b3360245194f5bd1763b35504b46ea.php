@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en" style="font-size: 42.4px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no">
     <title>提现</title>
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/base.css">
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/text.css">
-    <link rel="stylesheet" href="__PUBLIC__/merch/css/tixian.css">
-    <script type="text/javascript" src="__PUBLIC__/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="/-/Public/merch/css/base.css">
+    <link rel="stylesheet" href="/-/Public/merch/css/text.css">
+    <link rel="stylesheet" href="/-/Public/merch/css/tixian.css">
+    <script type="text/javascript" src="/-/Public/jquery/jquery.js"></script>
 </head>
 <body style="font-size: 12px">
     <div class="head">
@@ -34,7 +34,7 @@
         <div class="center">
             <div class="hezi">
                 <div class="tu">
-                    <img src="__PUBLIC__/merch/images/qian.png" alt="">
+                    <img src="/-/Public/merch/images/qian.png" alt="">
                 </div>
 
                 <div class="cha">
@@ -42,16 +42,16 @@
                 </div>
 
                 <div class="jian">
-                    <img src="__PUBLIC__/merch/images/youjiantou.png" alt="">
+                    <img src="/-/Public/merch/images/youjiantou.png" alt="">
                 </div>
             </div>
         </div>
 
         <div class="center2" >
-        <a href="{:U('Merch/Enchashment/zhuanghuguanli')}">
+        <a href="<?php echo U('Merch/Enchashment/zhuanghuguanli');?>">
             <div class="hezi">
                 <div class="tu">
-                    <img src="__PUBLIC__/merch/images/yinhang.png" alt="">
+                    <img src="/-/Public/merch/images/yinhang.png" alt="">
                 </div>
 
                 <div class="cha2">
@@ -63,14 +63,14 @@
                 </div>
 
                 <div class="jian">
-                    <img src="__PUBLIC__/merch/images/youjiantou.png" alt="">
+                    <img src="/-/Public/merch/images/youjiantou.png" alt="">
                 </div>
             </div>
         </a>
             
         </div>
     </div>
-    <a href="{:U('Merch/Enchashment/merch_info')}">
+    <a href="<?php echo U('Merch/Enchashment/merch_info');?>">
         <div class="jinri">
             <div class="ss">
                 <div class="jin">
@@ -86,7 +86,7 @@
                 </div>
                 
                 <div class="jian6">
-                    <img src="__PUBLIC__/merch/images/youjiantou.png" alt="">
+                    <img src="/-/Public/merch/images/youjiantou.png" alt="">
                 </div>
             </div>
     </a>    
@@ -134,7 +134,7 @@
             </div>
 
             <div class="jian3">
-                <img src="__PUBLIC__/merch/images/youjiantou.png" alt="">
+                <img src="/-/Public/merch/images/youjiantou.png" alt="">
             </div>
         </div>
     </div>
@@ -150,7 +150,7 @@
             </div>
 
             <div class="jian3">
-                <img src="__PUBLIC__/merch/images/youjiantou.png" alt="">
+                <img src="/-/Public/merch/images/youjiantou.png" alt="">
             </div>
         </div>
     </div>
@@ -166,7 +166,7 @@
             </div>
 
             <div class="jian3">
-                <img src="__PUBLIC__/merch/images/youjiantou.png" alt="">
+                <img src="/-/Public/merch/images/youjiantou.png" alt="">
             </div>
         </div>
     </div>
@@ -182,7 +182,7 @@
             </div>
 
             <div class="jian3">
-                <img src="__PUBLIC__/merch/images/youjiantou.png" alt="">
+                <img src="/-/Public/merch/images/youjiantou.png" alt="">
             </div>
         </div>
     </div>
@@ -198,7 +198,7 @@
             </div>
 
             <div class="jian3">
-                <img src="__PUBLIC__/merch/images/youjiantou.png" alt="">
+                <img src="/-/Public/merch/images/youjiantou.png" alt="">
             </div>
         </div>
     </div>
@@ -214,7 +214,7 @@
             </div>
 
             <div class="jian3">
-                <img src="__PUBLIC__/merch/images/youjiantou.png" alt="">
+                <img src="/-/Public/merch/images/youjiantou.png" alt="">
             </div>
         </div>
     </div>

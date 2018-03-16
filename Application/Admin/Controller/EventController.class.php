@@ -129,5 +129,17 @@ class EventController extends BasicController {
       $this->display();
 
     }
+    public function cs(){
+      $this->display();
+    }
+
+    //活动
+    public function fxlj(){
+      
+    }
+
+
+
+
 
 }
